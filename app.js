@@ -13,8 +13,13 @@ function renderChecks() {
 }
 function renderDays() {
   const days=activeRoute().days;
-  $('#days').innerHTML=days.map(d=>`<article class="day-card"><button class="day-toggle" aria-expanded="${d.day===1}" aria-controls="day-${d.day}"><span class="day-no">${String(d.day).padStart(2,'0')}</span><span class="day-title"><small>${d.date} · ${d.region}</small><strong>${d.base==='—'?'Fly home':d.base}</strong></span><span class="day-drive">${d.drive}</span><span class="chevron">⌄</span></button><div class="day-content" id="day-${d.day}" ${d.day!==1?'hidden':''}><div class="blocks"><section><span>Morning</span><p>${d.morning}</p></section><section><span>Afternoon</span><p>${d.afternoon}</p></section><section><span>Evening</span><p>${d.evening}</p></section></div><div class="day-footer"><span><b>Park & bags</b>${d.parking}</span><span><b>Cash note</b>${d.cash}</span></div><div class="stop-links">${d.stops.map(([n,u])=>`<a href="${u}" target="_blank" rel="noreferrer">↗ ${n}</a>`).join('')}</div><div class="tag-row">${d.tags.map(t=>`<span>${t}</span>`).join('')}</div></div></article>`).join('');
+  $('#days').innerHTML=days.map(d=>`<article class="day-card"><button class="day-toggle" aria-expanded="${d.day===1}" aria-controls="day-${d.day}"><span class="day-no">${String(d.day).padStart(2,'0')}</span><span class="day-title"><small>${d.date} · ${d.region} · Base ${d.base}</small><strong>${d.heading||`Day ${d.day} - ${d.base==='—'?'Fly home':d.base}`}</strong></span><span class="day-drive">${d.drive}</span><span class="chevron">⌄</span></button><div class="day-content" id="day-${d.day}" ${d.day!==1?'hidden':''}><div class="blocks"><section><span>Morning</span><p>${d.morning}</p></section><section><span>Afternoon</span><p>${d.afternoon}</p></section><section><span>Evening</span><p>${d.evening}</p></section></div><div class="day-footer"><span><b>Park / luggage</b>${d.parking}</span><span><b>Cash / tickets</b>${d.cash}</span></div><div class="stop-links"><b>Maps & parking</b>${d.stops.map(([n,u])=>`<a href="${u}" target="_blank" rel="noreferrer">↗ ${n}</a>`).join('')}</div><div class="tag-row">${d.tags.map(t=>`<span>${t}</span>`).join('')}</div></div></article>`).join('');
   document.querySelectorAll('.day-toggle').forEach(btn=>btn.addEventListener('click',()=>{const content=document.getElementById(btn.getAttribute('aria-controls'));const open=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',String(!open));content.hidden=open;}));
+}
+function renderTripOps() {
+  const route=activeRoute();
+  $('#nightBreakdown').innerHTML=route.nightBreakdown.map(n=>`<li><b>${n.base} · ${n.nights} ${n.nights===1?'night':'nights'}</b><span>${n.dates}</span></li>`).join('');
+  $('#groundTips').innerHTML=route.crucialGroundTips.map(t=>`<li>${t}</li>`).join('');
 }
 function render() {
   $('#routeTitle').textContent=trip.routeNames[branch];
@@ -24,7 +29,7 @@ function render() {
   $('#routeWarningText').textContent=branch==='primary'?trip.primaryNotice:trip.fallbackNotice;
   $('#fallbackCopy').textContent=trip.fallbackNotice;
   $('#days').setAttribute('aria-label',trip.routeNames[branch]);
-  renderDays();renderSchedule();renderChecks();
+  renderDays();renderSchedule();renderChecks();renderTripOps();
   $('#budgetRows').innerHTML=trip.budget.map(x=>`<div class="budget-row"><div><b>${x.label}</b><small>${x.note}</small></div><strong>€${x.min}–${x.max}</strong></div>`).join('');
   $('#budgetMin').textContent=trip.budget.reduce((s,x)=>s+x.min,0);$('#budgetMax').textContent=trip.budget.reduce((s,x)=>s+x.max,0);
   $('#sourceList').innerHTML=trip.sources.map(([n,u])=>`<li><a href="${u}" target="_blank" rel="noreferrer">${n} ↗</a></li>`).join('');

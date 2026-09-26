@@ -1,5 +1,5 @@
-const CACHE = 'mne-field-notes-v6';
-const VERSION = '6';
+const CACHE = 'mne-field-notes-v7';
+const VERSION = '7';
 const SHELL = ['./','./index.html','./style.css','./app.js','./itinerary.json','./manifest.webmanifest','./icon.svg'].map(path => `${path}?v=${VERSION}`);
 self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(SHELL)).then(() => self.skipWaiting())));
 self.addEventListener('activate', event => event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE).map(key => caches.delete(key)))).then(() => self.clients.claim())));
