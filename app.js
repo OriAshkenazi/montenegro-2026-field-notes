@@ -1,7 +1,7 @@
 const $ = (s) => document.querySelector(s);
 let trip;
 let branch = 'primary';
-fetch('./itinerary.json?rev=2b97540').then(r => r.json()).then(data => { trip = data; render(); }).catch(() => { $('#days').innerHTML = '<p class="offline-note">Trip data is not cached yet. Open this page online once, then reload offline.</p>'; });
+fetch('./itinerary.json?rev=2026-09-27b').then(r => r.json()).then(data => { trip = data; render(); }).catch(() => { $('#days').innerHTML = '<p class="offline-note">Trip data is not cached yet. Open this page online once, then reload offline.</p>'; });
 
 function activeRoute() { return trip.routes[branch]; }
 function renderSchedule() {
