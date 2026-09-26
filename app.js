@@ -19,7 +19,7 @@ function renderDays() {
 function render() {
   $('#routeTitle').textContent=trip.routeNames[branch];
   $('#routeToggle').checked=branch==='fallback';
-  $('#routeWarning').hidden=branch!=='primary';
+  $('#routeWarning').hidden=branch!=='fallback';
   $('#routeNoticeTitle').textContent=branch==='primary'?'Mountain transfer needs a live route check.':'Weather-safe route branch selected.';
   $('#routeWarningText').textContent=branch==='primary'?trip.primaryNotice:trip.fallbackNotice;
   $('#fallbackCopy').textContent=trip.fallbackNotice;

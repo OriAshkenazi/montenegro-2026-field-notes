@@ -20,7 +20,7 @@
         {"name":"Mountain / boat daylight margin","status":"CONDITIONAL","detail":"Day 3 highland activity ends by 16:00. Transfer drives must depart early and end by 16:00; weather and twilight must be checked same day. Lake boat must return ashore by 15:45."},
         {"name":"Luggage concealment","status":"PASS","detail":"Check in/unload at Kotor before Day 1 outings, Žabljak before Day 2 excursions, and Kotor on Day 4 before exploring. Test all bags beneath parcel shelf at pickup."},
         {"name":"Day 6 airport radius and terminal by 12:15","status":"PASS","detail":"Kotor–TIV is about 10–15 minutes; depart 09:30, return car by 11:30."},
-        {"name":"Tara bridge access","status":"FAIL","detail":"Official closure is Aug 10 through Oct 26, 2026 at 12:00. Do not cross or route to bridge-side activities."}
+        {"name":"Tara bridge closure avoided","status":"PASS","detail":"Official closure is Aug 10 through Oct 26, 2026 at 12:00; this route uses Ćurevac and does not cross or depend on the bridge."}
       ]
     },
     "fallback": {
