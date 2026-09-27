@@ -1,11 +1,27 @@
 const $ = (s) => document.querySelector(s);
 let trip;
 let branch = 'primary';
-fetch('./itinerary.json?rev=2026-09-27c').then(r => r.json()).then(data => { trip = data; render(); }).catch(() => { $('#days').innerHTML = '<p class="offline-note">Trip data is not cached yet. Open this page online once, then reload offline.</p>'; });
+fetch('./itinerary.json?rev=2026-09-27d').then(r => r.json()).then(data => { trip = data; render(); }).catch(() => { $('#days').innerHTML = '<p class="offline-note">Trip data is not cached yet. Open this page online once, then reload offline.</p>'; });
 
 function activeRoute() { return trip.routes[branch]; }
+const segmentTypes = {
+  DRIVE: ['↗', 'drive'], STAY: ['⌂', 'stay'], SEE: ['◉', 'see'], WALK: ['↟', 'walk'],
+  EAT: ['◒', 'eat'], WATER: ['≋', 'water'], WELLNESS: ['◇', 'wellness'], LOGISTICS: ['▪', 'logistics'], CAUTION: ['!', 'caution']
+};
+function escapeHTML(value) {
+  return String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+}
+function renderSegments(segments, compact = false) {
+  if (!Array.isArray(segments)) return '';
+  return `<div class="segment-list${compact ? ' compact' : ''}">${segments.map(segment => {
+    const type = segmentTypes[segment.type] ? segment.type : 'LOGISTICS';
+    if (type !== segment.type) console.warn(`Unknown route segment type: ${segment.type}`);
+    const [icon, className] = segmentTypes[type];
+    return `<div class="route-segment ${className}"><span class="segment-icon" aria-hidden="true">${icon}</span><b class="segment-label">${type}</b><span class="segment-text">${escapeHTML(segment.text || '')}</span></div>`;
+  }).join('')}</div>`;
+}
 function renderSchedule() {
-  $('#schedule').innerHTML = activeRoute().days.map(d => `<tr><td><b>${d.day}</b><small>${d.date}</small></td><td>${d.region}<small>Base: ${d.base}</small></td><td>${d.morning}</td><td>${d.afternoon}</td><td>${d.evening}</td><td><b>${d.drive}</b><small>${d.parking} ${d.cash}</small></td></tr>`).join('');
+  $('#schedule').innerHTML = activeRoute().days.map(d => `<tr><td><b>${d.day}</b><small>${d.date}</small></td><td>${d.region}<small>Base: ${d.base}</small></td><td>${renderSegments(d.morning, true)}</td><td>${renderSegments(d.afternoon, true)}</td><td>${renderSegments(d.evening, true)}</td><td><b>${d.drive}</b><small>${d.parking} ${d.cash}</small></td></tr>`).join('');
 }
 function renderChecks() {
   $('#checks').innerHTML = activeRoute().checks.map(g => `<div class="check ${g.status.toLowerCase()}"><span>${g.status==='PASS'?'✓':g.status==='CONDITIONAL'?'~':'!'}</span><div><b>${g.name}</b><small>${g.detail}</small></div><strong>${g.status}</strong></div>`).join('');
@@ -13,7 +29,7 @@ function renderChecks() {
 }
 function renderDays() {
   const days=activeRoute().days;
-  $('#days').innerHTML=days.map(d=>`<article class="day-card"><button class="day-toggle" aria-expanded="${d.day===1}" aria-controls="day-${d.day}"><span class="day-no">${String(d.day).padStart(2,'0')}</span><span class="day-title"><small>${d.date} · ${d.region} · Base ${d.base}</small><strong>${d.heading||`Day ${d.day} - ${d.base==='—'?'Fly home':d.base}`}</strong></span><span class="day-drive">${d.drive}</span><span class="chevron">⌄</span></button><div class="day-content" id="day-${d.day}" ${d.day!==1?'hidden':''}><div class="blocks"><section><span>Morning</span><p>${d.morning}</p></section><section><span>Afternoon</span><p>${d.afternoon}</p></section><section><span>Evening</span><p>${d.evening}</p></section></div><div class="day-footer"><span><b>Park / luggage</b>${d.parking}</span><span><b>Cash / tickets</b>${d.cash}</span></div><div class="stop-links"><b>Maps & parking</b>${d.stops.map(([n,u])=>`<a href="${u}" target="_blank" rel="noreferrer">↗ ${n}</a>`).join('')}</div><div class="tag-row">${d.tags.map(t=>`<span>${t}</span>`).join('')}</div></div></article>`).join('');
+  $('#days').innerHTML=days.map(d=>`<article class="day-card"><button class="day-toggle" aria-expanded="${d.day===1}" aria-controls="day-${d.day}"><span class="day-no">${String(d.day).padStart(2,'0')}</span><span class="day-title"><small>${d.date} · ${d.region} · Base ${d.base}</small><strong>${d.heading||`Day ${d.day} - ${d.base==='—'?'Fly home':d.base}`}</strong></span><span class="day-drive">${d.drive}</span><span class="chevron">⌄</span></button><div class="day-content" id="day-${d.day}" ${d.day!==1?'hidden':''}><div class="blocks"><section><span>Morning</span>${renderSegments(d.morning)}</section><section><span>Afternoon</span>${renderSegments(d.afternoon)}</section><section><span>Evening</span>${renderSegments(d.evening)}</section></div><div class="day-footer"><span><b>Park / luggage</b>${d.parking}</span><span><b>Cash / tickets</b>${d.cash}</span></div><div class="stop-links"><b>Maps & parking</b>${d.stops.map(([n,u])=>`<a href="${u}" target="_blank" rel="noreferrer">↗ ${n}</a>`).join('')}</div><div class="tag-row">${d.tags.map(t=>`<span>${t}</span>`).join('')}</div></div></article>`).join('');
   document.querySelectorAll('.day-toggle').forEach(btn=>btn.addEventListener('click',()=>{const content=document.getElementById(btn.getAttribute('aria-controls'));const open=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',String(!open));content.hidden=open;}));
 }
 function renderTripOps() {

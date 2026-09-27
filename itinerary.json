@@ -18,9 +18,72 @@
           "base": "Žabljak",
           "drive": "TIV → Vrmac tunnel / Kotor → M-1 to Risan / Lipci → M-8 via Grahovo → M-7 to Nikšić → M-3 to Jasenovo Polje → M-6 via Šavnik → Žabljak · nominal 3 h 20 min / 4 h adjusted (+20%); live route controls",
           "adjustedHours": 4.0,
-          "morning": "Land at TIV at 13:50. Collect the estate car, test-load both checked cases and both cabin trolleys beneath the closed parcel shelf, photograph existing damage, and save the roadside number. Leave the airport around 15:15–15:30 only if the flight, pickup, driver and road checks are all on track.",
-          "afternoon": "Drive directly north to your pre-booked Žabljak lodging via the Vrmac tunnel and Kotor, then M-1 to Risan/Lipci, M-8 via Grahovo, M-7 to Nikšić, M-3 to Jasenovo Polje and M-6 via Šavnik. Check live navigation for closures or reroutes. Use 3 h 20 min as a nominal published estimate; current sources vary and live traffic/weather can extend it, then add 20%: about 4 h adjusted, before traffic or stops. That points to roughly 19:15–19:30 arrival. Žabljak sunset on Oct 1 is about 18:26 and civil twilight ends about 18:55, so this deliberately breaks the usual daylight cutoff. Do not add the Lepetane ferry, viewpoints, a swim, or a meal stop. If the flight or rental is delayed, visibility/weather is poor, roads are restricted, or the driver is tired, stay at your pre-arranged Kotor contingency lodging instead; move north on Day 2 only if conditions are safe. If conditions deteriorate after you leave, do not press on: stop at the next safe town, arrange lodging and secure the bags.",
-          "evening": "Check in, unload every bag, and eat near the lodging or use food arranged ahead. No sightseeing after arrival. Confirm late check-in directly with the host before travel.",
+          "morning": [
+            {
+              "type": "LOGISTICS",
+              "text": "Land at TIV at 13:50."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "Collect the estate car, test-load both checked cases and both cabin trolleys beneath the closed parcel shelf, photograph existing damage, and save the roadside number."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "Leave the airport around 15:15–15:30 only if the flight, pickup, driver and road checks are all on track."
+            }
+          ],
+          "afternoon": [
+            {
+              "type": "DRIVE",
+              "text": "Drive directly north to your pre-booked Žabljak lodging via the Vrmac tunnel and Kotor, then M-1 to Risan/Lipci, M-8 via Grahovo, M-7 to Nikšić, M-3 to Jasenovo Polje and M-6 via Šavnik."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Check live navigation for closures or reroutes."
+            },
+            {
+              "type": "DRIVE",
+              "text": "Use 3 h 20 min as a nominal published estimate; current sources vary and live traffic/weather can extend it, then add 20%: about 4 h adjusted, before traffic or stops."
+            },
+            {
+              "type": "DRIVE",
+              "text": "That points to roughly 19:15–19:30 arrival."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Žabljak sunset on Oct 1 is about 18:26 and civil twilight ends about 18:55, so this deliberately breaks the usual daylight cutoff."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Do not add the Lepetane ferry, viewpoints, a swim, or a meal stop."
+            },
+            {
+              "type": "CAUTION",
+              "text": "If the flight or rental is delayed, visibility/weather is poor, roads are restricted, or the driver is tired, stay at your pre-arranged Kotor contingency lodging instead; move north on Day 2 only if conditions are safe."
+            },
+            {
+              "type": "CAUTION",
+              "text": "If conditions deteriorate after you leave, do not press on: stop at the next safe town, arrange lodging and secure the bags."
+            }
+          ],
+          "evening": [
+            {
+              "type": "STAY",
+              "text": "Check in and unload every bag."
+            },
+            {
+              "type": "EAT",
+              "text": "Eat near the lodging or use food arranged ahead."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Skip sightseeing after arrival."
+            },
+            {
+              "type": "STAY",
+              "text": "Confirm late check-in directly with the host before travel."
+            }
+          ],
           "parking": "Go straight to pre-booked lodging with confirmed late check-in and parking. Keep all bags concealed during the transfer, then unload immediately. Keep the Kotor contingency booking/contact available if the airport go/no-go check fails.",
           "cash": "No planned toll or ferry. Keep a card and small cash notes accessible; fill the tank before the P14 day.",
           "stops": [
@@ -58,9 +121,72 @@
           "base": "Žabljak",
           "drive": "Žabljak local · ~0.4 adjusted h; if Day 1 Kotor contingency, Kotor → Žabljak · ~3 h 41 adjusted (leave 07:00; direct to lodging)",
           "adjustedHours": 0.4,
-          "morning": "If you reached Žabljak on Day 1, sleep in after the airport-to-mountains drive, then go to Black Lake parking late morning for the short forest-and-shore loop; allow about 2–2.5 hours and turn back if footing or weather turns. Keep the Bosaca–Jablan Lake viewpoint as an optional, time-boxed out-and-back only if rested. Do not attempt the reported seven-hour circular hike. If Day 1 was aborted to Kotor, leave by 07:00 after a fresh road/weather and driver check; drive directly to Žabljak via M-1 / M-8 / M-7 / M-3 / M-6, allow about 3 h 41 adjusted plus stops, and continue only if you can finish the highland leg by 16:00.",
-          "afternoon": "If you arrived in Žabljak on Day 1, finish Black Lake, warm up, and check the Day 3 P14 road and weather with AMSCG and your host. If arriving from Kotor today, check in and unload all bags, then skip Black Lake. If the northbound transfer is unsafe, use the coast-only fallback.",
-          "evening": "Eat in Žabljak and get an early night before P14. Ask the host which places are open and confirm the Sedlo road status again in the morning.",
+          "morning": [
+            {
+              "type": "STAY",
+              "text": "If you reached Žabljak on Day 1, sleep in after the airport-to-mountains drive."
+            },
+            {
+              "type": "DRIVE",
+              "text": "Go to Black Lake parking late morning."
+            },
+            {
+              "type": "WALK",
+              "text": "Take the short forest-and-shore loop; allow about 2–2.5 hours."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Turn back if footing or weather turns."
+            },
+            {
+              "type": "WALK",
+              "text": "Keep the Bosaca–Jablan Lake viewpoint as an optional, time-boxed out-and-back only if rested."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Do not attempt the reported seven-hour circular hike."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "If Day 1 was aborted to Kotor, leave by 07:00 after a fresh road, weather and driver check."
+            },
+            {
+              "type": "DRIVE",
+              "text": "Drive directly to Žabljak via M-1 / M-8 / M-7 / M-3 / M-6; allow about 3 h 41 adjusted plus stops."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Continue only if you can finish the highland leg by 16:00."
+            }
+          ],
+          "afternoon": [
+            {
+              "type": "WALK",
+              "text": "Finish the Black Lake visit and warm up."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "Check the Day 3 P14 road and weather with AMSCG and your host."
+            },
+            {
+              "type": "STAY",
+              "text": "If arriving from Kotor today, check in and unload all bags, then skip Black Lake."
+            },
+            {
+              "type": "CAUTION",
+              "text": "If the northbound transfer is unsafe, use the coast-only fallback."
+            }
+          ],
+          "evening": [
+            {
+              "type": "EAT",
+              "text": "Eat in Žabljak and get an early night before P14."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Ask the host which places are open and confirm the Sedlo road status again in the morning."
+            }
+          ],
           "parking": "Use the signed Black Lake lot after all bags are unloaded at the Žabljak lodging. If arriving from Kotor today, drive directly to lodging, check in, then decide whether there is enough daylight for the lake.",
           "cash": "Durmitor entry is listed at €5/person/day. Black Lake + P14 cost €10/person; add the optional Skadar day on Day 5 for €15/person total. Compare with the 2026 €13.50/person annual pass and confirm each gate’s terms.",
           "stops": [
@@ -103,9 +229,80 @@
           "base": "Žabljak",
           "drive": "Žabljak → P14/Sedlo → Trsa → Plužine/Piva viewpoint → return · plan 4 h 30 wheel time / 5 h 24 adjusted; LIVE ROUTE GATE REQUIRED",
           "adjustedHours": 5.4,
-          "morning": "Make this your P14 day. Start around 07:30 after checking AMSCG, the forecast and your lodging host for the Sedlo pass. Enter P-14 only if it is open, dry enough, and clear of ice or low cloud. Put Žabljak → Trsa → Plužine/Piva viewpoint → Žabljak into Google Maps before leaving; the whole out-and-back is provisionally 4 h 30 behind the wheel, or 5 h 24 after +20%. Go only if the live total is at most 5 h 30.",
-          "afternoon": "Stay on P-14 over Sedlo (about 1,911 m). It is paved, narrow and winding, with two-way traffic and few comfortable passing places; use signed pullouts and expect to reverse to a passing place. Give the drive about 2 h 15 each way, plus photo/lunch stops. Stop at the Plužine/Piva viewpoint and lakeside, then turn around. Skip Mratinje Dam and the cheese-farm detour unless Maps still shows ≤5 h 30 adjusted and a Žabljak return by 16:00. If the core loop itself breaks the cap, switch to the coast fallback; do not pretend the timing works.",
-          "evening": "Get back to Žabljak before dark and have dinner nearby. Do not tack on the seven-hour Jablan Lake circular hike; if P14 is cancelled, use the short Bosača out-and-back as a separate, time-boxed alternative.",
+          "morning": [
+            {
+              "type": "LOGISTICS",
+              "text": "Make this your P14 day."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "Start around 07:30 after checking AMSCG, the forecast and your lodging host for the Sedlo pass."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Enter P-14 only if it is open, dry enough, and clear of ice or low cloud."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "Put Žabljak → Trsa → Plužine/Piva viewpoint → Žabljak into Google Maps before leaving."
+            },
+            {
+              "type": "DRIVE",
+              "text": "The whole out-and-back is provisionally 4 h 30 behind the wheel, or 5 h 24 after +20%."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Go only if the live total is at most 5 h 30."
+            }
+          ],
+          "afternoon": [
+            {
+              "type": "DRIVE",
+              "text": "Stay on P-14 over Sedlo (about 1,911 m)."
+            },
+            {
+              "type": "CAUTION",
+              "text": "It is paved, narrow and winding, with two-way traffic and few comfortable passing places; use signed pullouts and expect to reverse to a passing place."
+            },
+            {
+              "type": "DRIVE",
+              "text": "Give the drive about 2 h 15 each way."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "Allow time for photo and lunch stops."
+            },
+            {
+              "type": "SEE",
+              "text": "Stop at the Plužine/Piva viewpoint and lakeside, then turn around."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Skip Mratinje Dam and the cheese-farm detour unless Maps still shows ≤5 h 30 adjusted and a Žabljak return by 16:00."
+            },
+            {
+              "type": "CAUTION",
+              "text": "If the core loop itself breaks the cap, switch to the coast fallback; do not pretend the timing works."
+            }
+          ],
+          "evening": [
+            {
+              "type": "DRIVE",
+              "text": "Get back to Žabljak before dark."
+            },
+            {
+              "type": "EAT",
+              "text": "Have dinner nearby."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Do not tack on the seven-hour Jablan Lake circular hike."
+            },
+            {
+              "type": "WALK",
+              "text": "If P14 is cancelled, use the short Bosača out-and-back as a separate, time-boxed alternative."
+            }
+          ],
           "parking": "Start and finish at Žabljak with luggage secured. Use signed pullouts; never stop on blind bends. Download the road map and Maps.me trail data offline.",
           "cash": "Budget €5/person for the Durmitor day ticket if charged; the €13.50/person 2026 annual pass can cover the three planned park days. Keep small notes for village food.",
           "stops": [
@@ -153,9 +350,48 @@
           "base": "Kotor",
           "drive": "Žabljak → Šavnik → Nikšić → Kotor · route estimates vary; 3 h 04 cited, 3 h 41 adjusted",
           "adjustedHours": 3.68,
-          "morning": "Leave Žabljak by 07:00. Retrace M-6 via Šavnik to Jasenovo Polje, M-3 to Nikšić, M-7 to Vilusi, M-8 through Grahovo to Lipci, then M-1 to Kotor. Allow about 3 h 04 before the +20% terrain buffer, around 3 h 41 adjusted, and more if you stop. Check road/weather notices before rolling; never route across Đurđevića Tara Bridge, which is closed through Oct 26 at noon.",
-          "afternoon": "Go directly to the Kotor lodging, unload, and park. Do not add Perast or a viewpoint while the bags are in the car. Once checked in, take a short walk or rest; after two mountain days, a packed attraction list is a bad trade.",
-          "evening": "Book dinner inside the Old Town or near the hotel and leave the car put. For the historic core, walk in from a marked lot instead of circling the narrow streets.",
+          "morning": [
+            {
+              "type": "LOGISTICS",
+              "text": "Leave Žabljak by 07:00."
+            },
+            {
+              "type": "DRIVE",
+              "text": "Retrace M-6 via Šavnik to Jasenovo Polje, M-3 to Nikšić, M-7 to Vilusi, M-8 through Grahovo to Lipci, then M-1 to Kotor."
+            },
+            {
+              "type": "DRIVE",
+              "text": "Allow about 3 h 04 before the +20% terrain buffer, around 3 h 41 adjusted, and more if you stop."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Check road/weather notices before rolling; never route across Đurđevića Tara Bridge, which is closed through Oct 26 at noon."
+            }
+          ],
+          "afternoon": [
+            {
+              "type": "STAY",
+              "text": "Go directly to the Kotor lodging, unload, and park."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Do not add Perast or a viewpoint while the bags are in the car."
+            },
+            {
+              "type": "WALK",
+              "text": "Once checked in, take a short walk or rest; after two mountain days, a packed attraction list is a bad trade."
+            }
+          ],
+          "evening": [
+            {
+              "type": "EAT",
+              "text": "Book dinner inside the Old Town or near the hotel and leave the car put."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "For the historic core, walk in from a marked lot instead of circling the narrow streets."
+            }
+          ],
           "parking": "Go directly to Kotor lodging, unload and park. Explore the Old Town on foot; use a signed public lot if the hotel space is full.",
           "cash": "Keep €20 for fuel or toll contingencies. The planned M-6/M-7/M-8 return avoids Sozina and the A1.",
           "stops": [
@@ -197,9 +433,92 @@
           "base": "Kotor",
           "drive": "Kotor ↔ Virpazar · about 1 h 12 each way; 2 h 53 adjusted round trip",
           "adjustedHours": 2.88,
-          "morning": "Choose one outing; do not try to cram all three into the last full day. For Skadar, leave Kotor around 08:00 for Virpazar. The scenic route uses R-1 toward Njeguši/Cetinje, then R-15; the coastal option is M-1 through Budva and Petrovac, M-1.1 through the tolled Sozina Tunnel, then M-2/R-15. Follow live routing around works and weather. Book a boat only after the operator confirms an October departure and return time. The park lists €5/person/day and says one cruise is included; verify that it covers your chosen trip. Old €10 group / €50 private fares are traveler history, not quotes.",
-          "afternoon": "On the Skadar option, be ashore by 15:45, eat in Virpazar, and add a Godinje winery only if you have a reservation and a sober driver. Perast is the lighter alternative: park at the signed lot, walk the lanes, and take the island boat only if it is running. Budva/Sveti Stefan is the beach-and-old-town alternative; traffic and parking can eat the afternoon, and Budva itself is easy to skip if crowds annoy you. Return to Kotor before dark.",
-          "evening": "Have the final dinner in Kotor. Leave bags at the hotel and keep tomorrow’s airport run boring and predictable.",
+          "morning": [
+            {
+              "type": "LOGISTICS",
+              "text": "Choose one outing; do not try to cram all three into the last full day."
+            },
+            {
+              "type": "DRIVE",
+              "text": "For Skadar, leave Kotor around 08:00 for Virpazar."
+            },
+            {
+              "type": "DRIVE",
+              "text": "The scenic route uses R-1 toward Njeguši/Cetinje, then R-15; the coastal option is M-1 through Budva and Petrovac, M-1.1 through the tolled Sozina Tunnel, then M-2/R-15."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Follow live routing around works and weather."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "Book a boat only after the operator confirms an October departure and return time."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "The park lists €5/person/day and says one cruise is included; verify that it covers your chosen trip."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "Old €10 group / €50 private fares are traveler history, not quotes."
+            }
+          ],
+          "afternoon": [
+            {
+              "type": "WATER",
+              "text": "On the Skadar option, be ashore by 15:45."
+            },
+            {
+              "type": "EAT",
+              "text": "Eat in Virpazar."
+            },
+            {
+              "type": "SEE",
+              "text": "Add a Godinje winery only with a reservation."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Choose a sober driver for the winery stop."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "For Perast, park at the signed lot."
+            },
+            {
+              "type": "SEE",
+              "text": "Walk the old lanes."
+            },
+            {
+              "type": "WATER",
+              "text": "Take the island boat only if it is running."
+            },
+            {
+              "type": "SEE",
+              "text": "Budva/Sveti Stefan is the beach-and-old-town alternative."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Traffic and parking can eat the afternoon; skip Budva if crowds annoy you."
+            },
+            {
+              "type": "DRIVE",
+              "text": "Return to Kotor before dark."
+            }
+          ],
+          "evening": [
+            {
+              "type": "EAT",
+              "text": "Have the final dinner in Kotor."
+            },
+            {
+              "type": "STAY",
+              "text": "Leave bags at the hotel."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "Keep tomorrow’s airport run simple and predictable."
+            }
+          ],
           "parking": "Leave bags at the Kotor hotel. Use marked lots in Virpazar, Perast or Budva; do not leave valuables in the car.",
           "cash": "Carry €20–40/person for the chosen outing. Three park days at €5 each cost €15/person; the 2026 all-parks annual pass is €13.50/person, if all three admissions are required.",
           "stops": [
@@ -251,9 +570,39 @@
           "base": "—",
           "drive": "Kotor → TIV · about 10–15 min; airport 7.7 km",
           "adjustedHours": 0.4,
-          "morning": "Have breakfast at 08:30 and leave Kotor by 09:30. Take the direct road to TIV; do not detour for a last viewpoint. Refuel only if your contract requires it, photograph the fuel gauge and car condition, and return the car by 11:30.",
-          "afternoon": "Walk to the terminal and be inside by 12:15 for the required counter check-in. The flight leaves at 14:55, but rental inspection queues and airport procedures are not the place to gamble.",
-          "evening": "—",
+          "morning": [
+            {
+              "type": "EAT",
+              "text": "Have breakfast at 08:30."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "Leave Kotor by 09:30."
+            },
+            {
+              "type": "DRIVE",
+              "text": "Take the direct road to TIV; do not detour for a last viewpoint."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "Refuel only if your contract requires it, photograph the fuel gauge and car condition, and return the car by 11:30."
+            }
+          ],
+          "afternoon": [
+            {
+              "type": "LOGISTICS",
+              "text": "Walk to the terminal and be inside by 12:15 for the required counter check-in."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "The flight leaves at 14:55."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Do not gamble on rental inspection queues or airport procedures."
+            }
+          ],
+          "evening": [],
           "parking": "No sightseeing stops. Return the car by 11:30 and keep rental paperwork and deposit details handy.",
           "cash": "Keep a payment card accessible; only refuel if your contract requires a full tank.",
           "stops": [
@@ -349,9 +698,60 @@
           "base": "Kotor",
           "drive": "TIV → M-11 → Lepetane ferry → Kamenari → M-1 via Herceg Novi / Lipci / Risan → Kotor · scenic loop allow 1.5–2 h; direct road 20–30 min",
           "adjustedHours": 2.4,
-          "morning": "Land at TIV at 13:50. Collect the estate car, test-load both checked cases and both cabin trolleys under the closed parcel shelf, photograph existing damage, and get the roadside number before you leave. Plan wheels rolling around 15:15–15:30.",
-          "afternoon": "Go straight to your Kotor hotel without stopping on the way. For the scenic bay loop, take M-11 from Tivat to Lepetane, cross to Kamenari, then follow M-1 west via Herceg Novi and Lipci before continuing around the north shore through Risan to Kotor. The published summer timetable runs every 15–20 minutes through Oct 11; the Oct small-car fare is €4 off-season. This is the long scenic way, not a shortcut; use the direct Tivat–Kotor road through the Vrmac tunnel if you just want to get to the hotel. Stay with the car at the ferry and do not stop for a viewpoint or swim until all four bags are unloaded.",
-          "evening": "Once the bags are inside, walk Kotor Old Town for dinner. Skip the car trip into the old center: traffic pinches down and parking is the trap. If you arrive late, eat near the hotel and save the walls for another day.",
+          "morning": [
+            {
+              "type": "LOGISTICS",
+              "text": "Land at TIV at 13:50."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "Collect the estate car, test-load both checked cases and both cabin trolleys under the closed parcel shelf, photograph existing damage, and get the roadside number before you leave."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "Plan wheels rolling around 15:15–15:30."
+            }
+          ],
+          "afternoon": [
+            {
+              "type": "DRIVE",
+              "text": "Go straight to your Kotor hotel without stopping on the way."
+            },
+            {
+              "type": "DRIVE",
+              "text": "For the scenic bay loop, take M-11 from Tivat to Lepetane, cross to Kamenari, then follow M-1 west via Herceg Novi and Lipci before continuing around the north shore through Risan to Kotor."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "The published summer timetable runs every 15–20 minutes through Oct 11; the Oct small-car fare is €4 off-season."
+            },
+            {
+              "type": "DRIVE",
+              "text": "This is the long scenic way, not a shortcut; use the direct Tivat–Kotor road through the Vrmac tunnel if you just want to get to the hotel."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Stay with the car at the ferry and do not stop for a viewpoint or swim until all four bags are unloaded."
+            }
+          ],
+          "evening": [
+            {
+              "type": "SEE",
+              "text": "Once the bags are inside, walk Kotor Old Town."
+            },
+            {
+              "type": "EAT",
+              "text": "Have dinner there."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Skip the car trip into the old center: traffic pinches down and parking is the trap."
+            },
+            {
+              "type": "EAT",
+              "text": "If you arrive late, eat near the hotel and save the walls for another day."
+            }
+          ],
           "parking": "Go straight to the Kotor lodging and unload. For any Old Town stop, walk from hotel or signed edge parking.",
           "cash": "Keep €4 ready if you take the ferry; Oct 1–6 uses the published off-season fare.",
           "stops": [
@@ -389,9 +789,56 @@
           "base": "Kotor",
           "drive": "Local Kotor / Perast · allow ≤2 h total",
           "adjustedHours": 2,
-          "morning": "Start with Kotor Old Town before the day-trippers fill the lanes. If you want the walls, start early, check October opening hours and ticket price, and wear shoes with grip; wet stone steps are slick.",
-          "afternoon": "Drive to Perast and use the signed parking area rather than squeezing onto the waterfront road. Walk the old lanes and take the Our Lady of the Rocks boat only after confirming the skipper is operating and the sea is calm. Be back in Kotor by 16:00.",
-          "evening": "Dinner in Kotor; book a table if you want a quiet waterfront seat. Leave the car parked for the evening.",
+          "morning": [
+            {
+              "type": "SEE",
+              "text": "Start with Kotor Old Town before the day-trippers fill the lanes."
+            },
+            {
+              "type": "WALK",
+              "text": "If you want the walls, start early."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "Check October opening hours and ticket price."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Wear shoes with grip; wet stone steps are slick."
+            }
+          ],
+          "afternoon": [
+            {
+              "type": "DRIVE",
+              "text": "Drive to Perast."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "Use the signed parking area rather than squeezing onto the waterfront road."
+            },
+            {
+              "type": "SEE",
+              "text": "Walk the old lanes."
+            },
+            {
+              "type": "WATER",
+              "text": "Take the Our Lady of the Rocks boat only after confirming the skipper is operating and the sea is calm."
+            },
+            {
+              "type": "DRIVE",
+              "text": "Be back in Kotor by 16:00."
+            }
+          ],
+          "evening": [
+            {
+              "type": "EAT",
+              "text": "Dinner in Kotor; book a table if you want a quiet waterfront seat."
+            },
+            {
+              "type": "STAY",
+              "text": "Leave the car parked for the evening."
+            }
+          ],
           "parking": "Park outside the Old Town or use your hotel space. In Perast, leave the car in the signed lot and walk down.",
           "cash": "Carry small notes for the walls and boat; the traveler fares in the old notes are not current prices.",
           "stops": [
@@ -426,9 +873,48 @@
           "base": "Kotor",
           "drive": "Kotor ↔ Lovćen ↔ Cetinje · plan 2.5 h adjusted",
           "adjustedHours": 2.5,
-          "morning": "Leave Kotor around 08:00 and climb the Kotor serpentine toward Lovćen. The hairpins are tight and buses need space; use a low gear downhill and stop only at proper pullouts. Turn around if fog closes the views.",
-          "afternoon": "Park at the signed Lovćen visitor area, then choose the short Ivanova Korita walk or the mausoleum stairs. Do not treat 460 steps as a casual stop. Continue to Cetinje only if the return drive still ends before dark; skip the extra town if the weather or traffic is slow.",
-          "evening": "Return to Kotor for dinner. The coast fallback exists so you can make a sound call if the high roads are wet or foggy.",
+          "morning": [
+            {
+              "type": "DRIVE",
+              "text": "Leave Kotor around 08:00 and climb the Kotor serpentine toward Lovćen."
+            },
+            {
+              "type": "CAUTION",
+              "text": "The hairpins are tight and buses need space; use a low gear downhill and stop only at proper pullouts."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Turn around if fog closes the views."
+            }
+          ],
+          "afternoon": [
+            {
+              "type": "WALK",
+              "text": "Choose the short Ivanova Korita walk."
+            },
+            {
+              "type": "SEE",
+              "text": "Or visit the mausoleum and climb its stairs."
+            },
+            {
+              "type": "WALK",
+              "text": "Do not treat 460 steps as a casual stop."
+            },
+            {
+              "type": "DRIVE",
+              "text": "Continue to Cetinje only if the return drive still ends before dark; skip the extra town if the weather or traffic is slow."
+            }
+          ],
+          "evening": [
+            {
+              "type": "EAT",
+              "text": "Return to Kotor for dinner."
+            },
+            {
+              "type": "CAUTION",
+              "text": "The coast fallback exists so you can make a sound call if the high roads are wet or foggy."
+            }
+          ],
           "parking": "Use signed Lovćen parking. Leave all luggage at Kotor; do not park on the serpentine for photos.",
           "cash": "Carry cash for park entry and small village purchases; confirm current prices at the gate.",
           "stops": [
@@ -463,9 +949,60 @@
           "base": "Kotor",
           "drive": "Kotor ↔ Virpazar · 2 h 53 adjusted round trip",
           "adjustedHours": 2.88,
-          "morning": "Leave around 08:00 for Virpazar. For the scenic line, climb R-1 toward Njeguši and Cetinje, then use R-15. For the simpler coastal line, take M-1 via Budva and Petrovac, then M-1.1 through Sozina and M-2/R-15 to Virpazar; Sozina is tolled. Follow live routing if roadworks or weather change the choice. Do not assume a boat is running in October.",
-          "afternoon": "Park at the signed village lot. Book the boat only after confirming the operator, lake conditions, fare and return time. The park currently lists €5/person/day and one cruise included; check the inclusion before paying twice. Be ashore by 15:45. If boats stop for the season, use the village and a reserved winery instead.",
-          "evening": "Return to Kotor before dusk. Keep the evening easy; do not add another coastal town on the drive back.",
+          "morning": [
+            {
+              "type": "DRIVE",
+              "text": "Leave around 08:00 for Virpazar."
+            },
+            {
+              "type": "DRIVE",
+              "text": "For the scenic line, climb R-1 toward Njeguši and Cetinje, then use R-15."
+            },
+            {
+              "type": "DRIVE",
+              "text": "For the simpler coastal line, take M-1 via Budva and Petrovac, then M-1.1 through Sozina and M-2/R-15 to Virpazar; Sozina is tolled."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Follow live routing if roadworks or weather change the choice."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Do not assume a boat is running in October."
+            }
+          ],
+          "afternoon": [
+            {
+              "type": "LOGISTICS",
+              "text": "Park at the signed village lot."
+            },
+            {
+              "type": "WATER",
+              "text": "Book the boat only after confirming the operator, lake conditions, fare and return time."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "The park currently lists €5/person/day and one cruise included; check the inclusion before paying twice."
+            },
+            {
+              "type": "WATER",
+              "text": "Be ashore by 15:45."
+            },
+            {
+              "type": "EAT",
+              "text": "If boats stop for the season, use the village and a reserved winery instead."
+            }
+          ],
+          "evening": [
+            {
+              "type": "DRIVE",
+              "text": "Return to Kotor before dusk."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Keep the evening easy; do not add another coastal town on the drive back."
+            }
+          ],
           "parking": "Use the signed Virpazar car park. Bags stay at your Kotor hotel; the pier and village are walkable.",
           "cash": "Confirm the boat price and ticket inclusion before boarding; old traveler prices are only historical.",
           "stops": [
@@ -501,9 +1038,56 @@
           "base": "Kotor",
           "drive": "Kotor–Tivat round trip · allow ≤1 h",
           "adjustedHours": 1,
-          "morning": "Sleep in and book a spa treatment in Tivat only after confirming that non-guests can use the facilities and getting the full price in writing. Do not assume hotel day access is available.",
-          "afternoon": "Drive to Tivat for the appointment, then return to Kotor by 15:30. If the spa is unavailable or overpriced, skip it: take a short bay walk or revisit the Old Town instead. Keep luggage at the hotel.",
-          "evening": "Reserve a final Kotor dinner and walk the waterfront. Pack tonight so the morning airport transfer stays simple.",
+          "morning": [
+            {
+              "type": "STAY",
+              "text": "Sleep in."
+            },
+            {
+              "type": "WELLNESS",
+              "text": "Book a spa treatment in Tivat."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "First confirm that non-guests can use the facilities and get the full price in writing."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Do not assume hotel day access is available."
+            }
+          ],
+          "afternoon": [
+            {
+              "type": "DRIVE",
+              "text": "Drive to Tivat for the appointment, then return to Kotor by 15:30."
+            },
+            {
+              "type": "CAUTION",
+              "text": "If the spa is unavailable or overpriced, skip it."
+            },
+            {
+              "type": "WALK",
+              "text": "Take a short bay walk or revisit the Old Town instead."
+            },
+            {
+              "type": "STAY",
+              "text": "Keep luggage at the hotel."
+            }
+          ],
+          "evening": [
+            {
+              "type": "EAT",
+              "text": "Reserve a final Kotor dinner."
+            },
+            {
+              "type": "WALK",
+              "text": "Walk the waterfront."
+            },
+            {
+              "type": "STAY",
+              "text": "Pack tonight so the morning airport transfer stays simple."
+            }
+          ],
           "parking": "Leave the car at the spa or marked Tivat parking; keep all luggage at Kotor.",
           "cash": "Ask for the day access/treatment total and payment method before booking.",
           "stops": [
@@ -534,9 +1118,39 @@
           "base": "—",
           "drive": "Kotor → TIV · about 10–15 min",
           "adjustedHours": 0.4,
-          "morning": "Have breakfast at 08:30 and leave Kotor by 09:30. Take the direct road to TIV; do not detour for a last viewpoint. Refuel only if your contract requires it, photograph the fuel gauge and car condition, and return the car by 11:30.",
-          "afternoon": "Walk to the terminal and be inside by 12:15 for the required counter check-in. The flight leaves at 14:55, but rental inspection queues and airport procedures are not the place to gamble.",
-          "evening": "—",
+          "morning": [
+            {
+              "type": "EAT",
+              "text": "Have breakfast at 08:30."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "Leave Kotor by 09:30."
+            },
+            {
+              "type": "DRIVE",
+              "text": "Take the direct road to TIV; do not detour for a last viewpoint."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "Refuel only if your contract requires it, photograph the fuel gauge and car condition, and return the car by 11:30."
+            }
+          ],
+          "afternoon": [
+            {
+              "type": "LOGISTICS",
+              "text": "Walk to the terminal and be inside by 12:15 for the required counter check-in."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "The flight leaves at 14:55."
+            },
+            {
+              "type": "CAUTION",
+              "text": "Do not gamble on rental inspection queues or airport procedures."
+            }
+          ],
+          "evening": [],
           "parking": "Go straight to TIV. Return the car by 11:30, then walk to the counter.",
           "cash": "Keep your card and rental paperwork accessible.",
           "stops": [
