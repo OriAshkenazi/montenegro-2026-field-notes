@@ -27,6 +27,7 @@ function run(rows,{online=true,cached=null}={}){
   assert.equal((result.elements['#weatherDays'].innerHTML.match(/class="weather-day"/g)||[]).length,6);
   assert(result.elements['#weatherDays'].innerHTML.includes('Thu, 1 Oct')||result.elements['#weatherDays'].innerHTML.includes('Thu 1 Oct'));
   assert.equal((result.elements['#hourlyScroller'].innerHTML.match(/class="hour-cell"/g)||[]).length,24);
+  assert(result.elements['#coastWeather'].innerHTML.includes('Sunrise 06:45 · Sunset 18:30'),'API local times must not shift with the device time zone');
   assert(result.store.has('mne-weather-forecast-v1'));
 
   const offTrip=fixture(),outsideIndex=offTrip[5].daily.time.indexOf(offTripDay);offTrip[5].daily.temperature_2m_min[outsideIndex]=1;

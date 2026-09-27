@@ -17,7 +17,13 @@
   function escape(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
   function today() { return new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Podgorica',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date()); }
   function dateLabel(day) { return new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Podgorica',weekday:'short',day:'numeric',month:'short'}).format(new Date(`${day}T12:00:00+02:00`)); }
-  function timeLabel(value, zone='Europe/Podgorica') { if (!value) return '—'; const date=new Date(value); return Number.isNaN(date.getTime())?'—':new Intl.DateTimeFormat('en-GB',{timeZone:zone,hour:'2-digit',minute:'2-digit',hour12:false}).format(date); }
+  function timeLabel(value, zone='Europe/Podgorica') {
+    if(!value)return'—';
+    const local=value.match(/T(\d{2}:\d{2})(?::\d{2})?$/);
+    if(local)return local[1];
+    const date=new Date(value);
+    return Number.isNaN(date.getTime())?'—':new Intl.DateTimeFormat('en-GB',{timeZone:zone,hour:'2-digit',minute:'2-digit',hour12:false}).format(date);
+  }
   function inMontenegro(lat,lon) { let inside=false; for(let i=0,j=montenegro.length-1;i<montenegro.length;j=i++){const [yi,xi]=montenegro[i],[yj,xj]=montenegro[j];if((xi>lon)!==(xj>lon)&&lat<(yj-yi)*(lon-xi)/(xj-xi)+yi)inside=!inside;}return inside; }
   function nearestHub(lat,lon) { return hubs.reduce((best,hub)=>{const distance=(hub.lat-lat)**2*Math.cos(lat*Math.PI/180)**2+(hub.lon-lon)**2;return !best||distance<best.distance?{id:hub.id,distance}:best;},null).id; }
   function setLocation(id) { $('#weatherHub').value=id; renderDetail(); }

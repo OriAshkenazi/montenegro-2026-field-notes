@@ -47,9 +47,9 @@ assert.ok(css.includes('.day-toggle{grid-template-columns:49px minmax(0,1fr) min
 assert.ok(css.includes('.day-drive{overflow-wrap:anywhere}'));
 assert.ok(css.includes('body{margin:0;background:var(--paper)') && css.includes('main{max-width:1200px'));
 assert.ok(css.includes('body{padding-left:env(safe-area-inset-left,0px);padding-right:calc(72px + env(safe-area-inset-right,0px))'));
-assert.ok(html.includes('style.css?rev=2026-09-27o') && html.includes('app.js?rev=2026-09-27m') && html.includes('weather.js?rev=2026-09-27a'));
+assert.ok(html.includes('style.css?rev=2026-09-27p') && html.includes('app.js?rev=2026-09-27m') && html.includes('weather.js?rev=2026-09-27a'));
 assert.ok(html.includes('data-pane="weather"') && html.includes('id="pane-weather"'));
-assert.ok(sw.includes("const VERSION='25'") && sw.includes('./weather.js?rev=2026-09-27a'));
+assert.ok(sw.includes("const VERSION='26'") && sw.includes('./weather.js?rev=2026-09-27a'));
 const weather = fs.readFileSync('weather.js', 'utf8');
 assert.ok(weather.includes('https://api.open-meteo.com/v1/forecast'));
 assert.ok(weather.includes('low<=2') && weather.includes('chance>60'));
