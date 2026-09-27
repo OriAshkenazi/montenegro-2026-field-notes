@@ -31,7 +31,14 @@ for (const point of waypoints) {
 for (const category of ['Viewpoint', 'Meal', 'Coffee', 'Supermarket', 'Parking']) assert.ok(categories.has(category), `missing category ${category}`);
 const app = fs.readFileSync('app.js', 'utf8');
 const sw = fs.readFileSync('sw.js', 'utf8');
+const css = fs.readFileSync('style.css', 'utf8');
+const html = fs.readFileSync('index.html', 'utf8');
 assert.ok(app.includes('waypoints.json?rev=2026-09-27i'));
 assert.ok(sw.includes('./waypoints.json?rev=2026-09-27i'));
 assert.ok(sw.includes('tile.openstreetmap.org') && sw.includes('leaflet@1.9.4'));
-console.log(`PASS: ${count} itinerary stop and food references, ${waypoints.length} waypoint records, coordinate/category/navigation/offline checks`);
+assert.ok(css.includes('@media (orientation:landscape)') && css.includes('flex-direction:row-reverse'));
+assert.ok(css.includes('.map-drawer[data-state="half"]{width:min(440px'));
+assert.ok(app.includes('dragStart.side?dragStart.x-e.clientX:dragStart.y-e.clientY'));
+assert.ok(html.includes('style.css?rev=2026-09-27j') && html.includes('app.js?rev=2026-09-27j'));
+assert.ok(sw.includes("const VERSION='20'"));
+console.log(`PASS: ${count} itinerary stop and food references, ${waypoints.length} waypoint records, offline asset checks, and portrait/landscape drawer behavior`);
