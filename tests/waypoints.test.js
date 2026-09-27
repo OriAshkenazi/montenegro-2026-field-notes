@@ -47,6 +47,13 @@ assert.ok(css.includes('.day-toggle{grid-template-columns:49px minmax(0,1fr) min
 assert.ok(css.includes('.day-drive{overflow-wrap:anywhere}'));
 assert.ok(css.includes('body{margin:0;background:var(--paper)') && css.includes('main{max-width:1200px'));
 assert.ok(css.includes('body{padding-left:env(safe-area-inset-left,0px);padding-right:calc(72px + env(safe-area-inset-right,0px))'));
-assert.ok(html.includes('style.css?rev=2026-09-27n') && html.includes('app.js?rev=2026-09-27l'));
-assert.ok(sw.includes("const VERSION='24'"));
-console.log(`PASS: ${count} itinerary stop and food references, ${waypoints.length} waypoint records, offline asset checks, and portrait/landscape drawer behavior`);
+assert.ok(html.includes('style.css?rev=2026-09-27o') && html.includes('app.js?rev=2026-09-27m') && html.includes('weather.js?rev=2026-09-27a'));
+assert.ok(html.includes('data-pane="weather"') && html.includes('id="pane-weather"'));
+assert.ok(sw.includes("const VERSION='25'") && sw.includes('./weather.js?rev=2026-09-27a'));
+const weather = fs.readFileSync('weather.js', 'utf8');
+assert.ok(weather.includes('https://api.open-meteo.com/v1/forecast'));
+assert.ok(weather.includes('low<=2') && weather.includes('chance>60'));
+assert.ok(weather.includes("'2026-10-01'") && weather.includes("'2026-10-06'"));
+assert.ok(weather.includes('localStorage.setItem(cacheKey') && weather.includes('Offline Mode - Showing Cached Forecast'));
+assert.ok(weather.includes("'forecast_days':'16'") || weather.includes("forecast_days:'16'"));
+console.log(`PASS: ${count} itinerary stop and food references, ${waypoints.length} waypoint records, offline assets, navigation, weather thresholds, and portrait/landscape drawer behavior`);
