@@ -46,6 +46,6 @@ assert.ok(html.includes('viewport-fit=cover'));
 assert.ok(css.includes('.day-toggle{grid-template-columns:49px minmax(0,1fr) minmax(0,38%) 26px}'));
 assert.ok(css.includes('.day-drive{overflow-wrap:anywhere}'));
 assert.ok(css.includes('body{margin:0;background:var(--paper)') && css.includes('main{max-width:1200px'));
-assert.ok(html.includes('style.css?rev=2026-09-27l') && html.includes('app.js?rev=2026-09-27l'));
-assert.ok(sw.includes("const VERSION='22'"));
+assert.ok(html.includes('style.css?rev=2026-09-27m') && html.includes('app.js?rev=2026-09-27l'));
+assert.ok(sw.includes("const VERSION='23'"));
 console.log(`PASS: ${count} itinerary stop and food references, ${waypoints.length} waypoint records, offline asset checks, and portrait/landscape drawer behavior`);
