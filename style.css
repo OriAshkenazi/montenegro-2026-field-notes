@@ -122,6 +122,13 @@
 .weather-controls{display:flex;justify-content:space-between;align-items:end;gap:14px;margin-bottom:15px}.weather-controls .eyebrow{margin-bottom:3px}.weather-controls h3{font:600 23px var(--serif);margin:0}
 .weather-controls label{display:grid;gap:4px;font:8px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 .weather-controls select{max-width:min(260px,50vw);border:1px solid var(--line);background:#fffefa;color:var(--ink);padding:9px 10px;font:11px var(--sans);text-transform:none;letter-spacing:0}
+.map-instruction{font:9px var(--mono);letter-spacing:.03em;color:#627a70}
+.weather-hub-picker{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(190px,.8fr);gap:14px;align-items:stretch;margin:0 0 17px}
+.weather-hub-map{min-width:0;display:grid;place-items:center;overflow:hidden;padding:10px 15px;background:linear-gradient(135deg,#e8f4f1,#f4f1e5 68%,#e9efdf);border:1px solid #c8dcd1;border-radius:7px}
+.montenegro-weather-svg{display:block;width:min(100%,430px);height:auto;max-height:370px;overflow:visible}
+.mne-map-shadow{fill:#315f51;opacity:.12;transform:translate(3px,4px)}.mne-map-border{fill:url(#mapLand);stroke:#486b57;stroke-width:2.5;stroke-linejoin:round}
+.hub-leader{fill:none;stroke:#476f64;stroke-width:1.7;stroke-dasharray:2 2}.hub-hit{fill:transparent;stroke:transparent;stroke-width:2;transition:fill .15s,stroke .15s}.hub-dot{fill:#168589;stroke:#fff;stroke-width:2.5;transition:fill .15s,r .15s}.hub-marker text{font:600 8px var(--sans);fill:#264e48;paint-order:stroke;stroke:#f5f6ec;stroke-width:3px;stroke-linejoin:round;pointer-events:none}.hub-marker{cursor:pointer;outline:none}.hub-marker:hover .hub-dot,.hub-marker:focus .hub-dot{fill:#dc9438;r:7}.hub-marker:focus .hub-hit{fill:#fff8;stroke:#244e48}.hub-marker.is-selected .hub-dot{fill:#dc7d39;r:8}.hub-marker.is-selected .hub-hit{fill:#f6d99b66;stroke:#dc9438}
+.weather-hub-list{display:grid;grid-template-columns:1fr;gap:5px;align-content:start}.weather-hub-option{display:flex;align-items:center;gap:8px;min-height:42px;padding:5px 9px;text-align:left;border:1px solid #d5dfd5;border-radius:5px;background:#fffefa;color:#304d45;cursor:pointer}.weather-hub-option:hover{border-color:#78aaa0;background:#f0f8f3}.weather-hub-option:focus-visible{outline:3px solid #dc9438;outline-offset:2px}.weather-hub-option.is-selected{border-color:#398980;background:linear-gradient(110deg,#e2f2ec,#fffefa 90%);box-shadow:inset 3px 0 #24887f}.hub-option-dot{flex:0 0 9px;width:9px;height:9px;border:2px solid #fff;border-radius:50%;background:#168589;box-shadow:0 0 0 1px #168589}.weather-hub-option.is-selected .hub-option-dot{background:#dc7d39;box-shadow:0 0 0 1px #dc7d39}.weather-hub-option b,.weather-hub-option small{display:block}.weather-hub-option b{font:600 10px var(--sans)}.weather-hub-option small{margin-top:2px;color:#718078;font:7px var(--mono)}
 .weather-empty{padding:20px;background:#fffefa;border:1px solid var(--line);font-size:11px;color:var(--muted)}
 .weather-days{display:flex;gap:6px;overflow-x:auto;padding:2px 2px 9px;overscroll-behavior-x:contain;scrollbar-width:thin}
 .weather-day{flex:0 0 105px;min-height:91px;text-align:left;padding:9px;background:#fffefa;border:1px solid var(--line);color:var(--ink);cursor:pointer}
@@ -142,7 +149,7 @@
   .weather-heading{align-items:flex-start;flex-direction:column;gap:4px}.weather-status{justify-items:start}.weather-status small{font-size:9px}
   .weather-compare{grid-template-columns:1fr}.weather-card{padding:14px}.weather-card header h3{font-size:18px}
   .weather-cutoff{flex-direction:column;gap:2px}.weather-cutoff span:last-child{text-align:left}
-  .weather-detail{padding:12px;margin-top:18px}.weather-controls{align-items:flex-start;flex-direction:column}.weather-controls select{max-width:100%;width:min(100%,340px)}
+  .weather-detail{padding:12px;margin-top:18px}.weather-controls{align-items:flex-start;flex-direction:column}.weather-hub-picker{grid-template-columns:1fr;gap:9px}.weather-hub-map{min-height:270px;padding:7px}.montenegro-weather-svg{width:min(100%,350px);max-height:320px}.weather-hub-list{grid-template-columns:repeat(2,minmax(0,1fr))}.weather-hub-option{min-height:46px;padding:6px}
   .weather-day{flex-basis:91px;min-height:85px}.hourly-panel{padding:10px}.hourly-heading{align-items:flex-start}.hourly-heading>span{max-width:85px;text-align:right}
 }
 

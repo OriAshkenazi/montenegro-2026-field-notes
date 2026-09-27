@@ -12,7 +12,7 @@
   ];
   const cacheKey = 'mne-weather-forecast-v1';
   const montenegro = [[41.85,19.37],[41.99,19.22],[42.02,18.56],[42.36,18.45],[42.47,18.53],[42.61,18.68],[42.76,18.69],[42.90,18.80],[43.00,18.75],[43.17,18.83],[43.55,19.36],[43.54,19.62],[43.35,19.85],[43.23,20.10],[42.95,20.35],[42.61,20.36],[42.43,20.32],[42.24,20.28],[42.05,20.14],[41.89,19.98]];
-  let payload = null, selectedDay = 0, userSelectedHub = false;
+  let payload = null, selectedDay = 0, selectedHub = 'zabljak', userSelectedHub = false;
 
   function escape(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
   function today() { return new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Podgorica',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date()); }
@@ -26,8 +26,22 @@
   }
   function inMontenegro(lat,lon) { let inside=false; for(let i=0,j=montenegro.length-1;i<montenegro.length;j=i++){const [yi,xi]=montenegro[i],[yj,xj]=montenegro[j];if((xi>lon)!==(xj>lon)&&lat<(yj-yi)*(lon-xi)/(xj-xi)+yi)inside=!inside;}return inside; }
   function nearestHub(lat,lon) { return hubs.reduce((best,hub)=>{const distance=(hub.lat-lat)**2*Math.cos(lat*Math.PI/180)**2+(hub.lon-lon)**2;return !best||distance<best.distance?{id:hub.id,distance}:best;},null).id; }
-  function setLocation(id) { $('#weatherHub').value=id; renderDetail(); }
+  function setLocation(id) { if(!hubs.some(hub=>hub.id===id))return;selectedHub=id;renderHubPicker();renderDetail(); }
   function locateUser() { if(!navigator.geolocation)return;navigator.geolocation.getCurrentPosition(({coords})=>{if(!userSelectedHub&&inMontenegro(coords.latitude,coords.longitude))setLocation(nearestHub(coords.latitude,coords.longitude));},()=>{}, {enableHighAccuracy:false,timeout:5500,maximumAge:3600000}); }
+
+  function mapPoint(lat,lon) { const minLat=41.85,maxLat=43.55,minLon=18.45,maxLon=20.36;return {x:18+(lon-minLon)*164,y:18+(maxLat-lat)*178}; }
+  function renderHubPicker() {
+    const map=$('#weatherHubMap'),list=$('#weatherHubList');if(!map||!list)return;
+    const border=montenegro.map(([lat,lon])=>mapPoint(lat,lon));
+    const path=border.map((point,index)=>`${index?'L':'M'}${point.x.toFixed(1)} ${point.y.toFixed(1)}`).join(' ')+' Z';
+    const offsets={tivat:{x:-19,y:-19},kotor:{x:19,y:-7},budva:{x:25,y:14}};
+    const marker=(hub)=>{const point=mapPoint(hub.lat,hub.lon),offset=offsets[hub.id]||{x:0,y:0},x=point.x+offset.x,y=point.y+offset.y,active=hub.id===selectedHub;return `<g class="hub-marker${active?' is-selected':''}" data-hub="${hub.id}" role="button" tabindex="0" aria-label="Select ${escape(hub.name)} forecast" aria-pressed="${active}">${offset.x||offset.y?`<path class="hub-leader" d="M${point.x.toFixed(1)} ${point.y.toFixed(1)} L${x.toFixed(1)} ${y.toFixed(1)}"/>`:''}<circle class="hub-hit" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="13"/><circle class="hub-dot" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6"/><text x="${(x+10).toFixed(1)}" y="${(y-9).toFixed(1)}">${escape(hub.name)}</text></g>`;};
+    map.innerHTML=`<svg class="montenegro-weather-svg" viewBox="0 0 350 330" role="group" aria-labelledby="weatherMapTitle weatherMapDesc"><title id="weatherMapTitle">Montenegro weather hubs</title><desc id="weatherMapDesc">Select one of eight forecast hubs. Closely spaced coastal cities use callout markers.</desc><defs><linearGradient id="mapLand" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#e3ead6"/><stop offset="1" stop-color="#c7d8bd"/></linearGradient></defs><path class="mne-map-shadow" d="${path}"/><path class="mne-map-border" d="${path}"/>${hubs.map(marker).join('')}</svg>`;
+    list.innerHTML=hubs.map(hub=>`<button class="weather-hub-option${hub.id===selectedHub?' is-selected':''}" type="button" data-hub="${hub.id}" aria-pressed="${hub.id===selectedHub}"><span class="hub-option-dot" aria-hidden="true"></span><span><b>${escape(hub.name)}</b><small>${escape(hub.region)}</small></span></button>`).join('');
+    map.querySelectorAll('[data-hub]').forEach(control=>{control.addEventListener('click',()=>chooseHub(control.dataset.hub));control.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();chooseHub(control.dataset.hub);}});});
+    list.querySelectorAll('[data-hub]').forEach(control=>control.addEventListener('click',()=>chooseHub(control.dataset.hub)));
+  }
+  function chooseHub(id) { const mapHadFocus=$('#weatherHubMap')?.contains(document.activeElement);userSelectedHub=true;selectedDay=0;setLocation(id);if(mapHadFocus)$('#weatherHubMap')?.querySelector(`[data-hub="${id}"]`)?.focus({preventScroll:true}); }
 
   // Solar altitude -6 degrees marks civil dawn and dusk. Open-Meteo supplies the daily sunrise and sunset.
   function civilTwilight(day,lat,lon,rising,zone='Europe/Podgorica') {
@@ -60,18 +74,18 @@
     banner.hidden=!risks.length;$('#alpineWarningDetails').textContent=risks.length?`Forecast threshold reached: ${risks.join('; ')}.`:'';
   }
   function renderDays() {
-    const hub=hubs.find(item=>item.id===$('#weatherHub').value),daily=payload?.locations?.[hub?.id]?.daily,container=$('#weatherDays');if(!daily||!container)return;
+    const hub=hubs.find(item=>item.id===selectedHub),daily=payload?.locations?.[hub?.id]?.daily,container=$('#weatherDays');if(!daily||!container)return;
     const dates=tripDates();if(!dates.length){container.innerHTML='';$('#weatherLoading').textContent='The trip window is complete; no forecast dates remain.';$('#weatherLoading').hidden=false;$('#weatherForecast').hidden=true;return;}
     selectedDay=Math.min(selectedDay,dates.length-1);
     container.innerHTML=dates.map((day,position)=>({day,position,index:daily.time.indexOf(day)})).filter(item=>item.index>=0).map(({day,position,index:i})=>{const low=daily.temperature_2m_min?.[i],high=daily.temperature_2m_max?.[i],chance=daily.precipitation_probability_max?.[i],risk=(low!=null&&low<=2)||(chance??0)>60,dawn=civilTwilight(day,hub.lat,hub.lon,true,payload.locations[hub.id].timezone),dusk=civilTwilight(day,hub.lat,hub.lon,false,payload.locations[hub.id].timezone);return `<button type="button" class="weather-day" data-weather-day="${position}" aria-pressed="${position===selectedDay}"><span>${dateLabel(day)}</span><b>${high==null?'—':`${Math.round(high)}°`} / ${low==null?'—':`${Math.round(low)}°`}</b><small class="${risk?'weather-risk':''}">${chance==null?'—':`${Math.round(chance)}% rain`}${risk?' · caution':''}</small><small>☼ ${timeLabel(daily.sunrise?.[i],payload.locations[hub.id].timezone)} · Sunset ${timeLabel(daily.sunset?.[i],payload.locations[hub.id].timezone)}</small><small>Civil ${dawn}–${dusk}</small></button>`;}).join('');
     container.querySelectorAll('[data-weather-day]').forEach(button=>button.addEventListener('click',()=>{selectedDay=Number(button.dataset.weatherDay);renderDays();renderCompare('tivat','coastWeather');renderCompare('zabljak','alpineWeather');renderHourly();}));
   }
   function renderHourly() {
-    const hub=hubs.find(item=>item.id===$('#weatherHub').value),data=payload?.locations?.[hub?.id],hourly=data?.hourly,day=tripDates()[selectedDay],container=$('#hourlyScroller');if(!hub||!hourly||!container||!day)return;
+    const hub=hubs.find(item=>item.id===selectedHub),data=payload?.locations?.[hub?.id],hourly=data?.hourly,day=tripDates()[selectedDay],container=$('#hourlyScroller');if(!hub||!hourly||!container||!day)return;
     $('#hourlyTitle').textContent=`${hub.name} · ${dateLabel(day)} hourly outlook`;const indexes=hourly.time.map((value,i)=>value.startsWith(day)?i:-1).filter(i=>i>=0),maxRain=Math.max(1,...indexes.map(i=>hourly.rain?.[i]||0));
     container.innerHTML=indexes.map(i=>{const rain=hourly.rain?.[i]||0,chance=hourly.precipitation_probability?.[i],temp=hourly.temperature_2m?.[i],time=timeLabel(hourly.time[i],data.timezone),height=rain?Math.max(10,Math.round(rain/maxRain*100)):3;return `<div class="hour-cell" aria-label="${escape(time)}, ${temp==null?'temperature unavailable':`${Math.round(temp)} degrees`}, ${chance==null?'precipitation chance unavailable':`${Math.round(chance)} percent precipitation chance`}, ${rain.toFixed(1)} millimeters rain"><time>${escape(time)}</time><b>${temp==null?'—':`${Math.round(temp)}°`}</b><span class="hour-rain" title="${rain.toFixed(1)} mm rain"><i style="height:${height}%"></i></span><small>${rain.toFixed(1)} mm</small><span class="hour-precip">${chance==null?'—':`${Math.round(chance)}%`}</span></div>`;}).join('')||'<p class="weather-empty">Hourly forecast unavailable for this day.</p>';
   }
-  function renderDetail() { const hub=hubs.find(item=>item.id===$('#weatherHub').value);if(!hub)return;$('#weatherHubTitle').textContent=`${hub.name} · ${hub.region}`;$('#weatherLoading').hidden=!!payload;$('#weatherForecast').hidden=!payload;if(payload){renderDays();renderHourly();} }
+  function renderDetail() { const hub=hubs.find(item=>item.id===selectedHub);if(!hub)return;$('#weatherHubTitle').textContent=`${hub.name} · ${hub.region}`;$('#weatherLoading').hidden=!!payload;$('#weatherForecast').hidden=!payload;if(payload){renderDays();renderHourly();} }
   function display(data,mode) {
     payload=data;const badge=$('#weatherMode');badge.textContent=mode==='offline'?'Offline Mode - Showing Cached Forecast':mode==='cached'?'Saved forecast · checking for updates':'Live forecast';badge.classList.toggle('offline',mode==='offline');badge.classList.toggle('loading',mode==='cached');
     $('#weatherUpdated').textContent=`Last updated: ${new Intl.DateTimeFormat('en-GB',{dateStyle:'medium',timeStyle:'short'}).format(new Date(data.updatedAt))}`;$('#weatherError').hidden=true;$('#weatherLoading').hidden=true;$('#weatherForecast').hidden=false;
@@ -91,7 +105,7 @@
   function init() {
     try { const saved=JSON.parse(localStorage.getItem(cacheKey)||'null');if(saved?.locations)display(saved,navigator.onLine?'cached':'offline'); } catch {}
     if(!navigator.onLine&&!payload){$('#weatherMode').textContent='Offline Mode - No Cached Forecast';$('#weatherMode').classList.add('offline');$('#weatherLoading').textContent='Forecast is not cached yet. Connect once to load weather data.';}
-    $('#weatherHub').addEventListener('change',()=>{userSelectedHub=true;selectedDay=0;renderDetail();});
+    renderHubPicker();
     refresh();locateUser();addEventListener('online',refresh);
   }
   init();

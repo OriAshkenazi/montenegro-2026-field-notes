@@ -5,7 +5,7 @@
   <meta name="theme-color" content="#173c37"><meta name="description" content="Offline-ready Montenegro trip plan, 1–6 October 2026.">
   <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
-  <link rel="stylesheet" href="style.css?rev=2026-09-27p"><title>Montenegro · Field Notes</title>
+  <link rel="stylesheet" href="style.css?rev=2026-09-27q"><title>Montenegro · Field Notes</title>
 </head>
 <body>
   <header class="topbar"><a class="brand" href="#top"><span class="brand-mark">M</span><span>FIELD NOTES <small>Montenegro · 01—06 October 2026</small></span></a><div class="top-actions"><span class="offline-label"><i></i><span id="connection">Trip data ready</span></span><button id="install" class="button quiet" hidden>Install app</button></div></header>
@@ -32,7 +32,8 @@
       <div id="alpineWarning" class="alpine-warning" role="alert" hidden><span aria-hidden="true">!</span><div><strong>Alpine Pass Caution: Risk of black ice / early autumn snow flurries. Consider the Alpine Weather Fallback Branch.</strong><p id="alpineWarningDetails"></p></div></div>
       <div class="weather-cutoff"><span>17:30 daylight driving cut-off</span><span>Plan high altitude driving to finish before this local time.</span></div>
       <div class="weather-compare"><article id="coastWeather" class="weather-card coast-weather"></article><article id="alpineWeather" class="weather-card alpine-weather"></article></div>
-      <section class="weather-detail"><div class="weather-controls"><div><p class="eyebrow">Route hub forecast</p><h3 id="weatherHubTitle">Žabljak · Durmitor</h3></div><label for="weatherHub">Location<select id="weatherHub" aria-label="Choose forecast location"><option value="tivat">Tivat · Bay of Kotor</option><option value="kotor">Kotor · Bay of Kotor</option><option value="budva">Budva · Adriatic coast</option><option value="podgorica">Podgorica · Central</option><option value="virpazar">Virpazar · Lake Skadar</option><option value="zabljak">Žabljak · Durmitor</option><option value="sedlo">Sedlo Pass · P14</option><option value="kolasin">Kolašin · Highlands</option></select></label></div>
+      <section class="weather-detail"><div class="weather-controls"><div><p class="eyebrow">Route hub forecast</p><h3 id="weatherHubTitle">Žabljak · Durmitor</h3></div><span class="map-instruction">Select a hub on the map or from the city list</span></div>
+        <div class="weather-hub-picker"><div id="weatherHubMap" class="weather-hub-map" aria-label="Montenegro weather hub map"></div><div id="weatherHubList" class="weather-hub-list" role="group" aria-label="Choose a forecast city"></div></div>
         <div id="weatherLoading" class="weather-empty">Loading trip-window forecast…</div>
         <div id="weatherForecast" hidden><div id="weatherDays" class="weather-days" aria-label="Remaining trip dates"></div><div class="hourly-panel"><div class="hourly-heading"><div><h4 id="hourlyTitle">Hourly outlook</h4><p>Temperature and rain chance · local time</p></div><span>Swipe for more hours ↔</span></div><div id="hourlyScroller" class="hourly-scroller" aria-label="Hourly temperature and precipitation forecast"></div></div></div>
       </section>
@@ -47,5 +48,5 @@
     <div class="map-body"><div class="map-toolbar"><div><b>Montenegro route</b><small id="mapStatus" role="status">Map tiles load when online; saved waypoints work offline.</small></div><label class="map-filter-label">Show <select id="mapDayFilter" aria-label="Filter map by itinerary day"><option value="all">All days</option></select></label><button id="mapClose" type="button" aria-label="Collapse map">Collapse</button></div><div id="mapCanvas" class="map-canvas" role="application" aria-label="Map with itinerary locations"></div><div id="mapWaypoints" class="map-waypoints" aria-label="Offline waypoint list"></div></div>
   </aside>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="" defer></script>
-  <script src="app.js?rev=2026-09-27m" defer></script><script src="weather.js?rev=2026-09-27b" defer></script>
+  <script src="app.js?rev=2026-09-27m" defer></script><script src="weather.js?rev=2026-09-27c" defer></script>
 </body></html>
