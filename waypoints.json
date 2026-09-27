@@ -1,0 +1,2592 @@
+{
+  "version": 1,
+  "waypoints": [
+    {
+      "id": "tiv-rental-pickup",
+      "name": "TIV rental pickup",
+      "category": "Parking",
+      "lat": 42.4047,
+      "lng": 18.7233,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=TIV%20rental%20pickup%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [
+          1
+        ],
+        "fallback": [
+          1
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "tiv-zabljak-direct-route-via-kotor-risan-grahovo-niksic-and-savnik",
+      "name": "TIV → Žabljak direct route via Kotor, Risan, Grahovo, Nikšić and Šavnik",
+      "category": "Parking",
+      "lat": 42.4047,
+      "lng": 18.7233,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&origin=Tivat%20Airport%2C%20Montenegro&destination=%C5%BDabljak%2C%20Montenegro&waypoints=Kotor%2C%20Montenegro%7CRisan%2C%20Montenegro%7CGrahovo%2C%20Montenegro%7CNik%C5%A1i%C4%87%2C%20Montenegro%7C%C5%A0avnik%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [
+          1
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "zabljak-lodging-parking",
+      "name": "Žabljak lodging parking",
+      "category": "Parking",
+      "lat": 43.1555,
+      "lng": 19.1226,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=%C5%BDabljak%20lodging%20parking%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [
+          1,
+          2
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "kotor-contingency-lodging-area",
+      "name": "Kotor contingency lodging area",
+      "category": "Parking",
+      "lat": 42.4247,
+      "lng": 18.7712,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kotor%20contingency%20lodging%20area%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [
+          1
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "amscg-road-conditions",
+      "name": "AMSCG road conditions",
+      "category": "Parking",
+      "lat": 42.4247,
+      "lng": 18.7712,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=AMSCG%20road%20conditions%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [
+          1
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "almeco-cafe-negro-bar-restaurant-tivat-airport",
+      "name": "ALMECO Café Negro Bar-Restaurant · Tivat Airport",
+      "category": "Parking",
+      "lat": 42.4047,
+      "lng": 18.7233,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=ALMECO%20Caf%C3%A9%20Negro%20Bar-Restaurant%20%C2%B7%20Tivat%20Airport%2C%20Montenegro&travelmode=driving",
+      "cash": "Payment methods vary; confirm at counter",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [
+          1
+        ],
+        "fallback": [
+          1,
+          6
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "zlatni-papagaj-zabljak",
+      "name": "Zlatni Papagaj · Žabljak",
+      "category": "Meal",
+      "lat": 43.1555,
+      "lng": 19.1226,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Zlatni%20Papagaj%20%C2%B7%20%C5%BDabljak%2C%20Montenegro&travelmode=driving",
+      "cash": "Cash-only unverified; carry cash and ask",
+      "tip": "Check October hours and payment method before setting out.",
+      "days": {
+        "primary": [
+          1
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "voli-hipermarket-radanovici",
+      "name": "Voli Hipermarket Radanovići",
+      "category": "Supermarket",
+      "lat": 42.352,
+      "lng": 18.765,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Voli%20Hipermarket%20Radanovi%C4%87i%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Stock up before the mountain leg; opening hours can change.",
+      "days": {
+        "primary": [
+          1
+        ],
+        "fallback": [
+          1
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "aroma-311-zabljak",
+      "name": "Aroma 311 · Žabljak",
+      "category": "Supermarket",
+      "lat": 43.1555,
+      "lng": 19.1226,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Aroma%20311%20%C2%B7%20%C5%BDabljak%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Stock up before the mountain leg; opening hours can change.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "black-lake-parking",
+      "name": "Black Lake parking",
+      "category": "Parking",
+      "lat": 43.1445,
+      "lng": 19.0861,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Black%20Lake%20parking%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [
+          2
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "black-lake-trailhead",
+      "name": "Black Lake trailhead",
+      "category": "Viewpoint",
+      "lat": 43.1445,
+      "lng": 19.0861,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Black%20Lake%20trailhead%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Use a signed pullout and check weather and daylight first.",
+      "days": {
+        "primary": [
+          2
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "bosaca-village-parking",
+      "name": "Bosača village parking",
+      "category": "Parking",
+      "lat": 43.1761,
+      "lng": 19.0957,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Bosa%C4%8Da%20village%20parking%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [
+          2
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "kotor-zabljak-contingency-route",
+      "name": "Kotor → Žabljak contingency route",
+      "category": "Parking",
+      "lat": 43.1555,
+      "lng": 19.1226,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&origin=Kotor%2C%20Montenegro&destination=%C5%BDabljak%2C%20Montenegro&waypoints=Grahovo%2C%20Montenegro%7CNik%C5%A1i%C4%87%2C%20Montenegro%7C%C5%A0avnik%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [
+          2
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "amscg-road-updates",
+      "name": "AMSCG road updates",
+      "category": "Parking",
+      "lat": 42.4247,
+      "lng": 18.7712,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=AMSCG%20road%20updates%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [
+          2,
+          3
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "momcilov-grad",
+      "name": "Momčilov Grad",
+      "category": "Meal",
+      "lat": 42.4247,
+      "lng": 18.7712,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Mom%C4%8Dilov%20Grad%2C%20Montenegro&travelmode=driving",
+      "cash": "Cash-only unverified; carry cash and ask",
+      "tip": "Check October hours and payment method before setting out.",
+      "days": {
+        "primary": [
+          2
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "restaurant-oro",
+      "name": "Restaurant ORO",
+      "category": "Meal",
+      "lat": 42.4247,
+      "lng": 18.7712,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Restaurant%20ORO%2C%20Montenegro&travelmode=driving",
+      "cash": "Cash-only unverified; carry cash and ask",
+      "tip": "Check October hours and payment method before setting out.",
+      "days": {
+        "primary": [
+          2,
+          3
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "kacun-zabljak",
+      "name": "Kaćun · Žabljak",
+      "category": "Coffee",
+      "lat": 43.1555,
+      "lng": 19.1226,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Ka%C4%87un%20%C2%B7%20%C5%BDabljak%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm opening hours; keep transfer-day stops brief.",
+      "days": {
+        "primary": [
+          2,
+          3
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "zabljak-lodging",
+      "name": "Žabljak lodging",
+      "category": "Parking",
+      "lat": 43.1555,
+      "lng": 19.1226,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=%C5%BDabljak%20lodging%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [
+          3,
+          4
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "p14-sedlo-pass-route",
+      "name": "P14 Sedlo Pass route",
+      "category": "Parking",
+      "lat": 42.4247,
+      "lng": 18.7712,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&origin=%C5%BDabljak%2C%20Montenegro&destination=%C5%BDabljak%2C%20Montenegro&waypoints=Trsa%2C%20Montenegro%7CPlu%C5%BEine%2C%20Montenegro%7CPiva%20Lake%20viewpoint%2C%20Plu%C5%BEine%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [
+          3
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "trsa-village-pullout",
+      "name": "Trsa village pullout",
+      "category": "Viewpoint",
+      "lat": 43.1692,
+      "lng": 18.9831,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Trsa%20village%20pullout%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Use a signed pullout and check weather and daylight first.",
+      "days": {
+        "primary": [
+          3
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "piva-viewpoint",
+      "name": "Piva viewpoint",
+      "category": "Viewpoint",
+      "lat": 43.1455,
+      "lng": 18.834,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Piva%20viewpoint%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Use a signed pullout and check weather and daylight first.",
+      "days": {
+        "primary": [
+          3
+        ],
+        "fallback": []
+      },
+      "aliases": [
+        "Piva viewpoint",
+        "Piva Lake viewpoint"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "pluzine-lakeside",
+      "name": "Plužine lakeside",
+      "category": "Viewpoint",
+      "lat": 43.155,
+      "lng": 18.839,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Plu%C5%BEine%20lakeside%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Use a signed pullout and check weather and daylight first.",
+      "days": {
+        "primary": [
+          3
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "optional-mratinje-dam",
+      "name": "Optional Mratinje Dam",
+      "category": "Viewpoint",
+      "lat": 43.2185,
+      "lng": 18.8465,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Optional%20Mratinje%20Dam%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Use a signed pullout and check weather and daylight first.",
+      "days": {
+        "primary": [
+          3
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "zabljak-packed-lunch-buy-at-aroma-311",
+      "name": "Žabljak packed lunch (buy at Aroma 311)",
+      "category": "Supermarket",
+      "lat": 43.1555,
+      "lng": 19.1226,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=%C5%BDabljak%20packed%20lunch%20%28buy%20at%20Aroma%20311%29%2C%20Montenegro&travelmode=driving",
+      "cash": "Cash-only not applicable; grocery payment varies",
+      "tip": "Stock up before the mountain leg; opening hours can change.",
+      "days": {
+        "primary": [
+          3
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "restoran-socica-pluzine",
+      "name": "Restoran Sočica · Plužine",
+      "category": "Meal",
+      "lat": 43.155,
+      "lng": 18.839,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Restoran%20So%C4%8Dica%20%C2%B7%20Plu%C5%BEine%2C%20Montenegro&travelmode=driving",
+      "cash": "Cards reported; cash-only not indicated",
+      "tip": "Check October hours and payment method before setting out.",
+      "days": {
+        "primary": [
+          3
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "savnik",
+      "name": "Šavnik",
+      "category": "Activity",
+      "lat": 42.9561,
+      "lng": 19.0961,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=%C5%A0avnik%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [
+          4
+        ],
+        "fallback": []
+      },
+      "aliases": [
+        "Šavnik",
+        "Savnik"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "niksic",
+      "name": "Nikšić",
+      "category": "Activity",
+      "lat": 42.7731,
+      "lng": 18.9445,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Nik%C5%A1i%C4%87%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [
+          4
+        ],
+        "fallback": []
+      },
+      "aliases": [
+        "Nikšić",
+        "Niksic"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "grahovo",
+      "name": "Grahovo",
+      "category": "Activity",
+      "lat": 42.6569,
+      "lng": 18.6495,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Grahovo%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [
+          4
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "kotor-hotel-parking",
+      "name": "Kotor hotel parking",
+      "category": "Parking",
+      "lat": 42.4247,
+      "lng": 18.7712,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kotor%20hotel%20parking%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [
+          4,
+          5
+        ],
+        "fallback": [
+          1,
+          3,
+          4
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "kotor-old-town-parking",
+      "name": "Kotor Old Town parking",
+      "category": "Parking",
+      "lat": 42.4247,
+      "lng": 18.7712,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kotor%20Old%20Town%20parking%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [
+          4
+        ],
+        "fallback": [
+          1,
+          2
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "restaurant-kastel-niksic",
+      "name": "Restaurant Kastel · Nikšić",
+      "category": "Meal",
+      "lat": 42.7731,
+      "lng": 18.9445,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Restaurant%20Kastel%20%C2%B7%20Nik%C5%A1i%C4%87%2C%20Montenegro&travelmode=driving",
+      "cash": "Cash-only unverified; carry cash and ask",
+      "tip": "Check October hours and payment method before setting out.",
+      "days": {
+        "primary": [
+          4
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "ombra-old-town",
+      "name": "Ombra · Old Town",
+      "category": "Meal",
+      "lat": 42.4247,
+      "lng": 18.7712,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Ombra%20%C2%B7%20Old%20Town%2C%20Montenegro&travelmode=driving",
+      "cash": "Cash-only unverified; carry cash",
+      "tip": "Check October hours and payment method before setting out.",
+      "days": {
+        "primary": [
+          4
+        ],
+        "fallback": [
+          4
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "cave-coffee-kotor",
+      "name": "CAVE Coffee · Kotor",
+      "category": "Coffee",
+      "lat": 42.4247,
+      "lng": 18.7712,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=CAVE%20Coffee%20%C2%B7%20Kotor%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm opening hours; keep transfer-day stops brief.",
+      "days": {
+        "primary": [
+          4
+        ],
+        "fallback": [
+          4,
+          5
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "aroma-city-tabacina-kotor",
+      "name": "Aroma City Tabačina · Kotor",
+      "category": "Supermarket",
+      "lat": 42.4247,
+      "lng": 18.7712,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Aroma%20City%20Taba%C4%8Dina%20%C2%B7%20Kotor%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Stock up before the mountain leg; opening hours can change.",
+      "days": {
+        "primary": [
+          4,
+          5
+        ],
+        "fallback": [
+          3,
+          4
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "virpazar-parking",
+      "name": "Virpazar parking",
+      "category": "Parking",
+      "lat": 42.2476,
+      "lng": 19.0912,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Virpazar%20parking%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [
+          5
+        ],
+        "fallback": [
+          4
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "virpazar-boat-pier",
+      "name": "Virpazar boat pier",
+      "category": "Viewpoint",
+      "lat": 42.2476,
+      "lng": 19.0912,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Virpazar%20boat%20pier%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Use a signed pullout and check weather and daylight first.",
+      "days": {
+        "primary": [
+          5
+        ],
+        "fallback": [
+          4
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "winery-garnet-godinje",
+      "name": "Winery Garnet · Godinje",
+      "category": "Meal",
+      "lat": 42.225,
+      "lng": 19.0952,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Winery%20Garnet%20%C2%B7%20Godinje%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Check October hours and payment method before setting out.",
+      "days": {
+        "primary": [
+          5
+        ],
+        "fallback": [
+          4
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "perast-parking",
+      "name": "Perast parking",
+      "category": "Parking",
+      "lat": 42.486,
+      "lng": 18.696,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Perast%20parking%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [
+          5
+        ],
+        "fallback": [
+          2
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "our-lady-of-the-rocks-pier",
+      "name": "Our Lady of the Rocks pier",
+      "category": "Viewpoint",
+      "lat": 42.4854,
+      "lng": 18.6822,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Our%20Lady%20of%20the%20Rocks%20pier%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Use a signed pullout and check weather and daylight first.",
+      "days": {
+        "primary": [
+          5
+        ],
+        "fallback": [
+          2
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "budva-old-town-parking",
+      "name": "Budva Old Town parking",
+      "category": "Parking",
+      "lat": 42.2842,
+      "lng": 18.84,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Budva%20Old%20Town%20parking%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [
+          5
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "sveti-stefan-viewpoint",
+      "name": "Sveti Stefan viewpoint",
+      "category": "Viewpoint",
+      "lat": 42.2574,
+      "lng": 18.897,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Sveti%20Stefan%20viewpoint%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Use a signed pullout and check weather and daylight first.",
+      "days": {
+        "primary": [
+          5
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "restaurant-pelikan-virpazar",
+      "name": "Restaurant Pelikan · Virpazar",
+      "category": "Meal",
+      "lat": 42.2476,
+      "lng": 19.0912,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Restaurant%20Pelikan%20%C2%B7%20Virpazar%2C%20Montenegro&travelmode=driving",
+      "cash": "Cash-only unverified; carry cash",
+      "tip": "Check October hours and payment method before setting out.",
+      "days": {
+        "primary": [
+          5
+        ],
+        "fallback": [
+          4
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "przun-old-town",
+      "name": "Pržun · Old Town",
+      "category": "Meal",
+      "lat": 42.4247,
+      "lng": 18.7712,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Pr%C5%BEun%20%C2%B7%20Old%20Town%2C%20Montenegro&travelmode=driving",
+      "cash": "Cash-only unverified; carry cash and ask",
+      "tip": "Check October hours and payment method before setting out.",
+      "days": {
+        "primary": [
+          5
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "small-talks-kotor",
+      "name": "Small Talks · Kotor",
+      "category": "Coffee",
+      "lat": 42.4247,
+      "lng": 18.7712,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Small%20Talks%20%C2%B7%20Kotor%2C%20Montenegro&travelmode=driving",
+      "cash": "Cash-only unverified; card/cash",
+      "tip": "Confirm opening hours; keep transfer-day stops brief.",
+      "days": {
+        "primary": [
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          6
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "kotor-to-tivat-airport",
+      "name": "Kotor to Tivat Airport",
+      "category": "Parking",
+      "lat": 42.4047,
+      "lng": 18.7233,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&origin=Kotor%2C%20Montenegro&destination=Tivat%20Airport&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [
+          6
+        ],
+        "fallback": [
+          6
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "tivat-airport-rental-return",
+      "name": "Tivat Airport rental return",
+      "category": "Parking",
+      "lat": 42.4047,
+      "lng": 18.7233,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Tivat%20Airport%20rental%20return%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [
+          6
+        ],
+        "fallback": [
+          6
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "tivat-airport-cafe-terminal-food",
+      "name": "Tivat Airport café / terminal food",
+      "category": "Parking",
+      "lat": 42.4047,
+      "lng": 18.7233,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Tivat%20Airport%20caf%C3%A9%20/%20terminal%20food%2C%20Montenegro&travelmode=driving",
+      "cash": "Payment methods vary",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [
+          6
+        ],
+        "fallback": []
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "lepetane-ferry-terminal",
+      "name": "Lepetane ferry terminal",
+      "category": "Parking",
+      "lat": 42.466,
+      "lng": 18.666,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Lepetane%20ferry%20terminal%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [],
+        "fallback": [
+          1
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "kamenari-ferry-terminal",
+      "name": "Kamenari ferry terminal",
+      "category": "Parking",
+      "lat": 42.476,
+      "lng": 18.674,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kamenari%20ferry%20terminal%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [],
+        "fallback": [
+          1
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "ombra-kotor-old-town",
+      "name": "Ombra · Kotor Old Town",
+      "category": "Meal",
+      "lat": 42.4247,
+      "lng": 18.7712,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Ombra%20%C2%B7%20Kotor%20Old%20Town%2C%20Montenegro&travelmode=driving",
+      "cash": "Cash-only unverified; carry cash and ask",
+      "tip": "Check October hours and payment method before setting out.",
+      "days": {
+        "primary": [],
+        "fallback": [
+          1
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "idea-butiko-radanovici",
+      "name": "IDEA Butiko Radanovići",
+      "category": "Supermarket",
+      "lat": 42.352,
+      "lng": 18.765,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=IDEA%20Butiko%20Radanovi%C4%87i%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Stock up before the mountain leg; opening hours can change.",
+      "days": {
+        "primary": [],
+        "fallback": [
+          1
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "kotor-city-walls-entrance",
+      "name": "Kotor city walls entrance",
+      "category": "Viewpoint",
+      "lat": 42.4247,
+      "lng": 18.7712,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kotor%20city%20walls%20entrance%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Use a signed pullout and check weather and daylight first.",
+      "days": {
+        "primary": [],
+        "fallback": [
+          2
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "konoba-scala-santa-kotor",
+      "name": "Konoba Scala Santa · Kotor",
+      "category": "Meal",
+      "lat": 42.4247,
+      "lng": 18.7712,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Konoba%20Scala%20Santa%20%C2%B7%20Kotor%2C%20Montenegro&travelmode=driving",
+      "cash": "Cash and cards reported; cash-only no",
+      "tip": "Check October hours and payment method before setting out.",
+      "days": {
+        "primary": [],
+        "fallback": [
+          2
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "dobrotski-dvori",
+      "name": "Dobrotski Dvori",
+      "category": "Activity",
+      "lat": 42.4247,
+      "lng": 18.7712,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Dobrotski%20Dvori%2C%20Montenegro&travelmode=driving",
+      "cash": "Cash-only unverified; ask",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [],
+        "fallback": [
+          2
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "aroma-18-tc-kamelija",
+      "name": "Aroma 18 · TC Kamelija",
+      "category": "Supermarket",
+      "lat": 42.4247,
+      "lng": 18.7712,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Aroma%2018%20%C2%B7%20TC%20Kamelija%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Stock up before the mountain leg; opening hours can change.",
+      "days": {
+        "primary": [],
+        "fallback": [
+          2,
+          5
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "lovcen-visitor-parking",
+      "name": "Lovćen visitor parking",
+      "category": "Parking",
+      "lat": 42.3994,
+      "lng": 18.83,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Lov%C4%87en%20visitor%20parking%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [],
+        "fallback": [
+          3
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "ivanova-korita-parking",
+      "name": "Ivanova Korita parking",
+      "category": "Parking",
+      "lat": 42.3784,
+      "lng": 18.8311,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Ivanova%20Korita%20parking%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [],
+        "fallback": [
+          3
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "cetinje-parking",
+      "name": "Cetinje parking",
+      "category": "Parking",
+      "lat": 42.3931,
+      "lng": 18.911,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Cetinje%20parking%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [],
+        "fallback": [
+          3
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "ivanov-konak-lovcen",
+      "name": "Ivanov Konak · Lovćen",
+      "category": "Activity",
+      "lat": 42.3994,
+      "lng": 18.83,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Ivanov%20Konak%20%C2%B7%20Lov%C4%87en%2C%20Montenegro&travelmode=driving",
+      "cash": "Cash-only unverified; carry cash",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [],
+        "fallback": [
+          3
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "kafana-kod-pera-na-bukovici",
+      "name": "Kafana Kod Pera na Bukovici",
+      "category": "Meal",
+      "lat": 42.4247,
+      "lng": 18.7712,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kafana%20Kod%20Pera%20na%20Bukovici%2C%20Montenegro&travelmode=driving",
+      "cash": "Cash-only unverified; carry cash",
+      "tip": "Check October hours and payment method before setting out.",
+      "days": {
+        "primary": [],
+        "fallback": [
+          3
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "regent-porto-montenegro-spa",
+      "name": "Regent Porto Montenegro spa",
+      "category": "Activity",
+      "lat": 42.431,
+      "lng": 18.694,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Regent%20Porto%20Montenegro%20spa%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [],
+        "fallback": [
+          5
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "porto-montenegro-parking",
+      "name": "Porto Montenegro parking",
+      "category": "Parking",
+      "lat": 42.431,
+      "lng": 18.694,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Porto%20Montenegro%20parking%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [],
+        "fallback": [
+          5
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "kotor-waterfront",
+      "name": "Kotor waterfront",
+      "category": "Viewpoint",
+      "lat": 42.4247,
+      "lng": 18.7712,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kotor%20waterfront%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Use a signed pullout and check weather and daylight first.",
+      "days": {
+        "primary": [],
+        "fallback": [
+          5
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "przun-kotor-old-town",
+      "name": "Pržun · Kotor Old Town",
+      "category": "Meal",
+      "lat": 42.4247,
+      "lng": 18.7712,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Pr%C5%BEun%20%C2%B7%20Kotor%20Old%20Town%2C%20Montenegro&travelmode=driving",
+      "cash": "Cash-only unverified; carry cash",
+      "tip": "Check October hours and payment method before setting out.",
+      "days": {
+        "primary": [],
+        "fallback": [
+          5
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "galion-suranj",
+      "name": "Galion · Šuranj",
+      "category": "Meal",
+      "lat": 42.4247,
+      "lng": 18.7712,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Galion%20%C2%B7%20%C5%A0uranj%2C%20Montenegro&travelmode=driving",
+      "cash": "Cash-only unverified; ask",
+      "tip": "Check October hours and payment method before setting out.",
+      "days": {
+        "primary": [],
+        "fallback": [
+          5
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "kotor",
+      "name": "Kotor",
+      "category": "Activity",
+      "lat": 42.4247,
+      "lng": 18.7712,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kotor%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "aliases": [
+        "Kotor",
+        "Kotor Old Town",
+        "Old Town",
+        "Kotor waterfront",
+        "Kotor serpentine"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "tivat",
+      "name": "Tivat",
+      "category": "Activity",
+      "lat": 42.4304,
+      "lng": 18.696,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Tivat%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "aliases": [
+        "Tivat"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "tivat-airport",
+      "name": "Tivat Airport",
+      "category": "Parking",
+      "lat": 42.4047,
+      "lng": 18.7233,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Tivat%20Airport%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "aliases": [
+        "TIV",
+        "Tivat Airport",
+        "terminal"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "zabljak",
+      "name": "Žabljak",
+      "category": "Activity",
+      "lat": 43.1555,
+      "lng": 19.1226,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=%C5%BDabljak%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "aliases": [
+        "Žabljak",
+        "Zabljak"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "black-lake",
+      "name": "Black Lake",
+      "category": "Viewpoint",
+      "lat": 43.1445,
+      "lng": 19.0861,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Black%20Lake%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Use a signed pullout and check weather and daylight first.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "aliases": [
+        "Black Lake",
+        "Crno Jezero"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "bosaca",
+      "name": "Bosača",
+      "category": "Activity",
+      "lat": 43.1761,
+      "lng": 19.0957,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Bosa%C4%8Da%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "aliases": [
+        "Bosača",
+        "Bosaca"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "trsa",
+      "name": "Trsa",
+      "category": "Activity",
+      "lat": 43.1692,
+      "lng": 18.9831,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Trsa%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "aliases": [
+        "Trsa"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "pluzine",
+      "name": "Plužine",
+      "category": "Activity",
+      "lat": 43.155,
+      "lng": 18.839,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Plu%C5%BEine%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "aliases": [
+        "Plužine",
+        "Pluzine"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "mratinje-dam",
+      "name": "Mratinje Dam",
+      "category": "Viewpoint",
+      "lat": 43.2185,
+      "lng": 18.8465,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Mratinje%20Dam%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Use a signed pullout and check weather and daylight first.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "aliases": [
+        "Mratinje Dam"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "radanovici",
+      "name": "Radanovići",
+      "category": "Activity",
+      "lat": 42.352,
+      "lng": 18.765,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Radanovi%C4%87i%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "virpazar",
+      "name": "Virpazar",
+      "category": "Activity",
+      "lat": 42.2476,
+      "lng": 19.0912,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Virpazar%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "aliases": [
+        "Virpazar",
+        "Lake Skadar",
+        "Skadar"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "godinje",
+      "name": "Godinje",
+      "category": "Activity",
+      "lat": 42.225,
+      "lng": 19.0952,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Godinje%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "aliases": [
+        "Godinje"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "perast",
+      "name": "Perast",
+      "category": "Activity",
+      "lat": 42.486,
+      "lng": 18.696,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Perast%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "aliases": [
+        "Perast"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "our-lady-of-the-rocks",
+      "name": "Our Lady of the Rocks",
+      "category": "Viewpoint",
+      "lat": 42.4854,
+      "lng": 18.6822,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Our%20Lady%20of%20the%20Rocks%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Use a signed pullout and check weather and daylight first.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "aliases": [
+        "Our Lady of the Rocks"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "kamenari",
+      "name": "Kamenari",
+      "category": "Activity",
+      "lat": 42.476,
+      "lng": 18.674,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kamenari%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "aliases": [
+        "Kamenari"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "lepetane",
+      "name": "Lepetane",
+      "category": "Activity",
+      "lat": 42.466,
+      "lng": 18.666,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Lepetane%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "aliases": [
+        "Lepetane"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "lovcen",
+      "name": "Lovćen",
+      "category": "Activity",
+      "lat": 42.3994,
+      "lng": 18.83,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Lov%C4%87en%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "aliases": [
+        "Lovćen",
+        "Lovcen"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "ivanova-korita",
+      "name": "Ivanova Korita",
+      "category": "Viewpoint",
+      "lat": 42.3784,
+      "lng": 18.8311,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Ivanova%20Korita%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Use a signed pullout and check weather and daylight first.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "aliases": [
+        "Ivanova Korita"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "cetinje",
+      "name": "Cetinje",
+      "category": "Activity",
+      "lat": 42.3931,
+      "lng": 18.911,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Cetinje%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "aliases": [
+        "Cetinje"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "budva",
+      "name": "Budva",
+      "category": "Activity",
+      "lat": 42.2842,
+      "lng": 18.84,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Budva%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "aliases": [
+        "Budva"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "sveti-stefan",
+      "name": "Sveti Stefan",
+      "category": "Activity",
+      "lat": 42.2574,
+      "lng": 18.897,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Sveti%20Stefan%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "aliases": [
+        "Sveti Stefan"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "porto-montenegro",
+      "name": "Porto Montenegro",
+      "category": "Activity",
+      "lat": 42.431,
+      "lng": 18.694,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Porto%20Montenegro%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "risan",
+      "name": "Risan",
+      "category": "Activity",
+      "lat": 42.515,
+      "lng": 18.695,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Risan%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "aliases": [
+        "Risan"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "njegusi",
+      "name": "Njeguši",
+      "category": "Activity",
+      "lat": 42.432,
+      "lng": 18.808,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Njegu%C5%A1i%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "aliases": [
+        "Njeguši",
+        "Njegusi"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "podgorica",
+      "name": "Podgorica",
+      "category": "Activity",
+      "lat": 42.4304,
+      "lng": 19.2594,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Podgorica%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "aliases": [
+        "Podgorica"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "herceg-novi",
+      "name": "Herceg Novi",
+      "category": "Activity",
+      "lat": 42.453,
+      "lng": 18.537,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Herceg%20Novi%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and operating hours before departure.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fallback": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "aliases": [
+        "Herceg Novi"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "kotor-old-town-walls-san-giovanni",
+      "name": "Kotor Old Town walls / San Giovanni",
+      "category": "Viewpoint",
+      "lat": 42.4253,
+      "lng": 18.7707,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kotor%20Old%20Town%20walls%20/%20San%20Giovanni%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask the operator or venue before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and timing; check road, weather and daylight conditions.",
+      "days": {
+        "primary": [
+          1,
+          2
+        ],
+        "fallback": [
+          1,
+          2
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "perast-our-lady-of-the-rocks-boat",
+      "name": "Perast / Our Lady of the Rocks boat",
+      "category": "Activity",
+      "lat": 42.486,
+      "lng": 18.696,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Perast%20/%20Our%20Lady%20of%20the%20Rocks%20boat%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask the operator or venue before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and timing; check road, weather and daylight conditions.",
+      "days": {
+        "primary": [
+          2,
+          5
+        ],
+        "fallback": [
+          2,
+          5
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "lovcen-visitor-area-ivanova-korita-walk",
+      "name": "Lovćen visitor area / Ivanova Korita walk",
+      "category": "Viewpoint",
+      "lat": 42.3784,
+      "lng": 18.8311,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Lov%C4%87en%20visitor%20area%20/%20Ivanova%20Korita%20walk%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask the operator or venue before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and timing; check road, weather and daylight conditions.",
+      "days": {
+        "primary": [
+          3
+        ],
+        "fallback": [
+          3
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "plantaze-sipcanik-cellar-tasting",
+      "name": "Plantaze Šipčanik cellar tasting",
+      "category": "Meal",
+      "lat": 42.365,
+      "lng": 19.215,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Plantaze%20%C5%A0ip%C4%8Danik%20cellar%20tasting%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask the operator or venue before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and timing; check road, weather and daylight conditions.",
+      "days": {
+        "primary": [
+          5
+        ],
+        "fallback": [
+          5
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "lake-skadar-boat-from-virpazar",
+      "name": "Lake Skadar boat from Virpazar",
+      "category": "Activity",
+      "lat": 42.2476,
+      "lng": 19.0912,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Lake%20Skadar%20boat%20from%20Virpazar%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask the operator or venue before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and timing; check road, weather and daylight conditions.",
+      "days": {
+        "primary": [
+          4,
+          5
+        ],
+        "fallback": [
+          4,
+          5
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "p14-sedlo-pass-out-and-back-from-zabljak-to-pluzine-and-piva-viewpoint",
+      "name": "P14 / Sedlo Pass out-and-back from Žabljak to Plužine and Piva viewpoint",
+      "category": "Viewpoint",
+      "lat": 43.1455,
+      "lng": 18.834,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=P14%20/%20Sedlo%20Pass%20out-and-back%20from%20%C5%BDabljak%20to%20Plu%C5%BEine%20and%20Piva%20viewpoint%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask the operator or venue before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and timing; check road, weather and daylight conditions.",
+      "days": {
+        "primary": [
+          3
+        ],
+        "fallback": [
+          3
+        ]
+      },
+      "aliases": [
+        "P14",
+        "P-14",
+        "Sedlo Pass"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "durmitor-black-lake-loop",
+      "name": "Durmitor / Black Lake loop",
+      "category": "Viewpoint",
+      "lat": 43.1445,
+      "lng": 19.0861,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Durmitor%20/%20Black%20Lake%20loop%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask the operator or venue before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and timing; check road, weather and daylight conditions.",
+      "days": {
+        "primary": [
+          2,
+          3
+        ],
+        "fallback": [
+          2,
+          3
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "curevac-viewpoint-tara-canyon",
+      "name": "Ćurevac viewpoint / Tara Canyon",
+      "category": "Viewpoint",
+      "lat": 43.176,
+      "lng": 19.092,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=%C4%86urevac%20viewpoint%20/%20Tara%20Canyon%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask the operator or venue before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and timing; check road, weather and daylight conditions.",
+      "days": {
+        "primary": [
+          3
+        ],
+        "fallback": [
+          3
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "zabljak-alpine-cuisine-local-konoba-dinner",
+      "name": "Žabljak alpine cuisine / local konoba dinner",
+      "category": "Meal",
+      "lat": 43.1555,
+      "lng": 19.1226,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=%C5%BDabljak%20alpine%20cuisine%20/%20local%20konoba%20dinner%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask the operator or venue before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and timing; check road, weather and daylight conditions.",
+      "days": {
+        "primary": [
+          1,
+          2,
+          3
+        ],
+        "fallback": [
+          1,
+          2,
+          3
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "bosacajablan-lake-viewpoint-short-out-and-back-optional-alternative",
+      "name": "Bosača–Jablan Lake viewpoint short out-and-back (optional alternative)",
+      "category": "Viewpoint",
+      "lat": 43.1761,
+      "lng": 19.0957,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Bosa%C4%8Da%E2%80%93Jablan%20Lake%20viewpoint%20short%20out-and-back%20%28optional%20alternative%29%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask the operator or venue before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and timing; check road, weather and daylight conditions.",
+      "days": {
+        "primary": [
+          2,
+          3
+        ],
+        "fallback": [
+          2,
+          3
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "budva-old-town-sveti-stefan-milocer-coastal-day-optional-alternate",
+      "name": "Budva Old Town / Sveti Stefan / Miločer coastal day (optional alternate)",
+      "category": "Viewpoint",
+      "lat": 42.2842,
+      "lng": 18.84,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Budva%20Old%20Town%20/%20Sveti%20Stefan%20/%20Milo%C4%8Der%20coastal%20day%20%28optional%20alternate%29%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask the operator or venue before arrival; card acceptance varies.",
+      "tip": "Confirm seasonal access and timing; check road, weather and daylight conditions.",
+      "days": {
+        "primary": [
+          5
+        ],
+        "fallback": [
+          5
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "vrmac-tunnel",
+      "name": "Vrmac tunnel",
+      "category": "Viewpoint",
+      "lat": 42.43,
+      "lng": 18.74,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Vrmac%20tunnel%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask locally; conditions and access vary.",
+      "tip": "Check live conditions and use signed stopping areas.",
+      "days": {
+        "primary": [
+          1,
+          4
+        ],
+        "fallback": [
+          1,
+          4
+        ]
+      },
+      "aliases": [
+        "Vrmac tunnel"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "durmitor",
+      "name": "Durmitor",
+      "category": "Viewpoint",
+      "lat": 43.1555,
+      "lng": 19.1226,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Durmitor%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask locally; conditions and access vary.",
+      "tip": "Check live conditions and use signed stopping areas.",
+      "days": {
+        "primary": [
+          2,
+          3
+        ],
+        "fallback": [
+          2,
+          3
+        ]
+      },
+      "aliases": [
+        "Durmitor"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "tara-canyon",
+      "name": "Tara Canyon",
+      "category": "Viewpoint",
+      "lat": 43.176,
+      "lng": 19.092,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Tara%20Canyon%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask locally; conditions and access vary.",
+      "tip": "Check live conditions and use signed stopping areas.",
+      "days": {
+        "primary": [
+          3
+        ],
+        "fallback": [
+          3
+        ]
+      },
+      "aliases": [
+        "Tara Canyon"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "milocer",
+      "name": "Miločer",
+      "category": "Viewpoint",
+      "lat": 42.263,
+      "lng": 18.888,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Milo%C4%8Der%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask locally; conditions and access vary.",
+      "tip": "Check live conditions and use signed stopping areas.",
+      "days": {
+        "primary": [
+          5
+        ],
+        "fallback": [
+          5
+        ]
+      },
+      "aliases": [
+        "Miločer"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "sozina-tunnel",
+      "name": "Sozina Tunnel",
+      "category": "Parking",
+      "lat": 42.185,
+      "lng": 19.03,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Sozina%20Tunnel%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask locally; conditions and access vary.",
+      "tip": "Check live conditions and use signed stopping areas.",
+      "days": {
+        "primary": [
+          5
+        ],
+        "fallback": [
+          5
+        ]
+      },
+      "aliases": [
+        "Sozina Tunnel"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "jablan-lake",
+      "name": "Jablan Lake",
+      "category": "Viewpoint",
+      "lat": 43.185,
+      "lng": 19.095,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Jablan%20Lake%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask locally; conditions and access vary.",
+      "tip": "Check live conditions and use signed stopping areas.",
+      "days": {
+        "primary": [
+          2,
+          3
+        ],
+        "fallback": [
+          2,
+          3
+        ]
+      },
+      "aliases": [
+        "Jablan Lake"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "lipci",
+      "name": "Lipci",
+      "category": "Viewpoint",
+      "lat": 42.524,
+      "lng": 18.686,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Lipci%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask locally; conditions vary.",
+      "tip": "Check road conditions and use signed stopping areas.",
+      "days": {
+        "primary": [
+          1,
+          4,
+          5
+        ],
+        "fallback": [
+          1,
+          2,
+          4,
+          5
+        ]
+      },
+      "aliases": [
+        "Lipci"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "vilusi",
+      "name": "Vilusi",
+      "category": "Viewpoint",
+      "lat": 42.627,
+      "lng": 18.508,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Vilusi%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask locally; conditions vary.",
+      "tip": "Check road conditions and use signed stopping areas.",
+      "days": {
+        "primary": [
+          1,
+          4,
+          5
+        ],
+        "fallback": [
+          1,
+          2,
+          4,
+          5
+        ]
+      },
+      "aliases": [
+        "Vilusi"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "jasenovo-polje",
+      "name": "Jasenovo Polje",
+      "category": "Viewpoint",
+      "lat": 42.792,
+      "lng": 18.835,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Jasenovo%20Polje%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask locally; conditions vary.",
+      "tip": "Check road conditions and use signed stopping areas.",
+      "days": {
+        "primary": [
+          1,
+          4,
+          5
+        ],
+        "fallback": [
+          1,
+          2,
+          4,
+          5
+        ]
+      },
+      "aliases": [
+        "Jasenovo Polje"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "boka-bay",
+      "name": "Boka Bay",
+      "category": "Viewpoint",
+      "lat": 42.4247,
+      "lng": 18.7712,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Boka%20Bay%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask locally; conditions vary.",
+      "tip": "Check road conditions and use signed stopping areas.",
+      "days": {
+        "primary": [
+          1,
+          4,
+          5
+        ],
+        "fallback": [
+          1,
+          2,
+          4,
+          5
+        ]
+      },
+      "aliases": [
+        "Boka Bay",
+        "Bay of Kotor"
+      ],
+      "precision": "navigation pin"
+    },
+    {
+      "id": "lake-skadar",
+      "name": "Lake Skadar",
+      "category": "Viewpoint",
+      "lat": 42.2476,
+      "lng": 19.0912,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Lake%20Skadar%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask locally; conditions vary.",
+      "tip": "Check road conditions and use signed stopping areas.",
+      "days": {
+        "primary": [
+          1,
+          4,
+          5
+        ],
+        "fallback": [
+          1,
+          2,
+          4,
+          5
+        ]
+      },
+      "aliases": [
+        "Lake Skadar"
+      ],
+      "precision": "navigation pin"
+    }
+  ]
+}

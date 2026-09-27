@@ -20,6 +20,12 @@ Use only these types: `DRIVE` for routes, roads and travel time; `STAY` for acco
 
 `app.js` renders the same ordered segments in the expandable day cards and the master schedule. If adding a type, update `segmentTypes`, the route key in `index.html`, matching styles in `style.css`, and this taxonomy together. Keep the text label and icon meaningful without color, and check wrapping on a narrow screen. After editing itinerary content, validate every segment in both branches and bump the service-worker cache revision and asset query revision in `sw.js`/`index.html` before publication so offline clients receive the update.
 
+## Interactive map and offline waypoints
+
+`waypoints.json` is the shared place index for timeline text, stop links, food venues, curated activities, map markers, and offline coordinate lookup. Keep names stable across the itinerary and waypoint index; add both route-branch day memberships when a stop appears in both branches. The map drawer has peek, half, and full states, uses Leaflet with OpenStreetMap tiles, and filters markers and the day route line with the selected route/day. Leaflet assets and the waypoint index are included in the service-worker shell; viewed OSM tiles are cached at runtime with a bounded cache. If tiles or the map library are unavailable, the coordinate-backed waypoint list remains usable.
+
+Run `node tests/waypoints.test.js` to check itinerary/food coverage, coordinates, popup fields, navigation URLs, categories, and service-worker asset registration. The project is a static GitHub Pages site, so deployment uses its source files directly rather than a separate bundler.
+
 ## Validation
 
 The itinerary is static JSON. `app.js` renders day cards, the synchronized schedule, branch checks and candidate experiences. Route segment `type` values must belong to the documented taxonomy and each `text` must be non-empty. `sw.js` caches the application shell and itinerary JSON for offline use. GitHub Pages serves the repository’s `gh-pages` branch at the project site URL.
