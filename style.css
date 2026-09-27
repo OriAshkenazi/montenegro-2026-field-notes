@@ -139,7 +139,7 @@
 .hour-cell{flex:0 0 55px;display:flex;flex-direction:column;align-items:center;gap:5px;min-height:112px;padding:7px 4px;border-radius:3px;background:#f6f5ed}
 .hour-cell time{font:8px var(--mono);color:var(--muted)}.hour-cell b{font:600 12px var(--sans)}
 .hour-rain{position:relative;display:flex;align-items:end;justify-content:center;width:15px;height:34px;border-radius:3px;background:#e5ece7;overflow:hidden}
-.hour-rain i{display:block;width:100%;min-height:2px;border-radius:3px 3px 0 0;background:#468d9c}
+.hour-rain i{display:block;width:100%;min-height:0;border-radius:3px 3px 0 0;background:#468d9c}
 .hour-cell small{font:7px var(--mono);color:#537b82;white-space:nowrap}.hour-cell .hour-precip{font-size:8px;color:var(--muted)}
 .weather-attribution{margin:12px 0 0;font-size:9px;color:var(--muted)}.weather-attribution a{color:var(--ink2)}
 @media(max-width:760px){

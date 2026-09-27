@@ -12,7 +12,7 @@ function fixture(){
   const days=Array.from({length:16},(_,i)=>{const date=new Date(`${today}T12:00:00Z`);date.setUTCDate(date.getUTCDate()+i);return date.toISOString().slice(0,10);});
   return hubIds.map(()=>{
     const hourlyTimes=days.flatMap(day=>Array.from({length:24},(_,hour)=>`${day}T${String(hour).padStart(2,'0')}:00`));
-    return {timezone:'Europe/Podgorica',daily:{time:days,temperature_2m_min:days.map(()=>5),temperature_2m_max:days.map(()=>15),precipitation_probability_max:days.map(()=>40),wind_gusts_10m_max:days.map(()=>25),sunrise:days.map(day=>`${day}T06:45`),sunset:days.map(day=>`${day}T18:30`)},hourly:{time:hourlyTimes,temperature_2m:hourlyTimes.map(()=>12),precipitation_probability:hourlyTimes.map(()=>20),rain:hourlyTimes.map(()=>0),cloud_cover:hourlyTimes.map(()=>35)}};
+    return {timezone:'Europe/Podgorica',daily:{time:days,temperature_2m_min:days.map(()=>5),temperature_2m_max:days.map(()=>15),precipitation_probability_max:days.map(()=>40),wind_gusts_10m_max:days.map(()=>25),sunrise:days.map(day=>`${day}T06:45`),sunset:days.map(day=>`${day}T18:30`)},hourly:{time:hourlyTimes,temperature_2m:hourlyTimes.map(()=>12),precipitation_probability:hourlyTimes.map(()=>20),precipitation:hourlyTimes.map(()=>0),rain:hourlyTimes.map(()=>0),cloud_cover:hourlyTimes.map(()=>35)}};
   });
 }
 function run(rows,{online=true,cached=null}={}){
@@ -30,6 +30,8 @@ function run(rows,{online=true,cached=null}={}){
   assert.equal((result.elements['#weatherDays'].innerHTML.match(/class="weather-day"/g)||[]).length,6);
   assert(result.elements['#weatherDays'].innerHTML.includes('Thu, 1 Oct')||result.elements['#weatherDays'].innerHTML.includes('Thu 1 Oct'));
   assert.equal((result.elements['#hourlyScroller'].innerHTML.match(/class="hour-cell"/g)||[]).length,24);
+  assert(result.elements['#hourlyScroller'].innerHTML.includes('20%')&&result.elements['#hourlyScroller'].innerHTML.includes('0.0 mm'),'positive precipitation probability can coexist with a zero modelled amount');
+  assert(result.elements['#hourlyScroller'].innerHTML.includes('height:0%'),'zero modelled precipitation must not draw a nonzero amount bar');
   assert(result.elements['#coastWeather'].innerHTML.includes('Sunrise 06:45 · Sunset 18:30'),'API local times must not shift with the device time zone');
   assert(result.store.has('mne-weather-forecast-v2'));
 
