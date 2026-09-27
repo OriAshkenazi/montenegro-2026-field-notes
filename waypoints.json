@@ -8,8 +8,7 @@
       "lat": 42.4047,
       "lng": 18.7233,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=TIV%20rental%20pickup%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1
@@ -25,8 +24,7 @@
       "lat": 42.4047,
       "lng": 18.7233,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&origin=Tivat%20Airport%2C%20Montenegro&destination=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%2084220%20%C5%BDabljak%2C%20Montenegro&waypoints=Kotor%2C%20Montenegro%7CRisan%2C%20Montenegro%7CGrahovo%2C%20Montenegro%7CNik%C5%A1i%C4%87%2C%20Montenegro%7C%C5%A0avnik%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1
@@ -42,8 +40,7 @@
       "lat": 43.16556,
       "lng": 19.19004,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%2084220%20%C5%BDabljak%2C%20Montenegro&travelmode=driving",
-      "cash": "Listing indicates free private parking; verify for booked unit.",
-      "tip": "Check in, unload all bags and confirm kitchen/late-arrival details with the host.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -57,7 +54,6 @@
         "Runolist Chalet, Narodnih heroja"
       ],
       "precision": "Borje locality coordinate; use address search for property-level arrival; pin is approximate",
-      "address": "Narodnih heroja, 84220 Žabljak, Montenegro",
       "bookingStatus": "Confirmed stay · Oct 1–4",
       "coordinateSource": "Borje locality from OpenStreetMap-based Mapcarta; approximate only",
       "sourceUrl": "https://mapcarta.com/18723988"
@@ -69,8 +65,7 @@
       "lat": 42.4247,
       "lng": 18.7712,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=AMSCG%20road%20conditions%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1
@@ -86,8 +81,7 @@
       "lat": 42.4047,
       "lng": 18.7233,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=ALMECO%20Caf%C3%A9%20Negro%20Bar-Restaurant%20%C2%B7%20Tivat%20Airport%2C%20Montenegro&travelmode=driving",
-      "cash": "Payment methods vary; confirm at counter",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1
@@ -103,8 +97,7 @@
       "lat": 43.1555,
       "lng": 19.1226,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Zlatni%20Papagaj%20%C2%B7%20%C5%BDabljak%2C%20Montenegro&travelmode=driving",
-      "cash": "Cash-only unverified; carry cash and ask",
-      "tip": "Check October hours and payment method before setting out.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1
@@ -120,8 +113,7 @@
       "lat": 42.352,
       "lng": 18.765,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Voli%20Hipermarket%20Radanovi%C4%87i%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Stock up before the mountain leg; opening hours can change.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1
@@ -137,8 +129,7 @@
       "lat": 43.1555,
       "lng": 19.1226,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Aroma%20311%20%C2%B7%20%C5%BDabljak%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Stock up before the mountain leg; opening hours can change.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -156,8 +147,7 @@
       "lat": 43.1445,
       "lng": 19.0861,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Black%20Lake%20parking%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "cash": "Ask",
       "days": {
         "primary": [
           2
@@ -173,8 +163,7 @@
       "lat": 43.1445,
       "lng": 19.0861,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Black%20Lake%20trailhead%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Use a signed pullout and check weather and daylight first.",
+      "cash": "Ask",
       "days": {
         "primary": [
           2
@@ -190,8 +179,7 @@
       "lat": 43.1761,
       "lng": 19.0957,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Bosa%C4%8Da%20village%20parking%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "cash": "Ask",
       "days": {
         "primary": [
           2
@@ -207,8 +195,7 @@
       "lat": 42.4247,
       "lng": 18.7712,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=AMSCG%20road%20updates%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "cash": "Ask",
       "days": {
         "primary": [
           2,
@@ -225,8 +212,7 @@
       "lat": 42.4247,
       "lng": 18.7712,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Mom%C4%8Dilov%20Grad%2C%20Montenegro&travelmode=driving",
-      "cash": "Cash-only unverified; carry cash and ask",
-      "tip": "Check October hours and payment method before setting out.",
+      "cash": "Ask",
       "days": {
         "primary": [
           2
@@ -242,8 +228,7 @@
       "lat": 42.4247,
       "lng": 18.7712,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Restaurant%20ORO%2C%20Montenegro&travelmode=driving",
-      "cash": "Cash-only unverified; carry cash and ask",
-      "tip": "Check October hours and payment method before setting out.",
+      "cash": "Ask",
       "days": {
         "primary": [
           2,
@@ -260,8 +245,7 @@
       "lat": 43.1555,
       "lng": 19.1226,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Ka%C4%87un%20%C2%B7%20%C5%BDabljak%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm opening hours; keep transfer-day stops brief.",
+      "cash": "Ask",
       "days": {
         "primary": [
           2,
@@ -278,8 +262,7 @@
       "lat": 42.4247,
       "lng": 18.7712,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&origin=%C5%BDabljak%2C%20Montenegro&destination=%C5%BDabljak%2C%20Montenegro&waypoints=Trsa%2C%20Montenegro%7CPlu%C5%BEine%2C%20Montenegro%7CPiva%20Lake%20viewpoint%2C%20Plu%C5%BEine%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "cash": "Ask",
       "days": {
         "primary": [
           3
@@ -295,8 +278,7 @@
       "lat": 43.1692,
       "lng": 18.9831,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Trsa%20village%20pullout%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Use a signed pullout and check weather and daylight first.",
+      "cash": "Ask",
       "days": {
         "primary": [
           3
@@ -312,8 +294,7 @@
       "lat": 43.1455,
       "lng": 18.834,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Piva%20viewpoint%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Use a signed pullout and check weather and daylight first.",
+      "cash": "Ask",
       "days": {
         "primary": [
           3
@@ -332,8 +313,7 @@
       "lat": 43.155,
       "lng": 18.839,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Plu%C5%BEine%20lakeside%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Use a signed pullout and check weather and daylight first.",
+      "cash": "Ask",
       "days": {
         "primary": [
           3
@@ -349,8 +329,7 @@
       "lat": 43.2185,
       "lng": 18.8465,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Optional%20Mratinje%20Dam%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Use a signed pullout and check weather and daylight first.",
+      "cash": "Ask",
       "days": {
         "primary": [
           3
@@ -366,8 +345,7 @@
       "lat": 43.1555,
       "lng": 19.1226,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=%C5%BDabljak%20packed%20lunch%20%28buy%20at%20Aroma%20311%29%2C%20Montenegro&travelmode=driving",
-      "cash": "Cash-only not applicable; grocery payment varies",
-      "tip": "Stock up before the mountain leg; opening hours can change.",
+      "cash": "Ask",
       "days": {
         "primary": [
           3
@@ -383,8 +361,7 @@
       "lat": 43.155,
       "lng": 18.839,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Restoran%20So%C4%8Dica%20%C2%B7%20Plu%C5%BEine%2C%20Montenegro&travelmode=driving",
-      "cash": "Cards reported; cash-only not indicated",
-      "tip": "Check October hours and payment method before setting out.",
+      "cash": "Card",
       "days": {
         "primary": [
           3
@@ -400,8 +377,7 @@
       "lat": 42.9561,
       "lng": 19.0961,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=%C5%A0avnik%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": [
           4
@@ -420,8 +396,7 @@
       "lat": 42.7731,
       "lng": 18.9445,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Nik%C5%A1i%C4%87%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": [
           4
@@ -440,8 +415,7 @@
       "lat": 42.6569,
       "lng": 18.6495,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Grahovo%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": [
           4
@@ -457,8 +431,7 @@
       "lat": 42.48631,
       "lng": 18.69801,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Conte%20Hotel%20%26%20Restaurant%2C%20Ul.%20Marka%20Martinovi%C4%87a%20bb%2C%2085336%20Perast%2C%20Montenegro&travelmode=driving",
-      "cash": "Parking at a signed entrance lot; verify October tariff and payment.",
-      "tip": "Vehicles cannot enter Perast old town in May–October. Contact the hotel about assistance from parking to reception.",
+      "cash": "Ask",
       "days": {
         "primary": [
           4,
@@ -474,8 +447,6 @@
         "Conte Hotel Breakfast · Perast"
       ],
       "precision": "OpenStreetMap hotel building / reception anchor; booked annex is unspecified",
-      "address": "Ul. Marka Martinovića bb, 85336 Perast, Montenegro",
-      "phone": "+382 67 111 190",
       "bookingStatus": "Confirmed stay · Oct 4–6",
       "coordinateSource": "Hotel building / reception coordinate from OpenStreetMap-based Mapcarta",
       "sourceUrl": "https://mapcarta.com/W303003482"
@@ -487,8 +458,7 @@
       "lat": 42.4247,
       "lng": 18.7712,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kotor%20Old%20Town%20parking%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "cash": "Ask",
       "days": {
         "primary": [
           4
@@ -504,8 +474,7 @@
       "lat": 42.7731,
       "lng": 18.9445,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Restaurant%20Kastel%20%C2%B7%20Nik%C5%A1i%C4%87%2C%20Montenegro&travelmode=driving",
-      "cash": "Cash-only unverified; carry cash and ask",
-      "tip": "Check October hours and payment method before setting out.",
+      "cash": "Ask",
       "days": {
         "primary": [
           4
@@ -521,8 +490,7 @@
       "lat": 42.4247,
       "lng": 18.7712,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Ombra%20%C2%B7%20Old%20Town%2C%20Montenegro&travelmode=driving",
-      "cash": "Cash-only unverified; carry cash",
-      "tip": "Check October hours and payment method before setting out.",
+      "cash": "Ask",
       "days": {
         "primary": [
           4
@@ -538,8 +506,7 @@
       "lat": 42.4247,
       "lng": 18.7712,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=CAVE%20Coffee%20%C2%B7%20Kotor%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm opening hours; keep transfer-day stops brief.",
+      "cash": "Ask",
       "days": {
         "primary": [
           4
@@ -555,8 +522,7 @@
       "lat": 42.4247,
       "lng": 18.7712,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Aroma%20City%20Taba%C4%8Dina%20%C2%B7%20Kotor%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Stock up before the mountain leg; opening hours can change.",
+      "cash": "Ask",
       "days": {
         "primary": [
           4,
@@ -573,8 +539,7 @@
       "lat": 42.2476,
       "lng": 19.0912,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Virpazar%20parking%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "cash": "Ask",
       "days": {
         "primary": [
           5
@@ -590,8 +555,7 @@
       "lat": 42.2476,
       "lng": 19.0912,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Virpazar%20boat%20pier%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Use a signed pullout and check weather and daylight first.",
+      "cash": "Ask",
       "days": {
         "primary": [
           5
@@ -607,8 +571,7 @@
       "lat": 42.225,
       "lng": 19.0952,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Winery%20Garnet%20%C2%B7%20Godinje%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Check October hours and payment method before setting out.",
+      "cash": "Ask",
       "days": {
         "primary": [
           5
@@ -624,8 +587,7 @@
       "lat": 42.486,
       "lng": 18.696,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Perast%20parking%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Use the signed town entrance lot; Perast old town is vehicle-restricted May–October. Walk to the historic core.",
+      "cash": "Ask",
       "days": {
         "primary": [
           4,
@@ -642,8 +604,7 @@
       "lat": 42.4854,
       "lng": 18.6822,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Our%20Lady%20of%20the%20Rocks%20pier%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Use a signed pullout and check weather and daylight first.",
+      "cash": "Ask",
       "days": {
         "primary": [
           5
@@ -659,8 +620,7 @@
       "lat": 42.2842,
       "lng": 18.84,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Budva%20Old%20Town%20parking%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "cash": "Ask",
       "days": {
         "primary": [
           5
@@ -676,8 +636,7 @@
       "lat": 42.2574,
       "lng": 18.897,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Sveti%20Stefan%20viewpoint%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Use a signed pullout and check weather and daylight first.",
+      "cash": "Ask",
       "days": {
         "primary": [
           5
@@ -693,8 +652,7 @@
       "lat": 42.2476,
       "lng": 19.0912,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Restaurant%20Pelikan%20%C2%B7%20Virpazar%2C%20Montenegro&travelmode=driving",
-      "cash": "Cash-only unverified; carry cash",
-      "tip": "Check October hours and payment method before setting out.",
+      "cash": "Ask",
       "days": {
         "primary": [
           5
@@ -710,8 +668,7 @@
       "lat": 42.4247,
       "lng": 18.7712,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Pr%C5%BEun%20%C2%B7%20Old%20Town%2C%20Montenegro&travelmode=driving",
-      "cash": "Cash-only unverified; carry cash and ask",
-      "tip": "Check October hours and payment method before setting out.",
+      "cash": "Ask",
       "days": {
         "primary": [
           5
@@ -727,8 +684,7 @@
       "lat": 42.4247,
       "lng": 18.7712,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Small%20Talks%20%C2%B7%20Kotor%2C%20Montenegro&travelmode=driving",
-      "cash": "Cash-only unverified; card/cash",
-      "tip": "Confirm opening hours; keep transfer-day stops brief.",
+      "cash": "Ask",
       "days": {
         "primary": [
           5,
@@ -745,8 +701,7 @@
       "lat": 42.48631,
       "lng": 18.69801,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&origin=Conte%20Hotel%20%26%20Restaurant%2C%20Perast%2C%20Montenegro&destination=Tivat%20Airport%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "cash": "Ask",
       "days": {
         "primary": [
           6
@@ -765,8 +720,7 @@
       "lat": 42.4047,
       "lng": 18.7233,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Tivat%20Airport%20rental%20return%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "cash": "Ask",
       "days": {
         "primary": [
           6
@@ -782,8 +736,7 @@
       "lat": 42.4047,
       "lng": 18.7233,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Tivat%20Airport%20caf%C3%A9%20/%20terminal%20food%2C%20Montenegro&travelmode=driving",
-      "cash": "Payment methods vary",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "cash": "Ask",
       "days": {
         "primary": [
           6
@@ -799,8 +752,7 @@
       "lat": 42.466,
       "lng": 18.666,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Lepetane%20ferry%20terminal%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "cash": "Ask",
       "days": {
         "primary": []
       },
@@ -814,8 +766,7 @@
       "lat": 42.476,
       "lng": 18.674,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kamenari%20ferry%20terminal%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "cash": "Ask",
       "days": {
         "primary": []
       },
@@ -829,8 +780,7 @@
       "lat": 42.4247,
       "lng": 18.7712,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Ombra%20%C2%B7%20Kotor%20Old%20Town%2C%20Montenegro&travelmode=driving",
-      "cash": "Cash-only unverified; carry cash and ask",
-      "tip": "Check October hours and payment method before setting out.",
+      "cash": "Ask",
       "days": {
         "primary": []
       },
@@ -844,8 +794,7 @@
       "lat": 42.352,
       "lng": 18.765,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=IDEA%20Butiko%20Radanovi%C4%87i%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Stock up before the mountain leg; opening hours can change.",
+      "cash": "Ask",
       "days": {
         "primary": []
       },
@@ -859,8 +808,7 @@
       "lat": 42.4247,
       "lng": 18.7712,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kotor%20city%20walls%20entrance%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Use a signed pullout and check weather and daylight first.",
+      "cash": "Ask",
       "days": {
         "primary": []
       },
@@ -874,8 +822,7 @@
       "lat": 42.4247,
       "lng": 18.7712,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Konoba%20Scala%20Santa%20%C2%B7%20Kotor%2C%20Montenegro&travelmode=driving",
-      "cash": "Cash and cards reported; cash-only no",
-      "tip": "Check October hours and payment method before setting out.",
+      "cash": "Cash/Card",
       "days": {
         "primary": []
       },
@@ -889,8 +836,7 @@
       "lat": 42.4247,
       "lng": 18.7712,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Dobrotski%20Dvori%2C%20Montenegro&travelmode=driving",
-      "cash": "Cash-only unverified; ask",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": []
       },
@@ -904,8 +850,7 @@
       "lat": 42.4247,
       "lng": 18.7712,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Aroma%2018%20%C2%B7%20TC%20Kamelija%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Stock up before the mountain leg; opening hours can change.",
+      "cash": "Ask",
       "days": {
         "primary": []
       },
@@ -919,8 +864,7 @@
       "lat": 42.3994,
       "lng": 18.83,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Lov%C4%87en%20visitor%20parking%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "cash": "Ask",
       "days": {
         "primary": []
       },
@@ -934,8 +878,7 @@
       "lat": 42.3784,
       "lng": 18.8311,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Ivanova%20Korita%20parking%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "cash": "Ask",
       "days": {
         "primary": []
       },
@@ -949,8 +892,7 @@
       "lat": 42.3931,
       "lng": 18.911,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Cetinje%20parking%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "cash": "Ask",
       "days": {
         "primary": []
       },
@@ -964,8 +906,7 @@
       "lat": 42.3994,
       "lng": 18.83,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Ivanov%20Konak%20%C2%B7%20Lov%C4%87en%2C%20Montenegro&travelmode=driving",
-      "cash": "Cash-only unverified; carry cash",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": []
       },
@@ -979,8 +920,7 @@
       "lat": 42.4247,
       "lng": 18.7712,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kafana%20Kod%20Pera%20na%20Bukovici%2C%20Montenegro&travelmode=driving",
-      "cash": "Cash-only unverified; carry cash",
-      "tip": "Check October hours and payment method before setting out.",
+      "cash": "Ask",
       "days": {
         "primary": []
       },
@@ -994,8 +934,7 @@
       "lat": 42.431,
       "lng": 18.694,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Regent%20Porto%20Montenegro%20spa%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": []
       },
@@ -1009,8 +948,7 @@
       "lat": 42.431,
       "lng": 18.694,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Porto%20Montenegro%20parking%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "cash": "Ask",
       "days": {
         "primary": []
       },
@@ -1024,8 +962,7 @@
       "lat": 42.4247,
       "lng": 18.7712,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kotor%20waterfront%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Use a signed pullout and check weather and daylight first.",
+      "cash": "Ask",
       "days": {
         "primary": []
       },
@@ -1039,8 +976,7 @@
       "lat": 42.4247,
       "lng": 18.7712,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Pr%C5%BEun%20%C2%B7%20Kotor%20Old%20Town%2C%20Montenegro&travelmode=driving",
-      "cash": "Cash-only unverified; carry cash",
-      "tip": "Check October hours and payment method before setting out.",
+      "cash": "Ask",
       "days": {
         "primary": []
       },
@@ -1054,8 +990,7 @@
       "lat": 42.4247,
       "lng": 18.7712,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Galion%20%C2%B7%20%C5%A0uranj%2C%20Montenegro&travelmode=driving",
-      "cash": "Cash-only unverified; ask",
-      "tip": "Check October hours and payment method before setting out.",
+      "cash": "Ask",
       "days": {
         "primary": []
       },
@@ -1069,8 +1004,7 @@
       "lat": 42.4247,
       "lng": 18.7712,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kotor%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1097,8 +1031,7 @@
       "lat": 42.4304,
       "lng": 18.696,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Tivat%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1121,8 +1054,7 @@
       "lat": 42.4047,
       "lng": 18.7233,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Tivat%20Airport%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1147,8 +1079,7 @@
       "lat": 43.1555,
       "lng": 19.1226,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=%C5%BDabljak%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1172,8 +1103,7 @@
       "lat": 43.1445,
       "lng": 19.0861,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Black%20Lake%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Use a signed pullout and check weather and daylight first.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1197,8 +1127,7 @@
       "lat": 43.1761,
       "lng": 19.0957,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Bosa%C4%8Da%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1222,8 +1151,7 @@
       "lat": 43.1692,
       "lng": 18.9831,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Trsa%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1246,8 +1174,7 @@
       "lat": 43.155,
       "lng": 18.839,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Plu%C5%BEine%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1271,8 +1198,7 @@
       "lat": 43.2185,
       "lng": 18.8465,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Mratinje%20Dam%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Use a signed pullout and check weather and daylight first.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1295,8 +1221,7 @@
       "lat": 42.352,
       "lng": 18.765,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Radanovi%C4%87i%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1317,8 +1242,7 @@
       "lat": 42.2476,
       "lng": 19.0912,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Virpazar%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1343,8 +1267,7 @@
       "lat": 42.225,
       "lng": 19.0952,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Godinje%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1367,8 +1290,7 @@
       "lat": 42.486,
       "lng": 18.696,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Perast%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1391,8 +1313,7 @@
       "lat": 42.4854,
       "lng": 18.6822,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Our%20Lady%20of%20the%20Rocks%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Use a signed pullout and check weather and daylight first.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1415,8 +1336,7 @@
       "lat": 42.476,
       "lng": 18.674,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kamenari%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1439,8 +1359,7 @@
       "lat": 42.466,
       "lng": 18.666,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Lepetane%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1463,8 +1382,7 @@
       "lat": 42.3994,
       "lng": 18.83,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Lov%C4%87en%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1488,8 +1406,7 @@
       "lat": 42.3784,
       "lng": 18.8311,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Ivanova%20Korita%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Use a signed pullout and check weather and daylight first.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1512,8 +1429,7 @@
       "lat": 42.3931,
       "lng": 18.911,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Cetinje%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1536,8 +1452,7 @@
       "lat": 42.2842,
       "lng": 18.84,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Budva%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1560,8 +1475,7 @@
       "lat": 42.2574,
       "lng": 18.897,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Sveti%20Stefan%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1584,8 +1498,7 @@
       "lat": 42.431,
       "lng": 18.694,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Porto%20Montenegro%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1606,8 +1519,7 @@
       "lat": 42.515,
       "lng": 18.695,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Risan%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1630,8 +1542,7 @@
       "lat": 42.432,
       "lng": 18.808,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Njegu%C5%A1i%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1655,8 +1566,7 @@
       "lat": 42.4304,
       "lng": 19.2594,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Podgorica%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1679,8 +1589,7 @@
       "lat": 42.453,
       "lng": 18.537,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Herceg%20Novi%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and operating hours before departure.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1703,8 +1612,7 @@
       "lat": 42.4253,
       "lng": 18.7707,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kotor%20Old%20Town%20walls%20/%20San%20Giovanni%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask the operator or venue before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and timing; check road, weather and daylight conditions.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1721,8 +1629,7 @@
       "lat": 42.486,
       "lng": 18.696,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Perast%20/%20Our%20Lady%20of%20the%20Rocks%20boat%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask the operator or venue before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and timing; check road, weather and daylight conditions.",
+      "cash": "Ask",
       "days": {
         "primary": [
           2,
@@ -1739,8 +1646,7 @@
       "lat": 42.3784,
       "lng": 18.8311,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Lov%C4%87en%20visitor%20area%20/%20Ivanova%20Korita%20walk%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask the operator or venue before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and timing; check road, weather and daylight conditions.",
+      "cash": "Ask",
       "days": {
         "primary": [
           3
@@ -1756,8 +1662,7 @@
       "lat": 42.365,
       "lng": 19.215,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Plantaze%20%C5%A0ip%C4%8Danik%20cellar%20tasting%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask the operator or venue before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and timing; check road, weather and daylight conditions.",
+      "cash": "Ask",
       "days": {
         "primary": [
           5
@@ -1773,8 +1678,7 @@
       "lat": 42.2476,
       "lng": 19.0912,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Lake%20Skadar%20boat%20from%20Virpazar%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask the operator or venue before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and timing; check road, weather and daylight conditions.",
+      "cash": "Ask",
       "days": {
         "primary": [
           4,
@@ -1791,8 +1695,7 @@
       "lat": 43.1455,
       "lng": 18.834,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=P14%20/%20Sedlo%20Pass%20out-and-back%20from%20%C5%BDabljak%20to%20Plu%C5%BEine%20and%20Piva%20viewpoint%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask the operator or venue before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and timing; check road, weather and daylight conditions.",
+      "cash": "Ask",
       "days": {
         "primary": [
           3
@@ -1812,8 +1715,7 @@
       "lat": 43.1445,
       "lng": 19.0861,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Durmitor%20/%20Black%20Lake%20loop%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask the operator or venue before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and timing; check road, weather and daylight conditions.",
+      "cash": "Ask",
       "days": {
         "primary": [
           2,
@@ -1830,8 +1732,7 @@
       "lat": 43.176,
       "lng": 19.092,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=%C4%86urevac%20viewpoint%20/%20Tara%20Canyon%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask the operator or venue before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and timing; check road, weather and daylight conditions.",
+      "cash": "Ask",
       "days": {
         "primary": [
           3
@@ -1847,8 +1748,7 @@
       "lat": 43.1555,
       "lng": 19.1226,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=%C5%BDabljak%20alpine%20cuisine%20/%20local%20konoba%20dinner%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask the operator or venue before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and timing; check road, weather and daylight conditions.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1866,8 +1766,7 @@
       "lat": 43.1761,
       "lng": 19.0957,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Bosa%C4%8Da%E2%80%93Jablan%20Lake%20viewpoint%20short%20out-and-back%20%28optional%20alternative%29%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask the operator or venue before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and timing; check road, weather and daylight conditions.",
+      "cash": "Ask",
       "days": {
         "primary": [
           2,
@@ -1884,8 +1783,7 @@
       "lat": 42.2842,
       "lng": 18.84,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Budva%20Old%20Town%20/%20Sveti%20Stefan%20/%20Milo%C4%8Der%20coastal%20day%20%28optional%20alternate%29%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask the operator or venue before arrival; card acceptance varies.",
-      "tip": "Confirm seasonal access and timing; check road, weather and daylight conditions.",
+      "cash": "Ask",
       "days": {
         "primary": [
           5
@@ -1901,8 +1799,7 @@
       "lat": 42.43,
       "lng": 18.74,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Vrmac%20tunnel%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask locally; conditions and access vary.",
-      "tip": "Check live conditions and use signed stopping areas.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -1921,8 +1818,7 @@
       "lat": 43.1555,
       "lng": 19.1226,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Durmitor%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask locally; conditions and access vary.",
-      "tip": "Check live conditions and use signed stopping areas.",
+      "cash": "Ask",
       "days": {
         "primary": [
           2,
@@ -1941,8 +1837,7 @@
       "lat": 43.176,
       "lng": 19.092,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Tara%20Canyon%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask locally; conditions and access vary.",
-      "tip": "Check live conditions and use signed stopping areas.",
+      "cash": "Ask",
       "days": {
         "primary": [
           3
@@ -1960,8 +1855,7 @@
       "lat": 42.263,
       "lng": 18.888,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Milo%C4%8Der%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask locally; conditions and access vary.",
-      "tip": "Check live conditions and use signed stopping areas.",
+      "cash": "Ask",
       "days": {
         "primary": [
           5
@@ -1979,8 +1873,7 @@
       "lat": 42.185,
       "lng": 19.03,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Sozina%20Tunnel%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask locally; conditions and access vary.",
-      "tip": "Check live conditions and use signed stopping areas.",
+      "cash": "Ask",
       "days": {
         "primary": [
           5
@@ -1998,8 +1891,7 @@
       "lat": 43.185,
       "lng": 19.095,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Jablan%20Lake%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask locally; conditions and access vary.",
-      "tip": "Check live conditions and use signed stopping areas.",
+      "cash": "Ask",
       "days": {
         "primary": [
           2,
@@ -2018,8 +1910,7 @@
       "lat": 42.524,
       "lng": 18.686,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Lipci%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask locally; conditions vary.",
-      "tip": "Check road conditions and use signed stopping areas.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -2039,8 +1930,7 @@
       "lat": 42.627,
       "lng": 18.508,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Vilusi%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask locally; conditions vary.",
-      "tip": "Check road conditions and use signed stopping areas.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -2060,8 +1950,7 @@
       "lat": 42.792,
       "lng": 18.835,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Jasenovo%20Polje%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask locally; conditions vary.",
-      "tip": "Check road conditions and use signed stopping areas.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -2081,8 +1970,7 @@
       "lat": 42.4247,
       "lng": 18.7712,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Boka%20Bay%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask locally; conditions vary.",
-      "tip": "Check road conditions and use signed stopping areas.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,
@@ -2103,8 +1991,7 @@
       "lat": 42.2476,
       "lng": 19.0912,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Lake%20Skadar%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask locally; conditions vary.",
-      "tip": "Check road conditions and use signed stopping areas.",
+      "cash": "Ask",
       "days": {
         "primary": [
           1,

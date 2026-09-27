@@ -70,7 +70,7 @@
   function renderWarning() {
     const banner=$('#alpineWarning');if(!banner||!payload)return;const dates=tripDates(),risks=[];
     for(const id of ['zabljak','sedlo']){const hub=hubs.find(item=>item.id===id),daily=payload.locations?.[id]?.daily;if(!daily)continue;for(let i=0;i<daily.time.length;i++){const day=daily.time[i];if(!dates.includes(day))continue;const low=daily.temperature_2m_min?.[i],chance=daily.precipitation_probability_max?.[i];if((low!=null&&low<=2)||(chance!=null&&chance>60))risks.push(`${hub.name} · ${dateLabel(day)}${low!=null&&low<=2?` · low ${Math.round(low)}°C`:''}${chance!=null&&chance>60?` · precipitation ${Math.round(chance)}%`:''}`);}}
-    banner.hidden=!risks.length;$('#alpineWarningDetails').textContent=risks.length?`Forecast threshold reached: ${risks.join('; ')}.`:'';
+    banner.hidden=!risks.length;$('#alpineWarningDetails').textContent=risks.length?'Mountain forecast thresholds are met. Review the Day 3 route before departure.':'';
   }
   function renderDays() {
     const hub=hubs.find(item=>item.id===selectedHub),daily=payload?.locations?.[hub?.id]?.daily,container=$('#weatherDays');if(!daily||!container)return;

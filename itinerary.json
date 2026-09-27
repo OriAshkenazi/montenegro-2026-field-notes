@@ -5,7 +5,6 @@
   "routeNames": {
     "primary": "Runolist Chalet · Durmitor · Perast"
   },
-  "primaryNotice": "Confirmed stays: Runolist Chalet in Žabljak for Oct 1–4 and Conte Hotel & Restaurant in Perast for Oct 4–6. Day 1 remains an after-sunset northbound transfer using planning estimates, not confirmed flight or rental-voucher times. Start only after live road/weather, driver, vehicle and host checks; if unsafe, stop safely and arrange lodging directly. Day 3 P14 over Sedlo is conditional at about 5 h 24 adjusted with the Piva viewpoint only; verify the complete live route and finish high-altitude driving by 16:00. Skip P14 for snow, ice, poor visibility, closure or unsafe conditions. Tara Bridge is closed through Oct 26, 2026 at noon and is excluded.",
   "routes": {
     "primary": {
       "days": [
@@ -19,67 +18,82 @@
           "morning": [
             {
               "type": "LOGISTICS",
-              "text": "Planning estimate: flight lands at TIV at 13:50; flight number and ticket confirmation were not supplied."
+              "text": "Planning estimate: flight lands at TIV at 13:50; flight number and ticket confirmation were not supplied.",
+              "id": "day-1-morning-01"
             },
             {
               "type": "LOGISTICS",
-              "text": "Collect the estate car, test-load both checked cases and both cabin trolleys beneath the closed parcel shelf, photograph existing damage, and save the roadside number."
+              "text": "Collect the estate car, test-load both checked cases and both cabin trolleys beneath the closed parcel shelf, photograph existing damage, and save the roadside number.",
+              "id": "day-1-morning-02"
             },
             {
               "type": "LOGISTICS",
-              "text": "Planning estimate: aim to leave the airport around 15:15–15:30 only if landing, pickup, driver and road checks are all on track."
+              "text": "Planning estimate: aim to leave the airport around 15:15–15:30 only if landing, pickup, driver and road checks are all on track.",
+              "id": "day-1-morning-03"
             }
           ],
           "afternoon": [
             {
               "type": "DRIVE",
-              "text": "Drive directly north to your Runolist Chalet via the Vrmac tunnel and Kotor, then M-1 to Risan/Lipci, M-8 via Grahovo, M-7 to Nikšić, M-3 to Jasenovo Polje and M-6 via Šavnik."
+              "text": "Drive directly north to your Runolist Chalet via the Vrmac tunnel and Kotor, then M-1 to Risan/Lipci, M-8 via Grahovo, M-7 to Nikšić, M-3 to Jasenovo Polje and M-6 via Šavnik.",
+              "id": "day-1-afternoon-01"
             },
             {
               "type": "CAUTION",
-              "text": "Check live navigation for closures or reroutes."
+              "text": "Check live navigation for closures or reroutes.",
+              "id": "day-1-afternoon-02"
             },
             {
               "type": "DRIVE",
-              "text": "Use 3 h 20 min as a nominal published estimate; current sources vary and live traffic/weather can extend it, then add 20%: about 4 h adjusted, before traffic or stops."
+              "text": "Use 3 h 20 min as a nominal published estimate; current sources vary and live traffic/weather can extend it, then add 20%: about 4 h adjusted, before traffic or stops.",
+              "id": "day-1-afternoon-03"
             },
             {
               "type": "DRIVE",
-              "text": "That points to roughly 19:15–19:30 arrival."
+              "text": "That points to roughly 19:15–19:30 arrival.",
+              "id": "day-1-afternoon-04"
             },
             {
               "type": "CAUTION",
-              "text": "Žabljak sunset on Oct 1 is about 18:26 and civil twilight ends about 18:55, so this deliberately breaks the usual daylight cutoff."
+              "text": "Žabljak sunset on Oct 1 is about 18:26 and civil twilight ends about 18:55, so this deliberately breaks the usual daylight cutoff.",
+              "id": "day-1-afternoon-05"
             },
             {
               "type": "CAUTION",
-              "text": "Do not add the Lepetane ferry, viewpoints, a swim, or a meal stop."
+              "text": "Do not add the Lepetane ferry, viewpoints, a swim, or a meal stop.",
+              "id": "day-1-afternoon-06"
             },
             {
               "type": "CAUTION",
-              "text": "If the flight or rental is delayed, visibility/weather is poor, roads are restricted, or the driver is tired, stay at your stop safely and arrange lodging directly; resume only after a fresh road/weather and driver check and coordination with Runolist."
+              "text": "If the flight or rental is delayed, visibility/weather is poor, roads are restricted, or the driver is tired, stay at your stop safely and arrange lodging directly; resume only after a fresh road/weather and driver check and coordination with Runolist.",
+              "id": "day-1-afternoon-07"
             },
             {
               "type": "CAUTION",
-              "text": "If conditions deteriorate after you leave, do not press on: stop at the next safe town, arrange lodging and secure the bags."
+              "text": "If conditions deteriorate after you leave, do not press on: stop at the next safe town, arrange lodging and secure the bags.",
+              "id": "day-1-afternoon-08"
             }
           ],
           "evening": [
             {
               "type": "STAY",
-              "text": "Check in and unload every bag."
+              "text": "Check in and unload every bag.",
+              "id": "day-1-evening-01"
             },
             {
               "type": "EAT",
-              "text": "Eat near the lodging or use food arranged ahead."
+              "text": "Eat near the lodging or use food arranged ahead.",
+              "id": "day-1-evening-02"
             },
             {
               "type": "CAUTION",
-              "text": "Skip sightseeing after arrival."
+              "text": "Skip sightseeing after arrival.",
+              "id": "day-1-evening-03"
             },
             {
               "type": "STAY",
-              "text": "The Runolist listing’s check-in window and late-arrival approval are not supplied; confirm directly with the host before travel."
+              "text": "The Runolist listing’s check-in window and late-arrival approval are not supplied; confirm directly with the host before travel.",
+              "id": "day-1-evening-04"
             }
           ],
           "parking": "Go directly to Runolist Chalet, Narodnih heroja, 84220 Žabljak, and unload immediately. Listing information indicates free private parking; confirm the booked unit’s access and late arrival with the host. The booking confirmation number was not supplied.",
@@ -119,7 +133,9 @@
                 "durationMinutes": 20,
                 "plan": "Eat before the 15:15–15:30 go/no-go departure window. If airport time is tight, carry sealed food from the flight; do not stop on the mountain road.",
                 "mapUrl": "https://maps.google.com/?q=ALMECO%20Cafe%20Negro%20Bar%20Restaurant%20Tivat%20Airport%20Montenegro",
-                "sourceUrl": "https://montenegroairports.com/aerodrom-tivat/sadrzaji-i-servisi/"
+                "sourceUrl": "https://montenegroairports.com/aerodrom-tivat/sadrzaji-i-servisi/",
+                "id": "food-day-1-meals-01",
+                "waypointId": "almeco-cafe-negro-bar-restaurant-tivat-airport"
               },
               {
                 "slot": "Dinner · after check-in",
@@ -131,7 +147,9 @@
                 "durationMinutes": 30,
                 "plan": "Call ahead, arrange late table/takeaway, or eat pre-packed lodging food if flight/road delays push arrival past service.",
                 "mapUrl": "https://maps.google.com/?q=Zlatni%20Papagaj%20Restaurant%20Zabljak%20Montenegro",
-                "sourceUrl": "https://zlatnipapagaj.com/"
+                "sourceUrl": "https://zlatnipapagaj.com/",
+                "id": "food-day-1-meals-02",
+                "waypointId": "zlatni-papagaj-zabljak"
               }
             ],
             "coffee": [],
@@ -142,7 +160,9 @@
                 "parking": "Dedicated lot indicated in branch materials; large-car fit not directly confirmed",
                 "plan": "Optional pantry stop before ascending only if flight, pickup, daylight/safety checks leave ample margin; default is shop before travel or Day 2 in Žabljak.",
                 "mapUrl": "https://maps.google.com/?q=Voli%20Hipermarket%20Radanovi%C4%87i%20Montenegro",
-                "sourceUrl": "https://kompanija.voli.me/voli-hipermarket-radanovici/"
+                "sourceUrl": "https://kompanija.voli.me/voli-hipermarket-radanovici/",
+                "id": "food-day-1-supermarkets-01",
+                "waypointId": "voli-hipermarket-radanovici"
               },
               {
                 "name": "Aroma 311 · Žabljak",
@@ -150,7 +170,9 @@
                 "parking": "Street/lot parking not verified for loaded-car stop",
                 "plan": "Base-hub pantry top-up on Day 2 after unloading. Do not add to late Day 1 transfer.",
                 "mapUrl": "https://maps.google.com/?q=Aroma%20311%20%C2%B7%20%C5%BDabljak%20Montenegro",
-                "sourceUrl": "https://aromamarketi.me/lokacije/"
+                "sourceUrl": "https://aromamarketi.me/lokacije/",
+                "id": "food-day-1-supermarkets-02",
+                "waypointId": "aroma-311-zabljak"
               }
             ]
           }
@@ -165,71 +187,87 @@
           "morning": [
             {
               "type": "STAY",
-              "text": "If you arrived at Runolist on Day 1, recover after the airport-to-mountains transfer."
+              "text": "If you arrived at Runolist on Day 1, recover after the airport-to-mountains transfer.",
+              "id": "day-2-morning-01"
             },
             {
               "type": "DRIVE",
-              "text": "Go to Black Lake parking late morning."
+              "text": "Go to Black Lake parking late morning.",
+              "id": "day-2-morning-02"
             },
             {
               "type": "WALK",
-              "text": "Take the short forest-and-shore loop; allow about 2–2.5 hours."
+              "text": "Take the short forest-and-shore loop; allow about 2–2.5 hours.",
+              "id": "day-2-morning-03"
             },
             {
               "type": "CAUTION",
-              "text": "Turn back if footing or weather turns."
+              "text": "Turn back if footing or weather turns.",
+              "id": "day-2-morning-04"
             },
             {
               "type": "WALK",
-              "text": "Keep the Bosaca–Jablan Lake viewpoint as an optional, time-boxed out-and-back only if rested."
+              "text": "Keep the Bosaca–Jablan Lake viewpoint as an optional, time-boxed out-and-back only if rested.",
+              "id": "day-2-morning-05"
             },
             {
               "type": "CAUTION",
-              "text": "Do not attempt the reported seven-hour circular hike."
+              "text": "Do not attempt the reported seven-hour circular hike.",
+              "id": "day-2-morning-06"
             },
             {
               "type": "LOGISTICS",
-              "text": "If Day 1 was aborted, do not force a catch-up drive; reassess road/weather, driver condition and Runolist arrival arrangements before leaving."
+              "text": "If Day 1 was aborted, do not force a catch-up drive; reassess road/weather, driver condition and Runolist arrival arrangements before leaving.",
+              "id": "day-2-morning-07"
             },
             {
               "type": "DRIVE",
-              "text": "When safe to continue, drive directly to Runolist Chalet; skip Black Lake and other activities if needed to arrive safely."
+              "text": "When safe to continue, drive directly to Runolist Chalet; skip Black Lake and other activities if needed to arrive safely.",
+              "id": "day-2-morning-08"
             },
             {
               "type": "CAUTION",
-              "text": "Do not start a delayed highland transfer unless live conditions and daylight allow a safe arrival; cancel sightseeing first."
+              "text": "Do not start a delayed highland transfer unless live conditions and daylight allow a safe arrival; cancel sightseeing first.",
+              "id": "day-2-morning-09"
             },
             {
               "type": "CAUTION",
-              "text": "If Day 1 was delayed or aborted, reassess the live route, weather, driver condition and booked arrival arrangements before continuing; cancel sightseeing first."
+              "text": "If Day 1 was delayed or aborted, reassess the live route, weather, driver condition and booked arrival arrangements before continuing; cancel sightseeing first.",
+              "id": "day-2-morning-10"
             }
           ],
           "afternoon": [
             {
               "type": "WALK",
-              "text": "Finish the Black Lake visit and warm up."
+              "text": "Finish the Black Lake visit and warm up.",
+              "id": "day-2-afternoon-01"
             },
             {
               "type": "LOGISTICS",
-              "text": "Check the Day 3 P14 road and weather with AMSCG and your host."
+              "text": "Check the Day 3 P14 road and weather with AMSCG and your host.",
+              "id": "day-2-afternoon-02"
             },
             {
               "type": "STAY",
-              "text": "If delayed from Day 1, go directly to Runolist, unload and check in; skip Black Lake."
+              "text": "If delayed from Day 1, go directly to Runolist, unload and check in; skip Black Lake.",
+              "id": "day-2-afternoon-03"
             },
             {
               "type": "CAUTION",
-              "text": "If the northbound transfer remains unsafe, stop safely, contact the host, and arrange lodging directly; the booked stay dates remain Oct 1–4."
+              "text": "If the northbound transfer remains unsafe, stop safely, contact the host, and arrange lodging directly; the booked stay dates remain Oct 1–4.",
+              "id": "day-2-afternoon-04"
             }
           ],
           "evening": [
             {
               "type": "EAT",
-              "text": "Eat in Žabljak and get an early night before P14."
+              "text": "Eat in Žabljak and get an early night before P14.",
+              "id": "day-2-evening-01"
             },
             {
               "type": "CAUTION",
-              "text": "Ask the host which places are open and confirm the Sedlo road status again in the morning."
+              "text": "Ask the host which places are open and confirm the Sedlo road status again in the morning.",
+              "id": "day-2-evening-02"
             }
           ],
           "parking": "Use Runolist Chalet’s confirmed address as the base; the listing indicates free private parking, but access for the booked unit should be confirmed. Unload all bags before visiting Black Lake.",
@@ -273,7 +311,9 @@
                 "durationMinutes": 90,
                 "plan": "Use only if lake timing/weather allows the Bosača uphill drive; otherwise lunch in Žabljak.",
                 "mapUrl": "https://maps.google.com/?q=Mom%C4%8Dilov%20Grad%20Montenegro",
-                "sourceUrl": "https://visitzabljak.me/explore-zabljak/restaurant-momcilov-grad"
+                "sourceUrl": "https://visitzabljak.me/explore-zabljak/restaurant-momcilov-grad",
+                "id": "food-day-2-meals-01",
+                "waypointId": "momcilov-grad"
               },
               {
                 "slot": "Dinner · Žabljak",
@@ -285,7 +325,9 @@
                 "durationMinutes": 90,
                 "plan": "Book/phone first; October hours may change.",
                 "mapUrl": "https://maps.google.com/?q=Restaurant%20ORO%20Montenegro",
-                "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g1096284-d11725421-Reviews-Restaurant_Oro-Zabljak_Durmitor_National_Park_Zabljak_Municipality.html"
+                "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g1096284-d11725421-Reviews-Restaurant_Oro-Zabljak_Durmitor_National_Park_Zabljak_Municipality.html",
+                "id": "food-day-2-meals-02",
+                "waypointId": "restaurant-oro"
               }
             ],
             "coffee": [
@@ -296,7 +338,9 @@
                 "hours": "Hours not reliably published; ask lodging host",
                 "parking": "Town-center street parking; walk from lodging if possible.",
                 "mapUrl": "https://maps.google.com/?q=Ka%C4%87un%20%C2%B7%20%C5%BDabljak%20Montenegro",
-                "sourceUrl": ""
+                "sourceUrl": "",
+                "id": "food-day-2-coffee-01",
+                "waypointId": "kacun-zabljak"
               }
             ],
             "supermarkets": [
@@ -306,7 +350,9 @@
                 "parking": "Parking availability for loaded estate not verified",
                 "plan": "Shop after check-in/unload; stock water and P14 snacks before the highland loop.",
                 "mapUrl": "https://maps.google.com/?q=Aroma%20311%20%C2%B7%20%C5%BDabljak%20Montenegro",
-                "sourceUrl": "https://aromamarketi.me/lokacije/"
+                "sourceUrl": "https://aromamarketi.me/lokacije/",
+                "id": "food-day-2-supermarkets-01",
+                "waypointId": "aroma-311-zabljak"
               }
             ]
           }
@@ -321,75 +367,92 @@
           "morning": [
             {
               "type": "LOGISTICS",
-              "text": "Make this your P14 day."
+              "text": "Make this your P14 day.",
+              "id": "day-3-morning-01"
             },
             {
               "type": "LOGISTICS",
-              "text": "Start around 07:30 after checking AMSCG, the forecast and your lodging host for the Sedlo pass."
+              "text": "Start around 07:30 after checking AMSCG, the forecast and your lodging host for the Sedlo pass.",
+              "id": "day-3-morning-02"
             },
             {
               "type": "CAUTION",
-              "text": "Enter P-14 only if it is open, dry enough, and clear of ice or low cloud."
+              "text": "Enter P-14 only if it is open, dry enough, and clear of ice or low cloud.",
+              "id": "day-3-morning-03"
             },
             {
               "type": "LOGISTICS",
-              "text": "Put Žabljak → Trsa → Plužine/Piva viewpoint → Žabljak into Google Maps before leaving."
+              "text": "Put Žabljak → Trsa → Plužine/Piva viewpoint → Žabljak into Google Maps before leaving.",
+              "id": "day-3-morning-04"
             },
             {
               "type": "DRIVE",
-              "text": "The whole out-and-back is provisionally 4 h 30 behind the wheel, or 5 h 24 after +20%."
+              "text": "The whole out-and-back is provisionally 4 h 30 behind the wheel, or 5 h 24 after +20%.",
+              "id": "day-3-morning-05"
             },
             {
               "type": "CAUTION",
-              "text": "Go only if the live total is at most 5 h 30."
+              "text": "Go only if the live total is at most 5 h 30.",
+              "id": "day-3-morning-06"
             }
           ],
           "afternoon": [
             {
               "type": "DRIVE",
-              "text": "Stay on P-14 over Sedlo (about 1,911 m)."
+              "text": "Stay on P-14 over Sedlo (about 1,911 m).",
+              "id": "day-3-afternoon-01"
             },
             {
               "type": "CAUTION",
-              "text": "It is paved, narrow and winding, with two-way traffic and few comfortable passing places; use signed pullouts and expect to reverse to a passing place."
+              "text": "It is paved, narrow and winding, with two-way traffic and few comfortable passing places; use signed pullouts and expect to reverse to a passing place.",
+              "id": "day-3-afternoon-02"
             },
             {
               "type": "DRIVE",
-              "text": "Give the drive about 2 h 15 each way."
+              "text": "Give the drive about 2 h 15 each way.",
+              "id": "day-3-afternoon-03"
             },
             {
               "type": "LOGISTICS",
-              "text": "Allow time for photo and lunch stops."
+              "text": "Allow time for photo and lunch stops.",
+              "id": "day-3-afternoon-04"
             },
             {
               "type": "SEE",
-              "text": "Stop at the Plužine/Piva viewpoint and lakeside, then turn around."
+              "text": "Stop at the Plužine/Piva viewpoint and lakeside, then turn around.",
+              "id": "day-3-afternoon-05"
             },
             {
               "type": "CAUTION",
-              "text": "Skip Mratinje Dam and the cheese-farm detour unless Maps still shows ≤5 h 30 adjusted and a Žabljak return by 16:00."
+              "text": "Skip Mratinje Dam and the cheese-farm detour unless Maps still shows ≤5 h 30 adjusted and a Žabljak return by 16:00.",
+              "id": "day-3-afternoon-06"
             },
             {
               "type": "CAUTION",
-              "text": "If the core loop exceeds the cap or fails the safety gate, cancel P14 and return to Runolist or remain at base; choose a local low-risk walk only if conditions allow."
+              "text": "If the core loop exceeds the cap or fails the safety gate, cancel P14 and return to Runolist or remain at base; choose a local low-risk walk only if conditions allow.",
+              "id": "day-3-afternoon-07"
             }
           ],
           "evening": [
             {
               "type": "DRIVE",
-              "text": "Get back to Žabljak before dark."
+              "text": "Get back to Žabljak before dark.",
+              "id": "day-3-evening-01"
             },
             {
               "type": "EAT",
-              "text": "Have dinner nearby."
+              "text": "Have dinner nearby.",
+              "id": "day-3-evening-02"
             },
             {
               "type": "CAUTION",
-              "text": "Do not tack on the seven-hour Jablan Lake circular hike."
+              "text": "Do not tack on the seven-hour Jablan Lake circular hike.",
+              "id": "day-3-evening-03"
             },
             {
               "type": "WALK",
-              "text": "If P14 is cancelled, use the short Bosača out-and-back as a separate, time-boxed alternative."
+              "text": "If P14 is cancelled, use the short Bosača out-and-back as a separate, time-boxed alternative.",
+              "id": "day-3-evening-04"
             }
           ],
           "parking": "Start and finish at Žabljak with luggage secured. Use signed pullouts; never stop on blind bends. Download the road map and Maps.me trail data offline.",
@@ -443,7 +506,9 @@
                 "durationMinutes": 15,
                 "plan": "Default plan. P14 has only six minutes of drive-cap margin; sit-down food detour fails the daylight gate unless live routing still passes.",
                 "mapUrl": "https://maps.google.com/?q=%C5%BDabljak%20packed%20lunch%20%28buy%20at%20Aroma%20311%29%20Montenegro",
-                "sourceUrl": "https://aromamarketi.me/lokacije/"
+                "sourceUrl": "https://aromamarketi.me/lokacije/",
+                "id": "food-day-3-meals-01",
+                "waypointId": "zabljak-packed-lunch-buy-at-aroma-311"
               },
               {
                 "slot": "Lunch alternate · conditional",
@@ -455,7 +520,9 @@
                 "durationMinutes": 75,
                 "plan": "Only if live route plus meal dwell still returns to Žabljak by 16:00 and stays ≤5 h 30 driving.",
                 "mapUrl": "https://maps.google.com/?q=Restoran%20So%C4%8Dica%20%C2%B7%20Plu%C5%BEine%20Montenegro",
-                "sourceUrl": "https://wevotravel.com/restoran/restoran-socica/"
+                "sourceUrl": "https://wevotravel.com/restoran/restoran-socica/",
+                "id": "food-day-3-meals-02",
+                "waypointId": "restoran-socica-pluzine"
               },
               {
                 "slot": "Dinner · Žabljak",
@@ -467,7 +534,9 @@
                 "durationMinutes": 90,
                 "plan": "Eat after returning; call ahead if P14 runs late.",
                 "mapUrl": "https://maps.google.com/?q=Restaurant%20ORO%20Montenegro",
-                "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g1096284-d11725421-Reviews-Restaurant_Oro-Zabljak_Durmitor_National_Park_Zabljak_Municipality.html"
+                "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g1096284-d11725421-Reviews-Restaurant_Oro-Zabljak_Durmitor_National_Park_Zabljak_Municipality.html",
+                "id": "food-day-3-meals-03",
+                "waypointId": "restaurant-oro"
               }
             ],
             "coffee": [
@@ -478,7 +547,9 @@
                 "hours": "Hours not reliably published; ask host",
                 "parking": "Walk from lodging; avoid delaying the 07:30 launch.",
                 "mapUrl": "https://maps.google.com/?q=Ka%C4%87un%20%C2%B7%20%C5%BDabljak%20Montenegro",
-                "sourceUrl": ""
+                "sourceUrl": "",
+                "id": "food-day-3-coffee-01",
+                "waypointId": "kacun-zabljak"
               }
             ],
             "supermarkets": [
@@ -488,7 +559,9 @@
                 "parking": "Loaded-car parking not confirmed",
                 "plan": "Buy lunch the evening before; do not add a morning shop if it threatens the early start.",
                 "mapUrl": "https://maps.google.com/?q=Aroma%20311%20%C2%B7%20%C5%BDabljak%20Montenegro",
-                "sourceUrl": "https://aromamarketi.me/lokacije/"
+                "sourceUrl": "https://aromamarketi.me/lokacije/",
+                "id": "food-day-3-supermarkets-01",
+                "waypointId": "aroma-311-zabljak"
               }
             ]
           }
@@ -503,43 +576,52 @@
           "morning": [
             {
               "type": "LOGISTICS",
-              "text": "Leave Žabljak by 07:00."
+              "text": "Leave Žabljak by 07:00.",
+              "id": "day-4-morning-01"
             },
             {
               "type": "DRIVE",
-              "text": "Retrace M-6 via Šavnik to Jasenovo Polje, M-3 to Nikšić, M-7 to Vilusi, M-8 through Grahovo to Lipci, then M-1 north to Conte Hotel & Restaurant in Perast."
+              "text": "Retrace M-6 via Šavnik to Jasenovo Polje, M-3 to Nikšić, M-7 to Vilusi, M-8 through Grahovo to Lipci, then M-1 north to Conte Hotel & Restaurant in Perast.",
+              "id": "day-4-morning-02"
             },
             {
               "type": "DRIVE",
-              "text": "Allow about 3 h 04 before the +20% terrain buffer, around 3 h 41 adjusted as a conservative estimate; add time for live traffic and the Perast parking approach."
+              "text": "Allow about 3 h 04 before the +20% terrain buffer, around 3 h 41 adjusted as a conservative estimate; add time for live traffic and the Perast parking approach.",
+              "id": "day-4-morning-03"
             },
             {
               "type": "CAUTION",
-              "text": "Check road/weather notices before rolling; never route across Đurđevića Tara Bridge, which is closed through Oct 26 at noon."
+              "text": "Check road/weather notices before rolling; never route across Đurđevića Tara Bridge, which is closed through Oct 26 at noon.",
+              "id": "day-4-morning-04"
             }
           ],
           "afternoon": [
             {
               "type": "STAY",
-              "text": "Go to the signed parking area at the Perast entrance; vehicles cannot enter the old town in May–October. Contact Conte about assistance from parking to reception, unload and check in."
+              "text": "Go to the signed parking area at the Perast entrance; vehicles cannot enter the old town in May–October. Contact Conte about assistance from parking to reception, unload and check in.",
+              "id": "day-4-afternoon-01"
             },
             {
               "type": "CAUTION",
-              "text": "Do not add a Kotor stop while luggage is in the car."
+              "text": "Do not add a Kotor stop while luggage is in the car.",
+              "id": "day-4-afternoon-02"
             },
             {
               "type": "WALK",
-              "text": "Conte publishes check-in from 15:00; confirm the individual booking and arrival plan. After unloading, rest or explore Perast on foot."
+              "text": "Conte publishes check-in from 15:00; confirm the individual booking and arrival plan. After unloading, rest or explore Perast on foot.",
+              "id": "day-4-afternoon-03"
             }
           ],
           "evening": [
             {
               "type": "EAT",
-              "text": "Book dinner in Perast or near Conte and leave the car put."
+              "text": "Book dinner in Perast or near Conte and leave the car put.",
+              "id": "day-4-evening-01"
             },
             {
               "type": "LOGISTICS",
-              "text": "Keep the car in the signed entrance parking area; walk Perast’s historic core."
+              "text": "Keep the car in the signed entrance parking area; walk Perast’s historic core.",
+              "id": "day-4-evening-02"
             }
           ],
           "parking": "Conte Hotel & Restaurant, Ul. Marka Martinovića bb, 85336 Perast. Old-town access is restricted to vehicles May–October; use a signed public car park at a town entrance and contact the hotel about available electric-vehicle transfer assistance. October price and individual booking terms are unconfirmed.",
@@ -587,7 +669,9 @@
                 "durationMinutes": 75,
                 "plan": "On corridor through Nikšić; time-box lunch before continuing to Kotor.",
                 "mapUrl": "https://maps.google.com/?q=Restaurant%20Kastel%20%C2%B7%20Nik%C5%A1i%C4%87%20Montenegro",
-                "sourceUrl": "https://kastel.me/?lang=en&page_id=11611"
+                "sourceUrl": "https://kastel.me/?lang=en&page_id=11611",
+                "id": "food-day-4-meals-01",
+                "waypointId": "restaurant-kastel-niksic"
               },
               {
                 "slot": "Dinner · Perast",
@@ -599,7 +683,9 @@
                 "durationMinutes": 60,
                 "plan": "Convenient option after the transfer / day out. No restaurant table booking, deposit or cancellation terms were supplied.",
                 "mapUrl": "https://maps.google.com/?q=Conte%20Hotel%20Restaurant%20Perast%20Montenegro",
-                "sourceUrl": "https://hotelconte.me/our-hotel"
+                "sourceUrl": "https://hotelconte.me/our-hotel",
+                "id": "food-day-4-meals-02",
+                "waypointId": "conte-hotel-perast"
               }
             ],
             "coffee": [
@@ -610,7 +696,9 @@
                 "hours": "Kamelija listing: Mon–Sat 09:00–23:00; Sunday/season hours verify",
                 "parking": "Kamelija parking garage/lot; walk from car, height/fee not confirmed",
                 "mapUrl": "https://maps.google.com/?q=CAVE%20Coffee%20%C2%B7%20Kotor%20Montenegro",
-                "sourceUrl": "https://www.kamelija.me/en/stores/cave-coffee/"
+                "sourceUrl": "https://www.kamelija.me/en/stores/cave-coffee/",
+                "id": "food-day-4-coffee-01",
+                "waypointId": "cave-coffee-kotor"
               }
             ],
             "supermarkets": [
@@ -620,7 +708,9 @@
                 "parking": "Urban lot/curb availability not confirmed; unload at hotel first",
                 "plan": "Convenient Perast base top-up, not a loaded-luggage stop.",
                 "mapUrl": "https://maps.google.com/?q=Aroma%20City%20Taba%C4%8Dina%20%C2%B7%20Kotor%20Montenegro",
-                "sourceUrl": "https://aromamarketi.me/lokacije/"
+                "sourceUrl": "https://aromamarketi.me/lokacije/",
+                "id": "food-day-4-supermarkets-01",
+                "waypointId": "aroma-city-tabacina-kotor"
               }
             ]
           }
@@ -635,87 +725,107 @@
           "morning": [
             {
               "type": "LOGISTICS",
-              "text": "Choose one outing; do not try to cram all three into the last full day."
+              "text": "Choose one outing; do not try to cram all three into the last full day.",
+              "id": "day-5-morning-01"
             },
             {
               "type": "DRIVE",
-              "text": "For Skadar, leave Perast around 08:00 for Virpazar."
+              "text": "For Skadar, leave Perast around 08:00 for Virpazar.",
+              "id": "day-5-morning-02"
             },
             {
               "type": "DRIVE",
-              "text": "The scenic route uses R-1 toward Njeguši/Cetinje, then R-15; the coastal option is M-1 through Budva and Petrovac, M-1.1 through the tolled Sozina Tunnel, then M-2/R-15."
+              "text": "The scenic route uses R-1 toward Njeguši/Cetinje, then R-15; the coastal option is M-1 through Budva and Petrovac, M-1.1 through the tolled Sozina Tunnel, then M-2/R-15.",
+              "id": "day-5-morning-03"
             },
             {
               "type": "CAUTION",
-              "text": "Follow live routing around works and weather."
+              "text": "Follow live routing around works and weather.",
+              "id": "day-5-morning-04"
             },
             {
               "type": "LOGISTICS",
-              "text": "Book a boat only after the operator confirms an October departure and return time."
+              "text": "Book a boat only after the operator confirms an October departure and return time.",
+              "id": "day-5-morning-05"
             },
             {
               "type": "LOGISTICS",
-              "text": "The park lists €5/person/day and says one cruise is included; verify that it covers your chosen trip."
+              "text": "The park lists €5/person/day and says one cruise is included; verify that it covers your chosen trip.",
+              "id": "day-5-morning-06"
             },
             {
               "type": "LOGISTICS",
-              "text": "Old €10 group / €50 private fares are traveler history, not quotes."
+              "text": "Old €10 group / €50 private fares are traveler history, not quotes.",
+              "id": "day-5-morning-07"
             }
           ],
           "afternoon": [
             {
               "type": "WATER",
-              "text": "On the Skadar option, be ashore by 15:45."
+              "text": "On the Skadar option, be ashore by 15:45.",
+              "id": "day-5-afternoon-01"
             },
             {
               "type": "EAT",
-              "text": "Eat in Virpazar."
+              "text": "Eat in Virpazar.",
+              "id": "day-5-afternoon-02"
             },
             {
               "type": "SEE",
-              "text": "Add a Godinje winery only with a reservation."
+              "text": "Add a Godinje winery only with a reservation.",
+              "id": "day-5-afternoon-03"
             },
             {
               "type": "CAUTION",
-              "text": "Choose a sober driver for the winery stop."
+              "text": "Choose a sober driver for the winery stop.",
+              "id": "day-5-afternoon-04"
             },
             {
               "type": "LOGISTICS",
-              "text": "For Perast, park at the signed lot."
+              "text": "For Perast, park at the signed lot.",
+              "id": "day-5-afternoon-05"
             },
             {
               "type": "SEE",
-              "text": "Walk the old lanes."
+              "text": "Walk the old lanes.",
+              "id": "day-5-afternoon-06"
             },
             {
               "type": "WATER",
-              "text": "Take the island boat only if it is running."
+              "text": "Take the island boat only if it is running.",
+              "id": "day-5-afternoon-07"
             },
             {
               "type": "SEE",
-              "text": "Budva/Sveti Stefan is the beach-and-old-town alternative."
+              "text": "Budva/Sveti Stefan is the beach-and-old-town alternative.",
+              "id": "day-5-afternoon-08"
             },
             {
               "type": "CAUTION",
-              "text": "Traffic and parking can eat the afternoon; skip Budva if crowds annoy you."
+              "text": "Traffic and parking can eat the afternoon; skip Budva if crowds annoy you.",
+              "id": "day-5-afternoon-09"
             },
             {
               "type": "DRIVE",
-              "text": "Return to Conte in Perast before dark."
+              "text": "Return to Conte in Perast before dark.",
+              "id": "day-5-afternoon-10"
             }
           ],
           "evening": [
             {
               "type": "EAT",
-              "text": "Have the final dinner in Perast."
+              "text": "Have the final dinner in Perast.",
+              "id": "day-5-evening-01"
             },
             {
               "type": "STAY",
-              "text": "Leave bags at Conte Hotel & Restaurant."
+              "text": "Leave bags at Conte Hotel & Restaurant.",
+              "id": "day-5-evening-02"
             },
             {
               "type": "LOGISTICS",
-              "text": "Keep tomorrow’s airport run simple and predictable."
+              "text": "Keep tomorrow’s airport run simple and predictable.",
+              "id": "day-5-evening-03"
             }
           ],
           "parking": "Leave bags at Conte. For Perast, park at a signed entrance lot and walk. For Virpazar or Budva, use marked public lots; never leave valuables visible in the car.",
@@ -773,7 +883,9 @@
                 "durationMinutes": 90,
                 "plan": "Only for the Skadar outing; book boat timing separately.",
                 "mapUrl": "https://maps.google.com/?q=Restaurant%20Pelikan%20%C2%B7%20Virpazar%20Montenegro",
-                "sourceUrl": "https://pelikan-zec.com/"
+                "sourceUrl": "https://pelikan-zec.com/",
+                "id": "food-day-5-meals-01",
+                "waypointId": "restaurant-pelikan-virpazar"
               },
               {
                 "slot": "Dinner · Perast",
@@ -785,7 +897,9 @@
                 "durationMinutes": 60,
                 "plan": "Convenient option after the transfer / day out. No restaurant table booking, deposit or cancellation terms were supplied.",
                 "mapUrl": "https://maps.google.com/?q=Conte%20Hotel%20Restaurant%20Perast%20Montenegro",
-                "sourceUrl": "https://hotelconte.me/our-hotel"
+                "sourceUrl": "https://hotelconte.me/our-hotel",
+                "id": "food-day-5-meals-02",
+                "waypointId": "conte-hotel-perast"
               },
               {
                 "slot": "Breakfast · Conte Hotel",
@@ -797,7 +911,9 @@
                 "durationMinutes": 45,
                 "plan": "Do not assume breakfast is prepaid or included; confirm the reservation terms or arrange an alternative.",
                 "mapUrl": "https://maps.google.com/?q=Conte%20Hotel%20%26%20Restaurant%2C%20Perast%2C%20Montenegro",
-                "sourceUrl": "https://hotelconte.me/our-hotel"
+                "sourceUrl": "https://hotelconte.me/our-hotel",
+                "id": "food-day-5-meals-03",
+                "waypointId": "conte-hotel-perast"
               }
             ],
             "coffee": [
@@ -808,7 +924,9 @@
                 "hours": "Official listing daily 08:00–22:00",
                 "parking": "Walk from Conte Hotel & Restaurant in Perast; Old Town parking is signed/paid",
                 "mapUrl": "https://maps.google.com/?q=Small%20Talks%20%C2%B7%20Kotor%20Montenegro",
-                "sourceUrl": "https://www.smalltalks.me/"
+                "sourceUrl": "https://www.smalltalks.me/",
+                "id": "food-day-5-coffee-01",
+                "waypointId": "small-talks-kotor"
               }
             ],
             "supermarkets": [
@@ -818,7 +936,9 @@
                 "parking": "Urban parking not guaranteed; shop after hotel check-in",
                 "plan": "Base-hub groceries for water/snacks; leave luggage at lodging.",
                 "mapUrl": "https://maps.google.com/?q=Aroma%20City%20Taba%C4%8Dina%20%C2%B7%20Kotor%20Montenegro",
-                "sourceUrl": "https://aromamarketi.me/lokacije/"
+                "sourceUrl": "https://aromamarketi.me/lokacije/",
+                "id": "food-day-5-supermarkets-01",
+                "waypointId": "aroma-city-tabacina-kotor"
               }
             ]
           }
@@ -833,33 +953,40 @@
           "morning": [
             {
               "type": "EAT",
-              "text": "Have breakfast at 08:30."
+              "text": "Have breakfast at 08:30.",
+              "id": "day-6-morning-01"
             },
             {
               "type": "LOGISTICS",
-              "text": "Leave Perast by 09:30 as a conservative planning target; confirm live routing."
+              "text": "Leave Perast by 09:30 as a conservative planning target; confirm live routing.",
+              "id": "day-6-morning-02"
             },
             {
               "type": "DRIVE",
-              "text": "Take the direct road to TIV; do not detour for a last viewpoint."
+              "text": "Take the direct road to TIV; do not detour for a last viewpoint.",
+              "id": "day-6-morning-03"
             },
             {
               "type": "LOGISTICS",
-              "text": "Refuel only if your contract requires it, photograph the fuel gauge and car condition, and return the car by 11:30."
+              "text": "Refuel only if your contract requires it, photograph the fuel gauge and car condition, and return the car by 11:30.",
+              "id": "day-6-morning-04"
             }
           ],
           "afternoon": [
             {
               "type": "LOGISTICS",
-              "text": "Walk to the terminal and be inside by 12:15 for the required counter check-in."
+              "text": "Walk to the terminal and be inside by 12:15 for the required counter check-in.",
+              "id": "day-6-afternoon-01"
             },
             {
               "type": "LOGISTICS",
-              "text": "Planning estimate: flight departure is 14:55; flight number and ticket confirmation were not supplied."
+              "text": "Planning estimate: flight departure is 14:55; flight number and ticket confirmation were not supplied.",
+              "id": "day-6-afternoon-02"
             },
             {
               "type": "CAUTION",
-              "text": "Do not gamble on rental inspection queues or airport procedures."
+              "text": "Do not gamble on rental inspection queues or airport procedures.",
+              "id": "day-6-afternoon-03"
             }
           ],
           "evening": [],
@@ -893,7 +1020,9 @@
                 "durationMinutes": 35,
                 "plan": "Do not add a pre-return detour; terminal by 12:15.",
                 "mapUrl": "https://maps.google.com/?q=Tivat%20Airport%20caf%C3%A9%20%2F%20terminal%20food%20Montenegro",
-                "sourceUrl": ""
+                "sourceUrl": "",
+                "id": "food-day-6-meals-01",
+                "waypointId": "tivat-airport-cafe-terminal-food"
               },
               {
                 "slot": "Breakfast · 08:00 if included",
@@ -905,7 +1034,9 @@
                 "durationMinutes": 45,
                 "plan": "A breakfast at opening gives a 09:30 airport departure buffer. If not included or not operating, arrange breakfast separately and preserve the airport buffer.",
                 "mapUrl": "https://maps.google.com/?q=Conte%20Hotel%20%26%20Restaurant%2C%20Perast%2C%20Montenegro",
-                "sourceUrl": "https://hotelconte.me/our-hotel"
+                "sourceUrl": "https://hotelconte.me/our-hotel",
+                "id": "food-day-6-meals-02",
+                "waypointId": "conte-hotel-perast"
               }
             ],
             "coffee": [
@@ -916,7 +1047,9 @@
                 "hours": "Daily 08:00–22:00 published; verify opening time",
                 "parking": "Walk from lodging; keep the 09:30 departure",
                 "mapUrl": "https://maps.google.com/?q=Small%20Talks%20%C2%B7%20Kotor%20Montenegro",
-                "sourceUrl": "https://www.smalltalks.me/"
+                "sourceUrl": "https://www.smalltalks.me/",
+                "id": "food-day-6-coffee-01",
+                "waypointId": "small-talks-kotor"
               }
             ],
             "supermarkets": []
@@ -926,43 +1059,31 @@
       "checks": [
         {
           "name": "Confirmed five-night lodging pattern",
-          "status": "PASS",
-          "detail": "Runolist Chalet in Žabljak Oct 1–4 (three nights), then Conte Hotel & Restaurant in Perast Oct 4–6 (two nights). Individual confirmation numbers and rates were not supplied."
+          "status": "PASS"
         },
         {
           "name": "Day 1 driving ceiling ≤5.5 h adjusted",
-          "status": "CONDITIONAL",
-          "detail": "The existing 3 h 20 min route estimate yields about 4 h after the +20% terrain allowance, before traffic or stops. This remains a planning estimate. Verify the live route, weather, driver condition and host arrival arrangements before leaving TIV; do not start if the live route exceeds 5 h 30."
+          "status": "CONDITIONAL"
         },
         {
           "name": "Day 1 daylight cutoff",
-          "status": "CONDITIONAL",
-          "detail": "The existing 15:15–15:30 airport departure estimate projects arrival after sunset and civil twilight. This is an accepted planning exception, not a daylight-safety pass. Proceed only in safe conditions after contacting Runolist about late arrival; otherwise stop safely and arrange lodging directly. No alternate lodging booking was supplied."
+          "status": "CONDITIONAL"
         },
         {
           "name": "Daily adjusted driving ≤5.5 h",
-          "status": "CONDITIONAL",
-          "detail": "Day 1 is estimated at 4 h adjusted. Day 4 is a conservative planning estimate for the Žabljak–Perast transfer; confirm the property-level route live and add the Perast entrance/parking approach. P14 is provisionally 5 h 24 adjusted with dwell time excluded and only six minutes of margin. Verify all waypoints; skip optional spurs and cancel P14 if its core loop exceeds 5 h 30."
+          "status": "CONDITIONAL"
         },
         {
           "name": "P14 daylight and weather gate",
-          "status": "CONDITIONAL",
-          "detail": "Start by 07:45 only after same-day road and weather checks; return to the booked Žabljak base and finish high-altitude driving by 16:00. Skip for snow, ice, poor visibility, closure or unsafe conditions. Use a local low-risk activity or rest day if P14 is cancelled."
+          "status": "CONDITIONAL"
         },
         {
           "name": "Luggage concealment and transfer parking",
-          "status": "CONDITIONAL",
-          "detail": "Day 1 is a direct transfer with no sightseeing; unload at Runolist on arrival. For Conte, vehicles cannot enter Perast old town during May–October; use a signed entrance car park and contact the hotel about assistance to reception. Never leave luggage visible in the car."
+          "status": "CONDITIONAL"
         },
         {
           "name": "Day 6 airport return buffer",
-          "status": "CONDITIONAL",
-          "detail": "Leave Perast with a generous buffer for the TIV drive and return the car by the existing 11:30 planning target; reach the terminal by 12:15. Flight time and rental return terms are not confirmed by voucher details."
-        },
-        {
-          "name": "Tara bridge closure avoided",
-          "status": "PASS",
-          "detail": "The official closure extends through Oct 26, 2026 at noon; the planned route does not depend on crossing it. Rafting is omitted unless an operator confirms safe independent access."
+          "status": "CONDITIONAL"
         }
       ],
       "nightBreakdown": [
@@ -976,17 +1097,6 @@
           "nights": 2,
           "dates": "Oct 4–5"
         }
-      ],
-      "crucialGroundTips": [
-        "Book a midsize estate or larger by exact model. Test all four bags under the closed parcel cover before signing; liters on a rental listing do not prove fit.",
-        "Pay for low-excess SCDW and get glass, tires/wheels, underbody, gravel and roadside cover in writing. Confirm P-14 is allowed by the rental contract; keep the spare/repair kit and assistance number accessible.",
-        "Use live navigation, then add at least 20% for switchbacks and more time for stops, traffic or roadworks. P14 has only six minutes of estimated ceiling margin; the live route decides.",
-        "Download offline Google Maps for the road corridor and Maps.me for marked trails before leaving Wi-Fi. Trail markings are patchy in Google Maps; do not count on mobile signal in Durmitor.",
-        "Fill the tank before the P14 day. Carry water, warm layers, snacks and a charged power bank.",
-        "Expect narrow two-way roads, rockfall, potholes, unprotected edges and occasional tire trouble. Slow down, leave room for oncoming buses, and stop only at visible signed pullouts.",
-        "Runolist listing details indicate a kitchen and free private parking; confirm the booked unit and parking access with the host. Conte publishes breakfast hours 08:00–10:30; whether breakfast is included in this booking is unknown.",
-        "At Conte, Perast old town is vehicle-restricted in May–October. Use a marked entrance parking area, check the applicable October tariff, and contact the hotel about transfer assistance.",
-        "Keep €50–100 in small cash notes for park booths and rural stops. The primary route has three planned national-park days; compare the published ticket options and confirm terms at the gate."
       ]
     }
   },
@@ -1068,146 +1178,74 @@
     {
       "itemId": "C1",
       "region": "Coast",
-      "name": "Kotor Old Town walls / San Giovanni",
       "tag": "Sightseeing",
-      "durationHours": 2.5,
-      "cashRequired": true,
-      "estimatedCostEUR": 15,
-      "daylightSensitive": true,
-      "operatingStatusVerified": true,
-      "note": "Municipality publishes seasonal hours; Oct date/ticket should be confirmed."
+      "waypointId": "kotor-old-town-walls-san-giovanni"
     },
     {
       "itemId": "C2",
       "region": "Coast",
-      "name": "Perast / Our Lady of the Rocks boat",
       "tag": "Romantic Experiences",
-      "durationHours": 1.5,
-      "cashRequired": true,
-      "estimatedCostEUR": 20,
-      "daylightSensitive": true,
-      "operatingStatusVerified": false,
-      "note": "Ask skipper to confirm October service, sea state and fare."
+      "waypointId": "perast-our-lady-of-the-rocks-boat"
     },
     {
       "itemId": "C3",
       "region": "Coast",
-      "name": "Regent Porto Montenegro spa",
       "tag": "Wellness & Spa",
-      "durationHours": 2,
-      "cashRequired": false,
-      "estimatedCostEUR": 120,
-      "daylightSensitive": false,
-      "operatingStatusVerified": false,
-      "note": "Spa facilities listed; nonresident access and rate require confirmation."
+      "waypointId": "regent-porto-montenegro-spa"
     },
     {
       "itemId": "C4",
       "region": "Central",
-      "name": "Lovćen visitor area / Ivanova Korita walk",
       "tag": "Adventure & Hiking",
-      "durationHours": 2,
-      "cashRequired": true,
-      "estimatedCostEUR": 6,
-      "daylightSensitive": true,
-      "operatingStatusVerified": true,
-      "note": "Check wet road, fog and trail conditions; cost planning estimate."
+      "waypointId": "lovcen-visitor-area-ivanova-korita-walk"
     },
     {
       "itemId": "C5",
       "region": "Central",
-      "name": "Plantaze Šipčanik cellar tasting",
       "tag": "Wine & Gastronomy",
-      "durationHours": 1,
-      "cashRequired": false,
-      "estimatedCostEUR": 23,
-      "daylightSensitive": false,
-      "operatingStatusVerified": true,
-      "note": "Reservation required; designated driver."
+      "waypointId": "plantaze-sipcanik-cellar-tasting"
     },
     {
       "itemId": "C6",
       "region": "Central",
-      "name": "Lake Skadar boat from Virpazar",
       "tag": "Nature & Wildlife",
-      "durationHours": 2,
-      "cashRequired": true,
-      "estimatedCostEUR": 35,
-      "daylightSensitive": true,
-      "operatingStatusVerified": false,
-      "note": "Current park fee and operators exist; specific October boat departure/weather not confirmed."
+      "waypointId": "lake-skadar-boat-from-virpazar"
     },
     {
       "itemId": "N0",
       "region": "North",
-      "name": "P14 / Sedlo Pass out-and-back from Žabljak to Plužine and Piva viewpoint",
       "tag": "Sightseeing",
-      "durationHours": 8,
-      "cashRequired": true,
-      "estimatedCostEUR": 10,
-      "daylightSensitive": true,
-      "operatingStatusVerified": true,
-      "note": "Official tourism guide recommends May–October and describes the narrow winding paved road; seasonal listing does not verify Oct 3 weather or pass status. Live route gate ≤5.5 adjusted driving hours and finish highland driving by 16:00."
+      "waypointId": "p14-sedlo-pass-out-and-back-from-zabljak-to-pluzine-and-piva-viewpoint"
     },
     {
       "itemId": "N1",
       "region": "North",
-      "name": "Durmitor / Black Lake loop",
       "tag": "Nature & Wildlife",
-      "durationHours": 2.5,
-      "cashRequired": true,
-      "estimatedCostEUR": 5,
-      "daylightSensitive": true,
-      "operatingStatusVerified": true,
-      "note": "Park listing current; trail surface/weather and access must be checked locally."
+      "waypointId": "durmitor-black-lake-loop"
     },
     {
       "itemId": "N2",
       "region": "North",
-      "name": "Ćurevac viewpoint / Tara Canyon",
       "tag": "Adventure & Hiking",
-      "durationHours": 2,
-      "cashRequired": true,
-      "estimatedCostEUR": 5,
-      "daylightSensitive": true,
-      "operatingStatusVerified": false,
-      "note": "Road and trail condition not date-specifically verified; do not cross Đurđevića Tara bridge during its closure."
+      "waypointId": "curevac-viewpoint-tara-canyon"
     },
     {
       "itemId": "N3",
       "region": "North",
-      "name": "Žabljak alpine cuisine / local konoba dinner",
       "tag": "Food & Dining",
-      "durationHours": 1.5,
-      "cashRequired": true,
-      "estimatedCostEUR": 35,
-      "daylightSensitive": false,
-      "operatingStatusVerified": false,
-      "note": "Reserve directly; menu and October opening hours vary by venue."
+      "waypointId": "zabljak-alpine-cuisine-local-konoba-dinner"
     },
     {
       "itemId": "N4",
       "region": "North",
-      "name": "Bosača–Jablan Lake viewpoint short out-and-back (optional alternative)",
       "tag": "Adventure & Hiking",
-      "durationHours": 3,
-      "cashRequired": false,
-      "estimatedCostEUR": 0,
-      "daylightSensitive": true,
-      "operatingStatusVerified": false,
-      "note": "Time-box to 3 hours and turn back the same way; use offline Maps.me trail data. Traveler report says the longer circular hike ran far beyond estimate and was not completed. Do not combine with the P14 day."
+      "waypointId": "bosacajablan-lake-viewpoint-short-out-and-back-optional-alternative"
     },
     {
       "itemId": "C7",
       "region": "Coast",
-      "name": "Budva Old Town / Sveti Stefan / Miločer coastal day (optional alternate)",
       "tag": "Sightseeing",
-      "durationHours": 6,
-      "cashRequired": true,
-      "estimatedCostEUR": 20,
-      "daylightSensitive": true,
-      "operatingStatusVerified": false,
-      "note": "Optional replacement for the Skadar outing from Kotor; check October opening, traffic, beach access, parking and conditions. User-provided traveler report is historical."
+      "waypointId": "budva-old-town-sveti-stefan-milocer-coastal-day-optional-alternate"
     }
   ],
   "sources": [
@@ -1401,20 +1439,6 @@
     ]
   ],
   "sourcesChecked": "2026-09-27",
-  "foodNotes": {
-    "cash": "No cash-only status was verifiable for recommended venues; listings say unconfirmed and direct travelers to carry cash/ask.",
-    "durations": "Meal durations are planning estimates, not venue promises.",
-    "hours": "Published hours are a September 2026 research snapshot; confirm directly for October dates.",
-    "day1Pantry": [
-      "2–3 × 5 L still-water jugs for lodging",
-      "4–6 × 500 ml cabin bottles plus electrolyte sachets",
-      "Pršut and Njeguši/Pljevlja cheese in an insulated cooler with ice packs",
-      "Crackers/breadsticks, nuts, dried fruit, apples/mandarins, granola or chocolate",
-      "Napkins, wet wipes, small trash bags; keep road water/snacks in the cabin",
-      "Buy perishable meat/cheese only when refrigeration is available; use the Runolist kitchen only after confirming the booked unit and equipment."
-    ],
-    "day1Timing": "The booked Runolist stay begins Oct 1; no safe supermarket/restaurant detour belongs in the late mountain-transfer plan. Buy a compact pantry before travel only if it does not delay the airport departure; otherwise shop after check-in or on Day 2. The property listing indicates kitchen access, but confirm the booked unit and equipment."
-  },
   "stays": [
     {
       "name": "Runolist Chalet",

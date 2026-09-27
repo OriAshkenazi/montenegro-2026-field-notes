@@ -216,3 +216,13 @@
 
 .stay-directory{margin-top:34px}.stay-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.stay-reference{background:var(--card);border:1px solid var(--line);padding:18px}.stay-reference h3{font:600 20px var(--serif);margin:8px 0 2px}.stay-reference p{font-size:11px;color:var(--muted);margin:8px 0}.stay-reference small{font-size:9px;color:var(--muted)}.stay-badge{font:9px var(--mono);text-transform:uppercase;letter-spacing:.08em;color:#477452;background:#e1eee0;padding:5px 7px;border-radius:12px}.map-popup button[data-day-jump]{display:block;margin:8px 0;border:0;background:#eaf0e8;color:var(--ink);padding:7px 9px;font:600 11px var(--sans);cursor:pointer}
 @media(max-width:760px){.stay-grid{grid-template-columns:1fr}}
+/* Compact auxiliary indexes and waypoint action sheets */
+.food-stop.index-stop{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:4px 12px;padding:10px 12px}
+.food-stop.index-stop strong{font-size:11px}
+.food-category{font:8px var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.food-index-actions{grid-column:1/-1;display:flex;gap:6px}
+.food-index-actions button{border:0;background:transparent;padding:3px 0;color:var(--ink2);font:9px var(--mono);cursor:pointer;text-decoration:underline}
+.food-day{padding:13px}.food-day>header{margin-bottom:8px}.food-day h3{font-size:16px}
+.stay-directory{margin-top:24px}.stay-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.stay-reference{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px}.stay-reference h3{font:600 13px var(--sans);margin:0}.stay-reference small{font:9px var(--mono)}
+.map-popup{display:grid;gap:7px;min-width:190px}.map-popup h3{margin:0;font:600 15px var(--serif)}.map-popup .popup-category,.map-popup .popup-payment{display:inline-flex;width:max-content;border-radius:20px;padding:4px 8px;background:#edf2e9;color:var(--ink2);font:9px var(--mono);text-transform:uppercase;letter-spacing:.04em}.map-popup .popup-payment{background:#f6f0df}.map-popup a,.map-popup button[data-plan-target]{display:block;border:0;border-radius:3px;background:#eaf0e8;color:var(--ink);padding:8px 10px;text-decoration:none;font:600 10px var(--sans);cursor:pointer}
+#pane-weather .alpine-warning>button{margin-top:8px;border:0;background:#fffefa;color:var(--ink);padding:7px 10px;font:600 10px var(--sans);cursor:pointer}

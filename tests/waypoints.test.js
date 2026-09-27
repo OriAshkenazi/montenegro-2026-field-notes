@@ -13,8 +13,8 @@ for (const [branch, route] of Object.entries(itinerary.routes)) {
       count++;
     }
     for (const venues of Object.values(day.food || {})) for (const item of venues) {
-      const point = byName.get(item.name);
-      assert.ok(point, `${branch} day ${day.day}: missing venue ${item.name}`);
+      const point = waypoints.find(candidate => candidate.id === item.waypointId);
+      assert.ok(point, `${branch} day ${day.day}: missing venue waypoint ${item.waypointId}`);
       assert.ok(point.days[branch].includes(day.day), `${item.name} missing day binding`);
       count++;
     }
@@ -32,7 +32,8 @@ for (const point of waypoints) {
   assert.ok(Number.isFinite(point.lat) && point.lat >= 41.5 && point.lat <= 43.7, point.name);
   assert.ok(Number.isFinite(point.lng) && point.lng >= 18.3 && point.lng <= 20.5, point.name);
   assert.ok(point.googleUrl.startsWith('https://www.google.com/maps/dir/'), point.name);
-  for (const field of ['name', 'category', 'cash', 'tip']) assert.ok(point[field], `${point.name}: missing ${field}`);
+  for (const field of ['name', 'category', 'cash', 'googleUrl']) assert.ok(point[field], `${point.name}: missing ${field}`);
+  for (const field of ['tip', 'address', 'phone']) assert.ok(!(field in point), `${point.name}: duplicated prose field ${field}`);
   categories.add(point.category);
 }
 for (const category of ['Viewpoint', 'Meal', 'Coffee', 'Supermarket', 'Parking']) assert.ok(categories.has(category), `missing category ${category}`);
@@ -40,11 +41,11 @@ const app = fs.readFileSync('app.js', 'utf8');
 const sw = fs.readFileSync('sw.js', 'utf8');
 const css = fs.readFileSync('style.css', 'utf8');
 const html = fs.readFileSync('index.html', 'utf8');
-assert.ok(app.includes('waypoints.json?rev=2026-09-27j'));
+assert.ok(app.includes('waypoints.json?rev=2026-09-28a'));
 assert.ok(!app.includes('routeToggle'), 'separate fallback route control should be removed');
-assert.ok(app.includes('data-day-jump'), 'lodging map popup should link to a day card');
+assert.ok(app.includes('data-plan-target'), 'map popup should link to a timeline target');
 assert.ok(html.includes('id="stayDirectory"'), 'confirmed stay quick reference should render');
-assert.ok(sw.includes('./waypoints.json?rev=2026-09-27j'));
+assert.ok(sw.includes('./waypoints.json?rev=2026-09-28a'));
 assert.ok(sw.includes('tile.openstreetmap.org') && sw.includes('leaflet@1.9.4'));
 assert.ok(css.includes('@media (orientation:landscape)') && css.includes('flex-direction:row-reverse'));
 assert.ok(css.includes('@media (orientation:landscape) and (max-height:500px)'));
@@ -57,9 +58,9 @@ assert.ok(css.includes('.day-toggle{grid-template-columns:49px minmax(0,1fr) min
 assert.ok(css.includes('.day-drive{overflow-wrap:anywhere}'));
 assert.ok(css.includes('body{margin:0;background:var(--paper)') && css.includes('main{max-width:1200px'));
 assert.ok(css.includes('body{padding-left:env(safe-area-inset-left,0px);padding-right:calc(72px + env(safe-area-inset-right,0px))'));
-assert.ok(html.includes('style.css?rev=2026-09-27t') && html.includes('app.js?rev=2026-09-27n') && html.includes('weather.js?rev=2026-09-27f'));
+assert.ok(html.includes('style.css?rev=2026-09-28a') && html.includes('app.js?rev=2026-09-28a') && html.includes('weather.js?rev=2026-09-28a'));
 assert.ok(html.includes('data-pane="weather"') && html.includes('id="pane-weather"'));
-assert.ok(sw.includes("const VERSION='31'") && sw.includes('./weather.js?rev=2026-09-27f'));
+assert.ok(sw.includes("const VERSION='32'") && sw.includes('./weather.js?rev=2026-09-28a'));
 const weather = fs.readFileSync('weather.js', 'utf8');
 assert.ok(weather.includes('https://api.open-meteo.com/v1/forecast'));
 assert.ok(weather.includes('low<=2') && weather.includes('chance>60'));

@@ -1,0 +1,22 @@
+{
+  "name": "montenegro-2026-field-notes",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=16 <17"
+  },
+  "scripts": {
+    "lint": "node scripts/lint.js",
+    "test": "node tests/waypoints.test.js && node tests/weather.test.js && node tests/content-links.test.js",
+    "build": "node scripts/build.js",
+    "smoke": "node scripts/smoke.js",
+    "verify": "npm run lint && npm test && npm run build && npm run smoke"
+  },
+  "devDependencies": {
+    "clean-css": "5.3.3",
+    "eslint": "8.57.1",
+    "html-minifier-terser": "7.2.0",
+    "htmlhint": "1.1.4",
+    "terser": "5.31.6"
+  }
+}
