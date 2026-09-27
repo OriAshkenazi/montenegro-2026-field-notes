@@ -213,3 +213,6 @@
   .weather-day{flex-basis:104px;min-height:114px}.weather-detail{background:linear-gradient(145deg,#f4f7ee,#edf2e9)}
 }
 @media(prefers-reduced-motion:reduce){.weather-day{transition:none}.weather-day:hover{transform:none}}
+
+.stay-directory{margin-top:34px}.stay-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.stay-reference{background:var(--card);border:1px solid var(--line);padding:18px}.stay-reference h3{font:600 20px var(--serif);margin:8px 0 2px}.stay-reference p{font-size:11px;color:var(--muted);margin:8px 0}.stay-reference small{font-size:9px;color:var(--muted)}.stay-badge{font:9px var(--mono);text-transform:uppercase;letter-spacing:.08em;color:#477452;background:#e1eee0;padding:5px 7px;border-radius:12px}.map-popup button[data-day-jump]{display:block;margin:8px 0;border:0;background:#eaf0e8;color:var(--ink);padding:7px 9px;font:600 11px var(--sans);cursor:pointer}
+@media(max-width:760px){.stay-grid{grid-template-columns:1fr}}

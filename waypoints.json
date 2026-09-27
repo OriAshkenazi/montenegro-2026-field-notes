@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "waypoints": [
     {
       "id": "tiv-rental-pickup",
@@ -13,9 +13,6 @@
       "days": {
         "primary": [
           1
-        ],
-        "fallback": [
-          1
         ]
       },
       "aliases": [],
@@ -23,58 +20,47 @@
     },
     {
       "id": "tiv-zabljak-direct-route-via-kotor-risan-grahovo-niksic-and-savnik",
-      "name": "TIV → Žabljak direct route via Kotor, Risan, Grahovo, Nikšić and Šavnik",
+      "name": "TIV → Runolist Chalet direct route via Kotor, Risan, Grahovo, Nikšić and Šavnik",
       "category": "Parking",
       "lat": 42.4047,
       "lng": 18.7233,
-      "googleUrl": "https://www.google.com/maps/dir/?api=1&origin=Tivat%20Airport%2C%20Montenegro&destination=%C5%BDabljak%2C%20Montenegro&waypoints=Kotor%2C%20Montenegro%7CRisan%2C%20Montenegro%7CGrahovo%2C%20Montenegro%7CNik%C5%A1i%C4%87%2C%20Montenegro%7C%C5%A0avnik%2C%20Montenegro&travelmode=driving",
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&origin=Tivat%20Airport%2C%20Montenegro&destination=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%2084220%20%C5%BDabljak%2C%20Montenegro&waypoints=Kotor%2C%20Montenegro%7CRisan%2C%20Montenegro%7CGrahovo%2C%20Montenegro%7CNik%C5%A1i%C4%87%2C%20Montenegro%7C%C5%A0avnik%2C%20Montenegro&travelmode=driving",
       "cash": "Ask before arrival; card acceptance varies.",
       "tip": "Confirm guarded parking and secure every bag before leaving the car.",
       "days": {
         "primary": [
           1
-        ],
-        "fallback": []
+        ]
       },
       "aliases": [],
       "precision": "navigation pin"
     },
     {
-      "id": "zabljak-lodging-parking",
-      "name": "Žabljak lodging parking",
+      "id": "runolist-chalet",
+      "name": "Runolist Chalet",
       "category": "Parking",
-      "lat": 43.1555,
-      "lng": 19.1226,
-      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=%C5%BDabljak%20lodging%20parking%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "lat": 43.16556,
+      "lng": 19.19004,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%2084220%20%C5%BDabljak%2C%20Montenegro&travelmode=driving",
+      "cash": "Listing indicates free private parking; verify for booked unit.",
+      "tip": "Check in, unload all bags and confirm kitchen/late-arrival details with the host.",
       "days": {
         "primary": [
           1,
-          2
-        ],
-        "fallback": []
+          2,
+          3,
+          4
+        ]
       },
-      "aliases": [],
-      "precision": "navigation pin"
-    },
-    {
-      "id": "kotor-contingency-lodging-area",
-      "name": "Kotor contingency lodging area",
-      "category": "Parking",
-      "lat": 42.4247,
-      "lng": 18.7712,
-      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kotor%20contingency%20lodging%20area%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
-      "days": {
-        "primary": [
-          1
-        ],
-        "fallback": []
-      },
-      "aliases": [],
-      "precision": "navigation pin"
+      "aliases": [
+        "Žabljak lodging",
+        "Runolist Chalet, Narodnih heroja"
+      ],
+      "precision": "Borje locality coordinate; use address search for property-level arrival; pin is approximate",
+      "address": "Narodnih heroja, 84220 Žabljak, Montenegro",
+      "bookingStatus": "Confirmed stay · Oct 1–4",
+      "coordinateSource": "Borje locality from OpenStreetMap-based Mapcarta; approximate only",
+      "sourceUrl": "https://mapcarta.com/18723988"
     },
     {
       "id": "amscg-road-conditions",
@@ -88,8 +74,7 @@
       "days": {
         "primary": [
           1
-        ],
-        "fallback": []
+        ]
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -106,10 +91,6 @@
       "days": {
         "primary": [
           1
-        ],
-        "fallback": [
-          1,
-          6
         ]
       },
       "aliases": [],
@@ -127,8 +108,7 @@
       "days": {
         "primary": [
           1
-        ],
-        "fallback": []
+        ]
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -144,9 +124,6 @@
       "tip": "Stock up before the mountain leg; opening hours can change.",
       "days": {
         "primary": [
-          1
-        ],
-        "fallback": [
           1
         ]
       },
@@ -167,8 +144,7 @@
           1,
           2,
           3
-        ],
-        "fallback": []
+        ]
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -185,8 +161,7 @@
       "days": {
         "primary": [
           2
-        ],
-        "fallback": []
+        ]
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -203,8 +178,7 @@
       "days": {
         "primary": [
           2
-        ],
-        "fallback": []
+        ]
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -221,26 +195,7 @@
       "days": {
         "primary": [
           2
-        ],
-        "fallback": []
-      },
-      "aliases": [],
-      "precision": "navigation pin"
-    },
-    {
-      "id": "kotor-zabljak-contingency-route",
-      "name": "Kotor → Žabljak contingency route",
-      "category": "Parking",
-      "lat": 43.1555,
-      "lng": 19.1226,
-      "googleUrl": "https://www.google.com/maps/dir/?api=1&origin=Kotor%2C%20Montenegro&destination=%C5%BDabljak%2C%20Montenegro&waypoints=Grahovo%2C%20Montenegro%7CNik%C5%A1i%C4%87%2C%20Montenegro%7C%C5%A0avnik%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
-      "days": {
-        "primary": [
-          2
-        ],
-        "fallback": []
+        ]
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -258,8 +213,7 @@
         "primary": [
           2,
           3
-        ],
-        "fallback": []
+        ]
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -276,8 +230,7 @@
       "days": {
         "primary": [
           2
-        ],
-        "fallback": []
+        ]
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -295,8 +248,7 @@
         "primary": [
           2,
           3
-        ],
-        "fallback": []
+        ]
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -314,27 +266,7 @@
         "primary": [
           2,
           3
-        ],
-        "fallback": []
-      },
-      "aliases": [],
-      "precision": "navigation pin"
-    },
-    {
-      "id": "zabljak-lodging",
-      "name": "Žabljak lodging",
-      "category": "Parking",
-      "lat": 43.1555,
-      "lng": 19.1226,
-      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=%C5%BDabljak%20lodging%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
-      "days": {
-        "primary": [
-          3,
-          4
-        ],
-        "fallback": []
+        ]
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -351,8 +283,7 @@
       "days": {
         "primary": [
           3
-        ],
-        "fallback": []
+        ]
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -369,8 +300,7 @@
       "days": {
         "primary": [
           3
-        ],
-        "fallback": []
+        ]
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -387,8 +317,7 @@
       "days": {
         "primary": [
           3
-        ],
-        "fallback": []
+        ]
       },
       "aliases": [
         "Piva viewpoint",
@@ -408,8 +337,7 @@
       "days": {
         "primary": [
           3
-        ],
-        "fallback": []
+        ]
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -426,8 +354,7 @@
       "days": {
         "primary": [
           3
-        ],
-        "fallback": []
+        ]
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -444,8 +371,7 @@
       "days": {
         "primary": [
           3
-        ],
-        "fallback": []
+        ]
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -462,8 +388,7 @@
       "days": {
         "primary": [
           3
-        ],
-        "fallback": []
+        ]
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -480,8 +405,7 @@
       "days": {
         "primary": [
           4
-        ],
-        "fallback": []
+        ]
       },
       "aliases": [
         "Šavnik",
@@ -501,8 +425,7 @@
       "days": {
         "primary": [
           4
-        ],
-        "fallback": []
+        ]
       },
       "aliases": [
         "Nikšić",
@@ -522,34 +445,40 @@
       "days": {
         "primary": [
           4
-        ],
-        "fallback": []
+        ]
       },
       "aliases": [],
       "precision": "navigation pin"
     },
     {
-      "id": "kotor-hotel-parking",
-      "name": "Kotor hotel parking",
+      "id": "conte-hotel-perast",
+      "name": "Conte Hotel & Restaurant",
       "category": "Parking",
-      "lat": 42.4247,
-      "lng": 18.7712,
-      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kotor%20hotel%20parking%2C%20Montenegro&travelmode=driving",
-      "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "lat": 42.48631,
+      "lng": 18.69801,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Conte%20Hotel%20%26%20Restaurant%2C%20Ul.%20Marka%20Martinovi%C4%87a%20bb%2C%2085336%20Perast%2C%20Montenegro&travelmode=driving",
+      "cash": "Parking at a signed entrance lot; verify October tariff and payment.",
+      "tip": "Vehicles cannot enter Perast old town in May–October. Contact the hotel about assistance from parking to reception.",
       "days": {
         "primary": [
           4,
-          5
-        ],
-        "fallback": [
-          1,
-          3,
-          4
+          5,
+          6
         ]
       },
-      "aliases": [],
-      "precision": "navigation pin"
+      "aliases": [
+        "Conte Hotel",
+        "Hotel Conte",
+        "Perast lodging",
+        "Conte Hotel Restaurant · Perast",
+        "Conte Hotel Breakfast · Perast"
+      ],
+      "precision": "OpenStreetMap hotel building / reception anchor; booked annex is unspecified",
+      "address": "Ul. Marka Martinovića bb, 85336 Perast, Montenegro",
+      "phone": "+382 67 111 190",
+      "bookingStatus": "Confirmed stay · Oct 4–6",
+      "coordinateSource": "Hotel building / reception coordinate from OpenStreetMap-based Mapcarta",
+      "sourceUrl": "https://mapcarta.com/W303003482"
     },
     {
       "id": "kotor-old-town-parking",
@@ -563,10 +492,6 @@
       "days": {
         "primary": [
           4
-        ],
-        "fallback": [
-          1,
-          2
         ]
       },
       "aliases": [],
@@ -584,8 +509,7 @@
       "days": {
         "primary": [
           4
-        ],
-        "fallback": []
+        ]
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -601,9 +525,6 @@
       "tip": "Check October hours and payment method before setting out.",
       "days": {
         "primary": [
-          4
-        ],
-        "fallback": [
           4
         ]
       },
@@ -622,10 +543,6 @@
       "days": {
         "primary": [
           4
-        ],
-        "fallback": [
-          4,
-          5
         ]
       },
       "aliases": [],
@@ -644,10 +561,6 @@
         "primary": [
           4,
           5
-        ],
-        "fallback": [
-          3,
-          4
         ]
       },
       "aliases": [],
@@ -665,9 +578,6 @@
       "days": {
         "primary": [
           5
-        ],
-        "fallback": [
-          4
         ]
       },
       "aliases": [],
@@ -685,9 +595,6 @@
       "days": {
         "primary": [
           5
-        ],
-        "fallback": [
-          4
         ]
       },
       "aliases": [],
@@ -705,29 +612,24 @@
       "days": {
         "primary": [
           5
-        ],
-        "fallback": [
-          4
         ]
       },
       "aliases": [],
       "precision": "navigation pin"
     },
     {
-      "id": "perast-parking",
-      "name": "Perast parking",
+      "id": "perast-entrance-parking",
+      "name": "Perast entrance parking",
       "category": "Parking",
       "lat": 42.486,
       "lng": 18.696,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Perast%20parking%2C%20Montenegro&travelmode=driving",
       "cash": "Ask before arrival; card acceptance varies.",
-      "tip": "Confirm guarded parking and secure every bag before leaving the car.",
+      "tip": "Use the signed town entrance lot; Perast old town is vehicle-restricted May–October. Walk to the historic core.",
       "days": {
         "primary": [
+          4,
           5
-        ],
-        "fallback": [
-          2
         ]
       },
       "aliases": [],
@@ -745,9 +647,6 @@
       "days": {
         "primary": [
           5
-        ],
-        "fallback": [
-          2
         ]
       },
       "aliases": [],
@@ -765,8 +664,7 @@
       "days": {
         "primary": [
           5
-        ],
-        "fallback": []
+        ]
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -783,8 +681,7 @@
       "days": {
         "primary": [
           5
-        ],
-        "fallback": []
+        ]
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -801,9 +698,6 @@
       "days": {
         "primary": [
           5
-        ],
-        "fallback": [
-          4
         ]
       },
       "aliases": [],
@@ -821,8 +715,7 @@
       "days": {
         "primary": [
           5
-        ],
-        "fallback": []
+        ]
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -840,36 +733,30 @@
         "primary": [
           5,
           6
-        ],
-        "fallback": [
-          1,
-          2,
-          3,
-          6
         ]
       },
       "aliases": [],
       "precision": "navigation pin"
     },
     {
-      "id": "kotor-to-tivat-airport",
-      "name": "Kotor to Tivat Airport",
+      "id": "perast-to-tivat-airport",
+      "name": "Perast to Tivat Airport",
       "category": "Parking",
-      "lat": 42.4047,
-      "lng": 18.7233,
-      "googleUrl": "https://www.google.com/maps/dir/?api=1&origin=Kotor%2C%20Montenegro&destination=Tivat%20Airport&travelmode=driving",
+      "lat": 42.48631,
+      "lng": 18.69801,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&origin=Conte%20Hotel%20%26%20Restaurant%2C%20Perast%2C%20Montenegro&destination=Tivat%20Airport%2C%20Montenegro&travelmode=driving",
       "cash": "Ask before arrival; card acceptance varies.",
       "tip": "Confirm guarded parking and secure every bag before leaving the car.",
       "days": {
         "primary": [
           6
-        ],
-        "fallback": [
-          6
         ]
       },
-      "aliases": [],
-      "precision": "navigation pin"
+      "aliases": [
+        "Conte to TIV",
+        "Perast airport route"
+      ],
+      "precision": "route origin at Conte Hotel reception anchor"
     },
     {
       "id": "tivat-airport-rental-return",
@@ -882,9 +769,6 @@
       "tip": "Confirm guarded parking and secure every bag before leaving the car.",
       "days": {
         "primary": [
-          6
-        ],
-        "fallback": [
           6
         ]
       },
@@ -903,8 +787,7 @@
       "days": {
         "primary": [
           6
-        ],
-        "fallback": []
+        ]
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -919,10 +802,7 @@
       "cash": "Ask before arrival; card acceptance varies.",
       "tip": "Confirm guarded parking and secure every bag before leaving the car.",
       "days": {
-        "primary": [],
-        "fallback": [
-          1
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -937,10 +817,7 @@
       "cash": "Ask before arrival; card acceptance varies.",
       "tip": "Confirm guarded parking and secure every bag before leaving the car.",
       "days": {
-        "primary": [],
-        "fallback": [
-          1
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -955,10 +832,7 @@
       "cash": "Cash-only unverified; carry cash and ask",
       "tip": "Check October hours and payment method before setting out.",
       "days": {
-        "primary": [],
-        "fallback": [
-          1
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -973,10 +847,7 @@
       "cash": "Ask before arrival; card acceptance varies.",
       "tip": "Stock up before the mountain leg; opening hours can change.",
       "days": {
-        "primary": [],
-        "fallback": [
-          1
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -991,10 +862,7 @@
       "cash": "Ask before arrival; card acceptance varies.",
       "tip": "Use a signed pullout and check weather and daylight first.",
       "days": {
-        "primary": [],
-        "fallback": [
-          2
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -1009,10 +877,7 @@
       "cash": "Cash and cards reported; cash-only no",
       "tip": "Check October hours and payment method before setting out.",
       "days": {
-        "primary": [],
-        "fallback": [
-          2
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -1027,10 +892,7 @@
       "cash": "Cash-only unverified; ask",
       "tip": "Confirm seasonal access and operating hours before departure.",
       "days": {
-        "primary": [],
-        "fallback": [
-          2
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -1045,11 +907,7 @@
       "cash": "Ask before arrival; card acceptance varies.",
       "tip": "Stock up before the mountain leg; opening hours can change.",
       "days": {
-        "primary": [],
-        "fallback": [
-          2,
-          5
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -1064,10 +922,7 @@
       "cash": "Ask before arrival; card acceptance varies.",
       "tip": "Confirm guarded parking and secure every bag before leaving the car.",
       "days": {
-        "primary": [],
-        "fallback": [
-          3
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -1082,10 +937,7 @@
       "cash": "Ask before arrival; card acceptance varies.",
       "tip": "Confirm guarded parking and secure every bag before leaving the car.",
       "days": {
-        "primary": [],
-        "fallback": [
-          3
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -1100,10 +952,7 @@
       "cash": "Ask before arrival; card acceptance varies.",
       "tip": "Confirm guarded parking and secure every bag before leaving the car.",
       "days": {
-        "primary": [],
-        "fallback": [
-          3
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -1118,10 +967,7 @@
       "cash": "Cash-only unverified; carry cash",
       "tip": "Confirm seasonal access and operating hours before departure.",
       "days": {
-        "primary": [],
-        "fallback": [
-          3
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -1136,10 +982,7 @@
       "cash": "Cash-only unverified; carry cash",
       "tip": "Check October hours and payment method before setting out.",
       "days": {
-        "primary": [],
-        "fallback": [
-          3
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -1154,10 +997,7 @@
       "cash": "Ask before arrival; card acceptance varies.",
       "tip": "Confirm seasonal access and operating hours before departure.",
       "days": {
-        "primary": [],
-        "fallback": [
-          5
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -1172,10 +1012,7 @@
       "cash": "Ask before arrival; card acceptance varies.",
       "tip": "Confirm guarded parking and secure every bag before leaving the car.",
       "days": {
-        "primary": [],
-        "fallback": [
-          5
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -1190,10 +1027,7 @@
       "cash": "Ask before arrival; card acceptance varies.",
       "tip": "Use a signed pullout and check weather and daylight first.",
       "days": {
-        "primary": [],
-        "fallback": [
-          5
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -1208,10 +1042,7 @@
       "cash": "Cash-only unverified; carry cash",
       "tip": "Check October hours and payment method before setting out.",
       "days": {
-        "primary": [],
-        "fallback": [
-          5
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -1226,10 +1057,7 @@
       "cash": "Cash-only unverified; ask",
       "tip": "Check October hours and payment method before setting out.",
       "days": {
-        "primary": [],
-        "fallback": [
-          5
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -1245,14 +1073,6 @@
       "tip": "Confirm seasonal access and operating hours before departure.",
       "days": {
         "primary": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ],
-        "fallback": [
           1,
           2,
           3,
@@ -1287,14 +1107,6 @@
           4,
           5,
           6
-        ],
-        "fallback": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
         ]
       },
       "aliases": [
@@ -1313,14 +1125,6 @@
       "tip": "Confirm guarded parking and secure every bag before leaving the car.",
       "days": {
         "primary": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ],
-        "fallback": [
           1,
           2,
           3,
@@ -1353,14 +1157,6 @@
           4,
           5,
           6
-        ],
-        "fallback": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
         ]
       },
       "aliases": [
@@ -1380,14 +1176,6 @@
       "tip": "Use a signed pullout and check weather and daylight first.",
       "days": {
         "primary": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ],
-        "fallback": [
           1,
           2,
           3,
@@ -1419,14 +1207,6 @@
           4,
           5,
           6
-        ],
-        "fallback": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
         ]
       },
       "aliases": [
@@ -1452,14 +1232,6 @@
           4,
           5,
           6
-        ],
-        "fallback": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
         ]
       },
       "aliases": [
@@ -1478,14 +1250,6 @@
       "tip": "Confirm seasonal access and operating hours before departure.",
       "days": {
         "primary": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ],
-        "fallback": [
           1,
           2,
           3,
@@ -1517,14 +1281,6 @@
           4,
           5,
           6
-        ],
-        "fallback": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
         ]
       },
       "aliases": [
@@ -1549,14 +1305,6 @@
           4,
           5,
           6
-        ],
-        "fallback": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
         ]
       },
       "aliases": [],
@@ -1573,14 +1321,6 @@
       "tip": "Confirm seasonal access and operating hours before departure.",
       "days": {
         "primary": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ],
-        "fallback": [
           1,
           2,
           3,
@@ -1613,14 +1353,6 @@
           4,
           5,
           6
-        ],
-        "fallback": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
         ]
       },
       "aliases": [
@@ -1639,14 +1371,6 @@
       "tip": "Confirm seasonal access and operating hours before departure.",
       "days": {
         "primary": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ],
-        "fallback": [
           1,
           2,
           3,
@@ -1677,14 +1401,6 @@
           4,
           5,
           6
-        ],
-        "fallback": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
         ]
       },
       "aliases": [
@@ -1703,14 +1419,6 @@
       "tip": "Confirm seasonal access and operating hours before departure.",
       "days": {
         "primary": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ],
-        "fallback": [
           1,
           2,
           3,
@@ -1741,14 +1449,6 @@
           4,
           5,
           6
-        ],
-        "fallback": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
         ]
       },
       "aliases": [
@@ -1767,14 +1467,6 @@
       "tip": "Confirm seasonal access and operating hours before departure.",
       "days": {
         "primary": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ],
-        "fallback": [
           1,
           2,
           3,
@@ -1806,14 +1498,6 @@
           4,
           5,
           6
-        ],
-        "fallback": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
         ]
       },
       "aliases": [
@@ -1832,14 +1516,6 @@
       "tip": "Confirm seasonal access and operating hours before departure.",
       "days": {
         "primary": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ],
-        "fallback": [
           1,
           2,
           3,
@@ -1870,14 +1546,6 @@
           4,
           5,
           6
-        ],
-        "fallback": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
         ]
       },
       "aliases": [
@@ -1896,14 +1564,6 @@
       "tip": "Confirm seasonal access and operating hours before departure.",
       "days": {
         "primary": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ],
-        "fallback": [
           1,
           2,
           3,
@@ -1934,14 +1594,6 @@
           4,
           5,
           6
-        ],
-        "fallback": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
         ]
       },
       "aliases": [],
@@ -1958,14 +1610,6 @@
       "tip": "Confirm seasonal access and operating hours before departure.",
       "days": {
         "primary": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ],
-        "fallback": [
           1,
           2,
           3,
@@ -1990,14 +1634,6 @@
       "tip": "Confirm seasonal access and operating hours before departure.",
       "days": {
         "primary": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ],
-        "fallback": [
           1,
           2,
           3,
@@ -2029,14 +1665,6 @@
           4,
           5,
           6
-        ],
-        "fallback": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
         ]
       },
       "aliases": [
@@ -2055,14 +1683,6 @@
       "tip": "Confirm seasonal access and operating hours before departure.",
       "days": {
         "primary": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ],
-        "fallback": [
           1,
           2,
           3,
@@ -2089,10 +1709,6 @@
         "primary": [
           1,
           2
-        ],
-        "fallback": [
-          1,
-          2
         ]
       },
       "aliases": [],
@@ -2109,10 +1725,6 @@
       "tip": "Confirm seasonal access and timing; check road, weather and daylight conditions.",
       "days": {
         "primary": [
-          2,
-          5
-        ],
-        "fallback": [
           2,
           5
         ]
@@ -2132,9 +1744,6 @@
       "days": {
         "primary": [
           3
-        ],
-        "fallback": [
-          3
         ]
       },
       "aliases": [],
@@ -2151,9 +1760,6 @@
       "tip": "Confirm seasonal access and timing; check road, weather and daylight conditions.",
       "days": {
         "primary": [
-          5
-        ],
-        "fallback": [
           5
         ]
       },
@@ -2173,10 +1779,6 @@
         "primary": [
           4,
           5
-        ],
-        "fallback": [
-          4,
-          5
         ]
       },
       "aliases": [],
@@ -2193,9 +1795,6 @@
       "tip": "Confirm seasonal access and timing; check road, weather and daylight conditions.",
       "days": {
         "primary": [
-          3
-        ],
-        "fallback": [
           3
         ]
       },
@@ -2219,10 +1818,6 @@
         "primary": [
           2,
           3
-        ],
-        "fallback": [
-          2,
-          3
         ]
       },
       "aliases": [],
@@ -2240,9 +1835,6 @@
       "days": {
         "primary": [
           3
-        ],
-        "fallback": [
-          3
         ]
       },
       "aliases": [],
@@ -2259,11 +1851,6 @@
       "tip": "Confirm seasonal access and timing; check road, weather and daylight conditions.",
       "days": {
         "primary": [
-          1,
-          2,
-          3
-        ],
-        "fallback": [
           1,
           2,
           3
@@ -2285,10 +1872,6 @@
         "primary": [
           2,
           3
-        ],
-        "fallback": [
-          2,
-          3
         ]
       },
       "aliases": [],
@@ -2306,9 +1889,6 @@
       "days": {
         "primary": [
           5
-        ],
-        "fallback": [
-          5
         ]
       },
       "aliases": [],
@@ -2325,10 +1905,6 @@
       "tip": "Check live conditions and use signed stopping areas.",
       "days": {
         "primary": [
-          1,
-          4
-        ],
-        "fallback": [
           1,
           4
         ]
@@ -2351,10 +1927,6 @@
         "primary": [
           2,
           3
-        ],
-        "fallback": [
-          2,
-          3
         ]
       },
       "aliases": [
@@ -2373,9 +1945,6 @@
       "tip": "Check live conditions and use signed stopping areas.",
       "days": {
         "primary": [
-          3
-        ],
-        "fallback": [
           3
         ]
       },
@@ -2396,9 +1965,6 @@
       "days": {
         "primary": [
           5
-        ],
-        "fallback": [
-          5
         ]
       },
       "aliases": [
@@ -2418,9 +1984,6 @@
       "days": {
         "primary": [
           5
-        ],
-        "fallback": [
-          5
         ]
       },
       "aliases": [
@@ -2439,10 +2002,6 @@
       "tip": "Check live conditions and use signed stopping areas.",
       "days": {
         "primary": [
-          2,
-          3
-        ],
-        "fallback": [
           2,
           3
         ]
@@ -2466,12 +2025,6 @@
           1,
           4,
           5
-        ],
-        "fallback": [
-          1,
-          2,
-          4,
-          5
         ]
       },
       "aliases": [
@@ -2491,12 +2044,6 @@
       "days": {
         "primary": [
           1,
-          4,
-          5
-        ],
-        "fallback": [
-          1,
-          2,
           4,
           5
         ]
@@ -2520,12 +2067,6 @@
           1,
           4,
           5
-        ],
-        "fallback": [
-          1,
-          2,
-          4,
-          5
         ]
       },
       "aliases": [
@@ -2545,12 +2086,6 @@
       "days": {
         "primary": [
           1,
-          4,
-          5
-        ],
-        "fallback": [
-          1,
-          2,
           4,
           5
         ]
@@ -2573,12 +2108,6 @@
       "days": {
         "primary": [
           1,
-          4,
-          5
-        ],
-        "fallback": [
-          1,
-          2,
           4,
           5
         ]

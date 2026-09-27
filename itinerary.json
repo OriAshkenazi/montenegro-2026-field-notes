@@ -3,11 +3,9 @@
   "drivingCeilingAdjustedHours": 5.5,
   "terrainBufferPercent": 20,
   "routeNames": {
-    "primary": "Coast + Northern Mountains",
-    "fallback": "Alpine Weather Fallback · Coast + Central"
+    "primary": "Runolist Chalet · Durmitor · Perast"
   },
-  "primaryNotice": "Primary bases: Žabljak (Oct 1–3) then Kotor (Oct 4–5), one normal hotel move. Day 1 goes directly from TIV to Žabljak with no ferry or sightseeing stop. One current transfer estimate is 3 h 20 min; estimates vary, so plan about 4 h adjusted with +20%, before traffic or stops. Leaving around 15:15–15:30 projects arrival after sunset and past the daylight cutoff. This is an accepted Day 1 exception, not a daylight-safety pass. Check the live route, road/weather, visibility, driver condition and late check-in before leaving TIV; if unsafe or delayed, stay in pre-arranged Kotor lodging and retry northbound on Day 2 only after a fresh go/no-go; leave by 07:00 and skip Black Lake after check-in. If conditions deteriorate after departure, stop at the next safe town and arrange lodging. Day 3 P14 over Sedlo remains conditional at about 5 h 24 adjusted with only the Piva viewpoint; confirm all waypoints and finish high-altitude driving by 16:00. Skip P14 for snow, ice, poor visibility, closure or unsafe conditions. Tara Bridge is closed through Oct 26, 2026 at noon and is excluded.",
-  "fallbackNotice": "Use this branch if P14/Sedlo or the northern transfer is unsafe, closed, or over the 5.5-hour adjusted daily ceiling. Kotor remains the base for all five nights; Days 3–5 cover Lovćen/Cetinje, Lake Skadar, and the Bay. No high alpine roads are used.",
+  "primaryNotice": "Confirmed stays: Runolist Chalet in Žabljak for Oct 1–4 and Conte Hotel & Restaurant in Perast for Oct 4–6. Day 1 remains an after-sunset northbound transfer using planning estimates, not confirmed flight or rental-voucher times. Start only after live road/weather, driver, vehicle and host checks; if unsafe, stop safely and arrange lodging directly. Day 3 P14 over Sedlo is conditional at about 5 h 24 adjusted with the Piva viewpoint only; verify the complete live route and finish high-altitude driving by 16:00. Skip P14 for snow, ice, poor visibility, closure or unsafe conditions. Tara Bridge is closed through Oct 26, 2026 at noon and is excluded.",
   "routes": {
     "primary": {
       "days": [
@@ -15,13 +13,13 @@
           "day": 1,
           "date": "Thu · Oct 1",
           "region": "North · Tivat → Žabljak",
-          "base": "Žabljak",
-          "drive": "TIV → Vrmac tunnel / Kotor → M-1 to Risan / Lipci → M-8 via Grahovo → M-7 to Nikšić → M-3 to Jasenovo Polje → M-6 via Šavnik → Žabljak · nominal 3 h 20 min / 4 h adjusted (+20%); live route controls",
+          "base": "Runolist Chalet · Žabljak",
+          "drive": "TIV → Vrmac tunnel / Kotor → M-1 to Risan / Lipci → M-8 via Grahovo → M-7 to Nikšić → M-3 to Jasenovo Polje → M-6 via Šavnik → Runolist Chalet · nominal 3 h 20 min / 4 h adjusted (+20%); live route controls",
           "adjustedHours": 4.0,
           "morning": [
             {
               "type": "LOGISTICS",
-              "text": "Land at TIV at 13:50."
+              "text": "Planning estimate: flight lands at TIV at 13:50; flight number and ticket confirmation were not supplied."
             },
             {
               "type": "LOGISTICS",
@@ -29,13 +27,13 @@
             },
             {
               "type": "LOGISTICS",
-              "text": "Leave the airport around 15:15–15:30 only if the flight, pickup, driver and road checks are all on track."
+              "text": "Planning estimate: aim to leave the airport around 15:15–15:30 only if landing, pickup, driver and road checks are all on track."
             }
           ],
           "afternoon": [
             {
               "type": "DRIVE",
-              "text": "Drive directly north to your pre-booked Žabljak lodging via the Vrmac tunnel and Kotor, then M-1 to Risan/Lipci, M-8 via Grahovo, M-7 to Nikšić, M-3 to Jasenovo Polje and M-6 via Šavnik."
+              "text": "Drive directly north to your Runolist Chalet via the Vrmac tunnel and Kotor, then M-1 to Risan/Lipci, M-8 via Grahovo, M-7 to Nikšić, M-3 to Jasenovo Polje and M-6 via Šavnik."
             },
             {
               "type": "CAUTION",
@@ -59,7 +57,7 @@
             },
             {
               "type": "CAUTION",
-              "text": "If the flight or rental is delayed, visibility/weather is poor, roads are restricted, or the driver is tired, stay at your pre-arranged Kotor contingency lodging instead; move north on Day 2 only if conditions are safe."
+              "text": "If the flight or rental is delayed, visibility/weather is poor, roads are restricted, or the driver is tired, stay at your stop safely and arrange lodging directly; resume only after a fresh road/weather and driver check and coordination with Runolist."
             },
             {
               "type": "CAUTION",
@@ -81,10 +79,10 @@
             },
             {
               "type": "STAY",
-              "text": "Confirm late check-in directly with the host before travel."
+              "text": "The Runolist listing’s check-in window and late-arrival approval are not supplied; confirm directly with the host before travel."
             }
           ],
-          "parking": "Go straight to pre-booked lodging with confirmed late check-in and parking. Keep all bags concealed during the transfer, then unload immediately. Keep the Kotor contingency booking/contact available if the airport go/no-go check fails.",
+          "parking": "Go directly to Runolist Chalet, Narodnih heroja, 84220 Žabljak, and unload immediately. Listing information indicates free private parking; confirm the booked unit’s access and late arrival with the host. The booking confirmation number was not supplied.",
           "cash": "No planned toll or ferry. Keep a card and small cash notes accessible; fill the tank before the P14 day.",
           "stops": [
             [
@@ -92,16 +90,12 @@
               "https://maps.google.com/?q=Tivat%20Airport%20car%20rental"
             ],
             [
-              "TIV → Žabljak direct route via Kotor, Risan, Grahovo, Nikšić and Šavnik",
-              "https://www.google.com/maps/dir/?api=1&origin=Tivat%20Airport%2C%20Montenegro&destination=%C5%BDabljak%2C%20Montenegro&waypoints=Kotor%2C%20Montenegro%7CRisan%2C%20Montenegro%7CGrahovo%2C%20Montenegro%7CNik%C5%A1i%C4%87%2C%20Montenegro%7C%C5%A0avnik%2C%20Montenegro&travelmode=driving"
+              "TIV → Runolist Chalet direct route via Kotor, Risan, Grahovo, Nikšić and Šavnik",
+              "https://www.google.com/maps/dir/?api=1&origin=Tivat%20Airport%2C%20Montenegro&destination=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%2084220%20%C5%BDabljak%2C%20Montenegro&waypoints=Kotor%2C%20Montenegro%7CRisan%2C%20Montenegro%7CGrahovo%2C%20Montenegro%7CNik%C5%A1i%C4%87%2C%20Montenegro%7C%C5%A0avnik%2C%20Montenegro&travelmode=driving"
             ],
             [
-              "Žabljak lodging parking",
-              "https://maps.google.com/?q=%C5%BDabljak%20guesthouse%20parking"
-            ],
-            [
-              "Kotor contingency lodging area",
-              "https://maps.google.com/?q=Kotor%20hotel%20parking"
+              "Runolist Chalet",
+              "https://maps.google.com/?q=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%2084220%20%C5%BDabljak%2C%20Montenegro"
             ],
             [
               "AMSCG road conditions",
@@ -112,7 +106,7 @@
             "Sightseeing",
             "Food & Dining"
           ],
-          "heading": "Day 1 - Tivat → Žabljak / direct northbound mountain transfer",
+          "heading": "Day 1 - Tivat → Runolist Chalet / direct northbound mountain transfer",
           "food": {
             "meals": [
               {
@@ -130,7 +124,7 @@
               {
                 "slot": "Dinner · after check-in",
                 "name": "Zlatni Papagaj · Žabljak",
-                "specialty": "Traditional local cuisine, stews and meats; a walk/taxi dinner after check-in, with packed food as the no-kitchen fallback.",
+                "specialty": "Traditional local cuisine, stews and meats; a walk/taxi dinner after check-in, with packed food if kitchen access is unavailable.",
                 "hours": "Dinner published 18:00–23:00; reconfirm October date",
                 "parking": "Do not drive after the transfer; walk/taxi from lodging. Venue parking not confirmed.",
                 "cash": "Cash-only unverified; carry cash and ask",
@@ -165,13 +159,13 @@
           "day": 2,
           "date": "Fri · Oct 2",
           "region": "North · Žabljak / Durmitor",
-          "base": "Žabljak",
-          "drive": "Žabljak local · ~0.4 adjusted h; if Day 1 Kotor contingency, Kotor → Žabljak · ~3 h 41 adjusted (leave 07:00; direct to lodging)",
+          "base": "Runolist Chalet · Žabljak",
+          "drive": "Žabljak local · ~0.4 adjusted h; if Day 1 is aborted, reassess the transfer only after a fresh safety and host check",
           "adjustedHours": 0.4,
           "morning": [
             {
               "type": "STAY",
-              "text": "If you reached Žabljak on Day 1, sleep in after the airport-to-mountains drive."
+              "text": "If you arrived at Runolist on Day 1, recover after the airport-to-mountains transfer."
             },
             {
               "type": "DRIVE",
@@ -195,15 +189,19 @@
             },
             {
               "type": "LOGISTICS",
-              "text": "If Day 1 was aborted to Kotor, leave by 07:00 after a fresh road, weather and driver check."
+              "text": "If Day 1 was aborted, do not force a catch-up drive; reassess road/weather, driver condition and Runolist arrival arrangements before leaving."
             },
             {
               "type": "DRIVE",
-              "text": "Drive directly to Žabljak via M-1 / M-8 / M-7 / M-3 / M-6; allow about 3 h 41 adjusted plus stops."
+              "text": "When safe to continue, drive directly to Runolist Chalet; skip Black Lake and other activities if needed to arrive safely."
             },
             {
               "type": "CAUTION",
-              "text": "Continue only if you can finish the highland leg by 16:00."
+              "text": "Do not start a delayed highland transfer unless live conditions and daylight allow a safe arrival; cancel sightseeing first."
+            },
+            {
+              "type": "CAUTION",
+              "text": "If Day 1 was delayed or aborted, reassess the live route, weather, driver condition and booked arrival arrangements before continuing; cancel sightseeing first."
             }
           ],
           "afternoon": [
@@ -217,11 +215,11 @@
             },
             {
               "type": "STAY",
-              "text": "If arriving from Kotor today, check in and unload all bags, then skip Black Lake."
+              "text": "If delayed from Day 1, go directly to Runolist, unload and check in; skip Black Lake."
             },
             {
               "type": "CAUTION",
-              "text": "If the northbound transfer is unsafe, use the coast-only fallback."
+              "text": "If the northbound transfer remains unsafe, stop safely, contact the host, and arrange lodging directly; the booked stay dates remain Oct 1–4."
             }
           ],
           "evening": [
@@ -234,12 +232,12 @@
               "text": "Ask the host which places are open and confirm the Sedlo road status again in the morning."
             }
           ],
-          "parking": "Use the signed Black Lake lot after all bags are unloaded at the Žabljak lodging. If arriving from Kotor today, drive directly to lodging, check in, then decide whether there is enough daylight for the lake.",
+          "parking": "Use Runolist Chalet’s confirmed address as the base; the listing indicates free private parking, but access for the booked unit should be confirmed. Unload all bags before visiting Black Lake.",
           "cash": "Durmitor entry is listed at €5/person/day. Black Lake + P14 cost €10/person; add the optional Skadar day on Day 5 for €15/person total. Compare with the 2026 €13.50/person annual pass and confirm each gate’s terms.",
           "stops": [
             [
-              "Žabljak lodging parking",
-              "https://maps.google.com/?q=%C5%BDabljak%20guesthouse%20parking"
+              "Runolist Chalet",
+              "https://maps.google.com/?q=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%2084220%20%C5%BDabljak%2C%20Montenegro"
             ],
             [
               "Black Lake parking",
@@ -254,10 +252,6 @@
               "https://maps.google.com/?q=Bosa%C4%8Da%20Montenegro"
             ],
             [
-              "Kotor → Žabljak contingency route",
-              "https://www.google.com/maps/dir/?api=1&origin=Kotor%2C%20Montenegro&destination=%C5%BDabljak%2C%20Montenegro&waypoints=Grahovo%2C%20Montenegro%7CNik%C5%A1i%C4%87%2C%20Montenegro%7C%C5%A0avnik%2C%20Montenegro&travelmode=driving"
-            ],
-            [
               "AMSCG road updates",
               "https://amscg.me/en/road-conditions"
             ]
@@ -267,7 +261,6 @@
             "Adventure & Hiking"
           ],
           "heading": "Day 2 - Žabljak base / Black Lake / recover and check P14",
-          "contingencyAdjustedHours": 3.68,
           "food": {
             "meals": [
               {
@@ -322,7 +315,7 @@
           "day": 3,
           "date": "Sat · Oct 3",
           "region": "North · Durmitor P14 / Sedlo / Piva",
-          "base": "Žabljak",
+          "base": "Runolist Chalet · Žabljak",
           "drive": "Žabljak → P14/Sedlo → Trsa → Plužine/Piva viewpoint → return · plan 4 h 30 wheel time / 5 h 24 adjusted; LIVE ROUTE GATE REQUIRED",
           "adjustedHours": 5.4,
           "morning": [
@@ -378,7 +371,7 @@
             },
             {
               "type": "CAUTION",
-              "text": "If the core loop itself breaks the cap, switch to the coast fallback; do not pretend the timing works."
+              "text": "If the core loop exceeds the cap or fails the safety gate, cancel P14 and return to Runolist or remain at base; choose a local low-risk walk only if conditions allow."
             }
           ],
           "evening": [
@@ -403,8 +396,8 @@
           "cash": "Budget €5/person for the Durmitor day ticket if charged; the €13.50/person 2026 annual pass can cover the three planned park days. Keep small notes for village food.",
           "stops": [
             [
-              "Žabljak lodging",
-              "https://maps.google.com/?q=%C5%BDabljak%20Montenegro"
+              "Runolist Chalet",
+              "https://maps.google.com/?q=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%2084220%20%C5%BDabljak%2C%20Montenegro"
             ],
             [
               "P14 Sedlo Pass route",
@@ -504,8 +497,8 @@
           "day": 4,
           "date": "Sun · Oct 4",
           "region": "North → Coast · Kotor",
-          "base": "Kotor",
-          "drive": "Žabljak → Šavnik → Nikšić → Kotor · route estimates vary; 3 h 04 cited, 3 h 41 adjusted",
+          "base": "Conte Hotel & Restaurant · Perast",
+          "drive": "Runolist Chalet → Conte Hotel & Restaurant, Perast · allow ~3 h 40 adjusted as a planning estimate; live route and parking approach control",
           "adjustedHours": 3.68,
           "morning": [
             {
@@ -514,11 +507,11 @@
             },
             {
               "type": "DRIVE",
-              "text": "Retrace M-6 via Šavnik to Jasenovo Polje, M-3 to Nikšić, M-7 to Vilusi, M-8 through Grahovo to Lipci, then M-1 to Kotor."
+              "text": "Retrace M-6 via Šavnik to Jasenovo Polje, M-3 to Nikšić, M-7 to Vilusi, M-8 through Grahovo to Lipci, then M-1 north to Conte Hotel & Restaurant in Perast."
             },
             {
               "type": "DRIVE",
-              "text": "Allow about 3 h 04 before the +20% terrain buffer, around 3 h 41 adjusted, and more if you stop."
+              "text": "Allow about 3 h 04 before the +20% terrain buffer, around 3 h 41 adjusted as a conservative estimate; add time for live traffic and the Perast parking approach."
             },
             {
               "type": "CAUTION",
@@ -528,60 +521,60 @@
           "afternoon": [
             {
               "type": "STAY",
-              "text": "Go directly to the Kotor lodging, unload, and park."
+              "text": "Go to the signed parking area at the Perast entrance; vehicles cannot enter the old town in May–October. Contact Conte about assistance from parking to reception, unload and check in."
             },
             {
               "type": "CAUTION",
-              "text": "Do not add Perast or a viewpoint while the bags are in the car."
+              "text": "Do not add a Kotor stop while luggage is in the car."
             },
             {
               "type": "WALK",
-              "text": "Once checked in, take a short walk or rest; after two mountain days, a packed attraction list is a bad trade."
+              "text": "Conte publishes check-in from 15:00; confirm the individual booking and arrival plan. After unloading, rest or explore Perast on foot."
             }
           ],
           "evening": [
             {
               "type": "EAT",
-              "text": "Book dinner inside the Old Town or near the hotel and leave the car put."
+              "text": "Book dinner in Perast or near Conte and leave the car put."
             },
             {
               "type": "LOGISTICS",
-              "text": "For the historic core, walk in from a marked lot instead of circling the narrow streets."
+              "text": "Keep the car in the signed entrance parking area; walk Perast’s historic core."
             }
           ],
-          "parking": "Go directly to Kotor lodging, unload and park. Explore the Old Town on foot; use a signed public lot if the hotel space is full.",
+          "parking": "Conte Hotel & Restaurant, Ul. Marka Martinovića bb, 85336 Perast. Old-town access is restricted to vehicles May–October; use a signed public car park at a town entrance and contact the hotel about available electric-vehicle transfer assistance. October price and individual booking terms are unconfirmed.",
           "cash": "Keep €20 for fuel or toll contingencies. The planned M-6/M-7/M-8 return avoids Sozina and the A1.",
           "stops": [
             [
-              "Žabljak lodging",
-              "https://maps.google.com/?q=%C5%BDabljak%20Montenegro"
+              "Runolist Chalet",
+              "https://maps.google.com/?q=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%2084220%20%C5%BDabljak%2C%20Montenegro"
             ],
             [
               "Šavnik",
-              "https://maps.google.com/?q=%C5%A0avnik%20Montenegro"
+              "https://maps.google.com/?q=%C5%A0avnik%2C%20Montenegro"
             ],
             [
               "Nikšić",
-              "https://maps.google.com/?q=Nik%C5%A1i%C4%87%20Montenegro"
+              "https://maps.google.com/?q=Nik%C5%A1i%C4%87%2C%20Montenegro"
             ],
             [
               "Grahovo",
-              "https://maps.google.com/?q=Grahovo%20Montenegro"
+              "https://maps.google.com/?q=Grahovo%2C%20Montenegro"
             ],
             [
-              "Kotor hotel parking",
-              "https://maps.google.com/?q=Kotor%20hotel%20parking"
+              "Conte Hotel & Restaurant",
+              "https://maps.google.com/?q=Conte%20Hotel%20%26%20Restaurant%2C%20Ul.%20Marka%20Martinovi%C4%87a%20bb%2C%2085336%20Perast%2C%20Montenegro"
             ],
             [
-              "Kotor Old Town parking",
-              "https://maps.google.com/?q=Kotor%20Old%20Town%20parking"
+              "Perast entrance parking",
+              "https://maps.google.com/?q=Perast%20Montenegro%20parking"
             ]
           ],
           "tags": [
             "Food & Dining",
             "Romantic Experiences"
           ],
-          "heading": "Day 4 - Žabljak → Kotor / M6–M3–M7–M8–M1",
+          "heading": "Day 4 - Runolist Chalet → Perast / Conte Hotel transfer",
           "food": {
             "meals": [
               {
@@ -597,16 +590,16 @@
                 "sourceUrl": "https://kastel.me/?lang=en&page_id=11611"
               },
               {
-                "slot": "Dinner · Kotor",
-                "name": "Ombra · Old Town",
-                "specialty": "Adriatic seafood, daily catch and black cuttlefish risotto.",
-                "hours": "Official listing 08:30–22:30; confirm October service",
-                "parking": "Leave car at hotel or signed Old Town-edge lot; walk in",
-                "cash": "Cash-only unverified; carry cash and ask",
-                "durationMinutes": 90,
-                "plan": "No Old Town car circling; reserve if possible.",
-                "mapUrl": "https://maps.google.com/?q=Ombra%20%C2%B7%20Old%20Town%20Montenegro",
-                "sourceUrl": "https://ombraoldtown.com/"
+                "slot": "Dinner · Perast",
+                "name": "Conte Hotel & Restaurant",
+                "specialty": "Restaurant at the confirmed hotel property; dining reservation is not supplied.",
+                "hours": "Check the hotel restaurant’s October service directly.",
+                "parking": "Walk from Conte reception/accommodation; keep the car at the signed town entrance lot.",
+                "cash": "Payment method not supplied; confirm directly.",
+                "durationMinutes": 60,
+                "plan": "Convenient option after the transfer / day out. No restaurant table booking, deposit or cancellation terms were supplied.",
+                "mapUrl": "https://maps.google.com/?q=Conte%20Hotel%20Restaurant%20Perast%20Montenegro",
+                "sourceUrl": "https://hotelconte.me/our-hotel"
               }
             ],
             "coffee": [
@@ -625,7 +618,7 @@
                 "name": "Aroma City Tabačina · Kotor",
                 "hours": "07:00–23:45 listed; verify Sunday/holiday hours",
                 "parking": "Urban lot/curb availability not confirmed; unload at hotel first",
-                "plan": "Convenient Kotor base top-up, not a loaded-luggage stop.",
+                "plan": "Convenient Perast base top-up, not a loaded-luggage stop.",
                 "mapUrl": "https://maps.google.com/?q=Aroma%20City%20Taba%C4%8Dina%20%C2%B7%20Kotor%20Montenegro",
                 "sourceUrl": "https://aromamarketi.me/lokacije/"
               }
@@ -635,9 +628,9 @@
         {
           "day": 5,
           "date": "Mon · Oct 5",
-          "region": "Central · Lake Skadar",
-          "base": "Kotor",
-          "drive": "Kotor ↔ Virpazar · about 1 h 12 each way; 2 h 53 adjusted round trip",
+          "region": "Coast · Perast / Bay of Kotor",
+          "base": "Conte Hotel & Restaurant · Perast",
+          "drive": "Perast ↔ selected Bay / Skadar outing · live route controls; allow about 3 h 30–4 h adjusted for Virpazar round trip",
           "adjustedHours": 2.88,
           "morning": [
             {
@@ -646,7 +639,7 @@
             },
             {
               "type": "DRIVE",
-              "text": "For Skadar, leave Kotor around 08:00 for Virpazar."
+              "text": "For Skadar, leave Perast around 08:00 for Virpazar."
             },
             {
               "type": "DRIVE",
@@ -708,29 +701,33 @@
             },
             {
               "type": "DRIVE",
-              "text": "Return to Kotor before dark."
+              "text": "Return to Conte in Perast before dark."
             }
           ],
           "evening": [
             {
               "type": "EAT",
-              "text": "Have the final dinner in Kotor."
+              "text": "Have the final dinner in Perast."
             },
             {
               "type": "STAY",
-              "text": "Leave bags at the hotel."
+              "text": "Leave bags at Conte Hotel & Restaurant."
             },
             {
               "type": "LOGISTICS",
               "text": "Keep tomorrow’s airport run simple and predictable."
             }
           ],
-          "parking": "Leave bags at the Kotor hotel. Use marked lots in Virpazar, Perast or Budva; do not leave valuables in the car.",
+          "parking": "Leave bags at Conte. For Perast, park at a signed entrance lot and walk. For Virpazar or Budva, use marked public lots; never leave valuables visible in the car.",
           "cash": "Carry €20–40/person for the chosen outing. Three park days at €5 each cost €15/person; the 2026 all-parks annual pass is €13.50/person, if all three admissions are required.",
           "stops": [
             [
+              "Conte Hotel & Restaurant",
+              "https://maps.google.com/?q=Conte%20Hotel%20%26%20Restaurant%2C%20Ul.%20Marka%20Martinovi%C4%87a%20bb%2C%2085336%20Perast%2C%20Montenegro"
+            ],
+            [
               "Virpazar parking",
-              "https://maps.google.com/?q=Virpazar%20parking%20Montenegro"
+              "https://maps.google.com/?q=Virpazar%20parking"
             ],
             [
               "Virpazar boat pier",
@@ -738,15 +735,15 @@
             ],
             [
               "Winery Garnet · Godinje",
-              "https://maps.google.com/?q=Winery%20Garnet%20Godinje%20Montenegro"
+              "https://maps.google.com/?q=Winery%20Garnet%20Godinje"
             ],
             [
-              "Perast parking",
-              "https://maps.google.com/?q=Perast%20parking%20Montenegro"
+              "Perast entrance parking",
+              "https://maps.google.com/?q=Perast%20Montenegro%20parking"
             ],
             [
               "Our Lady of the Rocks pier",
-              "https://maps.google.com/?q=Our%20Lady%20of%20the%20Rocks%20boat%20pier%20Perast"
+              "https://maps.google.com/?q=Our%20Lady%20of%20the%20Rocks%20pier%20Perast"
             ],
             [
               "Budva Old Town parking",
@@ -754,11 +751,7 @@
             ],
             [
               "Sveti Stefan viewpoint",
-              "https://maps.google.com/?q=Sveti%20Stefan%20viewpoint%20Montenegro"
-            ],
-            [
-              "Kotor hotel parking",
-              "https://maps.google.com/?q=Kotor%20hotel%20parking"
+              "https://maps.google.com/?q=Sveti%20Stefan%20viewpoint"
             ]
           ],
           "tags": [
@@ -767,7 +760,7 @@
             "Food & Dining",
             "Romantic Experiences"
           ],
-          "heading": "Day 5 - Kotor base / Lake Skadar OR Perast OR Budva",
+          "heading": "Day 5 - Perast base / Lake Skadar OR Perast OR Budva",
           "food": {
             "meals": [
               {
@@ -783,16 +776,28 @@
                 "sourceUrl": "https://pelikan-zec.com/"
               },
               {
-                "slot": "Dinner · Kotor",
-                "name": "Pržun · Old Town",
-                "specialty": "Fresh fish/seafood and Njeguši prosciutto.",
-                "hours": "Official hours listed 09:00–23:30; reconfirm",
-                "parking": "Hotel or signed edge lot, then walk into Old Town",
-                "cash": "Cash-only unverified; carry cash and ask",
-                "durationMinutes": 90,
-                "plan": "Reserve; leave bags at hotel.",
-                "mapUrl": "https://maps.google.com/?q=Pr%C5%BEun%20%C2%B7%20Old%20Town%20Montenegro",
-                "sourceUrl": "https://przun.me/"
+                "slot": "Dinner · Perast",
+                "name": "Conte Hotel & Restaurant",
+                "specialty": "Restaurant at the confirmed hotel property; dining reservation is not supplied.",
+                "hours": "Check the hotel restaurant’s October service directly.",
+                "parking": "Walk from Conte reception/accommodation; keep the car at the signed town entrance lot.",
+                "cash": "Payment method not supplied; confirm directly.",
+                "durationMinutes": 60,
+                "plan": "Convenient option after the transfer / day out. No restaurant table booking, deposit or cancellation terms were supplied.",
+                "mapUrl": "https://maps.google.com/?q=Conte%20Hotel%20Restaurant%20Perast%20Montenegro",
+                "sourceUrl": "https://hotelconte.me/our-hotel"
+              },
+              {
+                "slot": "Breakfast · Conte Hotel",
+                "name": "Conte Hotel & Restaurant",
+                "specialty": "Hotel-published breakfast service. Whether it is included in the stay is unconfirmed.",
+                "hours": "08:00–10:30 published; check the booking and service on arrival.",
+                "parking": "At the hotel; vehicle access to Perast old town is restricted.",
+                "cash": "Inclusion/payment not supplied; confirm with the hotel.",
+                "durationMinutes": 45,
+                "plan": "Do not assume breakfast is prepaid or included; confirm the reservation terms or arrange an alternative.",
+                "mapUrl": "https://maps.google.com/?q=Conte%20Hotel%20%26%20Restaurant%2C%20Perast%2C%20Montenegro",
+                "sourceUrl": "https://hotelconte.me/our-hotel"
               }
             ],
             "coffee": [
@@ -801,7 +806,7 @@
                 "name": "Small Talks · Kotor",
                 "why": "Specialty espresso and pour-over; proper roaster-led coffee stop.",
                 "hours": "Official listing daily 08:00–22:00",
-                "parking": "Walk from Kotor lodging; Old Town parking is signed/paid",
+                "parking": "Walk from Conte Hotel & Restaurant in Perast; Old Town parking is signed/paid",
                 "mapUrl": "https://maps.google.com/?q=Small%20Talks%20%C2%B7%20Kotor%20Montenegro",
                 "sourceUrl": "https://www.smalltalks.me/"
               }
@@ -822,8 +827,8 @@
           "day": 6,
           "date": "Tue · Oct 6",
           "region": "Coast · Tivat Airport",
-          "base": "—",
-          "drive": "Kotor → TIV · about 10–15 min; airport 7.7 km",
+          "base": "Conte Hotel & Restaurant · Perast",
+          "drive": "Perast → TIV · allow 35–45 min in live planning; return car by 11:30 target",
           "adjustedHours": 0.4,
           "morning": [
             {
@@ -832,7 +837,7 @@
             },
             {
               "type": "LOGISTICS",
-              "text": "Leave Kotor by 09:30."
+              "text": "Leave Perast by 09:30 as a conservative planning target; confirm live routing."
             },
             {
               "type": "DRIVE",
@@ -850,7 +855,7 @@
             },
             {
               "type": "LOGISTICS",
-              "text": "The flight leaves at 14:55."
+              "text": "Planning estimate: flight departure is 14:55; flight number and ticket confirmation were not supplied."
             },
             {
               "type": "CAUTION",
@@ -858,12 +863,16 @@
             }
           ],
           "evening": [],
-          "parking": "No sightseeing stops. Return the car by 11:30 and keep rental paperwork and deposit details handy.",
+          "parking": "Check out of Conte by its published 11:00 deadline (confirm the booking). Leave with generous traffic buffer, return car by the existing 11:30 planning target and reach the terminal by 12:15. Flight and rental voucher details were not supplied.",
           "cash": "Keep a payment card accessible; only refuel if your contract requires a full tank.",
           "stops": [
             [
-              "Kotor to Tivat Airport",
-              "https://www.google.com/maps/dir/?api=1&origin=Kotor%2C%20Montenegro&destination=Tivat%20Airport&travelmode=driving"
+              "Conte Hotel & Restaurant",
+              "https://maps.google.com/?q=Conte%20Hotel%20%26%20Restaurant%2C%20Ul.%20Marka%20Martinovi%C4%87a%20bb%2C%2085336%20Perast%2C%20Montenegro"
+            ],
+            [
+              "Perast to Tivat Airport",
+              "https://www.google.com/maps/dir/?api=1&origin=Conte%20Hotel%20%26%20Restaurant%2C%20Perast%2C%20Montenegro&destination=Tivat%20Airport%2C%20Montenegro&travelmode=driving"
             ],
             [
               "Tivat Airport rental return",
@@ -871,21 +880,9 @@
             ]
           ],
           "tags": [],
-          "heading": "Day 6 - Kotor → TIV / rental return / flight home",
+          "heading": "Day 6 - Perast → TIV / rental return / flight home",
           "food": {
             "meals": [
-              {
-                "slot": "Breakfast · Kotor",
-                "name": "Small Talks · Kotor",
-                "specialty": "Specialty espresso with brunch plates; eat before leaving.",
-                "hours": "Daily 08:00–22:00 published; confirm early service",
-                "parking": "Walk from hotel; no transfer detour",
-                "cash": "Cash-only unverified; carry card/cash",
-                "durationMinutes": 45,
-                "plan": "Leave Kotor by 09:30; use only if timing allows.",
-                "mapUrl": "https://maps.google.com/?q=Small%20Talks%20%C2%B7%20Kotor%20Montenegro",
-                "sourceUrl": "https://www.smalltalks.me/"
-              },
               {
                 "slot": "Lunch · after car return",
                 "name": "Tivat Airport café / terminal food",
@@ -897,6 +894,18 @@
                 "plan": "Do not add a pre-return detour; terminal by 12:15.",
                 "mapUrl": "https://maps.google.com/?q=Tivat%20Airport%20caf%C3%A9%20%2F%20terminal%20food%20Montenegro",
                 "sourceUrl": ""
+              },
+              {
+                "slot": "Breakfast · 08:00 if included",
+                "name": "Conte Hotel & Restaurant",
+                "specialty": "Hotel-published breakfast service, 08:00–10:30; booking inclusion is unconfirmed.",
+                "hours": "Published 08:00–10:30; verify on arrival.",
+                "parking": "Check out by the published 11:00 deadline and leave the car at the Perast entrance lot.",
+                "cash": "Inclusion/payment not supplied; confirm with the hotel.",
+                "durationMinutes": 45,
+                "plan": "A breakfast at opening gives a 09:30 airport departure buffer. If not included or not operating, arrange breakfast separately and preserve the airport buffer.",
+                "mapUrl": "https://maps.google.com/?q=Conte%20Hotel%20%26%20Restaurant%2C%20Perast%2C%20Montenegro",
+                "sourceUrl": "https://hotelconte.me/our-hotel"
               }
             ],
             "coffee": [
@@ -916,59 +925,54 @@
       ],
       "checks": [
         {
-          "name": "Mandatory Durmitor / northern highlands",
+          "name": "Confirmed five-night lodging pattern",
           "status": "PASS",
-          "detail": "Day 3 traverses P14/Sedlo and reaches Plužine/Piva; Tara Bridge and rafting are excluded."
-        },
-        {
-          "name": "Two-base star-trip lodging",
-          "status": "PASS",
-          "detail": "Žabljak nights 1–3, then Kotor nights 4–5: two bases and one normal hotel move. If the Day 1 go/no-go fails and you use Kotor that night, the contingency has two hotel moves."
+          "detail": "Runolist Chalet in Žabljak Oct 1–4 (three nights), then Conte Hotel & Restaurant in Perast Oct 4–6 (two nights). Individual confirmation numbers and rates were not supplied."
         },
         {
           "name": "Day 1 driving ceiling ≤5.5 h adjusted",
           "status": "CONDITIONAL",
-          "detail": "A current transfer guide gives a 3 h 20 min drive estimate; Rome2Rio gives 2 h 52 min. Use 4 h adjusted from the nominal estimate after +20%, before traffic/stops. Verify live navigation before leaving TIV; if the live route exceeds 5 h 30, do not start this drive."
+          "detail": "The existing 3 h 20 min route estimate yields about 4 h after the +20% terrain allowance, before traffic or stops. This remains a planning estimate. Verify the live route, weather, driver condition and host arrival arrangements before leaving TIV; do not start if the live route exceeds 5 h 30."
         },
         {
           "name": "Day 1 daylight cutoff",
           "status": "CONDITIONAL",
-          "detail": "Accepted exception: leaving TIV about 15:15–15:30 projects Žabljak arrival around 19:15–19:30 using the nominal estimate, after Oct 1 sunset (~18:26) and civil twilight (~18:55). This is not a daylight-safety PASS. Proceed only in safe conditions with a rested driver and confirmed late check-in; otherwise use the Kotor Day 1 contingency."
+          "detail": "The existing 15:15–15:30 airport departure estimate projects arrival after sunset and civil twilight. This is an accepted planning exception, not a daylight-safety pass. Proceed only in safe conditions after contacting Runolist about late arrival; otherwise stop safely and arrange lodging directly. No alternate lodging booking was supplied."
         },
         {
           "name": "Daily adjusted driving ≤5.5 h",
           "status": "CONDITIONAL",
-          "detail": "Day 1 uses a nominal 4 h adjusted transfer estimate; if the Kotor contingency is used, Day 2 transfer is about 3 h 41 adjusted and replaces the local-only drive; Day 4 is about 3 h 41 adjusted. P14 is provisionally 5 h 24 adjusted (4 h 30 wheel time; baseline ×1.20; dwell time excluded), with only six minutes below the ceiling. Check all waypoints on the day; remove optional spurs first. If the core P14 loop exceeds 5 h 30, it fails and must not be labelled compliant."
+          "detail": "Day 1 is estimated at 4 h adjusted. Day 4 is a conservative planning estimate for the Žabljak–Perast transfer; confirm the property-level route live and add the Perast entrance/parking approach. P14 is provisionally 5 h 24 adjusted with dwell time excluded and only six minutes of margin. Verify all waypoints; skip optional spurs and cancel P14 if its core loop exceeds 5 h 30."
         },
         {
           "name": "P14 daylight and weather gate",
           "status": "CONDITIONAL",
-          "detail": "Start by 07:45 only after same-day road and weather checks; return to Žabljak and finish high-altitude driving by 16:00. Skip for snow, ice, poor visibility, closure or unsafe conditions."
+          "detail": "Start by 07:45 only after same-day road and weather checks; return to the booked Žabljak base and finish high-altitude driving by 16:00. Skip for snow, ice, poor visibility, closure or unsafe conditions. Use a local low-risk activity or rest day if P14 is cancelled."
         },
         {
-          "name": "Luggage concealment",
-          "status": "PASS",
-          "detail": "Day 1 is a direct transfer to pre-booked Žabljak lodging with no sightseeing stops; unload on arrival. If the Day 1 drive is aborted, go to Kotor lodging. On later transfer days, check in or confirm guarded luggage storage before excursions; no bags remain exposed in a parked vehicle."
+          "name": "Luggage concealment and transfer parking",
+          "status": "CONDITIONAL",
+          "detail": "Day 1 is a direct transfer with no sightseeing; unload at Runolist on arrival. For Conte, vehicles cannot enter Perast old town during May–October; use a signed entrance car park and contact the hotel about assistance to reception. Never leave luggage visible in the car."
         },
         {
-          "name": "Day 6 airport radius and terminal by 12:15",
-          "status": "PASS",
-          "detail": "Kotor–TIV is within 30 minutes under normal traffic; car return by 11:30, terminal by 12:15."
+          "name": "Day 6 airport return buffer",
+          "status": "CONDITIONAL",
+          "detail": "Leave Perast with a generous buffer for the TIV drive and return the car by the existing 11:30 planning target; reach the terminal by 12:15. Flight time and rental return terms are not confirmed by voucher details."
         },
         {
           "name": "Tara bridge closure avoided",
           "status": "PASS",
-          "detail": "Official closure extends through Oct 26, 2026 at noon; neither branch depends on crossing it. Rafting is omitted unless an operator confirms safe independent access."
+          "detail": "The official closure extends through Oct 26, 2026 at noon; the planned route does not depend on crossing it. Rafting is omitted unless an operator confirms safe independent access."
         }
       ],
       "nightBreakdown": [
         {
-          "base": "Žabljak",
+          "base": "Runolist Chalet · Žabljak",
           "nights": 3,
           "dates": "Oct 1–3"
         },
         {
-          "base": "Kotor",
+          "base": "Conte Hotel & Restaurant · Perast",
           "nights": 2,
           "dates": "Oct 4–5"
         }
@@ -976,837 +980,13 @@
       "crucialGroundTips": [
         "Book a midsize estate or larger by exact model. Test all four bags under the closed parcel cover before signing; liters on a rental listing do not prove fit.",
         "Pay for low-excess SCDW and get glass, tires/wheels, underbody, gravel and roadside cover in writing. Confirm P-14 is allowed by the rental contract; keep the spare/repair kit and assistance number accessible.",
-        "Use Google Maps for road routing, then add at least 20% for switchbacks and another 30–60 minutes for stops, traffic or roadworks. The P14 number has only six minutes of ceiling margin; the live route decides.",
+        "Use live navigation, then add at least 20% for switchbacks and more time for stops, traffic or roadworks. P14 has only six minutes of estimated ceiling margin; the live route decides.",
         "Download offline Google Maps for the road corridor and Maps.me for marked trails before leaving Wi-Fi. Trail markings are patchy in Google Maps; do not count on mobile signal in Durmitor.",
-        "Fill the tank before the P14 day. The tourism guide notes there are no gas stations on the Plužine–Žabljak protected section. Carry water, warm layers, snacks and a charged power bank.",
+        "Fill the tank before the P14 day. Carry water, warm layers, snacks and a charged power bank.",
         "Expect narrow two-way roads, rockfall, potholes, unprotected edges and occasional tire trouble. Slow down, leave room for oncoming buses, and stop only at visible signed pullouts.",
-        "Check in and unload before exploring. Never leave the four bags exposed in a parked car. In Kotor, reserve lodging with parking or use a marked lot at the edge of the Old Town.",
-        "Keep €50–100 in small cash notes for park booths and rural stops. The primary route has three planned national-park days: compare €15 in day tickets with the €13.50 annual pass, and confirm whether each gate charges separately."
-      ]
-    },
-    "fallback": {
-      "days": [
-        {
-          "day": 1,
-          "date": "Thu · Oct 1",
-          "region": "Coast · Bay of Kotor",
-          "base": "Kotor",
-          "drive": "TIV → M-11 → Lepetane ferry → Kamenari → M-1 via Herceg Novi / Lipci / Risan → Kotor · scenic loop allow 1.5–2 h; direct road 20–30 min",
-          "adjustedHours": 2.4,
-          "morning": [
-            {
-              "type": "LOGISTICS",
-              "text": "Land at TIV at 13:50."
-            },
-            {
-              "type": "LOGISTICS",
-              "text": "Collect the estate car, test-load both checked cases and both cabin trolleys under the closed parcel shelf, photograph existing damage, and get the roadside number before you leave."
-            },
-            {
-              "type": "LOGISTICS",
-              "text": "Plan wheels rolling around 15:15–15:30."
-            }
-          ],
-          "afternoon": [
-            {
-              "type": "DRIVE",
-              "text": "Go straight to your Kotor hotel without stopping on the way."
-            },
-            {
-              "type": "DRIVE",
-              "text": "For the scenic bay loop, take M-11 from Tivat to Lepetane, cross to Kamenari, then follow M-1 west via Herceg Novi and Lipci before continuing around the north shore through Risan to Kotor."
-            },
-            {
-              "type": "LOGISTICS",
-              "text": "The published summer timetable runs every 15–20 minutes through Oct 11; the Oct small-car fare is €4 off-season."
-            },
-            {
-              "type": "DRIVE",
-              "text": "This is the long scenic way, not a shortcut; use the direct Tivat–Kotor road through the Vrmac tunnel if you just want to get to the hotel."
-            },
-            {
-              "type": "CAUTION",
-              "text": "Stay with the car at the ferry and do not stop for a viewpoint or swim until all four bags are unloaded."
-            }
-          ],
-          "evening": [
-            {
-              "type": "SEE",
-              "text": "Once the bags are inside, walk Kotor Old Town."
-            },
-            {
-              "type": "EAT",
-              "text": "Have dinner there."
-            },
-            {
-              "type": "CAUTION",
-              "text": "Skip the car trip into the old center: traffic pinches down and parking is the trap."
-            },
-            {
-              "type": "EAT",
-              "text": "If you arrive late, eat near the hotel and save the walls for another day."
-            }
-          ],
-          "parking": "Go straight to the Kotor lodging and unload. For any Old Town stop, walk from hotel or signed edge parking.",
-          "cash": "Keep €4 ready if you take the ferry; Oct 1–6 uses the published off-season fare.",
-          "stops": [
-            [
-              "TIV rental pickup",
-              "https://maps.google.com/?q=Tivat%20Airport%20car%20rental"
-            ],
-            [
-              "Lepetane ferry terminal",
-              "https://maps.google.com/?q=Lepetane%20ferry%20terminal"
-            ],
-            [
-              "Kamenari ferry terminal",
-              "https://maps.google.com/?q=Kamenari%20ferry%20terminal"
-            ],
-            [
-              "Kotor hotel parking",
-              "https://maps.google.com/?q=Kotor%20hotel%20parking"
-            ],
-            [
-              "Kotor Old Town parking",
-              "https://maps.google.com/?q=Kotor%20Old%20Town%20parking"
-            ]
-          ],
-          "tags": [
-            "Food & Dining",
-            "Romantic Experiences"
-          ],
-          "heading": "Day 1 - Tivat → Kotor / Bay ferry option / Old Town",
-          "food": {
-            "meals": [
-              {
-                "slot": "Lunch · Tivat/Kotor arrival",
-                "name": "ALMECO Café Negro Bar-Restaurant · Tivat Airport",
-                "specialty": "Airport café-bar with food/drinks; use for a sandwich/takeaway before collecting the car, not as a drive stop.",
-                "hours": "Official airport listing: aligned to airport opening hours; verify service and stock on arrival",
-                "parking": "Inside terminal; collect food before rental pickup",
-                "cash": "Cash/card varies",
-                "durationMinutes": 25,
-                "plan": "Eat before the 15:15–15:30 go/no-go departure window. If airport time is tight, carry sealed food from the flight; do not stop on the mountain road.",
-                "mapUrl": "https://maps.google.com/?q=ALMECO%20Cafe%20Negro%20Bar%20Restaurant%20Tivat%20Airport%20Montenegro",
-                "sourceUrl": "https://montenegroairports.com/aerodrom-tivat/sadrzaji-i-servisi/"
-              },
-              {
-                "slot": "Dinner · Kotor",
-                "name": "Ombra · Kotor Old Town",
-                "specialty": "Adriatic seafood, daily catch and black cuttlefish risotto.",
-                "hours": "Official listing 08:30–22:30; confirm October service",
-                "parking": "Hotel or signed Old Town-edge lot, then walk in",
-                "cash": "Cash-only unverified; carry cash and ask",
-                "durationMinutes": 90,
-                "plan": "Check in and unload first; reserve if possible.",
-                "mapUrl": "https://maps.google.com/?q=Ombra%20Restaurant%20Kotor%20Old%20Town%20Montenegro",
-                "sourceUrl": "https://ombraoldtown.com/"
-              }
-            ],
-            "coffee": [
-              {
-                "slot": "Morning",
-                "name": "Small Talks · Kotor",
-                "why": "Specialty espresso and pour-over for the next morning.",
-                "hours": "Daily 08:00–22:00 listed",
-                "parking": "Walk from lodging",
-                "mapUrl": "https://maps.google.com/?q=Small%20Talks%20%C2%B7%20Kotor%20Montenegro",
-                "sourceUrl": "https://www.smalltalks.me/"
-              }
-            ],
-            "supermarkets": [
-              {
-                "name": "Voli Hipermarket Radanovići",
-                "hours": "Hours unverified; check branch same day",
-                "parking": "Dedicated parking indicated in branch materials; loaded-car details unverified",
-                "plan": "Buy trunk pantry only if it fits airport/ferry/hotel timing; otherwise shop after unloading in Kotor.",
-                "mapUrl": "https://maps.google.com/?q=Voli%20Hipermarket%20Radanovi%C4%87i%20Montenegro",
-                "sourceUrl": "https://kompanija.voli.me/voli-hipermarket-radanovici/"
-              },
-              {
-                "name": "IDEA Butiko Radanovići",
-                "hours": "Mon–Sat 07:30–21:30 published; Sunday closed",
-                "parking": "On-site paid parking: first 30 min free; then paid, parking payment cash only",
-                "plan": "Radanovići alternative; do not leave luggage visible.",
-                "mapUrl": "https://maps.google.com/?q=IDEA%20Butiko%20Radanovi%C4%87i%20Montenegro",
-                "sourceUrl": "https://butiko.me/"
-              }
-            ]
-          }
-        },
-        {
-          "day": 2,
-          "date": "Fri · Oct 2",
-          "region": "Coast · Kotor",
-          "base": "Kotor",
-          "drive": "Local Kotor / Perast · allow ≤2 h total",
-          "adjustedHours": 2,
-          "morning": [
-            {
-              "type": "SEE",
-              "text": "Start with Kotor Old Town before the day-trippers fill the lanes."
-            },
-            {
-              "type": "WALK",
-              "text": "If you want the walls, start early."
-            },
-            {
-              "type": "LOGISTICS",
-              "text": "Check October opening hours and ticket price."
-            },
-            {
-              "type": "CAUTION",
-              "text": "Wear shoes with grip; wet stone steps are slick."
-            }
-          ],
-          "afternoon": [
-            {
-              "type": "DRIVE",
-              "text": "Drive to Perast."
-            },
-            {
-              "type": "LOGISTICS",
-              "text": "Use the signed parking area rather than squeezing onto the waterfront road."
-            },
-            {
-              "type": "SEE",
-              "text": "Walk the old lanes."
-            },
-            {
-              "type": "WATER",
-              "text": "Take the Our Lady of the Rocks boat only after confirming the skipper is operating and the sea is calm."
-            },
-            {
-              "type": "DRIVE",
-              "text": "Be back in Kotor by 16:00."
-            }
-          ],
-          "evening": [
-            {
-              "type": "EAT",
-              "text": "Dinner in Kotor; book a table if you want a quiet waterfront seat."
-            },
-            {
-              "type": "STAY",
-              "text": "Leave the car parked for the evening."
-            }
-          ],
-          "parking": "Park outside the Old Town or use your hotel space. In Perast, leave the car in the signed lot and walk down.",
-          "cash": "Carry small notes for the walls and boat; the traveler fares in the old notes are not current prices.",
-          "stops": [
-            [
-              "Kotor Old Town parking",
-              "https://maps.google.com/?q=Kotor%20Old%20Town%20parking"
-            ],
-            [
-              "Kotor city walls entrance",
-              "https://maps.google.com/?q=Kotor%20city%20walls%20entrance"
-            ],
-            [
-              "Perast parking",
-              "https://maps.google.com/?q=Perast%20parking%20Montenegro"
-            ],
-            [
-              "Our Lady of the Rocks pier",
-              "https://maps.google.com/?q=Our%20Lady%20of%20the%20Rocks%20boat%20pier%20Perast"
-            ]
-          ],
-          "tags": [
-            "Sightseeing",
-            "Romantic Experiences",
-            "Food & Dining"
-          ],
-          "heading": "Day 2 - Kotor / Old Town / Perast",
-          "food": {
-            "meals": [
-              {
-                "slot": "Lunch · Kotor/Perast corridor",
-                "name": "Konoba Scala Santa · Kotor",
-                "specialty": "Fresh Adriatic fish and mussels buzara; local seafood konoba.",
-                "hours": "Daily 10:00–23:00 listing; confirm",
-                "parking": "Old Town pedestrian area; park at lodging/signed public lot and walk",
-                "cash": "Cash and cards reported; cash-only no",
-                "durationMinutes": 75,
-                "plan": "Eat before the Perast drive or after returning, not while car is parked with bags.",
-                "mapUrl": "https://maps.google.com/?q=Konoba%20Scala%20Santa%20%C2%B7%20Kotor%20Montenegro",
-                "sourceUrl": "https://konobascalasanta.com/en/o-nama-2/"
-              },
-              {
-                "slot": "Dinner · Dobrota",
-                "name": "Dobrotski Dvori",
-                "specialty": "Njeguši ham and local/Mediterranean dishes.",
-                "hours": "Call to confirm October opening",
-                "parking": "Venue parking must be confirmed; taxi/walk from lodging preferred",
-                "cash": "Cash-only unverified; ask",
-                "durationMinutes": 90,
-                "plan": "Reserve and verify parking before driving.",
-                "mapUrl": "https://maps.google.com/?q=Dobrotski%20Dvori%20Montenegro",
-                "sourceUrl": "https://dobrotskidvori.com/en/"
-              }
-            ],
-            "coffee": [
-              {
-                "slot": "Morning",
-                "name": "Small Talks · Kotor",
-                "why": "Specialty espresso/pour-over.",
-                "hours": "Daily 08:00–22:00 listed",
-                "parking": "Walk from lodging",
-                "mapUrl": "https://maps.google.com/?q=Small%20Talks%20%C2%B7%20Kotor%20Montenegro",
-                "sourceUrl": "https://www.smalltalks.me/"
-              }
-            ],
-            "supermarkets": [
-              {
-                "name": "Aroma 18 · TC Kamelija",
-                "hours": "07:00–22:00 listed Mon–Sat; Sunday verify",
-                "parking": "Shopping-center parking available; height/fees and estate-car access confirm",
-                "plan": "Park once at hotel and shop on foot/taxi where possible.",
-                "mapUrl": "https://maps.google.com/?q=Aroma%2018%20%C2%B7%20TC%20Kamelija%20Montenegro",
-                "sourceUrl": "https://aromamarketi.me/lokacije/"
-              }
-            ]
-          }
-        },
-        {
-          "day": 3,
-          "date": "Sat · Oct 3",
-          "region": "Central · Lovćen / Cetinje",
-          "base": "Kotor",
-          "drive": "Kotor ↔ Lovćen ↔ Cetinje · plan 2.5 h adjusted",
-          "adjustedHours": 2.5,
-          "morning": [
-            {
-              "type": "DRIVE",
-              "text": "Leave Kotor around 08:00 and climb the Kotor serpentine toward Lovćen."
-            },
-            {
-              "type": "CAUTION",
-              "text": "The hairpins are tight and buses need space; use a low gear downhill and stop only at proper pullouts."
-            },
-            {
-              "type": "CAUTION",
-              "text": "Turn around if fog closes the views."
-            }
-          ],
-          "afternoon": [
-            {
-              "type": "WALK",
-              "text": "Choose the short Ivanova Korita walk."
-            },
-            {
-              "type": "SEE",
-              "text": "Or visit the mausoleum and climb its stairs."
-            },
-            {
-              "type": "WALK",
-              "text": "Do not treat 460 steps as a casual stop."
-            },
-            {
-              "type": "DRIVE",
-              "text": "Continue to Cetinje only if the return drive still ends before dark; skip the extra town if the weather or traffic is slow."
-            }
-          ],
-          "evening": [
-            {
-              "type": "EAT",
-              "text": "Return to Kotor for dinner."
-            },
-            {
-              "type": "CAUTION",
-              "text": "The coast fallback exists so you can make a sound call if the high roads are wet or foggy."
-            }
-          ],
-          "parking": "Use signed Lovćen parking. Leave all luggage at Kotor; do not park on the serpentine for photos.",
-          "cash": "Carry cash for park entry and small village purchases; confirm current prices at the gate.",
-          "stops": [
-            [
-              "Lovćen visitor parking",
-              "https://maps.google.com/?q=Lov%C4%87en%20National%20Park%20visitor%20parking"
-            ],
-            [
-              "Ivanova Korita parking",
-              "https://maps.google.com/?q=Ivanova%20Korita%20parking"
-            ],
-            [
-              "Cetinje parking",
-              "https://maps.google.com/?q=Cetinje%20parking%20Montenegro"
-            ],
-            [
-              "Kotor hotel parking",
-              "https://maps.google.com/?q=Kotor%20hotel%20parking"
-            ]
-          ],
-          "tags": [
-            "Adventure & Hiking",
-            "Sightseeing",
-            "Food & Dining"
-          ],
-          "heading": "Day 3 - Kotor → Lovćen → Cetinje / mountain fallback",
-          "food": {
-            "meals": [
-              {
-                "slot": "Lunch · Ivanova Korita",
-                "name": "Ivanov Konak · Lovćen",
-                "specialty": "Lovćen mountain lodge cuisine; confirm day menu.",
-                "hours": "Listing 07:00–23:00; reconfirm",
-                "parking": "Guest parking reported; verify space before committing",
-                "cash": "Cash-only unverified; carry cash",
-                "durationMinutes": 90,
-                "plan": "On the Lovćen outing; check weather/road before lunch stop.",
-                "mapUrl": "https://maps.google.com/?q=Ivanov%20Konak%20%C2%B7%20Lov%C4%87en%20Montenegro",
-                "sourceUrl": "https://www.tripadvisor.co.il/Restaurant_Review-g304076-d3531002-Reviews-Hotel_Restaurant_Ivanov_Konak-Cetinje.html"
-              },
-              {
-                "slot": "Dinner · Njeguši corridor",
-                "name": "Kafana Kod Pera na Bukovici",
-                "specialty": "Njeguši prosciutto, local cheese and cured meats.",
-                "hours": "Published hours vary; generally 08:00–22:00; Monday discrepancy—call",
-                "parking": "Rural village roadside parking not verified; use only safe signed space",
-                "cash": "Cash-only unverified; carry cash",
-                "durationMinutes": 90,
-                "plan": "Only if returning via Njeguši and open; otherwise dinner in Kotor.",
-                "mapUrl": "https://maps.google.com/?q=Kafana%20Kod%20Pera%20na%20Bukovici%20Montenegro",
-                "sourceUrl": "https://moja-djelatnost.me/restoran-sa-domacim-susenim-mesom-cetinje/kafana-kod-pera-na-bukovici/MM17Nozb"
-              }
-            ],
-            "coffee": [
-              {
-                "slot": "Morning",
-                "name": "Small Talks · Kotor",
-                "why": "Specialty espresso/pour-over before the mountain climb.",
-                "hours": "Daily 08:00–22:00 listed",
-                "parking": "Walk from lodging",
-                "mapUrl": "https://maps.google.com/?q=Small%20Talks%20%C2%B7%20Kotor%20Montenegro",
-                "sourceUrl": "https://www.smalltalks.me/"
-              }
-            ],
-            "supermarkets": [
-              {
-                "name": "Aroma City Tabačina · Kotor",
-                "hours": "07:00–23:45 listed; confirm",
-                "parking": "Urban parking not verified; leave car at base",
-                "plan": "Stock water before Lovćen; no loaded-car sightseeing stop.",
-                "mapUrl": "https://maps.google.com/?q=Aroma%20City%20Taba%C4%8Dina%20%C2%B7%20Kotor%20Montenegro",
-                "sourceUrl": "https://aromamarketi.me/lokacije/"
-              }
-            ]
-          }
-        },
-        {
-          "day": 4,
-          "date": "Sun · Oct 4",
-          "region": "Central · Lake Skadar",
-          "base": "Kotor",
-          "drive": "Kotor ↔ Virpazar · 2 h 53 adjusted round trip",
-          "adjustedHours": 2.88,
-          "morning": [
-            {
-              "type": "DRIVE",
-              "text": "Leave around 08:00 for Virpazar."
-            },
-            {
-              "type": "DRIVE",
-              "text": "For the scenic line, climb R-1 toward Njeguši and Cetinje, then use R-15."
-            },
-            {
-              "type": "DRIVE",
-              "text": "For the simpler coastal line, take M-1 via Budva and Petrovac, then M-1.1 through Sozina and M-2/R-15 to Virpazar; Sozina is tolled."
-            },
-            {
-              "type": "CAUTION",
-              "text": "Follow live routing if roadworks or weather change the choice."
-            },
-            {
-              "type": "CAUTION",
-              "text": "Do not assume a boat is running in October."
-            }
-          ],
-          "afternoon": [
-            {
-              "type": "LOGISTICS",
-              "text": "Park at the signed village lot."
-            },
-            {
-              "type": "WATER",
-              "text": "Book the boat only after confirming the operator, lake conditions, fare and return time."
-            },
-            {
-              "type": "LOGISTICS",
-              "text": "The park currently lists €5/person/day and one cruise included; check the inclusion before paying twice."
-            },
-            {
-              "type": "WATER",
-              "text": "Be ashore by 15:45."
-            },
-            {
-              "type": "EAT",
-              "text": "If boats stop for the season, use the village and a reserved winery instead."
-            }
-          ],
-          "evening": [
-            {
-              "type": "DRIVE",
-              "text": "Return to Kotor before dusk."
-            },
-            {
-              "type": "CAUTION",
-              "text": "Keep the evening easy; do not add another coastal town on the drive back."
-            }
-          ],
-          "parking": "Use the signed Virpazar car park. Bags stay at your Kotor hotel; the pier and village are walkable.",
-          "cash": "Confirm the boat price and ticket inclusion before boarding; old traveler prices are only historical.",
-          "stops": [
-            [
-              "Virpazar parking",
-              "https://maps.google.com/?q=Virpazar%20parking%20Montenegro"
-            ],
-            [
-              "Virpazar boat pier",
-              "https://maps.google.com/?q=Virpazar%20boat%20pier"
-            ],
-            [
-              "Winery Garnet · Godinje",
-              "https://maps.google.com/?q=Winery%20Garnet%20Godinje%20Montenegro"
-            ],
-            [
-              "Kotor hotel parking",
-              "https://maps.google.com/?q=Kotor%20hotel%20parking"
-            ]
-          ],
-          "tags": [
-            "Nature & Wildlife",
-            "Wine & Gastronomy",
-            "Food & Dining",
-            "Romantic Experiences"
-          ],
-          "heading": "Day 4 - Kotor → Virpazar / Lake Skadar",
-          "food": {
-            "meals": [
-              {
-                "slot": "Lunch · Virpazar",
-                "name": "Restaurant Pelikan · Virpazar",
-                "specialty": "Lake Skadar carp/eel and local cuisine.",
-                "hours": "Roughly 08:00–22:00 listing; confirm",
-                "parking": "Signed public lot, walk to restaurant",
-                "cash": "Cash-only unverified; carry cash",
-                "durationMinutes": 90,
-                "plan": "Book/check opening and boat return before departure.",
-                "mapUrl": "https://maps.google.com/?q=Restaurant%20Pelikan%20%C2%B7%20Virpazar%20Montenegro",
-                "sourceUrl": "https://pelikan-zec.com/"
-              },
-              {
-                "slot": "Dinner · Kotor",
-                "name": "Ombra · Old Town",
-                "specialty": "Adriatic seafood and black cuttlefish risotto.",
-                "hours": "Official listing 08:30–22:30; confirm",
-                "parking": "Park at lodging or marked edge lot; walk",
-                "cash": "Cash-only unverified; carry cash",
-                "durationMinutes": 90,
-                "plan": "Keep the car parked at Kotor lodging.",
-                "mapUrl": "https://maps.google.com/?q=Ombra%20%C2%B7%20Old%20Town%20Montenegro",
-                "sourceUrl": "https://ombraoldtown.com/"
-              }
-            ],
-            "coffee": [
-              {
-                "slot": "Morning",
-                "name": "CAVE Coffee · Kotor",
-                "why": "Locally roasted espresso/filter.",
-                "hours": "Mon–Sat 09:00–23:00 center listing; confirm Sunday",
-                "parking": "Kamelija parking; walk from base",
-                "mapUrl": "https://maps.google.com/?q=CAVE%20Coffee%20%C2%B7%20Kotor%20Montenegro",
-                "sourceUrl": "https://www.kamelija.me/en/stores/cave-coffee/"
-              }
-            ],
-            "supermarkets": [
-              {
-                "name": "Aroma City Tabačina · Kotor",
-                "hours": "07:00–23:45 listed; verify",
-                "parking": "Urban parking uncertain; walk from lodging",
-                "plan": "Groceries for boat day/base; do not leave bags in car.",
-                "mapUrl": "https://maps.google.com/?q=Aroma%20City%20Taba%C4%8Dina%20%C2%B7%20Kotor%20Montenegro",
-                "sourceUrl": "https://aromamarketi.me/lokacije/"
-              }
-            ]
-          }
-        },
-        {
-          "day": 5,
-          "date": "Mon · Oct 5",
-          "region": "Coast · Bay of Kotor",
-          "base": "Kotor",
-          "drive": "Kotor–Tivat round trip · allow ≤1 h",
-          "adjustedHours": 1,
-          "morning": [
-            {
-              "type": "STAY",
-              "text": "Sleep in."
-            },
-            {
-              "type": "WELLNESS",
-              "text": "Book a spa treatment in Tivat."
-            },
-            {
-              "type": "LOGISTICS",
-              "text": "First confirm that non-guests can use the facilities and get the full price in writing."
-            },
-            {
-              "type": "CAUTION",
-              "text": "Do not assume hotel day access is available."
-            }
-          ],
-          "afternoon": [
-            {
-              "type": "DRIVE",
-              "text": "Drive to Tivat for the appointment, then return to Kotor by 15:30."
-            },
-            {
-              "type": "CAUTION",
-              "text": "If the spa is unavailable or overpriced, skip it."
-            },
-            {
-              "type": "WALK",
-              "text": "Take a short bay walk or revisit the Old Town instead."
-            },
-            {
-              "type": "STAY",
-              "text": "Keep luggage at the hotel."
-            }
-          ],
-          "evening": [
-            {
-              "type": "EAT",
-              "text": "Reserve a final Kotor dinner."
-            },
-            {
-              "type": "WALK",
-              "text": "Walk the waterfront."
-            },
-            {
-              "type": "STAY",
-              "text": "Pack tonight so the morning airport transfer stays simple."
-            }
-          ],
-          "parking": "Leave the car at the spa or marked Tivat parking; keep all luggage at Kotor.",
-          "cash": "Ask for the day access/treatment total and payment method before booking.",
-          "stops": [
-            [
-              "Regent Porto Montenegro spa",
-              "https://maps.google.com/?q=Regent%20Porto%20Montenegro%20spa"
-            ],
-            [
-              "Porto Montenegro parking",
-              "https://maps.google.com/?q=Porto%20Montenegro%20parking"
-            ],
-            [
-              "Kotor waterfront",
-              "https://maps.google.com/?q=Kotor%20waterfront"
-            ]
-          ],
-          "tags": [
-            "Wellness & Spa",
-            "Romantic Experiences",
-            "Food & Dining"
-          ],
-          "heading": "Day 5 - Kotor / Tivat spa / Bay-side finish",
-          "food": {
-            "meals": [
-              {
-                "slot": "Lunch · Kotor/Tivat Bay",
-                "name": "Pržun · Kotor Old Town",
-                "specialty": "Seafood and Njeguši prosciutto.",
-                "hours": "09:00–23:30 listed; reconfirm",
-                "parking": "Park at hotel/signed lot; walk in",
-                "cash": "Cash-only unverified; carry cash",
-                "durationMinutes": 75,
-                "plan": "Eat before spa/Bay outing or after returning.",
-                "mapUrl": "https://maps.google.com/?q=Pr%C5%BEun%20%C2%B7%20Kotor%20Old%20Town%20Montenegro",
-                "sourceUrl": "https://przun.me/"
-              },
-              {
-                "slot": "Dinner · Kotor waterfront",
-                "name": "Galion · Šuranj",
-                "specialty": "Waterfront seafood and Mediterranean menu.",
-                "hours": "Official hours 12:00–23:00; kitchen listed to 22:45",
-                "parking": "Guest parking reported; confirm space when reserving",
-                "cash": "Cash-only unverified; ask",
-                "durationMinutes": 105,
-                "plan": "Reserve; leave luggage at Kotor lodging.",
-                "mapUrl": "https://maps.google.com/?q=Galion%20%C2%B7%20%C5%A0uranj%20Montenegro",
-                "sourceUrl": "https://galion.me/menu/"
-              }
-            ],
-            "coffee": [
-              {
-                "slot": "Morning",
-                "name": "CAVE Coffee · Kotor",
-                "why": "Locally roasted espresso and filter coffee.",
-                "hours": "Mon–Sat 09:00–23:00 listing; verify Sunday",
-                "parking": "Kamelija parking or walk from lodging",
-                "mapUrl": "https://maps.google.com/?q=CAVE%20Coffee%20%C2%B7%20Kotor%20Montenegro",
-                "sourceUrl": "https://www.kamelija.me/en/stores/cave-coffee/"
-              }
-            ],
-            "supermarkets": [
-              {
-                "name": "Aroma 18 · TC Kamelija",
-                "hours": "07:00–22:00 listed Mon–Sat; Sunday verify",
-                "parking": "Mall parking; loaded-car fit/fees unverified",
-                "plan": "Buy any final water/snacks after checkout plan is settled.",
-                "mapUrl": "https://maps.google.com/?q=Aroma%2018%20%C2%B7%20TC%20Kamelija%20Montenegro",
-                "sourceUrl": "https://aromamarketi.me/lokacije/"
-              }
-            ]
-          }
-        },
-        {
-          "day": 6,
-          "date": "Tue · Oct 6",
-          "region": "Coast · Tivat Airport",
-          "base": "—",
-          "drive": "Kotor → TIV · about 10–15 min",
-          "adjustedHours": 0.4,
-          "morning": [
-            {
-              "type": "EAT",
-              "text": "Have breakfast at 08:30."
-            },
-            {
-              "type": "LOGISTICS",
-              "text": "Leave Kotor by 09:30."
-            },
-            {
-              "type": "DRIVE",
-              "text": "Take the direct road to TIV; do not detour for a last viewpoint."
-            },
-            {
-              "type": "LOGISTICS",
-              "text": "Refuel only if your contract requires it, photograph the fuel gauge and car condition, and return the car by 11:30."
-            }
-          ],
-          "afternoon": [
-            {
-              "type": "LOGISTICS",
-              "text": "Walk to the terminal and be inside by 12:15 for the required counter check-in."
-            },
-            {
-              "type": "LOGISTICS",
-              "text": "The flight leaves at 14:55."
-            },
-            {
-              "type": "CAUTION",
-              "text": "Do not gamble on rental inspection queues or airport procedures."
-            }
-          ],
-          "evening": [],
-          "parking": "Go straight to TIV. Return the car by 11:30, then walk to the counter.",
-          "cash": "Keep your card and rental paperwork accessible.",
-          "stops": [
-            [
-              "Kotor to Tivat Airport",
-              "https://www.google.com/maps/dir/?api=1&origin=Kotor%2C%20Montenegro&destination=Tivat%20Airport&travelmode=driving"
-            ],
-            [
-              "Tivat Airport rental return",
-              "https://maps.google.com/?q=Tivat%20Airport%20car%20rental%20return"
-            ]
-          ],
-          "tags": [],
-          "heading": "Day 6 - Kotor → TIV / rental return / flight home",
-          "food": {
-            "meals": [
-              {
-                "slot": "Breakfast · Kotor",
-                "name": "Small Talks · Kotor",
-                "specialty": "Specialty espresso and brunch.",
-                "hours": "Daily 08:00–22:00 listing; check early opening",
-                "parking": "Walk from lodging",
-                "cash": "Cash-only unverified; card/cash",
-                "durationMinutes": 45,
-                "plan": "Only if it preserves 09:30 airport departure.",
-                "mapUrl": "https://maps.google.com/?q=Small%20Talks%20%C2%B7%20Kotor%20Montenegro",
-                "sourceUrl": "https://www.smalltalks.me/"
-              },
-              {
-                "slot": "Lunch · after rental return",
-                "name": "ALMECO Café Negro Bar-Restaurant · Tivat Airport",
-                "specialty": "Airport café-bar; have a meal after rental return and before terminal check-in.",
-                "hours": "Official airport listing: aligned to airport opening hours; verify service and stock",
-                "parking": "Inside terminal after the car return",
-                "cash": "Payment methods vary; confirm at counter",
-                "durationMinutes": 35,
-                "plan": "Return the car by 11:30 and reach terminal by 12:15; no pre-return detour.",
-                "mapUrl": "https://maps.google.com/?q=ALMECO%20Cafe%20Negro%20Bar%20Restaurant%20Tivat%20Airport%20Montenegro",
-                "sourceUrl": "https://montenegroairports.com/aerodrom-tivat/sadrzaji-i-servisi/"
-              }
-            ],
-            "coffee": [
-              {
-                "slot": "Morning",
-                "name": "Small Talks · Kotor",
-                "why": "Specialty espresso/pour-over before departure.",
-                "hours": "Daily 08:00–22:00 listing; check morning hours",
-                "parking": "Walk; keep the direct airport run",
-                "mapUrl": "https://maps.google.com/?q=Small%20Talks%20%C2%B7%20Kotor%20Montenegro",
-                "sourceUrl": "https://www.smalltalks.me/"
-              }
-            ],
-            "supermarkets": []
-          }
-        }
-      ],
-      "checks": [
-        {
-          "name": "Alpine weather fallback avoids high alpine roads",
-          "status": "PASS",
-          "detail": "All nights remain in Kotor; Days 3–5 visit central and coastal sites only."
-        },
-        {
-          "name": "One-base star-trip lodging",
-          "status": "PASS",
-          "detail": "Kotor for all five nights; no hotel moves after airport arrival."
-        },
-        {
-          "name": "Daily adjusted driving ≤5.5 h",
-          "status": "PASS",
-          "detail": "Planned maximum is 2 h 53 including the +20% terrain allowance. Check route conditions and actual waypoint times daily."
-        },
-        {
-          "name": "Mountain / boat daylight margin",
-          "status": "CONDITIONAL",
-          "detail": "Lovćen and boat activities are scheduled to finish by 16:00; confirm weather, service and civil twilight on the day."
-        },
-        {
-          "name": "Luggage concealment",
-          "status": "PASS",
-          "detail": "All bags are unloaded and secured at the Kotor lodging on Day 1; no transfer days."
-        },
-        {
-          "name": "Day 6 airport radius and terminal by 12:15",
-          "status": "PASS",
-          "detail": "Kotor is about 10–15 minutes from TIV; car return by 11:30."
-        },
-        {
-          "name": "Tara bridge access",
-          "status": "PASS",
-          "detail": "Fallback does not route near the bridge or alpine approaches."
-        }
-      ],
-      "nightBreakdown": [
-        {
-          "base": "Kotor",
-          "nights": 5,
-          "dates": "Oct 1–5"
-        }
-      ],
-      "crucialGroundTips": [
-        "Keep all five nights in Kotor and use one day trip at a time. The Bay is beautiful, but its narrow roads jam quickly; start coastal drives before 08:00 when possible.",
-        "Book the rental by exact model and test the four bags under the parcel shelf. Get excess, glass, tires/wheels, underbody, gravel and roadside terms in writing.",
-        "Kotor Old Town parking is the bottleneck. Reserve a hotel space or park at a signed lot outside the walls and walk in; do not keep circling the narrow center.",
-        "Add 20% to mountain route estimates and 30–60 minutes for traffic or photo stops. Use Google Maps for driving and Maps.me for marked trails; download both before leaving Wi-Fi.",
-        "Carry cash for small park booths and boat skippers, but ask the operator what a ticket includes. Historical boat fares are not current prices; never pay for a cruise twice without checking the Skadar ticket inclusion.",
-        "Check AMSCG, local weather and operator status that morning. Wet rock, fog and narrow unguarded edges are enough reason to cancel a viewpoint or hike.",
-        "Unload luggage at the Kotor lodging before excursions. Keep the car empty and locked while parked."
+        "Runolist listing details indicate a kitchen and free private parking; confirm the booked unit and parking access with the host. Conte publishes breakfast hours 08:00–10:30; whether breakfast is included in this booking is unknown.",
+        "At Conte, Perast old town is vehicle-restricted in May–October. Use a marked entrance parking area, check the applicable October tariff, and contact the hotel about transfer assistance.",
+        "Keep €50–100 in small cash notes for park booths and rural stops. The primary route has three planned national-park days; compare the published ticket options and confirm terms at the gate."
       ]
     }
   },
@@ -1815,7 +995,7 @@
       "label": "Lodging · 5 nights, two adults",
       "min": 650,
       "max": 1100,
-      "note": "Planning range for guarded parking at Žabljak x3 nights + Kotor x2 (primary); fallback is Kotor x5. Not live inventory."
+      "note": "Planning range for five lodging nights: Runolist Chalet in Žabljak x3 and Conte Hotel & Restaurant in Perast x2. Actual booking totals and prepaid balances were not supplied."
     },
     {
       "label": "Rental · estate/wagon + insurance",
@@ -1827,13 +1007,13 @@
       "label": "Fuel + tolls",
       "min": 120,
       "max": 210,
-      "note": "Planning range covers TIV→Žabljak and Žabljak→Kotor transfers, P14 out-and-back mileage and mountain elevation gains. Transfer mileage is roughly neutral versus the former TIV→Kotor + Kotor→Žabljak sequence. The primary route does not require the ferry, Sozina or A1; fuel rates must be rechecked for the travel week."
+      "note": "Planning range covers TIV→Runolist Chalet and Runolist Chalet→Perast transfers, P14 out-and-back mileage and mountain elevation gains. Transfer mileage is roughly neutral versus the former TIV→Kotor + Kotor→Žabljak sequence. The primary route does not require the ferry, Sozina or A1; fuel rates must be rechecked for the travel week."
     },
     {
       "label": "Parks + boat + walls + spa",
       "min": 180,
       "max": 380,
-      "note": "Planning allowance for two-person admissions, Kotor walls and optional spa. Durmitor and Skadar list €5/person/day; Skadar lists one cruise included. For the primary route, three planned park days total €15/person versus €13.50/person for the 2026 all-parks annual pass, if separate admission is charged each day. Fallback plans two park days (€10/person), so the annual pass costs more. Confirm ticket terms and October operations."
+      "note": "Planning allowance for two-person admissions, Kotor walls (optional day visit) and optional spa. Durmitor and Skadar list €5/person/day; Skadar lists one cruise included. For the primary route, three planned park days total €15/person versus €13.50/person for the 2026 all-parks annual pass, if separate admission is charged each day.  Confirm ticket terms and October operations."
     },
     {
       "label": "Food & drink",
@@ -2210,6 +1390,14 @@
     [
       "Zlatni Papagaj · official menu and dinner hours",
       "https://zlatnipapagaj.com/"
+    ],
+    [
+      "Runolist Chalet property listing · address and amenities",
+      "https://www.booking.com/hotel/me/runolist-chalet-zabljak.html"
+    ],
+    [
+      "Hotel Conte · published check-in, breakfast and parking guidance",
+      "https://hotelconte.me/our-hotel"
     ]
   ],
   "sourcesChecked": "2026-09-27",
@@ -2223,9 +1411,31 @@
       "Pršut and Njeguši/Pljevlja cheese in an insulated cooler with ice packs",
       "Crackers/breadsticks, nuts, dried fruit, apples/mandarins, granola or chocolate",
       "Napkins, wet wipes, small trash bags; keep road water/snacks in the cabin",
-      "Buy perishable meat/cheese only when refrigeration is available; no loose food under loaded luggage"
+      "Buy perishable meat/cheese only when refrigeration is available; use the Runolist kitchen only after confirming the booked unit and equipment."
     ],
-    "day1Timing": "Primary: Day 1 has no safe supermarket/restaurant detour in its late mountain-transfer plan. Buy the trunk pantry before travel or use Radanovići only if the live go/no-go margin genuinely allows it; otherwise shop after check-in or on Day 2. Fallback: use Radanovići only if luggage is secured and the Bay/ferry timing allows it; otherwise check in, unload, then shop from the Kotor base.",
-    "fallbackDay1Timing": "On the coast fallback, buy the pantry at Radanovići only if all bags stay concealed and the ferry/hotel timing still works. Otherwise check in, unload first, then shop from the Kotor base."
-  }
+    "day1Timing": "The booked Runolist stay begins Oct 1; no safe supermarket/restaurant detour belongs in the late mountain-transfer plan. Buy a compact pantry before travel only if it does not delay the airport departure; otherwise shop after check-in or on Day 2. The property listing indicates kitchen access, but confirm the booked unit and equipment."
+  },
+  "stays": [
+    {
+      "name": "Runolist Chalet",
+      "status": "Confirmed stay",
+      "dates": "Check-in Oct 1 · check-out Oct 4, 2026",
+      "address": "Narodnih heroja, 84220 Žabljak, Montenegro",
+      "amenities": "The property listing indicates kitchen access and free private parking; confirm details for the booked unit.",
+      "checkIn": "Individual check-in window and late arrival approval not supplied.",
+      "confirmation": "Reservation number, price and balance not supplied.",
+      "mapWaypointId": "runolist-chalet"
+    },
+    {
+      "name": "Conte Hotel & Restaurant",
+      "status": "Confirmed stay",
+      "dates": "Check-in Oct 4 · check-out Oct 6, 2026",
+      "address": "Ul. Marka Martinovića bb, 85336 Perast, Montenegro",
+      "amenities": "Hotel-published breakfast hours are 08:00–10:30; inclusion is unconfirmed.",
+      "checkIn": "Published check-in from 15:00; check-out by 11:00. Confirm against the individual booking.",
+      "confirmation": "Reservation number, price and balance not supplied.",
+      "mapWaypointId": "conte-hotel-perast",
+      "phone": "+382 67 111 190"
+    }
+  ]
 }

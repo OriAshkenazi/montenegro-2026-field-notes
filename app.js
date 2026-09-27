@@ -6,10 +6,9 @@ let activeMapDay='all';
 let activeWaypoint=null;
 let mapMarkers=[];
 let routeLine=null;
-let branch = 'primary';
-Promise.all([fetch('./itinerary.json?rev=2026-09-27i').then(r=>r.json()),fetch('./waypoints.json?rev=2026-09-27i').then(r=>r.json())]).then(([data,points])=>{trip=data;waypointData=points.waypoints;render();initializeMap();}).catch(()=>{$('#days').innerHTML='<p class="offline-note">Trip data is not cached yet. Open this page online once, then reload offline.</p>';$('#mapStatus').textContent='Waypoint index unavailable. Reconnect once to save it for offline use.';});
+Promise.all([fetch('./itinerary.json?rev=2026-09-27j').then(r=>r.json()),fetch('./waypoints.json?rev=2026-09-27j').then(r=>r.json())]).then(([data,points])=>{trip=data;waypointData=points.waypoints;render();initializeMap();}).catch(()=>{$('#days').innerHTML='<p class="offline-note">Trip data is not cached yet. Open this page online once, then reload offline.</p>';$('#mapStatus').textContent='Waypoint index unavailable. Reconnect once to save it for offline use.';});
 
-function activeRoute() { return trip.routes[branch]; }
+function activeRoute() { return trip.routes.primary; }
 const segmentTypes = {
   DRIVE: ['↗', 'drive'], STAY: ['⌂', 'stay'], SEE: ['◉', 'see'], WALK: ['↟', 'walk'],
   EAT: ['◒', 'eat'], FOOD: ['◌', 'food'], WATER: ['≋', 'water'], WELLNESS: ['◇', 'wellness'], LOGISTICS: ['▪', 'logistics'], CAUTION: ['!', 'caution']
@@ -19,7 +18,7 @@ function escapeHTML(value) {
 }
 const waypointByName=name=>waypointData.find(w=>w.name===name);
 const waypointById=id=>waypointData.find(w=>w.id===id);
-function openWaypoint(id){const point=waypointById(id);if(!point)return;if(activeMapDay!=='all'&&!(point.days?.[branch]||[]).includes(Number(activeMapDay)))activeMapDay='all';activeWaypoint=point.id;setDrawer('half');$('#mapDayFilter').value=String(activeMapDay);renderMapPoints();if(map)setTimeout(()=>{map.invalidateSize({pan:false});map.flyTo([point.lat,point.lng],Math.max(map.getZoom(),13),{duration:.8});setTimeout(()=>mapMarkers.find(x=>x.point.id===point.id)?.marker.openPopup(),850);},360);renderWaypointList();}
+function openWaypoint(id){const point=waypointById(id);if(!point)return;if(activeMapDay!=='all'&&!(point.days?.primary||[]).includes(Number(activeMapDay)))activeMapDay='all';activeWaypoint=point.id;setDrawer('half');$('#mapDayFilter').value=String(activeMapDay);renderMapPoints();if(map)setTimeout(()=>{map.invalidateSize({pan:false});map.flyTo([point.lat,point.lng],Math.max(map.getZoom(),13),{duration:.8});setTimeout(()=>mapMarkers.find(x=>x.point.id===point.id)?.marker.openPopup(),850);},360);renderWaypointList();}
 function linkedLocations(text){const aliases=[];for(const p of waypointData)for(const alias of [...(p.aliases||[]),p.name])if(alias.length>3)aliases.push({text:alias,point:p});aliases.sort((a,b)=>b.text.length-a.text.length);const matches=[];for(const a of aliases){const re=new RegExp(`(^|[^\\p{L}\\p{N}])(${a.text.replace(/[.*+?^${}()|[\\]\\\\]/g,'\\$&')})(?=$|[^\\p{L}\\p{N}])`,'giu');let m;while((m=re.exec(text))){const start=m.index+m[1].length,end=start+m[2].length;if(!matches.some(x=>start<x.end&&end>x.start))matches.push({start,end,id:a.point.id,label:m[2]});}}matches.sort((a,b)=>a.start-b.start);let out='',last=0;for(const m of matches){out+=escapeHTML(text.slice(last,m.start))+`<button class="location-link" type="button" data-waypoint="${m.id}">${escapeHTML(m.label)}</button>`;last=m.end;}return out+escapeHTML(text.slice(last));}
 function renderSegments(segments, compact = false) {
   if (!Array.isArray(segments)) return '';
@@ -35,7 +34,7 @@ function renderSchedule() {
 }
 function renderChecks() {
   $('#checks').innerHTML = activeRoute().checks.map(g => `<div class="check ${g.status.toLowerCase()}"><span>${g.status==='PASS'?'✓':g.status==='CONDITIONAL'?'~':'!'}</span><div><b>${g.name}</b><small>${g.detail}</small></div><strong>${g.status}</strong></div>`).join('');
-  $('#checksTitle').textContent = branch === 'primary' ? 'Guardrail check · coast + mountains' : 'Guardrail check · alpine fallback';
+  $('#checksTitle').textContent = 'Guardrail check · confirmed stays and daily safety gates';
 }
 
 function renderFoodStop(item, type) {
@@ -71,8 +70,8 @@ function renderFoodPane() {
   filter.innerHTML = '<option value="all">All days</option>' + days.map(d => `<option value="${d.day}">Day ${d.day} · ${escapeHTML(d.date)}</option>`).join('');
   filter.value = [...filter.options].some(o => o.value === prior) ? prior : 'all';
   $('#foodDays').innerHTML = days.filter(d => filter.value === 'all' || String(d.day) === filter.value).map(d => `<article class="food-day"><header><span>DAY ${String(d.day).padStart(2,'0')}</span><div><small>${escapeHTML(d.date)} · ${escapeHTML(d.region)} · ${escapeHTML(d.drive)}</small><h3>${escapeHTML(d.heading || `Day ${d.day}`)}</h3></div></header><div class="food-stop-grid">${foodRows(d.food).map(x=>renderFoodStop(x,x.type)).join('')}</div></article>`).join('');
-  $('#pantryTitle').textContent=branch === 'primary' ? 'Pack before the mountain transfer.' : 'Pack before the Bay / ferry day.';
-  $('#pantryTiming').textContent=branch === 'primary' ? trip.foodNotes.day1Timing : trip.foodNotes.fallbackDay1Timing;
+  $('#pantryTitle').textContent='Provision for the booked chalet kitchen';
+  $('#pantryTiming').textContent=trip.foodNotes.day1Timing;
   $('#pantryChecklist').innerHTML=trip.foodNotes.day1Pantry.map(x=>`<li>${escapeHTML(x)}</li>`).join('');
   document.querySelectorAll('[data-open-food]').forEach(btn=>btn.addEventListener('click',()=>document.querySelector('[data-pane="food"]').click()));
 }
@@ -86,15 +85,13 @@ function renderTripOps() {
   const route=activeRoute();
   $('#nightBreakdown').innerHTML=route.nightBreakdown.map(n=>`<li><b>${n.base} · ${n.nights} ${n.nights===1?'night':'nights'}</b><span>${n.dates}</span></li>`).join('');
   $('#groundTips').innerHTML=route.crucialGroundTips.map(t=>`<li>${t}</li>`).join('');
+  $('#stayDirectory').innerHTML=trip.stays.map(stay=>{const point=waypointById(stay.mapWaypointId);return `<article class="stay-reference"><div><span class="stay-badge">${escapeHTML(stay.status)}</span><h3>${escapeHTML(stay.name)}</h3><small>${escapeHTML(stay.dates)}</small></div><p>${escapeHTML(stay.address)}</p>${stay.phone?`<p>Phone · ${escapeHTML(stay.phone)}</p>`:''}<p>${escapeHTML(stay.checkIn)}</p><p>${escapeHTML(stay.amenities)}</p><small>${escapeHTML(stay.confirmation)}</small>${point?`<button type="button" class="food-map-link" data-waypoint="${point.id}">Open on route map ↗</button>`:''}</article>`;}).join('');
 }
 function render() {
-  $('#routeTitle').textContent=trip.routeNames[branch];
-  $('#routeToggle').checked=branch==='fallback';
-  $('#routeWarning').hidden=branch!=='fallback';
-  $('#routeNoticeTitle').textContent=branch==='primary'?'Day 1 includes an accepted after-sunset mountain drive; check the go/no-go contingency.':'Weather-safe route branch selected.';
-  $('#routeWarningText').textContent=branch==='primary'?trip.primaryNotice:trip.fallbackNotice;
-  $('#fallbackCopy').textContent=trip.fallbackNotice;
-  $('#days').setAttribute('aria-label',trip.routeNames[branch]);
+  $('#routeTitle').textContent=trip.routeNames.primary;
+  $('#routeNoticeTitle').textContent='Confirmed stays are fixed; check the live road and weather gates before mountain driving.';
+  $('#routeWarningText').textContent=trip.primaryNotice;
+  $('#days').setAttribute('aria-label',trip.routeNames.primary);
   renderDays();renderSchedule();renderChecks();renderTripOps();renderFoodPane();
   $('#budgetRows').innerHTML=trip.budget.map(x=>`<div class="budget-row"><div><b>${x.label}</b><small>${x.note}</small></div><strong>€${x.min}–${x.max}</strong></div>`).join('');
   $('#budgetMin').textContent=trip.budget.reduce((s,x)=>s+x.min,0);$('#budgetMax').textContent=trip.budget.reduce((s,x)=>s+x.max,0);
@@ -105,7 +102,7 @@ function render() {
   linkStaticLocations();
 }
 const categoryColor={Viewpoint:'#397c91',Activity:'#397c91',Meal:'#c87934',Coffee:'#79533a',Supermarket:'#578052',Parking:'#b64c3f'};
-function popupHTML(p){return `<article class="map-popup"><span class="popup-category ${p.category.toLowerCase()}">${escapeHTML(p.category)}</span><h3>${escapeHTML(p.name)}</h3><p><b>Cash / card</b> · ${escapeHTML(p.cash)}</p><p>${escapeHTML(p.tip)}</p><a href="${escapeHTML(p.googleUrl)}" target="_blank" rel="noopener noreferrer">Open in Google Maps ↗</a></article>`;}
+function popupHTML(p){const days=p.days?.primary||[],jumpDay=days.includes(Number(activeMapDay))?Number(activeMapDay):days[0];return `<article class="map-popup"><span class="popup-category ${p.category.toLowerCase()}">${escapeHTML(p.bookingStatus||p.category)}</span><h3>${escapeHTML(p.name)}</h3>${p.address?`<p>${escapeHTML(p.address)}</p>`:''}${p.phone?`<p><b>Phone</b> · ${escapeHTML(p.phone)}</p>`:''}<p><b>Cash / card</b> · ${escapeHTML(p.cash)}</p><p>${escapeHTML(p.tip)}</p>${days.length?`<button type="button" data-day-jump="${jumpDay}">Open Day ${jumpDay} itinerary ↗</button>`:''}<a href="${escapeHTML(p.googleUrl)}" target="_blank" rel="noopener noreferrer">Open in Google Maps ↗</a></article>`;}
 function initializeMap(){if(!window.L){$('#mapStatus').textContent='Interactive map library unavailable. Offline waypoint list remains available below.';renderWaypointList();return;}
   map=L.map('mapCanvas',{zoomControl:true,scrollWheelZoom:false,preferCanvas:true}).setView([42.75,19.0],8);
   const tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap contributors',crossOrigin:true});tiles.addTo(map);
@@ -114,7 +111,7 @@ function initializeMap(){if(!window.L){$('#mapStatus').textContent='Interactive 
   setTimeout(()=>{if($('#mapStatus').textContent.startsWith('Map tiles load'))$('#mapStatus').textContent='If tiles are offline, use the saved pins and waypoint list.';},4500);
   renderMapPoints();renderWaypointList();
 }
-function renderMapPoints(){if(!trip||!waypointData.length)return;const day=activeMapDay,route=activeRoute(),points=waypointData.filter(p=>day==='all'||(p.days?.[branch]||[]).includes(Number(day)));
+function renderMapPoints(){if(!trip||!waypointData.length)return;const day=activeMapDay,route=activeRoute(),points=waypointData.filter(p=>day==='all'||(p.days?.primary||[]).includes(Number(day)));
   mapMarkers.forEach(x=>x.marker.remove());mapMarkers=[];
   for(const p of points){if(!map)continue;const color=categoryColor[p.category]||'#397c91';const icon=L.divIcon({className:'field-marker-wrap',html:`<span class="field-marker ${p.category.toLowerCase()}" style="--marker-color:${color}"></span>`,iconSize:[22,28],iconAnchor:[11,25],popupAnchor:[0,-23]});const marker=L.marker([p.lat,p.lng],{icon,title:p.name,keyboard:true}).bindPopup(popupHTML(p),{maxWidth:260});marker.addTo(map);marker.on('click',()=>{activeWaypoint=p.id;renderWaypointList();});mapMarkers.push({point:p,marker});}
   if(routeLine){routeLine.remove();routeLine=null;}
@@ -122,11 +119,11 @@ function renderMapPoints(){if(!trip||!waypointData.length)return;const day=activ
   $('#mapDayLabel').textContent=day==='all'?'All itinerary stops':`Day ${day} · ${route.days.find(d=>String(d.day)===day)?.date||''}`;
   renderWaypointList();
 }
-function renderWaypointList(){const day=activeMapDay;const points=waypointData.filter(p=>day==='all'||(p.days?.[branch]||[]).includes(Number(day)));$('#mapWaypoints').innerHTML=points.map(p=>`<button type="button" class="waypoint-row ${activeWaypoint===p.id?'selected':''}" data-waypoint="${p.id}"><i class="waypoint-dot ${p.category.toLowerCase()}"></i><span>${escapeHTML(p.name)}</span><small>${escapeHTML(p.category)} · ${p.lat.toFixed(4)}, ${p.lng.toFixed(4)}</small></button>`).join('');}
+function renderWaypointList(){const day=activeMapDay;const points=waypointData.filter(p=>day==='all'||(p.days?.primary||[]).includes(Number(day)));$('#mapWaypoints').innerHTML=points.map(p=>`<button type="button" class="waypoint-row ${activeWaypoint===p.id?'selected':''}" data-waypoint="${p.id}"><i class="waypoint-dot ${p.category.toLowerCase()}"></i><span>${escapeHTML(p.name)}</span><small>${escapeHTML(p.category)} · ${p.lat.toFixed(4)}, ${p.lng.toFixed(4)}${p.precision?.includes('approximate')?' · approximate property pin':''}</small></button>`).join('');}
 function linkStaticLocations(){if(!waypointData.length)return;const root=$('main');const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode(node){if(!node.nodeValue.trim()||node.parentElement.closest('a,button,script,style,select,textarea,.location-link'))return NodeFilter.FILTER_REJECT;return NodeFilter.FILTER_ACCEPT;}});const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);for(const node of nodes){const value=node.nodeValue,html=linkedLocations(value);if(html===escapeHTML(value))continue;const holder=document.createElement('span');holder.innerHTML=html;node.replaceWith(...holder.childNodes);}}
 function syncMapDay(){const f=$('#mapDayFilter');f.value=activeMapDay;renderMapPoints();if(map){const path=activeMapDay==='all'?[]:(activeRoute().days.find(d=>String(d.day)===activeMapDay)?.stops||[]).map(([n])=>waypointByName(n)).filter(Boolean);if(path.length)map.fitBounds(L.latLngBounds(path.map(p=>[p.lat,p.lng])).pad(.18),{animate:true});}}
 function setDrawer(state){const drawer=$('#mapDrawer'),side=matchMedia('(orientation: landscape)').matches;drawer.dataset.state=state;document.body.dataset.mapState=state;$('#mapHandle').setAttribute('aria-expanded',String(state!=='peek'));$('#mapStateLabel').textContent=state==='full'?'Full map':state==='half'?'Swipe or tap to expand':'Tap to explore';$('#mapToggleIcon').textContent=side?(state==='full'?'›':'‹'):(state==='peek'?'⌃':'⌄');if(map){requestAnimationFrame(()=>map.invalidateSize({pan:false}));setTimeout(()=>map.invalidateSize({pan:false}),360);}}
-document.addEventListener('click',e=>{const target=e.target.closest('[data-waypoint]');if(target?.dataset.waypoint){e.preventDefault();openWaypoint(target.dataset.waypoint);}});
+document.addEventListener('click',e=>{const jump=e.target.closest('[data-day-jump]');if(jump){const day=jump.dataset.dayJump,button=document.querySelector(`.day-toggle[data-day="${day}"]`),content=document.getElementById(`day-${day}`);if(button&&content){button.setAttribute('aria-expanded','true');content.hidden=false;activeMapDay=day;syncMapDay();content.scrollIntoView({behavior:'smooth',block:'start'});}return;}const target=e.target.closest('[data-waypoint]');if(target?.dataset.waypoint){e.preventDefault();openWaypoint(target.dataset.waypoint);}});
 $('#mapClose').addEventListener('click',()=>setDrawer('peek'));
 $('#mapDayFilter').addEventListener('change',e=>{activeMapDay=e.target.value;syncMapDay();});
 let dragStart=null,suppressMapHandleClick=false;$('#mapHandle').addEventListener('pointerdown',e=>{dragStart={x:e.clientX,y:e.clientY,side:matchMedia('(orientation: landscape)').matches};});$('#mapHandle').addEventListener('pointerup',e=>{if(!dragStart)return;const delta=dragStart.side?dragStart.x-e.clientX:dragStart.y-e.clientY;dragStart=null;if(Math.abs(delta)<35)return;suppressMapHandleClick=true;setTimeout(()=>{suppressMapHandleClick=false;},500);const state=$('#mapDrawer').dataset.state;setDrawer(delta>0?(state==='peek'?'half':'full'):(state==='full'?'half':'peek'));});$('#mapHandle').addEventListener('pointercancel',()=>{dragStart=null;});$('#mapHandle').addEventListener('click',e=>{if(suppressMapHandleClick){e.preventDefault();e.stopPropagation();suppressMapHandleClick=false;return;}const state=$('#mapDrawer').dataset.state;setDrawer(state==='peek'?'half':state==='half'?'full':'peek');});
@@ -134,7 +131,7 @@ addEventListener('online',()=>{if($('#mapStatus'))$('#mapStatus').textContent='B
 let orientationResizeTimer;addEventListener('resize',()=>{clearTimeout(orientationResizeTimer);orientationResizeTimer=setTimeout(()=>setDrawer($('#mapDrawer').dataset.state),120);});
 document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.tab,.pane').forEach(el=>el.classList.remove('active'));btn.classList.add('active');$('#pane-'+btn.dataset.pane).classList.add('active');}));
 $('#foodDayFilter').addEventListener('change',()=>renderFoodPane());
-$('#routeToggle').addEventListener('change',e=>{branch=e.target.checked?'fallback':'primary';if(trip){activeMapDay='all';activeWaypoint=null;render();renderMapPoints();}});
+
 const storageKey='montenegro-cash-2026';let carried=Number(localStorage.getItem(storageKey)||0);function cashText(){const b=$('#cashButton');b.textContent=carried>0?`€${carried} marked as carried · undo`:'Mark €150 as carried';$('#cashStatus').textContent=carried>0?'Saved on this device':'Tap to save your cash reminder';}cashText();$('#cashButton').addEventListener('click',()=>{carried=carried>0?0:150;localStorage.setItem(storageKey,String(carried));cashText();});
 if('serviceWorker'in navigator)addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').then(()=>$('#connection').textContent='Offline trip data ready').catch(()=>$('#connection').textContent='Offline cache unavailable'));
 let installPrompt;addEventListener('beforeinstallprompt',e=>{e.preventDefault();installPrompt=e;$('#install').hidden=false;});$('#install').addEventListener('click',async()=>{if(!installPrompt)return;installPrompt.prompt();await installPrompt.userChoice;installPrompt=null;$('#install').hidden=true;});

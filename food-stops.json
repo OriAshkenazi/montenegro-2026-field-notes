@@ -156,6 +156,22 @@
       "type": "meal",
       "mapUrl": "https://maps.google.com/?q=Galion%20%C2%B7%20%C5%A0uranj%20Montenegro",
       "sourceUrl": "https://galion.me/menu/"
+    },
+    {
+      "name": "Runolist Chalet",
+      "type": "stay",
+      "address": "Narodnih heroja, 84220 Žabljak, Montenegro",
+      "mapUrl": "https://maps.google.com/?q=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%2084220%20%C5%BDabljak%2C%20Montenegro",
+      "sourceUrl": "https://www.booking.com/hotel/me/runolist-chalet-zabljak.html"
+    },
+    {
+      "name": "Conte Hotel & Restaurant",
+      "type": "stay",
+      "address": "Ul. Marka Martinovića bb, 85336 Perast, Montenegro",
+      "phone": "+382 67 111 190",
+      "mapUrl": "https://maps.google.com/?q=Conte%20Hotel%20%26%20Restaurant%2C%20Ul.%20Marka%20Martinovi%C4%87a%20bb%2C%2085336%20Perast%2C%20Montenegro",
+      "sourceUrl": "https://hotelconte.me/our-hotel",
+      "restaurantPhone": "+382 67 257 387"
     }
   ]
 }

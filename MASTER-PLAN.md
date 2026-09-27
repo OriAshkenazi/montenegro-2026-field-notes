@@ -1,35 +1,27 @@
 # Montenegro Field Notes · build record
 
-The public PWA is the canonical trip plan. The full six-day primary route, alpine-weather fallback, mobility instructions, budget, safety/emergency information, navigation links, curated activity schema, sources, and branch-specific guardrail checks live in `itinerary.json` and render through `app.js`.
+The public PWA is the canonical trip plan. Six days, confirmed lodging, activity options, safety guidance, budget estimates, navigation links, and the single route's guardrail checks live in `itinerary.json` and render through `app.js`.
 
-## Route model
+## Confirmed bases and route
 
-- Primary: Žabljak for nights Oct 1–3, then Kotor for nights Oct 4–5. This reaches Durmitor and Tara with one normal hotel move.
-- Day 1: drive directly from TIV to pre-booked Žabljak lodging after rental pickup. Current published route estimates vary; use 3 h 20 min as one nominal published estimate (other current route results vary), or about 4 h adjusted after the +20% terrain allowance. With a 15:15–15:30 departure, the projected arrival is around 19:15–19:30. That is after Oct 1 sunset and the existing daylight cutoff, so it is explicitly recorded as an accepted exception, never as a safety pass. Skip the ferry and all sightseeing stops. Check live road/weather, visibility, fatigue, delays and confirmed late check-in before departure. If the go/no-go fails, stay in Kotor and reassess a northbound transfer on Day 2; if the northern route remains unsafe, use the full coast-only fallback.
-- Day 2 is a recovery day at Žabljak with a short Black Lake visit. If the Day 1 contingency was used, Day 2 becomes a direct Kotor–Žabljak transfer; visit the lake only after check-in and only if time, light and energy allow.
-- Day 3 features the P14/Sedlo out-and-back from Žabljak to the Plužine/Piva viewpoint, provisionally estimated at 5 h 24 adjusted. This leaves only six minutes under the 5.5 h cap. Verify the complete live route with waypoints that morning, remove optional spurs, and skip P14 if unsafe or if the core route exceeds the cap. Finish high-altitude driving by 16:00.
-- Day 4 transfers to Kotor; Day 5 remains a flexible coastal/Central outing; Day 6 keeps the TIV car-return and terminal deadlines.
-- Weather fallback: Kotor all five nights; Days 3–5 cover Lovćen/Cetinje, Lake Skadar and the Bay without high alpine roads. The Đurđevića Tara bridge closure through Oct 26, 2026 at noon is avoided.
-- Official National Parks of Montenegro 2026 listings show €5/person/day entries and a €13.50/person annual pass; Skadar’s listing includes one cruise. Verify ticket terms and October boat operations before travel. Traveler prices remain historical anecdotes.
+- Runolist Chalet, Narodnih heroja, 84220 Žabljak: check-in Oct 1, checkout Oct 4 (three nights).
+- Conte Hotel & Restaurant, Ul. Marka Martinovića bb, 85336 Perast: check-in Oct 4, checkout Oct 6 (two nights).
+- Day 1 remains a direct TIV-to-Runolist transfer using planning estimates, with an after-sunset exception. The flight number, rental voucher, and individual late-arrival agreement have not been supplied. If conditions are unsafe, stop safely and arrange lodging directly; no alternate lodging booking is represented.
+- Day 3 P14/Sedlo is conditional at about 5 h 24 adjusted, with only the Piva viewpoint. Verify all live waypoints and finish high-altitude driving by 16:00; cancel for snow, ice, poor visibility, closure, or an over-cap route.
+- Day 4 transfers from Runolist to Conte in Perast. Perast old town restricts vehicle access May–October; use a signed entrance car park and contact Conte about available assistance to reception. Its published check-in starts at 15:00 and checkout is by 11:00; confirm individual booking terms.
+- Day 6 is a Perast-to-TIV transfer. The existing 11:30 car-return and 12:15 terminal targets remain planning assumptions until the rental voucher is supplied.
+- Weather or road changes cancel optional activities within the fixed booked stays. No separate Kotor-only overnight route is represented. The Tara Bridge closure through Oct 26, 2026 at noon is avoided.
 
-## Route text authoring and display
+## Route text and single source of truth
 
-The day timeline and master schedule use typed sentence segments so readers can scan driving, lodging, stops, and cautions without changing the route chronology. For every day in both `primary` and `fallback`, `morning`, `afternoon`, and `evening` are arrays of `{ "type": "DRIVE", "text": "..." }` objects. Keep segments in the order a traveler encounters them. Use one concise sentence or closely related instruction per segment; split a sentence when it combines unrelated actions.
+The day timeline and master schedule use typed sentence segments. Each day in `routes.primary.days` has ordered `morning`, `afternoon`, and `evening` arrays of `{ "type": "DRIVE", "text": "..." }` objects. Valid types are DRIVE, STAY, SEE, WALK, EAT, WATER, WELLNESS, LOGISTICS, and CAUTION. Keep each segment concise and retain navigation destinations in that day's `stops` array.
 
-Use only these types: `DRIVE` for routes, roads and travel time; `STAY` for accommodation and check-in; `SEE` for sights, venues and landmarks; `WALK` for hikes and walking; `EAT` for meals and food; `WATER` for boats, swimming and rafting; `WELLNESS` for spa and recovery experiences; `LOGISTICS` for tickets, airport steps, payment and practical arrangements; `CAUTION` for hazards, closures, go/no-go decisions and things to skip. Choose the type based on the sentence’s main instruction. Split unrelated actions into separate segments rather than giving one segment multiple labels. Do not add presentation markup or category labels inside `text`; the renderer supplies the icon, visible label and color. Keep navigation destinations in the day’s existing `stops` array so map links remain functional.
+`app.js` renders the same itinerary data in day cards, the master schedule, quick references, and the map. `waypoints.json` is the shared place index for timeline links, map markers, popup shortcuts, food venues, and offline coordinate lookup. Keep stop and food item names aligned with waypoint names and day memberships. The Runolist map/weather point is an approximate Borje-area locality pin; its address query opens the property search. Conte uses an OpenStreetMap hotel building/reception anchor because the booked annex is unknown.
 
-`app.js` renders the same ordered segments in the expandable day cards and the master schedule. If adding a type, update `segmentTypes`, the route key in `index.html`, matching styles in `style.css`, and this taxonomy together. Keep the text label and icon meaningful without color, and check wrapping on a narrow screen. After editing itinerary content, validate every segment in both branches and bump the service-worker cache revision and asset query revision in `sw.js`/`index.html` before publication so offline clients receive the update.
+The map drawer has peek, half, and full states, uses Leaflet with OpenStreetMap tiles, filters route waypoints by selected day, and opens the corresponding day card from lodging popups. Leaflet assets and waypoint data are cached in the service-worker shell; viewed OSM tiles use a bounded runtime cache. The offline waypoint list remains available when tiles are unavailable.
 
-## Interactive map and offline waypoints
+## Validation and release
 
-`waypoints.json` is the shared place index for timeline text, stop links, food venues, curated activities, map markers, and offline coordinate lookup. Keep names stable across the itinerary and waypoint index; add both route-branch day memberships when a stop appears in both branches. The map drawer has peek, half, and full states, uses Leaflet with OpenStreetMap tiles, and filters markers and the day route line with the selected route/day. Portrait viewports open it from the bottom; landscape viewports open it from the right and use horizontal dragging. Leaflet assets and the waypoint index are included in the service-worker shell; viewed OSM tiles are cached at runtime with a bounded cache. If tiles or the map library are unavailable, the coordinate-backed waypoint list remains usable.
+Run `node tests/waypoints.test.js` and `node tests/weather.test.js`. The itinerary is static JSON; there is no separate bundler. When itinerary, waypoint, app, style, or weather assets change, update the asset query revisions in `index.html` and `sw.js`, increment the service-worker cache version, and version the weather local-storage key when forecast coordinates change.
 
-Run `node tests/waypoints.test.js` to check itinerary/food coverage, coordinates, popup fields, navigation URLs, categories, and service-worker asset registration. The project is a static GitHub Pages site, so deployment uses its source files directly rather than a separate bundler.
-
-## Validation
-
-The itinerary is static JSON. `app.js` renders day cards, the synchronized schedule, branch checks and candidate experiences. Route segment `type` values must belong to the documented taxonomy and each `text` must be non-empty. `sw.js` caches the application shell and itinerary JSON for offline use. GitHub Pages serves the repository’s `gh-pages` branch at the project site URL.
-
-Sources checked Sep 27, 2026. The route change requires checking both six-day branches, five-night totals, one normal primary hotel move, the conditional Day 1 daylight exception and abort path, P14’s conditional drive ceiling, luggage security, and the Day 6 airport deadline. Bump the service-worker cache version and asset query revision on publication so offline clients receive the new itinerary.
-
-Refer to the in-app Sources section for official park fees, P14 season/elevation, road notices, route estimates, fuel prices and operating details. Prices and date-specific October operations marked for confirmation are planning estimates, not reservations.
+GitHub Pages serves the static app from the repository's `gh-pages` branch at `https://oriashkenazi.github.io/montenegro-2026-field-notes/`. Reservation identifiers, individual booking terms, flight details, rental voucher conditions, and actual costs must remain unclaimed until supplied by the traveler.

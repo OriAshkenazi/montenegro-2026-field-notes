@@ -3,8 +3,11 @@ const fs=require('node:fs');
 const vm=require('node:vm');
 
 const source=fs.readFileSync('weather.js','utf8');
+assert(source.includes("id:'perast',name:'Conte Hotel · Perast'"));
+assert(source.includes("name:'Runolist Chalet · approximate Žabljak pin'"));
+assert(source.includes('mne-weather-forecast-v2'), 'coordinate changes must invalidate saved forecast payload');
 const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Podgorica',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
-const hubIds=['tivat','kotor','budva','podgorica','virpazar','zabljak','sedlo','kolasin'];
+const hubIds=['tivat','perast','budva','podgorica','virpazar','zabljak','sedlo','kolasin'];
 function fixture(){
   const days=Array.from({length:16},(_,i)=>{const date=new Date(`${today}T12:00:00Z`);date.setUTCDate(date.getUTCDate()+i);return date.toISOString().slice(0,10);});
   return hubIds.map(()=>{
@@ -15,7 +18,7 @@ function fixture(){
 function run(rows,{online=true,cached=null}={}){
   const selectors=['#weatherHub','#weatherMode','#weatherUpdated','#weatherError','#weatherLoading','#weatherForecast','#weatherDays','#hourlyTitle','#hourlyScroller','#weatherHubTitle','#alpineWarning','#alpineWarningDetails','#coastWeather','#alpineWeather'];
   const elements=Object.fromEntries(selectors.map(selector=>[selector,{value:selector==='#weatherHub'?'zabljak':'',textContent:'',innerHTML:'',hidden:selector==='#weatherForecast'||selector==='#alpineWarning',classList:{add(){},toggle(){}},addEventListener(){},querySelectorAll(){return[]}}]));
-  const store=new Map(cached?[["mne-weather-forecast-v1",JSON.stringify(cached)]]:[]);
+  const store=new Map(cached?[["mne-weather-forecast-v2",JSON.stringify(cached)]]:[]);
   const context={document:{querySelector:selector=>elements[selector]},navigator:{onLine:online},localStorage:{getItem:key=>store.get(key)||null,setItem:(key,value)=>store.set(key,value)},fetch:async()=>({ok:true,json:async()=>rows}),addEventListener(){},URL,Intl,Date,Math,Number,String,JSON,Array,Error};
   vm.runInNewContext(source,context);return new Promise(resolve=>setImmediate(()=>resolve({elements,store})));
 }
@@ -28,7 +31,7 @@ function run(rows,{online=true,cached=null}={}){
   assert(result.elements['#weatherDays'].innerHTML.includes('Thu, 1 Oct')||result.elements['#weatherDays'].innerHTML.includes('Thu 1 Oct'));
   assert.equal((result.elements['#hourlyScroller'].innerHTML.match(/class="hour-cell"/g)||[]).length,24);
   assert(result.elements['#coastWeather'].innerHTML.includes('Sunrise 06:45 · Sunset 18:30'),'API local times must not shift with the device time zone');
-  assert(result.store.has('mne-weather-forecast-v1'));
+  assert(result.store.has('mne-weather-forecast-v2'));
 
   const offTrip=fixture(),outsideIndex=offTrip[5].daily.time.indexOf(offTripDay);offTrip[5].daily.temperature_2m_min[outsideIndex]=1;
   result=await run(offTrip);assert.equal(result.elements['#alpineWarning'].hidden,true,'weather outside the trip window must not warn');

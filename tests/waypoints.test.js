@@ -20,6 +20,13 @@ for (const [branch, route] of Object.entries(itinerary.routes)) {
     }
   }
 }
+assert.deepEqual(Object.keys(itinerary.routes), ['primary']);
+assert.equal(itinerary.routes.primary.nightBreakdown.reduce((sum,item)=>sum+item.nights,0),5);
+assert.deepEqual(itinerary.stays.map(stay=>stay.name),['Runolist Chalet','Conte Hotel & Restaurant']);
+assert.equal(itinerary.stays[0].dates,'Check-in Oct 1 · check-out Oct 4, 2026');
+assert.equal(itinerary.stays[1].dates,'Check-in Oct 4 · check-out Oct 6, 2026');
+for (const stay of itinerary.stays) assert.ok(byName.has(stay.name), `${stay.name}: missing stay waypoint`);
+
 const categories = new Set();
 for (const point of waypoints) {
   assert.ok(Number.isFinite(point.lat) && point.lat >= 41.5 && point.lat <= 43.7, point.name);
@@ -33,8 +40,11 @@ const app = fs.readFileSync('app.js', 'utf8');
 const sw = fs.readFileSync('sw.js', 'utf8');
 const css = fs.readFileSync('style.css', 'utf8');
 const html = fs.readFileSync('index.html', 'utf8');
-assert.ok(app.includes('waypoints.json?rev=2026-09-27i'));
-assert.ok(sw.includes('./waypoints.json?rev=2026-09-27i'));
+assert.ok(app.includes('waypoints.json?rev=2026-09-27j'));
+assert.ok(!app.includes('routeToggle'), 'separate fallback route control should be removed');
+assert.ok(app.includes('data-day-jump'), 'lodging map popup should link to a day card');
+assert.ok(html.includes('id="stayDirectory"'), 'confirmed stay quick reference should render');
+assert.ok(sw.includes('./waypoints.json?rev=2026-09-27j'));
 assert.ok(sw.includes('tile.openstreetmap.org') && sw.includes('leaflet@1.9.4'));
 assert.ok(css.includes('@media (orientation:landscape)') && css.includes('flex-direction:row-reverse'));
 assert.ok(css.includes('@media (orientation:landscape) and (max-height:500px)'));
@@ -47,9 +57,9 @@ assert.ok(css.includes('.day-toggle{grid-template-columns:49px minmax(0,1fr) min
 assert.ok(css.includes('.day-drive{overflow-wrap:anywhere}'));
 assert.ok(css.includes('body{margin:0;background:var(--paper)') && css.includes('main{max-width:1200px'));
 assert.ok(css.includes('body{padding-left:env(safe-area-inset-left,0px);padding-right:calc(72px + env(safe-area-inset-right,0px))'));
-assert.ok(html.includes('style.css?rev=2026-09-27p') && html.includes('app.js?rev=2026-09-27m') && html.includes('weather.js?rev=2026-09-27b'));
+assert.ok(html.includes('style.css?rev=2026-09-27t') && html.includes('app.js?rev=2026-09-27n') && html.includes('weather.js?rev=2026-09-27f'));
 assert.ok(html.includes('data-pane="weather"') && html.includes('id="pane-weather"'));
-assert.ok(sw.includes("const VERSION='27'") && sw.includes('./weather.js?rev=2026-09-27b'));
+assert.ok(sw.includes("const VERSION='31'") && sw.includes('./weather.js?rev=2026-09-27f'));
 const weather = fs.readFileSync('weather.js', 'utf8');
 assert.ok(weather.includes('https://api.open-meteo.com/v1/forecast'));
 assert.ok(weather.includes('low<=2') && weather.includes('chance>60'));

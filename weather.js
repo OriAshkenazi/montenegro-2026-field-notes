@@ -2,15 +2,15 @@
   const $ = selector => document.querySelector(selector);
   const hubs = [
     {id:'tivat',name:'Tivat',region:'Coast · Bay of Kotor',lat:42.4300,lon:18.6960},
-    {id:'kotor',name:'Kotor',region:'Coast · Bay of Kotor',lat:42.4247,lon:18.7712},
+    {id:'perast',name:'Conte Hotel · Perast',region:'Coast · Bay of Kotor · Conte base',lat:42.48631,lon:18.69801},
     {id:'budva',name:'Budva',region:'Coast · Adriatic',lat:42.2911,lon:18.8403},
     {id:'podgorica',name:'Podgorica',region:'Central · Capital',lat:42.4304,lon:19.2594},
     {id:'virpazar',name:'Virpazar',region:'Central · Lake Skadar',lat:42.2458,lon:19.0911},
-    {id:'zabljak',name:'Žabljak',region:'Highlands · Durmitor',lat:43.1555,lon:19.1206},
+    {id:'zabljak',name:'Runolist Chalet · approximate Žabljak pin',region:'Highlands · Durmitor · Runolist base',lat:43.16556,lon:19.19004},
     {id:'sedlo',name:'Sedlo Pass',region:'Highlands · P14',lat:43.0989,lon:19.0503},
     {id:'kolasin',name:'Kolašin',region:'Highlands · Northern',lat:42.8223,lon:19.5165}
   ];
-  const cacheKey = 'mne-weather-forecast-v1';
+  const cacheKey = 'mne-weather-forecast-v2';
   const montenegro = [[41.85,19.37],[41.99,19.22],[42.02,18.56],[42.36,18.45],[42.47,18.53],[42.61,18.68],[42.76,18.69],[42.90,18.80],[43.00,18.75],[43.17,18.83],[43.55,19.36],[43.54,19.62],[43.35,19.85],[43.23,20.10],[42.95,20.35],[42.61,20.36],[42.43,20.32],[42.24,20.28],[42.05,20.14],[41.89,19.98]];
   let payload = null, selectedDay = 0, selectedHub = 'zabljak', userSelectedHub = false;
 
@@ -32,7 +32,7 @@
   function renderHubSelector() {
     const selector=$('#weatherHubTitle');if(!selector)return;
     const groups=[
-      {label:'Adriatic Coast',ids:['tivat','kotor','budva']},
+      {label:'Adriatic Coast',ids:['tivat','perast','budva']},
       {label:'Central & Lakes',ids:['podgorica','virpazar']},
       {label:'Northern Highlands',ids:['zabljak','sedlo','kolasin']}
     ];
