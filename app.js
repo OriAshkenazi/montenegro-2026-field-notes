@@ -1,7 +1,7 @@
 const $ = (s) => document.querySelector(s);
 let trip;
 let branch = 'primary';
-fetch('./itinerary.json?rev=2026-09-27b').then(r => r.json()).then(data => { trip = data; render(); }).catch(() => { $('#days').innerHTML = '<p class="offline-note">Trip data is not cached yet. Open this page online once, then reload offline.</p>'; });
+fetch('./itinerary.json?rev=2026-09-27c').then(r => r.json()).then(data => { trip = data; render(); }).catch(() => { $('#days').innerHTML = '<p class="offline-note">Trip data is not cached yet. Open this page online once, then reload offline.</p>'; });
 
 function activeRoute() { return trip.routes[branch]; }
 function renderSchedule() {
@@ -25,7 +25,7 @@ function render() {
   $('#routeTitle').textContent=trip.routeNames[branch];
   $('#routeToggle').checked=branch==='fallback';
   $('#routeWarning').hidden=branch!=='fallback';
-  $('#routeNoticeTitle').textContent=branch==='primary'?'P14 is the featured mountain day; check the live route and weather.':'Weather-safe route branch selected.';
+  $('#routeNoticeTitle').textContent=branch==='primary'?'Day 1 includes an accepted after-sunset mountain drive; check the go/no-go contingency.':'Weather-safe route branch selected.';
   $('#routeWarningText').textContent=branch==='primary'?trip.primaryNotice:trip.fallbackNotice;
   $('#fallbackCopy').textContent=trip.fallbackNotice;
   $('#days').setAttribute('aria-label',trip.routeNames[branch]);

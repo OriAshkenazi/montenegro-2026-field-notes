@@ -1,6 +1,6 @@
-const CACHE = 'mne-field-notes-v9';
-const VERSION = '9';
-const SHELL = ['./','./index.html','./style.css','./app.js?rev=2026-09-27b','./itinerary.json?rev=2026-09-27b','./manifest.webmanifest','./icon.svg'].map(path => `${path}${path.includes('?')?'&':'?'}v=${VERSION}`);
+const CACHE = 'mne-field-notes-v10';
+const VERSION = '10';
+const SHELL = ['./','./index.html','./style.css','./app.js?rev=2026-09-27c','./itinerary.json?rev=2026-09-27c','./manifest.webmanifest','./icon.svg'].map(path => `${path}${path.includes('?')?'&':'?'}v=${VERSION}`);
 self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(SHELL)).then(() => self.skipWaiting())));
 self.addEventListener('activate', event => event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE).map(key => caches.delete(key)))).then(() => self.clients.claim())));
 self.addEventListener('fetch', event => {
