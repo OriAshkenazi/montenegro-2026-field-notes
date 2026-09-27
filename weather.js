@@ -29,19 +29,34 @@
   function setLocation(id) { if(!hubs.some(hub=>hub.id===id))return;selectedHub=id;renderHubPicker();renderDetail(); }
   function locateUser() { if(!navigator.geolocation)return;navigator.geolocation.getCurrentPosition(({coords})=>{if(!userSelectedHub&&inMontenegro(coords.latitude,coords.longitude))setLocation(nearestHub(coords.latitude,coords.longitude));},()=>{}, {enableHighAccuracy:false,timeout:5500,maximumAge:3600000}); }
 
-  function mapPoint(lat,lon) { const minLat=41.85,maxLat=43.55,minLon=18.45,maxLon=20.36;return {x:18+(lon-minLon)*164,y:18+(maxLat-lat)*178}; }
+  // SimpleMaps SVG uses a Mercator projection. This transform is fitted to its
+  // georeferenced control points and checked against the eight route hubs.
+  function mapPoint(lat,lon) {
+    const x=393.9941009807577*lon-7141.24498785602;
+    const mercator=Math.log(Math.tan(Math.PI/4+lat*Math.PI/360));
+    const y=-22575.413767459533*mercator+19143.659419673462;
+    return {x,y};
+  }
   function renderHubPicker() {
-    const map=$('#weatherHubMap'),list=$('#weatherHubList');if(!map||!list)return;
-    const border=montenegro.map(([lat,lon])=>mapPoint(lat,lon));
-    const path=border.map((point,index)=>`${index?'L':'M'}${point.x.toFixed(1)} ${point.y.toFixed(1)}`).join(' ')+' Z';
-    const offsets={tivat:{x:-19,y:-19},kotor:{x:19,y:-7},budva:{x:25,y:14}};
-    const marker=(hub)=>{const point=mapPoint(hub.lat,hub.lon),offset=offsets[hub.id]||{x:0,y:0},x=point.x+offset.x,y=point.y+offset.y,active=hub.id===selectedHub;return `<g class="hub-marker${active?' is-selected':''}" data-hub="${hub.id}" role="button" tabindex="0" aria-label="Select ${escape(hub.name)} forecast" aria-pressed="${active}">${offset.x||offset.y?`<path class="hub-leader" d="M${point.x.toFixed(1)} ${point.y.toFixed(1)} L${x.toFixed(1)} ${y.toFixed(1)}"/>`:''}<circle class="hub-hit" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="13"/><circle class="hub-dot" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6"/><text x="${(x+10).toFixed(1)}" y="${(y-9).toFixed(1)}">${escape(hub.name)}</text></g>`;};
-    map.innerHTML=`<svg class="montenegro-weather-svg" viewBox="0 0 350 330" role="group" aria-labelledby="weatherMapTitle weatherMapDesc"><title id="weatherMapTitle">Montenegro weather hubs</title><desc id="weatherMapDesc">Select one of eight forecast hubs. Closely spaced coastal cities use callout markers.</desc><defs><linearGradient id="mapLand" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#e3ead6"/><stop offset="1" stop-color="#c7d8bd"/></linearGradient></defs><path class="mne-map-shadow" d="${path}"/><path class="mne-map-border" d="${path}"/>${hubs.map(marker).join('')}</svg>`;
+    const main=$('#weatherMainMap'),coast=$('#weatherCoastMap'),list=$('#weatherHubList');if(!main||!coast||!list)return;
+    const pointMarkup=(hub,coastView)=>{
+      const point=mapPoint(hub.lat,hub.lon),active=hub.id===selectedHub;
+      return `<g class="hub-marker${active?' is-selected':''}" data-hub="${hub.id}" role="button" tabindex="0" aria-label="Select ${escape(hub.name)} forecast" aria-pressed="${active}"><circle class="hub-hit" cx="${point.x.toFixed(2)}" cy="${point.y.toFixed(2)}" r="${coastView?12:10}"/><circle class="hub-dot" cx="${point.x.toFixed(2)}" cy="${point.y.toFixed(2)}" r="${coastView?5.5:4.5}"/></g>`;
+    };
+    const renderMap=(element,{viewBox,locations,coastView=false,title,description})=>{
+      element.innerHTML=`<svg class="weather-hub-svg${coastView?' is-coast':''}" viewBox="${viewBox}" role="group" aria-label="${escape(title)}"><title>${escape(title)}</title><desc>${escape(description)}</desc><image href="./assets/montenegro.svg" x="0" y="0" width="1000" height="1000" preserveAspectRatio="xMidYMid meet"/>${locations.map(hub=>pointMarkup(hub,coastView)).join('')}</svg>`;
+      element.querySelectorAll('[data-hub]').forEach(control=>{control.addEventListener('click',()=>chooseHub(control.dataset.hub));control.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();chooseHub(control.dataset.hub);}});});
+    };
+    renderMap(main,{viewBox:'0 0 1000 1000',locations:hubs,title:'Montenegro weather hub overview',description:'Eight selectable forecast hubs across Montenegro. City names are provided in the adjacent city list.'});
+    renderMap(coast,{viewBox:'195 600 160 140',locations:hubs.filter(hub=>['tivat','kotor','budva'].includes(hub.id)),coastView:true,title:'Adriatic coast weather hubs',description:'Selectable Tivat, Kotor, and Budva forecast markers.'});
     list.innerHTML=hubs.map(hub=>`<button class="weather-hub-option${hub.id===selectedHub?' is-selected':''}" type="button" data-hub="${hub.id}" aria-pressed="${hub.id===selectedHub}"><span class="hub-option-dot" aria-hidden="true"></span><span><b>${escape(hub.name)}</b><small>${escape(hub.region)}</small></span></button>`).join('');
-    map.querySelectorAll('[data-hub]').forEach(control=>{control.addEventListener('click',()=>chooseHub(control.dataset.hub));control.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();chooseHub(control.dataset.hub);}});});
     list.querySelectorAll('[data-hub]').forEach(control=>control.addEventListener('click',()=>chooseHub(control.dataset.hub)));
   }
-  function chooseHub(id) { const mapHadFocus=$('#weatherHubMap')?.contains(document.activeElement);userSelectedHub=true;selectedDay=0;setLocation(id);if(mapHadFocus)$('#weatherHubMap')?.querySelector(`[data-hub="${id}"]`)?.focus({preventScroll:true}); }
+  function chooseHub(id) {
+    const activeMap=document.activeElement?.closest('[data-weather-map]')?.dataset.weatherMap;
+    userSelectedHub=true;selectedDay=0;setLocation(id);
+    if(activeMap){const target=$(`[data-weather-map="${activeMap}"] [data-hub="${id}"]`);target?.focus({preventScroll:true});}
+  }
 
   // Solar altitude -6 degrees marks civil dawn and dusk. Open-Meteo supplies the daily sunrise and sunset.
   function civilTwilight(day,lat,lon,rising,zone='Europe/Podgorica') {
