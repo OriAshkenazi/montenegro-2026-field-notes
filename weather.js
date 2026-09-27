@@ -26,37 +26,21 @@
   }
   function inMontenegro(lat,lon) { let inside=false; for(let i=0,j=montenegro.length-1;i<montenegro.length;j=i++){const [yi,xi]=montenegro[i],[yj,xj]=montenegro[j];if((xi>lon)!==(xj>lon)&&lat<(yj-yi)*(lon-xi)/(xj-xi)+yi)inside=!inside;}return inside; }
   function nearestHub(lat,lon) { return hubs.reduce((best,hub)=>{const distance=(hub.lat-lat)**2*Math.cos(lat*Math.PI/180)**2+(hub.lon-lon)**2;return !best||distance<best.distance?{id:hub.id,distance}:best;},null).id; }
-  function setLocation(id) { if(!hubs.some(hub=>hub.id===id))return;selectedHub=id;renderHubPicker();renderDetail(); }
+  function setLocation(id) { if(!hubs.some(hub=>hub.id===id))return;selectedHub=id;renderHubSelector();renderDetail(); }
   function locateUser() { if(!navigator.geolocation)return;navigator.geolocation.getCurrentPosition(({coords})=>{if(!userSelectedHub&&inMontenegro(coords.latitude,coords.longitude))setLocation(nearestHub(coords.latitude,coords.longitude));},()=>{}, {enableHighAccuracy:false,timeout:5500,maximumAge:3600000}); }
 
-  // SimpleMaps SVG uses a Mercator projection. This transform is fitted to its
-  // georeferenced control points and checked against the eight route hubs.
-  function mapPoint(lat,lon) {
-    const x=393.9941009807577*lon-7141.24498785602;
-    const mercator=Math.log(Math.tan(Math.PI/4+lat*Math.PI/360));
-    const y=-22575.413767459533*mercator+19143.659419673462;
-    return {x,y};
+  function renderHubSelector() {
+    const selector=$('#weatherHubTitle');if(!selector)return;
+    const groups=[
+      {label:'Adriatic Coast',ids:['tivat','kotor','budva']},
+      {label:'Central & Lakes',ids:['podgorica','virpazar']},
+      {label:'Northern Highlands',ids:['zabljak','sedlo','kolasin']}
+    ];
+    selector.innerHTML=groups.map(group=>`<optgroup label="${group.label}">${group.ids.map(id=>{const hub=hubs.find(item=>item.id===id);return `<option value="${hub.id}">${escape(hub.name)}</option>`;}).join('')}</optgroup>`).join('');
+    selector.value=selectedHub;
+    if(!selector._weatherHubBound){selector.addEventListener('change',()=>chooseHub(selector.value));selector._weatherHubBound=true;}
   }
-  function renderHubPicker() {
-    const main=$('#weatherMainMap'),coast=$('#weatherCoastMap'),list=$('#weatherHubList');if(!main||!coast||!list)return;
-    const pointMarkup=(hub,coastView)=>{
-      const point=mapPoint(hub.lat,hub.lon),active=hub.id===selectedHub;
-      return `<g class="hub-marker${active?' is-selected':''}" data-hub="${hub.id}" role="button" tabindex="0" aria-label="Select ${escape(hub.name)} forecast" aria-pressed="${active}"><circle class="hub-hit" cx="${point.x.toFixed(2)}" cy="${point.y.toFixed(2)}" r="${coastView?12:10}"/><circle class="hub-dot" cx="${point.x.toFixed(2)}" cy="${point.y.toFixed(2)}" r="${coastView?5.5:4.5}"/></g>`;
-    };
-    const renderMap=(element,{viewBox,locations,coastView=false,title,description})=>{
-      element.innerHTML=`<svg class="weather-hub-svg${coastView?' is-coast':''}" viewBox="${viewBox}" role="group" aria-label="${escape(title)}"><title>${escape(title)}</title><desc>${escape(description)}</desc><image href="./assets/montenegro.svg" x="0" y="0" width="1000" height="1000" preserveAspectRatio="xMidYMid meet"/>${locations.map(hub=>pointMarkup(hub,coastView)).join('')}</svg>`;
-      element.querySelectorAll('[data-hub]').forEach(control=>{control.addEventListener('click',()=>chooseHub(control.dataset.hub));control.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();chooseHub(control.dataset.hub);}});});
-    };
-    renderMap(main,{viewBox:'0 0 1000 1000',locations:hubs,title:'Montenegro weather hub overview',description:'Eight selectable forecast hubs across Montenegro. City names are provided in the adjacent city list.'});
-    renderMap(coast,{viewBox:'195 600 160 140',locations:hubs.filter(hub=>['tivat','kotor','budva'].includes(hub.id)),coastView:true,title:'Adriatic coast weather hubs',description:'Selectable Tivat, Kotor, and Budva forecast markers.'});
-    list.innerHTML=hubs.map(hub=>`<button class="weather-hub-option${hub.id===selectedHub?' is-selected':''}" type="button" data-hub="${hub.id}" aria-pressed="${hub.id===selectedHub}"><span class="hub-option-dot" aria-hidden="true"></span><span><b>${escape(hub.name)}</b><small>${escape(hub.region)}</small></span></button>`).join('');
-    list.querySelectorAll('[data-hub]').forEach(control=>control.addEventListener('click',()=>chooseHub(control.dataset.hub)));
-  }
-  function chooseHub(id) {
-    const activeMap=document.activeElement?.closest('[data-weather-map]')?.dataset.weatherMap;
-    userSelectedHub=true;selectedDay=0;setLocation(id);
-    if(activeMap){const target=$(`[data-weather-map="${activeMap}"] [data-hub="${id}"]`);target?.focus({preventScroll:true});}
-  }
+  function chooseHub(id) { userSelectedHub=true;selectedDay=0;setLocation(id); }
 
   // Solar altitude -6 degrees marks civil dawn and dusk. Open-Meteo supplies the daily sunrise and sunset.
   function civilTwilight(day,lat,lon,rising,zone='Europe/Podgorica') {
@@ -100,7 +84,7 @@
     $('#hourlyTitle').textContent=`${hub.name} · ${dateLabel(day)} hourly outlook`;const indexes=hourly.time.map((value,i)=>value.startsWith(day)?i:-1).filter(i=>i>=0),maxRain=Math.max(1,...indexes.map(i=>hourly.rain?.[i]||0));
     container.innerHTML=indexes.map(i=>{const rain=hourly.rain?.[i]||0,chance=hourly.precipitation_probability?.[i],temp=hourly.temperature_2m?.[i],time=timeLabel(hourly.time[i],data.timezone),height=rain?Math.max(10,Math.round(rain/maxRain*100)):3;return `<div class="hour-cell" aria-label="${escape(time)}, ${temp==null?'temperature unavailable':`${Math.round(temp)} degrees`}, ${chance==null?'precipitation chance unavailable':`${Math.round(chance)} percent precipitation chance`}, ${rain.toFixed(1)} millimeters rain"><time>${escape(time)}</time><b>${temp==null?'—':`${Math.round(temp)}°`}</b><span class="hour-rain" title="${rain.toFixed(1)} mm rain"><i style="height:${height}%"></i></span><small>${rain.toFixed(1)} mm</small><span class="hour-precip">${chance==null?'—':`${Math.round(chance)}%`}</span></div>`;}).join('')||'<p class="weather-empty">Hourly forecast unavailable for this day.</p>';
   }
-  function renderDetail() { const hub=hubs.find(item=>item.id===selectedHub);if(!hub)return;$('#weatherHubTitle').textContent=`${hub.name} · ${hub.region}`;$('#weatherLoading').hidden=!!payload;$('#weatherForecast').hidden=!payload;if(payload){renderDays();renderHourly();} }
+  function renderDetail() { const hub=hubs.find(item=>item.id===selectedHub);if(!hub)return;const selector=$('#weatherHubTitle');if(selector)selector.value=hub.id;const region=$('#weatherHubRegion');if(region)region.textContent=hub.region;$('#weatherLoading').hidden=!!payload;$('#weatherForecast').hidden=!payload;if(payload){renderDays();renderHourly();} }
   function display(data,mode) {
     payload=data;const badge=$('#weatherMode');badge.textContent=mode==='offline'?'Offline Mode - Showing Cached Forecast':mode==='cached'?'Saved forecast · checking for updates':'Live forecast';badge.classList.toggle('offline',mode==='offline');badge.classList.toggle('loading',mode==='cached');
     $('#weatherUpdated').textContent=`Last updated: ${new Intl.DateTimeFormat('en-GB',{dateStyle:'medium',timeStyle:'short'}).format(new Date(data.updatedAt))}`;$('#weatherError').hidden=true;$('#weatherLoading').hidden=true;$('#weatherForecast').hidden=false;
@@ -120,7 +104,7 @@
   function init() {
     try { const saved=JSON.parse(localStorage.getItem(cacheKey)||'null');if(saved?.locations)display(saved,navigator.onLine?'cached':'offline'); } catch {}
     if(!navigator.onLine&&!payload){$('#weatherMode').textContent='Offline Mode - No Cached Forecast';$('#weatherMode').classList.add('offline');$('#weatherLoading').textContent='Forecast is not cached yet. Connect once to load weather data.';}
-    renderHubPicker();
+    renderHubSelector();
     refresh();locateUser();addEventListener('online',refresh);
   }
   init();

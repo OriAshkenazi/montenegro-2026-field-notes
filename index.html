@@ -5,7 +5,7 @@
   <meta name="theme-color" content="#173c37"><meta name="description" content="Offline-ready Montenegro trip plan, 1–6 October 2026.">
   <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
-  <link rel="stylesheet" href="style.css?rev=2026-09-27r"><title>Montenegro · Field Notes</title>
+  <link rel="stylesheet" href="style.css?rev=2026-09-27s"><title>Montenegro · Field Notes</title>
 </head>
 <body>
   <header class="topbar"><a class="brand" href="#top"><span class="brand-mark">M</span><span>FIELD NOTES <small>Montenegro · 01—06 October 2026</small></span></a><div class="top-actions"><span class="offline-label"><i></i><span id="connection">Trip data ready</span></span><button id="install" class="button quiet" hidden>Install app</button></div></header>
@@ -32,18 +32,17 @@
       <div id="alpineWarning" class="alpine-warning" role="alert" hidden><span aria-hidden="true">!</span><div><strong>Alpine Pass Caution: Risk of black ice / early autumn snow flurries. Consider the Alpine Weather Fallback Branch.</strong><p id="alpineWarningDetails"></p></div></div>
       <div class="weather-cutoff"><span>17:30 daylight driving cut-off</span><span>Plan high altitude driving to finish before this local time.</span></div>
       <div class="weather-compare"><article id="coastWeather" class="weather-card coast-weather"></article><article id="alpineWeather" class="weather-card alpine-weather"></article></div>
-      <section class="weather-detail"><div class="weather-controls"><div><p class="eyebrow">Route hub forecast</p><h3 id="weatherHubTitle">Žabljak · Durmitor</h3></div><span class="map-instruction">Select a hub on the map or from the city list</span></div>
-        <div class="weather-hub-picker">
-          <div class="weather-hub-maps">
-            <section class="weather-map-card"><h4>Montenegro overview</h4><p>Choose a hub from the map or city list.</p><div id="weatherMainMap" class="weather-map-canvas" data-weather-map="main" aria-label="Montenegro overview with weather hub markers"></div></section>
-            <section class="weather-map-card coast-map-card"><div><h4>Adriatic coast detail</h4><p>Separate markers for the coastal hubs.</p></div><div id="weatherCoastMap" class="weather-map-canvas coast-map-canvas" data-weather-map="coast" aria-label="Zoomed coast detail with Tivat, Kotor, and Budva markers"></div></section>
+      <section class="weather-detail"><div class="weather-controls">
+          <div class="weather-hub-selector">
+            <label class="weather-selector-label" for="weatherHubTitle"><span class="selector-mark" aria-hidden="true">⌖</span><span><b>Route hub</b><small>Choose a forecast location</small></span></label>
+            <div class="weather-selector-control"><select id="weatherHubTitle" aria-label="Choose forecast hub"></select><span class="selector-chevron" aria-hidden="true">⌄</span></div>
+            <div class="weather-selector-footer"><span id="weatherHubRegion">Highlands · Durmitor</span><span>8 route hubs</span></div>
           </div>
-          <div id="weatherHubList" class="weather-hub-list" role="group" aria-label="Choose a forecast city"></div>
         </div>
         <div id="weatherLoading" class="weather-empty">Loading trip-window forecast…</div>
         <div id="weatherForecast" hidden><div id="weatherDays" class="weather-days" aria-label="Remaining trip dates"></div><div class="hourly-panel"><div class="hourly-heading"><div><h4 id="hourlyTitle">Hourly outlook</h4><p>Temperature and rain chance · local time</p></div><span>Swipe for more hours ↔</span></div><div id="hourlyScroller" class="hourly-scroller" aria-label="Hourly temperature and precipitation forecast"></div></div></div>
       </section>
-      <p class="weather-attribution">Forecast data by <a href="https://open-meteo.com/" target="_blank" rel="noreferrer">Open-Meteo</a>. Map outline by <a href="https://simplemaps.com/svg/country/me" target="_blank" rel="noreferrer">SimpleMaps</a>. Forecasts are guidance; confirm road status locally before mountain drives.</p>
+      <p class="weather-attribution">Forecast data by <a href="https://open-meteo.com/" target="_blank" rel="noreferrer">Open-Meteo</a>. Forecasts are guidance; confirm road status locally before mountain drives.</p>
     </section>
     <footer><span>Built for the road, saved for the dead zones.</span><span>Plan version · 27 Sep 2026</span></footer>
   </main>
@@ -54,5 +53,5 @@
     <div class="map-body"><div class="map-toolbar"><div><b>Montenegro route</b><small id="mapStatus" role="status">Map tiles load when online; saved waypoints work offline.</small></div><label class="map-filter-label">Show <select id="mapDayFilter" aria-label="Filter map by itinerary day"><option value="all">All days</option></select></label><button id="mapClose" type="button" aria-label="Collapse map">Collapse</button></div><div id="mapCanvas" class="map-canvas" role="application" aria-label="Map with itinerary locations"></div><div id="mapWaypoints" class="map-waypoints" aria-label="Offline waypoint list"></div></div>
   </aside>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="" defer></script>
-  <script src="app.js?rev=2026-09-27m" defer></script><script src="weather.js?rev=2026-09-27d" defer></script>
+  <script src="app.js?rev=2026-09-27m" defer></script><script src="weather.js?rev=2026-09-27e" defer></script>
 </body></html>
