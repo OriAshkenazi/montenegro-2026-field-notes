@@ -112,7 +112,54 @@
             "Sightseeing",
             "Food & Dining"
           ],
-          "heading": "Day 1 - Tivat → Žabljak / direct northbound mountain transfer"
+          "heading": "Day 1 - Tivat → Žabljak / direct northbound mountain transfer",
+          "food": {
+            "meals": [
+              {
+                "slot": "Lunch · before departure",
+                "name": "ALMECO Café Negro Bar-Restaurant · Tivat Airport",
+                "specialty": "Airport café-bar with food/drinks; use for a sandwich/takeaway before collecting the car, not as a drive stop.",
+                "hours": "Official airport listing: aligned to airport opening hours; verify service and stock on arrival",
+                "parking": "Inside terminal; collect food before rental pickup",
+                "cash": "Cash/card varies; carry small cash",
+                "durationMinutes": 20,
+                "plan": "Eat before the 15:15–15:30 go/no-go departure window. If airport time is tight, carry sealed food from the flight; do not stop on the mountain road.",
+                "mapUrl": "https://maps.google.com/?q=ALMECO%20Cafe%20Negro%20Bar%20Restaurant%20Tivat%20Airport%20Montenegro",
+                "sourceUrl": "https://montenegroairports.com/aerodrom-tivat/sadrzaji-i-servisi/"
+              },
+              {
+                "slot": "Dinner · after check-in",
+                "name": "Zlatni Papagaj · Žabljak",
+                "specialty": "Traditional local cuisine, stews and meats; a walk/taxi dinner after check-in, with packed food as the no-kitchen fallback.",
+                "hours": "Dinner published 18:00–23:00; reconfirm October date",
+                "parking": "Do not drive after the transfer; walk/taxi from lodging. Venue parking not confirmed.",
+                "cash": "Cash-only unverified; carry cash and ask",
+                "durationMinutes": 30,
+                "plan": "Call ahead, arrange late table/takeaway, or eat pre-packed lodging food if flight/road delays push arrival past service.",
+                "mapUrl": "https://maps.google.com/?q=Zlatni%20Papagaj%20Restaurant%20Zabljak%20Montenegro",
+                "sourceUrl": "https://zlatnipapagaj.com/"
+              }
+            ],
+            "coffee": [],
+            "supermarkets": [
+              {
+                "name": "Voli Hipermarket Radanovići",
+                "hours": "Hours not confirmed; call/check same day",
+                "parking": "Dedicated lot indicated in branch materials; large-car fit not directly confirmed",
+                "plan": "Optional pantry stop before ascending only if flight, pickup, daylight/safety checks leave ample margin; default is shop before travel or Day 2 in Žabljak.",
+                "mapUrl": "https://maps.google.com/?q=Voli%20Hipermarket%20Radanovi%C4%87i%20Montenegro",
+                "sourceUrl": "https://kompanija.voli.me/voli-hipermarket-radanovici/"
+              },
+              {
+                "name": "Aroma 311 · Žabljak",
+                "hours": "07:30–21:30 listed; confirm October/Sunday hours",
+                "parking": "Street/lot parking not verified for loaded-car stop",
+                "plan": "Base-hub pantry top-up on Day 2 after unloading. Do not add to late Day 1 transfer.",
+                "mapUrl": "https://maps.google.com/?q=Aroma%20311%20%C2%B7%20%C5%BDabljak%20Montenegro",
+                "sourceUrl": "https://aromamarketi.me/lokacije/"
+              }
+            ]
+          }
         },
         {
           "day": 2,
@@ -220,7 +267,56 @@
             "Adventure & Hiking"
           ],
           "heading": "Day 2 - Žabljak base / Black Lake / recover and check P14",
-          "contingencyAdjustedHours": 3.68
+          "contingencyAdjustedHours": 3.68,
+          "food": {
+            "meals": [
+              {
+                "slot": "Lunch · after Black Lake",
+                "name": "Momčilov Grad",
+                "specialty": "Kačamak, cicvara, priganice, lamb cooked in milk / lamb under the bell; highland cooking with Durmitor terrace views.",
+                "hours": "Daily 10:00–18:00 published; reconfirm season/date",
+                "parking": "Bosača mountain access; guest parking not confirmed; park only in a marked space",
+                "cash": "Cash-only unverified; carry cash and ask",
+                "durationMinutes": 90,
+                "plan": "Use only if lake timing/weather allows the Bosača uphill drive; otherwise lunch in Žabljak.",
+                "mapUrl": "https://maps.google.com/?q=Mom%C4%8Dilov%20Grad%20Montenegro",
+                "sourceUrl": "https://visitzabljak.me/explore-zabljak/restaurant-momcilov-grad"
+              },
+              {
+                "slot": "Dinner · Žabljak",
+                "name": "Restaurant ORO",
+                "specialty": "Durmitor lamb and local mountain dishes; confirm current menu.",
+                "hours": "Listing shows dinner/late service; October hours unverified",
+                "parking": "Town-center parking; exact venue space unverified",
+                "cash": "Cash-only unverified; carry cash and ask",
+                "durationMinutes": 90,
+                "plan": "Book/phone first; October hours may change.",
+                "mapUrl": "https://maps.google.com/?q=Restaurant%20ORO%20Montenegro",
+                "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g1096284-d11725421-Reviews-Restaurant_Oro-Zabljak_Durmitor_National_Park_Zabljak_Municipality.html"
+              }
+            ],
+            "coffee": [
+              {
+                "slot": "Morning",
+                "name": "Kaćun · Žabljak",
+                "why": "Practical local morning coffee; no specialty roaster verified in town.",
+                "hours": "Hours not reliably published; ask lodging host",
+                "parking": "Town-center street parking; walk from lodging if possible.",
+                "mapUrl": "https://maps.google.com/?q=Ka%C4%87un%20%C2%B7%20%C5%BDabljak%20Montenegro",
+                "sourceUrl": ""
+              }
+            ],
+            "supermarkets": [
+              {
+                "name": "Aroma 311 · Žabljak",
+                "hours": "07:30–21:30 listed; confirm date/Sunday hours",
+                "parking": "Parking availability for loaded estate not verified",
+                "plan": "Shop after check-in/unload; stock water and P14 snacks before the highland loop.",
+                "mapUrl": "https://maps.google.com/?q=Aroma%20311%20%C2%B7%20%C5%BDabljak%20Montenegro",
+                "sourceUrl": "https://aromamarketi.me/lokacije/"
+              }
+            ]
+          }
         },
         {
           "day": 3,
@@ -341,7 +437,68 @@
             "Sightseeing",
             "Food & Dining"
           ],
-          "heading": "Day 3 - Žabljak → P14 / Sedlo → Trsa → Plužine / Piva Lake"
+          "heading": "Day 3 - Žabljak → P14 / Sedlo → Trsa → Plužine / Piva Lake",
+          "food": {
+            "meals": [
+              {
+                "slot": "Lunch · packed for P14",
+                "name": "Žabljak packed lunch (buy at Aroma 311)",
+                "specialty": "Pršut, local cheese, bread/crackers, fruit and water; avoids relying on a roadside kitchen on the Sedlo corridor.",
+                "hours": "Shop listed 07:30–21:30; confirm; pack before 07:30 start if needed",
+                "parking": "Shop/base parking; no roadside parking stop planned",
+                "cash": "Cash-only not applicable; grocery payment varies",
+                "durationMinutes": 15,
+                "plan": "Default plan. P14 has only six minutes of drive-cap margin; sit-down food detour fails the daylight gate unless live routing still passes.",
+                "mapUrl": "https://maps.google.com/?q=%C5%BDabljak%20packed%20lunch%20%28buy%20at%20Aroma%20311%29%20Montenegro",
+                "sourceUrl": "https://aromamarketi.me/lokacije/"
+              },
+              {
+                "slot": "Lunch alternate · conditional",
+                "name": "Restoran Sočica · Plužine",
+                "specialty": "Piva-region trout/freshwater fish and local dishes; verify menu on arrival.",
+                "hours": "Listing 07:00–23:00; confirm date",
+                "parking": "Town access; dedicated customer parking not verified",
+                "cash": "Cards reported; cash-only not indicated",
+                "durationMinutes": 75,
+                "plan": "Only if live route plus meal dwell still returns to Žabljak by 16:00 and stays ≤5 h 30 driving.",
+                "mapUrl": "https://maps.google.com/?q=Restoran%20So%C4%8Dica%20%C2%B7%20Plu%C5%BEine%20Montenegro",
+                "sourceUrl": "https://wevotravel.com/restoran/restoran-socica/"
+              },
+              {
+                "slot": "Dinner · Žabljak",
+                "name": "Restaurant ORO",
+                "specialty": "Local highland meat and Durmitor dishes.",
+                "hours": "Listing shows dinner service; confirm October hours",
+                "parking": "Town-center parking not verified; walk from lodging",
+                "cash": "Cash-only unverified; carry cash and ask",
+                "durationMinutes": 90,
+                "plan": "Eat after returning; call ahead if P14 runs late.",
+                "mapUrl": "https://maps.google.com/?q=Restaurant%20ORO%20Montenegro",
+                "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g1096284-d11725421-Reviews-Restaurant_Oro-Zabljak_Durmitor_National_Park_Zabljak_Municipality.html"
+              }
+            ],
+            "coffee": [
+              {
+                "slot": "Morning",
+                "name": "Kaćun · Žabljak",
+                "why": "Local coffee before departure; no specialty-roaster stop verified.",
+                "hours": "Hours not reliably published; ask host",
+                "parking": "Walk from lodging; avoid delaying the 07:30 launch.",
+                "mapUrl": "https://maps.google.com/?q=Ka%C4%87un%20%C2%B7%20%C5%BDabljak%20Montenegro",
+                "sourceUrl": ""
+              }
+            ],
+            "supermarkets": [
+              {
+                "name": "Aroma 311 · Žabljak",
+                "hours": "07:30–21:30 listed; confirm",
+                "parking": "Loaded-car parking not confirmed",
+                "plan": "Buy lunch the evening before; do not add a morning shop if it threatens the early start.",
+                "mapUrl": "https://maps.google.com/?q=Aroma%20311%20%C2%B7%20%C5%BDabljak%20Montenegro",
+                "sourceUrl": "https://aromamarketi.me/lokacije/"
+              }
+            ]
+          }
         },
         {
           "day": 4,
@@ -424,7 +581,56 @@
             "Food & Dining",
             "Romantic Experiences"
           ],
-          "heading": "Day 4 - Žabljak → Kotor / M6–M3–M7–M8–M1"
+          "heading": "Day 4 - Žabljak → Kotor / M6–M3–M7–M8–M1",
+          "food": {
+            "meals": [
+              {
+                "slot": "Lunch · Nikšić corridor",
+                "name": "Restaurant Kastel · Nikšić",
+                "specialty": "Montenegrin meat dishes, fish soup and smoked carp.",
+                "hours": "Daily 07:00–23:00 published; confirm date",
+                "parking": "Town parking; venue-specific dedicated parking not verified",
+                "cash": "Cash-only unverified; carry cash and ask",
+                "durationMinutes": 75,
+                "plan": "On corridor through Nikšić; time-box lunch before continuing to Kotor.",
+                "mapUrl": "https://maps.google.com/?q=Restaurant%20Kastel%20%C2%B7%20Nik%C5%A1i%C4%87%20Montenegro",
+                "sourceUrl": "https://kastel.me/?lang=en&page_id=11611"
+              },
+              {
+                "slot": "Dinner · Kotor",
+                "name": "Ombra · Old Town",
+                "specialty": "Adriatic seafood, daily catch and black cuttlefish risotto.",
+                "hours": "Official listing 08:30–22:30; confirm October service",
+                "parking": "Leave car at hotel or signed Old Town-edge lot; walk in",
+                "cash": "Cash-only unverified; carry cash and ask",
+                "durationMinutes": 90,
+                "plan": "No Old Town car circling; reserve if possible.",
+                "mapUrl": "https://maps.google.com/?q=Ombra%20%C2%B7%20Old%20Town%20Montenegro",
+                "sourceUrl": "https://ombraoldtown.com/"
+              }
+            ],
+            "coffee": [
+              {
+                "slot": "Morning",
+                "name": "CAVE Coffee · Kotor",
+                "why": "Locally roasted coffee, espresso and filter options.",
+                "hours": "Kamelija listing: Mon–Sat 09:00–23:00; Sunday/season hours verify",
+                "parking": "Kamelija parking garage/lot; walk from car, height/fee not confirmed",
+                "mapUrl": "https://maps.google.com/?q=CAVE%20Coffee%20%C2%B7%20Kotor%20Montenegro",
+                "sourceUrl": "https://www.kamelija.me/en/stores/cave-coffee/"
+              }
+            ],
+            "supermarkets": [
+              {
+                "name": "Aroma City Tabačina · Kotor",
+                "hours": "07:00–23:45 listed; verify Sunday/holiday hours",
+                "parking": "Urban lot/curb availability not confirmed; unload at hotel first",
+                "plan": "Convenient Kotor base top-up, not a loaded-luggage stop.",
+                "mapUrl": "https://maps.google.com/?q=Aroma%20City%20Taba%C4%8Dina%20%C2%B7%20Kotor%20Montenegro",
+                "sourceUrl": "https://aromamarketi.me/lokacije/"
+              }
+            ]
+          }
         },
         {
           "day": 5,
@@ -561,7 +767,56 @@
             "Food & Dining",
             "Romantic Experiences"
           ],
-          "heading": "Day 5 - Kotor base / Lake Skadar OR Perast OR Budva"
+          "heading": "Day 5 - Kotor base / Lake Skadar OR Perast OR Budva",
+          "food": {
+            "meals": [
+              {
+                "slot": "Lunch · Virpazar option",
+                "name": "Restaurant Pelikan · Virpazar",
+                "specialty": "Lake Skadar carp and eel; local lake cuisine.",
+                "hours": "Listing roughly 08:00–22:00; confirm October hours",
+                "parking": "Use signed Virpazar public lot, then walk; do not leave valuables visible",
+                "cash": "Cash-only unverified; carry cash and ask",
+                "durationMinutes": 90,
+                "plan": "Only for the Skadar outing; book boat timing separately.",
+                "mapUrl": "https://maps.google.com/?q=Restaurant%20Pelikan%20%C2%B7%20Virpazar%20Montenegro",
+                "sourceUrl": "https://pelikan-zec.com/"
+              },
+              {
+                "slot": "Dinner · Kotor",
+                "name": "Pržun · Old Town",
+                "specialty": "Fresh fish/seafood and Njeguši prosciutto.",
+                "hours": "Official hours listed 09:00–23:30; reconfirm",
+                "parking": "Hotel or signed edge lot, then walk into Old Town",
+                "cash": "Cash-only unverified; carry cash and ask",
+                "durationMinutes": 90,
+                "plan": "Reserve; leave bags at hotel.",
+                "mapUrl": "https://maps.google.com/?q=Pr%C5%BEun%20%C2%B7%20Old%20Town%20Montenegro",
+                "sourceUrl": "https://przun.me/"
+              }
+            ],
+            "coffee": [
+              {
+                "slot": "Morning",
+                "name": "Small Talks · Kotor",
+                "why": "Specialty espresso and pour-over; proper roaster-led coffee stop.",
+                "hours": "Official listing daily 08:00–22:00",
+                "parking": "Walk from Kotor lodging; Old Town parking is signed/paid",
+                "mapUrl": "https://maps.google.com/?q=Small%20Talks%20%C2%B7%20Kotor%20Montenegro",
+                "sourceUrl": "https://www.smalltalks.me/"
+              }
+            ],
+            "supermarkets": [
+              {
+                "name": "Aroma City Tabačina · Kotor",
+                "hours": "07:00–23:45 listed; verify date",
+                "parking": "Urban parking not guaranteed; shop after hotel check-in",
+                "plan": "Base-hub groceries for water/snacks; leave luggage at lodging.",
+                "mapUrl": "https://maps.google.com/?q=Aroma%20City%20Taba%C4%8Dina%20%C2%B7%20Kotor%20Montenegro",
+                "sourceUrl": "https://aromamarketi.me/lokacije/"
+              }
+            ]
+          }
         },
         {
           "day": 6,
@@ -616,7 +871,47 @@
             ]
           ],
           "tags": [],
-          "heading": "Day 6 - Kotor → TIV / rental return / flight home"
+          "heading": "Day 6 - Kotor → TIV / rental return / flight home",
+          "food": {
+            "meals": [
+              {
+                "slot": "Breakfast · Kotor",
+                "name": "Small Talks · Kotor",
+                "specialty": "Specialty espresso with brunch plates; eat before leaving.",
+                "hours": "Daily 08:00–22:00 published; confirm early service",
+                "parking": "Walk from hotel; no transfer detour",
+                "cash": "Cash-only unverified; carry card/cash",
+                "durationMinutes": 45,
+                "plan": "Leave Kotor by 09:30; use only if timing allows.",
+                "mapUrl": "https://maps.google.com/?q=Small%20Talks%20%C2%B7%20Kotor%20Montenegro",
+                "sourceUrl": "https://www.smalltalks.me/"
+              },
+              {
+                "slot": "Lunch · after car return",
+                "name": "Tivat Airport café / terminal food",
+                "specialty": "Choose a full meal after rental return; keep airport margin intact.",
+                "hours": "Terminal vendor hours vary; verify locally",
+                "parking": "Airport car-return/terminal parking only",
+                "cash": "Payment methods vary",
+                "durationMinutes": 35,
+                "plan": "Do not add a pre-return detour; terminal by 12:15.",
+                "mapUrl": "https://maps.google.com/?q=Tivat%20Airport%20caf%C3%A9%20%2F%20terminal%20food%20Montenegro",
+                "sourceUrl": ""
+              }
+            ],
+            "coffee": [
+              {
+                "slot": "Morning",
+                "name": "Small Talks · Kotor",
+                "why": "Specialty espresso/pour-over before the airport run.",
+                "hours": "Daily 08:00–22:00 published; verify opening time",
+                "parking": "Walk from lodging; keep the 09:30 departure",
+                "mapUrl": "https://maps.google.com/?q=Small%20Talks%20%C2%B7%20Kotor%20Montenegro",
+                "sourceUrl": "https://www.smalltalks.me/"
+              }
+            ],
+            "supermarkets": []
+          }
         }
       ],
       "checks": [
@@ -780,7 +1075,64 @@
             "Food & Dining",
             "Romantic Experiences"
           ],
-          "heading": "Day 1 - Tivat → Kotor / Bay ferry option / Old Town"
+          "heading": "Day 1 - Tivat → Kotor / Bay ferry option / Old Town",
+          "food": {
+            "meals": [
+              {
+                "slot": "Lunch · Tivat/Kotor arrival",
+                "name": "ALMECO Café Negro Bar-Restaurant · Tivat Airport",
+                "specialty": "Airport café-bar with food/drinks; use for a sandwich/takeaway before collecting the car, not as a drive stop.",
+                "hours": "Official airport listing: aligned to airport opening hours; verify service and stock on arrival",
+                "parking": "Inside terminal; collect food before rental pickup",
+                "cash": "Cash/card varies",
+                "durationMinutes": 25,
+                "plan": "Eat before the 15:15–15:30 go/no-go departure window. If airport time is tight, carry sealed food from the flight; do not stop on the mountain road.",
+                "mapUrl": "https://maps.google.com/?q=ALMECO%20Cafe%20Negro%20Bar%20Restaurant%20Tivat%20Airport%20Montenegro",
+                "sourceUrl": "https://montenegroairports.com/aerodrom-tivat/sadrzaji-i-servisi/"
+              },
+              {
+                "slot": "Dinner · Kotor",
+                "name": "Ombra · Kotor Old Town",
+                "specialty": "Adriatic seafood, daily catch and black cuttlefish risotto.",
+                "hours": "Official listing 08:30–22:30; confirm October service",
+                "parking": "Hotel or signed Old Town-edge lot, then walk in",
+                "cash": "Cash-only unverified; carry cash and ask",
+                "durationMinutes": 90,
+                "plan": "Check in and unload first; reserve if possible.",
+                "mapUrl": "https://maps.google.com/?q=Ombra%20Restaurant%20Kotor%20Old%20Town%20Montenegro",
+                "sourceUrl": "https://ombraoldtown.com/"
+              }
+            ],
+            "coffee": [
+              {
+                "slot": "Morning",
+                "name": "Small Talks · Kotor",
+                "why": "Specialty espresso and pour-over for the next morning.",
+                "hours": "Daily 08:00–22:00 listed",
+                "parking": "Walk from lodging",
+                "mapUrl": "https://maps.google.com/?q=Small%20Talks%20%C2%B7%20Kotor%20Montenegro",
+                "sourceUrl": "https://www.smalltalks.me/"
+              }
+            ],
+            "supermarkets": [
+              {
+                "name": "Voli Hipermarket Radanovići",
+                "hours": "Hours unverified; check branch same day",
+                "parking": "Dedicated parking indicated in branch materials; loaded-car details unverified",
+                "plan": "Buy trunk pantry only if it fits airport/ferry/hotel timing; otherwise shop after unloading in Kotor.",
+                "mapUrl": "https://maps.google.com/?q=Voli%20Hipermarket%20Radanovi%C4%87i%20Montenegro",
+                "sourceUrl": "https://kompanija.voli.me/voli-hipermarket-radanovici/"
+              },
+              {
+                "name": "IDEA Butiko Radanovići",
+                "hours": "Mon–Sat 07:30–21:30 published; Sunday closed",
+                "parking": "On-site paid parking: first 30 min free; then paid, parking payment cash only",
+                "plan": "Radanovići alternative; do not leave luggage visible.",
+                "mapUrl": "https://maps.google.com/?q=IDEA%20Butiko%20Radanovi%C4%87i%20Montenegro",
+                "sourceUrl": "https://butiko.me/"
+              }
+            ]
+          }
         },
         {
           "day": 2,
@@ -864,7 +1216,56 @@
             "Romantic Experiences",
             "Food & Dining"
           ],
-          "heading": "Day 2 - Kotor / Old Town / Perast"
+          "heading": "Day 2 - Kotor / Old Town / Perast",
+          "food": {
+            "meals": [
+              {
+                "slot": "Lunch · Kotor/Perast corridor",
+                "name": "Konoba Scala Santa · Kotor",
+                "specialty": "Fresh Adriatic fish and mussels buzara; local seafood konoba.",
+                "hours": "Daily 10:00–23:00 listing; confirm",
+                "parking": "Old Town pedestrian area; park at lodging/signed public lot and walk",
+                "cash": "Cash and cards reported; cash-only no",
+                "durationMinutes": 75,
+                "plan": "Eat before the Perast drive or after returning, not while car is parked with bags.",
+                "mapUrl": "https://maps.google.com/?q=Konoba%20Scala%20Santa%20%C2%B7%20Kotor%20Montenegro",
+                "sourceUrl": "https://konobascalasanta.com/en/o-nama-2/"
+              },
+              {
+                "slot": "Dinner · Dobrota",
+                "name": "Dobrotski Dvori",
+                "specialty": "Njeguši ham and local/Mediterranean dishes.",
+                "hours": "Call to confirm October opening",
+                "parking": "Venue parking must be confirmed; taxi/walk from lodging preferred",
+                "cash": "Cash-only unverified; ask",
+                "durationMinutes": 90,
+                "plan": "Reserve and verify parking before driving.",
+                "mapUrl": "https://maps.google.com/?q=Dobrotski%20Dvori%20Montenegro",
+                "sourceUrl": "https://dobrotskidvori.com/en/"
+              }
+            ],
+            "coffee": [
+              {
+                "slot": "Morning",
+                "name": "Small Talks · Kotor",
+                "why": "Specialty espresso/pour-over.",
+                "hours": "Daily 08:00–22:00 listed",
+                "parking": "Walk from lodging",
+                "mapUrl": "https://maps.google.com/?q=Small%20Talks%20%C2%B7%20Kotor%20Montenegro",
+                "sourceUrl": "https://www.smalltalks.me/"
+              }
+            ],
+            "supermarkets": [
+              {
+                "name": "Aroma 18 · TC Kamelija",
+                "hours": "07:00–22:00 listed Mon–Sat; Sunday verify",
+                "parking": "Shopping-center parking available; height/fees and estate-car access confirm",
+                "plan": "Park once at hotel and shop on foot/taxi where possible.",
+                "mapUrl": "https://maps.google.com/?q=Aroma%2018%20%C2%B7%20TC%20Kamelija%20Montenegro",
+                "sourceUrl": "https://aromamarketi.me/lokacije/"
+              }
+            ]
+          }
         },
         {
           "day": 3,
@@ -940,7 +1341,56 @@
             "Sightseeing",
             "Food & Dining"
           ],
-          "heading": "Day 3 - Kotor → Lovćen → Cetinje / mountain fallback"
+          "heading": "Day 3 - Kotor → Lovćen → Cetinje / mountain fallback",
+          "food": {
+            "meals": [
+              {
+                "slot": "Lunch · Ivanova Korita",
+                "name": "Ivanov Konak · Lovćen",
+                "specialty": "Lovćen mountain lodge cuisine; confirm day menu.",
+                "hours": "Listing 07:00–23:00; reconfirm",
+                "parking": "Guest parking reported; verify space before committing",
+                "cash": "Cash-only unverified; carry cash",
+                "durationMinutes": 90,
+                "plan": "On the Lovćen outing; check weather/road before lunch stop.",
+                "mapUrl": "https://maps.google.com/?q=Ivanov%20Konak%20%C2%B7%20Lov%C4%87en%20Montenegro",
+                "sourceUrl": "https://www.tripadvisor.co.il/Restaurant_Review-g304076-d3531002-Reviews-Hotel_Restaurant_Ivanov_Konak-Cetinje.html"
+              },
+              {
+                "slot": "Dinner · Njeguši corridor",
+                "name": "Kafana Kod Pera na Bukovici",
+                "specialty": "Njeguši prosciutto, local cheese and cured meats.",
+                "hours": "Published hours vary; generally 08:00–22:00; Monday discrepancy—call",
+                "parking": "Rural village roadside parking not verified; use only safe signed space",
+                "cash": "Cash-only unverified; carry cash",
+                "durationMinutes": 90,
+                "plan": "Only if returning via Njeguši and open; otherwise dinner in Kotor.",
+                "mapUrl": "https://maps.google.com/?q=Kafana%20Kod%20Pera%20na%20Bukovici%20Montenegro",
+                "sourceUrl": "https://moja-djelatnost.me/restoran-sa-domacim-susenim-mesom-cetinje/kafana-kod-pera-na-bukovici/MM17Nozb"
+              }
+            ],
+            "coffee": [
+              {
+                "slot": "Morning",
+                "name": "Small Talks · Kotor",
+                "why": "Specialty espresso/pour-over before the mountain climb.",
+                "hours": "Daily 08:00–22:00 listed",
+                "parking": "Walk from lodging",
+                "mapUrl": "https://maps.google.com/?q=Small%20Talks%20%C2%B7%20Kotor%20Montenegro",
+                "sourceUrl": "https://www.smalltalks.me/"
+              }
+            ],
+            "supermarkets": [
+              {
+                "name": "Aroma City Tabačina · Kotor",
+                "hours": "07:00–23:45 listed; confirm",
+                "parking": "Urban parking not verified; leave car at base",
+                "plan": "Stock water before Lovćen; no loaded-car sightseeing stop.",
+                "mapUrl": "https://maps.google.com/?q=Aroma%20City%20Taba%C4%8Dina%20%C2%B7%20Kotor%20Montenegro",
+                "sourceUrl": "https://aromamarketi.me/lokacije/"
+              }
+            ]
+          }
         },
         {
           "day": 4,
@@ -1029,7 +1479,56 @@
             "Food & Dining",
             "Romantic Experiences"
           ],
-          "heading": "Day 4 - Kotor → Virpazar / Lake Skadar"
+          "heading": "Day 4 - Kotor → Virpazar / Lake Skadar",
+          "food": {
+            "meals": [
+              {
+                "slot": "Lunch · Virpazar",
+                "name": "Restaurant Pelikan · Virpazar",
+                "specialty": "Lake Skadar carp/eel and local cuisine.",
+                "hours": "Roughly 08:00–22:00 listing; confirm",
+                "parking": "Signed public lot, walk to restaurant",
+                "cash": "Cash-only unverified; carry cash",
+                "durationMinutes": 90,
+                "plan": "Book/check opening and boat return before departure.",
+                "mapUrl": "https://maps.google.com/?q=Restaurant%20Pelikan%20%C2%B7%20Virpazar%20Montenegro",
+                "sourceUrl": "https://pelikan-zec.com/"
+              },
+              {
+                "slot": "Dinner · Kotor",
+                "name": "Ombra · Old Town",
+                "specialty": "Adriatic seafood and black cuttlefish risotto.",
+                "hours": "Official listing 08:30–22:30; confirm",
+                "parking": "Park at lodging or marked edge lot; walk",
+                "cash": "Cash-only unverified; carry cash",
+                "durationMinutes": 90,
+                "plan": "Keep the car parked at Kotor lodging.",
+                "mapUrl": "https://maps.google.com/?q=Ombra%20%C2%B7%20Old%20Town%20Montenegro",
+                "sourceUrl": "https://ombraoldtown.com/"
+              }
+            ],
+            "coffee": [
+              {
+                "slot": "Morning",
+                "name": "CAVE Coffee · Kotor",
+                "why": "Locally roasted espresso/filter.",
+                "hours": "Mon–Sat 09:00–23:00 center listing; confirm Sunday",
+                "parking": "Kamelija parking; walk from base",
+                "mapUrl": "https://maps.google.com/?q=CAVE%20Coffee%20%C2%B7%20Kotor%20Montenegro",
+                "sourceUrl": "https://www.kamelija.me/en/stores/cave-coffee/"
+              }
+            ],
+            "supermarkets": [
+              {
+                "name": "Aroma City Tabačina · Kotor",
+                "hours": "07:00–23:45 listed; verify",
+                "parking": "Urban parking uncertain; walk from lodging",
+                "plan": "Groceries for boat day/base; do not leave bags in car.",
+                "mapUrl": "https://maps.google.com/?q=Aroma%20City%20Taba%C4%8Dina%20%C2%B7%20Kotor%20Montenegro",
+                "sourceUrl": "https://aromamarketi.me/lokacije/"
+              }
+            ]
+          }
         },
         {
           "day": 5,
@@ -1109,7 +1608,56 @@
             "Romantic Experiences",
             "Food & Dining"
           ],
-          "heading": "Day 5 - Kotor / Tivat spa / Bay-side finish"
+          "heading": "Day 5 - Kotor / Tivat spa / Bay-side finish",
+          "food": {
+            "meals": [
+              {
+                "slot": "Lunch · Kotor/Tivat Bay",
+                "name": "Pržun · Kotor Old Town",
+                "specialty": "Seafood and Njeguši prosciutto.",
+                "hours": "09:00–23:30 listed; reconfirm",
+                "parking": "Park at hotel/signed lot; walk in",
+                "cash": "Cash-only unverified; carry cash",
+                "durationMinutes": 75,
+                "plan": "Eat before spa/Bay outing or after returning.",
+                "mapUrl": "https://maps.google.com/?q=Pr%C5%BEun%20%C2%B7%20Kotor%20Old%20Town%20Montenegro",
+                "sourceUrl": "https://przun.me/"
+              },
+              {
+                "slot": "Dinner · Kotor waterfront",
+                "name": "Galion · Šuranj",
+                "specialty": "Waterfront seafood and Mediterranean menu.",
+                "hours": "Official hours 12:00–23:00; kitchen listed to 22:45",
+                "parking": "Guest parking reported; confirm space when reserving",
+                "cash": "Cash-only unverified; ask",
+                "durationMinutes": 105,
+                "plan": "Reserve; leave luggage at Kotor lodging.",
+                "mapUrl": "https://maps.google.com/?q=Galion%20%C2%B7%20%C5%A0uranj%20Montenegro",
+                "sourceUrl": "https://galion.me/menu/"
+              }
+            ],
+            "coffee": [
+              {
+                "slot": "Morning",
+                "name": "CAVE Coffee · Kotor",
+                "why": "Locally roasted espresso and filter coffee.",
+                "hours": "Mon–Sat 09:00–23:00 listing; verify Sunday",
+                "parking": "Kamelija parking or walk from lodging",
+                "mapUrl": "https://maps.google.com/?q=CAVE%20Coffee%20%C2%B7%20Kotor%20Montenegro",
+                "sourceUrl": "https://www.kamelija.me/en/stores/cave-coffee/"
+              }
+            ],
+            "supermarkets": [
+              {
+                "name": "Aroma 18 · TC Kamelija",
+                "hours": "07:00–22:00 listed Mon–Sat; Sunday verify",
+                "parking": "Mall parking; loaded-car fit/fees unverified",
+                "plan": "Buy any final water/snacks after checkout plan is settled.",
+                "mapUrl": "https://maps.google.com/?q=Aroma%2018%20%C2%B7%20TC%20Kamelija%20Montenegro",
+                "sourceUrl": "https://aromamarketi.me/lokacije/"
+              }
+            ]
+          }
         },
         {
           "day": 6,
@@ -1164,7 +1712,47 @@
             ]
           ],
           "tags": [],
-          "heading": "Day 6 - Kotor → TIV / rental return / flight home"
+          "heading": "Day 6 - Kotor → TIV / rental return / flight home",
+          "food": {
+            "meals": [
+              {
+                "slot": "Breakfast · Kotor",
+                "name": "Small Talks · Kotor",
+                "specialty": "Specialty espresso and brunch.",
+                "hours": "Daily 08:00–22:00 listing; check early opening",
+                "parking": "Walk from lodging",
+                "cash": "Cash-only unverified; card/cash",
+                "durationMinutes": 45,
+                "plan": "Only if it preserves 09:30 airport departure.",
+                "mapUrl": "https://maps.google.com/?q=Small%20Talks%20%C2%B7%20Kotor%20Montenegro",
+                "sourceUrl": "https://www.smalltalks.me/"
+              },
+              {
+                "slot": "Lunch · after rental return",
+                "name": "ALMECO Café Negro Bar-Restaurant · Tivat Airport",
+                "specialty": "Airport café-bar; have a meal after rental return and before terminal check-in.",
+                "hours": "Official airport listing: aligned to airport opening hours; verify service and stock",
+                "parking": "Inside terminal after the car return",
+                "cash": "Payment methods vary; confirm at counter",
+                "durationMinutes": 35,
+                "plan": "Return the car by 11:30 and reach terminal by 12:15; no pre-return detour.",
+                "mapUrl": "https://maps.google.com/?q=ALMECO%20Cafe%20Negro%20Bar%20Restaurant%20Tivat%20Airport%20Montenegro",
+                "sourceUrl": "https://montenegroairports.com/aerodrom-tivat/sadrzaji-i-servisi/"
+              }
+            ],
+            "coffee": [
+              {
+                "slot": "Morning",
+                "name": "Small Talks · Kotor",
+                "why": "Specialty espresso/pour-over before departure.",
+                "hours": "Daily 08:00–22:00 listing; check morning hours",
+                "parking": "Walk; keep the direct airport run",
+                "mapUrl": "https://maps.google.com/?q=Small%20Talks%20%C2%B7%20Kotor%20Montenegro",
+                "sourceUrl": "https://www.smalltalks.me/"
+              }
+            ],
+            "supermarkets": []
+          }
         }
       ],
       "checks": [
@@ -1562,7 +2150,82 @@
     [
       "Žabljak sunrise, sunset and civil twilight · Oct 2026",
       "https://www.timeanddate.com/sun/@3186999?month=10&year=2026"
+    ],
+    [
+      "Visit Žabljak · Momčilov Grad",
+      "https://visitzabljak.me/explore-zabljak/restaurant-momcilov-grad"
+    ],
+    [
+      "Aroma Market locations and hours",
+      "https://aromamarketi.me/lokacije/"
+    ],
+    [
+      "Voli Radanovići branch",
+      "https://kompanija.voli.me/voli-hipermarket-radanovici/"
+    ],
+    [
+      "IDEA Butiko parking and hours",
+      "https://butiko.me/"
+    ],
+    [
+      "Small Talks specialty coffee",
+      "https://www.smalltalks.me/"
+    ],
+    [
+      "Kamelija · CAVE Coffee",
+      "https://www.kamelija.me/en/stores/cave-coffee/"
+    ],
+    [
+      "Kastel Nikšić official",
+      "https://kastel.me/?lang=en&page_id=11611"
+    ],
+    [
+      "Konoba Scala Santa official",
+      "https://konobascalasanta.com/en/o-nama-2/"
+    ],
+    [
+      "Restaurant Pelikan official",
+      "https://pelikan-zec.com/"
+    ],
+    [
+      "Pržun official",
+      "https://przun.me/"
+    ],
+    [
+      "Ombra official",
+      "https://ombraoldtown.com/"
+    ],
+    [
+      "Galion official menu/hours",
+      "https://galion.me/menu/"
+    ],
+    [
+      "Dobrotski Dvori official",
+      "https://dobrotskidvori.com/en/"
+    ],
+    [
+      "Aerodromi Crne Gore · Tivat food and services",
+      "https://montenegroairports.com/aerodrom-tivat/sadrzaji-i-servisi/"
+    ],
+    [
+      "Zlatni Papagaj · official menu and dinner hours",
+      "https://zlatnipapagaj.com/"
     ]
   ],
-  "sourcesChecked": "2026-09-27"
+  "sourcesChecked": "2026-09-27",
+  "foodNotes": {
+    "cash": "No cash-only status was verifiable for recommended venues; listings say unconfirmed and direct travelers to carry cash/ask.",
+    "durations": "Meal durations are planning estimates, not venue promises.",
+    "hours": "Published hours are a September 2026 research snapshot; confirm directly for October dates.",
+    "day1Pantry": [
+      "2–3 × 5 L still-water jugs for lodging",
+      "4–6 × 500 ml cabin bottles plus electrolyte sachets",
+      "Pršut and Njeguši/Pljevlja cheese in an insulated cooler with ice packs",
+      "Crackers/breadsticks, nuts, dried fruit, apples/mandarins, granola or chocolate",
+      "Napkins, wet wipes, small trash bags; keep road water/snacks in the cabin",
+      "Buy perishable meat/cheese only when refrigeration is available; no loose food under loaded luggage"
+    ],
+    "day1Timing": "Primary: Day 1 has no safe supermarket/restaurant detour in its late mountain-transfer plan. Buy the trunk pantry before travel or use Radanovići only if the live go/no-go margin genuinely allows it; otherwise shop after check-in or on Day 2. Fallback: use Radanovići only if luggage is secured and the Bay/ferry timing allows it; otherwise check in, unload, then shop from the Kotor base.",
+    "fallbackDay1Timing": "On the coast fallback, buy the pantry at Radanovići only if all bags stay concealed and the ferry/hotel timing still works. Otherwise check in, unload first, then shop from the Kotor base."
+  }
 }
