@@ -3,19 +3,23 @@
   "waypoints": [
     {
       "id": "tiv-rental-pickup",
-      "name": "TIV rental pickup",
+      "name": "TIV · Europcar rental pickup (Arrivals desk)",
       "category": "Parking",
       "lat": 42.4047,
       "lng": 18.7233,
-      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=TIV%20rental%20pickup%2C%20Montenegro&travelmode=driving",
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Tivat%20Airport%20Europcar%20Arrivals%20desk%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
         "primary": [
           1
         ]
       },
-      "aliases": [],
-      "precision": "navigation pin"
+      "aliases": [
+        "TIV rental pickup",
+        "Europcar Arrivals desk"
+      ],
+      "precision": "navigation pin",
+      "bookingStatus": "Confirmed pickup · Oct 1, 14:30 · voucher 4H419663"
     },
     {
       "id": "tiv-zabljak-direct-route-via-kotor-risan-grahovo-niksic-and-savnik",
@@ -51,11 +55,11 @@
       },
       "aliases": [
         "Žabljak lodging",
-        "Runolist Chalet, Narodnih heroja"
+        "Runolist Chalet, Narodnih heroja, 84220 Žabljak"
       ],
-      "precision": "Borje locality coordinate; use address search for property-level arrival; pin is approximate",
-      "bookingStatus": "Confirmed stay · Oct 1–4",
-      "coordinateSource": "Borje locality from OpenStreetMap-based Mapcarta; approximate only",
+      "precision": "Approximate Žabljak/Borje pin; navigate to Runolist Chalet by the supplied Narodnih heroja address. Booking address has no building number.",
+      "bookingStatus": "Confirmed stay · Oct 1–4 · Booking 5203973379",
+      "coordinateSource": "Approximate locality coordinate; Booking.com confirms property street address but no public exact coordinate was available.",
       "sourceUrl": "https://mapcarta.com/18723988"
     },
     {
@@ -446,8 +450,8 @@
         "Conte Hotel Restaurant · Perast",
         "Conte Hotel Breakfast · Perast"
       ],
-      "precision": "OpenStreetMap hotel building / reception anchor; booked annex is unspecified",
-      "bookingStatus": "Confirmed stay · Oct 4–6",
+      "precision": "Hotel reception/property anchor; Classic Double Room entrance is unspecified.",
+      "bookingStatus": "Confirmed stay · Oct 4–6 · Booking 5198999691",
       "coordinateSource": "Hotel building / reception coordinate from OpenStreetMap-based Mapcarta",
       "sourceUrl": "https://mapcarta.com/W303003482"
     },
@@ -715,11 +719,11 @@
     },
     {
       "id": "tivat-airport-rental-return",
-      "name": "Tivat Airport rental return",
+      "name": "TIV · Europcar rental return · 13:00",
       "category": "Parking",
       "lat": 42.4047,
       "lng": 18.7233,
-      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Tivat%20Airport%20rental%20return%2C%20Montenegro&travelmode=driving",
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Tivat%20Airport%20Europcar%20car%20rental%20return%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
         "primary": [
@@ -727,7 +731,8 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "navigation pin",
+      "bookingStatus": "Confirmed return · Oct 6, 13:00 · voucher 4H419663"
     },
     {
       "id": "tivat-airport-cafe-terminal-food",

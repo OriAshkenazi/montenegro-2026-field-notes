@@ -6,7 +6,7 @@ let activeMapDay='all';
 let activeWaypoint=null;
 let mapMarkers=[];
 let routeLine=null;
-Promise.all([fetch('./itinerary.json?rev=2026-09-28a').then(r=>r.json()),fetch('./waypoints.json?rev=2026-09-28a').then(r=>r.json())]).then(([data,points])=>{trip=data;waypointData=points.waypoints;render();initializeMap();}).catch(()=>{$('#days').innerHTML='<p class="offline-note">Trip data is not cached yet. Open this page online once, then reload offline.</p>';$('#mapStatus').textContent='Waypoint index unavailable. Reconnect once to save it for offline use.';});
+Promise.all([fetch('./itinerary.json?rev=2026-09-28b').then(r=>r.json()),fetch('./waypoints.json?rev=2026-09-28b').then(r=>r.json())]).then(([data,points])=>{trip=data;waypointData=points.waypoints;render();initializeMap();}).catch(()=>{$('#days').innerHTML='<p class="offline-note">Trip data is not cached yet. Open this page online once, then reload offline.</p>';$('#mapStatus').textContent='Waypoint index unavailable. Reconnect once to save it for offline use.';});
 
 function activeRoute() { return trip.routes.primary; }
 const segmentTypes = {
@@ -81,13 +81,13 @@ function renderDays() {
 function renderTripOps() {
   const route=activeRoute();
   $('#nightBreakdown').innerHTML=route.nightBreakdown.map(n=>`<li><b>${n.base} · ${n.nights} ${n.nights===1?'night':'nights'}</b><span>${n.dates}</span></li>`).join('');
-  $('#stayDirectory').innerHTML=trip.stays.map(stay=>{const point=waypointById(stay.mapWaypointId);return `<article class="stay-reference"><h3>${escapeHTML(stay.name)}</h3><small>${escapeHTML(stay.dates)}</small>${point?`<button type="button" class="food-map-link" data-waypoint="${point.id}">Map pin ↗</button>`:''}</article>`;}).join('');
+  $('#stayDirectory').innerHTML=trip.stays.map(stay=>{const point=waypointById(stay.mapWaypointId);return `<article class="stay-reference"><span class="stay-badge">Confirmed</span><h3>${escapeHTML(stay.name)}</h3><small>${escapeHTML(stay.dates)}</small><p>${escapeHTML(stay.address)}</p><small>${escapeHTML(stay.room)} · ${escapeHTML(stay.checkIn)} · ${escapeHTML(stay.checkout)}</small><small>${escapeHTML(stay.confirmation)} · ${escapeHTML(stay.price)}</small><small>${escapeHTML(stay.payment)}</small>${stay.phone?`<a href="tel:${escapeHTML(stay.phone.replaceAll(' ',''))}">${escapeHTML(stay.phone)}</a>`:''}${point?`<button type="button" class="food-map-link" data-waypoint="${point.id}">Map pin ↗</button>`:''}</article>`;}).join('');
 }
 function render() {
   $('#routeTitle').textContent=trip.routeNames.primary;
   $('#days').setAttribute('aria-label',trip.routeNames.primary);
   renderDays();renderChecks();renderTripOps();renderFoodPane();
-  $('#budgetRows').innerHTML=trip.budget.map(x=>`<div class="budget-row"><div><b>${x.label}</b><small>${x.note}</small></div><strong>€${x.min}–${x.max}</strong></div>`).join('');
+  $('#budgetRows').innerHTML=trip.budget.map(x=>`<div class="budget-row"><div><b>${escapeHTML(x.label)}</b><small>${escapeHTML(x.note)}</small></div><strong>${x.currency==='ILS'?`₪${Number(x.amount).toLocaleString('en-IL',{minimumFractionDigits:2,maximumFractionDigits:2})}`:x.actual!==undefined?`€${Number(x.actual).toFixed(2)} actual`:`€${x.min}–${x.max}`}</strong></div>`).join('');
   $('#budgetMin').textContent=trip.budget.reduce((s,x)=>s+x.min,0);$('#budgetMax').textContent=trip.budget.reduce((s,x)=>s+x.max,0);
   $('#sourceList').innerHTML=trip.sources.map(([n,u])=>`<li><a href="${u}" target="_blank" rel="noreferrer">${n} ↗</a></li>`).join('');
   $('#emergencyNumbers').innerHTML=trip.emergency.map(x=>`<a href="${x.href}"><b>${x.number}</b><span>${x.label}</span></a>`).join('');
@@ -134,6 +134,6 @@ let orientationResizeTimer;addEventListener('resize',()=>{clearTimeout(orientati
 document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.tab,.pane').forEach(el=>el.classList.remove('active'));btn.classList.add('active');$('#pane-'+btn.dataset.pane).classList.add('active');}));
 $('#foodDayFilter').addEventListener('change',()=>renderFoodPane());
 
-const storageKey='montenegro-cash-2026';let carried=Number(localStorage.getItem(storageKey)||0);function cashText(){const b=$('#cashButton');b.textContent=carried>0?`€${carried} marked as carried · undo`:'Mark €150 as carried';$('#cashStatus').textContent=carried>0?'Saved on this device':'Tap to save your cash reminder';}cashText();$('#cashButton').addEventListener('click',()=>{carried=carried>0?0:150;localStorage.setItem(storageKey,String(carried));cashText();});
+const storageKey='montenegro-cash-2026';let carried=Number(localStorage.getItem(storageKey)||0);function cashText(){const b=$('#cashButton');b.textContent=carried>0?`€${carried} marked as carried · undo`:'Mark up to €225.39 available';$('#cashStatus').textContent=carried>0?'Saved on this device':'Runolist is cash-only; outstanding balance is not stated.';}cashText();$('#cashButton').addEventListener('click',()=>{carried=carried>0?0:225.39;localStorage.setItem(storageKey,String(carried));cashText();});
 if('serviceWorker'in navigator)addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').then(()=>$('#connection').textContent='Offline trip data ready').catch(()=>$('#connection').textContent='Offline cache unavailable'));
 let installPrompt;addEventListener('beforeinstallprompt',e=>{e.preventDefault();installPrompt=e;$('#install').hidden=false;});$('#install').addEventListener('click',async()=>{if(!installPrompt)return;installPrompt.prompt();await installPrompt.userChoice;installPrompt=null;$('#install').hidden=true;});

@@ -3,8 +3,8 @@ const fs=require('node:fs');
 const vm=require('node:vm');
 
 const source=fs.readFileSync('weather.js','utf8');
-assert(source.includes("id:'perast',name:'Conte Hotel · Perast'"));
-assert(source.includes("name:'Runolist Chalet · approximate Žabljak pin'"));
+assert(source.includes("id:'perast',name:'Conte Hotel · Perast (reception/property anchor)'"));
+assert(source.includes("name:'Runolist Chalet · Narodnih heroja (approximate pin)'"));
 assert(source.includes('mne-weather-forecast-v2'), 'coordinate changes must invalidate saved forecast payload');
 const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Podgorica',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 const hubIds=['tivat','perast','budva','podgorica','virpazar','zabljak','sedlo','kolasin'];

@@ -2,11 +2,11 @@
   const $ = selector => document.querySelector(selector);
   const hubs = [
     {id:'tivat',name:'Tivat',region:'Coast · Bay of Kotor',lat:42.4300,lon:18.6960},
-    {id:'perast',name:'Conte Hotel · Perast',region:'Coast · Bay of Kotor · Conte base',lat:42.48631,lon:18.69801},
+    {id:'perast',name:'Conte Hotel · Perast (reception/property anchor)',region:'Coast · Bay of Kotor · booked stay',lat:42.48631,lon:18.69801},
     {id:'budva',name:'Budva',region:'Coast · Adriatic',lat:42.2911,lon:18.8403},
     {id:'podgorica',name:'Podgorica',region:'Central · Capital',lat:42.4304,lon:19.2594},
     {id:'virpazar',name:'Virpazar',region:'Central · Lake Skadar',lat:42.2458,lon:19.0911},
-    {id:'zabljak',name:'Runolist Chalet · approximate Žabljak pin',region:'Highlands · Durmitor · Runolist base',lat:43.16556,lon:19.19004},
+    {id:'zabljak',name:'Runolist Chalet · Narodnih heroja (approximate pin)',region:'Highlands · Durmitor · booked stay',lat:43.16556,lon:19.19004},
     {id:'sedlo',name:'Sedlo Pass',region:'Highlands · P14',lat:43.0989,lon:19.0503},
     {id:'kolasin',name:'Kolašin',region:'Highlands · Northern',lat:42.8223,lon:19.5165}
   ];

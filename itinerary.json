@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-27",
+  "updated": "2026-09-28",
   "drivingCeilingAdjustedHours": 5.5,
   "terrainBufferPercent": 20,
   "routeNames": {
@@ -18,17 +18,32 @@
           "morning": [
             {
               "type": "LOGISTICS",
-              "text": "Planning estimate: flight lands at TIV at 13:50; flight number and ticket confirmation were not supplied.",
+              "text": "Confirmed EL AL flight LY5467: depart TLV at 11:50 and arrive TIV at 13:50 on Oct 1 (PNR 5682367).",
               "id": "day-1-morning-01"
             },
             {
+              "type": "CAUTION",
+              "id": "day-1-morning-06",
+              "text": "Landing at 13:50 leaves only 40 minutes before the 14:30 pickup. Go directly to the Arrivals desk and call Europcar at +382 20 653141 if delayed."
+            },
+            {
               "type": "LOGISTICS",
-              "text": "Collect the estate car, test-load both checked cases and both cabin trolleys beneath the closed parcel shelf, photograph existing damage, and save the roadside number.",
+              "text": "Europcar voucher 4H419663: pickup at Tivat Airport at 14:30; Europcar desk is in Arrivals and the car is at the airport. Rental booking total €362 (paid); class IGAR automatic crossover, Skoda Karoq or similar.",
               "id": "day-1-morning-02"
             },
             {
               "type": "LOGISTICS",
-              "text": "Planning estimate: aim to leave the airport around 15:15–15:30 only if landing, pickup, driver and road checks are all on track.",
+              "id": "day-1-morning-04",
+              "text": "Voucher refs: Flexible Autos 4H419663 / Europcar 1207623276. The €1,154 IGAR deposit requires a physical Visa, Mastercard or AmEx credit card in the main driver’s name; debit, virtual, prepaid and cash are not accepted. Bring original passport, licence, international driving permit and voucher."
+            },
+            {
+              "type": "CAUTION",
+              "id": "day-1-morning-05",
+              "text": "IGAR supplier excess is €1,089 (tax treatment per rental terms). Flexible Autos Excess Refund reimburses eligible claims; it is not an Europcar excess waiver and does not remove the deposit. The separate policy lists tires/wheels and undercarriage for reimbursement subject to terms, but excludes off-road/untarmacked and negligent driving; do not buy duplicate counter cover without checking terms."
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "After the 14:30 voucher pickup, aim to leave around 15:15–15:30 only if landing, rental collection, driver and live road/weather checks are all on track.",
               "id": "day-1-morning-03"
             }
           ],
@@ -92,15 +107,15 @@
             },
             {
               "type": "STAY",
-              "text": "The Runolist listing’s check-in window and late-arrival approval are not supplied; confirm directly with the host before travel.",
+              "text": "Runolist confirmation 5203973379: Two-Bedroom House for 2 adults; check-in Oct 1, 14:00–24:00. Total €225.39, cash-only at the property; paid amount/balance is not stated. Free cancellation through Sep 29, 2026 23:59 CEST, then €219.39; no-show fee same. Tell the host your arrival time in advance; +382 69 520 016.",
               "id": "day-1-evening-04"
             }
           ],
-          "parking": "Go directly to Runolist Chalet, Narodnih heroja, 84220 Žabljak, and unload immediately. Listing information indicates free private parking; confirm the booked unit’s access and late arrival with the host. The booking confirmation number was not supplied.",
-          "cash": "No planned toll or ferry. Keep a card and small cash notes accessible; fill the tank before the P14 day.",
+          "parking": "Runolist Chalet, Narodnih heroja, 84220 Žabljak. Booking.com listing indicates free private parking and shared kitchen access; confirm the booked unit’s access with the host. Booking 5203973379; cash-only payment at property, payment status/balance due not stated.",
+          "cash": "Keep up to €225.39 in cash available for Runolist until the already-paid amount is confirmed. Car rental €362 is paid; Europcar requires a physical Visa, Mastercard or AmEx credit card in the main driver’s name for a €1,154 deposit (fuel/extras may require more).",
           "stops": [
             [
-              "TIV rental pickup",
+              "TIV · Europcar rental pickup (Arrivals desk)",
               "https://maps.google.com/?q=Tivat%20Airport%20car%20rental"
             ],
             [
@@ -598,7 +613,7 @@
           "afternoon": [
             {
               "type": "STAY",
-              "text": "Go to the signed parking area at the Perast entrance; vehicles cannot enter the old town in May–October. Contact Conte about assistance from parking to reception, unload and check in.",
+              "text": "Conte booking 5198999691: Classic Double Room for 2 adults, check-in Oct 4, 15:00–21:00. Total €271.93, paid in full. Itemized cancellation terms: free through Sep 28, 2026 23:59 CEST, then €261/no-show; the confirmation intro has conflicting wording. Park at a signed Perast entrance lot; old town is closed to vehicles May–October. Call +382 67 257 387 about pickup availability; don’t assume it.",
               "id": "day-4-afternoon-01"
             },
             {
@@ -608,14 +623,14 @@
             },
             {
               "type": "WALK",
-              "text": "Conte publishes check-in from 15:00; confirm the individual booking and arrival plan. After unloading, rest or explore Perast on foot.",
+              "text": "The individual booking allows check-in 15:00–21:00. After parking and unloading, contact reception and check in; Conte’s reception/property pin does not identify the booked room entrance.",
               "id": "day-4-afternoon-03"
             }
           ],
           "evening": [
             {
               "type": "EAT",
-              "text": "Book dinner in Perast or near Conte and leave the car put.",
+              "text": "No restaurant reservation is included in the supplied documents. Check Conte restaurant service or choose another Perast dinner, and leave the car parked.",
               "id": "day-4-evening-01"
             },
             {
@@ -624,8 +639,8 @@
               "id": "day-4-evening-02"
             }
           ],
-          "parking": "Conte Hotel & Restaurant, Ul. Marka Martinovića bb, 85336 Perast. Old-town access is restricted to vehicles May–October; use a signed public car park at a town entrance and contact the hotel about available electric-vehicle transfer assistance. October price and individual booking terms are unconfirmed.",
-          "cash": "Keep €20 for fuel or toll contingencies. The planned M-6/M-7/M-8 return avoids Sozina and the A1.",
+          "parking": "Conte Hotel & Restaurant, Ul. Marka Martinovića bb, 85336 Perast; booking 5198999691. The confirmed room is a Classic Double Room. Vehicles cannot enter Perast old town May–October: use signed public parking at a town entrance (€20/day hotel-published), then walk or call +382 67 257 387 to ask whether hotel pickup is available. Do not assume pickup is available.",
+          "cash": "Conte booking €271.93 paid in full. Keep cash/card available for entrance parking (€20/day hotel-published) and other on-site spending.",
           "stops": [
             [
               "Runolist Chalet",
@@ -828,7 +843,7 @@
               "id": "day-5-evening-03"
             }
           ],
-          "parking": "Leave bags at Conte. For Perast, park at a signed entrance lot and walk. For Virpazar or Budva, use marked public lots; never leave valuables visible in the car.",
+          "parking": "Leave bags at Conte. For Perast, park at a signed entrance lot and walk; published parking is €20/day. For Virpazar or Budva, use marked public lots; never leave valuables visible in the car.",
           "cash": "Carry €20–40/person for the chosen outing. Three park days at €5 each cost €15/person; the 2026 all-parks annual pass is €13.50/person, if all three admissions are required.",
           "stops": [
             [
@@ -904,12 +919,12 @@
               {
                 "slot": "Breakfast · Conte Hotel",
                 "name": "Conte Hotel & Restaurant",
-                "specialty": "Hotel-published breakfast service. Whether it is included in the stay is unconfirmed.",
+                "specialty": "Breakfast is included in the confirmed Conte booking.",
                 "hours": "08:00–10:30 published; check the booking and service on arrival.",
                 "parking": "At the hotel; vehicle access to Perast old town is restricted.",
-                "cash": "Inclusion/payment not supplied; confirm with the hotel.",
+                "cash": "Included in paid €271.93 stay total.",
                 "durationMinutes": 45,
-                "plan": "Do not assume breakfast is prepaid or included; confirm the reservation terms or arrange an alternative.",
+                "plan": "Breakfast service is published 08:00–10:30; confirm operating details with reception.",
                 "mapUrl": "https://maps.google.com/?q=Conte%20Hotel%20%26%20Restaurant%2C%20Perast%2C%20Montenegro",
                 "sourceUrl": "https://hotelconte.me/our-hotel",
                 "id": "food-day-5-meals-03",
@@ -948,7 +963,7 @@
           "date": "Tue · Oct 6",
           "region": "Coast · Tivat Airport",
           "base": "Conte Hotel & Restaurant · Perast",
-          "drive": "Perast → TIV · allow 35–45 min in live planning; return car by 11:30 target",
+          "drive": "Perast → TIV · allow 35–45 min in live planning; Europcar voucher return time 13:00.",
           "adjustedHours": 0.4,
           "morning": [
             {
@@ -968,7 +983,7 @@
             },
             {
               "type": "LOGISTICS",
-              "text": "Refuel only if your contract requires it, photograph the fuel gauge and car condition, and return the car by 11:30.",
+              "text": "Europcar return is booked for 13:00 at Tivat Airport (voucher 4H419663). Return full-to-full: refuel within 5 km of the drop-off point, keep the fuel receipt, photograph fuel/odometer and request a closed return contract.",
               "id": "day-6-morning-04"
             }
           ],
@@ -990,8 +1005,8 @@
             }
           ],
           "evening": [],
-          "parking": "Check out of Conte by its published 11:00 deadline (confirm the booking). Leave with generous traffic buffer, return car by the existing 11:30 planning target and reach the terminal by 12:15. Flight and rental voucher details were not supplied.",
-          "cash": "Keep a payment card accessible; only refuel if your contract requires a full tank.",
+          "parking": "Check out of Conte by 11:00. Europcar voucher 4H419663 requires airport return at 13:00; refuel within 5 km and retain receipt. The existing return-flight timing and airport context are unchanged.",
+          "cash": "Rental paid €362. Europcar deposit €1,154 is required on a physical accepted credit card in the main driver’s name; fuel/extras deposit may be additional. Full-to-full fuel; refuel within 5 km of the return point.",
           "stops": [
             [
               "Conte Hotel & Restaurant",
@@ -1002,7 +1017,7 @@
               "https://www.google.com/maps/dir/?api=1&origin=Conte%20Hotel%20%26%20Restaurant%2C%20Perast%2C%20Montenegro&destination=Tivat%20Airport%2C%20Montenegro&travelmode=driving"
             ],
             [
-              "Tivat Airport rental return",
+              "TIV · Europcar rental return · 13:00",
               "https://maps.google.com/?q=Tivat%20Airport%20car%20rental%20return"
             ]
           ],
@@ -1025,14 +1040,14 @@
                 "waypointId": "tivat-airport-cafe-terminal-food"
               },
               {
-                "slot": "Breakfast · 08:00 if included",
+                "slot": "Breakfast · Conte included",
                 "name": "Conte Hotel & Restaurant",
-                "specialty": "Hotel-published breakfast service, 08:00–10:30; booking inclusion is unconfirmed.",
+                "specialty": "Breakfast included in the confirmed Conte booking; published service 08:00–10:30.",
                 "hours": "Published 08:00–10:30; verify on arrival.",
                 "parking": "Check out by the published 11:00 deadline and leave the car at the Perast entrance lot.",
-                "cash": "Inclusion/payment not supplied; confirm with the hotel.",
+                "cash": "Included in paid €271.93 stay total.",
                 "durationMinutes": 45,
-                "plan": "A breakfast at opening gives a 09:30 airport departure buffer. If not included or not operating, arrange breakfast separately and preserve the airport buffer.",
+                "plan": "Breakfast is included. Confirm the morning service details with reception.",
                 "mapUrl": "https://maps.google.com/?q=Conte%20Hotel%20%26%20Restaurant%2C%20Perast%2C%20Montenegro",
                 "sourceUrl": "https://hotelconte.me/our-hotel",
                 "id": "food-day-6-meals-02",
@@ -1103,15 +1118,25 @@
   "budget": [
     {
       "label": "Lodging · 5 nights, two adults",
-      "min": 650,
-      "max": 1100,
-      "note": "Planning range for five lodging nights: Runolist Chalet in Žabljak x3 and Conte Hotel & Restaurant in Perast x2. Actual booking totals and prepaid balances were not supplied."
+      "min": 497.32,
+      "max": 497.32,
+      "note": "Confirmed actuals: Runolist €225.39 (cash-only; amount already paid/balance due not stated) + Conte €271.93 (paid in full, breakfast included). Conte cutoff/fee details are itemized in its card.",
+      "actual": 497.32
     },
     {
-      "label": "Rental · estate/wagon + insurance",
-      "min": 350,
-      "max": 650,
-      "note": "Five-day planning allowance. Exact midsize estate, low-excess SCDW, glass, tires/wheels, underbody/gravel and roadside cover must be quoted."
+      "label": "Rental · Europcar IGAR booking",
+      "min": 362,
+      "max": 362,
+      "note": "€362 rental booking total paid (car class IGAR, Skoda Karoq or similar). Separate €1,154 deposit is required at pickup and is not an expense; fuel/extras hold may be additional. Flexible Autos excess refund is reimbursement, not an excess waiver; supplier excess €1,089. Tire/wheel/undercarriage reimbursement is subject to policy terms and off-road exclusions.",
+      "actual": 362
+    },
+    {
+      "label": "Flights · confirmed card charge (2 passengers)",
+      "currency": "ILS",
+      "amount": 2616.81,
+      "min": 0,
+      "max": 0,
+      "note": "Approved Skygini Solutions Ltd card charge on Sep 25, 2026, per supplied screenshot. Kept in ILS; excluded from the EUR subtotal."
     },
     {
       "label": "Fuel + tolls",
@@ -1139,7 +1164,7 @@
     }
   ],
   "cashTracker": {
-    "target": 150,
+    "target": 225.39,
     "storageKey": "montenegro-cash-2026"
   },
   "emergency": [
@@ -1445,21 +1470,40 @@
       "status": "Confirmed stay",
       "dates": "Check-in Oct 1 · check-out Oct 4, 2026",
       "address": "Narodnih heroja, 84220 Žabljak, Montenegro",
-      "amenities": "The property listing indicates kitchen access and free private parking; confirm details for the booked unit.",
-      "checkIn": "Individual check-in window and late arrival approval not supplied.",
-      "confirmation": "Reservation number, price and balance not supplied.",
-      "mapWaypointId": "runolist-chalet"
+      "amenities": "Booking.com listing indicates shared kitchen access and free private parking; confirm access/parking details for the booked Two-Bedroom House.",
+      "checkIn": "Oct 1, 14:00–24:00; notify the host of arrival time in advance.",
+      "confirmation": "Booking.com confirmation 5203973379",
+      "mapWaypointId": "runolist-chalet",
+      "room": "Two-Bedroom House · 2 adults",
+      "checkout": "Oct 4, 07:00–10:00",
+      "price": "€225.39 total · payment already made/balance due not stated",
+      "payment": "Cash only at property; keep up to €225.39 available until payment status is confirmed.",
+      "cancellation": "Free through Sep 29, 2026 23:59 CEST; €219.39 from Sep 30 00:00; no-show fee same.",
+      "phone": "+382 69 520 016"
     },
     {
       "name": "Conte Hotel & Restaurant",
       "status": "Confirmed stay",
       "dates": "Check-in Oct 4 · check-out Oct 6, 2026",
       "address": "Ul. Marka Martinovića bb, 85336 Perast, Montenegro",
-      "amenities": "Hotel-published breakfast hours are 08:00–10:30; inclusion is unconfirmed.",
-      "checkIn": "Published check-in from 15:00; check-out by 11:00. Confirm against the individual booking.",
-      "confirmation": "Reservation number, price and balance not supplied.",
+      "amenities": "Breakfast included in this booking; hotel-published breakfast hours 08:00–10:30.",
+      "checkIn": "Oct 4, 15:00–21:00",
+      "confirmation": "Booking.com confirmation 5198999691",
       "mapWaypointId": "conte-hotel-perast",
-      "phone": "+382 67 111 190"
+      "phone": "+382 67 111 190",
+      "room": "Classic Double Room · 2 adults",
+      "checkout": "Oct 6, 07:00–11:00",
+      "price": "€271.93 total · paid in full",
+      "payment": "Paid in full; no further payment due before stay.",
+      "cancellation": "Itemized schedule: free through Sep 28, 2026 23:59 CEST; €261 from Sep 29 00:00 and for no-show. Confirmation intro wording conflicts with its five-day rule; itemized schedule is used here."
     }
-  ]
+  ],
+  "flightPayment": {
+    "amount": 2616.81,
+    "currency": "ILS",
+    "status": "Approved",
+    "merchant": "Skygini Solutions Ltd",
+    "date": "2026-09-25",
+    "passengers": 2
+  }
 }
