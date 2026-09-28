@@ -96,19 +96,22 @@
     },
     {
       "id": "zlatni-papagaj-zabljak",
-      "name": "Zlatni Papagaj · Žabljak",
+      "name": "Zlatni Papagaj · Žabljak dinner",
       "category": "Meal",
-      "lat": 43.1555,
-      "lng": 19.1226,
-      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Zlatni%20Papagaj%20%C2%B7%20%C5%BDabljak%2C%20Montenegro&travelmode=driving",
+      "lat": 43.15487,
+      "lng": 19.11865,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Zlatni%20Papagaj%20%C2%B7%20%C5%BDabljak%20dinner%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
         "primary": [
-          1
+          1,
+          2,
+          3
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap venue coordinate; walk from lodging if practical",
+      "sourceUrl": "https://zlatnipapagaj.com/"
     },
     {
       "id": "voli-hipermarket-radanovici",
@@ -229,9 +232,9 @@
       "id": "restaurant-oro",
       "name": "Restaurant ORO",
       "category": "Meal",
-      "lat": 42.4247,
-      "lng": 18.7712,
-      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Restaurant%20ORO%2C%20Montenegro&travelmode=driving",
+      "lat": 43.15502,
+      "lng": 19.120281,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Restaurant%20ORO%2C%20Njego%C5%A1eva%203%2C%20%C5%BDabljak%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
         "primary": [
@@ -240,7 +243,7 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap/Maps.me venue location; confirm entrance on arrival"
     },
     {
       "id": "kacun-zabljak",
@@ -252,8 +255,7 @@
       "cash": "Ask",
       "days": {
         "primary": [
-          2,
-          3
+          2
         ]
       },
       "aliases": [],
@@ -263,17 +265,17 @@
       "id": "p14-sedlo-pass-route",
       "name": "P14 Sedlo Pass route",
       "category": "Parking",
-      "lat": 42.4247,
-      "lng": 18.7712,
-      "googleUrl": "https://www.google.com/maps/dir/?api=1&origin=%C5%BDabljak%2C%20Montenegro&destination=%C5%BDabljak%2C%20Montenegro&waypoints=Trsa%2C%20Montenegro%7CPlu%C5%BEine%2C%20Montenegro%7CPiva%20Lake%20viewpoint%2C%20Plu%C5%BEine%2C%20Montenegro&travelmode=driving",
+      "lat": 43.0989,
+      "lng": 19.0503,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&origin=Runolist%20Chalet%2C%20%C5%BDabljak%2C%20Montenegro&destination=%C5%BDabljak%2C%20Montenegro&waypoints=Sedlo%20Pass%2C%20Montenegro%7CTrsa%2C%20Montenegro%7CPlu%C5%BEine%2C%20Montenegro%7CPiva%20Lake%20viewpoint%2C%20Plu%C5%BEine%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
         "primary": [
-          3
+          2
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "route reference at Sedlo Pass; use live navigation for road timing"
     },
     {
       "id": "trsa-village-pullout",
@@ -285,7 +287,7 @@
       "cash": "Ask",
       "days": {
         "primary": [
-          3
+          2
         ]
       },
       "aliases": [],
@@ -301,7 +303,7 @@
       "cash": "Ask",
       "days": {
         "primary": [
-          3
+          2
         ]
       },
       "aliases": [
@@ -320,7 +322,7 @@
       "cash": "Ask",
       "days": {
         "primary": [
-          3
+          2
         ]
       },
       "aliases": [],
@@ -336,7 +338,7 @@
       "cash": "Ask",
       "days": {
         "primary": [
-          3
+          2
         ]
       },
       "aliases": [],
@@ -352,7 +354,7 @@
       "cash": "Ask",
       "days": {
         "primary": [
-          3
+          2
         ]
       },
       "aliases": [],
@@ -365,14 +367,14 @@
       "lat": 43.155,
       "lng": 18.839,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Restoran%20So%C4%8Dica%20%C2%B7%20Plu%C5%BEine%2C%20Montenegro&travelmode=driving",
-      "cash": "Card",
+      "cash": "Ask",
       "days": {
         "primary": [
-          3
+          2
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "approximate town pin; October service and payment need direct confirmation"
     },
     {
       "id": "savnik",
@@ -384,6 +386,7 @@
       "cash": "Ask",
       "days": {
         "primary": [
+          2,
           4
         ]
       },
@@ -403,6 +406,7 @@
       "cash": "Ask",
       "days": {
         "primary": [
+          2,
           4
         ]
       },
@@ -1702,9 +1706,7 @@
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=P14%20/%20Sedlo%20Pass%20out-and-back%20from%20%C5%BDabljak%20to%20Plu%C5%BEine%20and%20Piva%20viewpoint%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
-        "primary": [
-          3
-        ]
+        "primary": []
       },
       "aliases": [
         "P14",
@@ -1723,8 +1725,7 @@
       "cash": "Ask",
       "days": {
         "primary": [
-          2,
-          3
+          2
         ]
       },
       "aliases": [],
@@ -1739,9 +1740,7 @@
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=%C4%86urevac%20viewpoint%20/%20Tara%20Canyon%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
-        "primary": [
-          3
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -2008,6 +2007,158 @@
         "Lake Skadar"
       ],
       "precision": "navigation pin"
+    },
+    {
+      "id": "tara-bridge-viewpoint-conditional",
+      "name": "Đurđevića Tara Bridge / canyon viewpoint · access conditional",
+      "category": "Viewpoint",
+      "lat": 43.1507,
+      "lng": 19.2912,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=%C4%90ur%C4%91evi%C4%87a%20Tara%20Bridge%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask",
+      "days": {
+        "primary": [
+          3
+        ]
+      },
+      "aliases": [
+        "Tara bridge viewing stop · do not cross"
+      ],
+      "precision": "approximate bridge reference; not a confirmed parking or viewpoint pin",
+      "operatingNote": "Bridge crossing is closed through Oct 26, 2026 at 12:00. This coordinate marks the bridge area, not confirmed public viewpoint or parking. Do not cross, enter works, or stop on the road; proceed only to a safe public viewpoint confirmed open by local authorities."
+    },
+    {
+      "id": "gradska-kafanica-zabljak",
+      "name": "Gradska Kafanica · morning espresso (hours to confirm)",
+      "category": "Coffee",
+      "lat": 43.1554,
+      "lng": 19.1215,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Gradska%20Kafanica%20%C2%B7%20morning%20espresso%20(hours%20to%20confirm)%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask",
+      "days": {
+        "primary": [
+          2
+        ]
+      },
+      "aliases": [],
+      "precision": "approximate town pin; local directory lists 08:00 opening; reconfirm",
+      "sourceUrl": "https://findinmontenegro.com/item/gradska-kafanica-zabljak/"
+    },
+    {
+      "id": "piva-lake-restaurant-pluzine",
+      "name": "Restoran Piva Lake · Plužine",
+      "category": "Meal",
+      "lat": 43.1557,
+      "lng": 18.8388,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Restoran%20Piva%20Lake%20%C2%B7%20Plu%C5%BEine%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask",
+      "days": {
+        "primary": [
+          2
+        ]
+      },
+      "aliases": [],
+      "precision": "approximate business listing pin; confirm parking and October operation",
+      "sourceUrl": "https://www.moja-djelatnost.me/izdavanje-apartmana-i-restoran-pluzine/piva-lake/MM19_Jkh"
+    },
+    {
+      "id": "kolasin-town",
+      "name": "Kolašin · town center",
+      "category": "Activity",
+      "lat": 42.8232,
+      "lng": 19.5169,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kola%C5%A1in%20%C2%B7%20town%20center%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask",
+      "days": {
+        "primary": [
+          3
+        ]
+      },
+      "aliases": [],
+      "precision": "town-center reference pin"
+    },
+    {
+      "id": "caffe-select-kolasin",
+      "name": "Caffe Select · Kolašin morning coffee",
+      "category": "Coffee",
+      "lat": 42.82366,
+      "lng": 19.520754,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Caffe%20Select%20%C2%B7%20Kola%C5%A1in%20morning%20coffee%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask",
+      "days": {
+        "primary": [
+          3
+        ]
+      },
+      "aliases": [],
+      "precision": "town-center point; Tourism Organisation lists 07:00 winter opening, confirm for October",
+      "sourceUrl": "https://kolasin.me/kafici/"
+    },
+    {
+      "id": "dobre-vode-kolasin",
+      "name": "Dobre Vode · Kolašin–Mojkovac road",
+      "category": "Meal",
+      "lat": 42.8882416,
+      "lng": 19.5387035,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Dobre%20Vode%20%C2%B7%20Kola%C5%A1in%E2%80%93Mojkovac%20road%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask",
+      "days": {
+        "primary": [
+          3
+        ]
+      },
+      "aliases": [],
+      "precision": "OpenStreetMap point; tourism listing confirms route placement/parking; call for October service",
+      "sourceUrl": "https://kolasin.me/dobre-vode-restaurant/"
+    },
+    {
+      "id": "biogradsko-lake",
+      "name": "Biogradsko Lake · lake-loop trailhead",
+      "category": "Viewpoint",
+      "lat": 42.900603,
+      "lng": 19.595388,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Biogradsko%20Lake%20%C2%B7%20lake-loop%20trailhead%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask",
+      "days": {
+        "primary": [
+          3
+        ]
+      },
+      "aliases": [],
+      "precision": "trailhead/info-board coordinate; park road/access and trail condition need same-day confirmation"
+    },
+    {
+      "id": "tara-zipline-conditional",
+      "name": "Tara Canyon zipline · operator/access confirmation required",
+      "category": "Activity",
+      "lat": 43.151,
+      "lng": 19.296,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Tara%20Canyon%20zipline%20%C2%B7%20operator%2Faccess%20confirmation%20required%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask",
+      "days": {
+        "primary": [
+          3
+        ]
+      },
+      "aliases": [],
+      "precision": "approximate operator area pin; October operation and bridge-free return unconfirmed",
+      "operatingNote": "October operation depends on weather. Red Rock return walks across the bridge, closed through Oct 26, 2026; consider another line only if the operator confirms launch, retrieval and access do not require crossing."
+    },
+    {
+      "id": "black-lake-route",
+      "name": "Black Lake (Crno jezero) · shore loop",
+      "category": "Viewpoint",
+      "lat": 43.1445,
+      "lng": 19.0861,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Black%20Lake%20(Crno%20jezero)%20%C2%B7%20shore%20loop%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask",
+      "days": {
+        "primary": [
+          2
+        ]
+      },
+      "aliases": [],
+      "precision": "navigation reference pin"
     }
   ]
 }

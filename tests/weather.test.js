@@ -5,9 +5,9 @@ const vm=require('node:vm');
 const source=fs.readFileSync('weather.js','utf8');
 assert(source.includes("id:'perast',name:'Conte Hotel · Perast (reception/property anchor)'"));
 assert(source.includes("name:'Runolist Chalet · Narodnih heroja (approximate pin)'"));
-assert(source.includes('mne-weather-forecast-v2'), 'coordinate changes must invalidate saved forecast payload');
+assert(source.includes('mne-weather-forecast-v3'), 'coordinate changes must invalidate saved forecast payload');
 const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Podgorica',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
-const hubIds=['tivat','perast','budva','podgorica','virpazar','zabljak','sedlo','kolasin'];
+const hubIds=['tivat','perast','budva','podgorica','virpazar','zabljak','sedlo','kolasin','piva','biogradska','tara'];
 function fixture(){
   const days=Array.from({length:16},(_,i)=>{const date=new Date(`${today}T12:00:00Z`);date.setUTCDate(date.getUTCDate()+i);return date.toISOString().slice(0,10);});
   return hubIds.map(()=>{
@@ -18,7 +18,7 @@ function fixture(){
 function run(rows,{online=true,cached=null}={}){
   const selectors=['#weatherHub','#weatherMode','#weatherUpdated','#weatherError','#weatherLoading','#weatherForecast','#weatherDays','#hourlyTitle','#hourlyScroller','#weatherHubTitle','#alpineWarning','#alpineWarningDetails','#coastWeather','#alpineWeather'];
   const elements=Object.fromEntries(selectors.map(selector=>[selector,{value:selector==='#weatherHub'?'zabljak':'',textContent:'',innerHTML:'',hidden:selector==='#weatherForecast'||selector==='#alpineWarning',classList:{add(){},toggle(){}},addEventListener(){},querySelectorAll(){return[]}}]));
-  const store=new Map(cached?[["mne-weather-forecast-v2",JSON.stringify(cached)]]:[]);
+  const store=new Map(cached?[["mne-weather-forecast-v3",JSON.stringify(cached)]]:[]);
   const context={document:{querySelector:selector=>elements[selector]},navigator:{onLine:online},localStorage:{getItem:key=>store.get(key)||null,setItem:(key,value)=>store.set(key,value)},fetch:async()=>({ok:true,json:async()=>rows}),addEventListener(){},URL,Intl,Date,Math,Number,String,JSON,Array,Error};
   vm.runInNewContext(source,context);return new Promise(resolve=>setImmediate(()=>resolve({elements,store})));
 }
@@ -27,13 +27,14 @@ function run(rows,{online=true,cached=null}={}){
   const rows=fixture(),tripDay='2026-10-02',offTripDay='2026-09-30';
   let result=await run(rows);
   assert.equal(result.elements['#weatherMode'].textContent,'Live forecast');
+  assert(['piva','biogradska','tara'].every(id=>result.elements['#weatherHubTitle'].innerHTML.includes(`value="${id}"`)), 'new route hubs must be available in the selector');
   assert.equal((result.elements['#weatherDays'].innerHTML.match(/class="weather-day"/g)||[]).length,6);
   assert(result.elements['#weatherDays'].innerHTML.includes('Thu, 1 Oct')||result.elements['#weatherDays'].innerHTML.includes('Thu 1 Oct'));
   assert.equal((result.elements['#hourlyScroller'].innerHTML.match(/class="hour-cell"/g)||[]).length,24);
   assert(result.elements['#hourlyScroller'].innerHTML.includes('20%')&&result.elements['#hourlyScroller'].innerHTML.includes('0.0 mm'),'positive precipitation probability can coexist with a zero modelled amount');
   assert(result.elements['#hourlyScroller'].innerHTML.includes('height:0%'),'zero modelled precipitation must not draw a nonzero amount bar');
   assert(result.elements['#coastWeather'].innerHTML.includes('Sunrise 06:45 · Sunset 18:30'),'API local times must not shift with the device time zone');
-  assert(result.store.has('mne-weather-forecast-v2'));
+  assert(result.store.has('mne-weather-forecast-v3'));
 
   const offTrip=fixture(),outsideIndex=offTrip[5].daily.time.indexOf(offTripDay);offTrip[5].daily.temperature_2m_min[outsideIndex]=1;
   result=await run(offTrip);assert.equal(result.elements['#alpineWarning'].hidden,true,'weather outside the trip window must not warn');
@@ -43,6 +44,10 @@ function run(rows,{online=true,cached=null}={}){
 
   const wet=fixture(),wetIndex=wet[6].daily.time.indexOf(tripDay);wet[6].daily.precipitation_probability_max[wetIndex]=61;
   result=await run(wet);assert.equal(result.elements['#alpineWarning'].hidden,false,'precipitation above 60% at Sedlo must warn');
+
+  const lakeCold=fixture(),lakeColdIndex=lakeCold[9].daily.time.indexOf(tripDay);lakeCold[9].daily.temperature_2m_min[lakeColdIndex]=1;
+  result=await run(lakeCold);assert.equal(result.elements['#alpineWarning'].hidden,false,'Biogradska Gora must be included in adjusted route weather warnings');
+  assert(result.elements['#alpineWarningDetails'].textContent.includes('Biogradsko Lake'),'warning must identify the adjusted route hub');
 
   const saved={updatedAt:new Date().toISOString(),locations:Object.fromEntries(hubIds.map((id,index)=>[id,fixture()[index]]))};
   result=await run([], {online:false,cached:saved});

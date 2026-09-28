@@ -1,7 +1,7 @@
-const CACHE='mne-field-notes-v33';
+const CACHE='mne-field-notes-v34';
 const TILE_CACHE='mne-map-tiles-v1';
-const VERSION='33';
-const SHELL=['./','./index.html','./style.css?rev=2026-09-28b','./app.js?rev=2026-09-28b','./weather.js?rev=2026-09-28b','./itinerary.json?rev=2026-09-28b','./waypoints.json?rev=2026-09-28b','./manifest.webmanifest','./icon.svg'].map(path=>`${path}${path.includes('?')?'&':'?'}v=${VERSION}`);
+const VERSION='34';
+const SHELL=['./','./index.html','./style.css?rev=2026-09-28c','./app.js?rev=2026-09-28c','./weather.js?rev=2026-09-28c','./itinerary.json?rev=2026-09-28c','./waypoints.json?rev=2026-09-28c','./manifest.webmanifest','./icon.svg'].map(path=>`${path}${path.includes('?')?'&':'?'}v=${VERSION}`);
 const CDN=['https://unpkg.com/leaflet@1.9.4/dist/leaflet.css','https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>caches.open(CACHE)).then(cache=>Promise.allSettled(CDN.map(url=>cache.add(url)))).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE&&key!==TILE_CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));

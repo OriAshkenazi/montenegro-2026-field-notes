@@ -8,9 +8,12 @@
     {id:'virpazar',name:'Virpazar',region:'Central · Lake Skadar',lat:42.2458,lon:19.0911},
     {id:'zabljak',name:'Runolist Chalet · Narodnih heroja (approximate pin)',region:'Highlands · Durmitor · booked stay',lat:43.16556,lon:19.19004},
     {id:'sedlo',name:'Sedlo Pass',region:'Highlands · P14',lat:43.0989,lon:19.0503},
-    {id:'kolasin',name:'Kolašin',region:'Highlands · Northern',lat:42.8223,lon:19.5165}
+    {id:'kolasin',name:'Kolašin',region:'Highlands · Northern',lat:42.8223,lon:19.5165},
+    {id:'piva',name:'Plužine · Piva Lake',region:'Highlands · Piva / Plužine',lat:43.1550,lon:18.8390},
+    {id:'biogradska',name:'Biogradsko Lake',region:'Highlands · Biogradska Gora',lat:42.89833,lon:19.60056},
+    {id:'tara',name:'Đurđevića Tara · bridge area',region:'Highlands · Tara Canyon · access conditional',lat:43.1507,lon:19.2912}
   ];
-  const cacheKey = 'mne-weather-forecast-v2';
+  const cacheKey = 'mne-weather-forecast-v3';
   const montenegro = [[41.85,19.37],[41.99,19.22],[42.02,18.56],[42.36,18.45],[42.47,18.53],[42.61,18.68],[42.76,18.69],[42.90,18.80],[43.00,18.75],[43.17,18.83],[43.55,19.36],[43.54,19.62],[43.35,19.85],[43.23,20.10],[42.95,20.35],[42.61,20.36],[42.43,20.32],[42.24,20.28],[42.05,20.14],[41.89,19.98]];
   let payload = null, selectedDay = 0, selectedHub = 'zabljak', userSelectedHub = false;
 
@@ -34,7 +37,7 @@
     const groups=[
       {label:'Adriatic Coast',ids:['tivat','perast','budva']},
       {label:'Central & Lakes',ids:['podgorica','virpazar']},
-      {label:'Northern Highlands',ids:['zabljak','sedlo','kolasin']}
+      {label:'Northern Highlands',ids:['zabljak','sedlo','kolasin','piva','biogradska','tara']}
     ];
     selector.innerHTML=groups.map(group=>`<optgroup label="${group.label}">${group.ids.map(id=>{const hub=hubs.find(item=>item.id===id);return `<option value="${hub.id}">${escape(hub.name)}</option>`;}).join('')}</optgroup>`).join('');
     selector.value=selectedHub;
@@ -69,8 +72,8 @@
   function tripDates() { const now=today(),first='2026-10-01',last='2026-10-06';if(now>last)return[];const start=now>first?now:first;return Array.from({length:7},(_,i)=>{const date=new Date(`${first}T12:00:00Z`);date.setUTCDate(date.getUTCDate()+i);return date.toISOString().slice(0,10);}).filter(date=>date>=start&&date<=last); }
   function renderWarning() {
     const banner=$('#alpineWarning');if(!banner||!payload)return;const dates=tripDates(),risks=[];
-    for(const id of ['zabljak','sedlo']){const hub=hubs.find(item=>item.id===id),daily=payload.locations?.[id]?.daily;if(!daily)continue;for(let i=0;i<daily.time.length;i++){const day=daily.time[i];if(!dates.includes(day))continue;const low=daily.temperature_2m_min?.[i],chance=daily.precipitation_probability_max?.[i];if((low!=null&&low<=2)||(chance!=null&&chance>60))risks.push(`${hub.name} · ${dateLabel(day)}${low!=null&&low<=2?` · low ${Math.round(low)}°C`:''}${chance!=null&&chance>60?` · precipitation ${Math.round(chance)}%`:''}`);}}
-    banner.hidden=!risks.length;$('#alpineWarningDetails').textContent=risks.length?'Mountain forecast thresholds are met. Review the Day 3 route before departure.':'';
+    for(const id of ['zabljak','sedlo','kolasin','piva','biogradska','tara']){const hub=hubs.find(item=>item.id===id),daily=payload.locations?.[id]?.daily;if(!daily)continue;for(let i=0;i<daily.time.length;i++){const day=daily.time[i];if(!dates.includes(day))continue;const low=daily.temperature_2m_min?.[i],chance=daily.precipitation_probability_max?.[i];if((low!=null&&low<=2)||(chance!=null&&chance>60))risks.push(`${hub.name} · ${dateLabel(day)}${low!=null&&low<=2?` · low ${Math.round(low)}°C`:''}${chance!=null&&chance>60?` · precipitation ${Math.round(chance)}%`:''}`);}}
+    banner.hidden=!risks.length;$('#alpineWarningDetails').textContent=risks.length?`Mountain route forecast thresholds are met. Review the relevant day before departure: ${risks.join('; ')}.`:'';
   }
   function renderDays() {
     const hub=hubs.find(item=>item.id===selectedHub),daily=payload?.locations?.[hub?.id]?.daily,container=$('#weatherDays');if(!daily||!container)return;
@@ -96,7 +99,7 @@
     try {
       const url=new URL('https://api.open-meteo.com/v1/forecast'),params={latitude:hubs.map(hub=>hub.lat).join(','),longitude:hubs.map(hub=>hub.lon).join(','),hourly:'temperature_2m,precipitation_probability,precipitation,cloud_cover',daily:'temperature_2m_min,temperature_2m_max,precipitation_probability_max,wind_gusts_10m_max,sunrise,sunset',forecast_days:'16',timezone:'auto',temperature_unit:'celsius',wind_speed_unit:'kmh',precipitation_unit:'mm'};
       Object.entries(params).forEach(([key,value])=>url.searchParams.set(key,value));const response=await fetch(url,{cache:'no-store'});if(!response.ok)throw new Error(`Forecast request returned ${response.status}.`);
-      const body=await response.json(),rows=Array.isArray(body)?body:[body];if(rows.length!==hubs.length)throw new Error('Forecast response did not include all eight route hubs.');
+      const body=await response.json(),rows=Array.isArray(body)?body:[body];if(rows.length!==hubs.length)throw new Error('Forecast response did not include all eleven route hubs.');
       const locations={};hubs.forEach((hub,index)=>{if(!rows[index]?.daily?.time?.length||!rows[index]?.hourly?.time?.length)throw new Error(`Forecast data is incomplete for ${hub.name}.`);locations[hub.id]=rows[index];});
       const fresh={updatedAt:new Date().toISOString(),locations};try{localStorage.setItem(cacheKey,JSON.stringify(fresh));}catch{}display(fresh,'live');
     } catch(reason) { if(payload){display(payload,'offline');error.textContent=`Could not refresh weather (${reason.message}). Showing the last successful forecast.`;}else{error.textContent=`Weather forecast unavailable: ${reason.message}`;error.hidden=false;$('#weatherLoading').textContent='Reconnect to load the trip-window forecast.';badge.textContent='Forecast unavailable';badge.classList.add('offline');}error.hidden=false; }
