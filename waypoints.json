@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "waypoints": [
     {
       "id": "tiv-rental-pickup",
@@ -516,9 +516,7 @@
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=CAVE%20Coffee%20%C2%B7%20Kotor%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
-        "primary": [
-          4
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -695,6 +693,7 @@
       "cash": "Ask",
       "days": {
         "primary": [
+          4,
           5,
           6
         ]
@@ -791,7 +790,9 @@
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Ombra%20%C2%B7%20Kotor%20Old%20Town%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
-        "primary": []
+        "primary": [
+          4
+        ]
       },
       "aliases": [],
       "precision": "navigation pin"
@@ -1017,11 +1018,8 @@
       "days": {
         "primary": [
           1,
-          2,
-          3,
           4,
-          5,
-          6
+          5
         ]
       },
       "aliases": [
@@ -1302,9 +1300,6 @@
       "cash": "Ask",
       "days": {
         "primary": [
-          1,
-          2,
-          3,
           4,
           5,
           6
@@ -1441,12 +1436,7 @@
       "cash": "Ask",
       "days": {
         "primary": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
+          5
         ]
       },
       "aliases": [
@@ -1690,7 +1680,6 @@
       "cash": "Ask",
       "days": {
         "primary": [
-          4,
           5
         ]
       },
@@ -1998,8 +1987,6 @@
       "cash": "Ask",
       "days": {
         "primary": [
-          1,
-          4,
           5
         ]
       },
@@ -2159,6 +2146,81 @@
       },
       "aliases": [],
       "precision": "navigation reference pin"
+    },
+    {
+      "id": "njegos-mausoleum-parking",
+      "name": "Njegoš Mausoleum parking",
+      "category": "Parking",
+      "lat": 42.40001,
+      "lng": 18.83749,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Njego%C5%A1%20Mausoleum%20parking%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask",
+      "days": {
+        "primary": [
+          5
+        ]
+      },
+      "aliases": [],
+      "precision": "Navigation query at mausoleum access; confirm signed parking on arrival."
+    },
+    {
+      "id": "njegos-mausoleum",
+      "name": "Njegoš Mausoleum",
+      "category": "Viewpoint",
+      "lat": 42.40001,
+      "lng": 18.83749,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Njego%C5%A1%20Mausoleum%2C%20Montenegro&travelmode=driving",
+      "cash": "Cash/Card",
+      "days": {
+        "primary": [
+          5
+        ]
+      },
+      "aliases": [
+        "Njegoš Mausoleum",
+        "Njegosev Mauzolej"
+      ],
+      "precision": "OpenStreetMap monument point; National Museum visitor approach includes 461 steps.",
+      "sourceUrl": "https://en.narodnimuzej.me/posjeta-njegosev-mauzolej/"
+    },
+    {
+      "id": "kotor-cable-car-kuk",
+      "name": "Kotor Cable Car Upper Station · Kuk",
+      "category": "Activity",
+      "lat": 42.39272,
+      "lng": 18.79259,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kotor%20Cable%20Car%20Upper%20Station%20%C2%B7%20Kuk%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask",
+      "days": {
+        "primary": [
+          5
+        ]
+      },
+      "aliases": [
+        "Kuk upper station",
+        "Alpine Coaster"
+      ],
+      "precision": "OpenStreetMap station point; operator identifies Kuk as the upper station and coaster location.",
+      "sourceUrl": "https://www.kotorcablecar.me/experience/adventures/alpine-coaster"
+    },
+    {
+      "id": "kotor-cable-car-dub",
+      "name": "Kotor Cable Car Lower Station · Dub",
+      "category": "Parking",
+      "lat": 42.3957617688,
+      "lng": 18.7469981862,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kotor%20Cable%20Car%20Lower%20Station%20%C2%B7%20Dub%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask",
+      "days": {
+        "primary": [
+          5
+        ]
+      },
+      "aliases": [
+        "Dub lower station"
+      ],
+      "precision": "Operator-published lower-station coordinate; plotted as the gondola link from Kuk.",
+      "sourceUrl": "https://www.kotorcablecar.me/article/traveling-by-car"
     }
   ]
 }

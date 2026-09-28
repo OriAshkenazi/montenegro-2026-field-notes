@@ -6,7 +6,7 @@ let activeMapDay='all';
 let activeWaypoint=null;
 let mapMarkers=[];
 let routeLine=null;
-Promise.all([fetch('./itinerary.json?rev=2026-09-28c').then(r=>r.json()),fetch('./waypoints.json?rev=2026-09-28c').then(r=>r.json())]).then(([data,points])=>{trip=data;waypointData=points.waypoints;render();initializeMap();}).catch(()=>{$('#days').innerHTML='<p class="offline-note">Trip data is not cached yet. Open this page online once, then reload offline.</p>';$('#mapStatus').textContent='Waypoint index unavailable. Reconnect once to save it for offline use.';});
+Promise.all([fetch('./itinerary.json?rev=2026-09-28d').then(r=>r.json()),fetch('./waypoints.json?rev=2026-09-28d').then(r=>r.json())]).then(([data,points])=>{trip=data;waypointData=points.waypoints;render();initializeMap();}).catch(()=>{$('#days').innerHTML='<p class="offline-note">Trip data is not cached yet. Open this page online once, then reload offline.</p>';$('#mapStatus').textContent='Waypoint index unavailable. Reconnect once to save it for offline use.';});
 
 function activeRoute() { return trip.routes.primary; }
 const segmentTypes = {

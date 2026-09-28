@@ -42,6 +42,20 @@ assert.ok(day3.morning.some(item => /zipline/i.test(item.text)), 'Tara zipline m
 assert.match(day3.drive, /≤6 h|6 h/);
 assert.ok(day3.food.meals.every(meal => meal.durationMinutes >= 60 && meal.cash), 'route meals must budget realistic windows and cash contingencies');
 
+const day4 = itinerary.routes.primary.days.find(day => day.day === 4);
+const day5 = itinerary.routes.primary.days.find(day => day.day === 5);
+assert.ok(day4.stops.some(([name]) => name === 'Kotor') && day4.stops.some(([name]) => name === 'Perast entrance parking'), 'Oct 4 must retain Kotor after the Perast luggage gate');
+assert.ok(day4.adjustedHours <= itinerary.drivingCeilingAdjustedHours && /17:30/.test(day4.drive), 'Oct 4 must stay under the adjusted drive ceiling and daylight cutoff');
+assert.ok(day4.food.meals.length >= 2 && day4.food.coffee.length, 'Oct 4 must include lunch, dinner and coffee');
+assert.ok(day4.afternoon.some(item => /luggage|bags/i.test(item.text)) && day4.afternoon.some(item => /16:15|17:00/.test(item.text)), 'Oct 4 must secure luggage and time-box Kotor return');
+const day5Names = day5.stops.map(([name]) => name);
+for (const name of ['Njegoš Mausoleum','Kotor Cable Car Upper Station · Kuk','Virpazar boat pier','Restaurant Pelikan · Virpazar']) assert.ok(day5Names.includes(name), `Oct 5 must retain ${name}`);
+assert.ok(day5Names.indexOf('Njegoš Mausoleum') < day5Names.indexOf('Kotor Cable Car Upper Station · Kuk') && day5Names.indexOf('Kotor Cable Car Upper Station · Kuk') < day5Names.indexOf('Virpazar boat pier'), 'Oct 5 stop order must flow from Lovćen to Kuk to Skadar');
+assert.ok(day5.adjustedHours <= itinerary.drivingCeilingAdjustedHours && /17:30/.test(day5.drive), 'Oct 5 must remain within the six-hour adjusted ceiling and 17:30 cutoff');
+assert.ok(day5.food.meals.length >= 2 && day5.food.coffee.length, 'Oct 5 must include lunch, dinner and coffee');
+assert.ok(day5.afternoon.some(item => /14:45/.test(item.text)) && day5.afternoon.some(item => /17:00/.test(item.text)), 'Oct 5 must keep a lake departure gate and return target');
+for (const id of ['njegos-mausoleum','njegos-mausoleum-parking','kotor-cable-car-kuk','kotor-cable-car-dub']) assert.ok(waypoints.some(point => point.id === id && point.days.primary.includes(5)), `${id}: missing Oct 5 map pin`);
+
 const categories = new Set();
 for (const point of waypoints) {
   assert.ok(Number.isFinite(point.lat) && point.lat >= 41.5 && point.lat <= 43.7, point.name);
@@ -56,11 +70,11 @@ const app = fs.readFileSync('app.js', 'utf8');
 const sw = fs.readFileSync('sw.js', 'utf8');
 const css = fs.readFileSync('style.css', 'utf8');
 const html = fs.readFileSync('index.html', 'utf8');
-assert.ok(app.includes('waypoints.json?rev=2026-09-28c'));
+assert.ok(app.includes('waypoints.json?rev=2026-09-28d'));
 assert.ok(!app.includes('routeToggle'), 'separate fallback route control should be removed');
 assert.ok(app.includes('data-plan-target'), 'map popup should link to a timeline target');
 assert.ok(html.includes('id="stayDirectory"'), 'confirmed stay quick reference should render');
-assert.ok(sw.includes('./waypoints.json?rev=2026-09-28c'));
+assert.ok(sw.includes('./waypoints.json?rev=2026-09-28d'));
 assert.ok(sw.includes('tile.openstreetmap.org') && sw.includes('leaflet@1.9.4'));
 assert.ok(css.includes('@media (orientation:landscape)') && css.includes('flex-direction:row-reverse'));
 assert.ok(css.includes('@media (orientation:landscape) and (max-height:500px)'));
@@ -73,10 +87,10 @@ assert.ok(css.includes('.day-toggle{grid-template-columns:49px minmax(0,1fr) min
 assert.ok(css.includes('.day-drive{overflow-wrap:anywhere}'));
 assert.ok(css.includes('body{margin:0;background:var(--paper)') && css.includes('main{max-width:1200px'));
 assert.ok(css.includes('body{padding-left:env(safe-area-inset-left,0px);padding-right:calc(72px + env(safe-area-inset-right,0px))'));
-assert.ok(html.includes('style.css?rev=2026-09-28c') && html.includes('app.js?rev=2026-09-28c') && html.includes('weather.js?rev=2026-09-28c'));
+assert.ok(html.includes('style.css?rev=2026-09-28d') && html.includes('app.js?rev=2026-09-28d') && html.includes('weather.js?rev=2026-09-28d'));
 assert.ok(html.includes('data-pane="weather"') && html.includes('id="pane-weather"'));
-assert.ok(html.includes('11 route hubs'), 'weather directory count must match the expanded route hubs');
-assert.ok(sw.includes("const VERSION='34'") && sw.includes('./weather.js?rev=2026-09-28c'));
+assert.ok(html.includes('13 route hubs'), 'weather directory count must match the expanded route hubs');
+assert.ok(sw.includes("const VERSION='35'") && sw.includes('./weather.js?rev=2026-09-28d'));
 const weather = fs.readFileSync('weather.js', 'utf8');
 assert.ok(weather.includes('https://api.open-meteo.com/v1/forecast'));
 assert.ok(weather.includes('low<=2') && weather.includes('chance>60'));
