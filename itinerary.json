@@ -1,6 +1,6 @@
 {
   "updated": "2026-09-28",
-  "drivingCeilingAdjustedHours": 5.5,
+  "drivingCeilingAdjustedHours": 6,
   "terrainBufferPercent": 20,
   "routeNames": {
     "primary": "Runolist Chalet · Durmitor · Perast"
@@ -14,7 +14,7 @@
           "region": "North · Tivat → Žabljak",
           "base": "Runolist Chalet · Žabljak",
           "drive": "TIV → Vrmac tunnel / Kotor → M-1 to Risan / Lipci → M-8 via Grahovo → M-7 to Nikšić → M-3 to Jasenovo Polje → M-6 via Šavnik → Runolist Chalet · nominal 3 h 20 min / 4 h adjusted (+20%); live route controls",
-          "adjustedHours": 4.0,
+          "adjustedHours": 4,
           "morning": [
             {
               "type": "LOGISTICS",
@@ -195,176 +195,187 @@
         {
           "day": 2,
           "date": "Fri · Oct 2",
-          "region": "North · Žabljak / Durmitor",
+          "region": "North · Žabljak / Durmitor / Piva",
           "base": "Runolist Chalet · Žabljak",
-          "drive": "Žabljak local · ~0.4 adjusted h; if Day 1 is aborted, reassess the transfer only after a fresh safety and host check",
-          "adjustedHours": 0.4,
+          "drive": "Runolist → Black Lake → P14/R-16 over Sedlo → Trsa → Plužine/Piva → (live choice: M-3 via Nikšić and Šavnik, or return over Sedlo) → Runolist · ~5 h 48 adjusted planning estimate; 6 h ceiling and daylight gates",
+          "adjustedHours": 5.8,
           "morning": [
             {
               "type": "STAY",
-              "text": "If you arrived at Runolist on Day 1, recover after the airport-to-mountains transfer.",
+              "text": "Breakfast at Runolist; leave by 06:30 with water and a packed lunch. Fill the tank and download the P14 map before leaving town.",
               "id": "day-2-morning-01"
             },
             {
               "type": "DRIVE",
-              "text": "Go to Black Lake parking late morning.",
+              "text": "Park at the signed Black Lake lot by about 06:50. The full shore loop is about 3.6 km; allow up to 90 minutes for the walk and photos, then leave by 08:30.",
               "id": "day-2-morning-02"
             },
             {
               "type": "WALK",
-              "text": "Take the short forest-and-shore loop; allow about 2–2.5 hours.",
+              "text": "Walk the Black Lake shore loop at an easy pace. The small-lake shore can be damp and slippery; use grippy shoes and turn back if footing or visibility worsens.",
               "id": "day-2-morning-03"
             },
             {
-              "type": "CAUTION",
-              "text": "Turn back if footing or weather turns.",
+              "type": "LOGISTICS",
+              "text": "Espresso stop at Gradska Kafanica only if open when you pass; local listing shows 08:00, so confirm the prior evening. If closed, use coffee packed at Runolist.",
               "id": "day-2-morning-04"
             },
             {
-              "type": "WALK",
-              "text": "Keep the Bosaca–Jablan Lake viewpoint as an optional, time-boxed out-and-back only if rested.",
+              "type": "DRIVE",
+              "text": "Continue on P14/R-16 over Sedlo to Trsa, then descend to Plužine for the Piva viewpoint and town. Roads are paved but narrow, winding two-way mountain roads; use signed pullouts and expect to wait for passing places.",
               "id": "day-2-morning-05"
             },
             {
               "type": "CAUTION",
-              "text": "Do not attempt the reported seven-hour circular hike.",
+              "text": "Before committing to P14, check AMSCG road conditions, the Sedlo forecast and the host’s local report. Proceed on the primary route if open, dry enough and free of ice/low cloud.",
               "id": "day-2-morning-06"
-            },
-            {
-              "type": "LOGISTICS",
-              "text": "If Day 1 was aborted, do not force a catch-up drive; reassess road/weather, driver condition and Runolist arrival arrangements before leaving.",
-              "id": "day-2-morning-07"
-            },
-            {
-              "type": "DRIVE",
-              "text": "When safe to continue, drive directly to Runolist Chalet; skip Black Lake and other activities if needed to arrive safely.",
-              "id": "day-2-morning-08"
-            },
-            {
-              "type": "CAUTION",
-              "text": "Do not start a delayed highland transfer unless live conditions and daylight allow a safe arrival; cancel sightseeing first.",
-              "id": "day-2-morning-09"
-            },
-            {
-              "type": "CAUTION",
-              "text": "If Day 1 was delayed or aborted, reassess the live route, weather, driver condition and booked arrival arrangements before continuing; cancel sightseeing first.",
-              "id": "day-2-morning-10"
             }
           ],
           "afternoon": [
             {
-              "type": "WALK",
-              "text": "Finish the Black Lake visit and warm up.",
+              "type": "SEE",
+              "text": "At Plužine, prioritize the Piva viewpoint and a short lakeside/town stop. Do not add Mratinje Dam or the cheese-farm detour.",
               "id": "day-2-afternoon-01"
             },
             {
-              "type": "LOGISTICS",
-              "text": "Check the Day 3 P14 road and weather with AMSCG and your host.",
+              "type": "EAT",
+              "text": "Use the packed lunch by default. Restoran Piva Lake is the corridor sit-down option only if called ahead and the live return estimate remains within 6 h adjusted; allow 60 minutes, confirm parking and carry cash because payment is unverified.",
               "id": "day-2-afternoon-02"
             },
             {
-              "type": "STAY",
-              "text": "If delayed from Day 1, go directly to Runolist, unload and check in; skip Black Lake.",
+              "type": "LOGISTICS",
+              "text": "Choose the return live: use M-3 via Nikšić and M-6 via Šavnik only if navigation keeps total adjusted driving ≤6 h and the Žabljak return target by 16:00. Otherwise return over Sedlo if that is the faster safe open route.",
               "id": "day-2-afternoon-03"
             },
             {
               "type": "CAUTION",
-              "text": "If the northbound transfer remains unsafe, stop safely, contact the host, and arrange lodging directly; the booked stay dates remain Oct 1–4.",
+              "text": "Hard decision gate in Plužine: if either return option misses the 6 h driving ceiling or leaves too little buffer before the 17:30 no-mountain-driving cutoff, shorten the stop and start back immediately; do not extend the loop.",
               "id": "day-2-afternoon-04"
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "Use marked parking only. Black Lake off-season parking is reported at €1.20/hour from Oct 1–May 31; carry coins and confirm the meter/sign. Budget Durmitor admission at the current €5/person rate if charged.",
+              "id": "day-2-afternoon-05"
             }
           ],
           "evening": [
             {
-              "type": "EAT",
-              "text": "Eat in Žabljak and get an early night before P14.",
+              "type": "DRIVE",
+              "text": "Return to Runolist by the 16:00 target and never continue mountain driving beyond 17:30.",
               "id": "day-2-evening-01"
             },
             {
-              "type": "CAUTION",
-              "text": "Ask the host which places are open and confirm the Sedlo road status again in the morning.",
+              "type": "EAT",
+              "text": "Dinner at Zlatni Papagaj, which publishes 18:00–23:00 service and Montenegrin dishes; call/reserve for Oct 2, ask about payment, and walk from the chalet if practical.",
               "id": "day-2-evening-02"
+            },
+            {
+              "type": "LOGISTICS",
+              "text": "Shop at Aroma 311 before closing for Saturday water/snacks; do not add a morning provisioning stop.",
+              "id": "day-2-evening-03"
             }
           ],
-          "parking": "Use Runolist Chalet’s confirmed address as the base; the listing indicates free private parking, but access for the booked unit should be confirmed. Unload all bags before visiting Black Lake.",
-          "cash": "Durmitor entry is listed at €5/person/day. Black Lake + P14 cost €10/person; add the optional Skadar day on Day 5 for €15/person total. Compare with the 2026 €13.50/person annual pass and confirm each gate’s terms.",
+          "parking": "Use signed Black Lake parking and marked pullouts only; do not stop on P14 blind bends. The Black Lake lot is reported at €1.20/hour off-season (Oct–May); payment type and current sign must be checked. Download the P14/R-16 map before departure.",
+          "cash": "For two: Durmitor admission up to €10 if separately charged, Black Lake parking roughly €1.20/hour/car, optional Plužine meal at unverified price/payment. Carry small EUR notes and coins; packed lunch is the no-delay default.",
           "stops": [
             [
               "Runolist Chalet",
-              "https://maps.google.com/?q=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%2084220%20%C5%BDabljak%2C%20Montenegro"
+              "https://maps.google.com/?q=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%20%C5%BDabljak%2C%20Montenegro"
             ],
             [
               "Black Lake parking",
-              "https://maps.google.com/?q=Black%20Lake%20parking%20%C5%BDabljak"
+              "https://maps.google.com/?q=Black%20Lake%20parking%2C%20%C5%BDabljak%2C%20Montenegro"
             ],
             [
               "Black Lake trailhead",
-              "https://maps.google.com/?q=Black%20Lake%20trailhead%20%C5%BDabljak"
+              "https://maps.google.com/?q=Black%20Lake%20trailhead%2C%20%C5%BDabljak%2C%20Montenegro"
             ],
             [
-              "Bosača village parking",
-              "https://maps.google.com/?q=Bosa%C4%8Da%20Montenegro"
+              "P14 Sedlo Pass route",
+              "https://maps.google.com/?q=%C5%BDabljak%20to%20Sedlo%20Pass%2C%20Trsa%20and%20Plu%C5%BEine%20via%20P14%20Montenegro"
             ],
             [
-              "AMSCG road updates",
-              "https://amscg.me/en/road-conditions"
+              "Trsa village pullout",
+              "https://maps.google.com/?q=Trsa%2C%20Montenegro"
+            ],
+            [
+              "Piva viewpoint",
+              "https://maps.google.com/?q=Piva%20Lake%20viewpoint%2C%20Plu%C5%BEine%2C%20Montenegro"
+            ],
+            [
+              "Plužine lakeside",
+              "https://maps.google.com/?q=Plu%C5%BEine%2C%20Montenegro"
+            ],
+            [
+              "Nikšić",
+              "https://maps.google.com/?q=Nik%C5%A1i%C4%87%2C%20Montenegro"
+            ],
+            [
+              "Šavnik",
+              "https://maps.google.com/?q=%C5%A0avnik%2C%20Montenegro"
+            ],
+            [
+              "Runolist Chalet",
+              "https://maps.google.com/?q=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%20%C5%BDabljak%2C%20Montenegro"
             ]
           ],
           "tags": [
             "Nature & Wildlife",
-            "Adventure & Hiking"
+            "Adventure & Hiking",
+            "Food & Dining"
           ],
-          "heading": "Day 2 - Žabljak base / Black Lake / recover and check P14",
+          "heading": "Day 2 - Black Lake / P14-Sedlo / Trsa / Plužine and Piva",
           "food": {
             "meals": [
               {
-                "slot": "Lunch · after Black Lake",
-                "name": "Momčilov Grad",
-                "specialty": "Kačamak, cicvara, priganice, lamb cooked in milk / lamb under the bell; highland cooking with Durmitor terrace views.",
-                "hours": "Daily 10:00–18:00 published; reconfirm season/date",
-                "parking": "Bosača mountain access; guest parking not confirmed; park only in a marked space",
-                "cash": "Cash-only unverified; carry cash and ask",
-                "durationMinutes": 90,
-                "plan": "Use only if lake timing/weather allows the Bosača uphill drive; otherwise lunch in Žabljak.",
-                "mapUrl": "https://maps.google.com/?q=Mom%C4%8Dilov%20Grad%20Montenegro",
-                "sourceUrl": "https://visitzabljak.me/explore-zabljak/restaurant-momcilov-grad",
+                "slot": "Lunch · Plužine, conditional",
+                "name": "Restoran Piva Lake · Plužine; packed lunch is the default",
+                "specialty": "Regional Montenegrin dishes, soups and grilled/cooked options; choose from the current menu.",
+                "hours": "Listing shows Friday 08:00–23:00; call to confirm Oct 2 service.",
+                "parking": "Address listing; restaurant guest parking not verified. Use only signed public parking.",
+                "cash": "Payment method unverified; carry cash and ask.",
+                "durationMinutes": 60,
+                "plan": "Call before leaving Žabljak. Stop only if the live return still passes the ≤6 h adjusted drive and 16:00 return target; otherwise eat the packed lunch.",
+                "mapUrl": "https://maps.google.com/?q=Restoran%20Piva%20Lake%2C%20Nova%202%2C%20Plu%C5%BEine%2C%20Montenegro",
+                "sourceUrl": "https://www.moja-djelatnost.me/izdavanje-apartmana-i-restoran-pluzine/piva-lake/MM19_Jkh",
                 "id": "food-day-2-meals-01",
-                "waypointId": "momcilov-grad"
+                "waypointId": "piva-lake-restaurant-pluzine"
               },
               {
                 "slot": "Dinner · Žabljak",
-                "name": "Restaurant ORO",
-                "specialty": "Durmitor lamb and local mountain dishes; confirm current menu.",
-                "hours": "Listing shows dinner/late service; October hours unverified",
-                "parking": "Town-center parking; exact venue space unverified",
-                "cash": "Cash-only unverified; carry cash and ask",
+                "name": "Zlatni Papagaj",
+                "specialty": "Montenegrin cuisine; outdoor dining listed by the restaurant.",
+                "hours": "Official site publishes 18:00–23:00; reconfirm for the date.",
+                "parking": "Street/town parking not verified; prefer walking from Runolist.",
+                "cash": "Payment method unverified; carry cash and ask.",
                 "durationMinutes": 90,
-                "plan": "Book/phone first; October hours may change.",
-                "mapUrl": "https://maps.google.com/?q=Restaurant%20ORO%20Montenegro",
-                "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g1096284-d11725421-Reviews-Restaurant_Oro-Zabljak_Durmitor_National_Park_Zabljak_Municipality.html",
+                "plan": "Reserve or call on the day; lodging food is the late-return fallback.",
+                "mapUrl": "https://maps.google.com/?q=Zlatni%20Papagaj%2C%20%C5%BDabljak%2C%20Montenegro",
+                "sourceUrl": "https://zlatnipapagaj.com/",
                 "id": "food-day-2-meals-02",
-                "waypointId": "restaurant-oro"
+                "waypointId": "zlatni-papagaj-zabljak"
               }
             ],
             "coffee": [
               {
-                "slot": "Morning",
-                "name": "Kaćun · Žabljak",
-                "why": "Practical local morning coffee; no specialty roaster verified in town.",
-                "hours": "Hours not reliably published; ask lodging host",
-                "parking": "Town-center street parking; walk from lodging if possible.",
-                "mapUrl": "https://maps.google.com/?q=Ka%C4%87un%20%C2%B7%20%C5%BDabljak%20Montenegro",
-                "sourceUrl": "",
+                "slot": "Morning · after Black Lake",
+                "name": "Gradska Kafanica · Žabljak",
+                "why": "Local espresso stop on the route back through town; no specialty-roaster claim.",
+                "hours": "Local listing shows daily 08:00–01:00; call to confirm.",
+                "parking": "Town-center street parking unverified; walk from the Black Lake lot only if timing allows.",
+                "mapUrl": "https://maps.google.com/?q=Gradska%20Kafanica%2C%20%C5%BDabljak%2C%20Montenegro",
+                "sourceUrl": "https://findinmontenegro.com/item/gradska-kafanica-zabljak/",
                 "id": "food-day-2-coffee-01",
-                "waypointId": "kacun-zabljak"
+                "waypointId": "gradska-kafanica-zabljak"
               }
             ],
             "supermarkets": [
               {
                 "name": "Aroma 311 · Žabljak",
-                "hours": "07:30–21:30 listed; confirm date/Sunday hours",
-                "parking": "Parking availability for loaded estate not verified",
-                "plan": "Shop after check-in/unload; stock water and P14 snacks before the highland loop.",
-                "mapUrl": "https://maps.google.com/?q=Aroma%20311%20%C2%B7%20%C5%BDabljak%20Montenegro",
+                "hours": "Published listing 07:30–21:30; reconfirm the day before.",
+                "parking": "Parking for a loaded estate is unverified; shop after unloading.",
+                "plan": "Replenish water and trail snacks on Oct 2 evening for the next day; no morning stop.",
+                "mapUrl": "https://maps.google.com/?q=Aroma%20311%2C%20%C5%BDabljak%2C%20Montenegro",
                 "sourceUrl": "https://aromamarketi.me/lokacije/",
                 "id": "food-day-2-supermarkets-01",
                 "waypointId": "aroma-311-zabljak"
@@ -375,131 +386,107 @@
         {
           "day": 3,
           "date": "Sat · Oct 3",
-          "region": "North · Durmitor P14 / Sedlo / Piva",
+          "region": "North · Tara Canyon / Mojkovac / Kolašin / Biogradska Gora",
           "base": "Runolist Chalet · Žabljak",
-          "drive": "Žabljak → P14/Sedlo → Trsa → Plužine/Piva viewpoint → return · plan 4 h 30 wheel time / 5 h 24 adjusted; LIVE ROUTE GATE REQUIRED",
-          "adjustedHours": 5.4,
+          "drive": "Runolist → conditional Žabljak-side Tara viewpoint/zipline access → Mojkovac → Kolašin → Biogradsko Lake → Kolašin/Mojkovac → Runolist · ~5 h 30 adjusted planning allowance; live route must avoid the closed bridge and remain ≤6 h",
+          "adjustedHours": 5.5,
           "morning": [
             {
-              "type": "LOGISTICS",
-              "text": "Make this your P14 day.",
+              "type": "STAY",
+              "text": "Breakfast at Runolist and leave around 06:45. Check AMSCG, weather, park access and the Tara operator before setting out; fill the tank and carry water/snacks.",
               "id": "day-3-morning-01"
             },
             {
               "type": "LOGISTICS",
-              "text": "Start around 07:30 after checking AMSCG, the forecast and your lodging host for the Sedlo pass.",
+              "text": "Tara Bridge is scheduled to be closed through Oct 26, 2026. Do not cross the bridge or enter the works. Visit the bridge/canyon only from a safe public viewing place whose access is confirmed open; the map pin is an approximate reference, not parking.",
               "id": "day-3-morning-02"
             },
             {
-              "type": "CAUTION",
-              "text": "Enter P-14 only if it is open, dry enough, and clear of ice or low cloud.",
+              "type": "LOGISTICS",
+              "text": "Zipline is a conditional add-on: October dates depend on weather. Red Rock requires walking back across the bridge, so do not use it during this closure. Consider Yellow/Extreme only if the operator confirms operation, retrieval and access without crossing; skip it if it adds delay or breaks either route gate.",
               "id": "day-3-morning-03"
             },
             {
-              "type": "LOGISTICS",
-              "text": "Put Žabljak → Trsa → Plužine/Piva viewpoint → Žabljak into Google Maps before leaving.",
+              "type": "DRIVE",
+              "text": "Continue toward Kolašin only on a live, paved route that does not cross the closed bridge. Route via the R-10/Mojkovac corridor if navigation confirms it is open; do not accept an unverified gravel shortcut.",
               "id": "day-3-morning-04"
             },
             {
-              "type": "DRIVE",
-              "text": "The whole out-and-back is provisionally 4 h 30 behind the wheel, or 5 h 24 after +20%.",
+              "type": "LOGISTICS",
+              "text": "Take espresso at Caffe Select in central Kolašin; the Tourism Organisation lists 07:00 winter-season opening, so confirm October hours by phone.",
               "id": "day-3-morning-05"
-            },
-            {
-              "type": "CAUTION",
-              "text": "Go only if the live total is at most 5 h 30.",
-              "id": "day-3-morning-06"
             }
           ],
           "afternoon": [
             {
               "type": "DRIVE",
-              "text": "Stay on P-14 over Sedlo (about 1,911 m).",
+              "text": "From Kolašin follow signed park access to Biogradsko Lake; confirm the gate and private-car access before leaving town. The official 2026 notice confirms the season opened, but not Oct 3 road or visitor-train operation.",
               "id": "day-3-afternoon-01"
             },
             {
-              "type": "CAUTION",
-              "text": "It is paved, narrow and winding, with two-way traffic and few comfortable passing places; use signed pullouts and expect to reverse to a passing place.",
+              "type": "WALK",
+              "text": "Walk the lake shore loop, allowing up to 2 hours for the circuit, photos and damp autumn footing. Turn back if the trail is slippery or visibility deteriorates.",
               "id": "day-3-afternoon-02"
             },
             {
-              "type": "DRIVE",
-              "text": "Give the drive about 2 h 15 each way.",
+              "type": "EAT",
+              "text": "On the return corridor, stop at Dobre Vode in Sjerogošte for a 60-minute late lunch: local kačamak, gotovac, lamb in milk and veal under sač. The Tourism Organisation places it on the Kolašin–Mojkovac road, 6 km from the park, with a large car park. Call first for October operation and payment.",
               "id": "day-3-afternoon-03"
             },
             {
-              "type": "LOGISTICS",
-              "text": "Allow time for photo and lunch stops.",
+              "type": "CAUTION",
+              "text": "Keep adjusted driving at or below 6 h and target Runolist by 16:00, with 17:30 the no-mountain-driving cutoff. If the Tara spur/zipline threatens either limit, skip that spur first and continue the Kolašin/Biogradska primary day.",
               "id": "day-3-afternoon-04"
             },
             {
-              "type": "SEE",
-              "text": "Stop at the Plužine/Piva viewpoint and lakeside, then turn around.",
+              "type": "LOGISTICS",
+              "text": "Biogradska Gora admission is currently €4/person/day; boats are €10/hour, kayaks €3 single / €5 double per hour. The park tariff does not state payment method; carry cash. Confirm October operations before budgeting boat time.",
               "id": "day-3-afternoon-05"
-            },
-            {
-              "type": "CAUTION",
-              "text": "Skip Mratinje Dam and the cheese-farm detour unless Maps still shows ≤5 h 30 adjusted and a Žabljak return by 16:00.",
-              "id": "day-3-afternoon-06"
-            },
-            {
-              "type": "CAUTION",
-              "text": "If the core loop exceeds the cap or fails the safety gate, cancel P14 and return to Runolist or remain at base; choose a local low-risk walk only if conditions allow.",
-              "id": "day-3-afternoon-07"
             }
           ],
           "evening": [
             {
               "type": "DRIVE",
-              "text": "Get back to Žabljak before dark.",
+              "text": "Return to Runolist by 16:00 target and stop mountain driving by 17:30.",
               "id": "day-3-evening-01"
             },
             {
               "type": "EAT",
-              "text": "Have dinner nearby.",
+              "text": "Dinner at Zlatni Papagaj, 18:00–23:00 published; call/reserve for Oct 3 and ask about payment.",
               "id": "day-3-evening-02"
             },
             {
-              "type": "CAUTION",
-              "text": "Do not tack on the seven-hour Jablan Lake circular hike.",
+              "type": "LOGISTICS",
+              "text": "Use the short town walk only after parking at Runolist; keep the late evening restful before the Oct 4 transfer.",
               "id": "day-3-evening-03"
-            },
-            {
-              "type": "WALK",
-              "text": "If P14 is cancelled, use the short Bosača out-and-back as a separate, time-boxed alternative.",
-              "id": "day-3-evening-04"
             }
           ],
-          "parking": "Start and finish at Žabljak with luggage secured. Use signed pullouts; never stop on blind bends. Download the road map and Maps.me trail data offline.",
-          "cash": "Budget €5/person for the Durmitor day ticket if charged; the €13.50/person 2026 annual pass can cover the three planned park days. Keep small notes for village food.",
+          "parking": "At Tara, use only confirmed public marked viewpoint and parking, never the road shoulder or work zone. In Kolašin use signed town parking; at Biogradska Gora follow the park checkpoint and same-day vehicle-access instructions. Do not assume summer visitor trains operate in October.",
+          "cash": "For two: Biogradska admission €8; optional boat €10/hour or double kayak €5/hour; possible Tara zipline €40–€90/couple only if operator confirms a bridge-free line and current price. Restaurant, parking and zipline payment methods require confirmation; carry small notes.",
           "stops": [
             [
               "Runolist Chalet",
-              "https://maps.google.com/?q=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%2084220%20%C5%BDabljak%2C%20Montenegro"
+              "https://maps.google.com/?q=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%20%C5%BDabljak%2C%20Montenegro"
             ],
             [
-              "P14 Sedlo Pass route",
-              "https://www.google.com/maps/dir/?api=1&origin=%C5%BDabljak%2C%20Montenegro&destination=%C5%BDabljak%2C%20Montenegro&waypoints=Trsa%2C%20Montenegro%7CPlu%C5%BEine%2C%20Montenegro%7CPiva%20Lake%20viewpoint%2C%20Plu%C5%BEine%2C%20Montenegro&travelmode=driving"
+              "Kolašin · town center",
+              "https://maps.google.com/?q=Kola%C5%A1in%2C%20Montenegro"
             ],
             [
-              "Trsa village pullout",
-              "https://maps.google.com/?q=Trsa%20Montenegro"
+              "Dobre Vode · Kolašin–Mojkovac road",
+              "https://maps.google.com/?q=Restoran%20Dobre%20Vode%2C%20Sjerogo%C5%A1te%2C%20Kola%C5%A1in%2C%20Montenegro"
             ],
             [
-              "Piva viewpoint",
-              "https://maps.google.com/?q=Piva%20viewpoint%20Montenegro%20Plu%C5%BEine"
+              "Biogradsko Lake · lake-loop trailhead",
+              "https://maps.google.com/?q=Biogradsko%20Lake%20info%20board%2C%20Montenegro"
             ],
             [
-              "Plužine lakeside",
-              "https://maps.google.com/?q=Plu%C5%BEine%20Montenegro%20Piva%20Lake"
+              "Kolašin · town center",
+              "https://maps.google.com/?q=Kola%C5%A1in%2C%20Montenegro"
             ],
             [
-              "Optional Mratinje Dam",
-              "https://maps.google.com/?q=Mratinje%20Dam%20Montenegro"
-            ],
-            [
-              "AMSCG road updates",
-              "https://amscg.me/en/road-conditions"
+              "Runolist Chalet",
+              "https://maps.google.com/?q=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%20%C5%BDabljak%2C%20Montenegro"
             ]
           ],
           "tags": [
@@ -508,72 +495,58 @@
             "Sightseeing",
             "Food & Dining"
           ],
-          "heading": "Day 3 - Žabljak → P14 / Sedlo → Trsa → Plužine / Piva Lake",
+          "heading": "Day 3 - Tara Canyon access check / Kolašin / Biogradska Gora",
           "food": {
             "meals": [
               {
-                "slot": "Lunch · packed for P14",
-                "name": "Žabljak packed lunch (buy at Aroma 311)",
-                "specialty": "Pršut, local cheese, bread/crackers, fruit and water; avoids relying on a roadside kitchen on the Sedlo corridor.",
-                "hours": "Shop listed 07:30–21:30; confirm; pack before 07:30 start if needed",
-                "parking": "Shop/base parking; no roadside parking stop planned",
-                "cash": "Cash-only not applicable; grocery payment varies",
-                "durationMinutes": 15,
-                "plan": "Default plan. P14 has only six minutes of drive-cap margin; sit-down food detour fails the daylight gate unless live routing still passes.",
-                "mapUrl": "https://maps.google.com/?q=%C5%BDabljak%20packed%20lunch%20%28buy%20at%20Aroma%20311%29%20Montenegro",
-                "sourceUrl": "https://aromamarketi.me/lokacije/",
+                "slot": "Lunch · Sjerogošte, Kolašin–Mojkovac corridor",
+                "name": "Dobre Vode",
+                "specialty": "Kačamak, gotovac, lamb in milk, trout and veal under sač; regional highland cooking.",
+                "hours": "Tourism listing does not publish October hours; call +382 69 233 000.",
+                "parking": "Official tourism listing describes large parking; verify on arrival.",
+                "cash": "Payment method unverified; carry cash and ask.",
+                "durationMinutes": 60,
+                "plan": "Stop after the lake walk on the return road; call before leaving Žabljak. If closed, use a Kolašin town restaurant from the official directory and preserve the return gate.",
+                "mapUrl": "https://maps.google.com/?q=Restoran%20Dobre%20Vode%2C%20Sjerogo%C5%A1te%2C%20Kola%C5%A1in%2C%20Montenegro",
+                "sourceUrl": "https://kolasin.me/dobre-vode-restaurant/",
                 "id": "food-day-3-meals-01",
-                "waypointId": "zabljak-packed-lunch-buy-at-aroma-311"
-              },
-              {
-                "slot": "Lunch alternate · conditional",
-                "name": "Restoran Sočica · Plužine",
-                "specialty": "Piva-region trout/freshwater fish and local dishes; verify menu on arrival.",
-                "hours": "Listing 07:00–23:00; confirm date",
-                "parking": "Town access; dedicated customer parking not verified",
-                "cash": "Cards reported; cash-only not indicated",
-                "durationMinutes": 75,
-                "plan": "Only if live route plus meal dwell still returns to Žabljak by 16:00 and stays ≤5 h 30 driving.",
-                "mapUrl": "https://maps.google.com/?q=Restoran%20So%C4%8Dica%20%C2%B7%20Plu%C5%BEine%20Montenegro",
-                "sourceUrl": "https://wevotravel.com/restoran/restoran-socica/",
-                "id": "food-day-3-meals-02",
-                "waypointId": "restoran-socica-pluzine"
+                "waypointId": "dobre-vode-kolasin"
               },
               {
                 "slot": "Dinner · Žabljak",
-                "name": "Restaurant ORO",
-                "specialty": "Local highland meat and Durmitor dishes.",
-                "hours": "Listing shows dinner service; confirm October hours",
-                "parking": "Town-center parking not verified; walk from lodging",
-                "cash": "Cash-only unverified; carry cash and ask",
+                "name": "Zlatni Papagaj",
+                "specialty": "Montenegrin cuisine and listed outdoor dining.",
+                "hours": "Official site publishes 18:00–23:00; reconfirm date.",
+                "parking": "Town-center parking not verified; walk from lodging.",
+                "cash": "Payment method unverified; carry cash and ask.",
                 "durationMinutes": 90,
-                "plan": "Eat after returning; call ahead if P14 runs late.",
-                "mapUrl": "https://maps.google.com/?q=Restaurant%20ORO%20Montenegro",
-                "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g1096284-d11725421-Reviews-Restaurant_Oro-Zabljak_Durmitor_National_Park_Zabljak_Municipality.html",
-                "id": "food-day-3-meals-03",
-                "waypointId": "restaurant-oro"
+                "plan": "Call or reserve on Oct 3; keep lodging food as backup if return is delayed.",
+                "mapUrl": "https://maps.google.com/?q=Zlatni%20Papagaj%2C%20%C5%BDabljak%2C%20Montenegro",
+                "sourceUrl": "https://zlatnipapagaj.com/",
+                "id": "food-day-3-meals-02",
+                "waypointId": "zlatni-papagaj-zabljak"
               }
             ],
             "coffee": [
               {
-                "slot": "Morning",
-                "name": "Kaćun · Žabljak",
-                "why": "Local coffee before departure; no specialty-roaster stop verified.",
-                "hours": "Hours not reliably published; ask host",
-                "parking": "Walk from lodging; avoid delaying the 07:30 launch.",
-                "mapUrl": "https://maps.google.com/?q=Ka%C4%87un%20%C2%B7%20%C5%BDabljak%20Montenegro",
-                "sourceUrl": "",
+                "slot": "Morning · Kolašin",
+                "name": "Caffe Select · central Kolašin",
+                "why": "Practical espresso stop across from the town square; not represented as a specialty roaster.",
+                "hours": "Tourism Organisation lists 07:00 winter-season opening; confirm October operation.",
+                "parking": "Central public parking; exact café customer space not confirmed.",
+                "mapUrl": "https://maps.google.com/?q=Caffe%20Select%2C%20Trg%20Borca%2C%20Kola%C5%A1in%2C%20Montenegro",
+                "sourceUrl": "https://kolasin.me/kafici/",
                 "id": "food-day-3-coffee-01",
-                "waypointId": "kacun-zabljak"
+                "waypointId": "caffe-select-kolasin"
               }
             ],
             "supermarkets": [
               {
                 "name": "Aroma 311 · Žabljak",
-                "hours": "07:30–21:30 listed; confirm",
-                "parking": "Loaded-car parking not confirmed",
-                "plan": "Buy lunch the evening before; do not add a morning shop if it threatens the early start.",
-                "mapUrl": "https://maps.google.com/?q=Aroma%20311%20%C2%B7%20%C5%BDabljak%20Montenegro",
+                "hours": "Published listing 07:30–21:30; reconfirm.",
+                "parking": "Vehicle parking unverified; shop after unloading.",
+                "plan": "Buy water/snacks on Oct 2 evening; keep Saturday departure direct.",
+                "mapUrl": "https://maps.google.com/?q=Aroma%20311%2C%20%C5%BDabljak%2C%20Montenegro",
                 "sourceUrl": "https://aromamarketi.me/lokacije/",
                 "id": "food-day-3-supermarkets-01",
                 "waypointId": "aroma-311-zabljak"
@@ -1077,7 +1050,7 @@
           "status": "PASS"
         },
         {
-          "name": "Day 1 driving ceiling ≤5.5 h adjusted",
+          "name": "Day 1 driving ceiling ≤6 h adjusted",
           "status": "CONDITIONAL"
         },
         {
@@ -1085,7 +1058,7 @@
           "status": "CONDITIONAL"
         },
         {
-          "name": "Daily adjusted driving ≤5.5 h",
+          "name": "Daily adjusted driving ≤6 h",
           "status": "CONDITIONAL"
         },
         {
@@ -1140,15 +1113,15 @@
     },
     {
       "label": "Fuel + tolls",
-      "min": 120,
-      "max": 210,
-      "note": "Planning range covers TIV→Runolist Chalet and Runolist Chalet→Perast transfers, P14 out-and-back mileage and mountain elevation gains. Transfer mileage is roughly neutral versus the former TIV→Kotor + Kotor→Žabljak sequence. The primary route does not require the ferry, Sozina or A1; fuel rates must be rechecked for the travel week."
+      "min": 150,
+      "max": 260,
+      "note": "Planning range includes the Oct 2 P14/Piva circuit and Oct 3 Kolašin/Biogradska return, plus TIV→Runolist and Runolist→Perast transfers, mountain elevation and other outings. Allow roughly €30–50 above the prior estimate for the two northern route adjustments; the exact loop mileage depends on live routing. Regulated EuroSuper 95 was €1.74/L through Sep 28, 2026; price resets Sep 29, so recheck before departure. No ferry, Sozina or A1 toll is planned on these northern route days."
     },
     {
       "label": "Parks + boat + walls + spa",
       "min": 180,
       "max": 380,
-      "note": "Planning allowance for two-person admissions, Kotor walls (optional day visit) and optional spa. Durmitor and Skadar list €5/person/day; Skadar lists one cruise included. For the primary route, three planned park days total €15/person versus €13.50/person for the 2026 all-parks annual pass, if separate admission is charged each day.  Confirm ticket terms and October operations."
+      "note": "Planning allowance for two-person admissions, Kotor walls (optional day visit) and optional spa. Current posted 2026 day rates: Durmitor €5/person, Biogradska Gora €4/person, Skadar €5/person; three planned park days total €14/person if separately charged. The €13.50/person all-parks annual pass is currently less than separate tickets. Optional Biogradska boat €10/hour; confirm ticket terms and October operations."
     },
     {
       "label": "Food & drink",
@@ -1161,6 +1134,12 @@
       "min": 200,
       "max": 300,
       "note": "Carry €100–150 in small cash notes; reserve total also covers weather reroutes, fuel and unplanned fees."
+    },
+    {
+      "label": "Tara zipline · optional and unconfirmed",
+      "min": 0,
+      "max": 90,
+      "note": "Not included in the minimum. Operator lists Red Rock at €20/person, but its return crosses the bridge closed through Oct 26. Yellow/Extreme return transport is included; verify Oct 3 operation, bridge-free launch/access and current prices directly before booking."
     }
   ],
   "cashTracker": {
@@ -1461,9 +1440,37 @@
     [
       "Hotel Conte · published check-in, breakfast and parking guidance",
       "https://hotelconte.me/our-hotel"
+    ],
+    [
+      "Government of Montenegro · Tara bridge closure through Oct 26, 2026",
+      "https://www.gov.me/amp/clanak/od-10-avgusta-potpuna-obustava-saobracaja-preko-mosta-durdevica-tara"
+    ],
+    [
+      "Durmitor Adventure · Tara zipline season, access and return transport",
+      "https://durmitoradventure.com/taraziplines/"
+    ],
+    [
+      "National Parks of Montenegro · Biogradska Gora 2026 tariff",
+      "https://nparkovi.me/sections/26"
+    ],
+    [
+      "National Parks of Montenegro · Biogradska Gora 2026 opening notice",
+      "https://nparkovi.me/news/409/np-biogradska-gora-od-16-marta-otvoren-za-posjete"
+    ],
+    [
+      "Tourism Organisation of Kolašin · Dobre Vode corridor and specialties",
+      "https://kolasin.me/dobre-vode-restaurant/"
+    ],
+    [
+      "Tourism Organisation of Kolašin · cafés and Caffe Select",
+      "https://kolasin.me/kafici/"
+    ],
+    [
+      "Tourism Organisation of Žabljak · Momčilov Grad hours and parking",
+      "https://visitzabljak.me/explore-zabljak/restaurant-momcilov-grad"
     ]
   ],
-  "sourcesChecked": "2026-09-27",
+  "sourcesChecked": "2026-09-28",
   "stays": [
     {
       "name": "Runolist Chalet",
