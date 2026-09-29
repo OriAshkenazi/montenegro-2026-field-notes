@@ -131,7 +131,7 @@ function buildDocument(inputs) {
   ]);
 
   h(2, 'Contents');
-  ul(['Trip at a glance', 'Stays', ...route.days.map(d => `${d.heading} (${d.date})`), 'Quick status checks', 'Budget', 'Travel insurance', 'Emergency numbers and field guide', 'Experience index', 'Live weather', 'Map waypoints', 'Sources']);
+  ul(['Trip at a glance', 'Stays', ...route.days.map(d => `Day ${d.day} · ${d.heading} (${d.date})`), 'Quick status checks', 'Budget', 'Travel insurance', 'Emergency numbers and field guide', 'Experience index', 'Live weather', 'Map waypoints', 'Sources']);
 
   h(2, 'Trip at a glance');
   doc.push({ table: { head: ['Day', 'Date', 'Region', 'Base', 'Adjusted driving'], rows: route.days.map(d => [String(d.day), `${d.date} (${isoDate(d.date, year)})`, d.region, d.base, `${d.adjustedHours} h`]) } });
@@ -156,7 +156,7 @@ function buildDocument(inputs) {
     const foods = new Map();
     for (const group of Object.values(day.food || {})) for (const item of group) foods.set(item.id, item);
 
-    h(2, `${day.heading} (${day.date})`);
+    h(2, `Day ${day.day} · ${day.heading} (${day.date})`);
     ul([
       field('Date', isoDate(day.date, year)), field('Region', day.region), field('Overnight base', day.base), field('Day starts', day.startAt),
       field('Driving route', day.drive), field('Adjusted driving total', `${day.adjustedHours} h (timetable drive legs sum to ${minutes(projected.totals.driveAdjustedMin)})`),
