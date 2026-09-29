@@ -70,11 +70,11 @@ const app = fs.readFileSync('app.js', 'utf8');
 const sw = fs.readFileSync('sw.js', 'utf8');
 const css = fs.readFileSync('style.css', 'utf8');
 const html = fs.readFileSync('index.html', 'utf8');
-assert.ok(app.includes('waypoints.json?rev=2026-09-29d'));
+assert.ok(app.includes('waypoints.json?rev=2026-09-29e'));
 assert.ok(!app.includes('routeToggle'), 'separate fallback route control should be removed');
 assert.ok(app.includes('data-plan-target'), 'map popup should link to a timeline target');
 assert.ok(html.includes('id="stayDirectory"'), 'confirmed stay quick reference should render');
-assert.ok(sw.includes('./waypoints.json?rev=2026-09-29d'));
+assert.ok(sw.includes('./waypoints.json?rev=2026-09-29e'));
 assert.ok(sw.includes('tile.openstreetmap.org') && sw.includes('leaflet@1.9.4'));
 assert.ok(css.includes('@media (orientation:landscape)') && css.includes('flex-direction:row-reverse'));
 assert.ok(css.includes('@media (orientation:landscape) and (max-height:500px)'));
@@ -87,10 +87,10 @@ assert.ok(css.includes('grid-template-columns:48px minmax(0,1fr) minmax(0,38%) 2
 assert.ok(css.includes('.day-title,.day-drive{min-width:0;overflow-wrap:anywhere}'));
 assert.ok(css.includes('body{margin:0;background:var(--surface-0)') && css.includes('main{max-width:1200px'));
 assert.ok(css.includes('body{padding-inline-start:env(safe-area-inset-left,0px);padding-inline-end:calc(var(--side-peek) + env(safe-area-inset-right,0px))'));
-assert.ok(html.includes('style.css?rev=2026-09-29d') && html.includes('app.js?rev=2026-09-29d') && html.includes('weather.js?rev=2026-09-29d'));
+assert.ok(html.includes('style.css?rev=2026-09-29e') && html.includes('app.js?rev=2026-09-29e') && html.includes('weather.js?rev=2026-09-29e'));
 assert.ok(html.includes('data-pane="weather"') && html.includes('id="pane-weather"'));
 assert.ok(html.includes('13 route hubs'), 'weather directory count must match the expanded route hubs');
-assert.ok(sw.includes("const VERSION='39'") && sw.includes('./weather.js?rev=2026-09-29d'));
+assert.ok(sw.includes("const VERSION='40'") && sw.includes('./weather.js?rev=2026-09-29e'));
 const weather = fs.readFileSync('weather.js', 'utf8');
 assert.ok(weather.includes('https://api.open-meteo.com/v1/forecast'));
 assert.ok(weather.includes('low<=2') && weather.includes('chance>60'));
@@ -101,3 +101,17 @@ assert.equal(itinerary.routes.primary.days.find(day => day.day === 6).morning.fi
 assert.ok(weather.includes('localStorage.setItem(cacheKey') && JSON.parse(fs.readFileSync('locales/en.json', 'utf8')).ui['w.mode.offline'] === 'Offline Mode - Showing Cached Forecast');
 assert.ok(weather.includes("'forecast_days':'16'") || weather.includes("forecast_days:'16'"));
 console.log(`PASS: ${count} itinerary stop and food references, ${waypoints.length} waypoint records, offline assets, navigation, weather thresholds, and portrait/landscape drawer behavior`);
+
+// Pin-placement guards (see scripts/audit-pins.js)
+{
+  const audit = require('../scripts/audit-pins.js');
+  for (const group of audit.clusters(waypoints)) {
+    const venues = group.filter(point => audit.VENUE_CATEGORIES.has(point.category));
+    if (group.length >= 3 && venues.length) assert.ok(group.every(audit.isLabelledApproximate), `${group.length} pins share ${group[0].lat},${group[0].lng} without an "approximate" precision label: ${group.map(point => point.id).join(', ')}`);
+  }
+  const ROUTE_OR_REFERENCE_PINS = new Set(['tiv-zabljak-direct-route-via-kotor-risan-grahovo-niksic-and-savnik', 'p14-sedlo-pass-route', 'perast-to-tivat-airport', 'p14-sedlo-pass-out-and-back-from-zabljak-to-pluzine-and-piva-viewpoint', 'dobre-vode-kolasin']);
+  for (const miss of audit.townMismatches(waypoints)) assert.ok(ROUTE_OR_REFERENCE_PINS.has(miss.id), `${miss.id} is ${miss.km.toFixed(1)} km from ${miss.town} (limit ${audit.TOWN_RADIUS_KM} km)`);
+  for (const point of waypoints.filter(point => point.mapPin === false)) assert.ok(point.precision && !/^navigation pin$/.test(point.precision), `${point.id}: hidden pin needs an explanatory precision`);
+  const konak = waypoints.find(point => point.id === 'ivanov-konak-lovcen');
+  assert.ok(audit.km([konak.lat, konak.lng], [42.3784, 18.8311]) < 2, 'Ivanov Konak belongs at Ivanova Korita');
+}
