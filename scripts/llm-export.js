@@ -274,7 +274,9 @@ function buildDocument(inputs) {
   })));
 
   h(2, `Sources (checked ${trip.sourcesChecked})`);
-  ul(trip.sources.map(([name, url]) => inl(link(name, url))));
+  const cardLabel = { emergency: ui['field.1.kicker'], setup: ui['field.3.kicker'], budget: ui['tab.budget'] };
+  const usedOn = (at = {}) => [...(at.days || []).map(d => `Day ${d}`), ...(at.waypoints || []).map(wpName), ...(at.cards || []).map(c => cardLabel[c] || c)].join('; ');
+  ul(trip.sources.map(([name, url, at]) => { const used = usedOn(at); return inl(link(name, url), used ? ` — used on: ${used}` : ''); }));
   p(`${ui['footer.version']} · ${ui['footer.built']}`);
   return { doc, firstDay, lastDay };
 }

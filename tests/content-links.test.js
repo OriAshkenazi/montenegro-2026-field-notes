@@ -87,6 +87,22 @@ for (const id of ['kotor-old-town-walls-san-giovanni','lovcen-visitor-area-ivano
   assert.ok(!app.includes(`'${id}'`), `${id}: route-prohibited candidate must not be surfaced as an optional add-on`);
 }
 
+// Sources render where they are used; the Field Guide no longer carries a separate list.
+assert.ok(!html.includes('id="sourceList"') && !html.includes('class="sources"'), 'Field Guide sources list must be removed');
+{
+  const itin = JSON.parse(fs.readFileSync(path.join(root, 'itinerary.json'), 'utf8'));
+  const wpIds = new Set(JSON.parse(fs.readFileSync(path.join(root, 'waypoints.json'), 'utf8')).waypoints.map(w => w.id));
+  const cardIds = { emergency: 'emergencySources', setup: 'setupSources', budget: 'budgetSources' };
+  for (const [name, url, at] of itin.sources) {
+    assert.ok(at && (at.days?.length || at.waypoints?.length || at.cards?.length), `${name}: source needs a placement`);
+    for (const d of at.days || []) assert.ok(d >= 1 && d <= 6, `${name}: day ${d} out of range`);
+    for (const w of at.waypoints || []) assert.ok(wpIds.has(w), `${name}: unknown waypoint ${w}`);
+    for (const c of at.cards || []) assert.ok(cardIds[c] && html.includes(`id="${cardIds[c]}"`), `${name}: unknown card ${c}`);
+    assert.ok(/^https:\/\//.test(url), `${name}: source URL must be https`);
+  }
+}
+assert.ok(app.includes('${daySources(d)}') && (app.match(/\$\{daySources\(d\)\}/g) || []).length === 2, 'day sources must render in both route views');
+assert.ok(app.includes('sourceLinks(at=>at.waypoints?.includes(p.id))'), 'map popups must show their place sources');
 assert.ok(!html.includes('Master schedule') && !html.includes('id="schedule"'), 'duplicate master schedule must be removed');
 assert.ok(!html.includes('id="groundTips"') && !html.includes('id="routeWarningText"'), 'duplicate global ground and route warning blocks must be removed');
 assert.ok(!html.includes('class="notice"'), 'duplicate route warning banner must be removed');

@@ -16,7 +16,8 @@ const encodedUrl = url => url.replace(/[()\s]/g, encodeURIComponent);
 
 // Internal cross-reference keys are resolved to names instead of printed; note: true
 // is shown by nesting the note under the item it annotates.
-const REFERENCE_KEYS = new Set(['note', 'id', 'waypointId', 'mapWaypointId', 'foodId', 'from', 'to', 'via']);
+// Source placements (days/waypoints/cards) are printed as a readable "used on" note.
+const REFERENCE_KEYS = new Set(['note', 'id', 'waypointId', 'mapWaypointId', 'foodId', 'from', 'to', 'via', 'waypoints', 'cards']);
 const waypointById = new Map(waypointsFile.waypoints.map(point => [point.id, point]));
 const missing = [];
 function walk(value, trail, key) {
