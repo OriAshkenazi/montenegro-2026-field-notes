@@ -13,13 +13,16 @@
           "date": "Thu · Oct 1",
           "region": "North · Tivat → Žabljak",
           "base": "Runolist Chalet · Žabljak",
-          "drive": "TIV → Vrmac tunnel / Kotor → M-1 to Risan / Lipci → M-8 via Grahovo → M-7 to Nikšić → M-3 to Jasenovo Polje → M-6 via Šavnik → Runolist Chalet · nominal 3 h 20 min / 4 h adjusted (+20%); live route controls",
-          "adjustedHours": 4,
+          "drive": "TIV → Vrmac tunnel / Kotor → M-1 to Risan / Lipci → M-8 via Grahovo → M-7 to Nikšić → M-3 to Jasenovo Polje → M-6 via Šavnik → Runolist Chalet · nominal 3 h 47 min / 4 h 33 min adjusted (+20%); live route controls",
+          "adjustedHours": 4.6,
           "morning": [
             {
               "type": "LOGISTICS",
               "text": "Confirmed EL AL flight LY5467: depart TLV at 11:50 and arrive TIV at 13:50 on Oct 1 (PNR 5682367).",
-              "id": "day-1-morning-01"
+              "id": "day-1-morning-01",
+              "title": "Land at Tivat (LY5467)",
+              "fixedAt": "13:50",
+              "dwellMin": 40
             },
             {
               "type": "CAUTION",
@@ -29,12 +32,16 @@
             {
               "type": "LOGISTICS",
               "text": "Europcar voucher 4H419663: pickup at Tivat Airport at 14:30; Europcar desk is in Arrivals and the car is at the airport. Rental booking total €362 (paid); class IGAR automatic crossover, Skoda Karoq or similar.",
-              "id": "day-1-morning-02"
+              "id": "day-1-morning-02",
+              "title": "Europcar pickup at Tivat Arrivals",
+              "fixedAt": "14:30",
+              "dwellMin": 45
             },
             {
               "type": "LOGISTICS",
               "id": "day-1-morning-04",
-              "text": "Voucher refs: Flexible Autos 4H419663 / Europcar 1207623276. The €1,154 IGAR deposit requires a physical Visa, Mastercard or AmEx credit card in the main driver’s name; debit, virtual, prepaid and cash are not accepted. Bring original passport, licence, international driving permit and voucher."
+              "text": "Voucher refs: Flexible Autos 4H419663 / Europcar 1207623276. The €1,154 IGAR deposit requires a physical Visa, Mastercard or AmEx credit card in the main driver’s name; debit, virtual, prepaid and cash are not accepted. Bring original passport, licence, international driving permit and voucher.",
+              "note": true
             },
             {
               "type": "CAUTION",
@@ -44,14 +51,31 @@
             {
               "type": "LOGISTICS",
               "text": "After the 14:30 voucher pickup, aim to leave around 15:15–15:30 only if landing, rental collection, driver and live road/weather checks are all on track.",
-              "id": "day-1-morning-03"
+              "id": "day-1-morning-03",
+              "note": true
             }
           ],
           "afternoon": [
             {
               "type": "DRIVE",
               "text": "Drive directly north to your Runolist Chalet via the Vrmac tunnel and Kotor, then M-1 to Risan/Lipci, M-8 via Grahovo, M-7 to Nikšić, M-3 to Jasenovo Polje and M-6 via Šavnik.",
-              "id": "day-1-afternoon-01"
+              "id": "day-1-afternoon-01",
+              "title": "Drive Tivat to Runolist via Grahovo",
+              "leg": {
+                "from": "tiv-rental-pickup",
+                "to": "runolist-chalet",
+                "via": [
+                  "grahovo",
+                  "niksic",
+                  "savnik"
+                ]
+              },
+              "driveMin": {
+                "nominal": 227,
+                "adjusted": 273,
+                "source": "OSRM",
+                "checked": "2026-09-29"
+              }
             },
             {
               "type": "CAUTION",
@@ -60,13 +84,15 @@
             },
             {
               "type": "DRIVE",
-              "text": "Use 3 h 20 min as a nominal published estimate; current sources vary and live traffic/weather can extend it, then add 20%: about 4 h adjusted, before traffic or stops.",
-              "id": "day-1-afternoon-03"
+              "text": "Use 3 h 47 min as a nominal routed estimate; current sources vary (published figures start near 3 h 20 min) and live traffic/weather can extend it, then add 20%: about 4 h 33 min adjusted, before traffic or stops.",
+              "id": "day-1-afternoon-03",
+              "note": true
             },
             {
               "type": "DRIVE",
-              "text": "That points to roughly 19:15–19:30 arrival.",
-              "id": "day-1-afternoon-04"
+              "text": "That points to roughly 19:45–20:00 arrival.",
+              "id": "day-1-afternoon-04",
+              "note": true
             },
             {
               "type": "CAUTION",
@@ -93,12 +119,17 @@
             {
               "type": "STAY",
               "text": "Check in and unload every bag.",
-              "id": "day-1-evening-01"
+              "id": "day-1-evening-01",
+              "title": "Check in and unload at Runolist",
+              "dwellMin": 20
             },
             {
               "type": "EAT",
               "text": "Eat near the lodging or use food arranged ahead.",
-              "id": "day-1-evening-02"
+              "id": "day-1-evening-02",
+              "title": "Dinner at Zlatni Papagaj",
+              "dwellMin": 60,
+              "foodId": "food-day-1-meals-02"
             },
             {
               "type": "CAUTION",
@@ -108,7 +139,8 @@
             {
               "type": "STAY",
               "text": "Runolist confirmation 5203973379: Two-Bedroom House for 2 adults; check-in Oct 1, 14:00–24:00. Total €225.39, cash-only at the property; paid amount/balance is not stated. Free cancellation through Sep 29, 2026 23:59 CEST, then €219.39; no-show fee same. Tell the host your arrival time in advance; +382 69 520 016.",
-              "id": "day-1-evening-04"
+              "id": "day-1-evening-04",
+              "note": true
             }
           ],
           "parking": "Runolist Chalet, Narodnih heroja, 84220 Žabljak. Booking.com listing indicates free private parking and shared kitchen access; confirm the booked unit’s access with the host. Booking 5203973379; cash-only payment at property, payment status/balance due not stated.",
@@ -190,40 +222,73 @@
                 "waypointId": "aroma-311-zabljak"
               }
             ]
-          }
+          },
+          "startAt": "13:50"
         },
         {
           "day": 2,
           "date": "Fri · Oct 2",
           "region": "North · Žabljak / Durmitor / Piva",
           "base": "Runolist Chalet · Žabljak",
-          "drive": "Runolist → Black Lake → P14/R-16 over Sedlo → Trsa → Plužine/Piva → (live choice: M-3 via Nikšić and Šavnik, or return over Sedlo) → Runolist · ~5 h 48 adjusted planning estimate; 6 h ceiling and daylight gates",
-          "adjustedHours": 5.8,
+          "drive": "Runolist → Black Lake → P14/R-16 over Sedlo → Trsa → Plužine/Piva → (live choice: M-3 via Nikšić and Šavnik, or return over Sedlo) → Runolist · ~3 h 53 adjusted on the Sedlo return (the M-3 return via Nikšić and Šavnik routes at about 6 h 19 adjusted and exceeds the 6 h ceiling); 6 h ceiling and daylight gates",
+          "adjustedHours": 3.9,
           "morning": [
             {
               "type": "STAY",
               "text": "Breakfast at Runolist; leave by 06:30 with water and a packed lunch. Fill the tank and download the P14 map before leaving town.",
-              "id": "day-2-morning-01"
+              "id": "day-2-morning-01",
+              "title": "Depart Runolist"
             },
             {
               "type": "DRIVE",
               "text": "Park at the signed Black Lake lot by about 06:50. The full shore loop is about 3.6 km; allow up to 90 minutes for the walk and photos, then leave by 08:30.",
-              "id": "day-2-morning-02"
+              "id": "day-2-morning-02",
+              "title": "Drive to Black Lake parking",
+              "leg": {
+                "from": "runolist-chalet",
+                "to": "black-lake-parking"
+              },
+              "driveMin": {
+                "nominal": 13,
+                "adjusted": 16,
+                "source": "OSRM",
+                "checked": "2026-09-29"
+              }
             },
             {
               "type": "WALK",
               "text": "Walk the Black Lake shore loop at an easy pace. The small-lake shore can be damp and slippery; use grippy shoes and turn back if footing or visibility worsens.",
-              "id": "day-2-morning-03"
+              "id": "day-2-morning-03",
+              "title": "Black Lake shore loop",
+              "dwellMin": 90
             },
             {
               "type": "LOGISTICS",
               "text": "Espresso stop at Gradska Kafanica only if open when you pass; local listing shows 08:00, so confirm the prior evening. If closed, use coffee packed at Runolist.",
-              "id": "day-2-morning-04"
+              "id": "day-2-morning-04",
+              "title": "Espresso at Gradska Kafanica",
+              "dwellMin": 20,
+              "foodId": "food-day-2-coffee-01"
             },
             {
               "type": "DRIVE",
               "text": "Continue on P14/R-16 over Sedlo to Trsa, then descend to Plužine for the Piva viewpoint and town. Roads are paved but narrow, winding two-way mountain roads; use signed pullouts and expect to wait for passing places.",
-              "id": "day-2-morning-05"
+              "id": "day-2-morning-05",
+              "title": "Drive over Sedlo to Plužine",
+              "leg": {
+                "from": "black-lake-parking",
+                "to": "pluzine",
+                "via": [
+                  "p14-sedlo-pass-route",
+                  "trsa-village-pullout"
+                ]
+              },
+              "driveMin": {
+                "nominal": 113,
+                "adjusted": 136,
+                "source": "OSRM",
+                "checked": "2026-09-29"
+              }
             },
             {
               "type": "CAUTION",
@@ -235,17 +300,23 @@
             {
               "type": "SEE",
               "text": "At Plužine, prioritize the Piva viewpoint and a short lakeside/town stop. Do not add Mratinje Dam or the cheese-farm detour.",
-              "id": "day-2-afternoon-01"
+              "id": "day-2-afternoon-01",
+              "title": "Piva viewpoint and Plužine lakeside",
+              "dwellMin": 45
             },
             {
               "type": "EAT",
               "text": "Use the packed lunch by default. Restoran Piva Lake is the corridor sit-down option only if called ahead and the live return estimate remains within 6 h adjusted; allow 60 minutes, confirm parking and carry cash because payment is unverified.",
-              "id": "day-2-afternoon-02"
+              "id": "day-2-afternoon-02",
+              "title": "Packed lunch at Plužine",
+              "dwellMin": 45,
+              "foodId": "food-day-2-meals-01"
             },
             {
               "type": "LOGISTICS",
               "text": "Choose the return live: use M-3 via Nikšić and M-6 via Šavnik only if navigation keeps total adjusted driving ≤6 h and the Žabljak return target by 16:00. Otherwise return over Sedlo if that is the faster safe open route.",
-              "id": "day-2-afternoon-03"
+              "id": "day-2-afternoon-03",
+              "note": true
             },
             {
               "type": "CAUTION",
@@ -255,24 +326,46 @@
             {
               "type": "LOGISTICS",
               "text": "Use marked parking only. Black Lake off-season parking is reported at €1.20/hour from Oct 1–May 31; carry coins and confirm the meter/sign. Budget Durmitor admission at the current €5/person rate if charged.",
-              "id": "day-2-afternoon-05"
+              "id": "day-2-afternoon-05",
+              "note": true
             }
           ],
           "evening": [
             {
               "type": "DRIVE",
               "text": "Return to Runolist by the 16:00 target and never continue mountain driving beyond 17:30.",
-              "id": "day-2-evening-01"
+              "id": "day-2-evening-01",
+              "title": "Drive back to Runolist over Sedlo",
+              "leg": {
+                "from": "pluzine",
+                "to": "runolist-chalet",
+                "via": [
+                  "p14-sedlo-pass-route"
+                ]
+              },
+              "driveMin": {
+                "nominal": 67,
+                "adjusted": 81,
+                "source": "OSRM",
+                "checked": "2026-09-29"
+              }
             },
             {
               "type": "EAT",
               "text": "Dinner at Zlatni Papagaj, which publishes 18:00–23:00 service and Montenegrin dishes; call/reserve for Oct 2, ask about payment, and walk from the chalet if practical.",
-              "id": "day-2-evening-02"
+              "id": "day-2-evening-02",
+              "title": "Dinner at Zlatni Papagaj",
+              "fixedAt": "18:00",
+              "dwellMin": 75,
+              "foodId": "food-day-2-meals-02"
             },
             {
               "type": "LOGISTICS",
               "text": "Shop at Aroma 311 before closing for Saturday water/snacks; do not add a morning provisioning stop.",
-              "id": "day-2-evening-03"
+              "id": "day-2-evening-03",
+              "title": "Stock up at Aroma 311",
+              "dwellMin": 15,
+              "foodId": "food-day-2-supermarkets-01"
             }
           ],
           "parking": "Use signed Black Lake parking and marked pullouts only; do not stop on P14 blind bends. The Black Lake lot is reported at €1.20/hour off-season (Oct–May); payment type and current sign must be checked. Download the P14/R-16 map before departure.",
@@ -381,57 +474,93 @@
                 "waypointId": "aroma-311-zabljak"
               }
             ]
-          }
+          },
+          "startAt": "06:30"
         },
         {
           "day": 3,
           "date": "Sat · Oct 3",
           "region": "North · Tara Canyon / Mojkovac / Kolašin / Biogradska Gora",
           "base": "Runolist Chalet · Žabljak",
-          "drive": "Runolist → conditional Žabljak-side Tara viewpoint/zipline access → Mojkovac → Kolašin → Biogradsko Lake → Kolašin/Mojkovac → Runolist · ~5 h 30 adjusted planning allowance; live route must avoid the closed bridge and remain ≤6 h",
-          "adjustedHours": 5.5,
+          "drive": "Runolist → M-6 / R-20 via Boan → Kolašin → Biogradsko Lake → Dobre Vode → Kolašin → Boan → Runolist · ~4 h 45 nominal / 5 h 43 adjusted (OSRM +20%); verify the Boan section is paved and open; the optional Tara viewpoint spur would exceed the 6 h ceiling",
+          "adjustedHours": 5.7,
           "morning": [
             {
               "type": "STAY",
               "text": "Breakfast at Runolist and leave around 06:45. Check AMSCG, weather, park access and the Tara operator before setting out; fill the tank and carry water/snacks.",
-              "id": "day-3-morning-01"
+              "id": "day-3-morning-01",
+              "title": "Breakfast and depart Runolist"
             },
             {
               "type": "LOGISTICS",
-              "text": "Tara Bridge is scheduled to be closed through Oct 26, 2026. Do not cross the bridge or enter the works. Visit the bridge/canyon only from a safe public viewing place whose access is confirmed open; the map pin is an approximate reference, not parking.",
-              "id": "day-3-morning-02"
+              "text": "Tara Bridge is scheduled to be closed through Oct 26, 2026. Do not cross the bridge or enter the works. Visit the bridge/canyon only from a safe public viewing place whose access is confirmed open; the map pin is an approximate reference, not parking. Optional spur only: the Žabljak-side viewpoint detour adds roughly 1 h of adjusted driving plus the stop, which pushes the day past the 6 h ceiling, so take it only if live routing shows the day still fits.",
+              "id": "day-3-morning-02",
+              "title": "Optional Tara Canyon viewpoint spur",
+              "note": true
             },
             {
               "type": "LOGISTICS",
               "text": "Zipline is a conditional add-on: October dates depend on weather. Red Rock requires walking back across the bridge, so do not use it during this closure. Consider Yellow/Extreme only if the operator confirms operation, retrieval and access without crossing; skip it if it adds delay or breaks either route gate.",
-              "id": "day-3-morning-03"
+              "id": "day-3-morning-03",
+              "title": "Tara viewpoint stop (zipline conditional)",
+              "note": true
             },
             {
               "type": "DRIVE",
-              "text": "Continue toward Kolašin only on a live, paved route that does not cross the closed bridge. Route via the R-10/Mojkovac corridor if navigation confirms it is open; do not accept an unverified gravel shortcut.",
-              "id": "day-3-morning-04"
+              "text": "Continue toward Kolašin only on a live, paved route that does not cross the closed bridge. Plan on M-6 → R-20 via Boan (Mioska–Tušina) → M-2; before leaving, verify that the Boan section is paved and open, and do not accept an unverified gravel shortcut. The R-10/Mojkovac corridor runs to the closed bridge, so do not use it during the closure.",
+              "id": "day-3-morning-04",
+              "title": "Drive to Kolašin via Boan (R-20)",
+              "leg": {
+                "from": "runolist-chalet",
+                "to": "kolasin-town"
+              },
+              "driveMin": {
+                "nominal": 109,
+                "adjusted": 131,
+                "source": "OSRM",
+                "checked": "2026-09-29"
+              }
             },
             {
               "type": "LOGISTICS",
               "text": "Take espresso at Caffe Select in central Kolašin; the Tourism Organisation lists 07:00 winter-season opening, so confirm October hours by phone.",
-              "id": "day-3-morning-05"
+              "id": "day-3-morning-05",
+              "title": "Espresso at Caffe Select, Kolašin",
+              "dwellMin": 20,
+              "foodId": "food-day-3-coffee-01"
             }
           ],
           "afternoon": [
             {
               "type": "DRIVE",
               "text": "From Kolašin follow signed park access to Biogradsko Lake; confirm the gate and private-car access before leaving town. The official 2026 notice confirms the season opened, but not Oct 3 road or visitor-train operation.",
-              "id": "day-3-afternoon-01"
+              "id": "day-3-afternoon-01",
+              "title": "Drive to Biogradsko Lake",
+              "leg": {
+                "from": "kolasin-town",
+                "to": "biogradsko-lake"
+              },
+              "driveMin": {
+                "nominal": 33,
+                "adjusted": 40,
+                "source": "OSRM",
+                "checked": "2026-09-29"
+              }
             },
             {
               "type": "WALK",
               "text": "Walk the lake shore loop, allowing up to 2 hours for the circuit, photos and damp autumn footing. Turn back if the trail is slippery or visibility deteriorates.",
-              "id": "day-3-afternoon-02"
+              "id": "day-3-afternoon-02",
+              "title": "Biogradsko Lake shore loop",
+              "dwellMin": 120
             },
             {
               "type": "EAT",
-              "text": "On the return corridor, stop at Dobre Vode in Sjerogošte for a 60-minute late lunch: local kačamak, gotovac, lamb in milk and veal under sač. The Tourism Organisation places it on the Kolašin–Mojkovac road, 6 km from the park, with a large car park. Call first for October operation and payment.",
-              "id": "day-3-afternoon-03"
+              "text": "On the return corridor, stop at Dobre Vode in Sjerogošte for a 60-minute lunch around noon: local kačamak, gotovac, lamb in milk and veal under sač. The Tourism Organisation places it on the Kolašin–Mojkovac road, 6 km from the park, with a large car park. Call first for October operation and payment.",
+              "id": "day-3-afternoon-03",
+              "title": "Lunch at Dobre Vode",
+              "dwellMin": 60,
+              "foodId": "food-day-3-meals-01"
             },
             {
               "type": "CAUTION",
@@ -441,24 +570,45 @@
             {
               "type": "LOGISTICS",
               "text": "Biogradska Gora admission is currently €4/person/day; boats are €10/hour, kayaks €3 single / €5 double per hour. The park tariff does not state payment method; carry cash. Confirm October operations before budgeting boat time.",
-              "id": "day-3-afternoon-05"
+              "id": "day-3-afternoon-05",
+              "note": true
             }
           ],
           "evening": [
             {
               "type": "DRIVE",
               "text": "Return to Runolist by 16:00 target and stop mountain driving by 17:30.",
-              "id": "day-3-evening-01"
+              "id": "day-3-evening-01",
+              "title": "Drive back to Runolist via Boan",
+              "leg": {
+                "from": "biogradsko-lake",
+                "to": "runolist-chalet",
+                "via": [
+                  "dobre-vode-kolasin",
+                  "kolasin-town"
+                ]
+              },
+              "driveMin": {
+                "nominal": 143,
+                "adjusted": 172,
+                "source": "OSRM",
+                "checked": "2026-09-29"
+              }
             },
             {
               "type": "EAT",
               "text": "Dinner at Zlatni Papagaj, 18:00–23:00 published; call/reserve for Oct 3 and ask about payment.",
-              "id": "day-3-evening-02"
+              "id": "day-3-evening-02",
+              "title": "Dinner at Zlatni Papagaj",
+              "fixedAt": "18:00",
+              "dwellMin": 75,
+              "foodId": "food-day-3-meals-02"
             },
             {
               "type": "LOGISTICS",
               "text": "Use the short town walk only after parking at Runolist; keep the late evening restful before the Oct 4 transfer.",
-              "id": "day-3-evening-03"
+              "id": "day-3-evening-03",
+              "note": true
             }
           ],
           "parking": "At Tara, use only confirmed public marked viewpoint and parking, never the road shoulder or work zone. In Kolašin use signed town parking; at Biogradska Gora follow the park checkpoint and same-day vehicle-access instructions. Do not assume summer visitor trains operate in October.",
@@ -552,30 +702,49 @@
                 "waypointId": "aroma-311-zabljak"
               }
             ]
-          }
+          },
+          "startAt": "06:45"
         },
         {
           "day": 4,
           "date": "Sun · Oct 4",
           "region": "North → Coast · Perast / Kotor",
           "base": "Conte Hotel & Restaurant · Perast",
-          "drive": "Runolist Chalet → Conte / signed Perast entrance parking → Kotor Old Town → Perast · direct transfer ~3 h 04 nominal / 3 h 41 adjusted (+20%); add Kotor out-and-back and live traffic, target ≤4.9 h adjusted total; finish driving by 17:30.",
-          "adjustedHours": 4.9,
+          "drive": "Runolist Chalet → Conte / signed Perast entrance parking → Kotor Old Town → Perast · direct transfer ~3 h 37 nominal / 4 h 21 adjusted (+20%); add Kotor out-and-back and live traffic, about 5.3 h adjusted total; finish driving by 17:30.",
+          "adjustedHours": 5.3,
           "morning": [
             {
               "type": "LOGISTICS",
               "id": "day-4-morning-01",
-              "text": "Breakfast, settle the Runolist checkout and be on the road by 07:00. Keep the €225.39 cash availability note exactly as booked; amount already paid/balance due is not stated."
+              "text": "Breakfast, settle the Runolist checkout and be on the road by 07:00. Keep the €225.39 cash availability note exactly as booked; amount already paid/balance due is not stated.",
+              "title": "Check out and depart Runolist"
             },
             {
               "type": "DRIVE",
               "id": "day-4-morning-02",
-              "text": "Drive directly via M-6 through Šavnik, M-3 to Nikšić, M-7 to Vilusi, M-8 through Grahovo/Lipci and M-1 to Perast. Do not add a sightseeing or meal detour on the transfer."
+              "text": "Drive directly via M-6 through Šavnik, M-3 to Nikšić, M-7 to Vilusi, M-8 through Grahovo/Lipci and M-1 to Perast. Do not add a sightseeing or meal detour on the transfer.",
+              "title": "Drive Runolist to Perast via Grahovo",
+              "leg": {
+                "from": "runolist-chalet",
+                "to": "perast-entrance-parking",
+                "via": [
+                  "savnik",
+                  "niksic",
+                  "grahovo"
+                ]
+              },
+              "driveMin": {
+                "nominal": 217,
+                "adjusted": 261,
+                "source": "OSRM",
+                "checked": "2026-09-29"
+              }
             },
             {
               "type": "DRIVE",
               "id": "day-4-morning-03",
-              "text": "Use about 3 h 04 nominal / 3 h 41 with the +20% terrain buffer, before traffic, parking and the Kotor outing. Check AMSCG road/weather notices before departure; never route across the Đurđevića Tara bridge closure."
+              "text": "Use about 3 h 37 nominal / 4 h 21 with the +20% terrain buffer, before traffic, parking and the Kotor outing. Check AMSCG road/weather notices before departure; never route across the Đurđevića Tara bridge closure.",
+              "note": true
             },
             {
               "type": "CAUTION",
@@ -587,22 +756,39 @@
             {
               "type": "STAY",
               "id": "day-4-afternoon-01",
-              "text": "Conte booking 5198999691: Classic Double Room for 2 adults, check-in Oct 4, 15:00–21:00. Total €271.93, paid in full. Preserve the recorded itemized cancellation terms and confirmation-intro conflict. Perast old town is closed to vehicles May–October; use signed entrance parking and ask reception about pickup rather than assuming it."
+              "text": "Conte booking 5198999691: Classic Double Room for 2 adults, check-in Oct 4, 15:00–21:00. Total €271.93, paid in full. Preserve the recorded itemized cancellation terms and confirmation-intro conflict. Perast old town is closed to vehicles May–October; use signed entrance parking and ask reception about pickup rather than assuming it.",
+              "note": true
             },
             {
               "type": "LOGISTICS",
               "id": "day-4-afternoon-02",
-              "text": "Park at a signed Perast entrance lot, walk to Conte and hand luggage to reception only if they confirm storage. If the hotel cannot secure the bags, stay in Perast and do not drive to Kotor with luggage."
+              "text": "Park at a signed Perast entrance lot, walk to Conte and hand luggage to reception only if they confirm storage. If the hotel cannot secure the bags, stay in Perast and do not drive to Kotor with luggage.",
+              "title": "Park in Perast and drop luggage at Conte",
+              "dwellMin": 30
             },
             {
               "type": "DRIVE",
               "id": "day-4-afternoon-03",
-              "text": "Once bags are secured, take the short M-1 run to Kotor. Park in signed Old Town parking and explore on foot; allow roughly 45–60 minutes adjusted driving for the out-and-back plus traffic."
+              "text": "Once bags are secured, take the short M-1 run to Kotor. Park in signed Old Town parking and explore on foot; allow roughly 45–60 minutes adjusted driving for the out-and-back plus traffic.",
+              "title": "Drive to Kotor Old Town parking",
+              "leg": {
+                "from": "perast-entrance-parking",
+                "to": "kotor-old-town-parking"
+              },
+              "driveMin": {
+                "nominal": 23,
+                "adjusted": 28,
+                "source": "OSRM",
+                "checked": "2026-09-29"
+              }
             },
             {
               "type": "LOGISTICS",
               "id": "day-4-afternoon-04",
-              "text": "Time-box Small Talks specialty coffee, a coastal-fish lunch in the Old Town and the old lanes to about 3 hours. Ombra lists daily service and garden/terrace seating; call to confirm Sunday service and terrace availability. Budget 75 minutes for lunch."
+              "text": "Time-box Small Talks specialty coffee, a coastal-fish lunch in the Old Town and the old lanes to about 3 hours. Ombra lists daily service and garden/terrace seating; call to confirm Sunday service and terrace availability. Budget 75 minutes for lunch.",
+              "title": "Kotor Old Town: coffee, lunch, lanes",
+              "dwellMin": 180,
+              "foodId": "food-day-4-meals-01"
             },
             {
               "type": "CAUTION",
@@ -612,19 +798,34 @@
             {
               "type": "WALK",
               "id": "day-4-afternoon-06",
-              "text": "Return to Conte, complete check-in inside the confirmed 15:00–21:00 window and leave the car in the signed entrance lot."
+              "text": "Return to Conte, complete check-in inside the confirmed 15:00–21:00 window and leave the car in the signed entrance lot.",
+              "title": "Drive back to Perast and check in",
+              "leg": {
+                "from": "kotor-old-town-parking",
+                "to": "perast-entrance-parking"
+              },
+              "driveMin": {
+                "nominal": 23,
+                "adjusted": 28,
+                "source": "OSRM",
+                "checked": "2026-09-29"
+              }
             }
           ],
           "evening": [
             {
               "type": "EAT",
               "id": "day-4-evening-01",
-              "text": "Dinner at Conte or a Perast konoba, with local fish/seafood as the coastal choice. Phone Conte for a same-day table; no restaurant reservation was supplied."
+              "text": "Dinner at Conte or a Perast konoba, with local fish/seafood as the coastal choice. Phone Conte for a same-day table; no restaurant reservation was supplied.",
+              "title": "Dinner at Conte or a Perast konoba",
+              "dwellMin": 75,
+              "foodId": "food-day-4-meals-02"
             },
             {
               "type": "LOGISTICS",
               "id": "day-4-evening-02",
-              "text": "Keep the car parked overnight. Reconfirm tomorrow’s breakfast takeaway with Conte at least one day ahead and confirm the Skadar boat departure/return with its operator."
+              "text": "Keep the car parked overnight. Reconfirm tomorrow’s breakfast takeaway with Conte at least one day ahead and confirm the Skadar boat departure/return with its operator.",
+              "note": true
             }
           ],
           "parking": "Loaded-car transfer goes directly to Conte’s signed Perast entrance lot (hotel-published summer parking €20/day); ask reception to secure bags before going anywhere. If storage is unavailable, keep the day in Perast. At Kotor use signed paid Old Town parking and walk; fee/space are not guaranteed.",
@@ -733,7 +934,8 @@
                 "waypointId": "aroma-city-tabacina-kotor"
               }
             ]
-          }
+          },
+          "startAt": "07:00"
         },
         {
           "day": 5,
@@ -746,32 +948,68 @@
             {
               "type": "LOGISTICS",
               "id": "day-5-morning-01",
-              "text": "Arrange Conte take-away breakfast the previous day (the hotel requires one-day notice). Leave Perast at 07:30 with water, cash and a full tank; check AMSCG road conditions and Lovćen/Kuk weather."
+              "text": "Arrange Conte take-away breakfast the previous day (the hotel requires one-day notice). Leave Perast at 07:30 with water, cash and a full tank; check AMSCG road conditions and Lovćen/Kuk weather.",
+              "title": "Takeaway breakfast and depart Perast",
+              "foodId": "food-day-5-meals-03"
             },
             {
               "type": "DRIVE",
               "id": "day-5-morning-02",
-              "text": "Drive directly to signed Kotor Old Town parking; allow about 20–25 minutes from Perast. Park once and walk to Small Talks."
+              "text": "Drive directly to signed Kotor Old Town parking; allow about 20–25 minutes from Perast. Park once and walk to Small Talks.",
+              "title": "Drive to Kotor Old Town parking",
+              "leg": {
+                "from": "perast-entrance-parking",
+                "to": "kotor-old-town-parking"
+              },
+              "driveMin": {
+                "nominal": 23,
+                "adjusted": 28,
+                "source": "OSRM",
+                "checked": "2026-09-29"
+              }
             },
             {
               "type": "LOGISTICS",
               "id": "day-5-morning-03",
-              "text": "Stop at Small Talks at its published 08:00 opening for a quick specialty espresso; allow 20 minutes. If its live listing shows closed, use packed hotel coffee and continue."
+              "text": "Stop at Small Talks at its published 08:00 opening for a quick specialty espresso; allow 20 minutes. If its live listing shows closed, use packed hotel coffee and continue.",
+              "title": "Espresso at Small Talks, Kotor",
+              "fixedAt": "08:00",
+              "dwellMin": 15,
+              "foodId": "food-day-5-coffee-01"
             },
             {
               "type": "DRIVE",
               "id": "day-5-morning-07",
-              "text": "At about 08:20 take the R-1 serpentine toward Njeguši, then the signed R-25.1 approach to Njegoš Mausoleum. Use live routing; the road is narrow and winding, so make the high-elevation visit in the morning."
+              "text": "At about 08:20 take the R-1 serpentine toward Njeguši, then the signed R-25.1 approach to Njegoš Mausoleum. Use live routing; the road is narrow and winding, so make the high-elevation visit in the morning.",
+              "title": "Drive to Njegoš Mausoleum via Njeguši",
+              "leg": {
+                "from": "kotor-old-town-parking",
+                "to": "njegos-mausoleum-parking",
+                "via": [
+                  "njegusi"
+                ]
+              },
+              "driveMin": {
+                "nominal": 46,
+                "adjusted": 56,
+                "source": "OSRM",
+                "checked": "2026-09-29"
+              }
             },
             {
               "type": "SEE",
               "id": "day-5-morning-04",
-              "text": "Reach the mausoleum around its 09:00 opening. The National Museum lists daily visits through Nov 15, €8/adult, and 461 steps; allow 60 minutes and wear grippy shoes."
+              "text": "Reach the mausoleum around its 09:00 opening. The National Museum lists daily visits through Nov 15, €8/adult, and 461 steps; allow 60 minutes and wear grippy shoes.",
+              "title": "Njegoš Mausoleum visit",
+              "fixedAt": "09:00",
+              "dwellMin": 45
             },
             {
               "type": "DRIVE",
               "id": "day-5-morning-05",
-              "text": "Continue a short distance to Kotor Cable Car’s Kuk upper station. Park there (operator lists free parking, capacity 60), ride the gondola down to Dub and back up, then use the Alpine Coaster if open. Allow 75 minutes total; skip extra Lovćen/Cetinje sightseeing."
+              "text": "Continue a short distance to Kotor Cable Car’s Kuk upper station. Park there (operator lists free parking, capacity 60), ride the gondola down to Dub and back up, then use the Alpine Coaster if open. Allow 75 minutes total; skip extra Lovćen/Cetinje sightseeing.",
+              "title": "Kuk upper station and cable car",
+              "dwellMin": 60
             },
             {
               "type": "CAUTION",
@@ -783,22 +1021,53 @@
             {
               "type": "DRIVE",
               "id": "day-5-afternoon-01",
-              "text": "From Kuk continue via Cetinje to Virpazar without backtracking to Kotor. Reach the booked pier by 12:45 for the prebooked 13:00 one-hour departure."
+              "text": "From Kuk continue via Cetinje to Virpazar without backtracking to Kotor. Reach the booked pier by 12:45 for the prebooked 13:00 one-hour departure.",
+              "title": "Drive to Virpazar via Cetinje",
+              "leg": {
+                "from": "kotor-cable-car-kuk",
+                "to": "virpazar-boat-pier",
+                "via": [
+                  "cetinje"
+                ]
+              },
+              "driveMin": {
+                "nominal": 90,
+                "adjusted": 108,
+                "source": "OSRM",
+                "checked": "2026-09-29"
+              }
             },
             {
               "type": "WATER",
               "id": "day-5-afternoon-02",
-              "text": "Take the confirmed 13:00–14:00 Lake Skadar cruise. The park’s €5/person day ticket lists one cruise included; confirm the selected sailing is covered and whether the operator charges an extra fee."
+              "text": "Take the confirmed 13:00–14:00 Lake Skadar cruise. The park’s €5/person day ticket lists one cruise included; confirm the selected sailing is covered and whether the operator charges an extra fee.",
+              "title": "Lake Skadar cruise from Virpazar",
+              "fixedAt": "13:00",
+              "dwellMin": 60
             },
             {
               "type": "EAT",
               "id": "day-5-afternoon-03",
-              "text": "Have a time-boxed 45-minute lunch at Restaurant Pelikan after the cruise: local carp/eel and lake fish. Call ahead for Monday/October service, terrace seating, payment and duration; depart Virpazar by 14:45."
+              "text": "Have a time-boxed 45-minute lunch at Restaurant Pelikan after the cruise: local carp/eel and lake fish. Call ahead for Monday/October service, terrace seating, payment and duration; depart Virpazar by 14:45.",
+              "title": "Lunch at Restaurant Pelikan",
+              "dwellMin": 45,
+              "foodId": "food-day-5-meals-01"
             },
             {
               "type": "DRIVE",
               "id": "day-5-afternoon-04",
-              "text": "Return via the Sozina/coastal corridor; allow about 2 h 15 adjusted from Virpazar to Perast, including the +20% terrain buffer. Budget the €2.50 passenger-car Sozina toll (recheck the tariff) and set live navigation to Perast."
+              "text": "Return via the Sozina/coastal corridor; allow about 2 h 15 adjusted from Virpazar to Perast, including the +20% terrain buffer. Budget the €2.50 passenger-car Sozina toll (recheck the tariff) and set live navigation to Perast.",
+              "title": "Drive Virpazar to Perast via Sozina",
+              "leg": {
+                "from": "virpazar-parking",
+                "to": "perast-entrance-parking"
+              },
+              "driveMin": {
+                "nominal": 108,
+                "adjusted": 130,
+                "source": "OSRM",
+                "checked": "2026-09-29"
+              }
             },
             {
               "type": "CAUTION",
@@ -810,17 +1079,22 @@
             {
               "type": "EAT",
               "id": "day-5-evening-01",
-              "text": "Final dinner in Perast at Conte or a booked local konoba; coastal fish/seafood is the corridor choice. Phone Conte if dining there; no reservation was supplied."
+              "text": "Final dinner in Perast at Conte or a booked local konoba; coastal fish/seafood is the corridor choice. Phone Conte if dining there; no reservation was supplied.",
+              "title": "Final dinner in Perast",
+              "dwellMin": 75,
+              "foodId": "food-day-5-meals-02"
             },
             {
               "type": "STAY",
               "id": "day-5-evening-02",
-              "text": "Keep the car in Perast entrance parking, pack for the Oct 6 airport run and confirm rental-return documents tonight."
+              "text": "Keep the car in Perast entrance parking, pack for the Oct 6 airport run and confirm rental-return documents tonight.",
+              "note": true
             },
             {
               "type": "LOGISTICS",
               "id": "day-5-evening-03",
-              "text": "Keep tomorrow’s airport run direct. Leave no valuables visible in the parked car."
+              "text": "Keep tomorrow’s airport run direct. Leave no valuables visible in the parked car.",
+              "note": true
             }
           ],
           "parking": "Conte/Perast car stays in signed entrance parking (published summer €20/day). At Kuk use the operator-listed free upper-station lot (60 spaces). At Virpazar use signed public parking; fee or operator parking arrangements are not assumed. Never leave valuables visible.",
@@ -968,7 +1242,8 @@
                 "waypointId": "aroma-city-tabacina-kotor"
               }
             ]
-          }
+          },
+          "startAt": "07:30"
         },
         {
           "day": 6,
@@ -976,39 +1251,62 @@
           "region": "Coast · Tivat Airport",
           "base": "Conte Hotel & Restaurant · Perast",
           "drive": "Perast → TIV · allow 35–45 min in live planning; Europcar voucher return time 13:00.",
-          "adjustedHours": 0.4,
+          "adjustedHours": 0.7,
           "morning": [
             {
               "type": "EAT",
               "text": "Have breakfast at 08:30.",
-              "id": "day-6-morning-01"
+              "id": "day-6-morning-01",
+              "title": "Breakfast at Conte",
+              "dwellMin": 60,
+              "foodId": "food-day-6-meals-02"
             },
             {
               "type": "LOGISTICS",
               "text": "Leave Perast by 09:30 as a conservative planning target; confirm live routing.",
-              "id": "day-6-morning-02"
+              "id": "day-6-morning-02",
+              "title": "Depart Perast"
             },
             {
               "type": "DRIVE",
               "text": "Take the direct road to TIV; do not detour for a last viewpoint.",
-              "id": "day-6-morning-03"
+              "id": "day-6-morning-03",
+              "title": "Drive Perast to Tivat Airport",
+              "leg": {
+                "from": "perast-entrance-parking",
+                "to": "tivat-airport-rental-return"
+              },
+              "driveMin": {
+                "nominal": 34,
+                "adjusted": 41,
+                "source": "OSRM",
+                "checked": "2026-09-29"
+              }
             },
             {
               "type": "LOGISTICS",
               "text": "Europcar return is booked for 13:00 at Tivat Airport (voucher 4H419663). Return full-to-full: refuel within 5 km of the drop-off point, keep the fuel receipt, photograph fuel/odometer and request a closed return contract.",
-              "id": "day-6-morning-04"
+              "id": "day-6-morning-04",
+              "title": "Return the rental car at Tivat",
+              "dwellMin": 30,
+              "dueBy": "13:00"
             }
           ],
           "afternoon": [
             {
               "type": "LOGISTICS",
               "text": "Walk to the terminal and be inside by 12:15 for the required counter check-in.",
-              "id": "day-6-afternoon-01"
+              "id": "day-6-afternoon-01",
+              "title": "Terminal check-in and airport lunch",
+              "dwellMin": 15,
+              "foodId": "food-day-6-meals-01",
+              "dueBy": "12:15"
             },
             {
               "type": "LOGISTICS",
               "text": "Planning estimate: flight departure is 14:55; flight number and ticket confirmation were not supplied.",
-              "id": "day-6-afternoon-02"
+              "id": "day-6-afternoon-02",
+              "note": true
             },
             {
               "type": "CAUTION",
@@ -1080,7 +1378,8 @@
               }
             ],
             "supermarkets": []
-          }
+          },
+          "startAt": "08:30"
         }
       ],
       "checks": [
