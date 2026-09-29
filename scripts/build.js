@@ -9,7 +9,8 @@ const terser = require('terser');
 
 const root = path.resolve(__dirname, '..');
 const output = path.join(root, 'dist');
-const sourceFiles = ['index.html', 'app.js', 'timetable.js', 'weather.js', 'sw.js', 'style.css', 'itinerary.json', 'waypoints.json', 'manifest.webmanifest', 'icon.svg'];
+const sourceFiles = ['index.html', 'app.js', 'timetable.js', 'weather.js', 'sw.js', 'style.css', 'itinerary.json', 'waypoints.json', 'manifest.webmanifest', 'icon.svg', 'og-image.jpg'];
+const binaryFiles = new Set(['og-image.jpg']);
 const revisionHash = crypto.createHash('sha256');
 for (const file of sourceFiles) revisionHash.update(file).update('\0').update(fs.readFileSync(path.join(root, file))).update('\0');
 const revision = revisionHash.digest('hex').slice(0, 12);
@@ -21,6 +22,7 @@ fs.mkdirSync(output, { recursive: true });
 async function build() {
   for (const name of sourceFiles) {
     const sourcePath = path.join(root, name);
+    if (binaryFiles.has(name)) { fs.copyFileSync(sourcePath, path.join(output, name)); continue; }
     let content = fs.readFileSync(sourcePath, 'utf8');
     if (name === 'sw.js') {
       content = content.replace(/const VERSION\s*=\s*(['"])\d+\1/, `const VERSION='${cacheVersion}'`);
