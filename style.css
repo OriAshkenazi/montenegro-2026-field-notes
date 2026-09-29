@@ -226,3 +226,50 @@
 .stay-directory{margin-top:24px}.stay-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.stay-reference{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:6px;padding:12px}.stay-reference h3{font:600 13px var(--sans);margin:0}.stay-reference small{font:9px var(--mono);display:block}.stay-reference .stay-badge{display:inline-block}
 .map-popup{display:grid;gap:7px;min-width:190px}.map-popup h3{margin:0;font:600 15px var(--serif)}.map-popup .popup-category,.map-popup .popup-payment{display:inline-flex;width:max-content;border-radius:20px;padding:4px 8px;background:#edf2e9;color:var(--ink2);font:9px var(--mono);text-transform:uppercase;letter-spacing:.04em}.map-popup .popup-payment{background:#f6f0df}.map-popup a,.map-popup button[data-plan-target]{display:block;border:0;border-radius:3px;background:#eaf0e8;color:var(--ink);padding:8px 10px;text-decoration:none;font:600 10px var(--sans);cursor:pointer}
 #pane-weather .alpine-warning>button{margin-top:8px;border:0;background:#fffefa;color:var(--ink);padding:7px 10px;font:600 10px var(--sans);cursor:pointer}
+
+/* Route view toggle + compact timetable */
+.view-bar{position:sticky;top:0;z-index:900;background:var(--paper);padding:8px 0;margin:0 0 10px;border-bottom:1px solid var(--line)}
+.view-toggle{display:inline-flex;border:1px solid var(--ink);border-radius:999px;overflow:hidden;background:var(--card)}
+.view-toggle button{min-height:44px;padding:0 18px;border:0;background:transparent;color:var(--ink);font:600 12px var(--sans);cursor:pointer}
+.view-toggle button+button{border-left:1px solid var(--ink)}
+.view-toggle button[aria-checked=true]{background:var(--ink);color:#fff}
+.view-toggle button[aria-checked=true]{font-family:var(--sans)}
+table.timetable{min-width:720px;font-size:12px;table-layout:auto}
+.timetable th,.timetable td{padding:9px 10px}
+.timetable td:first-child{width:90px;min-width:90px;font:11px var(--mono);white-space:nowrap}
+.timetable td:nth-child(2){width:22%;color:var(--ink);font-weight:600}
+.timetable td:nth-child(4){width:28%}
+.timetable td ul{margin:0;padding:0;list-style:none}
+.timetable td li{position:relative;padding-left:12px;font-size:11px;line-height:1.5}
+.timetable td li+li{margin-top:3px}
+.timetable td li:before{content:"";position:absolute;left:0;top:.6em;width:5px;height:5px;border-radius:50%;background:var(--orange)}
+.timetable tr.tt-caution td{background:#fbf1e3}
+.timetable td .location-link{background:none;border:0;padding:0;font:inherit;color:var(--ink2);text-decoration:underline;text-underline-offset:2px;cursor:pointer;text-align:left}
+.timetable-scroll{margin-bottom:4px}
+/* Mobile layout safety: touch targets, card rows, scroll fade, compact landscape bar */
+.day-toggle{min-height:44px}
+.stop-links button{min-height:44px;padding-inline:12px}
+.timetable .location-link{position:relative}
+.timetable .location-link::after{content:"";position:absolute;inset:-14px -4px}
+@media(max-width:760px){
+  table.timetable{min-width:560px}
+  .timetable-scroll{background:linear-gradient(90deg,var(--card) 30%,#fffefa00) 0 0/28px 100% no-repeat local,linear-gradient(270deg,var(--card) 30%,#fffefa00) 100% 0/28px 100% no-repeat local,linear-gradient(90deg,#173c3722,#173c3700) 0 0/12px 100% no-repeat scroll,linear-gradient(270deg,#173c3722,#173c3700) 100% 0/12px 100% no-repeat scroll,var(--card)}
+}
+@media(max-width:480px){
+  .table-scroll.timetable-scroll{margin-right:0;overflow:visible;background:none;border:0}
+  table.timetable{display:block;min-width:0;width:100%}
+  .timetable thead{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+  .timetable tbody{display:block}
+  .timetable tr{display:block;border:1px solid var(--line);background:var(--card);margin:0 0 8px;padding:6px 0}
+  .timetable td,.timetable td:first-child,.timetable td:nth-child(n),td:has(.segment-list){display:block;width:auto;min-width:0;border:0;padding:5px 12px;white-space:normal}
+  .timetable td:empty{display:none}
+  .timetable td::before{content:attr(data-label);display:block;font:8px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+  .timetable tr.tt-caution{background:#fbf1e3}
+}
+@media (orientation:landscape) and (max-height:500px){
+  .view-bar{padding:1px 0;margin:0 0 6px}
+}
+@media(max-width:480px){.tabs{gap:16px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none}.tab{flex:0 0 auto}}
+.days{grid-template-columns:minmax(0,1fr)}.day-card,.day-content,.day-body{min-width:0}
+@media (orientation:landscape) and (max-height:500px){.view-bar{padding:0;margin:0 0 6px}}
+@media (orientation:landscape) and (max-height:500px){.table-scroll{margin-right:0}}

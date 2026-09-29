@@ -9,7 +9,7 @@ const terser = require('terser');
 
 const root = path.resolve(__dirname, '..');
 const output = path.join(root, 'dist');
-const sourceFiles = ['index.html', 'app.js', 'weather.js', 'sw.js', 'style.css', 'itinerary.json', 'waypoints.json', 'manifest.webmanifest', 'icon.svg'];
+const sourceFiles = ['index.html', 'app.js', 'timetable.js', 'weather.js', 'sw.js', 'style.css', 'itinerary.json', 'waypoints.json', 'manifest.webmanifest', 'icon.svg'];
 const revisionHash = crypto.createHash('sha256');
 for (const file of sourceFiles) revisionHash.update(file).update('\0').update(fs.readFileSync(path.join(root, file))).update('\0');
 const revision = revisionHash.digest('hex').slice(0, 12);
@@ -26,7 +26,7 @@ async function build() {
       content = content.replace(/const VERSION\s*=\s*(['"])\d+\1/, `const VERSION='${cacheVersion}'`);
       content = content.replace(/mne-field-notes-v\d+/, `mne-field-notes-v${cacheVersion}`);
     }
-    if (name === 'app.js' || name === 'weather.js' || name === 'sw.js') {
+    if (name === 'app.js' || name === 'timetable.js' || name === 'weather.js' || name === 'sw.js') {
       const result = await terser.minify(content, { compress: { defaults: true, reduce_vars: false, collapse_vars: false }, mangle: true, format: { comments: false } });
       if (result.error) throw result.error;
       content = result.code;

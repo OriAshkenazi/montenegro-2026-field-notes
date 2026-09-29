@@ -6,11 +6,12 @@ const { HTMLHint } = require('htmlhint');
 const fs = require('node:fs');
 
 const root = path.resolve(__dirname, '..');
-const jsFiles = ['app.js', 'weather.js', 'sw.js', ...fs.readdirSync(path.join(root, 'tests')).filter(file => file.endsWith('.js')).map(file => path.join('tests', file)), ...fs.readdirSync(__dirname).filter(file => file.endsWith('.js')).map(file => path.join('scripts', file))];
+const jsFiles = ['app.js', 'weather.js', 'timetable.js', 'sw.js', ...fs.readdirSync(path.join(root, 'tests')).filter(file => file.endsWith('.js')).map(file => path.join('tests', file)), ...fs.readdirSync(__dirname).filter(file => file.endsWith('.js')).map(file => path.join('scripts', file))];
 const eslintArgs = [
   '--no-eslintrc',
   '--env', 'browser,node,es2021',
   '--global', 'L',
+  '--global', 'projectTimetable,foodRows',
   '--parser-options', '{"ecmaVersion":2021}',
   '--rule', 'no-undef:error',
   '--rule', 'no-unreachable:error',

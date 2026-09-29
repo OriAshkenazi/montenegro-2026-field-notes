@@ -6,7 +6,7 @@ const path = require('node:path');
 
 const root = path.resolve(__dirname, '..');
 const dist = path.join(root, 'dist');
-const expected = ['index.html', 'style.css', 'app.js', 'weather.js', 'sw.js', 'itinerary.json', 'waypoints.json', 'manifest.webmanifest', 'icon.svg'];
+const expected = ['index.html', 'style.css', 'app.js', 'timetable.js', 'weather.js', 'sw.js', 'itinerary.json', 'waypoints.json', 'manifest.webmanifest', 'icon.svg'];
 for (const file of expected) assert.ok(fs.statSync(path.join(dist, file)).isFile(), `dist missing ${file}`);
 
 const html = fs.readFileSync(path.join(dist, 'index.html'), 'utf8');
@@ -22,7 +22,7 @@ for (const [, url, foundRevision] of revisionMatches) {
 const cacheVersion = String(parseInt(revision.slice(0, 8), 16));
 assert.ok(sw.includes(`mne-field-notes-v${cacheVersion}`), 'service worker cache name must derive from the asset revision');
 assert.ok(sw.includes(`'${cacheVersion}'`) || sw.includes(`"${cacheVersion}"`), 'service worker cache version must derive from the asset revision');
-for (const asset of ['style.css', 'app.js', 'weather.js', 'itinerary.json', 'waypoints.json']) {
+for (const asset of ['style.css', 'app.js', 'timetable.js', 'weather.js', 'itinerary.json', 'waypoints.json']) {
   assert.ok(sw.includes(`./${asset}?rev=${revision}`), `service worker shell revision mismatch: ${asset}`);
 }
 for (const pathRef of ['./itinerary.json?rev=', './waypoints.json?rev=']) assert.ok(app.includes(pathRef), `app must retain relative data URL ${pathRef}`);

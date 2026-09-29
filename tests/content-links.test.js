@@ -53,7 +53,7 @@ for (const experience of itinerary.curatedPool) {
 }
 
 const foodPane = app.slice(app.indexOf('function renderFoodPane()'), app.indexOf('function renderDays()'));
-const foodRenderer = app.slice(app.indexOf('function renderFoodStop('), app.indexOf('function foodRows('));
+const foodRenderer = app.slice(app.indexOf('function renderFoodStop('), app.indexOf('function renderFoodTimeline('));
 assert.ok(foodPane.includes("'index'") && foodRenderer.includes('data-plan-target'), 'food directory needs a timeline jump');
 assert.ok(foodRenderer.includes('waypointId'), 'food directory must use stable waypoint references');
 assert.ok(foodRenderer.includes('id="${escapeHTML(stopId)}"'), 'timeline food cards must expose the indexed food ID as an anchor');

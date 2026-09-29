@@ -5,7 +5,7 @@
   <meta name="theme-color" content="#173c37"><meta name="description" content="Offline-ready Montenegro trip plan, 1–6 October 2026.">
   <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
-  <link rel="stylesheet" href="style.css?rev=2026-09-28d"><title>Montenegro · Field Notes</title>
+  <link rel="stylesheet" href="style.css?rev=2026-09-29a"><title>Montenegro · Field Notes</title>
 </head>
 <body>
   <header class="topbar"><a class="brand" href="#top"><span class="brand-mark">M</span><span>FIELD NOTES <small>Montenegro · 01—06 October 2026</small></span></a><div class="top-actions"><span class="offline-label"><i></i><span id="connection">Trip data ready</span></span><button id="install" class="button quiet" hidden>Install app</button></div></header>
@@ -14,6 +14,7 @@
     <nav class="tabs" aria-label="Trip sections"><button class="tab active" data-pane="plan">The route</button><button class="tab" data-pane="food">Food &amp; provisions</button><button class="tab" data-pane="budget">Budget</button><button class="tab" data-pane="safety">Field guide</button><button class="tab" data-pane="weather">Live weather</button></nav>
     <section id="pane-plan" class="pane active">
       <div class="route-switch"><div><p class="eyebrow">Confirmed bases · 5 nights</p><h2 id="routeTitle">Runolist Chalet · Durmitor · Perast</h2></div></div>
+      <div class="view-bar"><div class="view-toggle" role="radiogroup" aria-label="Route view"><button type="button" role="radio" data-view="story" aria-checked="true">Detailed Story</button><button type="button" role="radio" data-view="table" aria-checked="false">Compact Timetable</button></div></div>
       <div class="route-legend" aria-label="Route detail legend"><span class="legend-title">Route key</span><span class="route-key drive"><i aria-hidden="true">↗</i> DRIVE</span><span class="route-key stay"><i aria-hidden="true">⌂</i> STAY</span><span class="route-key see"><i aria-hidden="true">◉</i> SEE</span><span class="route-key walk"><i aria-hidden="true">↟</i> WALK</span><span class="route-key eat"><i aria-hidden="true">◒</i> EAT</span><span class="route-key water"><i aria-hidden="true">≋</i> WATER</span><span class="route-key wellness"><i aria-hidden="true">◇</i> WELLNESS</span><span class="route-key logistics"><i aria-hidden="true">▪</i> LOGISTICS</span><span class="route-key caution"><i aria-hidden="true">!</i> CAUTION</span></div>
       <div id="days" class="days"></div>
       <div class="guardrails"><h2 id="checksTitle">Guardrail check</h2><div class="checks" id="checks"></div></div>
@@ -50,5 +51,5 @@
     <div class="map-body"><div class="map-toolbar"><div><b>Montenegro route</b><small id="mapStatus" role="status">Map tiles load when online; saved waypoints work offline.</small></div><label class="map-filter-label">Show <select id="mapDayFilter" aria-label="Filter map by itinerary day"><option value="all">All days</option></select></label><button id="mapClose" type="button" aria-label="Collapse map">Collapse</button></div><div id="mapCanvas" class="map-canvas" role="application" aria-label="Map with itinerary locations"></div><div id="mapWaypoints" class="map-waypoints" aria-label="Offline waypoint list"></div></div>
   </aside>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="" defer></script>
-  <script src="app.js?rev=2026-09-28d" defer></script><script src="weather.js?rev=2026-09-28d" defer></script>
+  <script src="timetable.js?rev=2026-09-29a" defer></script><script src="app.js?rev=2026-09-29a" defer></script><script src="weather.js?rev=2026-09-29a" defer></script>
 </body></html>
