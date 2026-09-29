@@ -714,3 +714,12 @@ html[data-lang="he"]:not(.i18n-ready) body{visibility:hidden}
 @media (max-width:560px){html[lang="he"] .brand{font-size:var(--fs-xs);line-height:1.25}html[lang="he"] .brand small{display:none}}
 /* Venue and waypoint names stay Latin; resolve their direction from their own text so parentheses and "·" keep reading order. */
 [dir="rtl"] .waypoint-row span,[dir="rtl"] .map-popup h3,[dir="rtl"] .stay-reference h3,[dir="rtl"] .food-map-link,[dir="rtl"] .food-stop strong,[dir="rtl"] .stop-links button{unicode-bidi:plaintext}
+
+/* Even spacing around the route view toggle: the bar absorbs the tab bar's bottom margin so the gap above and below the toggle match. */
+:root{--tabs-mb:var(--sp-7)}
+@media (max-width:760px){:root{--tabs-mb:var(--sp-6)}}
+@media (orientation:landscape) and (max-height:500px){:root{--tabs-mb:var(--sp-4)}}
+.tabs{margin-bottom:var(--tabs-mb)}
+.view-bar{padding:var(--sp-2) 0;margin:calc(var(--sp-2) - var(--tabs-mb)) 0 var(--sp-2);border-bottom:0;transition:box-shadow var(--dur-fast) var(--ease)}
+.view-bar.stuck{box-shadow:0 1px 0 var(--border)}
+@media (orientation:landscape) and (max-height:500px){.view-bar{padding:var(--sp-1) 0;margin:calc(var(--sp-1) - var(--tabs-mb)) 0 var(--sp-1)}}
