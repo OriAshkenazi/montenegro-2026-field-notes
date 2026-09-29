@@ -87,7 +87,6 @@ function renderTripOps() {
   $('#stayDirectory').innerHTML=trip.stays.map(stay=>{const point=waypointById(stay.mapWaypointId);return `<article class="stay-reference"><span class="stay-badge">Confirmed</span><h3>${escapeHTML(stay.name)}</h3><small>${escapeHTML(stay.dates)}</small><p>${escapeHTML(stay.address)}</p><small>${escapeHTML(stay.room)} · ${escapeHTML(stay.checkIn)} · ${escapeHTML(stay.checkout)}</small><small>${escapeHTML(stay.confirmation)} · ${escapeHTML(stay.price)}</small><small>${escapeHTML(stay.payment)}</small>${stay.phone?`<a href="tel:${escapeHTML(stay.phone.replaceAll(' ',''))}">${escapeHTML(stay.phone)}</a>`:''}${point?`<button type="button" class="food-map-link" data-waypoint="${point.id}">Map pin ↗</button>`:''}</article>`;}).join('');
 }
 function render() {
-  $('#routeTitle').textContent=trip.routeNames.primary;
   $('#days').setAttribute('aria-label',trip.routeNames.primary);
   renderDays();renderChecks();renderTripOps();renderFoodPane();
   $('#budgetRows').innerHTML=trip.budget.map(x=>`<div class="budget-row"><div><b>${escapeHTML(x.label)}</b><small>${escapeHTML(x.note)}</small></div><strong>${x.currency==='ILS'?`₪${Number(x.amount).toLocaleString('en-IL',{minimumFractionDigits:2,maximumFractionDigits:2})}`:x.actual!==undefined?`€${Number(x.actual).toFixed(2)} actual`:`€${x.min}–${x.max}`}</strong></div>`).join('');
