@@ -117,7 +117,7 @@ function buildDocument(inputs) {
   const ul = items => { const list = compact(items); if (list.length) doc.push({ ul: list }); };
 
   h(1, `${ui['meta.title']} — ${ui['hero.title1']} ${ui['hero.title2']}`);
-  p(`This is the complete plain-text version of the Montenegro Field Notes trip app (${siteUrl}). It contains every entry of the itinerary, food and provisions, stays, budget, emergency numbers, map waypoints and sources, generated from the same data the app uses. Plan data updated ${trip.updated}; sources checked ${trip.sourcesChecked}. Clock times are the app’s computed timetable (fixed times plus drive and dwell durations); items without a clock time are listed under their part of the day.`);
+  p(`This is the complete plain-text version of the Montenegro Field Notes trip app (${siteUrl}). It contains every entry of the itinerary, food and provisions, stays, insurance, budget, emergency numbers, map waypoints and sources, generated from the same data the app uses. Plan data updated ${trip.updated}; sources checked ${trip.sourcesChecked}. Clock times are the app’s computed timetable (fixed times plus drive and dwell durations); items without a clock time are listed under their part of the day.`);
   ul([
     field('Trip', `${ui['brand.dates']} · ${ui['hero.eyebrow']}`),
     field('Dates', `${firstDay} to ${lastDay} (${route.days.length} days, ${route.nightBreakdown.reduce((n, x) => n + x.nights, 0)} nights)`),
@@ -127,11 +127,11 @@ function buildDocument(inputs) {
     field('Summary', ui['hero.deck']),
     field('Planning rule', `Daily driving ceiling ${trip.drivingCeilingAdjustedHours} h adjusted; drive times include a +${trip.terrainBufferPercent}% terrain buffer over nominal routing times.`),
     field('App', link(siteUrl, siteUrl)),
-    ...rest(trip, ['updated', 'drivingCeilingAdjustedHours', 'terrainBufferPercent', 'routeNames', 'routes', 'budget', 'cashTracker', 'emergency', 'curatedPool', 'sources', 'sourcesChecked', 'stays', 'flightPayment'])
+    ...rest(trip, ['updated', 'drivingCeilingAdjustedHours', 'terrainBufferPercent', 'routeNames', 'routes', 'budget', 'cashTracker', 'emergency', 'curatedPool', 'sources', 'sourcesChecked', 'stays', 'flightPayment', 'insurancePolicy'])
   ]);
 
   h(2, 'Contents');
-  ul(['Trip at a glance', 'Stays', ...route.days.map(d => `${d.heading} (${d.date})`), 'Quick status checks', 'Budget', 'Emergency numbers and field guide', 'Experience index', 'Live weather', 'Map waypoints', 'Sources']);
+  ul(['Trip at a glance', 'Stays', ...route.days.map(d => `${d.heading} (${d.date})`), 'Quick status checks', 'Budget', 'Travel insurance', 'Emergency numbers and field guide', 'Experience index', 'Live weather', 'Map waypoints', 'Sources']);
 
   h(2, 'Trip at a glance');
   doc.push({ table: { head: ['Day', 'Date', 'Region', 'Base', 'Adjusted driving'], rows: route.days.map(d => [String(d.day), `${d.date} (${isoDate(d.date, year)})`, d.region, d.base, `${d.adjustedHours} h`]) } });
@@ -226,7 +226,7 @@ function buildDocument(inputs) {
   h(2, 'Budget');
   p(`${ui['budget.eyebrow']}. ${ui['budget.intro']}`);
   ul(trip.budget.map(b => ({
-    text: inl(bold(b.label), ' — ', b.currency && b.currency !== 'EUR' ? `${b.currency} ${b.amount.toLocaleString('en-US', { minimumFractionDigits: 2 })} (EUR planning range €${b.min}–€${b.max})` : b.actual !== undefined ? `€${b.actual} actual (range €${b.min}–€${b.max})` : `€${b.min}–€${b.max}`),
+    text: inl(bold(b.label), ' — ', b.currency && b.currency !== 'EUR' ? `${b.currency} ${Number(b.amount).toLocaleString('en-US', { minimumFractionDigits: 2 })}${b.actual !== undefined ? ' actual' : ''}` : b.actual !== undefined ? `€${b.actual} actual (range €${b.min}–€${b.max})` : `€${b.min}–€${b.max}`),
     children: compact([field('Note', b.note), ...rest(b, ['label', 'min', 'max', 'note', 'actual', 'currency', 'amount'])])
   })));
   const eurMin = trip.budget.filter(b => !b.currency || b.currency === 'EUR').reduce((n, b) => n + b.min, 0);
@@ -235,6 +235,17 @@ function buildDocument(inputs) {
   const fp = trip.flightPayment;
   ul([field('Flight payment', `${fp.currency} ${fp.amount} · ${fp.status} · merchant ${fp.merchant} · ${fp.date} · ${fp.passengers} passengers${rest(fp, ['amount', 'currency', 'status', 'merchant', 'date', 'passengers']).map(r => ' · ' + mdInline(r)).join('')}`),
     field(ui['cash.eyebrow'], `${ui['cash.head']} — ${ui['cash.note']} Cash target €${trip.cashTracker.target} (the app lets you mark it as carried on your device, stored under “${trip.cashTracker.storageKey}”).${rest(trip.cashTracker, ['target', 'storageKey']).map(r => ' ' + mdInline(r)).join('')}`)]);
+
+  h(2, 'Travel insurance');
+  const policy=trip.insurancePolicy;
+  ul([field('Provider and policy', `${policy.insurer} · ${policy.policyNumber}`),
+    field('Coverage dates', `${policy.validFrom} to ${policy.validTo}`),
+    field('Insured travelers', policy.travelers),
+    field('Premium', `${policy.premiumCurrency} ${policy.premiumAmount.toFixed(2)} · ILS ${policy.premiumIlsEquivalent.toFixed(2)}`),
+    field('Medical coverage limit (USD)', policy.medicalLimit),
+    field('Medical benefits', `Up to USD ${Number(policy.medicalLimit).toLocaleString('en-US')} for emergency expenses from illness or accident, including hospitalization, medical evacuation, air ambulance and repatriation, subject to policy terms.`),
+    field('Adventure-sports extension', policy.adventureSportsExtension ? 'true — included for both insured travelers' : 'false — not recorded'),
+    ...policy.assistanceContacts.map(c=>field(c.provider, `Phone ${c.phone} · WhatsApp ${c.whatsapp} · ${c.email}`))]);
 
   h(2, 'Emergency numbers and field guide');
   ul(trip.emergency.map(e => inl(bold(e.number), ` — ${e.label} (${e.href})`, rest(e, ['number', 'label', 'href']).map(r => inl(' · ', r)))));
@@ -318,12 +329,12 @@ The app at ${siteUrl} renders its content with JavaScript. The complete plan as 
 
 ## Trip plan
 
-- [Complete trip plan](${new URL('trip.md', siteUrl).href}): every day's timetable, drives, food and provisions, stays and bookings, budget, emergency numbers, all map waypoints and sources (${Math.round(markdownSize / 1024)} KB Markdown)
+- [Complete trip plan](${new URL('trip.md', siteUrl).href}): every day's timetable, drives, food and provisions, stays, insurance, budget, emergency numbers, all map waypoints and sources (${Math.round(markdownSize / 1024)} KB Markdown)
 - [Same content, llms-full.txt](${new URL('llms-full.txt', siteUrl).href})
 
 ## Raw data
 
-- [itinerary.json](${new URL('itinerary.json', siteUrl).href}): source data for the timeline, food, stays and budget
+- [itinerary.json](${new URL('itinerary.json', siteUrl).href}): source data for the timeline, food, stays, insurance and budget
 - [waypoints.json](${new URL('waypoints.json', siteUrl).href}): map places with coordinates
 
 ## Days

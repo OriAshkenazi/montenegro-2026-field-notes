@@ -40,6 +40,9 @@ for (const day of itinerary.routes.primary.days) {
   for (const period of ['morning', 'afternoon', 'evening']) for (const seg of day[period] || []) assert.ok(text.includes(seg.text), `segment ${seg.id}`);
 }
 assert.ok(text.includes('13:50–14:30 · LOGISTICS · Land at Tivat'), 'segments carry computed timetable clock times');
+assert.ok(text.includes('Travel insurance') && text.includes('46388612426') && text.includes('IMA · Medical Assistance'), 'plain-text export must include the confirmed insurance summary and assistance contacts');
+assert.ok(text.includes('USD 47.04 actual') && text.includes('₪144.22 equivalent per policy'), 'insurance premium must stay in USD, separate from the EUR subtotal');
+assert.ok(!text.includes('EUR planning range €0–€0'), 'non-EUR actuals must not be represented as EUR budget ranges');
 
 // The HTML copy carries the same content, escaped.
 assert.ok(html.includes('<h2>') && html.includes('Runolist Chalet') && !html.includes('<script'), 'embedded HTML');
