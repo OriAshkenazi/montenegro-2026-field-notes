@@ -1,0 +1,1 @@
+!function(){var t="he";try{"en"===localStorage.getItem("mne-lang")&&(t="en")}catch(t){}var e=document.documentElement;e.lang=t,e.dir="he"===t?"rtl":"ltr",e.setAttribute("data-lang",t),setTimeout((function(){e.classList.add("i18n-ready")}),1500)}();

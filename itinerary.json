@@ -1516,6 +1516,38 @@
       "href": "tel:+38240256084"
     }
   ],
+  "contacts": [
+    {
+      "label": "Europcar Tivat Airport",
+      "number": "+382 20 653141",
+      "href": "tel:+38220653141",
+      "note": "Car pickup Oct 1 at 14:30; call if the flight is delayed."
+    },
+    {
+      "label": "Runolist Chalet, Žabljak",
+      "number": "+382 69 520 016",
+      "href": "tel:+38269520016",
+      "note": "Tell the host your arrival time; cash only at the property."
+    },
+    {
+      "label": "Conte Hotel, Perast",
+      "number": "+382 67 111 190",
+      "href": "tel:+38267111190",
+      "note": "Ask for luggage storage before the 15:00 check-in."
+    },
+    {
+      "label": "Conte restaurant, Perast",
+      "number": "+382 67 257 387",
+      "href": "tel:+38267257387",
+      "note": "Same-day table reservations by phone only."
+    },
+    {
+      "label": "Dobre Vode, Kolašin",
+      "number": "+382 69 233 000",
+      "href": "tel:+38269233000",
+      "note": "October hours are not published; call before driving there."
+    }
+  ],
   "curatedPool": [
     {
       "itemId": "C1",

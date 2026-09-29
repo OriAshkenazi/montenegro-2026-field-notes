@@ -18,7 +18,7 @@
         "TIV rental pickup",
         "Europcar Arrivals desk"
       ],
-      "precision": "navigation pin",
+      "precision": "approximate shared area pin; exact spot not verified",
       "bookingStatus": "Confirmed pickup · Oct 1, 14:30 · voucher 4H419663"
     },
     {
@@ -35,7 +35,7 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "approximate shared area pin; exact spot not verified"
     },
     {
       "id": "runolist-chalet",
@@ -76,7 +76,8 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "web resource, not a place; no map pin",
+      "mapPin": false
     },
     {
       "id": "almeco-cafe-negro-bar-restaurant-tivat-airport",
@@ -92,7 +93,7 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "approximate shared area pin; exact spot not verified"
     },
     {
       "id": "zlatni-papagaj-zabljak",
@@ -117,8 +118,8 @@
       "id": "voli-hipermarket-radanovici",
       "name": "Voli Hipermarket Radanovići",
       "category": "Supermarket",
-      "lat": 42.352,
-      "lng": 18.765,
+      "lat": 42.38949,
+      "lng": 18.73888,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Voli%20Hipermarket%20Radanovi%C4%87i%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -127,14 +128,14 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap supermarket coordinate"
     },
     {
       "id": "aroma-311-zabljak",
       "name": "Aroma 311 · Žabljak",
       "category": "Supermarket",
-      "lat": 43.1555,
-      "lng": 19.1226,
+      "lat": 43.1525606,
+      "lng": 19.1302522,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Aroma%20311%20%C2%B7%20%C5%BDabljak%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -145,14 +146,14 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap supermarket coordinate"
     },
     {
       "id": "black-lake-parking",
       "name": "Black Lake parking",
       "category": "Parking",
-      "lat": 43.1445,
-      "lng": 19.0861,
+      "lat": 43.154,
+      "lng": 19.1014,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Black%20Lake%20parking%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -161,14 +162,14 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "Published Black Lake entrance parking coordinate"
     },
     {
       "id": "black-lake-trailhead",
       "name": "Black Lake trailhead",
       "category": "Viewpoint",
-      "lat": 43.1445,
-      "lng": 19.0861,
+      "lat": 43.154,
+      "lng": 19.1014,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Black%20Lake%20trailhead%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -177,7 +178,7 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "Published Black Lake parking and trail access coordinate"
     },
     {
       "id": "bosaca-village-parking",
@@ -193,7 +194,7 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "approximate shared area pin; exact spot not verified"
     },
     {
       "id": "amscg-road-updates",
@@ -210,14 +211,15 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "web resource, not a place; no map pin",
+      "mapPin": false
     },
     {
       "id": "momcilov-grad",
       "name": "Momčilov Grad",
       "category": "Meal",
-      "lat": 42.4247,
-      "lng": 18.7712,
+      "lat": 43.17181,
+      "lng": 19.07964,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Mom%C4%8Dilov%20Grad%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -226,7 +228,7 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap feature coordinate"
     },
     {
       "id": "restaurant-oro",
@@ -249,8 +251,8 @@
       "id": "kacun-zabljak",
       "name": "Kaćun · Žabljak",
       "category": "Coffee",
-      "lat": 43.1555,
-      "lng": 19.1226,
+      "lat": 43.1546764,
+      "lng": 19.1179976,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Ka%C4%87un%20%C2%B7%20%C5%BDabljak%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -259,7 +261,7 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap venue coordinate"
     },
     {
       "id": "p14-sedlo-pass-route",
@@ -326,14 +328,14 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "approximate shared area pin; exact spot not verified"
     },
     {
       "id": "optional-mratinje-dam",
       "name": "Optional Mratinje Dam",
       "category": "Viewpoint",
-      "lat": 43.2185,
-      "lng": 18.8465,
+      "lat": 43.2726988,
+      "lng": 18.8422034,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Optional%20Mratinje%20Dam%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -342,14 +344,14 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap dam feature coordinate"
     },
     {
       "id": "zabljak-packed-lunch-buy-at-aroma-311",
       "name": "Žabljak packed lunch (buy at Aroma 311)",
       "category": "Supermarket",
-      "lat": 43.1555,
-      "lng": 19.1226,
+      "lat": 43.1525606,
+      "lng": 19.1302522,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=%C5%BDabljak%20packed%20lunch%20%28buy%20at%20Aroma%20311%29%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -358,14 +360,14 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap Aroma 311 coordinate; packed-lunch pickup"
     },
     {
       "id": "restoran-socica-pluzine",
       "name": "Restoran Sočica · Plužine",
       "category": "Meal",
-      "lat": 43.155,
-      "lng": 18.839,
+      "lat": 43.156769,
+      "lng": 18.8411381,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Restoran%20So%C4%8Dica%20%C2%B7%20Plu%C5%BEine%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -374,14 +376,14 @@
         ]
       },
       "aliases": [],
-      "precision": "approximate town pin; October service and payment need direct confirmation"
+      "precision": "OpenStreetMap restaurant coordinate"
     },
     {
       "id": "savnik",
       "name": "Šavnik",
       "category": "Activity",
-      "lat": 42.9561,
-      "lng": 19.0961,
+      "lat": 42.957197,
+      "lng": 19.0946043,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=%C5%A0avnik%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -394,14 +396,14 @@
         "Šavnik",
         "Savnik"
       ],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap town coordinate"
     },
     {
       "id": "niksic",
       "name": "Nikšić",
       "category": "Activity",
-      "lat": 42.7731,
-      "lng": 18.9445,
+      "lat": 42.7739388,
+      "lng": 18.9488097,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Nik%C5%A1i%C4%87%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -414,14 +416,14 @@
         "Nikšić",
         "Niksic"
       ],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap town coordinate"
     },
     {
       "id": "grahovo",
       "name": "Grahovo",
       "category": "Activity",
-      "lat": 42.6569,
-      "lng": 18.6495,
+      "lat": 42.6525727,
+      "lng": 18.6711976,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Grahovo%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -430,7 +432,7 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap settlement coordinate"
     },
     {
       "id": "conte-hotel-perast",
@@ -463,8 +465,8 @@
       "id": "kotor-old-town-parking",
       "name": "Kotor Old Town parking",
       "category": "Parking",
-      "lat": 42.4247,
-      "lng": 18.7712,
+      "lat": 42.4246092,
+      "lng": 18.7689828,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kotor%20Old%20Town%20parking%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -473,7 +475,7 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "Published Old Town parking coordinate"
     },
     {
       "id": "restaurant-kastel-niksic",
@@ -495,8 +497,8 @@
       "id": "ombra-old-town",
       "name": "Ombra · Old Town",
       "category": "Meal",
-      "lat": 42.4247,
-      "lng": 18.7712,
+      "lat": 42.42499,
+      "lng": 18.77062,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Ombra%20%C2%B7%20Old%20Town%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -505,28 +507,28 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "Published Pjaca od Kina venue location"
     },
     {
       "id": "cave-coffee-kotor",
       "name": "CAVE Coffee · Kotor",
       "category": "Coffee",
-      "lat": 42.4247,
-      "lng": 18.7712,
+      "lat": 42.42774,
+      "lng": 18.7703,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=CAVE%20Coffee%20%C2%B7%20Kotor%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
         "primary": []
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap cafe coordinate"
     },
     {
       "id": "aroma-city-tabacina-kotor",
       "name": "Aroma City Tabačina · Kotor",
       "category": "Supermarket",
-      "lat": 42.4247,
-      "lng": 18.7712,
+      "lat": 42.4354096,
+      "lng": 18.7663439,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Aroma%20City%20Taba%C4%8Dina%20%C2%B7%20Kotor%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -536,7 +538,7 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "Published Aroma Market location coordinate"
     },
     {
       "id": "virpazar-parking",
@@ -552,14 +554,14 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "approximate shared area pin; exact spot not verified"
     },
     {
       "id": "virpazar-boat-pier",
       "name": "Virpazar boat pier",
       "category": "Viewpoint",
-      "lat": 42.2476,
-      "lng": 19.0912,
+      "lat": 42.24635,
+      "lng": 19.0917,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Virpazar%20boat%20pier%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -568,14 +570,14 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap marina coordinate"
     },
     {
       "id": "winery-garnet-godinje",
       "name": "Winery Garnet · Godinje",
       "category": "Meal",
-      "lat": 42.225,
-      "lng": 19.0952,
+      "lat": 42.2172439,
+      "lng": 19.1119117,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Winery%20Garnet%20%C2%B7%20Godinje%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -584,7 +586,7 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap venue coordinate"
     },
     {
       "id": "perast-entrance-parking",
@@ -601,7 +603,7 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "approximate shared area pin; exact spot not verified"
     },
     {
       "id": "our-lady-of-the-rocks-pier",
@@ -633,7 +635,7 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "approximate shared area pin; exact spot not verified"
     },
     {
       "id": "sveti-stefan-viewpoint",
@@ -655,8 +657,8 @@
       "id": "restaurant-pelikan-virpazar",
       "name": "Restaurant Pelikan · Virpazar",
       "category": "Meal",
-      "lat": 42.2476,
-      "lng": 19.0912,
+      "lat": 42.24677,
+      "lng": 19.09029,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Restaurant%20Pelikan%20%C2%B7%20Virpazar%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -665,14 +667,14 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "Published venue coordinate"
     },
     {
       "id": "przun-old-town",
       "name": "Pržun · Old Town",
       "category": "Meal",
-      "lat": 42.4247,
-      "lng": 18.7712,
+      "lat": 42.42488,
+      "lng": 18.77206,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Pr%C5%BEun%20%C2%B7%20Old%20Town%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -681,14 +683,14 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap restaurant coordinate"
     },
     {
       "id": "small-talks-kotor",
       "name": "Small Talks · Kotor",
       "category": "Coffee",
-      "lat": 42.4247,
-      "lng": 18.7712,
+      "lat": 42.421394,
+      "lng": 18.769821,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Small%20Talks%20%C2%B7%20Kotor%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -699,7 +701,7 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap cafe coordinate"
     },
     {
       "id": "perast-to-tivat-airport",
@@ -734,15 +736,15 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin",
+      "precision": "approximate shared area pin; exact spot not verified",
       "bookingStatus": "Confirmed return · Oct 6, 13:00 · voucher 4H419663"
     },
     {
       "id": "tivat-airport-cafe-terminal-food",
       "name": "Tivat Airport café / terminal food",
       "category": "Parking",
-      "lat": 42.4047,
-      "lng": 18.7233,
+      "lat": 42.4037252,
+      "lng": 18.7248291,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Tivat%20Airport%20caf%C3%A9%20/%20terminal%20food%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -751,7 +753,7 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "Approximate terminal service-area coordinate"
     },
     {
       "id": "lepetane-ferry-terminal",
@@ -785,8 +787,8 @@
       "id": "ombra-kotor-old-town",
       "name": "Ombra · Kotor Old Town",
       "category": "Meal",
-      "lat": 42.4247,
-      "lng": 18.7712,
+      "lat": 42.42499,
+      "lng": 18.77062,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Ombra%20%C2%B7%20Kotor%20Old%20Town%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -795,77 +797,77 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "Published Pjaca od Kina venue location"
     },
     {
       "id": "idea-butiko-radanovici",
       "name": "IDEA Butiko Radanovići",
       "category": "Supermarket",
-      "lat": 42.352,
-      "lng": 18.765,
+      "lat": 42.3862,
+      "lng": 18.7422,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=IDEA%20Butiko%20Radanovi%C4%87i%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
         "primary": []
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "Published TC Butiko shopping-center coordinate"
     },
     {
       "id": "kotor-city-walls-entrance",
       "name": "Kotor city walls entrance",
       "category": "Viewpoint",
-      "lat": 42.4247,
-      "lng": 18.7712,
+      "lat": 42.425861,
+      "lng": 18.772069,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kotor%20city%20walls%20entrance%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
         "primary": []
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "Published Kotor City Walls entrance coordinate"
     },
     {
       "id": "konoba-scala-santa-kotor",
       "name": "Konoba Scala Santa · Kotor",
       "category": "Meal",
-      "lat": 42.4247,
-      "lng": 18.7712,
+      "lat": 42.4236359,
+      "lng": 18.771524,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Konoba%20Scala%20Santa%20%C2%B7%20Kotor%2C%20Montenegro&travelmode=driving",
       "cash": "Cash/Card",
       "days": {
         "primary": []
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap restaurant coordinate"
     },
     {
       "id": "dobrotski-dvori",
       "name": "Dobrotski Dvori",
       "category": "Activity",
-      "lat": 42.4247,
-      "lng": 18.7712,
+      "lat": 42.4445769,
+      "lng": 18.7651723,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Dobrotski%20Dvori%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
         "primary": []
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap venue coordinate"
     },
     {
       "id": "aroma-18-tc-kamelija",
       "name": "Aroma 18 · TC Kamelija",
       "category": "Supermarket",
-      "lat": 42.4247,
-      "lng": 18.7712,
+      "lat": 42.42638,
+      "lng": 18.769691,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Aroma%2018%20%C2%B7%20TC%20Kamelija%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
         "primary": []
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap Aroma 18 coordinate"
     },
     {
       "id": "lovcen-visitor-parking",
@@ -893,7 +895,7 @@
         "primary": []
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "approximate shared area pin; exact spot not verified"
     },
     {
       "id": "cetinje-parking",
@@ -913,29 +915,29 @@
       "id": "ivanov-konak-lovcen",
       "name": "Ivanov Konak · Lovćen",
       "category": "Activity",
-      "lat": 42.3994,
-      "lng": 18.83,
+      "lat": 42.3791509,
+      "lng": 18.8320737,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Ivanov%20Konak%20%C2%B7%20Lov%C4%87en%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
         "primary": []
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap venue coordinate"
     },
     {
       "id": "kafana-kod-pera-na-bukovici",
       "name": "Kafana Kod Pera na Bukovici",
       "category": "Meal",
-      "lat": 42.4247,
-      "lng": 18.7712,
+      "lat": 42.4361,
+      "lng": 18.84695,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kafana%20Kod%20Pera%20na%20Bukovici%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
         "primary": []
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap cafe coordinate"
     },
     {
       "id": "regent-porto-montenegro-spa",
@@ -949,7 +951,7 @@
         "primary": []
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "approximate shared area pin; exact spot not verified"
     },
     {
       "id": "porto-montenegro-parking",
@@ -963,7 +965,7 @@
         "primary": []
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "approximate shared area pin; exact spot not verified"
     },
     {
       "id": "kotor-waterfront",
@@ -977,42 +979,42 @@
         "primary": []
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "approximate shared area pin; exact spot not verified"
     },
     {
       "id": "przun-kotor-old-town",
       "name": "Pržun · Kotor Old Town",
       "category": "Meal",
-      "lat": 42.4247,
-      "lng": 18.7712,
+      "lat": 42.42488,
+      "lng": 18.77206,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Pr%C5%BEun%20%C2%B7%20Kotor%20Old%20Town%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
         "primary": []
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap restaurant coordinate"
     },
     {
       "id": "galion-suranj",
       "name": "Galion · Šuranj",
       "category": "Meal",
-      "lat": 42.4247,
-      "lng": 18.7712,
+      "lat": 42.422802,
+      "lng": 18.769402,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Galion%20%C2%B7%20%C5%A0uranj%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
         "primary": []
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "Published venue coordinate"
     },
     {
       "id": "kotor",
       "name": "Kotor",
       "category": "Activity",
-      "lat": 42.4247,
-      "lng": 18.7712,
+      "lat": 42.4249205,
+      "lng": 18.7713332,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kotor%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -1029,14 +1031,14 @@
         "Kotor waterfront",
         "Kotor serpentine"
       ],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap town node coordinate"
     },
     {
       "id": "tivat",
       "name": "Tivat",
       "category": "Activity",
-      "lat": 42.4304,
-      "lng": 18.696,
+      "lat": 42.4303762,
+      "lng": 18.6988104,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Tivat%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -1052,14 +1054,14 @@
       "aliases": [
         "Tivat"
       ],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap town coordinate"
     },
     {
       "id": "tivat-airport",
       "name": "Tivat Airport",
       "category": "Parking",
-      "lat": 42.4047,
-      "lng": 18.7233,
+      "lat": 42.4037252,
+      "lng": 18.7248291,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Tivat%20Airport%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -1077,14 +1079,14 @@
         "Tivat Airport",
         "terminal"
       ],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap airport feature coordinate"
     },
     {
       "id": "zabljak",
       "name": "Žabljak",
       "category": "Activity",
-      "lat": 43.1555,
-      "lng": 19.1226,
+      "lat": 43.1550532,
+      "lng": 19.1208669,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=%C5%BDabljak%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -1101,14 +1103,14 @@
         "Žabljak",
         "Zabljak"
       ],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap town node coordinate"
     },
     {
       "id": "black-lake",
       "name": "Black Lake",
       "category": "Viewpoint",
-      "lat": 43.1445,
-      "lng": 19.0861,
+      "lat": 43.1453852,
+      "lng": 19.0937444,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Black%20Lake%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -1125,14 +1127,14 @@
         "Black Lake",
         "Crno Jezero"
       ],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap lake feature coordinate"
     },
     {
       "id": "bosaca",
       "name": "Bosača",
       "category": "Activity",
-      "lat": 43.1761,
-      "lng": 19.0957,
+      "lat": 43.1637907,
+      "lng": 19.0876115,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Bosa%C4%8Da%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -1149,14 +1151,14 @@
         "Bosača",
         "Bosaca"
       ],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap village coordinate"
     },
     {
       "id": "trsa",
       "name": "Trsa",
       "category": "Activity",
-      "lat": 43.1692,
-      "lng": 18.9831,
+      "lat": 43.1888211,
+      "lng": 18.9381812,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Trsa%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -1172,14 +1174,14 @@
       "aliases": [
         "Trsa"
       ],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap village coordinate"
     },
     {
       "id": "pluzine",
       "name": "Plužine",
       "category": "Activity",
-      "lat": 43.155,
-      "lng": 18.839,
+      "lat": 43.1562282,
+      "lng": 18.8452248,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Plu%C5%BEine%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -1196,14 +1198,14 @@
         "Plužine",
         "Pluzine"
       ],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap town coordinate"
     },
     {
       "id": "mratinje-dam",
       "name": "Mratinje Dam",
       "category": "Viewpoint",
-      "lat": 43.2185,
-      "lng": 18.8465,
+      "lat": 43.2726988,
+      "lng": 18.8422034,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Mratinje%20Dam%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -1219,14 +1221,14 @@
       "aliases": [
         "Mratinje Dam"
       ],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap dam feature coordinate"
     },
     {
       "id": "radanovici",
       "name": "Radanovići",
       "category": "Activity",
-      "lat": 42.352,
-      "lng": 18.765,
+      "lat": 42.3585879,
+      "lng": 18.7601169,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Radanovi%C4%87i%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -1240,14 +1242,14 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap village coordinate"
     },
     {
       "id": "virpazar",
       "name": "Virpazar",
       "category": "Activity",
-      "lat": 42.2476,
-      "lng": 19.0912,
+      "lat": 42.2463,
+      "lng": 19.0906,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Virpazar%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -1265,14 +1267,14 @@
         "Lake Skadar",
         "Skadar"
       ],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap town coordinate"
     },
     {
       "id": "godinje",
       "name": "Godinje",
       "category": "Activity",
-      "lat": 42.225,
-      "lng": 19.0952,
+      "lat": 42.2218695,
+      "lng": 19.1115984,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Godinje%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -1288,14 +1290,14 @@
       "aliases": [
         "Godinje"
       ],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap village coordinate"
     },
     {
       "id": "perast",
       "name": "Perast",
       "category": "Activity",
-      "lat": 42.486,
-      "lng": 18.696,
+      "lat": 42.4862681,
+      "lng": 18.6988592,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Perast%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -1308,14 +1310,14 @@
       "aliases": [
         "Perast"
       ],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap town coordinate"
     },
     {
       "id": "our-lady-of-the-rocks",
       "name": "Our Lady of the Rocks",
       "category": "Viewpoint",
-      "lat": 42.4854,
-      "lng": 18.6822,
+      "lat": 42.4868666,
+      "lng": 18.6885904,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Our%20Lady%20of%20the%20Rocks%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -1331,14 +1333,14 @@
       "aliases": [
         "Our Lady of the Rocks"
       ],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap feature coordinate"
     },
     {
       "id": "kamenari",
       "name": "Kamenari",
       "category": "Activity",
-      "lat": 42.476,
-      "lng": 18.674,
+      "lat": 42.4668399,
+      "lng": 18.673497,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kamenari%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -1354,14 +1356,14 @@
       "aliases": [
         "Kamenari"
       ],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap settlement coordinate"
     },
     {
       "id": "lepetane",
       "name": "Lepetane",
       "category": "Activity",
-      "lat": 42.466,
-      "lng": 18.666,
+      "lat": 42.4658174,
+      "lng": 18.6866829,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Lepetane%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -1377,7 +1379,7 @@
       "aliases": [
         "Lepetane"
       ],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap settlement coordinate"
     },
     {
       "id": "lovcen",
@@ -1407,8 +1409,8 @@
       "id": "ivanova-korita",
       "name": "Ivanova Korita",
       "category": "Viewpoint",
-      "lat": 42.3784,
-      "lng": 18.8311,
+      "lat": 42.3803388,
+      "lng": 18.8320227,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Ivanova%20Korita%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -1424,14 +1426,14 @@
       "aliases": [
         "Ivanova Korita"
       ],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap settlement coordinate"
     },
     {
       "id": "cetinje",
       "name": "Cetinje",
       "category": "Activity",
-      "lat": 42.3931,
-      "lng": 18.911,
+      "lat": 42.389633,
+      "lng": 18.9246085,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Cetinje%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -1442,14 +1444,14 @@
       "aliases": [
         "Cetinje"
       ],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap town coordinate"
     },
     {
       "id": "budva",
       "name": "Budva",
       "category": "Activity",
-      "lat": 42.2842,
-      "lng": 18.84,
+      "lat": 42.2885656,
+      "lng": 18.8419505,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Budva%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -1465,14 +1467,14 @@
       "aliases": [
         "Budva"
       ],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap town coordinate"
     },
     {
       "id": "sveti-stefan",
       "name": "Sveti Stefan",
       "category": "Activity",
-      "lat": 42.2574,
-      "lng": 18.897,
+      "lat": 42.2556515,
+      "lng": 18.89695,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Sveti%20Stefan%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -1488,14 +1490,14 @@
       "aliases": [
         "Sveti Stefan"
       ],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap settlement coordinate"
     },
     {
       "id": "porto-montenegro",
       "name": "Porto Montenegro",
       "category": "Activity",
-      "lat": 42.431,
-      "lng": 18.694,
+      "lat": 42.4335682,
+      "lng": 18.6901507,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Porto%20Montenegro%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -1509,14 +1511,14 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap marina feature coordinate"
     },
     {
       "id": "risan",
       "name": "Risan",
       "category": "Activity",
-      "lat": 42.515,
-      "lng": 18.695,
+      "lat": 42.5149792,
+      "lng": 18.6955649,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Risan%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -1532,14 +1534,14 @@
       "aliases": [
         "Risan"
       ],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap settlement coordinate"
     },
     {
       "id": "njegusi",
       "name": "Njeguši",
       "category": "Activity",
-      "lat": 42.432,
-      "lng": 18.808,
+      "lat": 42.4312967,
+      "lng": 18.8247712,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Njegu%C5%A1i%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -1556,7 +1558,7 @@
         "Njeguši",
         "Njegusi"
       ],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap settlement coordinate"
     },
     {
       "id": "podgorica",
@@ -1585,8 +1587,8 @@
       "id": "herceg-novi",
       "name": "Herceg Novi",
       "category": "Activity",
-      "lat": 42.453,
-      "lng": 18.537,
+      "lat": 42.4517622,
+      "lng": 18.5367516,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Herceg%20Novi%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -1602,7 +1604,7 @@
       "aliases": [
         "Herceg Novi"
       ],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap town coordinate"
     },
     {
       "id": "kotor-old-town-walls-san-giovanni",
@@ -1636,7 +1638,7 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "approximate shared area pin; exact spot not verified"
     },
     {
       "id": "lovcen-visitor-area-ivanova-korita-walk",
@@ -1652,7 +1654,7 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "approximate shared area pin; exact spot not verified"
     },
     {
       "id": "plantaze-sipcanik-cellar-tasting",
@@ -1674,8 +1676,8 @@
       "id": "lake-skadar-boat-from-virpazar",
       "name": "Lake Skadar boat from Virpazar",
       "category": "Activity",
-      "lat": 42.2476,
-      "lng": 19.0912,
+      "lat": 42.24635,
+      "lng": 19.0917,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Lake%20Skadar%20boat%20from%20Virpazar%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -1684,7 +1686,7 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap Virpazar marina coordinate"
     },
     {
       "id": "p14-sedlo-pass-out-and-back-from-zabljak-to-pluzine-and-piva-viewpoint",
@@ -1718,7 +1720,7 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "approximate shared area pin; exact spot not verified"
     },
     {
       "id": "curevac-viewpoint-tara-canyon",
@@ -1750,7 +1752,7 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "approximate shared area pin; exact spot not verified"
     },
     {
       "id": "bosacajablan-lake-viewpoint-short-out-and-back-optional-alternative",
@@ -1767,7 +1769,7 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "approximate shared area pin; exact spot not verified"
     },
     {
       "id": "budva-old-town-sveti-stefan-milocer-coastal-day-optional-alternate",
@@ -1783,7 +1785,7 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "approximate shared area pin; exact spot not verified"
     },
     {
       "id": "vrmac-tunnel",
@@ -1821,7 +1823,7 @@
       "aliases": [
         "Durmitor"
       ],
-      "precision": "navigation pin"
+      "precision": "approximate shared area pin; exact spot not verified"
     },
     {
       "id": "tara-canyon",
@@ -1975,14 +1977,14 @@
         "Boka Bay",
         "Bay of Kotor"
       ],
-      "precision": "navigation pin"
+      "precision": "approximate shared area pin; exact spot not verified"
     },
     {
       "id": "lake-skadar",
       "name": "Lake Skadar",
       "category": "Viewpoint",
-      "lat": 42.2476,
-      "lng": 19.0912,
+      "lat": 42.195312,
+      "lng": 19.292694,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Lake%20Skadar%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
@@ -1993,7 +1995,7 @@
       "aliases": [
         "Lake Skadar"
       ],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap lake feature coordinate"
     },
     {
       "id": "tara-bridge-viewpoint-conditional",
@@ -2145,7 +2147,7 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation reference pin"
+      "precision": "approximate shared area pin; exact spot not verified"
     },
     {
       "id": "njegos-mausoleum-parking",
