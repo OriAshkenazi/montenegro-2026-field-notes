@@ -15,19 +15,36 @@
     {id:'lovcen',name:'Njegoš Mausoleum · Lovćen',region:'Highlands · Lovćen · route stop',lat:42.40001,lon:18.83749},
     {id:'kuk',name:'Kuk upper station · Kotor Cable Car',region:'Highlands · Lovćen · cable-car stop',lat:42.39272,lon:18.79259},
   ];
+  // i18n hooks are optional so this file still loads standalone (Node tests): t/getLang/bidi come from i18n.js when present.
+  const T = (key, vars) => typeof t === 'function' ? t(key, vars) : key;
+  const loc = () => typeof getLang === 'function' && getLang() === 'he' ? 'he-IL' : 'en-GB';
+  const B = html => typeof bidi === 'function' ? bidi(html) : html;
+  const BT = text => typeof bidiText === 'function' ? bidiText(text) : text;
+  const regionOf = hub => T(`hub.region.${hub.id}`);
+  const ui = { mode: { key: 'w.mode.loading', offline: false, loading: true }, updatedAt: null, error: null, loading: 'weather.loading' };
+  function paintStatus() {
+    const badge = $('#weatherMode'), updated = $('#weatherUpdated'), error = $('#weatherError'), loading = $('#weatherLoading');
+    if (badge) { badge.textContent = T(ui.mode.key); badge.classList.toggle('offline', !!ui.mode.offline); badge.classList.toggle('loading', !!ui.mode.loading); }
+    if (updated) updated.textContent = ui.updatedAt ? T('w.updated', { t: BT(new Intl.DateTimeFormat(loc(), { dateStyle: 'medium', timeStyle: 'short' }).format(new Date(ui.updatedAt))) }) : T('w.updated.none');
+    if (error) { error.textContent = ui.error ? BT(T(ui.error.key, ui.error.vars)) : ''; error.hidden = !ui.error; }
+    if (loading) loading.textContent = T(ui.loading);
+  }
+  const setMode = (key, flags = {}) => { ui.mode = { key, offline: !!flags.offline, loading: !!flags.loading }; paintStatus(); };
+  const setLoading = key => { ui.loading = key; paintStatus(); };
+  const setError = (key, vars) => { ui.error = key ? { key, vars } : null; paintStatus(); };
   const cacheKey = 'mne-weather-forecast-v4';
   const montenegro = [[41.85,19.37],[41.99,19.22],[42.02,18.56],[42.36,18.45],[42.47,18.53],[42.61,18.68],[42.76,18.69],[42.90,18.80],[43.00,18.75],[43.17,18.83],[43.55,19.36],[43.54,19.62],[43.35,19.85],[43.23,20.10],[42.95,20.35],[42.61,20.36],[42.43,20.32],[42.24,20.28],[42.05,20.14],[41.89,19.98]];
   let payload = null, selectedDay = 0, selectedHub = 'zabljak', userSelectedHub = false;
 
   function escape(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
   function today() { return new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Podgorica',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date()); }
-  function dateLabel(day) { return new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Podgorica',weekday:'short',day:'numeric',month:'short'}).format(new Date(`${day}T12:00:00+02:00`)); }
+  function dateLabel(day) { return new Intl.DateTimeFormat(loc(),{timeZone:'Europe/Podgorica',weekday:'short',day:'numeric',month:'short'}).format(new Date(`${day}T12:00:00+02:00`)); }
   function timeLabel(value, zone='Europe/Podgorica') {
     if(!value)return'—';
     const local=value.match(/T(\d{2}:\d{2})(?::\d{2})?$/);
     if(local)return local[1];
     const date=new Date(value);
-    return Number.isNaN(date.getTime())?'—':new Intl.DateTimeFormat('en-GB',{timeZone:zone,hour:'2-digit',minute:'2-digit',hour12:false}).format(date);
+    return Number.isNaN(date.getTime())?'—':new Intl.DateTimeFormat(loc(),{timeZone:zone,hour:'2-digit',minute:'2-digit',hour12:false}).format(date);
   }
   function inMontenegro(lat,lon) { let inside=false; for(let i=0,j=montenegro.length-1;i<montenegro.length;j=i++){const [yi,xi]=montenegro[i],[yj,xj]=montenegro[j];if((xi>lon)!==(xj>lon)&&lat<(yj-yi)*(lon-xi)/(xj-xi)+yi)inside=!inside;}return inside; }
   function nearestHub(lat,lon) { return hubs.reduce((best,hub)=>{const distance=(hub.lat-lat)**2*Math.cos(lat*Math.PI/180)**2+(hub.lon-lon)**2;return !best||distance<best.distance?{id:hub.id,distance}:best;},null).id; }
@@ -37,11 +54,11 @@
   function renderHubSelector() {
     const selector=$('#weatherHubTitle');if(!selector)return;
     const groups=[
-      {label:'Adriatic Coast',ids:['tivat','perast','budva']},
-      {label:'Central & Lakes',ids:['podgorica','virpazar']},
-      {label:'Northern & Lovćen Highlands',ids:['zabljak','sedlo','kolasin','piva','biogradska','tara','lovcen','kuk']}
+      {label:T('w.group.coast'),ids:['tivat','perast','budva']},
+      {label:T('w.group.central'),ids:['podgorica','virpazar']},
+      {label:T('w.group.north'),ids:['zabljak','sedlo','kolasin','piva','biogradska','tara','lovcen','kuk']}
     ];
-    selector.innerHTML=groups.map(group=>`<optgroup label="${group.label}">${group.ids.map(id=>{const hub=hubs.find(item=>item.id===id);return `<option value="${hub.id}">${escape(hub.name)}</option>`;}).join('')}</optgroup>`).join('');
+    selector.innerHTML=groups.map(group=>`<optgroup label="${escape(group.label)}">${group.ids.map(id=>{const hub=hubs.find(item=>item.id===id);return `<option value="${hub.id}">${escape(hub.name)}</option>`;}).join('')}</optgroup>`).join('');
     selector.value=selectedHub;
     if(!selector._weatherHubBound){selector.addEventListener('change',()=>chooseHub(selector.value));selector._weatherHubBound=true;}
   }
@@ -58,59 +75,67 @@
     const cosH=(Math.cos(zenith*Math.PI/180)-sinDec*Math.sin(lat*Math.PI/180))/(cosDec*Math.cos(lat*Math.PI/180));if(cosH>1||cosH< -1)return'—';
     const h=(rising?360-Math.acos(cosH)*180/Math.PI:Math.acos(cosH)*180/Math.PI)/15;
     const utc=((h+ra-.06571*t-6.622-lngHour)%24+24)%24,instant=new Date(Date.UTC(year,month-1,date)+utc*3600000);
-    return new Intl.DateTimeFormat('en-GB',{timeZone:zone,hour:'2-digit',minute:'2-digit',hour12:false}).format(instant);
+    return new Intl.DateTimeFormat(loc(),{timeZone:zone,hour:'2-digit',minute:'2-digit',hour12:false}).format(instant);
   }
   function hourlyValue(data,day,field,hour=12) { const times=data.hourly?.time||[],index=times.findIndex(value=>value===`${day}T${String(hour).padStart(2,'0')}:00`);return index<0?null:data.hourly[field]?.[index]??null; }
-  function metric(label,value,unit='') { return `<div class="weather-metric"><small>${label}</small><b>${value==null?'—':`${Math.round(value)}${unit}`}</b></div>`; }
+  function metric(label,value,unit='') { return `<div class="weather-metric"><small>${escape(label)}</small><b>${value==null?'—':`${Math.round(value)}${unit}`}</b></div>`; }
   function renderCompare(id,elementId) {
     const hub=hubs.find(item=>item.id===id),element=$(`#${elementId}`),data=payload?.locations?.[id];if(!hub||!element)return;
-    if(!data){element.innerHTML=`<header><div><small>${escape(hub.region)}</small><h3>${escape(hub.name)}</h3></div></header><p class="weather-empty">Forecast unavailable.</p>`;return;}
-    const day=tripDates()[selectedDay]||tripDates()[0];if(!day){element.innerHTML=`<header><div><small>${escape(hub.region)}</small><h3>${escape(hub.name)}</h3></div></header><p class="weather-empty">The trip window is complete; no trip dates remain.</p>`;return;}
-    const dayIndex=(data.daily.time||[]).indexOf(day);if(dayIndex<0){element.innerHTML=`<header><div><small>${escape(hub.region)}</small><h3>${escape(hub.name)}</h3></div></header><p class="weather-empty">Forecast data for ${dateLabel(day)} is not available yet.</p>`;return;}
+    const head=`<header><div><small>${escape(regionOf(hub))}</small><h3>${escape(hub.name)}</h3></div></header>`;
+    if(!data){element.innerHTML=B(`${head}<p class="weather-empty">${escape(T('w.na'))}</p>`);return;}
+    const day=tripDates()[selectedDay]||tripDates()[0];if(!day){element.innerHTML=B(`${head}<p class="weather-empty">${escape(T('w.complete'))}</p>`);return;}
+    const dayIndex=(data.daily.time||[]).indexOf(day);if(dayIndex<0){element.innerHTML=B(`${head}<p class="weather-empty">${escape(T('w.noDate',{date:dateLabel(day)}))}</p>`);return;}
     const max=data.daily.temperature_2m_max?.[dayIndex],sunset=data.daily.sunset?.[dayIndex],late=sunset&&timeLabel(sunset,data.timezone)>='17:30';
     const dawn=civilTwilight(day,hub.lat,hub.lon,true,data.timezone),dusk=civilTwilight(day,hub.lat,hub.lon,false,data.timezone);
-    element.innerHTML=`<header><div><small>${escape(hub.region)} · ${dateLabel(day)}</small><h3>${escape(hub.name)}${id==='zabljak'?' · Durmitor':''}</h3></div><strong class="weather-temp">${max==null?'—':`${Math.round(max)}°`}</strong></header><div class="weather-metrics">${metric('Precipitation chance',data.daily.precipitation_probability_max?.[dayIndex],'%')}${metric('Peak wind gusts',data.daily.wind_gusts_10m_max?.[dayIndex],' km/h')}${metric('Cloud cover at noon',hourlyValue(data,day,'cloud_cover'),'%')}${metric('Daily low',data.daily.temperature_2m_min?.[dayIndex],'°')}</div><div class="weather-sunline"><b>${dateLabel(day)}</b> · Civil dawn ${dawn} · Sunrise ${timeLabel(data.daily.sunrise?.[dayIndex],data.timezone)} · Sunset ${timeLabel(sunset,data.timezone)} · Civil dusk ${dusk}${late?'<br><span class="cutoff-alert">Sunset is after the 17:30 driving cut-off.</span>':''}</div>`;
+    element.innerHTML=B(`<header><div><small>${escape(regionOf(hub))} · ${dateLabel(day)}</small><h3>${escape(hub.name)}${id==='zabljak'?escape(T('w.durmitor')):''}</h3></div><strong class="weather-temp">${max==null?'—':`${Math.round(max)}°`}</strong></header><div class="weather-metrics">${metric(T('w.m.precip'),data.daily.precipitation_probability_max?.[dayIndex],'%')}${metric(T('w.m.gust'),data.daily.wind_gusts_10m_max?.[dayIndex],T('unit.kmh'))}${metric(T('w.m.cloud'),hourlyValue(data,day,'cloud_cover'),'%')}${metric(T('w.m.low'),data.daily.temperature_2m_min?.[dayIndex],'°')}</div><div class="weather-sunline"><b>${dateLabel(day)}</b> · ${escape(T('w.dawn'))} ${dawn} · ${escape(T('w.sunrise'))} ${timeLabel(data.daily.sunrise?.[dayIndex],data.timezone)} · ${escape(T('w.sunset'))} ${timeLabel(sunset,data.timezone)} · ${escape(T('w.dusk'))} ${dusk}${late?`<br><span class="cutoff-alert">${escape(T('w.cutoff'))}</span>`:''}</div>`);
   }
   function tripDates() { const now=today(),first='2026-10-01',last='2026-10-06';if(now>last)return[];const start=now>first?now:first;return Array.from({length:7},(_,i)=>{const date=new Date(`${first}T12:00:00Z`);date.setUTCDate(date.getUTCDate()+i);return date.toISOString().slice(0,10);}).filter(date=>date>=start&&date<=last); }
   function renderWarning() {
     const banner=$('#alpineWarning');if(!banner||!payload)return;const dates=tripDates(),risks=[];
-    for(const id of ['zabljak','sedlo','kolasin','piva','biogradska','tara','lovcen','kuk']){const hub=hubs.find(item=>item.id===id),daily=payload.locations?.[id]?.daily;if(!daily)continue;for(let i=0;i<daily.time.length;i++){const day=daily.time[i];if(!dates.includes(day))continue;const low=daily.temperature_2m_min?.[i],chance=daily.precipitation_probability_max?.[i];if((low!=null&&low<=2)||(chance!=null&&chance>60))risks.push(`${hub.name} · ${dateLabel(day)}${low!=null&&low<=2?` · low ${Math.round(low)}°C`:''}${chance!=null&&chance>60?` · precipitation ${Math.round(chance)}%`:''}`);}}
-    banner.hidden=!risks.length;$('#alpineWarningDetails').textContent=risks.length?`Mountain route forecast thresholds are met. Review the relevant day before departure: ${risks.join('; ')}.`:'';
+    for(const id of ['zabljak','sedlo','kolasin','piva','biogradska','tara','lovcen','kuk']){const hub=hubs.find(item=>item.id===id),daily=payload.locations?.[id]?.daily;if(!daily)continue;for(let i=0;i<daily.time.length;i++){const day=daily.time[i];if(!dates.includes(day))continue;const low=daily.temperature_2m_min?.[i],chance=daily.precipitation_probability_max?.[i];if((low!=null&&low<=2)||(chance!=null&&chance>60))risks.push(`${hub.name} · ${dateLabel(day)}${low!=null&&low<=2?` · ${T('w.risk.low',{n:Math.round(low)})}`:''}${chance!=null&&chance>60?` · ${T('w.risk.rain',{n:Math.round(chance)})}`:''}`);}}
+    banner.hidden=!risks.length;$('#alpineWarningDetails').textContent=risks.length?BT(T('w.warn',{risks:risks.join('; ')})):'';
   }
   function renderDays() {
     const hub=hubs.find(item=>item.id===selectedHub),daily=payload?.locations?.[hub?.id]?.daily,container=$('#weatherDays');if(!daily||!container)return;
-    const dates=tripDates();if(!dates.length){container.innerHTML='';$('#weatherLoading').textContent='The trip window is complete; no forecast dates remain.';$('#weatherLoading').hidden=false;$('#weatherForecast').hidden=true;return;}
+    const dates=tripDates();if(!dates.length){container.innerHTML='';setLoading('w.loading.done');$('#weatherLoading').hidden=false;$('#weatherForecast').hidden=true;return;}
     selectedDay=Math.min(selectedDay,dates.length-1);
-    container.innerHTML=dates.map((day,position)=>({day,position,index:daily.time.indexOf(day)})).filter(item=>item.index>=0).map(({day,position,index:i})=>{const low=daily.temperature_2m_min?.[i],high=daily.temperature_2m_max?.[i],chance=daily.precipitation_probability_max?.[i],risk=(low!=null&&low<=2)||(chance??0)>60,dawn=civilTwilight(day,hub.lat,hub.lon,true,payload.locations[hub.id].timezone),dusk=civilTwilight(day,hub.lat,hub.lon,false,payload.locations[hub.id].timezone);return `<button type="button" class="weather-day" data-weather-day="${position}" aria-pressed="${position===selectedDay}"><span>${dateLabel(day)}</span><b>${high==null?'—':`${Math.round(high)}°`} / ${low==null?'—':`${Math.round(low)}°`}</b><small class="${risk?'weather-risk':''}">${chance==null?'—':`${Math.round(chance)}% rain`}${risk?' · caution':''}</small><small>☼ ${timeLabel(daily.sunrise?.[i],payload.locations[hub.id].timezone)} · Sunset ${timeLabel(daily.sunset?.[i],payload.locations[hub.id].timezone)}</small><small>Civil ${dawn}–${dusk}</small></button>`;}).join('');
+    container.innerHTML=B(dates.map((day,position)=>({day,position,index:daily.time.indexOf(day)})).filter(item=>item.index>=0).map(({day,position,index:i})=>{const low=daily.temperature_2m_min?.[i],high=daily.temperature_2m_max?.[i],chance=daily.precipitation_probability_max?.[i],risk=(low!=null&&low<=2)||(chance??0)>60,dawn=civilTwilight(day,hub.lat,hub.lon,true,payload.locations[hub.id].timezone),dusk=civilTwilight(day,hub.lat,hub.lon,false,payload.locations[hub.id].timezone);return `<button type="button" class="weather-day" data-weather-day="${position}" aria-pressed="${position===selectedDay}"><span>${dateLabel(day)}</span><b>${high==null?'—':`${Math.round(high)}°`} / ${low==null?'—':`${Math.round(low)}°`}</b><small class="${risk?'weather-risk':''}">${chance==null?'—':escape(T('w.rain',{n:Math.round(chance)}))}${risk?` · ${escape(T('w.caution'))}`:''}</small><small>☼ ${timeLabel(daily.sunrise?.[i],payload.locations[hub.id].timezone)} · ${escape(T('w.sunset'))} ${timeLabel(daily.sunset?.[i],payload.locations[hub.id].timezone)}</small><small>${escape(T('w.civil'))} ${dawn}–${dusk}</small></button>`;}).join(''));
     container.querySelectorAll('[data-weather-day]').forEach(button=>button.addEventListener('click',()=>{selectedDay=Number(button.dataset.weatherDay);renderDays();renderCompare('tivat','coastWeather');renderCompare('zabljak','alpineWeather');renderHourly();}));
   }
   function renderHourly() {
     const hub=hubs.find(item=>item.id===selectedHub),data=payload?.locations?.[hub?.id],hourly=data?.hourly,day=tripDates()[selectedDay],container=$('#hourlyScroller');if(!hub||!hourly||!container||!day)return;
-    $('#hourlyTitle').textContent=`${hub.name} · ${dateLabel(day)} hourly outlook`;const indexes=hourly.time.map((value,i)=>value.startsWith(day)?i:-1).filter(i=>i>=0),maxRain=Math.max(1,...indexes.map(i=>hourly.precipitation?.[i]??hourly.rain?.[i]??0));
-    container.innerHTML=indexes.map(i=>{const rawAmount=hourly.precipitation?.[i]??hourly.rain?.[i]??0,amount=Math.max(0,Number(rawAmount)||0),chance=hourly.precipitation_probability?.[i],temp=hourly.temperature_2m?.[i],time=timeLabel(hourly.time[i],data.timezone),height=amount>0?Math.max(10,Math.round(amount/maxRain*100)):0;return `<div class="hour-cell" aria-label="${escape(time)}, ${temp==null?'temperature unavailable':`${Math.round(temp)} degrees`}, ${chance==null?'precipitation chance unavailable':`${Math.round(chance)} percent precipitation chance`}, ${amount.toFixed(1)} millimeters total precipitation"><time>${escape(time)}</time><b>${temp==null?'—':`${Math.round(temp)}°`}</b><span class="hour-rain" title="${amount.toFixed(1)} mm modelled precipitation"><i style="height:${height}%"></i></span><small>${amount.toFixed(1)} mm</small><span class="hour-precip">${chance==null?'—':`${Math.round(chance)}%`}</span></div>`;}).join('')||'<p class="weather-empty">Hourly forecast unavailable for this day.</p>';
+    $('#hourlyTitle').textContent=BT(T('w.hourlyTitle',{name:hub.name,date:dateLabel(day)}));const indexes=hourly.time.map((value,i)=>value.startsWith(day)?i:-1).filter(i=>i>=0),maxRain=Math.max(1,...indexes.map(i=>hourly.precipitation?.[i]??hourly.rain?.[i]??0));
+    container.innerHTML=B(indexes.map(i=>{const rawAmount=hourly.precipitation?.[i]??hourly.rain?.[i]??0,amount=Math.max(0,Number(rawAmount)||0),chance=hourly.precipitation_probability?.[i],temp=hourly.temperature_2m?.[i],time=timeLabel(hourly.time[i],data.timezone),height=amount>0?Math.max(10,Math.round(amount/maxRain*100)):0;return `<div class="hour-cell" aria-label="${escape(`${time}, ${temp==null?T('w.temp.na'):T('w.deg',{n:Math.round(temp)})}, ${chance==null?T('w.chance.na'):T('w.chance',{n:Math.round(chance)})}, ${T('w.mmTotal',{v:amount.toFixed(1)})}`)}"><time>${escape(time)}</time><b>${temp==null?'—':`${Math.round(temp)}°`}</b><span class="hour-rain" title="${escape(T('w.mmTitle',{v:amount.toFixed(1)}))}"><i style="height:${height}%"></i></span><small>${escape(T('w.mm',{v:amount.toFixed(1)}))}</small><span class="hour-precip">${chance==null?'—':`${Math.round(chance)}%`}</span></div>`;}).join(''))||`<p class="weather-empty">${escape(T('w.hourlyNa'))}</p>`;
   }
-  function renderDetail() { const hub=hubs.find(item=>item.id===selectedHub);if(!hub)return;const selector=$('#weatherHubTitle');if(selector)selector.value=hub.id;const region=$('#weatherHubRegion');if(region)region.textContent=hub.region;$('#weatherLoading').hidden=!!payload;$('#weatherForecast').hidden=!payload;if(payload){renderDays();renderHourly();} }
+  function renderDetail() { const hub=hubs.find(item=>item.id===selectedHub);if(!hub)return;const selector=$('#weatherHubTitle');if(selector)selector.value=hub.id;const region=$('#weatherHubRegion');if(region)region.textContent=regionOf(hub);$('#weatherLoading').hidden=!!payload;$('#weatherForecast').hidden=!payload;if(payload){renderDays();renderHourly();} }
   function display(data,mode) {
-    payload=data;const badge=$('#weatherMode');badge.textContent=mode==='offline'?'Offline Mode - Showing Cached Forecast':mode==='cached'?'Saved forecast · checking for updates':'Live forecast';badge.classList.toggle('offline',mode==='offline');badge.classList.toggle('loading',mode==='cached');
-    $('#weatherUpdated').textContent=`Last updated: ${new Intl.DateTimeFormat('en-GB',{dateStyle:'medium',timeStyle:'short'}).format(new Date(data.updatedAt))}`;$('#weatherError').hidden=true;$('#weatherLoading').hidden=true;$('#weatherForecast').hidden=false;
+    payload=data;ui.updatedAt=data.updatedAt;ui.error=null;setMode(mode==='offline'?'w.mode.offline':mode==='cached'?'w.mode.cached':'w.mode.live',{offline:mode==='offline',loading:mode==='cached'});
+    $('#weatherLoading').hidden=true;$('#weatherForecast').hidden=false;
     renderCompare('tivat','coastWeather');renderCompare('zabljak','alpineWeather');renderDetail();renderWarning();
   }
   async function refresh() {
-    const badge=$('#weatherMode'),error=$('#weatherError');if(!navigator.onLine){if(payload)display(payload,'offline');else{badge.textContent='Offline Mode - No Cached Forecast';badge.classList.add('offline');$('#weatherLoading').textContent='Forecast is not cached yet. Connect once to load weather data.';}return;}
-    badge.textContent='Updating forecast…';badge.classList.add('loading');
+    if(!navigator.onLine){if(payload)display(payload,'offline');else{setMode('w.mode.offlineNone',{offline:true});setLoading('w.loading.notCached');}return;}
+    setMode('w.mode.updating',{loading:true});
     try {
       const url=new URL('https://api.open-meteo.com/v1/forecast'),params={latitude:hubs.map(hub=>hub.lat).join(','),longitude:hubs.map(hub=>hub.lon).join(','),hourly:'temperature_2m,precipitation_probability,precipitation,cloud_cover',daily:'temperature_2m_min,temperature_2m_max,precipitation_probability_max,wind_gusts_10m_max,sunrise,sunset',forecast_days:'16',timezone:'auto',temperature_unit:'celsius',wind_speed_unit:'kmh',precipitation_unit:'mm'};
       Object.entries(params).forEach(([key,value])=>url.searchParams.set(key,value));const response=await fetch(url,{cache:'no-store'});if(!response.ok)throw new Error(`Forecast request returned ${response.status}.`);
       const body=await response.json(),rows=Array.isArray(body)?body:[body];if(rows.length!==hubs.length)throw new Error('Forecast response did not include all thirteen route hubs.');
       const locations={};hubs.forEach((hub,index)=>{if(!rows[index]?.daily?.time?.length||!rows[index]?.hourly?.time?.length)throw new Error(`Forecast data is incomplete for ${hub.name}.`);locations[hub.id]=rows[index];});
       const fresh={updatedAt:new Date().toISOString(),locations};try{localStorage.setItem(cacheKey,JSON.stringify(fresh));}catch{}display(fresh,'live');
-    } catch(reason) { if(payload){display(payload,'offline');error.textContent=`Could not refresh weather (${reason.message}). Showing the last successful forecast.`;}else{error.textContent=`Weather forecast unavailable: ${reason.message}`;error.hidden=false;$('#weatherLoading').textContent='Reconnect to load the trip-window forecast.';badge.textContent='Forecast unavailable';badge.classList.add('offline');}error.hidden=false; }
+    } catch(reason) { if(payload){display(payload,'offline');setError('w.err.refresh',{reason:reason.message});}else{setError('w.err.unavailable',{reason:reason.message});setLoading('w.loading.reconnect');setMode('w.mode.unavailable',{offline:true});} }
   }
+  // Re-render from the last loaded forecast without refetching (language switch); selected hub and day are kept.
+  function rerender() {
+    paintStatus();renderHubSelector();
+    if(payload){renderCompare('tivat','coastWeather');renderCompare('zabljak','alpineWeather');renderDetail();renderWarning();}else renderDetail();
+  }
+  globalThis.weatherRerender=rerender;
   function init() {
+    paintStatus();
     try { const saved=JSON.parse(localStorage.getItem(cacheKey)||'null');if(saved?.locations)display(saved,navigator.onLine?'cached':'offline'); } catch {}
-    if(!navigator.onLine&&!payload){$('#weatherMode').textContent='Offline Mode - No Cached Forecast';$('#weatherMode').classList.add('offline');$('#weatherLoading').textContent='Forecast is not cached yet. Connect once to load weather data.';}
+    if(!navigator.onLine&&!payload){setMode('w.mode.offlineNone',{offline:true});setLoading('w.loading.notCached');}
     renderHubSelector();
     refresh();locateUser();addEventListener('online',refresh);
   }
-  init();
+  if(typeof i18nReady!=='undefined')i18nReady.then(init);else init();
 })();

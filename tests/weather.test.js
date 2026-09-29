@@ -3,6 +3,7 @@ const fs=require('node:fs');
 const vm=require('node:vm');
 
 const source=fs.readFileSync('weather.js','utf8');
+const enUi=JSON.parse(fs.readFileSync('locales/en.json','utf8')).ui,tEn=(key,vars)=>String(enUi[key]??key).replace(/\{(\w+)\}/g,(m,k)=>vars&&vars[k]!=null?vars[k]:m);
 assert(source.includes("id:'perast',name:'Conte Hotel · Perast (reception/property anchor)'"));
 assert(source.includes("name:'Runolist Chalet · Narodnih heroja (approximate pin)'"));
 assert(source.includes('mne-weather-forecast-v4'), 'coordinate changes must invalidate saved forecast payload');
@@ -19,7 +20,7 @@ function run(rows,{online=true,cached=null}={}){
   const selectors=['#weatherHub','#weatherMode','#weatherUpdated','#weatherError','#weatherLoading','#weatherForecast','#weatherDays','#hourlyTitle','#hourlyScroller','#weatherHubTitle','#alpineWarning','#alpineWarningDetails','#coastWeather','#alpineWeather'];
   const elements=Object.fromEntries(selectors.map(selector=>[selector,{value:selector==='#weatherHub'?'zabljak':'',textContent:'',innerHTML:'',hidden:selector==='#weatherForecast'||selector==='#alpineWarning',classList:{add(){},toggle(){}},addEventListener(){},querySelectorAll(){return[]}}]));
   const store=new Map(cached?[["mne-weather-forecast-v4",JSON.stringify(cached)]]:[]);
-  const context={document:{querySelector:selector=>elements[selector]},navigator:{onLine:online},localStorage:{getItem:key=>store.get(key)||null,setItem:(key,value)=>store.set(key,value)},fetch:async()=>({ok:true,json:async()=>rows}),addEventListener(){},URL,Intl,Date,Math,Number,String,JSON,Array,Error};
+  const context={t:tEn,document:{querySelector:selector=>elements[selector]},navigator:{onLine:online},localStorage:{getItem:key=>store.get(key)||null,setItem:(key,value)=>store.set(key,value)},fetch:async()=>({ok:true,json:async()=>rows}),addEventListener(){},URL,Intl,Date,Math,Number,String,JSON,Array,Error};
   vm.runInNewContext(source,context);return new Promise(resolve=>setImmediate(()=>resolve({elements,store})));
 }
 

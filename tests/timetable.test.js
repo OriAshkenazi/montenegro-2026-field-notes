@@ -79,5 +79,6 @@ check('segments with leg lack driveMin',bad.drive);
 check('segments lack title',bad.title);
 check('schedule conflicts',bad.conflict);
 const tracked=execSync("git ls-files '*.json'",{cwd:root,encoding:'utf8'}).split('\n').filter(Boolean).sort();
-assert.deepStrictEqual(tracked,['itinerary.json','package-lock.json','package.json','waypoints.json']);
+// Locale dictionaries are keyed by the itinerary's English text, not a parallel dataset.
+assert.deepStrictEqual(tracked,['itinerary.json','locales/en.json','locales/he.json','package-lock.json','package.json','waypoints.json']);
 console.log(`timetable: segments=${segs} food=${food} rows=${total}`);
