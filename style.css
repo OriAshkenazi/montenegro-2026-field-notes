@@ -183,7 +183,7 @@ body[data-route-view="story"] .view-toggle::before{transform:translateX(100%)}
 .tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:var(--sp-3)}
 .tag-row span{font:var(--fs-xs) var(--mono);color:var(--text-3);border:1px solid var(--border);border-radius:var(--r-pill);padding:var(--sp-1) var(--sp-2)}
 /* Inline place links: text-sized, with an enlarged invisible hit area */
-.location-link{position:relative;display:inline;padding:0;border:0;border-bottom:1px dotted currentColor;background:transparent;color:var(--link);font:inherit;font-weight:600;text-align:left;cursor:pointer}
+.location-link{position:relative;display:inline;padding:0;border:0;border-bottom:1px dotted currentColor;background:transparent;color:var(--link);font:inherit;font-weight:600;text-transform:inherit;letter-spacing:inherit;text-align:left;cursor:pointer}
 .location-link::after{content:"";position:absolute;inset:-12px -3px}
 .location-link:hover,.location-link:focus-visible{color:var(--accent)}
 .offline-note{padding:var(--sp-6);background:var(--surface-1);border:1px solid var(--border);border-radius:var(--r-md)}
