@@ -26,7 +26,7 @@ for (const asset of ['style.css', 'app.js', 'timetable.js', 'weather.js', 'itine
   assert.ok(sw.includes(`./${asset}?rev=${revision}`), `service worker shell revision mismatch: ${asset}`);
 }
 for (const pathRef of ['./itinerary.json?rev=', './waypoints.json?rev=']) assert.ok(app.includes(pathRef), `app must retain relative data URL ${pathRef}`);
-assert.ok(html.includes('og-image.jpg') && html.includes('summary_large_image'), 'link-preview image tags must ship');
+assert.ok(html.includes('og-image.jpg') && html.includes('twitter:card'), 'link-preview image tags must ship');
 for (const file of expected) {
   const size = fs.statSync(path.join(dist, file)).size;
   assert.ok(size > 0, `empty production asset ${file}`);
