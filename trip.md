@@ -1318,67 +1318,67 @@ All 123 places on the app’s map (waypoints file version 3). “Days” lists t
 
 ## Sources (checked 2026-09-28)
 
-- [Road and weather updates · AMSCG](https://amscg.me/en/road-conditions)
-- [Official emergency numbers · EKIP](https://www.ekip.me/important-numbers)
-- [Tara bridge closure · Government of Montenegro](https://www.gov.me/amp/clanak/od-10-avgusta-potpuna-obustava-saobracaja-preko-mosta-durdevica-tara)
-- [Fuel price notice · Government (valid Sep 22–28)](https://www.gov.me/amp/clanak/nove-cijene-goriva-od-22092026)
-- [National Parks of Montenegro · Durmitor fees](https://nparkovi.me/sections/27)
-- [National Parks of Montenegro · Lovćen](https://nparkovi.me/sections/29)
-- [National Parks of Montenegro · Skadar Lake](https://nparkovi.me/sections/30)
-- [Kotor Municipality · city walls](https://www.kotor.me/me/vijesti/po%C4%8Detak-naplate-naknade-za-kotorske-bedeme/)
-- [Plantaze tastings and booking](https://www.plantaze.com/en/tastings/)
-- [Winery Garnet · seasonal tastings and booking](https://winerygarnet.com/)
-- [Regent Porto Montenegro spa](https://www.ihg.com/regent/hotels/gb/en/porto-montenegro/tivpm/hoteldetail/spa-wellness)
-- [Tivat Airport distance · Port of Kotor guide](https://www.portofkotor.com/files/documents/1720079729-brosura%20o%20kotoru%20ENG%20web%20%281%29.pdf)
-- [Kotor–Virpazar route estimate](https://www.rome2rio.com/s/Kotor/Virpazar)
-- [A1 Smokovac–Mateševo toll details · Monteput](https://www.izvoznokno.si/Dokumenti/Monteput_P1_eng.pdf)
-- [Vehicle boot volume · Škoda Octavia Combi](https://www.skoda-auto.com/models/layers/layers/octavia-combi-experience-life)
-- [Rental coverage exclusions · Montenegro Car](https://www.montenegrocar.me/en/terms-and-conditions/)
-- [Montenegro Tourism · panoramic roads and Sedlo season / elevation](https://www.montenegro.travel/uploads/brochures/Panoramic%20Roads/ENG/Map-Crown-of-Montenegro.pdf)
-- [P14 route estimate · Žabljak–Plužine](https://www.rome2rio.com/s/%C5%BDabljak/Plu%C5%BEine)
-- [Durmitor 2025 on-the-ground report · variable P14 timing](https://www.wondermontenegro.com/post/trip-durmitor-2025)
-- [AMSCG · ferry tolls and passenger-car tariff](https://amscg.me/en/putarine)
-- [2026 national parks annual pass · official listing](https://nparkovi.me/news/371/godisnja-ulaznica-od-danas-u-prodaji)
-- [Traveler field notes supplied by travelers · historical anecdotal prices and trail durations](https://goo.gl/maps/qSe2ynbbM8UH1vdU6)
-- [Kamenari–Lepetane official timetable · summer plan through Oct 11, 2026](https://trajekt.me/red-voznje/)
-- [Kamenari–Lepetane official tariff · Oct off-season passenger car €4](https://trajekt.me/wp-content/uploads/2024/07/price-list-of-services.pdf)
-- [Mountain Rescue Service and roadside assistance numbers · Montenegro Tourism](https://www.montenegro.travel/uploads/brochures/Panoramic%20Roads/ENG/Map-Crown-of-Montenegro.pdf)
-- [Montenegro Tourism · practical Piva/Durmitor road cautions and no-fuel section](https://www.montenegro.travel/uploads/brochures/Panoramic%20Roads/ENG/Map-Crown-of-Montenegro.pdf)
-- [Government of Montenegro · state-road categorization and route codes](https://wapi.gov.me/download/90ab28bc-f0bf-4282-9100-b9b11677f6c0?version=1.0)
-- [Tivat Airport–Žabljak transfer estimate · updated Sep 2, 2026](https://montenegrotaxi.com/routes/tivat-airport-to-zabljak/)
-- [Tivat Airport–Žabljak route planner · time/distance varies](https://www.rome2rio.com/s/Tivat-Airport-TIV/%C5%BDabljak)
-- [Žabljak sunrise, sunset and civil twilight · Oct 2026](https://www.timeanddate.com/sun/@3186999?month=10&year=2026)
-- [Visit Žabljak · Momčilov Grad](https://visitzabljak.me/explore-zabljak/restaurant-momcilov-grad)
-- [Aroma Market locations and hours](https://aromamarketi.me/lokacije/)
-- [Voli Radanovići branch](https://kompanija.voli.me/voli-hipermarket-radanovici/)
-- [IDEA Butiko parking and hours](https://butiko.me/)
-- [Small Talks specialty coffee](https://www.smalltalks.me/)
-- [Kamelija · CAVE Coffee](https://www.kamelija.me/en/stores/cave-coffee/)
-- [Kastel Nikšić official](https://kastel.me/?lang=en&page_id=11611)
-- [Konoba Scala Santa official](https://konobascalasanta.com/en/o-nama-2/)
-- [Restaurant Pelikan official](https://pelikan-zec.com/)
-- [Pržun official](https://przun.me/)
-- [Ombra official](https://ombraoldtown.com/)
-- [Galion official menu/hours](https://galion.me/menu/)
-- [Dobrotski Dvori official](https://dobrotskidvori.com/en/)
-- [Aerodromi Crne Gore · Tivat food and services](https://montenegroairports.com/aerodrom-tivat/sadrzaji-i-servisi/)
-- [Zlatni Papagaj · official menu and dinner hours](https://zlatnipapagaj.com/)
-- [Runolist Chalet property listing · address and amenities](https://www.booking.com/hotel/me/runolist-chalet-zabljak.html)
-- [Hotel Conte · published check-in, breakfast and parking guidance](https://hotelconte.me/our-hotel)
-- [Government of Montenegro · Tara bridge closure through Oct 26, 2026](https://www.gov.me/amp/clanak/od-10-avgusta-potpuna-obustava-saobracaja-preko-mosta-durdevica-tara)
-- [Durmitor Adventure · Tara zipline season, access and return transport](https://durmitoradventure.com/taraziplines/)
-- [National Parks of Montenegro · Biogradska Gora 2026 tariff](https://nparkovi.me/sections/26)
-- [National Parks of Montenegro · Biogradska Gora 2026 opening notice](https://nparkovi.me/news/409/np-biogradska-gora-od-16-marta-otvoren-za-posjete)
-- [Tourism Organisation of Kolašin · Dobre Vode corridor and specialties](https://kolasin.me/dobre-vode-restaurant/)
-- [Tourism Organisation of Kolašin · cafés and Caffe Select](https://kolasin.me/kafici/)
-- [Tourism Organisation of Žabljak · Momčilov Grad hours and parking](https://visitzabljak.me/explore-zabljak/restaurant-momcilov-grad)
-- [National Museum of Montenegro · Njegoš Mausoleum hours and tickets](https://en.narodnimuzej.me/posjeta-njegosev-mauzolej/)
-- [Kotor Cable Car · current tickets and hours](https://www.kotorcablecar.me/plan-your-visit/tickets)
-- [Kotor Cable Car · Kuk/Dub access and parking](https://www.kotorcablecar.me/article/traveling-by-car)
-- [Hotel Conte · breakfast takeaway and Perast parking](https://hotelconte.me/our-hotel)
-- [Hotel Conte restaurant · menu and same-day booking](https://hotelconte.me/restaurant)
-- [Ombra · coastal-fish menu and service hours](https://ombraoldtown.com/)
-- [Small Talks · specialty coffee, Kotor](https://www.smalltalks.me/)
-- [AMSCG · Sozina toll](https://amscg.me/en/putarine)
+- [Road and weather updates · AMSCG](https://amscg.me/en/road-conditions) — used on: 03 · Before the first drive
+- [Official emergency numbers · EKIP](https://www.ekip.me/important-numbers) — used on: 01 · Emergency
+- [Tara bridge closure · Government of Montenegro](https://www.gov.me/amp/clanak/od-10-avgusta-potpuna-obustava-saobracaja-preko-mosta-durdevica-tara) — used on: Day 3; Đurđevića Tara Bridge / canyon viewpoint · access conditional
+- [Fuel price notice · Government (valid Sep 22–28)](https://www.gov.me/amp/clanak/nove-cijene-goriva-od-22092026) — used on: Budget
+- [National Parks of Montenegro · Durmitor fees](https://nparkovi.me/sections/27) — used on: Day 2
+- [National Parks of Montenegro · Lovćen](https://nparkovi.me/sections/29) — used on: Day 5; Lovćen visitor area / Ivanova Korita walk; Lovćen visitor parking
+- [National Parks of Montenegro · Skadar Lake](https://nparkovi.me/sections/30) — used on: Day 5
+- [Kotor Municipality · city walls](https://www.kotor.me/me/vijesti/po%C4%8Detak-naplate-naknade-za-kotorske-bedeme/) — used on: Kotor city walls entrance; Kotor Old Town walls / San Giovanni
+- [Plantaze tastings and booking](https://www.plantaze.com/en/tastings/) — used on: Plantaze Šipčanik cellar tasting
+- [Winery Garnet · seasonal tastings and booking](https://winerygarnet.com/) — used on: Winery Garnet · Godinje
+- [Regent Porto Montenegro spa](https://www.ihg.com/regent/hotels/gb/en/porto-montenegro/tivpm/hoteldetail/spa-wellness) — used on: Regent Porto Montenegro spa
+- [Tivat Airport distance · Port of Kotor guide](https://www.portofkotor.com/files/documents/1720079729-brosura%20o%20kotoru%20ENG%20web%20%281%29.pdf) — used on: Day 6
+- [Kotor–Virpazar route estimate](https://www.rome2rio.com/s/Kotor/Virpazar) — used on: Day 5
+- [A1 Smokovac–Mateševo toll details · Monteput](https://www.izvoznokno.si/Dokumenti/Monteput_P1_eng.pdf) — used on: Budget
+- [Vehicle boot volume · Škoda Octavia Combi](https://www.skoda-auto.com/models/layers/layers/octavia-combi-experience-life) — used on: Day 4
+- [Rental coverage exclusions · Montenegro Car](https://www.montenegrocar.me/en/terms-and-conditions/) — used on: 03 · Before the first drive
+- [Montenegro Tourism · panoramic roads and Sedlo season / elevation](https://www.montenegro.travel/uploads/brochures/Panoramic%20Roads/ENG/Map-Crown-of-Montenegro.pdf) — used on: Day 2
+- [P14 route estimate · Žabljak–Plužine](https://www.rome2rio.com/s/%C5%BDabljak/Plu%C5%BEine) — used on: Day 2
+- [Durmitor 2025 on-the-ground report · variable P14 timing](https://www.wondermontenegro.com/post/trip-durmitor-2025) — used on: Day 2
+- [AMSCG · ferry tolls and passenger-car tariff](https://amscg.me/en/putarine) — used on: Day 5
+- [2026 national parks annual pass · official listing](https://nparkovi.me/news/371/godisnja-ulaznica-od-danas-u-prodaji) — used on: Budget
+- [Traveler field notes supplied by travelers · historical anecdotal prices and trail durations](https://goo.gl/maps/qSe2ynbbM8UH1vdU6) — used on: Budget
+- [Kamenari–Lepetane official timetable · summer plan through Oct 11, 2026](https://trajekt.me/red-voznje/) — used on: Day 1; Kamenari ferry terminal; Lepetane ferry terminal
+- [Kamenari–Lepetane official tariff · Oct off-season passenger car €4](https://trajekt.me/wp-content/uploads/2024/07/price-list-of-services.pdf) — used on: Day 1; Kamenari ferry terminal; Lepetane ferry terminal
+- [Mountain Rescue Service and roadside assistance numbers · Montenegro Tourism](https://www.montenegro.travel/uploads/brochures/Panoramic%20Roads/ENG/Map-Crown-of-Montenegro.pdf) — used on: 01 · Emergency
+- [Montenegro Tourism · practical Piva/Durmitor road cautions and no-fuel section](https://www.montenegro.travel/uploads/brochures/Panoramic%20Roads/ENG/Map-Crown-of-Montenegro.pdf) — used on: Day 2
+- [Government of Montenegro · state-road categorization and route codes](https://wapi.gov.me/download/90ab28bc-f0bf-4282-9100-b9b11677f6c0?version=1.0) — used on: Day 1; Day 4
+- [Tivat Airport–Žabljak transfer estimate · updated Sep 2, 2026](https://montenegrotaxi.com/routes/tivat-airport-to-zabljak/) — used on: Day 1
+- [Tivat Airport–Žabljak route planner · time/distance varies](https://www.rome2rio.com/s/Tivat-Airport-TIV/%C5%BDabljak) — used on: Day 1
+- [Žabljak sunrise, sunset and civil twilight · Oct 2026](https://www.timeanddate.com/sun/@3186999?month=10&year=2026) — used on: Day 1; Day 2; Day 3
+- [Visit Žabljak · Momčilov Grad](https://visitzabljak.me/explore-zabljak/restaurant-momcilov-grad) — used on: Momčilov Grad
+- [Aroma Market locations and hours](https://aromamarketi.me/lokacije/) — used on: Aroma 311 · Žabljak; Aroma City Tabačina · Kotor; Aroma 18 · TC Kamelija
+- [Voli Radanovići branch](https://kompanija.voli.me/voli-hipermarket-radanovici/) — used on: Voli Hipermarket Radanovići
+- [IDEA Butiko parking and hours](https://butiko.me/) — used on: IDEA Butiko Radanovići
+- [Small Talks specialty coffee](https://www.smalltalks.me/) — used on: Small Talks · Kotor
+- [Kamelija · CAVE Coffee](https://www.kamelija.me/en/stores/cave-coffee/) — used on: CAVE Coffee · Kotor
+- [Kastel Nikšić official](https://kastel.me/?lang=en&page_id=11611) — used on: Restaurant Kastel · Nikšić
+- [Konoba Scala Santa official](https://konobascalasanta.com/en/o-nama-2/) — used on: Konoba Scala Santa · Kotor
+- [Restaurant Pelikan official](https://pelikan-zec.com/) — used on: Restaurant Pelikan · Virpazar
+- [Pržun official](https://przun.me/) — used on: Pržun · Old Town; Pržun · Kotor Old Town
+- [Ombra official](https://ombraoldtown.com/) — used on: Ombra · Old Town; Ombra · Kotor Old Town
+- [Galion official menu/hours](https://galion.me/menu/) — used on: Galion · Šuranj
+- [Dobrotski Dvori official](https://dobrotskidvori.com/en/) — used on: Dobrotski Dvori
+- [Aerodromi Crne Gore · Tivat food and services](https://montenegroairports.com/aerodrom-tivat/sadrzaji-i-servisi/) — used on: Tivat Airport café / terminal food
+- [Zlatni Papagaj · official menu and dinner hours](https://zlatnipapagaj.com/) — used on: Zlatni Papagaj · Žabljak dinner
+- [Runolist Chalet property listing · address and amenities](https://www.booking.com/hotel/me/runolist-chalet-zabljak.html) — used on: Runolist Chalet
+- [Hotel Conte · published check-in, breakfast and parking guidance](https://hotelconte.me/our-hotel) — used on: Conte Hotel & Restaurant
+- [Government of Montenegro · Tara bridge closure through Oct 26, 2026](https://www.gov.me/amp/clanak/od-10-avgusta-potpuna-obustava-saobracaja-preko-mosta-durdevica-tara) — used on: Day 3; Đurđevića Tara Bridge / canyon viewpoint · access conditional
+- [Durmitor Adventure · Tara zipline season, access and return transport](https://durmitoradventure.com/taraziplines/) — used on: Tara Canyon zipline · operator/access confirmation required
+- [National Parks of Montenegro · Biogradska Gora 2026 tariff](https://nparkovi.me/sections/26) — used on: Biogradsko Lake · lake-loop trailhead
+- [National Parks of Montenegro · Biogradska Gora 2026 opening notice](https://nparkovi.me/news/409/np-biogradska-gora-od-16-marta-otvoren-za-posjete) — used on: Biogradsko Lake · lake-loop trailhead
+- [Tourism Organisation of Kolašin · Dobre Vode corridor and specialties](https://kolasin.me/dobre-vode-restaurant/) — used on: Dobre Vode · Kolašin–Mojkovac road
+- [Tourism Organisation of Kolašin · cafés and Caffe Select](https://kolasin.me/kafici/) — used on: Caffe Select · Kolašin morning coffee
+- [Tourism Organisation of Žabljak · Momčilov Grad hours and parking](https://visitzabljak.me/explore-zabljak/restaurant-momcilov-grad) — used on: Momčilov Grad
+- [National Museum of Montenegro · Njegoš Mausoleum hours and tickets](https://en.narodnimuzej.me/posjeta-njegosev-mauzolej/) — used on: Njegoš Mausoleum
+- [Kotor Cable Car · current tickets and hours](https://www.kotorcablecar.me/plan-your-visit/tickets) — used on: Kotor Cable Car Upper Station · Kuk; Kotor Cable Car Lower Station · Dub
+- [Kotor Cable Car · Kuk/Dub access and parking](https://www.kotorcablecar.me/article/traveling-by-car) — used on: Kotor Cable Car Upper Station · Kuk; Kotor Cable Car Lower Station · Dub
+- [Hotel Conte · breakfast takeaway and Perast parking](https://hotelconte.me/our-hotel) — used on: Conte Hotel & Restaurant
+- [Hotel Conte restaurant · menu and same-day booking](https://hotelconte.me/restaurant) — used on: Conte Hotel & Restaurant
+- [Ombra · coastal-fish menu and service hours](https://ombraoldtown.com/) — used on: Ombra · Old Town; Ombra · Kotor Old Town
+- [Small Talks · specialty coffee, Kotor](https://www.smalltalks.me/) — used on: Small Talks · Kotor
+- [AMSCG · Sozina toll](https://amscg.me/en/putarine) — used on: Day 5; Sozina Tunnel
 
 Plan version · 29 Sep 2026 · Built for the road, saved for the dead zones.
