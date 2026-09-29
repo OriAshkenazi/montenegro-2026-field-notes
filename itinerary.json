@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-29",
+  "updated": "2026-09-28",
   "drivingCeilingAdjustedHours": 6,
   "terrainBufferPercent": 20,
   "routeNames": {
@@ -1426,42 +1426,7 @@
       ]
     }
   },
-  "insurancePolicy": {
-    "insurer": "Migdal",
-    "policyNumber": "46388612426",
-    "validFrom": "2026-10-01",
-    "validTo": "2026-10-06",
-    "travelers": 2,
-    "premiumAmount": 47.04,
-    "premiumCurrency": "USD",
-    "premiumIlsEquivalent": 144.22,
-    "medicalLimit": 5000000,
-    "adventureSportsExtension": true,
-    "assistanceContacts": [
-      {
-        "provider": "IMA · Medical Assistance",
-        "phone": "+97239206912",
-        "whatsapp": "+972549940911",
-        "email": "migdal@ima-mc.com"
-      },
-      {
-        "provider": "MAGNUS · Search & Rescue",
-        "phone": "+97236006505",
-        "whatsapp": "+972508899698",
-        "email": "SAR@MAGNUS.CO.IL"
-      }
-    ]
-  },
   "budget": [
-    {
-      "label": "Travel insurance · Migdal policy",
-      "currency": "USD",
-      "amount": 47.04,
-      "actual": 47.04,
-      "min": 0,
-      "max": 0,
-      "note": "Confirmed premium USD 47.04 (₪144.22 equivalent per policy); kept outside the EUR subtotal."
-    },
     {
       "label": "Lodging · 5 nights, two adults",
       "min": 497.32,

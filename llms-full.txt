@@ -1,6 +1,6 @@
 # Montenegro · Field Notes — Between the mountains & sea.
 
-This is the complete plain-text version of the Montenegro Field Notes trip app (https://oriashkenazi.github.io/montenegro-2026-field-notes/). It contains every entry of the itinerary, food and provisions, stays, insurance, budget, emergency numbers, map waypoints and sources, generated from the same data the app uses. Plan data updated 2026-09-29; sources checked 2026-09-28. Clock times are the app’s computed timetable (fixed times plus drive and dwell durations); items without a clock time are listed under their part of the day.
+This is the complete plain-text version of the Montenegro Field Notes trip app (https://oriashkenazi.github.io/montenegro-2026-field-notes/). It contains every entry of the itinerary, food and provisions, stays, budget, emergency numbers, map waypoints and sources, generated from the same data the app uses. Plan data updated 2026-09-28; sources checked 2026-09-28. Clock times are the app’s computed timetable (fixed times plus drive and dwell durations); items without a clock time are listed under their part of the day.
 
 - **Trip:** Montenegro · 01—06 October 2026 · A six-day routebook · two travelers
 - **Dates:** 2026-10-01 to 2026-10-06 (6 days, 5 nights)
@@ -24,7 +24,6 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - Day 6 - Perast → TIV / rental return / flight home (Tue · Oct 6)
 - Quick status checks
 - Budget
-- Travel insurance
 - Emergency numbers and field guide
 - Experience index
 - Live weather
@@ -682,15 +681,13 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 
 ## Budget
 
-Two adults · five nights · confirmed payments and estimates. Confirmed lodging, rental and insurance charges are shown in their source currencies; estimated trip costs remain in euros.
+Two adults · five nights · confirmed payments and estimates. Confirmed lodging and rental charges are shown as actuals. The flight card charge is shown in shekels; estimated trip costs remain in euros.
 
-- **Travel insurance · Migdal policy** — USD 47.04 actual
-  - **Note:** Confirmed premium USD 47.04 (₪144.22 equivalent per policy); kept outside the EUR subtotal.
 - **Lodging · 5 nights, two adults** — €497.32 actual (range €497.32–€497.32)
   - **Note:** Confirmed actuals: Runolist €225.39 (cash-only; amount already paid/balance due not stated) + Conte €271.93 (paid in full, breakfast included). Conte cutoff/fee details are itemized in its card.
 - **Rental · Europcar IGAR booking** — €362 actual (range €362–€362)
   - **Note:** €362 rental booking total paid (car class IGAR, Skoda Karoq or similar). Separate €1,154 deposit is required at pickup and is not an expense; fuel/extras hold may be additional. Flexible Autos excess refund is reimbursement, not an excess waiver; supplier excess €1,089. Tire/wheel/undercarriage reimbursement is subject to policy terms and off-road exclusions.
-- **Flights · confirmed card charge (2 passengers)** — ILS 2,616.81
+- **Flights · confirmed card charge (2 passengers)** — ILS 2,616.81 (EUR planning range €0–€0)
   - **Note:** Approved Skygini Solutions Ltd card charge on Sep 25, 2026, per supplied screenshot. Kept in ILS; excluded from the EUR subtotal.
 - **Fuel + tolls** — €165–€280
   - **Note:** Planning range includes Oct 4 Perast–Kotor out-and-back and Oct 5 Perast–Kotor–Lovćen/Kuk–Virpazar–Perast loop, plus existing transfers and northern outings. Add the official €2.50 Category II Sozina toll for the return; recheck tariff and fuel price before travel. Mileage depends on live routing; no ferry/A1 toll planned.
@@ -703,22 +700,10 @@ Two adults · five nights · confirmed payments and estimates. Confirmed lodging
 - **Tara zipline · optional and unconfirmed** — €0–€90
   - **Note:** Not included in the minimum. Operator lists Red Rock at €20/person, but its return crosses the bridge closed through Oct 26. Yellow/Extreme return transport is included; verify Oct 3 operation, bridge-free launch/access and current prices directly before booking.
 
-**EUR total:** €1944.32–€2749.32 (EUR total · flight and insurance charges listed separately). Fuel costs are planning ranges for the route. Confirmed flight and insurance amounts remain in their original currencies and are excluded from the EUR subtotal.
+**EUR total:** €1944.32–€2749.32 (EUR total · flight charge listed in ILS above). Fuel costs are planning ranges for the route; posted prices vary. Flight amount is a confirmed card charge of ₪2,616.81 and is not converted into the EUR subtotal.
 
 - **Flight payment:** ILS 2616.81 · Approved · merchant Skygini Solutions Ltd · 2026-09-25 · 2 passengers
 - **Cash to carry:** Up to €225.39 · balance unconfirmed — Runolist is cash-only; outstanding balance is not stated. Cash target €225.39 (the app lets you mark it as carried on your device, stored under “montenegro-cash-2026”).
-
-## Travel insurance
-
-- **Provider and policy:** Migdal · 46388612426
-- **Coverage dates:** 2026-10-01 to 2026-10-06
-- **Insured travelers:** 2
-- **Premium:** USD 47.04 · ILS 144.22
-- **Medical coverage limit (USD):** 5000000
-- **Medical benefits:** Up to USD 5,000,000 for emergency expenses from illness or accident, including hospitalization, medical evacuation, air ambulance and repatriation, subject to policy terms.
-- **Adventure-sports extension:** true — included for both insured travelers
-- **IMA · Medical Assistance:** Phone +97239206912 · WhatsApp +972549940911 · migdal@ima-mc.com
-- **MAGNUS · Search & Rescue:** Phone +97236006505 · WhatsApp +972508899698 · SAR@MAGNUS.CO.IL
 
 ## Emergency numbers and field guide
 
@@ -729,7 +714,7 @@ Two adults · five nights · confirmed payments and estimates. Confirmed lodging
 - **19807** — AMSCG roadside assistance (tel:19807)
 - **+382 40 256 084** — Mountain Rescue Service (tel:+38240256084)
 
-Field Guide Numbers, bookings and pre-departure checks · available offline.
+Contacts & safety. Numbers, bookings and pre-departure checks · available offline.
 
 - **01 · Emergency — Save these numbers.** Confirm your embassy’s current consular emergency number before travel.
 - **02 · Key contacts — Rental, stays and bookings by phone.** 
@@ -1381,4 +1366,4 @@ All 123 places on the app’s map (waypoints file version 3). “Days” lists t
 - [Small Talks · specialty coffee, Kotor](https://www.smalltalks.me/)
 - [AMSCG · Sozina toll](https://amscg.me/en/putarine)
 
-Plan version · 29 Sep 2026 · Built for the road, saved for the dead zones.
+Plan version · 28 Sep 2026 · Built for the road, saved for the dead zones.
