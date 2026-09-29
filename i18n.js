@@ -39,12 +39,27 @@
     return tc(s);
   }
   // Latin/digit runs (codes, phones, times, amounts, Latin place names) are isolated left-to-right inside RTL text.
-  const CH = 'A-Za-z0-9\\u00C0-\\u024F\\u1E00-\\u1EFF', RUN = new RegExp(`[+€₪$£#]?[${CH}]+(?:(?:[.:,\\-–—/'’%°@&+\\uE000-\\uF8FF]{1,2}\\s?|\\s)[${CH}]+)*[%°]?`, 'g');
+  // A token is a space-free Latin/number unit (M-8, 08:00–01:00, €1.20/hour, Risan/Lipci). In a Hebrew
+  // sentence separate tokens already read in the right order, so tokens are only merged into one LTR run
+  // when the phrase itself must read left-to-right: multi-word names, phone numbers and number+unit measures.
+  const CH = 'A-Za-z0-9\\u00C0-\\u024F\\u1E00-\\u1EFF', RUN = new RegExp(`[~≈+€₪$£#]?[${CH}]+(?:[.:,\\-–—/'’%°@&+\\uE000-\\uF8FF]{1,2}[${CH}]+)*[%°]?`, 'g');
+  const PHONE = /\+\d[\d ]{6,}\d/g, UNIT = /^(?:h|hr|hrs|min|mins|km|m|kg|cm|kph|km\/h)$/, WORD = /^[A-Za-zÀ-ɏḀ-ỿ][A-Za-zÀ-ɏḀ-ỿ'’.&-]*$/, NUM = /^[~≈+€₪$£#]?\d[\d.,:–-]*$/;
+  function joinable(a, b) { return (WORD.test(a) && WORD.test(b)) || (NUM.test(a) && UNIT.test(b)) || (UNIT.test(a) && NUM.test(b)); }
   function bidiRuns(text) {
-    const out = [], re = new RegExp(RUN.source, 'g'), src = String(text);
+    const src = String(text), phones = [], tokens = [];
     let m;
-    while ((m = re.exec(src))) out.push([m.index, m.index + m[0].length]);
-    return out;
+    for (const re = new RegExp(PHONE.source, 'g'); (m = re.exec(src));) phones.push([m.index, m.index + m[0].length]);
+    for (const re = new RegExp(RUN.source, 'g'); (m = re.exec(src));) {
+      const a = m.index, b = a + m[0].length;
+      if (!phones.some(([x, y]) => a < y && b > x)) tokens.push([a, b]);
+    }
+    const runs = [];
+    for (const [a, b] of tokens) {
+      const last = runs[runs.length - 1];
+      if (last && src.slice(last[1], a) === ' ' && joinable(src.slice(last[2], last[1]), src.slice(a, b))) { last[1] = b; last[2] = a; }
+      else runs.push([a, b, a]);
+    }
+    return [...phones, ...runs.map(([a, b]) => [a, b])].sort((x, y) => x[0] - y[0]);
   }
   function bidi(html) {
     if (lang !== 'he' || !html) return html;

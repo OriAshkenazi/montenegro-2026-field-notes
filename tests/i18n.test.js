@@ -39,4 +39,20 @@ for (const unit of units) {
   for (const place of places) if (place.en.some(re => re.test(unit)) && !place.he.some(re => re.test(hebrew))) drift.push(`${place.id} :: ${unit}`);
 }
 assert.deepEqual(drift, [], `${drift.length} facts or place names were altered in translation`);
+// RTL grouping: only phrases that read left-to-right internally become one LTR run.
+global.splitSentences = require('../timetable.js').splitSentences;
+global.localStorage = { getItem: () => 'he', setItem() {} };
+global.fetch = () => Promise.reject(new Error('offline'));
+require('../i18n.js');
+const runs = s => bidiRuns(s).map(([a, b]) => s.slice(a, b));
+assert.deepEqual(runs('יום 1 - Tivat → Runolist Chalet'), ['1', 'Tivat', 'Runolist Chalet']);
+assert.deepEqual(runs('עד Risan/Lipci, M-8 דרך Grahovo, M-7'), ['Risan/Lipci', 'M-8', 'Grahovo', 'M-7']);
+assert.deepEqual(runs('הזמנת Runolist 5203973379 · 29 בספט׳ 2026 23:59'), ['Runolist', '5203973379', '29', '2026', '23:59']);
+assert.deepEqual(runs('התקשרו ב-+382 20 653141 · 3 h 47 min · 3.6 km'), ['+382 20 653141', '3 h 47 min', '3.6 km']);
+assert.deepEqual(runs('נסיעה ישירה ~3 h 37 נומינלי'), ['~3 h 37']);
+assert.ok(bidi('יום 1 - Tivat → Kotor').includes('←'), 'route arrows point right-to-left in Hebrew');
+for (const s of [...Object.values(he.content), ...Object.values(he.ui)]) for (const r of runs(s)) {
+  if (/\d/.test(r) && /\s/.test(r) && /[A-Za-z]{2,}/.test(r)) assert.match(r, /^[~≈]?[\d.,]+(?: (?:h|min|km|m)(?: [\d.,]+)?)+$/, `number fused with a name in an LTR run: "${r}"`);
+}
+
 process.stdout.write(`i18n tests passed: ${enKeys.length} UI keys, ${units.length} content sentences, facts and place names preserved.\n`);
