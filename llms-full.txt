@@ -10,6 +10,8 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - **Summary:** Explore Montenegro from the Adriatic coast and Bay of Kotor to Lake Skadar and the rugged northern highlands, with scenic drives, old towns, mountain walks and local food.
 - **Planning rule:** Daily driving ceiling 6 h adjusted; drive times include a +20% terrain buffer over nominal routing times.
 - **App:** [https://oriashkenazi.github.io/montenegro-2026-field-notes/](https://oriashkenazi.github.io/montenegro-2026-field-notes/)
+- **budgetDays:** day: 1; costs: fuel: 40, 65; food: 60, 100; onTheSpot: Europcar deposit hold €1,154 on the main driver’s credit card at pickup; it is released after return and is not spending., Ask Runolist at check-in whether any of the €225.39 is still due., day: 2; costs: fuel: 25, 45; parks: 12, 20; food: 80, 130; onTheSpot: Coins for Black Lake parking (€1.20/hour) and Durmitor admission at €5/person., day: 3; costs: fuel: 35, 60; parks: 8, 20; food: 90, 150; zipline: 0, 90; onTheSpot: Biogradska Gora admission €4/person in cash; boats €10/hour., Zipline only if booked and confirmed., day: 4; costs: fuel: 35, 55; parks: 10, 45; food: 100, 160; onTheSpot: Settle any Runolist balance in cash at checkout (up to €225.39)., Kotor Old Town parking; Kotor walls optional., day: 5; costs: fuel: 25, 45; parks: 100, 120; food: 100, 170; onTheSpot: Njegoš Mausoleum €8/adult, gondola €25 and Alpine Coaster €12 per person., Skadar park ticket €5/person; Sozina toll €2.50., day: 6; costs: fuel: 5, 10; food: 20, 40; onTheSpot: Refuel within 5 km of the airport and keep the receipt; the deposit hold is released after return.
+- **fx:** EURILS: 3.4857; USDILS: 3.072; asOf: 2026-09-29; source: Bank of Israel representative rates
 - **contacts:** label: Europcar Tivat Airport; number: +382 20 653141; href: tel:+38220653141; note: Car pickup Oct 1 at 14:30; call if the flight is delayed., label: Runolist Chalet, Žabljak; number: +382 69 520 016; href: tel:+38269520016; note: Tell the host your arrival time; cash only at the property., label: Conte Hotel, Perast; number: +382 67 111 190; href: tel:+38267111190; note: Ask for luggage storage before the 15:00 check-in., label: Conte restaurant, Perast; number: +382 67 257 387; href: tel:+38267257387; note: Same-day table reservations by phone only., label: Dobre Vode, Kolašin; number: +382 69 233 000; href: tel:+38269233000; note: October hours are not published; call before driving there.
 
 ## Contents
@@ -682,31 +684,81 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 
 ## Budget
 
-Two adults · five nights · confirmed payments and estimates. Confirmed lodging, rental and insurance charges are shown in their source currencies; estimated trip costs remain in euros.
+Two adults · five nights · confirmed payments and estimates. What’s already paid, what’s left to spend in Montenegro, and the cash to carry.
 
-- **Travel insurance · Migdal policy** — USD 47.04 actual
-  - **Note:** Confirmed premium USD 47.04 (₪144.22 equivalent per policy); kept outside the EUR subtotal.
-- **Lodging · 5 nights, two adults** — €497.32 actual (range €497.32–€497.32)
-  - **Note:** Confirmed actuals: Runolist €225.39 (cash-only; amount already paid/balance due not stated) + Conte €271.93 (paid in full, breakfast included). Conte cutoff/fee details are itemized in its card.
-- **Rental · Europcar IGAR booking** — €362 actual (range €362–€362)
-  - **Note:** €362 rental booking total paid (car class IGAR, Skoda Karoq or similar). Separate €1,154 deposit is required at pickup and is not an expense; fuel/extras hold may be additional. Flexible Autos excess refund is reimbursement, not an excess waiver; supplier excess €1,089. Tire/wheel/undercarriage reimbursement is subject to policy terms and off-road exclusions.
-- **Flights · confirmed card charge (2 passengers)** — ILS 2,616.81
-  - **Note:** Approved Skygini Solutions Ltd card charge on Sep 25, 2026, per supplied screenshot. Kept in ILS; excluded from the EUR subtotal.
-- **Fuel + tolls** — €165–€280
-  - **Note:** Planning range includes Oct 4 Perast–Kotor out-and-back and Oct 5 Perast–Kotor–Lovćen/Kuk–Virpazar–Perast loop, plus existing transfers and northern outings. Add the official €2.50 Category II Sozina toll for the return; recheck tariff and fuel price before travel. Mileage depends on live routing; no ferry/A1 toll planned.
-- **Parks + boat + walls + spa** — €270–€470
-  - **Note:** Planning allowance for two-person admissions, Kotor walls (optional) and optional spa. Add €90 for two standard return gondola tickets (€25 each), two Alpine Coaster rides (€12 each) and two adult Njegoš Mausoleum tickets (€8 each). Skadar day admission is €5/person and the current NP tariff lists one cruise included; confirm the selected sailing is covered and add an operator fee only when quoted. Other park tickets/services remain estimates; recheck before travel.
-- **Food & drink** — €450–€750
-  - **Note:** €90–150 per couple per day, including one winery/local tasting allowance.
-- **Contingency cash** — €200–€300
-  - **Note:** Carry €100–150 in small cash notes; reserve total also covers weather reroutes, fuel and unplanned fees.
-- **Tara zipline · optional and unconfirmed** — €0–€90
-  - **Note:** Not included in the minimum. Operator lists Red Rock at €20/person, but its return crosses the bridge closed through Oct 26. Yellow/Extreme return transport is included; verify Oct 3 operation, bridge-free launch/access and current prices directly before booking.
+- **Paid before the trip:** €1426.03 (₪4970.72) + €225.39 unconfirmed
+- **Still to spend in Montenegro:** €1085.00–€1890.00
+- **All-in trip total:** €2736.42–€3541.42 (₪9538.35–₪12344.33)
+- **Exchange rates:** Bank of Israel representative rates, 2026-09-29: EUR 1 = ₪3.4857 · USD 1 = ₪3.072
 
-**EUR total:** €1944.32–€2749.32 (EUR total · flight and insurance charges listed separately). Fuel costs are planning ranges for the route. Confirmed flight and insurance amounts remain in their original currencies and are excluded from the EUR subtotal.
+### Already paid (paid)
+
+- **Flights · confirmed card charge (2 passengers)** — ILS 2616.81 ≈ €750.73 · paid
+  - **Summary:** Card charge approved Sep 25, 2026 · 2 passengers.
+  - **Details:** Approved Skygini Solutions Ltd card charge on Sep 25, 2026, per supplied screenshot. Charged in ILS; converted to euros only for the trip totals.
+- **Travel insurance · Migdal policy** — USD 47.04 (₪144.22 recorded) ≈ €41.37 · paid
+  - **Summary:** Both travellers, Oct 1–6, adventure-sports extension included.
+  - **Details:** Confirmed premium USD 47.04 (₪144.22 equivalent per policy); the ₪ figure is used for the trip totals.
+- **Rental · Europcar IGAR booking** — €362.00 · paid
+  - **Summary:** Skoda Karoq or similar, Tivat Airport pickup and return.
+  - **Details:** €362 rental booking total paid (car class IGAR, Skoda Karoq or similar). Separate €1,154 deposit is required at pickup and is not an expense; fuel/extras hold may be additional. Flexible Autos excess refund is reimbursement, not an excess waiver; supplier excess €1,089. Tire/wheel/undercarriage reimbursement is subject to policy terms and off-road exclusions.
+- **Conte Hotel & Restaurant · 2 nights** — €271.93 · paid
+  - **Summary:** Oct 4–6 · paid in full · breakfast included.
+  - **Details:** Classic Double Room for 2 adults. Cancellation terms and cutoff details are itemized in its stay card.
+- **Runolist Chalet · 3 nights** — €225.39 · unconfirmed
+  - **Summary:** Oct 1–4 · cash only at the property; the booking does not say how much is already paid.
+  - **Details:** Two-Bedroom House for 2 adults. Ask the host at check-in whether a balance is due; if it is, settle it in cash at checkout on Oct 4.
+
+### To spend on the trip (trip)
+
+- **Fuel + tolls** — €165–€280 · estimate
+  - **Summary:** Five mountain and coast driving days, full-to-full return, €2.50 Sozina toll.
+  - **Details:** Planning range includes Oct 4 Perast–Kotor out-and-back and Oct 5 Perast–Kotor–Lovćen/Kuk–Virpazar–Perast loop, plus existing transfers and northern outings. Add the official €2.50 Category II Sozina toll for the return; recheck tariff and fuel price before travel. Mileage depends on live routing; no ferry/A1 toll planned.
+- **Parks + boat + walls + spa** — €270–€470 · estimate
+  - **Summary:** Admissions for two, Kuk gondola and coaster, Skadar cruise; walls and spa optional.
+  - **Details:** Planning allowance for two-person admissions, Kotor walls (optional) and optional spa. Add €90 for two standard return gondola tickets (€25 each), two Alpine Coaster rides (€12 each) and two adult Njegoš Mausoleum tickets (€8 each). Skadar day admission is €5/person and the current NP tariff lists one cruise included; confirm the selected sailing is covered and add an operator fee only when quoted. Other park tickets/services remain estimates; recheck before travel.
+- **Food & drink** — €450–€750 · estimate
+  - **Summary:** Two people, including one winery or local tasting.
+  - **Details:** €90–150 per couple per day, including one winery/local tasting allowance.
+- **Contingency cash** — €200–€300 · estimate
+  - **Summary:** Weather reroutes, price surprises and unplanned fees.
+  - **Details:** Carry €100–150 in small cash notes; reserve total also covers weather reroutes, fuel and unplanned fees.
+- **Tara zipline · optional and unconfirmed** — €0–€90 · optional
+  - **Summary:** Only if the operator confirms a bridge-free option on Oct 3.
+  - **Details:** Not included in the minimum. Operator lists Red Rock at €20/person, but its return crosses the bridge closed through Oct 26. Yellow/Extreme return transport is included; verify Oct 3 operation, bridge-free launch/access and current prices directly before booking.
+
+### Day by day
+
+Expected spend for two each day, and what to pay on the spot.
+
+- **Day 1 · Thu · Oct 1** — €100–€165
+  - **Breakdown:** Fuel + tolls €40–€65 · Food & drink €60–€100
+  - **Pay on the spot:** Europcar deposit hold €1,154 on the main driver’s credit card at pickup; it is released after return and is not spending.
+  - **Pay on the spot:** Ask Runolist at check-in whether any of the €225.39 is still due.
+- **Day 2 · Fri · Oct 2** — €117–€195
+  - **Breakdown:** Fuel + tolls €25–€45 · Parks + boat + walls + spa €12–€20 · Food & drink €80–€130
+  - **Pay on the spot:** Coins for Black Lake parking (€1.20/hour) and Durmitor admission at €5/person.
+- **Day 3 · Sat · Oct 3** — €133–€320
+  - **Breakdown:** Fuel + tolls €35–€60 · Parks + boat + walls + spa €8–€20 · Food & drink €90–€150 · Tara zipline · optional and unconfirmed €0–€90
+  - **Pay on the spot:** Biogradska Gora admission €4/person in cash; boats €10/hour.
+  - **Pay on the spot:** Zipline only if booked and confirmed.
+- **Day 4 · Sun · Oct 4** — €145–€260
+  - **Breakdown:** Fuel + tolls €35–€55 · Parks + boat + walls + spa €10–€45 · Food & drink €100–€160
+  - **Pay on the spot:** Settle any Runolist balance in cash at checkout (up to €225.39).
+  - **Pay on the spot:** Kotor Old Town parking; Kotor walls optional.
+- **Day 5 · Mon · Oct 5** — €225–€335
+  - **Breakdown:** Fuel + tolls €25–€45 · Parks + boat + walls + spa €100–€120 · Food & drink €100–€170
+  - **Pay on the spot:** Njegoš Mausoleum €8/adult, gondola €25 and Alpine Coaster €12 per person.
+  - **Pay on the spot:** Skadar park ticket €5/person; Sozina toll €2.50.
+- **Day 6 · Tue · Oct 6** — €25–€50
+  - **Breakdown:** Fuel + tolls €5–€10 · Food & drink €20–€40
+  - **Pay on the spot:** Refuel within 5 km of the airport and keep the receipt; the deposit hold is released after return.
+
+Trip spending figures are planning ranges for two; recheck fuel and ticket prices before travel.
 
 - **Flight payment:** ILS 2616.81 · Approved · merchant Skygini Solutions Ltd · 2026-09-25 · 2 passengers
-- **Cash to carry:** Up to €225.39 · balance unconfirmed — Runolist is cash-only; outstanding balance is not stated. Cash target €225.39 (the app lets you mark it as carried on your device, stored under “montenegro-cash-2026”).
+- **Cash to carry:** €325–375 in cash — Up to €225.39 for Runolist if a balance is due, plus €100–150 in small notes for parking meters, park gates and cafés. Runolist is cash-only; outstanding balance is not stated. Cash target €225.39 (the app lets you mark it as carried on your device, stored under “montenegro-cash-2026”).
+- **Card holds, not spending:** €1,154 Europcar deposit on the main driver’s credit card at pickup; a fuel/extras hold may be added. Released after the car is returned.
 
 ## Travel insurance
 
