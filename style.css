@@ -97,7 +97,7 @@ h2,h3{color:var(--text-1)}
 .install-button:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
 select{min-height:var(--tap);border:1px solid var(--border);border-radius:var(--r-sm);background:var(--surface-1);color:var(--text-1);padding:0 var(--sp-3);font:var(--fs-base) var(--sans)}
 /* Shared pressed state for every tappable control */
-:is(.button,.tab,.view-toggle button,.stop-links button,.waypoint-row,.weather-day,.food-index-actions button,.food-open,#mapClose,.map-popup a,.map-popup button,.numbers a,.alpine-warning button,.stay-reference a,.stay-reference .food-map-link):active{transform:scale(.97)}
+:is(.button,.tab,.view-toggle button,.stop-links button,.waypoint-row,.weather-day,.food-index-actions button,#mapClose,.map-popup a,.map-popup button,.numbers a,.alpine-warning button,.stay-reference a,.stay-reference .food-map-link):active{transform:scale(.97)}
 .day-toggle:active{background:var(--surface-2)}
 
 /* 3 · Shell: topbar, hero, tabs, view bar -------------------------------- */
@@ -263,15 +263,6 @@ table.timetable{min-width:720px;font-size:var(--fs-base);table-layout:auto}
 .night-breakdown li span{color:var(--text-3)}
 
 /* 7 · Food & provisions --------------------------------------------------- */
-.food-controls{display:flex;align-items:center;gap:var(--sp-3);flex-wrap:wrap;padding:var(--sp-3) var(--sp-4);background:var(--surface-1);border:1px solid var(--border);border-radius:var(--r-md);margin-bottom:var(--sp-4)}
-.food-controls label{font:var(--fs-xs) var(--mono);text-transform:uppercase;letter-spacing:var(--track-label)}
-.food-controls>span{font-size:var(--fs-sm);color:var(--text-3);margin-inline-start:auto;max-width:520px}
-.food-days{display:grid;gap:var(--sp-3)}
-.food-day{background:var(--surface-1);border:1px solid var(--border);border-radius:var(--r-md);padding:var(--sp-4)}
-.food-day>header{display:flex;align-items:center;gap:var(--sp-3);margin-bottom:var(--sp-2)}
-.food-day>header>span{font:var(--fs-lg) var(--serif);color:var(--accent)}
-.food-day header small{font:var(--fs-xs) var(--mono);color:var(--text-3);text-transform:uppercase}
-.food-day h3{font:600 var(--fs-lg) var(--serif);margin:3px 0}
 .food-stop-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sp-2)}
 .food-stop{min-width:0;padding:var(--sp-3);background:var(--surface-2);border-inline-start:3px solid var(--segment-color,var(--cat-food));border-start-end-radius:var(--r-sm);border-end-end-radius:var(--r-sm);scroll-margin-top:calc(var(--tabs-h) + 80px)}
 .food-stop-top{display:flex;justify-content:space-between;gap:var(--sp-2);margin-bottom:var(--sp-1)}
@@ -285,16 +276,13 @@ table.timetable{min-width:720px;font-size:var(--fs-base);table-layout:auto}
 .food-map-link{position:relative;border:0;padding:0;background:transparent;text-align:start;color:var(--text-1);font:600 var(--fs-base) var(--sans);cursor:pointer}
 .food-map-link::after{content:"";position:absolute;inset:-12px -4px}
 .food-map-link:hover{text-decoration:underline}
-.food-stop.index-stop{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:var(--sp-1) var(--sp-3)}
-.food-category{font:var(--fs-xs) var(--mono);color:var(--segment-color,var(--text-3));text-transform:uppercase;letter-spacing:.06em}
 .food-index-actions{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:var(--sp-1) var(--sp-3)}
-.food-index-actions button,.food-open{min-height:var(--tap);border:0;background:transparent;padding:0 var(--sp-1);color:var(--link);font:500 var(--fs-xs) var(--mono);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.food-index-actions button{min-height:var(--tap);border:0;background:transparent;padding:0 var(--sp-1);color:var(--link);font:500 var(--fs-xs) var(--mono);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
 td .food-index-actions{margin-top:var(--sp-1)}
 .food-timeline{margin-top:var(--sp-4);padding:var(--sp-3);background:var(--surface-0);border:1px solid var(--border);border-radius:var(--r-md)}
 .food-timeline-head{display:flex;align-items:center;gap:var(--sp-3);margin-bottom:var(--sp-2)}
 .food-timeline-head>span{font-size:var(--fs-xl);color:var(--cat-eat)}
 .food-timeline-head b{display:block;font-size:var(--fs-sm)}
-.food-open{margin-inline-start:auto}
 .stay-directory{margin-top:var(--sp-6)}
 .stay-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sp-3)}
 .stay-reference{display:flex;flex-direction:column;align-items:flex-start;gap:6px;background:var(--surface-1);border:1px solid var(--border);border-radius:var(--r-md);padding:var(--sp-4)}
@@ -340,6 +328,21 @@ td .food-index-actions{margin-top:var(--sp-1)}
 .packing-card input{flex:none;width:20px;height:20px;margin:0;accent-color:var(--accent)}
 .packing-card label:has(input:checked) span{color:var(--text-3);text-decoration:line-through;text-decoration-color:var(--border-strong)}
 .emergency{background:var(--surface-3)}
+.field-grid .emergency{grid-column:1/-1}
+.contact-list,.field-checklist{list-style:none;margin:var(--sp-3) 0 0;padding:0}
+.contact-list li{display:flex;align-items:center;justify-content:space-between;gap:var(--sp-3);padding-block:var(--sp-2)}
+.contact-list li+li,.field-checklist li+li{border-top:1px solid var(--border)}
+.contact-list b,.contact-list small{display:block}
+.contact-list small{font-size:var(--fs-sm);color:var(--text-3);line-height:var(--lh-body)}
+.contact-list a{flex:none;display:inline-flex;align-items:center;min-height:var(--tap);padding:0 var(--sp-3);border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-0);color:var(--link);font:600 var(--fs-sm) var(--mono);text-decoration:none}
+.contact-list a:hover{border-color:var(--link)}
+.field-checklist li{position:relative;padding-block:var(--sp-2);padding-inline-start:var(--sp-5);font-size:var(--fs-base);color:var(--text-2);line-height:var(--lh-body)}
+.field-checklist li::before{content:"□";position:absolute;inset-inline-start:0;color:var(--accent)}
+details.sources summary{display:flex;align-items:center;gap:var(--sp-2);min-height:var(--tap);cursor:pointer;list-style:none}
+details.sources summary::-webkit-details-marker{display:none}
+details.sources summary::after{content:"⌄";color:var(--text-3);transition:transform .2s}
+details.sources[open] summary::after{transform:rotate(180deg)}
+details.sources summary h2{margin:0}
 .numbers{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-2)}
 .numbers a{display:grid;align-content:center;min-height:64px;text-decoration:none;color:var(--text-1);padding:var(--sp-2);background:var(--surface-1);border:1px solid var(--border);border-radius:var(--r-md);text-align:center}
 .numbers a:hover{border-color:var(--link)}
@@ -527,8 +530,6 @@ footer{display:flex;justify-content:space-between;border-top:1px solid var(--bor
   .schedule-wrap,.guardrails{margin-top:var(--sp-7)}
   .table-scroll{margin-inline-end:calc(-1 * var(--sp-4));border-start-end-radius:0;border-end-end-radius:0}
   footer{gap:var(--sp-3);flex-direction:column}
-  .food-controls>span{flex-basis:100%;margin-inline-start:0}
-  .food-day{padding:var(--sp-3)}
   .food-timeline-head{align-items:flex-start}
   table.timetable{min-width:560px}
   .timetable-scroll{background:linear-gradient(90deg,var(--surface-1) 30%,transparent) 0 0/28px 100% no-repeat local,linear-gradient(270deg,var(--surface-1) 30%,transparent) 100% 0/28px 100% no-repeat local,linear-gradient(90deg,rgb(23 60 55/.14),transparent) 0 0/12px 100% no-repeat scroll,linear-gradient(270deg,rgb(23 60 55/.14),transparent) 100% 0/12px 100% no-repeat scroll,var(--surface-1)}

@@ -52,16 +52,13 @@ for (const experience of itinerary.curatedPool) {
   assert.deepEqual(Object.keys(experience).sort(), ['itemId', 'region', 'tag', 'waypointId'], 'curated pool entries must remain lightweight references');
 }
 
-const foodPane = app.slice(app.indexOf('function renderFoodPane()'), app.indexOf('function renderDays()'));
+assert.ok(!app.includes('function renderFoodPane()'), 'food index pane is removed; food lives in the day timeline');
 const foodRenderer = app.slice(app.indexOf('function renderFoodStop('), app.indexOf('function renderFoodTimeline('));
-assert.ok(foodPane.includes("'index'") && foodRenderer.includes('data-plan-target'), 'food directory needs a timeline jump');
+
 assert.ok(foodRenderer.includes('waypointId'), 'food directory must use stable waypoint references');
 assert.ok(foodRenderer.includes('id="${escapeHTML(stopId)}"'), 'timeline food cards must expose the indexed food ID as an anchor');
 assert.ok(app.includes('routeTab.click()') && app.includes('content.hidden=false') && app.includes('scrollIntoView'), 'timeline links must activate, expand, and scroll to the target');
 assert.ok(app.includes('waypointById(x.waypointId)'), 'experience index must resolve names through waypoint IDs');
-for (const field of ['specialty', 'hours', 'parking', 'durationMinutes', '.plan', '.why']) {
-  assert.ok(!foodPane.includes(field), `food directory must not render detailed field ${field}`);
-}
 
 const popupStart = app.indexOf('function popupHTML(');
 const popupEnd = app.indexOf('function initializeMap(', popupStart);

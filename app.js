@@ -12,7 +12,7 @@ let mapStatusKey='map.status.initial',connKey='conn.ready';
 const setMapStatus=k=>{mapStatusKey=k;const el=$('#mapStatus');if(el)el.textContent=t(k);};
 const setConn=k=>{connKey=k;const el=$('#connection');if(el)el.textContent=t(k);};
 const numLocale=()=>getLang()==='he'?'he-IL':'en-IL';
-Promise.all([fetch('./itinerary.json?rev=2026-09-29f').then(r=>r.json()),fetch('./waypoints.json?rev=2026-09-29f').then(r=>r.json()),i18nReady]).then(([data,points])=>{trip=data;waypointData=points.waypoints;applyStatic();setConn(connKey);setMapStatus(mapStatusKey);cashText();render();initializeMap();setDrawer($('#mapDrawer').dataset.state);}).catch(()=>Promise.resolve(i18nReady).then(()=>{try{applyStatic();}catch(e){}$('#days').innerHTML=`<p class="offline-note">${escapeHTML(tf('err.data','Trip data is not cached yet. Open this page online once, then reload offline.'))}</p>`;$('#mapStatus').textContent=tf('map.status.noIndex','Waypoint index unavailable. Reconnect once to save it for offline use.');}));
+Promise.all([fetch('./itinerary.json?rev=2026-09-29g').then(r=>r.json()),fetch('./waypoints.json?rev=2026-09-29g').then(r=>r.json()),i18nReady]).then(([data,points])=>{trip=data;waypointData=points.waypoints;applyStatic();setConn(connKey);setMapStatus(mapStatusKey);cashText();render();initializeMap();setDrawer($('#mapDrawer').dataset.state);}).catch(()=>Promise.resolve(i18nReady).then(()=>{try{applyStatic();}catch(e){}$('#days').innerHTML=`<p class="offline-note">${escapeHTML(tf('err.data','Trip data is not cached yet. Open this page online once, then reload offline.'))}</p>`;$('#mapStatus').textContent=tf('map.status.noIndex','Waypoint index unavailable. Reconnect once to save it for offline use.');}));
 
 function activeRoute() { return trip.routes.primary; }
 const segmentTypes = {
@@ -50,7 +50,6 @@ function renderChecks() {
 function renderFoodStop(item, type) {
   const point=waypointById(item.waypointId);
   const stopId=item.id || (point ? `food-${point.id}` : '');
-  if(type==='index') return `<article class="food-stop index-stop ${item.type||'meal'}"><strong>${H(item.name)}</strong><span class="food-category">${U('food.type.'+(item.type||'stop'),null,item.type||'Stop')}</span><div class="food-index-actions"><button type="button" data-plan-target="${escapeHTML(stopId)}">${U('food.timeline')}</button>${point?`<button type="button" data-waypoint="${point.id}">${U('food.pin')}</button>`:''}</div></article>`;
   const slot = item.slot ? tr(item.slot) : type === 'market' ? tr('Stock-up') : t('food.coffeeRadar');
   const title = `<button type="button" class="food-map-link" data-waypoint="${point?.id||''}">${H(item.name)}</button>`;
   const details = type === 'meal'
@@ -64,18 +63,8 @@ function renderFoodStop(item, type) {
 function renderFoodTimeline(food) {
   if (!food) return '';
   const rows = foodRows(food);
-  return `<section class="food-timeline"><div class="food-timeline-head"><span>◌</span><div><b>${U('food.along')}</b></div><button type="button" class="food-open" data-open-food>${U('food.openDir')}</button></div><div class="food-stop-grid">${rows.map(x => renderFoodStop(x,x.type)).join('')}</div></section>`;
+  return `<section class="food-timeline"><div class="food-timeline-head"><span>◌</span><div><b>${U('food.along')}</b></div></div><div class="food-stop-grid">${rows.map(x => renderFoodStop(x,x.type)).join('')}</div></section>`;
 }
-function renderFoodPane() {
-  const days = activeRoute().days;
-  const filter = $('#foodDayFilter');
-  const prior = filter.value || 'all';
-  filter.innerHTML = `<option value="all">${U('filter.all')}</option>` + days.map(d => `<option value="${d.day}">${U('filter.day',{n:d.day,date:tc(d.date)})}</option>`).join('');
-  filter.value = [...filter.options].some(o => o.value === prior) ? prior : 'all';
-  $('#foodDays').innerHTML = days.filter(d => filter.value === 'all' || String(d.day) === filter.value).map(d => `<article class="food-day"><header><span>${U('food.dayNo',{n:String(d.day).padStart(2,'0')})}</span><div><small>${C(d.date)}</small><h3>${d.heading ? C(d.heading) : U('day.n',{n:d.day})}</h3></div></header><div class="food-stop-grid">${foodRows(d.food).map(x=>renderFoodStop({...x,type:x.type},'index')).join('')}</div></article>`).join('');
-  document.querySelectorAll('[data-open-food]').forEach(btn=>btn.addEventListener('click',()=>document.querySelector('[data-pane="food"]').click()));
-}
-
 let openDays=new Set([1]);// day numbers expanded by the next renderDays()
 function renderDays() {
   const days=activeRoute().days;
@@ -104,11 +93,10 @@ function renderTripOps() {
 function render(open) {
   openDays=open||new Set([1]);
   $('#days').setAttribute('aria-label',tc(trip.routeNames.primary));
-  renderDays();renderChecks();renderTripOps();renderFoodPane();
+  renderDays();renderChecks();renderTripOps();
   $('#budgetRows').innerHTML=trip.budget.map(x=>`<div class="budget-row"><div><b>${C(x.label)}</b><small>${C(x.note)}</small></div><strong>${x.currency==='ILS'?H(`₪${Number(x.amount).toLocaleString(numLocale(),{minimumFractionDigits:2,maximumFractionDigits:2})}`):x.actual!==undefined?UB('budget.actual',{v:Number(x.actual).toFixed(2)}):H(`€${x.min}–${x.max}`)}</strong></div>`).join('');
+  $('#contactNumbers').innerHTML=trip.contacts.map(x=>`<li><div><b>${C(x.label)}</b><small>${C(x.note)}</small></div><a href="${safeHref(x.href,['tel:'])}" dir="ltr">${escapeHTML(x.number)}</a></li>`).join('');
   const euroTotal=key=>(Math.round(trip.budget.reduce((s,x)=>s+x[key],0)*100)/100).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});$('#budgetMin').textContent=euroTotal('min');$('#budgetMax').textContent=euroTotal('max');
-  $('#sourceList').innerHTML=trip.sources.map(([n,u])=>`<li><a href="${safeHref(u)}" target="_blank" rel="noopener noreferrer">${C(n)} ${U('glyph.out')}</a></li>`).join('');
-  $('#emergencyNumbers').innerHTML=trip.emergency.map(x=>`<a href="${safeHref(x.href,['tel:'])}"><b dir="ltr">${escapeHTML(x.number)}</b><span>${C(x.label)}</span></a>`).join('');
   $('#curatedRows').innerHTML=trip.curatedPool.map(x=>{const p=waypointById(x.waypointId),day=p?.days?.primary?.[0],target=p&&day?waypointPlanTarget(p,day):'';return `<tr><td>${escapeHTML(x.itemId)}</td><td>${C(x.region)}</td><td>${p?H(p.name):U('curated.unavailable')}${p?`<small>${U('cat.'+p.category,null,p.category)}</small><div class="food-index-actions">${target?`<button type="button" data-plan-target="${escapeHTML(target)}">${U('food.timeline')}</button>`:''}<button type="button" data-waypoint="${p.id}">${U('food.pin')}</button></div>`:''}</td><td>${C(x.tag)}</td></tr>`;}).join('');
   const filter=$('#mapDayFilter'),prior=activeMapDay;filter.innerHTML=`<option value="all">${U('filter.all')}</option>`+activeRoute().days.map(d=>`<option value="${d.day}">${U('filter.day',{n:d.day,date:tc(d.date)})}</option>`).join('');activeMapDay=[...filter.options].some(o=>o.value===prior)?prior:'all';filter.value=activeMapDay;
   linkStaticLocations();
@@ -168,7 +156,6 @@ const paneScroll={};
 function syncTabsUI(){document.querySelectorAll('.tab').forEach(tab=>tab.setAttribute('aria-selected',String(tab.classList.contains('active'))));}
 document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>{const current=document.querySelector('.tab.active')?.dataset.pane,next=btn.dataset.pane;if(current===next)return;if(current)paneScroll[current]=scrollY;document.querySelectorAll('.tab,.pane').forEach(el=>el.classList.remove('active'));btn.classList.add('active');$('#pane-'+next).classList.add('active');syncTabsUI();btn.scrollIntoView({block:'nearest',inline:'nearest'});const hero=$('.hero'),tabsStart=hero.offsetTop+hero.offsetHeight,target=paneScroll[next]??Math.min(scrollY,tabsStart);document.documentElement.style.scrollBehavior='auto';window.scrollTo({top:target,behavior:'instant'});document.documentElement.style.scrollBehavior='';}));
 syncTabsUI();
-$('#foodDayFilter').addEventListener('change',()=>renderFoodPane());
 
 // Packing list: static items keyed pack.<group>.<n> in the locales; ticks are a per-device convenience kept in localStorage.
 const packingGroups=[['big',18],['toiletries',11],['carry',11],['backpack',26]],packKey='mne-packing-v1';let packed=new Set();try{packed=new Set(JSON.parse(localStorage.getItem(packKey)||'[]'));}catch(e){}
