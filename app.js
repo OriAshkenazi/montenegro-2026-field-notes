@@ -12,7 +12,7 @@ let mapStatusKey='map.status.initial',connKey='conn.ready';
 const setMapStatus=k=>{mapStatusKey=k;const el=$('#mapStatus');if(el)el.textContent=t(k);};
 const setConn=k=>{connKey=k;const el=$('#connection');if(el)el.textContent=t(k);};
 const numLocale=()=>getLang()==='he'?'he-IL':'en-IL';
-Promise.all([fetch('./itinerary.json?rev=2026-09-29k').then(r=>r.json()),fetch('./waypoints.json?rev=2026-09-29k').then(r=>r.json()),i18nReady]).then(([data,points])=>{trip=data;waypointData=points.waypoints;applyStatic();setConn(connKey);setMapStatus(mapStatusKey);cashText();render();initializeMap();setDrawer($('#mapDrawer').dataset.state);}).catch(()=>Promise.resolve(i18nReady).then(()=>{try{applyStatic();}catch(e){}$('#days').innerHTML=`<p class="offline-note">${escapeHTML(tf('err.data','Trip data is not cached yet. Open this page online once, then reload offline.'))}</p>`;$('#mapStatus').textContent=tf('map.status.noIndex','Waypoint index unavailable. Reconnect once to save it for offline use.');}));
+Promise.all([fetch('./itinerary.json?rev=2026-09-29l').then(r=>r.json()),fetch('./waypoints.json?rev=2026-09-29l').then(r=>r.json()),i18nReady]).then(([data,points])=>{trip=data;waypointData=points.waypoints;applyStatic();setConn(connKey);setMapStatus(mapStatusKey);cashText();render();initializeMap();setDrawer($('#mapDrawer').dataset.state);}).catch(()=>Promise.resolve(i18nReady).then(()=>{try{applyStatic();}catch(e){}$('#days').innerHTML=`<p class="offline-note">${escapeHTML(tf('err.data','Trip data is not cached yet. Open this page online once, then reload offline.'))}</p>`;$('#mapStatus').textContent=tf('map.status.noIndex','Waypoint index unavailable. Reconnect once to save it for offline use.');}));
 
 function activeRoute() { return trip.routes.primary; }
 const segmentTypes = {
@@ -217,5 +217,23 @@ onLangChange(()=>{if($('#installDialog').open)renderInstallHelp();});
 // Language switch: radios with arrow-key navigation; the re-render below runs synchronously inside setLang via onLangChange.
 document.querySelectorAll('.lang-switch [data-lang]').forEach(btn=>{const pick=b=>{if(b.dataset.lang!==getLang())preserveScroll(()=>setLang(b.dataset.lang));};btn.addEventListener('click',()=>pick(btn));btn.addEventListener('keydown',e=>{const step={ArrowLeft:-1,ArrowUp:-1,ArrowRight:1,ArrowDown:1}[e.key];if(!step)return;e.preventDefault();const all=[...document.querySelectorAll('.lang-switch [data-lang]')],next=all[(all.indexOf(btn)+step+all.length)%all.length];next.focus();pick(next);});});
 onLangChange(()=>{if(!trip)return;const open=new Set([...document.querySelectorAll('.day-toggle[aria-expanded="true"]')].map(b=>Number(b.dataset.day))),drawerState=$('#mapDrawer').dataset.state,popupId=mapMarkers.find(x=>x.marker.isPopupOpen&&x.marker.isPopupOpen())?.point.id;render(open);setDrawer(drawerState);setConn(connKey);setMapStatus(mapStatusKey);cashText();renderMapPoints();if(popupId)mapMarkers.find(x=>x.point.id===popupId)?.marker.openPopup();window.weatherRerender?.();});
+// Hero art: one landscape per main stop, shuffled on every visit and cross-faded every few seconds. Paused while hidden, hovered or keyboard-focused, and never automatic under reduced motion.
+{const art=$('.hero-art'),scenes=[...art.querySelectorAll('.hero-landscape[data-scene]')],ids=scenes.map(s=>s.dataset.scene),dots=[...art.querySelectorAll('.art-dots button')],caption=art.querySelector('.art-caption'),coords=caption.querySelector('bdi'),place=caption.querySelector('span'),still=matchMedia('(prefers-reduced-motion: reduce)'),HOLD=9000;
+let current=ids[0],order=[],pos=0,timer=0,swap=0,hovered=false,focused=false;
+const shuffle=avoid=>{const a=ids.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}if(a[0]===avoid)[a[0],a[1]]=[a[1],a[0]];return a;};
+const next=()=>{if(++pos>=order.length){order=shuffle(current);pos=0;}return order[pos];};
+const text=()=>{coords.dataset.i18n=`art.${current}.coords`;place.dataset.i18n=`art.${current}.place`;coords.textContent=t(coords.dataset.i18n);place.innerHTML=linkedLocations(t(place.dataset.i18n));};
+const show=(id,{instant=false,user=false}={})=>{current=id;if(!instant)art.classList.remove('instant');scenes.forEach(s=>{const on=s.dataset.scene===id;s.classList.toggle('is-active',on);if(on)s.removeAttribute('aria-hidden');else s.setAttribute('aria-hidden','true');});dots.forEach(d=>d.setAttribute('aria-current',String(d.dataset.scene===id)));caption.setAttribute('aria-live',user?'polite':'off');clearTimeout(swap);if(instant||still.matches){caption.classList.remove('is-swapping');text();return;}caption.classList.add('is-swapping');swap=setTimeout(()=>{text();caption.classList.remove('is-swapping');},250);};
+const schedule=()=>{clearTimeout(timer);if(!still.matches&&!hovered&&!focused&&!document.hidden)timer=setTimeout(()=>{show(next());schedule();},HOLD);};
+const pick=id=>{if(id!==current)show(id,{user:true});pos=Math.max(0,order.indexOf(id));schedule();};
+art.classList.add('rotating','instant');order=shuffle();show(order[0],{instant:true});requestAnimationFrame(()=>requestAnimationFrame(()=>art.classList.remove('instant')));
+art.addEventListener('click',e=>{if(!e.target.closest('button,a'))pick(next());});
+dots.forEach(d=>d.addEventListener('click',()=>pick(d.dataset.scene)));
+art.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'){hovered=true;schedule();}});
+art.addEventListener('pointerleave',()=>{hovered=false;schedule();});
+art.addEventListener('focusin',e=>{focused=e.target.matches(':focus-visible');schedule();});
+art.addEventListener('focusout',e=>{focused=art.contains(e.relatedTarget);schedule();});
+document.addEventListener('visibilitychange',schedule);still.addEventListener('change',schedule);
+onLangChange(text);schedule();}
 // Hairline under the view bar only while it is stuck beneath the tab bar.
 {const bar=$('.view-bar'),tabs=$('.tabs');if(bar&&tabs){const update=()=>bar.classList.toggle('stuck',scrollY>0&&bar.getBoundingClientRect().top<=tabs.getBoundingClientRect().bottom+.5);addEventListener('scroll',update,{passive:true});update();}}
