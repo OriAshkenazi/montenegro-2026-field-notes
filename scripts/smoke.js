@@ -6,7 +6,7 @@ const path = require('node:path');
 
 const root = path.resolve(__dirname, '..');
 const dist = path.join(root, 'dist');
-const expected = ['index.html', 'style.css', 'app.js', 'timetable.js', 'i18n.js', 'weather.js', 'sw.js', 'itinerary.json', 'waypoints.json', 'locales/en.json', 'locales/he.json', 'manifest.webmanifest', 'icon.svg', 'og-image.jpg'];
+const expected = ['index.html', 'boot.js', 'vendor/leaflet/leaflet.js', 'vendor/leaflet/leaflet.css', 'style.css', 'app.js', 'timetable.js', 'i18n.js', 'weather.js', 'sw.js', 'itinerary.json', 'waypoints.json', 'locales/en.json', 'locales/he.json', 'manifest.webmanifest', 'icon.svg', 'og-image.jpg'];
 const fontsSource = path.join(root, 'fonts');
 if (fs.existsSync(fontsSource)) for (const file of fs.readdirSync(fontsSource).sort()) expected.push(`fonts/${file}`);
 for (const file of expected) assert.ok(fs.statSync(path.join(dist, file)).isFile(), `dist missing ${file}`);
@@ -24,7 +24,7 @@ for (const [, url, foundRevision] of revisionMatches) {
 const cacheVersion = String(parseInt(revision.slice(0, 8), 16));
 assert.ok(sw.includes(`mne-field-notes-v${cacheVersion}`), 'service worker cache name must derive from the asset revision');
 assert.ok(sw.includes(`'${cacheVersion}'`) || sw.includes(`"${cacheVersion}"`), 'service worker cache version must derive from the asset revision');
-for (const asset of ['style.css', 'app.js', 'timetable.js', 'i18n.js', 'weather.js', 'itinerary.json', 'waypoints.json', 'locales/en.json', 'locales/he.json']) {
+for (const asset of ['boot.js', 'vendor/leaflet/leaflet.js', 'vendor/leaflet/leaflet.css', 'style.css', 'app.js', 'timetable.js', 'i18n.js', 'weather.js', 'itinerary.json', 'waypoints.json', 'locales/en.json', 'locales/he.json']) {
   assert.ok(sw.includes(`./${asset}?rev=${revision}`), `service worker shell revision mismatch: ${asset}`);
 }
 for (const pathRef of ['./itinerary.json?rev=', './waypoints.json?rev=']) assert.ok(app.includes(pathRef), `app must retain relative data URL ${pathRef}`);
@@ -37,6 +37,13 @@ for (const file of expected) {
   const size = fs.statSync(path.join(dist, file)).size;
   assert.ok(size > 0, `empty production asset ${file}`);
 }
+const sha = file => require('node:crypto').createHash('sha256').update(fs.readFileSync(path.join(dist, file))).digest('base64');
+assert.equal(sha('vendor/leaflet/leaflet.js'), '20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=', 'vendored leaflet.js must match the published Leaflet 1.9.4 hash');
+assert.equal(sha('vendor/leaflet/leaflet.css'), 'p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=', 'vendored leaflet.css must match the published Leaflet 1.9.4 hash');
+assert.ok(!/https?:\/\/unpkg\.com/.test(html + sw), 'no third-party script CDN may be referenced');
+const csp = html.match(/http-equiv="Content-Security-Policy" content="([^"]+)"/)?.[1] || '';
+assert.ok(/script-src 'self'(;|$)/.test(csp) && csp.includes("object-src 'none'"), 'CSP must restrict scripts to same origin');
+assert.ok(!/<script>[^<]/.test(html), 'inline scripts are blocked by the CSP');
 assert.ok(!fs.existsSync(path.join(dist, 'tests')), 'test sources must not ship in dist');
 assert.ok(!fs.existsSync(path.join(dist, 'scripts')), 'build tooling must not ship in dist');
 process.stdout.write(`Production smoke check passed: ${expected.length} assets, relative PWA paths, revision ${revision}, cache version synchronized.\n`);

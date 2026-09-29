@@ -22,6 +22,8 @@ const segmentTypes = {
 function escapeHTML(value) {
   return String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 }
+// Only data-driven links with these schemes are rendered; anything else (e.g. javascript:) becomes an inert '#'.
+function safeHref(value,schemes=['https:']){try{const u=new URL(String(value),location.href);return escapeHTML(schemes.includes(u.protocol)?u.href:'#');}catch(e){return '#';}}
 const waypointByName=name=>waypointData.find(w=>w.name===name);
 const waypointById=id=>waypointData.find(w=>w.id===id);
 function afterDrawerSettles(changed,fn){const drawer=$('#mapDrawer');if(!changed){fn();return;}let done=false;const finish=()=>{if(done)return;done=true;drawer.removeEventListener('transitionend',onEnd);fn();},onEnd=e=>{if(e.target===drawer)finish();};drawer.addEventListener('transitionend',onEnd);setTimeout(finish,320);}
@@ -97,7 +99,7 @@ document.querySelectorAll('.view-toggle [data-view]').forEach(btn=>btn.addEventL
 function renderTripOps() {
   const route=activeRoute();
   $('#nightBreakdown').innerHTML=route.nightBreakdown.map(n=>`<li><b>${H(n.base)} · ${UB(n.nights===1?'night.one':'night.other',{n:n.nights})}</b><span>${C(n.dates)}</span></li>`).join('');
-  $('#stayDirectory').innerHTML=trip.stays.map(stay=>{const point=waypointById(stay.mapWaypointId);return `<article class="stay-reference"><span class="stay-badge">${U('stay.badge')}</span><h3>${H(stay.name)}</h3><small>${C(stay.dates)}</small><p>${H(stay.address)}</p><small>${C(stay.room)} · ${C(stay.checkIn)} · ${C(stay.checkout)}</small><small>${C(stay.confirmation)} · ${C(stay.price)}</small><small>${C(stay.payment)}</small>${stay.phone?`<a href="tel:${escapeHTML(stay.phone.replaceAll(' ',''))}" dir="ltr">${escapeHTML(stay.phone)}</a>`:''}${point?`<button type="button" class="food-map-link" data-waypoint="${point.id}">${U('food.pin')}</button>`:''}</article>`;}).join('');
+  $('#stayDirectory').innerHTML=trip.stays.map(stay=>{const point=waypointById(stay.mapWaypointId);return `<article class="stay-reference"><span class="stay-badge">${U('stay.badge')}</span><h3>${H(stay.name)}</h3><small>${C(stay.dates)}</small><p>${H(stay.address)}</p><small>${C(stay.room)} · ${C(stay.checkIn)} · ${C(stay.checkout)}</small><small>${C(stay.confirmation)} · ${C(stay.price)}</small><small>${C(stay.payment)}</small>${stay.phone?`<a href="${safeHref('tel:'+stay.phone.replaceAll(' ',''),['tel:'])}" dir="ltr">${escapeHTML(stay.phone)}</a>`:''}${point?`<button type="button" class="food-map-link" data-waypoint="${point.id}">${U('food.pin')}</button>`:''}</article>`;}).join('');
 }
 function render(open) {
   openDays=open||new Set([1]);
@@ -105,8 +107,8 @@ function render(open) {
   renderDays();renderChecks();renderTripOps();renderFoodPane();
   $('#budgetRows').innerHTML=trip.budget.map(x=>`<div class="budget-row"><div><b>${C(x.label)}</b><small>${C(x.note)}</small></div><strong>${x.currency==='ILS'?H(`₪${Number(x.amount).toLocaleString(numLocale(),{minimumFractionDigits:2,maximumFractionDigits:2})}`):x.actual!==undefined?UB('budget.actual',{v:Number(x.actual).toFixed(2)}):H(`€${x.min}–${x.max}`)}</strong></div>`).join('');
   const euroTotal=key=>(Math.round(trip.budget.reduce((s,x)=>s+x[key],0)*100)/100).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});$('#budgetMin').textContent=euroTotal('min');$('#budgetMax').textContent=euroTotal('max');
-  $('#sourceList').innerHTML=trip.sources.map(([n,u])=>`<li><a href="${u}" target="_blank" rel="noreferrer">${C(n)} ${U('glyph.out')}</a></li>`).join('');
-  $('#emergencyNumbers').innerHTML=trip.emergency.map(x=>`<a href="${x.href}"><b dir="ltr">${x.number}</b><span>${C(x.label)}</span></a>`).join('');
+  $('#sourceList').innerHTML=trip.sources.map(([n,u])=>`<li><a href="${safeHref(u)}" target="_blank" rel="noopener noreferrer">${C(n)} ${U('glyph.out')}</a></li>`).join('');
+  $('#emergencyNumbers').innerHTML=trip.emergency.map(x=>`<a href="${safeHref(x.href,['tel:'])}"><b dir="ltr">${escapeHTML(x.number)}</b><span>${C(x.label)}</span></a>`).join('');
   $('#curatedRows').innerHTML=trip.curatedPool.map(x=>{const p=waypointById(x.waypointId),day=p?.days?.primary?.[0],target=p&&day?waypointPlanTarget(p,day):'';return `<tr><td>${escapeHTML(x.itemId)}</td><td>${C(x.region)}</td><td>${p?H(p.name):U('curated.unavailable')}${p?`<small>${U('cat.'+p.category,null,p.category)}</small><div class="food-index-actions">${target?`<button type="button" data-plan-target="${escapeHTML(target)}">${U('food.timeline')}</button>`:''}<button type="button" data-waypoint="${p.id}">${U('food.pin')}</button></div>`:''}</td><td>${C(x.tag)}</td></tr>`;}).join('');
   const filter=$('#mapDayFilter'),prior=activeMapDay;filter.innerHTML=`<option value="all">${U('filter.all')}</option>`+activeRoute().days.map(d=>`<option value="${d.day}">${U('filter.day',{n:d.day,date:tc(d.date)})}</option>`).join('');activeMapDay=[...filter.options].some(o=>o.value===prior)?prior:'all';filter.value=activeMapDay;
   linkStaticLocations();
@@ -122,7 +124,7 @@ function waypointPlanTarget(point,day){
   for(const [period,segments] of [['morning',itineraryDay.morning],['afternoon',itineraryDay.afternoon],['evening',itineraryDay.evening]])for(const [i,segment] of (segments||[]).entries())if(names.some(name=>(segment.text||'').toLocaleLowerCase().includes(name)))return segment.id||`day-${day}`;
   return `day-${day}`;
 }
-function popupHTML(p){const days=p.days?.primary||[],jumpDay=days.includes(Number(activeMapDay))?Number(activeMapDay):days[0],target=jumpDay?waypointPlanTarget(p,jumpDay):'',payment=String(p.cash||'Ask');return `<article class="map-popup"><h3>${H(p.name)}</h3><span class="popup-category ${p.category.toLowerCase()}">${U('cat.'+p.category,null,p.category)}</span><span class="popup-payment">${U('pay.'+payment,null,payment)}</span><a href="${escapeHTML(p.googleUrl)}" target="_blank" rel="noopener noreferrer">${U('map.googleMaps')}</a>${target?`<button type="button" data-plan-target="${escapeHTML(target)}">${U('map.jump')}</button>`:''}</article>`;}
+function popupHTML(p){const days=p.days?.primary||[],jumpDay=days.includes(Number(activeMapDay))?Number(activeMapDay):days[0],target=jumpDay?waypointPlanTarget(p,jumpDay):'',payment=String(p.cash||'Ask');return `<article class="map-popup"><h3>${H(p.name)}</h3><span class="popup-category ${p.category.toLowerCase()}">${U('cat.'+p.category,null,p.category)}</span><span class="popup-payment">${U('pay.'+payment,null,payment)}</span><a href="${safeHref(p.googleUrl)}" target="_blank" rel="noopener noreferrer">${U('map.googleMaps')}</a>${target?`<button type="button" data-plan-target="${escapeHTML(target)}">${U('map.jump')}</button>`:''}</article>`;}
 function initializeMap(){if(!window.L){setMapStatus('map.status.lib');renderWaypointList();return;}
   map=L.map('mapCanvas',{zoomControl:true,scrollWheelZoom:false,preferCanvas:true}).setView([42.75,19.0],8);
   const tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap contributors',crossOrigin:true});tiles.addTo(map);
