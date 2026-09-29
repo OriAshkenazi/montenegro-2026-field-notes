@@ -39,7 +39,7 @@
     return tc(s);
   }
   // Latin/digit runs (codes, phones, times, amounts, Latin place names) are isolated left-to-right inside RTL text.
-  const CH = 'A-Za-z0-9\\u00C0-\\u024F\\u1E00-\\u1EFF', RUN = new RegExp(`[+€₪$£#]?[${CH}]+(?:[\\s.:,\\-–—/'’%°@&+\\uE000-\\uF8FF]{1,3}[${CH}]+)*[%°]?`, 'g');
+  const CH = 'A-Za-z0-9\\u00C0-\\u024F\\u1E00-\\u1EFF', RUN = new RegExp(`[+€₪$£#]?[${CH}]+(?:(?:[.:,\\-–—/'’%°@&+\\uE000-\\uF8FF]{1,2}\\s?|\\s)[${CH}]+)*[%°]?`, 'g');
   function bidiRuns(text) {
     const out = [], re = new RegExp(RUN.source, 'g'), src = String(text);
     let m;
