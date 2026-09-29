@@ -751,3 +751,9 @@ html[data-lang="he"]:not(.i18n-ready) body{visibility:hidden}
 .install-step-icon{flex:none;display:grid;place-items:center;width:34px;height:34px;border-radius:var(--r-sm);border:1px solid var(--border);background:var(--surface-1);color:var(--link)}
 .install-dialog .install-note{font-size:var(--fs-sm);color:var(--text-3)}
 .install-dialog .button{width:100%}
+
+/* Build-time plain-text copy of the trip for readers without JavaScript (chatbots, text browsers). */
+.js .trip-text{display:none}
+.trip-text{max-width:72rem;margin:2rem auto;padding:0 16px;line-height:1.5;overflow-wrap:anywhere}
+.trip-text table{border-collapse:collapse;width:100%}
+.trip-text th,.trip-text td{border:1px solid currentColor;padding:.25rem .5rem;text-align:start;vertical-align:top}

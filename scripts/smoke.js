@@ -39,4 +39,17 @@ for (const file of expected) {
 }
 assert.ok(!fs.existsSync(path.join(dist, 'tests')), 'test sources must not ship in dist');
 assert.ok(!fs.existsSync(path.join(dist, 'scripts')), 'build tooling must not ship in dist');
+
+// Readers that do not run JavaScript get the whole trip as text.
+const tripMd = fs.readFileSync(path.join(dist, 'trip.md'), 'utf8');
+assert.ok(tripMd.length > 10000 && tripMd.startsWith('# '), 'trip.md must ship with the full plan');
+assert.equal(fs.readFileSync(path.join(dist, 'llms-full.txt'), 'utf8'), tripMd, 'llms-full.txt must match trip.md');
+assert.ok(fs.readFileSync(path.join(dist, 'llms.txt'), 'utf8').includes('trip.md'), 'llms.txt must link trip.md');
+assert.ok(fs.existsSync(path.join(dist, '.nojekyll')), '.nojekyll keeps GitHub Pages serving trip.md as Markdown');
+assert.ok(html.includes('rel="alternate" type="text/markdown" href="trip.md"'), 'index.html must advertise trip.md');
+const article = /<article id="trip-text"[^>]*>([\s\S]*?)<\/article>/.exec(html);
+assert.ok(article && article[1].includes('<h2>') && article[1].length > 10000, 'index.html must embed the static trip text');
+const ldMatch = /<script type="application\/ld\+json">([\s\S]*?)<\/script>/.exec(html);
+assert.ok(ldMatch, 'index.html must include JSON-LD');
+assert.equal(JSON.parse(ldMatch[1])['@type'], 'TouristTrip');
 process.stdout.write(`Production smoke check passed: ${expected.length} assets, relative PWA paths, revision ${revision}, cache version synchronized.\n`);
