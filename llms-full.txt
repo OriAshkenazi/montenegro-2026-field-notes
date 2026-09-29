@@ -16,12 +16,12 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 
 - Trip at a glance
 - Stays
-- Day 1 - Tivat → Runolist Chalet / direct northbound mountain transfer (Thu · Oct 1)
-- Day 2 - Black Lake / P14-Sedlo / Trsa / Plužine and Piva (Fri · Oct 2)
-- Day 3 - Tara Canyon access check / Kolašin / Biogradska Gora (Sat · Oct 3)
-- Day 4 - Runolist transfer → Perast bags secured → Kotor Old Town (Sun · Oct 4)
-- Day 5 - Kotor espresso / Njegoš Mausoleum / Kuk coaster / Skadar boat circuit (Mon · Oct 5)
-- Day 6 - Perast → TIV / rental return / flight home (Tue · Oct 6)
+- Day 1 · Tivat → Runolist Chalet / direct northbound mountain transfer (Thu · Oct 1)
+- Day 2 · Black Lake / P14-Sedlo / Trsa / Plužine and Piva (Fri · Oct 2)
+- Day 3 · Tara Canyon access check / Kolašin / Biogradska Gora (Sat · Oct 3)
+- Day 4 · Runolist transfer → Perast bags secured → Kotor Old Town (Sun · Oct 4)
+- Day 5 · Kotor espresso / Njegoš Mausoleum / Kuk coaster / Skadar boat circuit (Mon · Oct 5)
+- Day 6 · Perast → TIV / rental return / flight home (Tue · Oct 6)
 - Quick status checks
 - Budget
 - Travel insurance
@@ -79,7 +79,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - **Amenities:** Breakfast included in this booking; hotel-published breakfast hours 08:00–10:30.
 - **Map:** [google.com](https://www.google.com/maps/dir/?api=1&destination=Conte%20Hotel%20%26%20Restaurant%2C%20Ul.%20Marka%20Martinovi%C4%87a%20bb%2C%2085336%20Perast%2C%20Montenegro&travelmode=driving)
 
-## Day 1 - Tivat → Runolist Chalet / direct northbound mountain transfer (Thu · Oct 1)
+## Day 1 · Tivat → Runolist Chalet / direct northbound mountain transfer (Thu · Oct 1)
 
 - **Date:** 2026-10-01
 - **Region:** North · Tivat → Žabljak
@@ -173,7 +173,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - [Runolist Chalet](https://maps.google.com/?q=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%2084220%20%C5%BDabljak%2C%20Montenegro)
 - [AMSCG road conditions](https://amscg.me/en/road-conditions)
 
-## Day 2 - Black Lake / P14-Sedlo / Trsa / Plužine and Piva (Fri · Oct 2)
+## Day 2 · Black Lake / P14-Sedlo / Trsa / Plužine and Piva (Fri · Oct 2)
 
 - **Date:** 2026-10-02
 - **Region:** North · Žabljak / Durmitor / Piva
@@ -279,7 +279,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - [Šavnik](https://maps.google.com/?q=%C5%A0avnik%2C%20Montenegro)
 - [Runolist Chalet](https://maps.google.com/?q=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%20%C5%BDabljak%2C%20Montenegro)
 
-## Day 3 - Tara Canyon access check / Kolašin / Biogradska Gora (Sat · Oct 3)
+## Day 3 · Tara Canyon access check / Kolašin / Biogradska Gora (Sat · Oct 3)
 
 - **Date:** 2026-10-03
 - **Region:** North · Tara Canyon / Mojkovac / Kolašin / Biogradska Gora
@@ -377,7 +377,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - [Kolašin · town center](https://maps.google.com/?q=Kola%C5%A1in%2C%20Montenegro)
 - [Runolist Chalet](https://maps.google.com/?q=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%20%C5%BDabljak%2C%20Montenegro)
 
-## Day 4 - Runolist transfer → Perast bags secured → Kotor Old Town (Sun · Oct 4)
+## Day 4 · Runolist transfer → Perast bags secured → Kotor Old Town (Sun · Oct 4)
 
 - **Date:** 2026-10-04
 - **Region:** North → Coast · Perast / Kotor
@@ -475,7 +475,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - [Perast entrance parking](https://maps.google.com/?q=Perast%20signed%20entrance%20parking%2C%20Montenegro)
 - [Conte Hotel & Restaurant](https://maps.google.com/?q=Conte%20Hotel%20%26%20Restaurant%2C%20Perast%2C%20Montenegro)
 
-## Day 5 - Kotor espresso / Njegoš Mausoleum / Kuk coaster / Skadar boat circuit (Mon · Oct 5)
+## Day 5 · Kotor espresso / Njegoš Mausoleum / Kuk coaster / Skadar boat circuit (Mon · Oct 5)
 
 - **Date:** 2026-10-05
 - **Region:** Coast / Central · Perast → Lovćen → Skadar → Perast
@@ -600,7 +600,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - [Perast entrance parking](https://maps.google.com/?q=Perast%20signed%20entrance%20parking%2C%20Montenegro)
 - [Conte Hotel & Restaurant](https://maps.google.com/?q=Conte%20Hotel%20%26%20Restaurant%2C%20Perast%2C%20Montenegro)
 
-## Day 6 - Perast → TIV / rental return / flight home (Tue · Oct 6)
+## Day 6 · Perast → TIV / rental return / flight home (Tue · Oct 6)
 
 - **Date:** 2026-10-06
 - **Region:** Coast · Tivat Airport
