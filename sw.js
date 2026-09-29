@@ -1,7 +1,7 @@
-const CACHE='mne-field-notes-v39';
+const CACHE='mne-field-notes-v41';
 const TILE_CACHE='mne-map-tiles-v1';
-const VERSION='40';
-const SHELL=['./','./index.html','./style.css?rev=2026-09-29e','./timetable.js?rev=2026-09-29e','./i18n.js?rev=2026-09-29e','./app.js?rev=2026-09-29e','./weather.js?rev=2026-09-29e','./itinerary.json?rev=2026-09-29e','./waypoints.json?rev=2026-09-29e','./locales/en.json?rev=2026-09-29e','./locales/he.json?rev=2026-09-29e','./fonts/plex-hebrew-400.woff2','./fonts/plex-hebrew-500.woff2','./fonts/plex-hebrew-700.woff2','./fonts/plex-latin-400.woff2','./fonts/plex-latin-500.woff2','./fonts/plex-latin-700.woff2','./fonts/plex-latin-ext-400.woff2','./fonts/plex-latin-ext-500.woff2','./fonts/plex-latin-ext-700.woff2','./manifest.webmanifest','./icon.svg'].map(path=>`${path}${path.includes('?')?'&':'?'}v=${VERSION}`);
+const VERSION='41';
+const SHELL=['./','./index.html','./style.css?rev=2026-09-29f','./timetable.js?rev=2026-09-29f','./i18n.js?rev=2026-09-29f','./app.js?rev=2026-09-29f','./weather.js?rev=2026-09-29f','./itinerary.json?rev=2026-09-29f','./waypoints.json?rev=2026-09-29f','./locales/en.json?rev=2026-09-29f','./locales/he.json?rev=2026-09-29f','./fonts/plex-hebrew-400.woff2','./fonts/plex-hebrew-500.woff2','./fonts/plex-hebrew-700.woff2','./fonts/plex-latin-400.woff2','./fonts/plex-latin-500.woff2','./fonts/plex-latin-700.woff2','./fonts/plex-latin-ext-400.woff2','./fonts/plex-latin-ext-500.woff2','./fonts/plex-latin-ext-700.woff2','./manifest.webmanifest','./icon.svg'].map(path=>`${path}${path.includes('?')?'&':'?'}v=${VERSION}`);
 const CDN=['https://unpkg.com/leaflet@1.9.4/dist/leaflet.css','https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>caches.open(CACHE)).then(cache=>Promise.allSettled(CDN.map(url=>cache.add(url)))).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE&&key!==TILE_CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));

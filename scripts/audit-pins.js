@@ -2,6 +2,7 @@
 // Read-only waypoint audit: coordinate clusters, named-town distance, googleUrl destination.
 // Usage: node scripts/audit-pins.js [--geocode]   (--geocode needs Nominatim access, 1 req/s)
 const { waypoints } = require('../waypoints.json');
+const https = require('node:https');
 
 const TOWNS = {
   Kotor: [42.4247, 18.7712], Tivat: [42.4304, 18.696], Perast: [42.486, 18.696], Budva: [42.2842, 18.84],
@@ -52,19 +53,46 @@ async function geocode() {
   for (const p of waypoints.filter(hasMapPin)) {
     const query = destination(p);
     if (!query || seen.has(query)) continue;
-    const url = `https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=me&q=${encodeURIComponent(query)}`;
     let hit = null;
-    try {
-      const res = await fetch(url, { headers: { 'User-Agent': 'montenegro-field-notes-audit/1.0' } });
-      hit = (await res.json())[0] || null;
-    } catch (error) { console.log(`  ! ${p.id}: ${error.message}`); }
+    try { hit = await lookup(query); }
+    catch (error) { console.log(`  ! ${p.id}: ${error.message}`); }
+    if (!hit) {
+      const fallback = `${p.name}, Montenegro`;
+      if (fallback !== query && !seen.has(fallback)) {
+        await new Promise(resolve => setTimeout(resolve, 1100));
+        try { hit = await lookup(fallback); }
+        catch (error) { console.log(`  ! ${p.id} name search: ${error.message}`); }
+      } else hit = seen.get(fallback) || null;
+    }
     seen.set(query, hit);
     if (hit) {
       const m = km([p.lat, p.lng], [+hit.lat, +hit.lon]) * 1000;
-      console.log(`${m > GEOCODE_FLAG_M ? 'FLAG' : 'ok  '} ${p.id}  ${Math.round(m)} m  osm=${hit.lat},${hit.lon}  (${query})`);
+      console.log(`${m > GEOCODE_FLAG_M ? 'FLAG' : 'ok  '} ${p.id}  ${Math.round(m)} m  osm=${hit.lat},${hit.lon}  (${hit.display_name})`);
     } else console.log(`none ${p.id}  (${query})`);
     await new Promise(resolve => setTimeout(resolve, 1100));
   }
+
+  async function lookup(query) {
+    if (seen.has(query)) return seen.get(query);
+    const url = `https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=me&q=${encodeURIComponent(query)}`;
+    const hit = (await nominatim(url))[0] || null;
+    seen.set(query, hit);
+    return hit;
+  }
+}
+
+function nominatim(url) {
+  return new Promise((resolve, reject) => {
+    https.get(url, { headers: { 'User-Agent': 'montenegro-field-notes-audit/1.0' } }, response => {
+      let body = '';
+      response.setEncoding('utf8');
+      response.on('data', chunk => { body += chunk; });
+      response.on('end', () => {
+        if (response.statusCode < 200 || response.statusCode >= 300) return reject(new Error(`Nominatim HTTP ${response.statusCode}`));
+        try { resolve(JSON.parse(body)); } catch (error) { reject(error); }
+      });
+    }).on('error', reject);
+  });
 }
 
 if (require.main === module) {
