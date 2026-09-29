@@ -12,7 +12,7 @@ let mapStatusKey='map.status.initial',connKey='conn.ready';
 const setMapStatus=k=>{mapStatusKey=k;const el=$('#mapStatus');if(el)el.textContent=t(k);};
 const setConn=k=>{connKey=k;const el=$('#connection');if(el)el.textContent=t(k);};
 const numLocale=()=>getLang()==='he'?'he-IL':'en-IL';
-Promise.all([fetch('./itinerary.json?rev=2026-09-29c').then(r=>r.json()),fetch('./waypoints.json?rev=2026-09-29c').then(r=>r.json()),i18nReady]).then(([data,points])=>{trip=data;waypointData=points.waypoints;applyStatic();setConn(connKey);setMapStatus(mapStatusKey);cashText();render();initializeMap();setDrawer($('#mapDrawer').dataset.state);}).catch(()=>Promise.resolve(i18nReady).then(()=>{try{applyStatic();}catch(e){}$('#days').innerHTML=`<p class="offline-note">${escapeHTML(tf('err.data','Trip data is not cached yet. Open this page online once, then reload offline.'))}</p>`;$('#mapStatus').textContent=tf('map.status.noIndex','Waypoint index unavailable. Reconnect once to save it for offline use.');}));
+Promise.all([fetch('./itinerary.json?rev=2026-09-29d').then(r=>r.json()),fetch('./waypoints.json?rev=2026-09-29d').then(r=>r.json()),i18nReady]).then(([data,points])=>{trip=data;waypointData=points.waypoints;applyStatic();setConn(connKey);setMapStatus(mapStatusKey);cashText();render();initializeMap();setDrawer($('#mapDrawer').dataset.state);}).catch(()=>Promise.resolve(i18nReady).then(()=>{try{applyStatic();}catch(e){}$('#days').innerHTML=`<p class="offline-note">${escapeHTML(tf('err.data','Trip data is not cached yet. Open this page online once, then reload offline.'))}</p>`;$('#mapStatus').textContent=tf('map.status.noIndex','Waypoint index unavailable. Reconnect once to save it for offline use.');}));
 
 function activeRoute() { return trip.routes.primary; }
 const segmentTypes = {
@@ -168,6 +168,14 @@ document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>
 syncTabsUI();
 $('#foodDayFilter').addEventListener('change',()=>renderFoodPane());
 
+// Packing list: static items keyed pack.<group>.<n> in the locales; ticks are a per-device convenience kept in localStorage.
+const packingGroups=[['big',18],['toiletries',11],['carry',11],['backpack',26]],packKey='mne-packing-v1';let packed=new Set();try{packed=new Set(JSON.parse(localStorage.getItem(packKey)||'[]'));}catch(e){}
+function savePacked(){try{localStorage.setItem(packKey,JSON.stringify([...packed]));}catch(e){}}
+function packingCounts(){const total=packingGroups.reduce((n,[,c])=>n+c,0);$('#packingProgress').innerHTML=UB('pack.progress',{done:packed.size,total});packingGroups.forEach(([g,c])=>{const el=document.querySelector(`[data-pack-count="${g}"]`);if(el)el.textContent=`${[...packed].filter(id=>id.startsWith(g+'.')).length}/${c}`;});}
+function renderPacking(){$('#packingGroups').innerHTML=packingGroups.map(([g,c])=>`<article class="field-card packing-card"><header><h3>${UB('pack.'+g+'.title')}</h3><span class="card-kicker" data-pack-count="${g}"></span></header><ul>${Array.from({length:c},(_,i)=>{const id=`${g}.${i+1}`;return `<li><label><input type="checkbox" data-pack="${id}"${packed.has(id)?' checked':''}><span>${UB('pack.'+id)}</span></label></li>`;}).join('')}</ul></article>`).join('');packingCounts();}
+$('#packingGroups').addEventListener('change',e=>{const id=e.target.dataset?.pack;if(!id)return;if(e.target.checked)packed.add(id);else packed.delete(id);savePacked();packingCounts();});
+$('#packingReset').addEventListener('click',()=>{if(!packed.size||!confirm(t('pack.resetConfirm')))return;packed.clear();savePacked();renderPacking();});
+Promise.resolve(i18nReady).then(renderPacking);onLangChange(renderPacking);
 const storageKey='montenegro-cash-2026';let carried=Number(localStorage.getItem(storageKey)||0);function cashText(){const b=$('#cashButton');b.innerHTML=carried>0?UB('cash.carried',{n:carried}):UB('cash.mark');$('#cashStatus').innerHTML=carried>0?UB('cash.saved'):UB('cash.note');}$('#cashButton').addEventListener('click',()=>{carried=carried>0?0:225.39;localStorage.setItem(storageKey,String(carried));cashText();});
 if('serviceWorker'in navigator)addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').then(()=>setConn('conn.offlineReady')).catch(()=>setConn('conn.unavailable')));
 // Install: the native prompt where the browser offers one (Chromium); otherwise a how-to dialog for this device.

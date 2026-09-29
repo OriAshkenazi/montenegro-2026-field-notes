@@ -328,6 +328,17 @@ td .food-index-actions{margin-top:var(--sp-1)}
 .card-kicker{font:var(--fs-xs) var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
 .field-card h3{font:600 var(--fs-xl) var(--serif);margin:var(--sp-2) 0}
 .field-card p{font-size:var(--fs-base);color:var(--text-2);line-height:var(--lh-loose)}
+.packing-bar{display:flex;align-items:center;justify-content:space-between;gap:var(--sp-3);flex-wrap:wrap;padding:var(--sp-3) var(--sp-4);background:var(--surface-1);border:1px solid var(--border);border-radius:var(--r-md);margin-bottom:var(--sp-4)}
+#packingProgress{font:600 var(--fs-md) var(--sans)}
+.packing-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-3);align-items:start}
+.packing-card{padding:var(--sp-5)}
+.packing-card header{display:flex;align-items:baseline;justify-content:space-between;gap:var(--sp-3);border-bottom:1px solid var(--border);padding-bottom:var(--sp-2);margin-bottom:var(--sp-1)}
+.packing-card h3{margin:0}
+.packing-card ul{list-style:none;margin:0;padding:0}
+.packing-card li+li{border-top:1px solid var(--border)}
+.packing-card label{display:flex;align-items:center;gap:var(--sp-3);min-height:var(--tap);padding-block:var(--sp-1);font-size:var(--fs-md);line-height:var(--lh-body);color:var(--text-1);cursor:pointer}
+.packing-card input{flex:none;width:20px;height:20px;margin:0;accent-color:var(--accent)}
+.packing-card label:has(input:checked) span{color:var(--text-3);text-decoration:line-through;text-decoration-color:var(--border-strong)}
 .emergency{background:var(--surface-3)}
 .numbers{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-2)}
 .numbers a{display:grid;align-content:center;min-height:64px;text-decoration:none;color:var(--text-1);padding:var(--sp-2);background:var(--surface-1);border:1px solid var(--border);border-radius:var(--r-md);text-align:center}
@@ -508,7 +519,7 @@ footer{display:flex;justify-content:space-between;border-top:1px solid var(--bor
   .day-content{padding:var(--sp-4) var(--sp-3)}
   .blocks{grid-template-columns:1fr;gap:var(--sp-3)}
   .day-footer{grid-template-columns:1fr;gap:var(--sp-2)}
-  .checks,.budget-layout,.field-grid,.stay-grid,.food-stop-grid{grid-template-columns:1fr}
+  .checks,.budget-layout,.field-grid,.packing-grid,.stay-grid,.food-stop-grid{grid-template-columns:1fr}
   .numbers{grid-template-columns:repeat(2,1fr)}
   .trip-ops{grid-template-columns:1fr;gap:var(--sp-5);margin:var(--sp-7) 0;padding:var(--sp-5)}
   .night-breakdown li{display:grid;gap:var(--sp-1)}
@@ -633,7 +644,7 @@ footer{display:flex;justify-content:space-between;border-top:1px solid var(--bor
   .map-drawer[data-state="full"] .map-body{grid-template-rows:auto minmax(100px,1fr) minmax(78px,21%)}
 }
 @media (orientation:landscape) and (max-height:500px) and (max-width:1100px){
-  .blocks,.trip-ops,.field-grid,.budget-layout,.food-stop-grid{grid-template-columns:1fr}
+  .blocks,.trip-ops,.field-grid,.packing-grid,.budget-layout,.food-stop-grid{grid-template-columns:1fr}
   .day-footer{gap:var(--sp-2)}
 }
 
