@@ -97,7 +97,7 @@ h2,h3{color:var(--text-1)}
 .install-button:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
 select{min-height:var(--tap);border:1px solid var(--border);border-radius:var(--r-sm);background:var(--surface-1);color:var(--text-1);padding:0 var(--sp-3);font:var(--fs-base) var(--sans)}
 /* Shared pressed state for every tappable control */
-:is(.button,.tab,.view-toggle button,.stop-links button,.waypoint-row,.weather-day,.food-index-actions button,#mapClose,.map-popup a,.map-popup button,.numbers a,.alpine-warning button,.stay-reference a,.stay-reference .food-map-link):active{transform:scale(.97)}
+:is(.button,.tab,.view-toggle button,.stop-links button,.waypoint-row,.weather-day,#mapClose,.map-popup a,.map-popup button,.numbers a,.alpine-warning button,.stay-reference a,.stay-reference .food-map-link,.day-options button):active{transform:scale(.97)}
 .day-toggle:active{background:var(--surface-2)}
 
 /* 3 · Shell: topbar, hero, tabs, view bar -------------------------------- */
@@ -134,7 +134,7 @@ main{max-width:1200px;margin:auto;padding:0 var(--sp-8) calc(var(--sheet-handle)
 @keyframes pane-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 
 .route-switch{display:flex;justify-content:space-between;align-items:end;margin:0 0 var(--sp-4)}
-.route-switch h2,.schedule-wrap h2,.guardrails h2,.section-head h2,.sources h2{font:600 var(--fs-2xl)/var(--lh-tight) var(--serif);margin:0}
+.route-switch h2,.section-head h2,.sources h2{font:600 var(--fs-2xl)/var(--lh-tight) var(--serif);margin:0}
 .section-head{margin:var(--sp-3) 0 var(--sp-7)}
 .section-head p:last-child{color:var(--text-2);font-size:var(--fs-base)}
 
@@ -214,10 +214,7 @@ body[data-route-view="story"] .view-toggle::before{transform:translateX(100%)}
 .location-link:hover,.location-link:focus-visible{color:var(--accent)}
 .offline-note{padding:var(--sp-6);background:var(--surface-1);border:1px solid var(--border);border-radius:var(--r-md)}
 
-/* 5 · Tables: experience index + compact timetable ------------------------ */
-.schedule-wrap,.guardrails{margin-top:var(--sp-8)}
-.schedule-wrap h2,.guardrails h2{margin-bottom:var(--sp-4)}
-.schedule-wrap>p{color:var(--text-2);font-size:var(--fs-base)}
+/* 5 · Tables: compact timetable ------------------------------------------ */
 .table-scroll{overflow:auto;background:var(--surface-1);border:1px solid var(--border);border-radius:var(--r-md)}
 table{width:100%;border-collapse:collapse;min-width:940px;font-size:var(--fs-sm)}
 th{text-align:start;background:var(--surface-3);color:var(--text-1);font:var(--fs-xs) var(--mono);text-transform:uppercase;letter-spacing:.06em;padding:var(--sp-3)}
@@ -245,17 +242,7 @@ table.timetable{min-width:720px;font-size:var(--fs-base);table-layout:auto}
 .timetable tr.tt-day td{background:var(--surface-2)}
 .timetable-scroll{margin-bottom:var(--sp-1)}
 
-/* 6 · Guardrails & trip ops ----------------------------------------------- */
-.checks{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-2)}
-.check{display:grid;grid-template-columns:26px 1fr auto;gap:var(--sp-3);align-items:center;background:var(--surface-1);border:1px solid var(--border);border-radius:var(--r-md);padding:var(--sp-3) var(--sp-4)}
-.check>span{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:var(--fs-sm)}
-.check b{display:block;font-size:var(--fs-base)}
-.check>strong{font:600 var(--fs-xs) var(--mono);letter-spacing:.04em}
-.check.pass{--status:var(--ok);--status-bg:var(--ok-bg)}
-.check.conditional{--status:var(--warn);--status-bg:var(--warn-bg)}
-.check.fail{--status:var(--danger);--status-bg:var(--danger-bg)}
-.check>span{background:var(--status-bg);color:var(--status)}
-.check>strong{color:var(--status)}
+/* 6 · Trip ops ------------------------------------------------------------- */
 .trip-ops{display:grid;grid-template-columns:minmax(220px,.75fr) minmax(0,1.25fr);gap:var(--sp-7);margin:var(--sp-8) 0;padding:var(--sp-7);background:var(--surface-2);border:1px solid var(--border);border-radius:var(--r-lg)}
 .trip-ops h2{font:600 var(--fs-2xl) var(--serif);margin:var(--sp-1) 0 var(--sp-4)}
 .night-breakdown{list-style:none;padding:0;margin:0}
@@ -276,9 +263,12 @@ table.timetable{min-width:720px;font-size:var(--fs-base);table-layout:auto}
 .food-map-link{position:relative;border:0;padding:0;background:transparent;text-align:start;color:var(--text-1);font:600 var(--fs-base) var(--sans);cursor:pointer}
 .food-map-link::after{content:"";position:absolute;inset:-12px -4px}
 .food-map-link:hover{text-decoration:underline}
-.food-index-actions{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:var(--sp-1) var(--sp-3)}
-.food-index-actions button{min-height:var(--tap);border:0;background:transparent;padding:0 var(--sp-1);color:var(--link);font:500 var(--fs-xs) var(--mono);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
-td .food-index-actions{margin-top:var(--sp-1)}
+.day-options{margin-top:var(--sp-4);padding:var(--sp-3);border-inline-start:3px solid var(--warn);border-radius:var(--r-sm);background:var(--warn-bg)}
+.day-options h3{margin:0 0 var(--sp-2);font:600 var(--fs-xs) var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--warn)}
+.day-options ul{list-style:none;padding:0;margin:0}
+.day-options li{display:flex;flex-wrap:wrap;align-items:baseline;gap:var(--sp-1) var(--sp-3)}
+.day-options button{min-height:var(--tap);border:0;padding:0;background:transparent;color:var(--link);font:600 var(--fs-sm) var(--sans);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.day-options small{color:var(--text-2);font-size:var(--fs-xs)}
 .food-timeline{margin-top:var(--sp-4);padding:var(--sp-3);background:var(--surface-0);border:1px solid var(--border);border-radius:var(--r-md)}
 .food-timeline-head{display:flex;align-items:center;gap:var(--sp-3);margin-bottom:var(--sp-2)}
 .food-timeline-head>span{font-size:var(--fs-xl);color:var(--cat-eat)}
@@ -530,12 +520,11 @@ footer{display:flex;justify-content:space-between;border-top:1px solid var(--bor
   .day-content{padding:var(--sp-4) var(--sp-3)}
   .blocks{grid-template-columns:1fr;gap:var(--sp-3)}
   .day-footer{grid-template-columns:1fr;gap:var(--sp-2)}
-  .checks,.budget-layout,.field-grid,.packing-grid,.stay-grid,.food-stop-grid{grid-template-columns:1fr}
+  .budget-layout,.field-grid,.packing-grid,.stay-grid,.food-stop-grid{grid-template-columns:1fr}
   .numbers{grid-template-columns:repeat(2,1fr)}
   .trip-ops{grid-template-columns:1fr;gap:var(--sp-5);margin:var(--sp-7) 0;padding:var(--sp-5)}
   .night-breakdown li{display:grid;gap:var(--sp-1)}
   .sources ul{columns:1}
-  .schedule-wrap,.guardrails{margin-top:var(--sp-7)}
   .table-scroll{margin-inline-end:calc(-1 * var(--sp-4));border-start-end-radius:0;border-end-end-radius:0}
   footer{gap:var(--sp-3);flex-direction:column}
   .food-timeline-head{align-items:flex-start}
@@ -642,7 +631,6 @@ footer{display:flex;justify-content:space-between;border-top:1px solid var(--bor
   .day-title strong{font-size:var(--fs-md)}
   .day-content{padding:var(--sp-3)}
   .blocks{gap:var(--sp-2)}
-  .schedule-wrap,.guardrails{margin-top:var(--sp-6)}
   .trip-ops{margin:var(--sp-6) 0;padding:var(--sp-4);gap:var(--sp-4)}
   .table-scroll{margin-inline-end:0}
   .map-toolbar{min-height:52px;padding:var(--sp-1) var(--sp-2);flex-wrap:nowrap}
