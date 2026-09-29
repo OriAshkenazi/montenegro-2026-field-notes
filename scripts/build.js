@@ -65,7 +65,7 @@ async function build() {
   // Without this GitHub Pages runs Jekyll, which turns trip.md into HTML instead of serving it.
   fs.writeFileSync(path.join(output, '.nojekyll'), '');
   const indexPath = path.join(output, 'index.html');
-  const placeholder = '<article id="trip-text" class="trip-text" lang="en" dir="ltr"></article>';
+  const placeholder = '<article id="trip-text" class="trip-text" lang="en" dir="ltr" hidden></article>';
   let index = fs.readFileSync(indexPath, 'utf8');
   if (!index.includes(placeholder)) throw new Error('index.html is missing the #trip-text placeholder');
   const ld = JSON.stringify(jsonLd).replace(/</g, '\\u003c');
