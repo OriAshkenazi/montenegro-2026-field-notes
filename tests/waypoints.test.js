@@ -98,12 +98,29 @@ assert.equal(policy.assistanceContacts.length,2);
 assert.ok(!('insuredNames' in policy) && !('identityNumbers' in policy) && !('policyholderContacts' in policy), 'insurance record must exclude policyholder personal data');
 assert.ok(html.includes('id="insuranceCard"') && app.includes("$('#insuranceCard').innerHTML"), 'insurance summary should render in Contacts & safety');
 assert.ok(html.includes('id="pane-safety"') && JSON.parse(fs.readFileSync('locales/he.json','utf8')).ui['tab.safety']==='מדריך שטח', 'insurance summary should be reachable under the Hebrew Field Guide tab');
-const insuranceBudget=itinerary.budget.find(item=>item.currency==='USD');
-assert.equal(insuranceBudget.amount,47.04);
-assert.equal(insuranceBudget.actual,47.04);
-assert.equal(insuranceBudget.min,0);
-assert.equal(insuranceBudget.max,0);
-assert.ok(app.includes("filter(x=>!x.currency||x.currency==='EUR')"), 'non-EUR actuals stay outside the euro totals');
+// Budget: paid items hold an exact amount in their own currency; trip items hold a EUR planning range split across the days.
+const budgetById=Object.fromEntries(itinerary.budget.map(item=>[item.id,item]));
+for(const item of itinerary.budget){
+  assert.ok(item.id&&item.label&&item.summary&&item.note,`${item.label}: budget item needs id, label, summary and note`);
+  assert.ok(['paid','trip'].includes(item.group),`${item.label}: unknown budget group`);
+  if(item.group==='paid')assert.ok(item.amount>0&&!('min' in item),`${item.label}: paid items carry an exact amount`);
+  else assert.ok(item.min>=0&&item.max>=item.min&&!('amount' in item),`${item.label}: trip items carry a min–max range`);
+}
+assert.equal(budgetById.insurance.currency,'USD');
+assert.equal(budgetById.insurance.amount,policy.premiumAmount);
+assert.equal(budgetById.insurance.ils,policy.premiumIlsEquivalent);
+assert.equal(budgetById.flights.currency,'ILS');
+assert.equal(budgetById.flights.amount,itinerary.flightPayment.amount);
+assert.deepEqual([budgetById.rental.amount,budgetById.conte.amount,budgetById.runolist.amount],[362,271.93,itinerary.cashTracker.target]);
+assert.equal(budgetById.runolist.kind,'unconfirmed','Runolist balance stays flagged until the host confirms it');
+assert.ok(itinerary.fx.EURILS>0&&itinerary.fx.USDILS>0&&/^\d{4}-\d{2}-\d{2}$/.test(itinerary.fx.asOf),'budget conversion rates need values and a date');
+assert.deepEqual(itinerary.budgetDays.map(d=>d.day),itinerary.routes.primary.days.map(d=>d.day),'one budget row per itinerary day');
+for(const item of itinerary.budget.filter(x=>x.group==='trip')){
+  const [lo,hi]=itinerary.budgetDays.reduce(([a,b],d)=>{const [x,y]=d.costs[item.id]||[0,0];return [a+x,b+y];},[0,0]);
+  assert.ok(lo<=item.min&&hi<=item.max,`${item.label}: day allocations (€${lo}–${hi}) exceed the category range`);
+}
+for(const d of itinerary.budgetDays)for(const id of Object.keys(d.costs))assert.equal(budgetById[id]?.group,'trip',`day ${d.day}: unknown budget category ${id}`);
+assert.ok(app.includes('function renderBudget()')&&html.includes('id="budgetDays"'),'budget renders summary, groups and day table');
 assert.ok(css.includes('@media (orientation:landscape)') && css.includes('flex-direction:row-reverse'));
 assert.ok(css.includes('@media (orientation:landscape) and (max-height:500px)'));
 assert.ok(css.includes('--side-half:min(440px,42vw)') && css.includes('body[data-map-state="half"]{padding-inline-end:calc(var(--side-half)'));

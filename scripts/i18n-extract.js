@@ -8,8 +8,8 @@ const path = require('node:path');
 const { splitSentences } = require('../timetable.js');
 
 const root = path.resolve(__dirname, '..');
-const TEXT_KEYS = new Set(['text', 'title', 'date', 'region', 'drive', 'parking', 'cash', 'heading', 'slot', 'specialty', 'hours', 'plan', 'why', 'dates', 'label', 'note', 'status', 'amenities', 'checkIn', 'room', 'checkout', 'price', 'payment', 'cancellation', 'confirmation']);
-const SKIP_BRANCHES = new Set(['leg', 'driveMin', 'cashTracker', 'flightPayment']);
+const TEXT_KEYS = new Set(['text', 'title', 'date', 'region', 'drive', 'parking', 'cash', 'heading', 'slot', 'specialty', 'hours', 'plan', 'why', 'dates', 'label', 'note', 'status', 'amenities', 'checkIn', 'room', 'checkout', 'price', 'payment', 'cancellation', 'confirmation', 'summary']);
+const SKIP_BRANCHES = new Set(['leg', 'driveMin', 'cashTracker', 'flightPayment', 'fx', 'costs']);
 
 function extractUnits(itinerary) {
   const units = new Set();
@@ -17,7 +17,7 @@ function extractUnits(itinerary) {
   (function walk(node, key) {
     if (Array.isArray(node)) {
       if (key === 'sources') { for (const [name] of node) add(name); return; }
-      if (key === 'tags') { node.forEach(add); return; }
+      if (key === 'tags' || key === 'onTheSpot') { node.forEach(add); return; }
       if (key === 'stops') return;
       node.forEach(item => walk(item, key));
       return;

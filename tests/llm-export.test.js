@@ -42,8 +42,8 @@ for (const day of itinerary.routes.primary.days) {
 }
 assert.ok(text.includes('13:50–14:30 · LOGISTICS · Land at Tivat'), 'segments carry computed timetable clock times');
 assert.ok(text.includes('Travel insurance') && text.includes('46388612426') && text.includes('IMA · Medical Assistance'), 'plain-text export must include the confirmed insurance summary and assistance contacts');
-assert.ok(text.includes('USD 47.04 actual') && text.includes('₪144.22 equivalent per policy'), 'insurance premium must stay in USD, separate from the EUR subtotal');
-assert.ok(!text.includes('EUR planning range €0–€0'), 'non-EUR actuals must not be represented as EUR budget ranges');
+assert.ok(text.includes('USD 47.04 (₪144.22 recorded)') && text.includes('₪144.22 equivalent per policy') && text.includes('ILS 2616.81'), 'non-EUR charges keep their original currency next to the EUR conversion');
+assert.ok(!text.includes('€0–€0 · paid'), 'paid charges must not be represented as EUR budget ranges');
 
 // The HTML copy carries the same content, escaped.
 assert.ok(html.includes('<h2>') && html.includes('Runolist Chalet') && !html.includes('<script'), 'embedded HTML');

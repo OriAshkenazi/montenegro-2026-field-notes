@@ -1454,67 +1454,181 @@
   },
   "budget": [
     {
-      "label": "Travel insurance · Migdal policy",
-      "currency": "USD",
-      "amount": 47.04,
-      "actual": 47.04,
-      "min": 0,
-      "max": 0,
-      "note": "Confirmed premium USD 47.04 (₪144.22 equivalent per policy); kept outside the EUR subtotal."
-    },
-    {
-      "label": "Lodging · 5 nights, two adults",
-      "min": 497.32,
-      "max": 497.32,
-      "note": "Confirmed actuals: Runolist €225.39 (cash-only; amount already paid/balance due not stated) + Conte €271.93 (paid in full, breakfast included). Conte cutoff/fee details are itemized in its card.",
-      "actual": 497.32
-    },
-    {
-      "label": "Rental · Europcar IGAR booking",
-      "min": 362,
-      "max": 362,
-      "note": "€362 rental booking total paid (car class IGAR, Skoda Karoq or similar). Separate €1,154 deposit is required at pickup and is not an expense; fuel/extras hold may be additional. Flexible Autos excess refund is reimbursement, not an excess waiver; supplier excess €1,089. Tire/wheel/undercarriage reimbursement is subject to policy terms and off-road exclusions.",
-      "actual": 362
-    },
-    {
+      "id": "flights",
+      "group": "paid",
+      "kind": "paid",
       "label": "Flights · confirmed card charge (2 passengers)",
       "currency": "ILS",
       "amount": 2616.81,
-      "min": 0,
-      "max": 0,
-      "note": "Approved Skygini Solutions Ltd card charge on Sep 25, 2026, per supplied screenshot. Kept in ILS; excluded from the EUR subtotal."
+      "summary": "Card charge approved Sep 25, 2026 · 2 passengers.",
+      "note": "Approved Skygini Solutions Ltd card charge on Sep 25, 2026, per supplied screenshot. Charged in ILS; converted to euros only for the trip totals."
     },
     {
+      "id": "insurance",
+      "group": "paid",
+      "kind": "paid",
+      "label": "Travel insurance · Migdal policy",
+      "currency": "USD",
+      "amount": 47.04,
+      "ils": 144.22,
+      "summary": "Both travellers, Oct 1–6, adventure-sports extension included.",
+      "note": "Confirmed premium USD 47.04 (₪144.22 equivalent per policy); the ₪ figure is used for the trip totals."
+    },
+    {
+      "id": "rental",
+      "group": "paid",
+      "kind": "paid",
+      "label": "Rental · Europcar IGAR booking",
+      "amount": 362,
+      "summary": "Skoda Karoq or similar, Tivat Airport pickup and return.",
+      "note": "€362 rental booking total paid (car class IGAR, Skoda Karoq or similar). Separate €1,154 deposit is required at pickup and is not an expense; fuel/extras hold may be additional. Flexible Autos excess refund is reimbursement, not an excess waiver; supplier excess €1,089. Tire/wheel/undercarriage reimbursement is subject to policy terms and off-road exclusions."
+    },
+    {
+      "id": "conte",
+      "group": "paid",
+      "kind": "paid",
+      "label": "Conte Hotel & Restaurant · 2 nights",
+      "amount": 271.93,
+      "summary": "Oct 4–6 · paid in full · breakfast included.",
+      "note": "Classic Double Room for 2 adults. Cancellation terms and cutoff details are itemized in its stay card."
+    },
+    {
+      "id": "runolist",
+      "group": "paid",
+      "kind": "unconfirmed",
+      "label": "Runolist Chalet · 3 nights",
+      "amount": 225.39,
+      "summary": "Oct 1–4 · cash only at the property; the booking does not say how much is already paid.",
+      "note": "Two-Bedroom House for 2 adults. Ask the host at check-in whether a balance is due; if it is, settle it in cash at checkout on Oct 4."
+    },
+    {
+      "id": "fuel",
+      "group": "trip",
+      "kind": "estimate",
       "label": "Fuel + tolls",
       "min": 165,
       "max": 280,
+      "summary": "Five mountain and coast driving days, full-to-full return, €2.50 Sozina toll.",
       "note": "Planning range includes Oct 4 Perast–Kotor out-and-back and Oct 5 Perast–Kotor–Lovćen/Kuk–Virpazar–Perast loop, plus existing transfers and northern outings. Add the official €2.50 Category II Sozina toll for the return; recheck tariff and fuel price before travel. Mileage depends on live routing; no ferry/A1 toll planned."
     },
     {
+      "id": "parks",
+      "group": "trip",
+      "kind": "estimate",
       "label": "Parks + boat + walls + spa",
       "min": 270,
       "max": 470,
+      "summary": "Admissions for two, Kuk gondola and coaster, Skadar cruise; walls and spa optional.",
       "note": "Planning allowance for two-person admissions, Kotor walls (optional) and optional spa. Add €90 for two standard return gondola tickets (€25 each), two Alpine Coaster rides (€12 each) and two adult Njegoš Mausoleum tickets (€8 each). Skadar day admission is €5/person and the current NP tariff lists one cruise included; confirm the selected sailing is covered and add an operator fee only when quoted. Other park tickets/services remain estimates; recheck before travel."
     },
     {
+      "id": "food",
+      "group": "trip",
+      "kind": "estimate",
       "label": "Food & drink",
       "min": 450,
       "max": 750,
+      "summary": "Two people, including one winery or local tasting.",
       "note": "€90–150 per couple per day, including one winery/local tasting allowance."
     },
     {
+      "id": "contingency",
+      "group": "trip",
+      "kind": "estimate",
       "label": "Contingency cash",
       "min": 200,
       "max": 300,
+      "summary": "Weather reroutes, price surprises and unplanned fees.",
       "note": "Carry €100–150 in small cash notes; reserve total also covers weather reroutes, fuel and unplanned fees."
     },
     {
+      "id": "zipline",
+      "group": "trip",
+      "kind": "optional",
       "label": "Tara zipline · optional and unconfirmed",
       "min": 0,
       "max": 90,
+      "summary": "Only if the operator confirms a bridge-free option on Oct 3.",
       "note": "Not included in the minimum. Operator lists Red Rock at €20/person, but its return crosses the bridge closed through Oct 26. Yellow/Extreme return transport is included; verify Oct 3 operation, bridge-free launch/access and current prices directly before booking."
     }
   ],
+  "budgetDays": [
+    {
+      "day": 1,
+      "costs": {
+        "fuel": [40, 65],
+        "food": [60, 100]
+      },
+      "onTheSpot": [
+        "Europcar deposit hold €1,154 on the main driver’s credit card at pickup; it is released after return and is not spending.",
+        "Ask Runolist at check-in whether any of the €225.39 is still due."
+      ]
+    },
+    {
+      "day": 2,
+      "costs": {
+        "fuel": [25, 45],
+        "parks": [12, 20],
+        "food": [80, 130]
+      },
+      "onTheSpot": [
+        "Coins for Black Lake parking (€1.20/hour) and Durmitor admission at €5/person."
+      ]
+    },
+    {
+      "day": 3,
+      "costs": {
+        "fuel": [35, 60],
+        "parks": [8, 20],
+        "food": [90, 150],
+        "zipline": [0, 90]
+      },
+      "onTheSpot": [
+        "Biogradska Gora admission €4/person in cash; boats €10/hour.",
+        "Zipline only if booked and confirmed."
+      ]
+    },
+    {
+      "day": 4,
+      "costs": {
+        "fuel": [35, 55],
+        "parks": [10, 45],
+        "food": [100, 160]
+      },
+      "onTheSpot": [
+        "Settle any Runolist balance in cash at checkout (up to €225.39).",
+        "Kotor Old Town parking; Kotor walls optional."
+      ]
+    },
+    {
+      "day": 5,
+      "costs": {
+        "fuel": [25, 45],
+        "parks": [100, 120],
+        "food": [100, 170]
+      },
+      "onTheSpot": [
+        "Njegoš Mausoleum €8/adult, gondola €25 and Alpine Coaster €12 per person.",
+        "Skadar park ticket €5/person; Sozina toll €2.50."
+      ]
+    },
+    {
+      "day": 6,
+      "costs": {
+        "fuel": [5, 10],
+        "food": [20, 40]
+      },
+      "onTheSpot": [
+        "Refuel within 5 km of the airport and keep the receipt; the deposit hold is released after return."
+      ]
+    }
+  ],
+  "fx": {
+    "EURILS": 3.4857,
+    "USDILS": 3.072,
+    "asOf": "2026-09-29",
+    "source": "Bank of Israel representative rates"
+  },
   "cashTracker": {
     "target": 225.39,
     "storageKey": "montenegro-cash-2026"

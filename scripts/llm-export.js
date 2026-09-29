@@ -225,16 +225,39 @@ function buildDocument(inputs) {
 
   h(2, 'Budget');
   p(`${ui['budget.eyebrow']}. ${ui['budget.intro']}`);
-  ul(trip.budget.map(b => ({
-    text: inl(bold(b.label), ' — ', b.currency && b.currency !== 'EUR' ? `${b.currency} ${Number(b.amount).toLocaleString('en-US', { minimumFractionDigits: 2 })}${b.actual !== undefined ? ' actual' : ''}` : b.actual !== undefined ? `€${b.actual} actual (range €${b.min}–€${b.max})` : `€${b.min}–€${b.max}`),
-    children: compact([field('Note', b.note), ...rest(b, ['label', 'min', 'max', 'note', 'actual', 'currency', 'amount'])])
-  })));
-  const eurMin = trip.budget.filter(b => !b.currency || b.currency === 'EUR').reduce((n, b) => n + b.min, 0);
-  const eurMax = trip.budget.filter(b => !b.currency || b.currency === 'EUR').reduce((n, b) => n + b.max, 0);
-  p(bold('EUR total:'), ` €${eurMin.toFixed(2)}–€${eurMax.toFixed(2)} (${ui['budget.total']}). ${ui['budget.note']}`);
+  const fx = trip.fx, money = v => Number(v).toFixed(2);
+  const ils = b => b.currency === 'ILS' ? b.amount : b.ils ?? (b.currency === 'USD' ? b.amount * fx.USDILS : b.amount * fx.EURILS);
+  const eur = b => !b.currency || b.currency === 'EUR' ? b.amount : ils(b) / fx.EURILS;
+  const original = b => b.currency && b.currency !== 'EUR' ? `${b.currency} ${money(b.amount)}${b.ils !== undefined ? ` (₪${money(b.ils)} recorded)` : ''} ≈ €${money(eur(b))}` : `€${money(b.amount)}`;
+  const budgetItem = (b, amount) => ({
+    text: inl(bold(b.label), ' — ', amount, ` · ${b.kind}`),
+    children: compact([field('Summary', b.summary), field('Details', b.note), ...rest(b, ['id', 'group', 'kind', 'label', 'summary', 'note', 'currency', 'amount', 'ils', 'min', 'max'])])
+  });
+  const paid = trip.budget.filter(b => b.group === 'paid'), spend = trip.budget.filter(b => b.group === 'trip');
+  const paidEur = paid.filter(b => b.kind === 'paid').reduce((n, b) => n + eur(b), 0), pendingEur = paid.filter(b => b.kind !== 'paid').reduce((n, b) => n + eur(b), 0);
+  const tripMin = spend.reduce((n, b) => n + b.min, 0), tripMax = spend.reduce((n, b) => n + b.max, 0), allMin = paidEur + pendingEur + tripMin, allMax = paidEur + pendingEur + tripMax;
+  ul([field(ui['budget.tile.paid'], `€${money(paidEur)} (₪${money(paidEur * fx.EURILS)}) + €${money(pendingEur)} unconfirmed`),
+    field(ui['budget.tile.trip'], `€${money(tripMin)}–€${money(tripMax)}`),
+    field(ui['budget.tile.all'], `€${money(allMin)}–€${money(allMax)} (₪${money(allMin * fx.EURILS)}–₪${money(allMax * fx.EURILS)})`),
+    field('Exchange rates', `${fx.source}, ${fx.asOf}: EUR 1 = ₪${fx.EURILS} · USD 1 = ₪${fx.USDILS}`)]);
+  h(3, `${ui['budget.paid.head']} (paid)`);
+  ul(paid.map(b => budgetItem(b, original(b))));
+  h(3, `${ui['budget.trip.head']} (trip)`);
+  ul(spend.map(b => budgetItem(b, `€${b.min}–€${b.max}`)));
+  h(3, ui['budget.days.head']);
+  p(ui['budget.days.intro']);
+  const labelOf = id => (trip.budget.find(b => b.id === id) || {}).label || id;
+  ul(trip.budgetDays.map(d => {
+    const day = route.days.find(x => Number(x.day) === d.day) || {};
+    const [lo, hi] = Object.values(d.costs).reduce(([a, b], [x, y]) => [a + x, b + y], [0, 0]);
+    return { text: inl(bold(`Day ${d.day}${day.date ? ` · ${day.date}` : ''}`), ` — €${lo}–€${hi}`),
+      children: compact([field('Breakdown', Object.entries(d.costs).map(([id, [x, y]]) => `${labelOf(id)} €${x}–€${y}`).join(' · ')), ...d.onTheSpot.map(s => field(ui['budget.days.pay'], s))]) };
+  }));
+  p(ui['budget.note']);
   const fp = trip.flightPayment;
   ul([field('Flight payment', `${fp.currency} ${fp.amount} · ${fp.status} · merchant ${fp.merchant} · ${fp.date} · ${fp.passengers} passengers${rest(fp, ['amount', 'currency', 'status', 'merchant', 'date', 'passengers']).map(r => ' · ' + mdInline(r)).join('')}`),
-    field(ui['cash.eyebrow'], `${ui['cash.head']} — ${ui['cash.note']} Cash target €${trip.cashTracker.target} (the app lets you mark it as carried on your device, stored under “${trip.cashTracker.storageKey}”).${rest(trip.cashTracker, ['target', 'storageKey']).map(r => ' ' + mdInline(r)).join('')}`)]);
+    field(ui['cash.eyebrow'], `${ui['cash.head']} — ${ui['cash.body']} ${ui['cash.note']} Cash target €${trip.cashTracker.target} (the app lets you mark it as carried on your device, stored under “${trip.cashTracker.storageKey}”).${rest(trip.cashTracker, ['target', 'storageKey']).map(r => ' ' + mdInline(r)).join('')}`),
+    field(ui['cash.holdsHead'], ui['cash.holds'])]);
 
   h(2, 'Travel insurance');
   const policy=trip.insurancePolicy;
