@@ -6,6 +6,7 @@ const crypto = require('node:crypto');
 const { minify: minifyHtml } = require('html-minifier-terser');
 const CleanCSS = require('clean-css');
 const terser = require('terser');
+const { buildExports } = require('./llm-export');
 
 const root = path.resolve(__dirname, '..');
 const output = path.join(root, 'dist');
@@ -56,7 +57,21 @@ async function build() {
     content = content.replace(/rev=[^&"']+/g, `rev=${revision}`);
     fs.writeFileSync(path.join(output, name), content);
   }
-  process.stdout.write(`Built ${sourceFiles.length} production assets in dist/ (revision ${revision}, cache ${cacheVersion}).\n`);
+  // Plain-text copies of the trip for chatbots and other readers that do not run JavaScript.
+  const { markdown, html, jsonLd, llmsTxt } = buildExports();
+  fs.writeFileSync(path.join(output, 'trip.md'), markdown);
+  fs.writeFileSync(path.join(output, 'llms-full.txt'), markdown);
+  fs.writeFileSync(path.join(output, 'llms.txt'), llmsTxt);
+  // Without this GitHub Pages runs Jekyll, which turns trip.md into HTML instead of serving it.
+  fs.writeFileSync(path.join(output, '.nojekyll'), '');
+  const indexPath = path.join(output, 'index.html');
+  const placeholder = '<article id="trip-text" class="trip-text" lang="en" dir="ltr"></article>';
+  let index = fs.readFileSync(indexPath, 'utf8');
+  if (!index.includes(placeholder)) throw new Error('index.html is missing the #trip-text placeholder');
+  const ld = JSON.stringify(jsonLd).replace(/</g, '\\u003c');
+  index = index.replace(placeholder, () => placeholder.replace('></article>', `>${html}</article>`)).replace('</head>', () => `<script type="application/ld+json">${ld}</script></head>`);
+  fs.writeFileSync(indexPath, index);
+  process.stdout.write(`Built ${sourceFiles.length} production assets plus trip.md, llms.txt and llms-full.txt in dist/ (revision ${revision}, cache ${cacheVersion}).\n`);
 }
 
 build().catch(error => { process.stderr.write(`${error.stack || error}\n`); process.exitCode = 1; });

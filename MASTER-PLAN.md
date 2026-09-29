@@ -15,4 +15,6 @@ The service worker caches the static app shell, itinerary data, waypoint metadat
 
 Use Node 16 and the checked-in npm lockfile. Run `npm ci` for setup and `npm run verify` for JavaScript/HTML lint, data and navigation checks, the existing waypoint/weather tests, optimized `dist/` generation, and the production smoke check. The build minifies HTML, CSS, and JavaScript and synchronizes asset revisions with the service-worker cache version.
 
+The build also writes `trip.md` (with an identical `llms-full.txt`) and `llms.txt` from `scripts/llm-export.js`, embeds the same trip text and Schema.org `TouristTrip` JSON-LD in `index.html` for readers that do not run JavaScript, and adds `.nojekyll` so GitHub Pages serves the Markdown as-is. `tests/llm-export.test.js` fails if any value in `itinerary.json` or `waypoints.json` is missing from `trip.md`; new fields fall through to a generic line until they get a proper renderer.
+
 Publish the contents of `dist/` at the root of the `gh-pages` branch. GitHub Pages serves the app at `https://oriashkenazi.github.io/montenegro-2026-field-notes/`.
