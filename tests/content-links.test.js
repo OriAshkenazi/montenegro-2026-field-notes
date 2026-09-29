@@ -71,6 +71,7 @@ for (const field of ['p.tip', 'p.address', 'p.phone']) assert.ok(!popup.includes
 assert.ok(!html.includes('Master schedule') && !html.includes('id="schedule"'), 'duplicate master schedule must be removed');
 assert.ok(!html.includes('id="groundTips"') && !html.includes('id="routeWarningText"'), 'duplicate global ground and route warning blocks must be removed');
 assert.ok(!html.includes('class="notice"'), 'duplicate route warning banner must be removed');
+for (const [, id] of app.matchAll(/\$\('#([\w-]+)'\)\.innerHTML\s*=/g)) assert.ok(html.includes(`id="${id}"`), `#${id}: app.js renders into it, so index.html must keep the element`);
 assert.ok(!('primaryNotice' in itinerary) && !('crucialGroundTips' in route) && !('foodNotes' in itinerary), 'duplicated global content must be removed from the data model');
 
 console.log(`PASS: ${route.days.length} timeline days, ${timelineIds.size} segment anchors, ${foodCount} food references, ${waypoints.length} compact waypoints, and auxiliary cross-links`);
