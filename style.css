@@ -723,3 +723,8 @@ html[data-lang="he"]:not(.i18n-ready) body{visibility:hidden}
 .view-bar{padding:var(--sp-2) 0;margin:calc(var(--sp-2) - var(--tabs-mb)) 0 var(--sp-2);border-bottom:0;transition:box-shadow var(--dur-fast) var(--ease)}
 .view-bar.stuck{box-shadow:0 1px 0 var(--border)}
 @media (orientation:landscape) and (max-height:500px){.view-bar{padding:var(--sp-1) 0;margin:calc(var(--sp-1) - var(--tabs-mb)) 0 var(--sp-1)}}
+
+/* Budget total: the label keeps a readable width and the range never breaks mid-number; on narrow screens the range drops below the label. */
+.budget-total{flex-wrap:wrap;align-items:baseline}
+.budget-total>span{flex:1 1 200px;min-width:0}
+.budget-total strong{white-space:nowrap}
