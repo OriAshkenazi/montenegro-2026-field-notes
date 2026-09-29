@@ -106,10 +106,10 @@ main{max-width:1200px;margin:auto;padding:0 var(--sp-8) calc(var(--sheet-handle)
 .art-caption .location-link{color:#f5f4e9}
 
 /* Section tabs: sticky, thumb-reachable, scroll-snap on narrow screens */
-.tabs{position:sticky;top:0;z-index:950;display:flex;gap:var(--sp-6);height:var(--tabs-h);align-items:stretch;border-bottom:1px solid var(--border);margin:0 calc(-1 * var(--sp-8)) var(--sp-7);padding:0 var(--sp-8);background:var(--surface-0);overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;scroll-padding-inline:var(--sp-8);scrollbar-width:none}
+.tabs{position:sticky;top:0;z-index:950;display:flex;gap:var(--sp-6);height:var(--tabs-h);align-items:stretch;border-bottom:1px solid var(--border);margin:0 calc(-1 * var(--sp-8)) var(--sp-7);padding:0 var(--sp-8);background:var(--surface-0);overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;touch-action:pan-x pan-y;scroll-snap-type:x proximity;scroll-padding-inline:var(--sp-8);scrollbar-width:none}
 .tabs::-webkit-scrollbar{display:none}
 .tab{position:relative;flex:0 0 auto;min-height:var(--tap);background:none;border:0;color:var(--text-3);padding:0 2px;font:600 var(--fs-base) var(--sans);cursor:pointer;scroll-snap-align:start;transition:color var(--dur-fast) var(--ease)}
-.tab::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:3px;border-radius:3px 3px 0 0;background:var(--accent-fill);transform:scaleX(0);transition:transform var(--dur) var(--ease)}
+.tab::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;border-radius:3px 3px 0 0;background:var(--accent-fill);transform:scaleX(0);transition:transform var(--dur) var(--ease)}
 .tab:hover{color:var(--text-1)}
 .tab.active{color:var(--text-1)}
 .tab.active::after{transform:scaleX(1)}
