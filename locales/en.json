@@ -452,6 +452,16 @@
   "glance.money.power": "50 Hz · plug types C and F",
   "glance.money.tip": "tip in restaurants, optional",
   "glance.money.dial": "country code for calls to Montenegro",
+  "glance.park": "Parking · street zones",
+  "glance.park.rate": "per hour on a typical Zona I plate",
+  "glance.park.hours": "charged hours on that plate; read each one",
+  "glance.park.fine": "fine a traveller got for not paying",
+  "glance.park.sign": "A blue P with a red ZONA plate underneath means paid street parking. The plate sets the hours: the one pictured charges weekdays and Saturday 07–21, but some towns also charge on Sunday until 22:00.",
+  "glance.park.sms": "We cannot pay by SMS. The number on the plate (e.g. 14558) is a Montenegrin short code that Israeli roaming lines and data-only eSIMs cannot reach.",
+  "glance.park.card": "What we do: buy parking scratch cards (parking karta) at a Tobacco S Press kiosk in each town where we park on the street. Cards are sold per town. Scratch off the date and time and leave them face-up on the dashboard; one per hour.",
+  "glance.park.lots": "Signed lots (Black Lake, Perast entrance, Kotor Old Town) have their own payment: booth, attendant or meter. Carry coins and small notes.",
+  "glance.park.simopt": "Want to pay by SMS? A Telekom or One tourist eSIM (€15, 500 GB, 15 days, bought online before the flight) is a real Montenegrin number that can send the parking SMS, alongside the Israeli line. Parking is charged to prepaid credit, so top up a few euros (dopuna) beyond the data bundle. Telekom has the widest mountain coverage.",
+  "glance.park.pay": "Got a ticket? Pay it at a post office or the town parking office before leaving; unpaid fines can come back through Europcar.",
   "pack.hint": "Tap any item to edit it"
  }
 }
