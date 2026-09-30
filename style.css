@@ -379,7 +379,8 @@ table.budget-day-table{min-width:0;background:var(--surface-1);border:1px solid 
 .packing-status small{color:var(--text-3);font-size:var(--fs-sm)}
 .packing-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-3);align-items:start}
 .packing-card{padding:var(--sp-4) var(--sp-5) var(--sp-2)}
-.packing-card header{display:flex;align-items:center;gap:var(--sp-2);border-bottom:1px solid var(--border);padding-bottom:var(--sp-1)}
+/* Bag name stays pinned under the tab bar while its card is on screen. */
+.packing-card header{position:sticky;top:var(--tabs-h);z-index:900;display:flex;align-items:center;gap:var(--sp-2);margin:calc(-1 * var(--sp-4)) calc(-1 * var(--sp-5)) 0;padding:var(--sp-3) var(--sp-5) var(--sp-1);background:var(--surface-1);border-bottom:1px solid var(--border);border-radius:var(--r-md) var(--r-md) 0 0}
 .packing-card ul{list-style:none;margin:0;padding:0}
 .packing-card li+li{border-top:1px solid var(--border)}
 .pack-title,.pack-text{flex:1;min-width:0;margin:0;border:0;border-radius:var(--r-sm);background:transparent;color:var(--text-1);outline:0;padding:var(--sp-2) var(--sp-1);font:16px/var(--lh-body) var(--sans)}
