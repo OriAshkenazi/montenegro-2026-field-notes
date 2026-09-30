@@ -1535,10 +1535,10 @@
       "id": "contingency",
       "group": "trip",
       "kind": "estimate",
-      "label": "Contingency cash",
+      "label": "Contingency reserve",
       "min": 200,
       "max": 300,
-      "summary": "Weather reroutes, price surprises and unplanned fees.",
+      "summary": "Weather reroutes, price surprises and unplanned fees; carry €100–150 of it as small cash notes.",
       "note": "Carry €100–150 in small cash notes; reserve total also covers weather reroutes, fuel and unplanned fees."
     },
     {
