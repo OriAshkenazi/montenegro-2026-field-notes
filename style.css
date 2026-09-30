@@ -864,3 +864,7 @@ html[data-lang="he"]:not(.i18n-ready) body{visibility:hidden}
 .fg-section .stay-grid{margin-bottom:var(--sp-3)}
 .stay-actions{display:flex;flex-wrap:wrap;gap:var(--sp-4)}
 @media (orientation:landscape) and (max-height:500px){.fg-nav{padding:var(--sp-1) 0}.fg-nav button{min-height:36px}}
+.day-picks{border-inline-start-color:var(--link);background:transparent}
+.day-picks h3{color:var(--link)}
+.day-picks li{padding:var(--sp-1) 0}
+.day-picks a{color:var(--link);font:600 var(--fs-sm) var(--sans)}
