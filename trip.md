@@ -1,6 +1,6 @@
 # Montenegro · Field Notes — Between the mountains & sea.
 
-This is the complete plain-text version of the Montenegro Field Notes trip app (https://oriashkenazi.github.io/montenegro-2026-field-notes/). It contains every entry of the itinerary, food and provisions, stays, insurance, budget, emergency numbers, map waypoints and sources, generated from the same data the app uses. Plan data updated 2026-09-29; sources checked 2026-09-28. Clock times are the app’s computed timetable (fixed times plus drive and dwell durations); items without a clock time are listed under their part of the day.
+This is the complete plain-text version of the Montenegro Field Notes trip app (https://oriashkenazi.github.io/montenegro-2026-field-notes/). It contains every entry of the itinerary, food and provisions, stays, insurance, budget, emergency numbers, map waypoints and sources, generated from the same data the app uses. Plan data updated 2026-09-30; sources checked 2026-09-28. Clock times are the app’s computed timetable (fixed times plus drive and dwell durations); items without a clock time are listed under their part of the day.
 
 - **Trip:** Montenegro · 01—06 October 2026 · A six-day routebook · two travelers
 - **Dates:** 2026-10-01 to 2026-10-06 (6 days, 5 nights)
@@ -18,10 +18,10 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 
 - Trip at a glance
 - Stays
-- Day 1 · Tivat → Runolist Chalet / direct northbound mountain transfer (Thu · Oct 1)
+- Day 1 · Tivat → Nikšić break → Runolist Chalet / northbound mountain transfer (Thu · Oct 1)
 - Day 2 · Black Lake / P14-Sedlo / Trsa / Plužine and Piva (Fri · Oct 2)
 - Day 3 · Tara Canyon access check / Kolašin / Biogradska Gora (Sat · Oct 3)
-- Day 4 · Runolist transfer → Perast bags secured → Kotor Old Town (Sun · Oct 4)
+- Day 4 · Runolist → Nikšić coffee → Risan mosaics → Perast bags secured → Kotor Old Town (Sun · Oct 4)
 - Day 5 · Kotor espresso / Njegoš Mausoleum / Kuk coaster / Skadar boat circuit (Mon · Oct 5)
 - Day 6 · Perast → TIV / rental return / flight home (Tue · Oct 6)
 - Quick status checks
@@ -37,10 +37,10 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 
 | Day | Date | Region | Base | Adjusted driving |
 | --- | --- | --- | --- | --- |
-| 1 | Thu · Oct 1 (2026-10-01) | North · Tivat → Žabljak | Runolist Chalet · Žabljak | 4.6 h |
+| 1 | Thu · Oct 1 (2026-10-01) | North · Tivat → Žabljak | Runolist Chalet · Žabljak | 4.4 h |
 | 2 | Fri · Oct 2 (2026-10-02) | North · Žabljak / Durmitor / Piva | Runolist Chalet · Žabljak | 3.9 h |
 | 3 | Sat · Oct 3 (2026-10-03) | North · Tara Canyon / Mojkovac / Kolašin / Biogradska Gora | Runolist Chalet · Žabljak | 5.7 h |
-| 4 | Sun · Oct 4 (2026-10-04) | North → Coast · Perast / Kotor | Conte Hotel & Restaurant · Perast | 5.3 h |
+| 4 | Sun · Oct 4 (2026-10-04) | North → Coast · Perast / Kotor | Conte Hotel & Restaurant · Perast | 5.2 h |
 | 5 | Mon · Oct 5 (2026-10-05) | Coast / Central · Perast → Lovćen → Skadar → Perast | Conte Hotel & Restaurant · Perast | 5.5 h |
 | 6 | Tue · Oct 6 (2026-10-06) | Coast · Tivat Airport | Conte Hotel & Restaurant · Perast | 0.7 h |
 
@@ -81,14 +81,14 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - **Amenities:** Breakfast included in this booking; hotel-published breakfast hours 08:00–10:30.
 - **Map:** [google.com](https://www.google.com/maps/dir/?api=1&destination=Conte%20Hotel%20%26%20Restaurant%2C%20Ul.%20Marka%20Martinovi%C4%87a%20bb%2C%2085336%20Perast%2C%20Montenegro&travelmode=driving)
 
-## Day 1 · Tivat → Runolist Chalet / direct northbound mountain transfer (Thu · Oct 1)
+## Day 1 · Tivat → Nikšić break → Runolist Chalet / northbound mountain transfer (Thu · Oct 1)
 
 - **Date:** 2026-10-01
 - **Region:** North · Tivat → Žabljak
 - **Overnight base:** Runolist Chalet · Žabljak
 - **Day starts:** 13:50
-- **Driving route:** TIV → Vrmac tunnel / Kotor → M-1 to Risan / Lipci → M-8 via Grahovo → M-7 to Nikšić → M-3 to Jasenovo Polje → M-6 via Šavnik → Runolist Chalet · nominal 3 h 47 min / 4 h 33 min adjusted (+20%); live route controls
-- **Adjusted driving total:** 4.6 h (timetable drive legs sum to 4 h 33 min)
+- **Driving route:** TIV → Vrmac tunnel / Kotor → M-1 to Risan / Lipci → M-8 via Grahovo → M-7 to Nikšić (20-min fuel and restroom break) → M-3 to Jasenovo Polje → M-6 via Šavnik → Runolist Chalet · nominal 3 h 38 min / 4 h 22 min adjusted (+20%) plus the break; live route controls
+- **Adjusted driving total:** 4.4 h (timetable drive legs sum to 4 h 22 min)
 - **Interests:** Sightseeing, Food & Dining
 
 ### Morning
@@ -106,22 +106,27 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 
 ### Afternoon
 
-- **15:15–19:48 · DRIVE · Drive Tivat to Runolist via Grahovo** — Drive directly north to your Runolist Chalet via the Vrmac tunnel and Kotor, then M-1 to Risan/Lipci, M-8 via Grahovo, M-7 to Nikšić, M-3 to Jasenovo Polje and M-6 via Šavnik.
-  - **Drive time:** 227 min nominal / 273 min adjusted (source OSRM, checked 2026-09-29)
-  - **Leg:** TIV · Europcar rental pickup (Arrivals desk) → Runolist Chalet via Grahovo, Nikšić, Šavnik
+- **15:15–17:33 · DRIVE · Drive Tivat to Nikšić via Grahovo** — Drive north via the Vrmac tunnel and Kotor, then M-1 to Risan/Lipci, M-8 via Grahovo and M-7 to Nikšić.
+  - **Drive time:** 115 min nominal / 138 min adjusted (source OSRM, checked 2026-09-30)
+  - **Leg:** TIV · Europcar rental pickup (Arrivals desk) → EKO fuel station · Nikšić via Grahovo
+- **17:33–17:53 · LOGISTICS · Break at EKO fuel station, Nikšić** — Planned 20-minute break about two hours in, before sunset: fill the tank, use the restroom and pick up coffee or a snack in the station shop. It is the last easy services stop before the dark mountain section via Šavnik. Station hours are not published; if it is closed, use the Petrol station on Bulevar 13. jula, which OpenStreetMap lists as open around the clock.
+  - **Time on site:** 20 min
+- **17:53–19:57 · DRIVE · Drive Nikšić to Runolist via Šavnik** — Continue on M-3 to Jasenovo Polje and M-6 via Šavnik to Runolist Chalet. This section runs after sunset on a narrow mountain road; keep the speed down.
+  - **Drive time:** 103 min nominal / 124 min adjusted (source OSRM, checked 2026-09-30)
+  - **Leg:** EKO fuel station · Nikšić → Runolist Chalet via Šavnik
   - **CAUTION:** Check live navigation for closures or reroutes.
-  - **Note (DRIVE):** Use 3 h 47 min as a nominal routed estimate; current sources vary (published figures start near 3 h 20 min) and live traffic/weather can extend it, then add 20%: about 4 h 33 min adjusted, before traffic or stops.
-  - **Note (DRIVE):** That points to roughly 19:45–20:00 arrival.
+  - **Note (DRIVE):** Use 3 h 38 min as a nominal routed estimate; current sources vary (published figures start near 3 h 20 min) and live traffic/weather can extend it, then add 20%: about 4 h 22 min adjusted, plus the 20-minute Nikšić break, before traffic.
+  - **Note (DRIVE):** That points to roughly 20:00 arrival, including the 20-minute Nikšić break.
   - **CAUTION:** Žabljak sunset on Oct 1 is about 18:26 and civil twilight ends about 18:55, so this deliberately breaks the usual daylight cutoff.
-  - **CAUTION:** Do not add the Lepetane ferry, viewpoints, a swim, or a meal stop.
+  - **CAUTION:** The Nikšić break is the only planned stop; do not add the Lepetane ferry, viewpoints or a swim.
   - **CAUTION:** If the flight or rental is delayed, visibility/weather is poor, roads are restricted, or the driver is tired, stay at your stop safely and arrange lodging directly; resume only after a fresh road/weather and driver check and coordination with Runolist.
   - **CAUTION:** If conditions deteriorate after you leave, do not press on: stop at the next safe town, arrange lodging and secure the bags.
 
 ### Evening
 
-- **19:48–20:08 · STAY · Check in and unload at Runolist** — Check in and unload every bag.
+- **19:57–20:17 · STAY · Check in and unload at Runolist** — Check in and unload every bag.
   - **Time on site:** 20 min
-- **20:08–21:08 · EAT · Dinner at Zlatni Papagaj** — Dinner at Zlatni Papagaj after check-in (published 18:00–23:00); call ahead with your ~20:00 arrival time, and use food arranged ahead if you arrive too late or too tired.
+- **20:17–21:17 · EAT · Dinner at Zlatni Papagaj** — Dinner at Zlatni Papagaj after check-in (published 18:00–23:00); call ahead with your ~20:00 arrival time, and use food arranged ahead if you arrive too late or too tired.
   - **Time on site:** 60 min
   - **Food stop:** Zlatni Papagaj · Žabljak (details under Food & provisions for this day)
   - **CAUTION:** Skip sightseeing after arrival.
@@ -172,6 +177,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 
 - [TIV · Europcar rental pickup (Arrivals desk)](https://maps.google.com/?q=Tivat%20Airport%20car%20rental)
 - [TIV → Runolist Chalet direct route via Kotor, Risan, Grahovo, Nikšić and Šavnik](https://www.google.com/maps/dir/?api=1&origin=Tivat%20Airport%2C%20Montenegro&destination=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%2084220%20%C5%BDabljak%2C%20Montenegro&waypoints=Kotor%2C%20Montenegro%7CRisan%2C%20Montenegro%7CGrahovo%2C%20Montenegro%7CNik%C5%A1i%C4%87%2C%20Montenegro%7C%C5%A0avnik%2C%20Montenegro&travelmode=driving)
+- [EKO fuel station · Nikšić](https://www.google.com/maps/dir/?api=1&destination=42.78032,18.94057&travelmode=driving)
 - [Runolist Chalet](https://maps.google.com/?q=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%2084220%20%C5%BDabljak%2C%20Montenegro)
 - [AMSCG road conditions](https://amscg.me/en/road-conditions)
 
@@ -180,32 +186,32 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - **Date:** 2026-10-02
 - **Region:** North · Žabljak / Durmitor / Piva
 - **Overnight base:** Runolist Chalet · Žabljak
-- **Day starts:** 06:30
+- **Day starts:** 08:00
 - **Driving route:** Runolist → Black Lake → P14/R-16 over Sedlo → Trsa → Plužine/Piva → (live choice: M-3 via Nikšić and Šavnik, or return over Sedlo) → Runolist · ~3 h 53 adjusted on the Sedlo return (the M-3 return via Nikšić and Šavnik routes at about 6 h 19 adjusted and exceeds the 6 h ceiling); 6 h ceiling and daylight gates
 - **Adjusted driving total:** 3.9 h (timetable drive legs sum to 3 h 53 min)
 - **Interests:** Nature & Wildlife, Adventure & Hiking, Food & Dining
 
 ### Morning
 
-- **06:30 · STAY · Depart Runolist** — Breakfast at Runolist; leave by 06:30 with water and a packed lunch. Fill the tank and download the P14 map before leaving town.
-- **06:30–06:46 · DRIVE · Drive to Black Lake parking** — Park at the signed Black Lake lot by about 06:50. The full shore loop is about 3.6 km; allow up to 90 minutes for the walk and photos, then leave by 08:30.
+- **08:00 · STAY · Depart Runolist** — Breakfast at Runolist without rushing; leave around 08:00 with water and a packed lunch. Fill the tank and download the P14 map before leaving town.
+- **08:00–08:16 · DRIVE · Drive to Black Lake parking** — Park at the signed Black Lake lot by about 08:20. The full shore loop is about 3.6 km; allow up to 90 minutes for the walk and photos, then leave by about 10:00.
   - **Drive time:** 13 min nominal / 16 min adjusted (source OSRM, checked 2026-09-29)
   - **Leg:** Runolist Chalet → Black Lake parking
-- **06:46–08:16 · WALK · Black Lake shore loop** — Walk the Black Lake shore loop at an easy pace. The small-lake shore can be damp and slippery; use grippy shoes and turn back if footing or visibility worsens.
+- **08:16–09:46 · WALK · Black Lake shore loop** — Walk the Black Lake shore loop at an easy pace. The small-lake shore can be damp and slippery; use grippy shoes and turn back if footing or visibility worsens.
   - **Time on site:** 90 min
-- **08:16–08:36 · LOGISTICS · Espresso at Gradska Kafanica** — Espresso stop at Gradska Kafanica only if open when you pass; local listing shows 08:00, so confirm the prior evening. If closed, use coffee packed at Runolist.
+- **09:46–10:06 · LOGISTICS · Espresso at Gradska Kafanica** — Espresso stop at Gradska Kafanica as you pass back through town; the local listing shows 08:00 opening. If it is closed, use coffee packed at Runolist.
   - **Time on site:** 20 min
   - **Food stop:** Gradska Kafanica · Žabljak (details under Food & provisions for this day)
-- **08:36–10:52 · DRIVE · Drive over Sedlo to Plužine** — Continue on P14/R-16 over Sedlo to Trsa, then descend to Plužine for the Piva viewpoint and town. Roads are paved but narrow, winding two-way mountain roads; use signed pullouts and expect to wait for passing places.
+- **10:06–12:22 · DRIVE · Drive over Sedlo to Plužine** — Continue on P14/R-16 over Sedlo to Trsa, then descend to Plužine for the Piva viewpoint and town. Roads are paved but narrow, winding two-way mountain roads; use signed pullouts and expect to wait for passing places.
   - **Drive time:** 113 min nominal / 136 min adjusted (source OSRM, checked 2026-09-29)
   - **Leg:** Black Lake parking → Plužine via P14 Sedlo Pass route, Trsa village pullout
   - **CAUTION:** Before committing to P14, check AMSCG road conditions, the Sedlo forecast and the host’s local report. Proceed on the primary route if open, dry enough and free of ice/low cloud.
 
 ### Afternoon
 
-- **10:52–11:37 · SEE · Piva viewpoint and Plužine lakeside** — At Plužine, prioritize the Piva viewpoint and a short lakeside/town stop. Do not add Mratinje Dam or the cheese-farm detour.
+- **12:22–13:07 · SEE · Piva viewpoint and Plužine lakeside** — At Plužine, prioritize the Piva viewpoint and a short lakeside/town stop. Do not add Mratinje Dam or the cheese-farm detour.
   - **Time on site:** 45 min
-- **11:37–12:22 · EAT · Packed lunch at Plužine** — Use the packed lunch by default. Restoran Piva Lake is the corridor sit-down option only if called ahead and the live return estimate remains within 6 h adjusted; allow 60 minutes, confirm parking and carry cash because payment is unverified.
+- **13:07–13:52 · EAT · Packed lunch at Plužine** — Use the packed lunch by default. Restoran Piva Lake is the corridor sit-down option only if called ahead and the live return estimate remains within 6 h adjusted; allow 60 minutes, confirm parking and carry cash because payment is unverified.
   - **Time on site:** 45 min
   - **Food stop:** Restoran Piva Lake · Plužine; packed lunch is the default (details under Food & provisions for this day)
   - **Note (LOGISTICS):** Choose the return live: use M-3 via Nikšić and M-6 via Šavnik only if navigation keeps total adjusted driving ≤6 h and the Žabljak return target by 16:00. Otherwise return over Sedlo if that is the faster safe open route.
@@ -214,7 +220,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 
 ### Evening
 
-- **12:22–13:43 · DRIVE · Drive back to Runolist over Sedlo** — Return to Runolist by the 16:00 target and never continue mountain driving beyond 17:30.
+- **13:52–15:13 · DRIVE · Drive back to Runolist over Sedlo** — Return to Runolist by the 16:00 target and never continue mountain driving beyond 17:30.
   - **Drive time:** 67 min nominal / 81 min adjusted (source OSRM, checked 2026-09-29)
   - **Leg:** Plužine → Runolist Chalet via P14 Sedlo Pass route
 - **18:00–19:15 · EAT · Dinner at Zlatni Papagaj** — Dinner at Zlatni Papagaj, which publishes 18:00–23:00 service and Montenegrin dishes; call/reserve for Oct 2, ask about payment, and walk from the chalet if practical.
@@ -379,44 +385,55 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - [Kolašin · town center](https://maps.google.com/?q=Kola%C5%A1in%2C%20Montenegro)
 - [Runolist Chalet](https://maps.google.com/?q=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%20%C5%BDabljak%2C%20Montenegro)
 
-## Day 4 · Runolist transfer → Perast bags secured → Kotor Old Town (Sun · Oct 4)
+## Day 4 · Runolist → Nikšić coffee → Risan mosaics → Perast bags secured → Kotor Old Town (Sun · Oct 4)
 
 - **Date:** 2026-10-04
 - **Region:** North → Coast · Perast / Kotor
 - **Overnight base:** Conte Hotel & Restaurant · Perast
 - **Day starts:** 07:00
-- **Driving route:** Runolist Chalet → Conte / signed Perast entrance parking → Kotor Old Town → Perast · direct transfer ~3 h 37 nominal / 4 h 21 adjusted (+20%); add Kotor out-and-back and live traffic, about 5.3 h adjusted total; finish driving by 17:30.
-- **Adjusted driving total:** 5.3 h (timetable drive legs sum to 5 h 17 min)
+- **Driving route:** Runolist Chalet → Šavnik → Nikšić (coffee break at Kastel) → Grahovo → Risan (Roman Mosaics) → Conte / signed Perast entrance parking → Kotor Old Town → Perast · transfer ~3 h 33 nominal / 4 h 17 adjusted (+20%) plus about 65 minutes of planned stops; add the Kotor out-and-back and live traffic, about 5.2 h adjusted driving in total; finish driving by 17:30.
+- **Adjusted driving total:** 5.2 h (timetable drive legs sum to 5 h 13 min)
 - **Interests:** Sightseeing, Food & Dining, Coffee
 
 ### Morning
 
 - **07:00 · LOGISTICS · Check out and depart Runolist** — Breakfast, settle the Runolist checkout and be on the road by 07:00. Keep the €225.39 cash availability note exactly as booked; amount already paid/balance due is not stated.
-- **07:00–11:21 · DRIVE · Drive Runolist to Perast via Grahovo** — Drive directly via M-6 through Šavnik, M-3 to Nikšić, M-7 to Vilusi, M-8 through Grahovo/Lipci and M-1 to Perast. Do not add a sightseeing or meal detour on the transfer.
-  - **Drive time:** 217 min nominal / 261 min adjusted (source OSRM, checked 2026-09-29)
-  - **Leg:** Runolist Chalet → Perast entrance parking via Šavnik, Nikšić, Grahovo
-  - **Note (DRIVE):** Use about 3 h 37 nominal / 4 h 21 with the +20% terrain buffer, before traffic, parking and the Kotor outing. Check AMSCG road/weather notices before departure; never route across the Đurđevića Tara bridge closure.
+- **07:00–09:10 · DRIVE · Drive Runolist to Nikšić via Šavnik** — Drive via M-6 through Šavnik and M-3 to Nikšić, about 2 hours. Šavnik, about 45 minutes in, is the place for an early leg-stretch if anyone needs one.
+  - **Drive time:** 108 min nominal / 130 min adjusted (source OSRM, checked 2026-09-30)
+  - **Leg:** Runolist Chalet → Restaurant Kastel · Nikšić via Šavnik
+- **09:10–09:45 · EAT · Coffee break at Kastel, Nikšić** — Planned 35-minute break about two hours in: coffee or a light breakfast at Kastel, which lists daily 07:00–23:00 service. Park where the car stays in sight, keep the bags covered in the boot, and top up fuel on the way out of town if the tank is below half.
+  - **Time on site:** 35 min
+  - **Food stop:** Restaurant Kastel · Nikšić (details under Food & provisions for this day)
+- **09:45–11:44 · DRIVE · Drive Nikšić to Risan via Grahovo** — Continue on M-7 to Vilusi and M-8 through Grahovo, then descend to Lipci and follow M-1 along the Bay to Risan.
+  - **Drive time:** 99 min nominal / 119 min adjusted (source OSRM, checked 2026-09-30)
+  - **Leg:** Restaurant Kastel · Nikšić → Roman Mosaics · Risan via Grahovo
+- **11:44–12:14 · SEE · Roman Mosaics, Risan** — Short stop at the Roman Mosaics site in Risan: 2nd-century villa floor mosaics, including the Hypnos mosaic. Muzeji Kotor lists Tuesday–Sunday 08:00–20:00 until Oct 15 and a €6 adult ticket; reconfirm on the day. Keep the visit to 30 minutes and park where the car stays in sight; one person can stay with the bags if the parking is out of view.
+  - **Time on site:** 30 min
+- **12:14–12:22 · DRIVE · Drive Risan to Perast** — Follow M-1 around the Bay to the signed Perast entrance parking.
+  - **Drive time:** 6 min nominal / 8 min adjusted (source OSRM, checked 2026-09-30)
+  - **Leg:** Roman Mosaics · Risan → Perast entrance parking
+  - **Note (DRIVE):** The whole transfer is about 3 h 33 nominal / 4 h 17 with the +20% terrain buffer, plus about 65 minutes for the two planned stops, before traffic, parking and the Kotor outing. Check AMSCG road/weather notices before departure; never route across the Đurđevića Tara bridge closure.
   - **CAUTION:** Call Conte in advance to request secure luggage storage before the 15:00 room check-in. Storage and electric-car pickup are not confirmed; keep every bag out of the car while sightseeing.
 
 ### Afternoon
 
-- **07:00–11:21 · STAY** — Conte booking 5198999691: Classic Double Room for 2 adults, check-in Oct 4, 15:00–21:00. Total €271.93, paid in full. Preserve the recorded itemized cancellation terms and confirmation-intro conflict. Perast old town is closed to vehicles May–October; use signed entrance parking and ask reception about pickup rather than assuming it.
-- **11:21–11:51 · LOGISTICS · Park in Perast and drop luggage at Conte** — Park at a signed Perast entrance lot, walk to Conte and hand luggage to reception only if they confirm storage. If the hotel cannot secure the bags, stay in Perast and do not drive to Kotor with luggage.
+- **12:14–12:22 · STAY** — Conte booking 5198999691: Classic Double Room for 2 adults, check-in Oct 4, 15:00–21:00. Total €271.93, paid in full. Preserve the recorded itemized cancellation terms and confirmation-intro conflict. Perast old town is closed to vehicles May–October; use signed entrance parking and ask reception about pickup rather than assuming it.
+- **12:22–12:52 · LOGISTICS · Park in Perast and drop luggage at Conte** — Park at a signed Perast entrance lot, walk to Conte and hand luggage to reception only if they confirm storage. If the hotel cannot secure the bags, stay in Perast and do not drive to Kotor with luggage.
   - **Time on site:** 30 min
-- **11:51–12:19 · DRIVE · Drive to Kotor Old Town parking** — Once bags are secured, take the short M-1 run to Kotor. Park in signed Old Town parking and explore on foot; allow roughly 45–60 minutes adjusted driving for the out-and-back plus traffic.
+- **12:52–13:20 · DRIVE · Drive to Kotor Old Town parking** — Once bags are secured, take the short M-1 run to Kotor. Park in signed Old Town parking and explore on foot; allow roughly 45–60 minutes adjusted driving for the out-and-back plus traffic.
   - **Drive time:** 23 min nominal / 28 min adjusted (source OSRM, checked 2026-09-29)
   - **Leg:** Perast entrance parking → Kotor Old Town parking
-- **12:19–15:19 · LOGISTICS · Kotor Old Town: coffee, lunch, lanes** — Time-box Small Talks specialty coffee, a coastal-fish lunch in the Old Town and the old lanes to about 3 hours. Ombra lists daily service and garden/terrace seating; call to confirm Sunday service and terrace availability. Budget 75 minutes for lunch.
-  - **Time on site:** 180 min
+- **13:20–15:50 · LOGISTICS · Kotor Old Town: coffee, lunch, lanes** — Time-box Small Talks specialty coffee, a coastal-fish lunch in the Old Town and the old lanes to about 2.5 hours. Ombra lists daily service and garden/terrace seating; call to confirm Sunday service and terrace availability. Budget 75 minutes for lunch.
+  - **Time on site:** 150 min
   - **Food stop:** Ombra · Kotor (details under Food & provisions for this day)
   - **CAUTION:** Leave Kotor by 16:15 at the latest and be parked back in Perast by 17:00, with 17:30 the hard driving cutoff. Do not add the city-walls climb or another Bay town today.
-- **15:19–15:47 · DRIVE · Drive back to Perast and check in** — Return to Conte, complete check-in inside the confirmed 15:00–21:00 window and leave the car in the signed entrance lot.
+- **15:50–16:18 · DRIVE · Drive back to Perast and check in** — Return to Conte, complete check-in inside the confirmed 15:00–21:00 window and leave the car in the signed entrance lot.
   - **Drive time:** 23 min nominal / 28 min adjusted (source OSRM, checked 2026-09-29)
   - **Leg:** Kotor Old Town parking → Perast entrance parking
 
 ### Evening
 
-- **15:47–17:02 · EAT · Dinner at Conte or a Perast konoba** — Dinner at Conte or a Perast konoba, with local fish/seafood as the coastal choice. Phone Conte for a same-day table; no restaurant reservation was supplied.
+- **16:18–17:33 · EAT · Dinner at Conte or a Perast konoba** — Dinner at Conte or a Perast konoba, with local fish/seafood as the coastal choice. Phone Conte for a same-day table; no restaurant reservation was supplied.
   - **Time on site:** 75 min
   - **Food stop:** Conte Hotel & Restaurant (details under Food & provisions for this day)
   - **Note (LOGISTICS):** Keep the car parked overnight. Reconfirm tomorrow’s breakfast takeaway with Conte at least one day ahead and confirm the Skadar boat departure/return with its operator.
@@ -444,7 +461,12 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 
 **Coffee**
 
-- **Late morning · Kotor · Small Talks · Kotor** — Specialty coffee stop after parking on the Old Town visit.
+- **Morning · Nikšić break · Restaurant Kastel · Nikšić** — Traditional Montenegrin restaurant on the transfer route; coffee or a light breakfast at the halfway break.
+  - **Hours:** Official site lists Monday–Sunday 07:00–23:00; reconfirm Sunday service.
+  - **Parking:** Street parking near Karađorđeva is not verified; keep the loaded car in sight.
+  - **Map:** [maps.google.com](https://maps.google.com/?q=Kastel%2C%20Kara%C4%91or%C4%91eva%2041%2C%20Nik%C5%A1i%C4%87%2C%20Montenegro)
+  - **Source:** [kastel.me](https://kastel.me/?lang=en&page_id=11611)
+- **Afternoon · Kotor · Small Talks · Kotor** — Specialty coffee stop after parking on the Old Town visit.
   - **Hours:** Published daily 08:00–22:00; reconfirm Sunday/October service.
   - **Parking:** Park once in the Old Town lot and walk; café parking not confirmed.
   - **Map:** [maps.google.com](https://maps.google.com/?q=Small%20Talks%20specialty%20coffee%2C%20Kotor%2C%20Montenegro)
@@ -467,6 +489,8 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 ### Route and map links
 
 - [Runolist Chalet](https://maps.google.com/?q=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%20Zabljak%2C%20Montenegro)
+- [Restaurant Kastel · Nikšić](https://maps.google.com/?q=Kastel%2C%20Kara%C4%91or%C4%91eva%2041%2C%20Nik%C5%A1i%C4%87%2C%20Montenegro)
+- [Roman Mosaics · Risan](https://maps.google.com/?q=Roman%20Mosaics%2C%20Risan%2C%20Montenegro)
 - [Conte Hotel & Restaurant](https://maps.google.com/?q=Conte%20Hotel%20%26%20Restaurant%2C%20Perast%2C%20Montenegro)
 - [Perast entrance parking](https://maps.google.com/?q=Perast%20signed%20entrance%20parking%2C%20Montenegro)
 - [Kotor Old Town parking](https://maps.google.com/?q=Kotor%20Old%20Town%20parking%2C%20Montenegro)
@@ -827,7 +851,7 @@ The app’s Live weather tab loads a 16-day Open-Meteo forecast for these route 
 
 ## Map waypoints
 
-All 123 places on the app’s map (waypoints file version 3). “Days” lists the itinerary days that use each place.
+All 125 places on the app’s map (waypoints file version 3). “Days” lists the itinerary days that use each place.
 
 - **TIV · Europcar rental pickup (Arrivals desk)** — Parking · 42.4047, 18.7233 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=Tivat%20Airport%20Europcar%20Arrivals%20desk%2C%20Montenegro&travelmode=driving)
   - **Days:** 1
@@ -953,10 +977,10 @@ All 123 places on the app’s map (waypoints file version 3). “Days” lists t
   - **Days:** 4
   - **Payment:** Ask
   - **Pin precision:** Published Old Town parking coordinate
-- **Restaurant Kastel · Nikšić** — Meal · 42.7731, 18.9445 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=Restaurant%20Kastel%20%C2%B7%20Nik%C5%A1i%C4%87%2C%20Montenegro&travelmode=driving)
+- **Restaurant Kastel · Nikšić** — Meal · 42.774263, 18.9461749 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=Kastel%2C%20Kara%C4%91or%C4%91eva%2041%2C%20Nik%C5%A1i%C4%87%2C%20Montenegro&travelmode=driving)
   - **Days:** 4
   - **Payment:** Ask
-  - **Pin precision:** navigation pin
+  - **Pin precision:** OpenStreetMap venue coordinate (Karađorđeva 41)
 - **Ombra · Old Town** — Meal · 42.42499, 18.77062 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=Ombra%20%C2%B7%20Old%20Town%2C%20Montenegro&travelmode=driving)
   - **Days:** 4
   - **Payment:** Ask
@@ -1368,6 +1392,15 @@ All 123 places on the app’s map (waypoints file version 3). “Days” lists t
   - **Also called:** Dub lower station
   - **Pin precision:** Operator-published lower-station coordinate; plotted as the gondola link from Kuk.
   - **Source:** [kotorcablecar.me](https://www.kotorcablecar.me/article/traveling-by-car)
+- **EKO fuel station · Nikšić** — Parking · 42.78032, 18.94057 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=42.78032,18.94057&travelmode=driving)
+  - **Days:** 1
+  - **Payment:** Ask
+  - **Pin precision:** OpenStreetMap fuel-station coordinate
+- **Roman Mosaics · Risan** — Activity · 42.51282, 18.69704 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=Roman%20Mosaics%2C%20Risan%2C%20Montenegro&travelmode=driving)
+  - **Days:** 4
+  - **Payment:** Ask
+  - **Pin precision:** OpenStreetMap archaeological-site coordinate
+  - **Source:** [muzejikotor.me](https://muzejikotor.me/ulaznice/)
 
 ## Sources (checked 2026-09-28)
 
@@ -1433,5 +1466,7 @@ All 123 places on the app’s map (waypoints file version 3). “Days” lists t
 - [Ombra · coastal-fish menu and service hours](https://ombraoldtown.com/) — used on: Ombra · Old Town; Ombra · Kotor Old Town
 - [Small Talks · specialty coffee, Kotor](https://www.smalltalks.me/) — used on: Small Talks · Kotor
 - [AMSCG · Sozina toll](https://amscg.me/en/putarine) — used on: Day 5; Sozina Tunnel
+- [Muzeji Kotor · Roman Mosaics Risan tickets and hours](https://muzejikotor.me/ulaznice/) — used on: Roman Mosaics · Risan
+- [OpenStreetMap · EKO fuel station, Nikšić](https://www.openstreetmap.org/?mlat=42.78032&mlon=18.94057#map=18/42.78032/18.94057) — used on: EKO fuel station · Nikšić
 
 Plan version · 29 Sep 2026 · Built for the road, saved for the dead zones.
