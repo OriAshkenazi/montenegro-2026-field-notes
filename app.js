@@ -12,7 +12,7 @@ let mapStatusKey='map.status.initial',connKey='conn.ready';
 const setMapStatus=k=>{mapStatusKey=k;const el=$('#mapStatus');if(el)el.textContent=t(k);};
 const setConn=k=>{connKey=k;const el=$('#connection');if(el)el.textContent=t(k);};
 const numLocale=()=>getLang()==='he'?'he-IL':'en-IL';
-Promise.all([fetch('./itinerary.json?rev=2026-09-29l').then(r=>r.json()),fetch('./waypoints.json?rev=2026-09-29l').then(r=>r.json()),i18nReady]).then(([data,points])=>{trip=data;waypointData=points.waypoints;applyStatic();setConn(connKey);setMapStatus(mapStatusKey);cashText();render();initializeMap();setDrawer($('#mapDrawer').dataset.state);}).catch(()=>Promise.resolve(i18nReady).then(()=>{try{applyStatic();}catch(e){}$('#days').innerHTML=`<p class="offline-note">${escapeHTML(tf('err.data','Trip data is not cached yet. Open this page online once, then reload offline.'))}</p>`;$('#mapStatus').textContent=tf('map.status.noIndex','Waypoint index unavailable. Reconnect once to save it for offline use.');}));
+Promise.all([fetch('./itinerary.json?rev=2026-09-30a').then(r=>r.json()),fetch('./waypoints.json?rev=2026-09-30a').then(r=>r.json()),i18nReady]).then(([data,points])=>{trip=data;waypointData=points.waypoints;applyStatic();setConn(connKey);setMapStatus(mapStatusKey);cashText();const startDay=tripDayToday();render(new Set([startDay]));if(startDay!==1||new Date().getMonth()===9)jumpToDay(startDay);initializeMap();setDrawer($('#mapDrawer').dataset.state);}).catch(()=>Promise.resolve(i18nReady).then(()=>{try{applyStatic();}catch(e){}$('#days').innerHTML=`<p class="offline-note">${escapeHTML(tf('err.data','Trip data is not cached yet. Open this page online once, then reload offline.'))}</p>`;$('#mapStatus').textContent=tf('map.status.noIndex','Waypoint index unavailable. Reconnect once to save it for offline use.');}));
 
 function activeRoute() { return trip.routes.primary; }
 const segmentTypes = {
@@ -60,6 +60,9 @@ function renderFoodTimeline(food) {
   const rows = foodRows(food);
   return `<section class="food-timeline"><div class="food-timeline-head"><span>◌</span><div><b>${U('food.along')}</b></div></div><div class="food-stop-grid">${rows.map(x => renderFoodStop(x,x.type)).join('')}</div></section>`;
 }
+// Trip is Oct 1-6; outside those dates (local time) fall back to day 1.
+function tripDayToday(){const n=new Date(),d=n.getDate();return n.getMonth()===9&&d>=1&&d<=6&&activeRoute().days.some(x=>x.day===d)?d:1;}
+function jumpToDay(day){const card=document.getElementById('day-'+day);if(!card)return;requestAnimationFrame(()=>setTimeout(()=>card.scrollIntoView({block:'start'}),60));}
 let openDays=new Set([1]);// day numbers expanded by the next renderDays()
 function renderDays() {
   const days=activeRoute().days;
