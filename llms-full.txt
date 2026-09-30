@@ -776,16 +776,17 @@ Trip spending figures are planning ranges for two; recheck fuel and ticket price
 
 - **112** — All emergencies (tel:112)
 - **122** — Police (tel:122)
+- **123** — Fire and rescue (tel:123)
 - **124** — Medical emergency (tel:124)
 - **129** — Maritime rescue (tel:129)
 - **19807** — AMSCG roadside assistance (tel:19807)
 - **+382 40 256 084** — Mountain Rescue Service (tel:+38240256084)
 
-Field Guide Numbers, bookings and pre-departure checks · available offline.
+Field Guide Four sections, in the order you need them · works offline.
 
-- **01 · Emergency — Save these numbers.** Confirm your embassy’s current consular emergency number before travel.
-- **02 · Key contacts — Rental, stays and bookings by phone.** 
-- **03 · Before the first drive — Set up once, rely on it all week.** 
+- **undefined — undefined** 
+- **undefined — undefined** 
+- **undefined — undefined** 
 
 ## Experience index
 
@@ -1370,8 +1371,8 @@ All 123 places on the app’s map (waypoints file version 3). “Days” lists t
 
 ## Sources (checked 2026-09-28)
 
-- [Road and weather updates · AMSCG](https://amscg.me/en/road-conditions) — used on: 03 · Before the first drive
-- [Official emergency numbers · EKIP](https://www.ekip.me/important-numbers) — used on: 01 · Emergency
+- [Road and weather updates · AMSCG](https://amscg.me/en/road-conditions) — used on: setup
+- [Official emergency numbers · EKIP](https://www.ekip.me/important-numbers) — used on: emergency
 - [Tara bridge closure · Government of Montenegro](https://www.gov.me/amp/clanak/od-10-avgusta-potpuna-obustava-saobracaja-preko-mosta-durdevica-tara) — used on: Day 3; Đurđevića Tara Bridge / canyon viewpoint · access conditional
 - [Fuel price notice · Government (valid Sep 22–28)](https://www.gov.me/amp/clanak/nove-cijene-goriva-od-22092026) — used on: Budget
 - [National Parks of Montenegro · Durmitor fees](https://nparkovi.me/sections/27) — used on: Day 2
@@ -1385,7 +1386,7 @@ All 123 places on the app’s map (waypoints file version 3). “Days” lists t
 - [Kotor–Virpazar route estimate](https://www.rome2rio.com/s/Kotor/Virpazar) — used on: Day 5
 - [A1 Smokovac–Mateševo toll details · Monteput](https://www.izvoznokno.si/Dokumenti/Monteput_P1_eng.pdf) — used on: Budget
 - [Vehicle boot volume · Škoda Octavia Combi](https://www.skoda-auto.com/models/layers/layers/octavia-combi-experience-life) — used on: Day 4
-- [Rental coverage exclusions · Montenegro Car](https://www.montenegrocar.me/en/terms-and-conditions/) — used on: 03 · Before the first drive
+- [Rental coverage exclusions · Montenegro Car](https://www.montenegrocar.me/en/terms-and-conditions/) — used on: setup
 - [Montenegro Tourism · panoramic roads and Sedlo season / elevation](https://www.montenegro.travel/uploads/brochures/Panoramic%20Roads/ENG/Map-Crown-of-Montenegro.pdf) — used on: Day 2
 - [P14 route estimate · Žabljak–Plužine](https://www.rome2rio.com/s/%C5%BDabljak/Plu%C5%BEine) — used on: Day 2
 - [Durmitor 2025 on-the-ground report · variable P14 timing](https://www.wondermontenegro.com/post/trip-durmitor-2025) — used on: Day 2
@@ -1394,7 +1395,7 @@ All 123 places on the app’s map (waypoints file version 3). “Days” lists t
 - [Traveler field notes supplied by travelers · historical anecdotal prices and trail durations](https://goo.gl/maps/qSe2ynbbM8UH1vdU6) — used on: Budget
 - [Kamenari–Lepetane official timetable · summer plan through Oct 11, 2026](https://trajekt.me/red-voznje/) — used on: Day 1; Kamenari ferry terminal; Lepetane ferry terminal
 - [Kamenari–Lepetane official tariff · Oct off-season passenger car €4](https://trajekt.me/wp-content/uploads/2024/07/price-list-of-services.pdf) — used on: Day 1; Kamenari ferry terminal; Lepetane ferry terminal
-- [Mountain Rescue Service and roadside assistance numbers · Montenegro Tourism](https://www.montenegro.travel/uploads/brochures/Panoramic%20Roads/ENG/Map-Crown-of-Montenegro.pdf) — used on: 01 · Emergency
+- [Mountain Rescue Service and roadside assistance numbers · Montenegro Tourism](https://www.montenegro.travel/uploads/brochures/Panoramic%20Roads/ENG/Map-Crown-of-Montenegro.pdf) — used on: emergency
 - [Montenegro Tourism · practical Piva/Durmitor road cautions and no-fuel section](https://www.montenegro.travel/uploads/brochures/Panoramic%20Roads/ENG/Map-Crown-of-Montenegro.pdf) — used on: Day 2
 - [Government of Montenegro · state-road categorization and route codes](https://wapi.gov.me/download/90ab28bc-f0bf-4282-9100-b9b11677f6c0?version=1.0) — used on: Day 1; Day 4
 - [Tivat Airport–Žabljak transfer estimate · updated Sep 2, 2026](https://montenegrotaxi.com/routes/tivat-airport-to-zabljak/) — used on: Day 1
