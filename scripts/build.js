@@ -14,7 +14,7 @@ const fontsDir = path.join(root, 'fonts');
 // Fonts are optional at build time so the pipeline still runs before they are added.
 const fontFiles = fs.existsSync(fontsDir) ? fs.readdirSync(fontsDir).filter(file => fs.statSync(path.join(fontsDir, file)).isFile()).sort().map(file => `fonts/${file}`) : [];
 const vendorFiles = ['vendor/leaflet/leaflet.js', 'vendor/leaflet/leaflet.css', 'vendor/leaflet/LICENSE'];
-const sourceFiles = ['index.html', 'boot.js', 'app.js', 'timetable.js', 'i18n.js', 'weather.js', 'sw.js', 'style.css', 'itinerary.json', 'waypoints.json', 'locales/en.json', 'locales/he.json', 'manifest.webmanifest', 'icon.svg', 'og-image.jpg', ...vendorFiles, ...fontFiles];
+const sourceFiles = ['index.html', 'boot.js', 'app.js', 'timetable.js', 'i18n.js', 'weather.js', 'sw.js', 'style.css', 'itinerary.json', 'waypoints.json', 'locales/en.json', 'locales/he.json', 'manifest.webmanifest', 'icon.svg', 'apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'og-image.jpg', ...vendorFiles, ...fontFiles];
 const textExtensions = new Set(['.html', '.js', '.css', '.json', '.webmanifest', '.svg']);
 const revisionHash = crypto.createHash('sha256');
 for (const file of sourceFiles) revisionHash.update(file).update('\0').update(fs.readFileSync(path.join(root, file))).update('\0');

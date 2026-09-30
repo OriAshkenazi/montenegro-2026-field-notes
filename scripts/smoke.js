@@ -6,7 +6,7 @@ const path = require('node:path');
 
 const root = path.resolve(__dirname, '..');
 const dist = path.join(root, 'dist');
-const expected = ['index.html', 'boot.js', 'vendor/leaflet/leaflet.js', 'vendor/leaflet/leaflet.css', 'style.css', 'app.js', 'timetable.js', 'i18n.js', 'weather.js', 'sw.js', 'itinerary.json', 'waypoints.json', 'locales/en.json', 'locales/he.json', 'manifest.webmanifest', 'icon.svg', 'og-image.jpg'];
+const expected = ['index.html', 'boot.js', 'vendor/leaflet/leaflet.js', 'vendor/leaflet/leaflet.css', 'style.css', 'app.js', 'timetable.js', 'i18n.js', 'weather.js', 'sw.js', 'itinerary.json', 'waypoints.json', 'locales/en.json', 'locales/he.json', 'manifest.webmanifest', 'icon.svg', 'apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'og-image.jpg'];
 const fontsSource = path.join(root, 'fonts');
 if (fs.existsSync(fontsSource)) for (const file of fs.readdirSync(fontsSource).sort()) expected.push(`fonts/${file}`);
 for (const file of expected) assert.ok(fs.statSync(path.join(dist, file)).isFile(), `dist missing ${file}`);
