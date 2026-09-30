@@ -376,26 +376,27 @@ table.budget-day-table{min-width:0;background:var(--surface-1);border:1px solid 
 .packing-bar{display:flex;align-items:center;justify-content:space-between;gap:var(--sp-3);flex-wrap:wrap;padding:var(--sp-3) var(--sp-4);background:var(--surface-1);border:1px solid var(--border);border-radius:var(--r-md);margin-bottom:var(--sp-4)}
 #packingProgress{font:600 var(--fs-md) var(--sans)}
 .packing-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-3);align-items:start}
-.packing-card{padding:var(--sp-5)}
-.packing-card header{display:flex;align-items:baseline;justify-content:space-between;gap:var(--sp-3);border-bottom:1px solid var(--border);padding-bottom:var(--sp-2);margin-bottom:var(--sp-1)}
-.packing-card h3{margin:0}
+.packing-card{padding:var(--sp-4) var(--sp-5) var(--sp-2)}
+.packing-card header{display:flex;align-items:center;gap:var(--sp-2);border-bottom:1px solid var(--border);padding-bottom:var(--sp-1)}
 .packing-card ul{list-style:none;margin:0;padding:0}
 .packing-card li+li{border-top:1px solid var(--border)}
-.packing-card label{display:flex;align-items:center;gap:var(--sp-3);min-height:var(--tap);padding-block:var(--sp-1);font-size:var(--fs-md);line-height:var(--lh-body);color:var(--text-1);cursor:pointer}
-.packing-card input{flex:none;width:20px;height:20px;margin:0;accent-color:var(--accent)}
-.packing-card label:has(input:checked) span{color:var(--text-3);text-decoration:line-through;text-decoration-color:var(--border-strong)}
-.packing-actions{display:flex;gap:var(--sp-2);flex-wrap:wrap}
-.packing-bar.editing #packingEdit{background:var(--brand);color:var(--on-brand);border-color:transparent}
-.packing-bar.editing #packingReset{display:none}
-.packing-card header input,.pack-edit-row input,.pack-add input{flex:1;min-width:0;min-height:var(--tap);padding:0 var(--sp-3);border:1px solid var(--border);border-radius:var(--r-sm);background:var(--surface-2);color:var(--text-1);font:16px var(--sans)}
-.packing-card header input{font:600 var(--fs-lg) var(--serif)}
-.packing-card header:has(input){align-items:center}
-.pack-edit-row{display:flex;align-items:center;gap:var(--sp-2);padding-block:var(--sp-1)}
-.pack-remove{flex:none;display:grid;place-items:center;width:var(--tap);height:var(--tap);border:0;border-radius:50%;background:transparent;color:var(--text-3);font-size:24px;line-height:1;cursor:pointer}
-.pack-remove:hover{background:var(--surface-2);color:var(--accent)}
-.pack-add{display:flex;gap:var(--sp-2);margin-top:var(--sp-3)}
-.pack-add input{border-style:dashed}
-.pack-edit-actions{grid-column:1/-1;display:flex;gap:var(--sp-2);flex-wrap:wrap}
+.pack-title,.pack-text{flex:1;min-width:0;margin:0;border:0;border-radius:var(--r-sm);background:transparent;color:var(--text-1);outline:0;padding:var(--sp-2) var(--sp-1);font:16px/var(--lh-body) var(--sans)}
+.pack-title{font:600 var(--fs-xl)/var(--lh-tight) var(--serif);padding-inline:0}
+.pack-text{display:block;resize:none;overflow:hidden;height:auto}
+.pack-title:focus,.pack-text:focus{background:var(--surface-2)}
+.pack-row,.pack-add-row{display:flex;align-items:flex-start;gap:var(--sp-2);min-height:var(--tap)}
+.pack-check{flex:none;display:grid;place-items:center;width:32px;height:var(--tap);margin-inline-start:calc(-1 * var(--sp-2));cursor:pointer}
+.pack-check input{width:20px;height:20px;margin:0;accent-color:var(--accent);cursor:pointer}
+.pack-row:has(input:checked) .pack-text:not(:focus){color:var(--text-3);text-decoration:line-through;text-decoration-color:var(--border-strong)}
+.pack-add-row>span{flex:none;width:32px;margin-inline-start:calc(-1 * var(--sp-2));text-align:center;line-height:var(--tap);color:var(--text-3);font-size:20px}
+.pack-add-row .pack-text::placeholder{color:var(--text-3)}
+.pack-remove{flex:none;display:none;place-items:center;width:var(--tap);height:var(--tap);margin-inline-end:calc(-1 * var(--sp-2));border:0;border-radius:50%;background:transparent;color:var(--text-3);font-size:22px;line-height:1;cursor:pointer}
+.pack-row:focus-within .pack-remove,.packing-card header:focus-within .pack-remove{display:grid}
+.packing-card header:focus-within .card-kicker{display:none}
+.pack-remove:hover{color:var(--accent)}
+.packing-foot{display:flex;justify-content:space-between;gap:var(--sp-3);flex-wrap:wrap;margin-top:var(--sp-3)}
+.text-button{min-height:var(--tap);border:0;background:transparent;padding:0 var(--sp-1);color:var(--link);font:500 var(--fs-base) var(--sans);cursor:pointer}
+#packingRestore{color:var(--text-3);font-size:var(--fs-sm)}
 .emergency{background:var(--surface-3)}
 .field-grid .emergency{grid-column:1/-1}
 .field-grid .insurance-card{grid-column:1/-1;background:var(--surface-2)}
