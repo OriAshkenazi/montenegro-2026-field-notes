@@ -720,8 +720,8 @@ Two adults · five nights · confirmed payments and estimates. What’s already 
 - **Food & drink** — €450–€750 · estimate
   - **Summary:** Two people, including one winery or local tasting.
   - **Details:** €90–150 per couple per day, including one winery/local tasting allowance.
-- **Contingency cash** — €200–€300 · estimate
-  - **Summary:** Weather reroutes, price surprises and unplanned fees.
+- **Contingency reserve** — €200–€300 · estimate
+  - **Summary:** Weather reroutes, price surprises and unplanned fees; carry €100–150 of it as small cash notes.
   - **Details:** Carry €100–150 in small cash notes; reserve total also covers weather reroutes, fuel and unplanned fees.
 - **Tara zipline · optional and unconfirmed** — €0–€90 · optional
   - **Summary:** Only if the operator confirms a bridge-free option on Oct 3.
