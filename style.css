@@ -401,7 +401,7 @@ table.budget-day-table{min-width:0;background:var(--surface-1);border:1px solid 
 .text-button{min-height:var(--tap);border:0;background:transparent;padding:0 var(--sp-1);color:var(--link);font:500 var(--fs-base) var(--sans);cursor:pointer}
 #packingRestore{color:var(--text-3);font-size:var(--fs-sm)}
 .emergency{background:var(--surface-3)}
-.field-grid .emergency{grid-column:1/-1}
+.field-grid .emergency,.field-grid .glance{grid-column:1/-1}
 .field-grid .insurance-card{grid-column:1/-1;background:var(--surface-2)}
 .insurance-card h4{margin:var(--sp-4) 0 var(--sp-2);font-size:var(--fs-md)}
 .insurance-card p{margin:var(--sp-2) 0}
@@ -832,3 +832,12 @@ html[data-lang="he"]:not(.i18n-ready) body{visibility:hidden}
 
 /* Build-time copy of the trip text for chatbots that read the page source; never shown on the page. */
 .trip-text{display:none!important}
+
+.glance h4{margin:var(--sp-4) 0 var(--sp-2);font-size:var(--fs-md)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:var(--sp-2)}
+.stat{padding:var(--sp-2) var(--sp-3);background:var(--surface-0);border:1px solid var(--border);border-radius:var(--r-md)}
+.stat b,.stat span{display:block}
+.stat b{font:600 var(--fs-lg) var(--mono);unicode-bidi:isolate}
+.stat span{font-size:var(--fs-xs);color:var(--text-3);line-height:var(--lh-body)}
+.stat-note{margin:var(--sp-2) 0 0;font-size:var(--fs-sm)!important;color:var(--text-3)!important}
+.stat-call{display:inline-flex;align-items:center;min-height:var(--tap);padding:0 var(--sp-3);border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-0);color:var(--link);font:600 var(--fs-sm) var(--mono);text-decoration:none}

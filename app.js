@@ -132,6 +132,7 @@ function render(open) {
   openDays=open||new Set([1]);
   $('#days').setAttribute('aria-label',tc(trip.routeNames.primary));
   renderDays();renderTripOps();renderInsurance();renderBudget();renderCardSources();
+  $('#glanceFx').textContent=trip.fx.EURILS.toFixed(2);
   $('#contactNumbers').innerHTML=trip.contacts.map(x=>`<li><div><b>${C(x.label)}</b><small>${C(x.note)}</small></div><a href="${safeHref(x.href,['tel:'])}" dir="ltr">${escapeHTML(x.number)}</a></li>`).join('');
   const filter=$('#mapDayFilter'),prior=activeMapDay;filter.innerHTML=`<option value="all">${U('filter.all')}</option>`+activeRoute().days.map(d=>`<option value="${d.day}">${U('filter.day',{n:d.day,date:tc(d.date)})}</option>`).join('');activeMapDay=[...filter.options].some(o=>o.value===prior)?prior:'all';filter.value=activeMapDay;
   linkStaticLocations();
