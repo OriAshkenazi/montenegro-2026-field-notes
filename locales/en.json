@@ -414,6 +414,7 @@
   "field.3.maps": "Download offline map areas for Durmitor, the Piva/P14 corridor and Boka Bay, and save both lodging pins.",
   "field.3.road": "Check AMSCG road status before each mountain drive (link below).",
   "field.3.rental": "At pickup, get written confirmation of tire, glass, underbody, gravel and roadside cover; Day 1 has the excess details.",
-  "field.3.cash": "Keep up to €225.39 in cash for Runolist until the balance is confirmed."
+  "field.3.cash": "Keep up to €225.39 in cash for Runolist until the balance is confirmed.",
+  "pack.hint": "Tap any item to edit it"
  }
 }
