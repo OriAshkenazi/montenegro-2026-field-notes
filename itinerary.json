@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-29",
+  "updated": "2026-09-30",
   "drivingCeilingAdjustedHours": 6,
   "terrainBufferPercent": 20,
   "routeNames": {
@@ -13,8 +13,8 @@
           "date": "Thu · Oct 1",
           "region": "North · Tivat → Žabljak",
           "base": "Runolist Chalet · Žabljak",
-          "drive": "TIV → Vrmac tunnel / Kotor → M-1 to Risan / Lipci → M-8 via Grahovo → M-7 to Nikšić → M-3 to Jasenovo Polje → M-6 via Šavnik → Runolist Chalet · nominal 3 h 47 min / 4 h 33 min adjusted (+20%); live route controls",
-          "adjustedHours": 4.6,
+          "drive": "TIV → Vrmac tunnel / Kotor → M-1 to Risan / Lipci → M-8 via Grahovo → M-7 to Nikšić (20-min fuel and restroom break) → M-3 to Jasenovo Polje → M-6 via Šavnik → Runolist Chalet · nominal 3 h 38 min / 4 h 22 min adjusted (+20%) plus the break; live route controls",
+          "adjustedHours": 4.4,
           "morning": [
             {
               "type": "LOGISTICS",
@@ -58,23 +58,47 @@
           "afternoon": [
             {
               "type": "DRIVE",
-              "text": "Drive directly north to your Runolist Chalet via the Vrmac tunnel and Kotor, then M-1 to Risan/Lipci, M-8 via Grahovo, M-7 to Nikšić, M-3 to Jasenovo Polje and M-6 via Šavnik.",
+              "text": "Drive north via the Vrmac tunnel and Kotor, then M-1 to Risan/Lipci, M-8 via Grahovo and M-7 to Nikšić.",
               "id": "day-1-afternoon-01",
-              "title": "Drive Tivat to Runolist via Grahovo",
+              "title": "Drive Tivat to Nikšić via Grahovo",
               "leg": {
                 "from": "tiv-rental-pickup",
+                "to": "eko-niksic-fuel",
+                "via": [
+                  "grahovo"
+                ]
+              },
+              "driveMin": {
+                "nominal": 115,
+                "adjusted": 138,
+                "source": "OSRM",
+                "checked": "2026-09-30"
+              }
+            },
+            {
+              "type": "LOGISTICS",
+              "id": "day-1-afternoon-09",
+              "title": "Break at EKO fuel station, Nikšić",
+              "dwellMin": 20,
+              "text": "Planned 20-minute break about two hours in, before sunset: fill the tank, use the restroom and pick up coffee or a snack in the station shop. It is the last easy services stop before the dark mountain section via Šavnik. Station hours are not published; if it is closed, use the Petrol station on Bulevar 13. jula, which OpenStreetMap lists as open around the clock."
+            },
+            {
+              "type": "DRIVE",
+              "id": "day-1-afternoon-10",
+              "title": "Drive Nikšić to Runolist via Šavnik",
+              "text": "Continue on M-3 to Jasenovo Polje and M-6 via Šavnik to Runolist Chalet. This section runs after sunset on a narrow mountain road; keep the speed down.",
+              "leg": {
+                "from": "eko-niksic-fuel",
                 "to": "runolist-chalet",
                 "via": [
-                  "grahovo",
-                  "niksic",
                   "savnik"
                 ]
               },
               "driveMin": {
-                "nominal": 227,
-                "adjusted": 273,
+                "nominal": 103,
+                "adjusted": 124,
                 "source": "OSRM",
-                "checked": "2026-09-29"
+                "checked": "2026-09-30"
               }
             },
             {
@@ -84,13 +108,13 @@
             },
             {
               "type": "DRIVE",
-              "text": "Use 3 h 47 min as a nominal routed estimate; current sources vary (published figures start near 3 h 20 min) and live traffic/weather can extend it, then add 20%: about 4 h 33 min adjusted, before traffic or stops.",
+              "text": "Use 3 h 38 min as a nominal routed estimate; current sources vary (published figures start near 3 h 20 min) and live traffic/weather can extend it, then add 20%: about 4 h 22 min adjusted, plus the 20-minute Nikšić break, before traffic.",
               "id": "day-1-afternoon-03",
               "note": true
             },
             {
               "type": "DRIVE",
-              "text": "That points to roughly 19:45–20:00 arrival.",
+              "text": "That points to roughly 20:00 arrival, including the 20-minute Nikšić break.",
               "id": "day-1-afternoon-04",
               "note": true
             },
@@ -101,7 +125,7 @@
             },
             {
               "type": "CAUTION",
-              "text": "Do not add the Lepetane ferry, viewpoints, a swim, or a meal stop.",
+              "text": "The Nikšić break is the only planned stop; do not add the Lepetane ferry, viewpoints or a swim.",
               "id": "day-1-afternoon-06"
             },
             {
@@ -155,6 +179,10 @@
               "https://www.google.com/maps/dir/?api=1&origin=Tivat%20Airport%2C%20Montenegro&destination=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%2084220%20%C5%BDabljak%2C%20Montenegro&waypoints=Kotor%2C%20Montenegro%7CRisan%2C%20Montenegro%7CGrahovo%2C%20Montenegro%7CNik%C5%A1i%C4%87%2C%20Montenegro%7C%C5%A0avnik%2C%20Montenegro&travelmode=driving"
             ],
             [
+              "EKO fuel station · Nikšić",
+              "https://www.google.com/maps/dir/?api=1&destination=42.78032,18.94057&travelmode=driving"
+            ],
+            [
               "Runolist Chalet",
               "https://maps.google.com/?q=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%2084220%20%C5%BDabljak%2C%20Montenegro"
             ],
@@ -167,7 +195,7 @@
             "Sightseeing",
             "Food & Dining"
           ],
-          "heading": "Tivat → Runolist Chalet / direct northbound mountain transfer",
+          "heading": "Tivat → Nikšić break → Runolist Chalet / northbound mountain transfer",
           "food": {
             "meals": [
               {
@@ -235,13 +263,13 @@
           "morning": [
             {
               "type": "STAY",
-              "text": "Breakfast at Runolist; leave by 06:30 with water and a packed lunch. Fill the tank and download the P14 map before leaving town.",
+              "text": "Breakfast at Runolist without rushing; leave around 08:00 with water and a packed lunch. Fill the tank and download the P14 map before leaving town.",
               "id": "day-2-morning-01",
               "title": "Depart Runolist"
             },
             {
               "type": "DRIVE",
-              "text": "Park at the signed Black Lake lot by about 06:50. The full shore loop is about 3.6 km; allow up to 90 minutes for the walk and photos, then leave by 08:30.",
+              "text": "Park at the signed Black Lake lot by about 08:20. The full shore loop is about 3.6 km; allow up to 90 minutes for the walk and photos, then leave by about 10:00.",
               "id": "day-2-morning-02",
               "title": "Drive to Black Lake parking",
               "leg": {
@@ -264,7 +292,7 @@
             },
             {
               "type": "LOGISTICS",
-              "text": "Espresso stop at Gradska Kafanica only if open when you pass; local listing shows 08:00, so confirm the prior evening. If closed, use coffee packed at Runolist.",
+              "text": "Espresso stop at Gradska Kafanica as you pass back through town; the local listing shows 08:00 opening. If it is closed, use coffee packed at Runolist.",
               "id": "day-2-morning-04",
               "title": "Espresso at Gradska Kafanica",
               "dwellMin": 20,
@@ -475,7 +503,7 @@
               }
             ]
           },
-          "startAt": "06:30"
+          "startAt": "08:00"
         },
         {
           "day": 3,
@@ -710,8 +738,8 @@
           "date": "Sun · Oct 4",
           "region": "North → Coast · Perast / Kotor",
           "base": "Conte Hotel & Restaurant · Perast",
-          "drive": "Runolist Chalet → Conte / signed Perast entrance parking → Kotor Old Town → Perast · direct transfer ~3 h 37 nominal / 4 h 21 adjusted (+20%); add Kotor out-and-back and live traffic, about 5.3 h adjusted total; finish driving by 17:30.",
-          "adjustedHours": 5.3,
+          "drive": "Runolist Chalet → Šavnik → Nikšić (coffee break at Kastel) → Grahovo → Risan (Roman Mosaics) → Conte / signed Perast entrance parking → Kotor Old Town → Perast · transfer ~3 h 33 nominal / 4 h 17 adjusted (+20%) plus about 65 minutes of planned stops; add the Kotor out-and-back and live traffic, about 5.2 h adjusted driving in total; finish driving by 17:30.",
+          "adjustedHours": 5.2,
           "morning": [
             {
               "type": "LOGISTICS",
@@ -722,28 +750,76 @@
             {
               "type": "DRIVE",
               "id": "day-4-morning-02",
-              "text": "Drive directly via M-6 through Šavnik, M-3 to Nikšić, M-7 to Vilusi, M-8 through Grahovo/Lipci and M-1 to Perast. Do not add a sightseeing or meal detour on the transfer.",
-              "title": "Drive Runolist to Perast via Grahovo",
+              "text": "Drive via M-6 through Šavnik and M-3 to Nikšić, about 2 hours. Šavnik, about 45 minutes in, is the place for an early leg-stretch if anyone needs one.",
+              "title": "Drive Runolist to Nikšić via Šavnik",
               "leg": {
                 "from": "runolist-chalet",
-                "to": "perast-entrance-parking",
+                "to": "restaurant-kastel-niksic",
                 "via": [
-                  "savnik",
-                  "niksic",
+                  "savnik"
+                ]
+              },
+              "driveMin": {
+                "nominal": 108,
+                "adjusted": 130,
+                "source": "OSRM",
+                "checked": "2026-09-30"
+              }
+            },
+            {
+              "type": "EAT",
+              "id": "day-4-morning-05",
+              "title": "Coffee break at Kastel, Nikšić",
+              "dwellMin": 35,
+              "foodId": "food-day-4-coffee-02",
+              "text": "Planned 35-minute break about two hours in: coffee or a light breakfast at Kastel, which lists daily 07:00–23:00 service. Park where the car stays in sight, keep the bags covered in the boot, and top up fuel on the way out of town if the tank is below half."
+            },
+            {
+              "type": "DRIVE",
+              "id": "day-4-morning-06",
+              "title": "Drive Nikšić to Risan via Grahovo",
+              "text": "Continue on M-7 to Vilusi and M-8 through Grahovo, then descend to Lipci and follow M-1 along the Bay to Risan.",
+              "leg": {
+                "from": "restaurant-kastel-niksic",
+                "to": "risan-roman-mosaics",
+                "via": [
                   "grahovo"
                 ]
               },
               "driveMin": {
-                "nominal": 217,
-                "adjusted": 261,
+                "nominal": 99,
+                "adjusted": 119,
                 "source": "OSRM",
-                "checked": "2026-09-29"
+                "checked": "2026-09-30"
+              }
+            },
+            {
+              "type": "SEE",
+              "id": "day-4-morning-07",
+              "title": "Roman Mosaics, Risan",
+              "dwellMin": 30,
+              "text": "Short stop at the Roman Mosaics site in Risan: 2nd-century villa floor mosaics, including the Hypnos mosaic. Muzeji Kotor lists Tuesday–Sunday 08:00–20:00 until Oct 15 and a €6 adult ticket; reconfirm on the day. Keep the visit to 30 minutes and park where the car stays in sight; one person can stay with the bags if the parking is out of view."
+            },
+            {
+              "type": "DRIVE",
+              "id": "day-4-morning-08",
+              "title": "Drive Risan to Perast",
+              "text": "Follow M-1 around the Bay to the signed Perast entrance parking.",
+              "leg": {
+                "from": "risan-roman-mosaics",
+                "to": "perast-entrance-parking"
+              },
+              "driveMin": {
+                "nominal": 6,
+                "adjusted": 8,
+                "source": "OSRM",
+                "checked": "2026-09-30"
               }
             },
             {
               "type": "DRIVE",
               "id": "day-4-morning-03",
-              "text": "Use about 3 h 37 nominal / 4 h 21 with the +20% terrain buffer, before traffic, parking and the Kotor outing. Check AMSCG road/weather notices before departure; never route across the Đurđevića Tara bridge closure.",
+              "text": "The whole transfer is about 3 h 33 nominal / 4 h 17 with the +20% terrain buffer, plus about 65 minutes for the two planned stops, before traffic, parking and the Kotor outing. Check AMSCG road/weather notices before departure; never route across the Đurđevića Tara bridge closure.",
               "note": true
             },
             {
@@ -785,9 +861,9 @@
             {
               "type": "LOGISTICS",
               "id": "day-4-afternoon-04",
-              "text": "Time-box Small Talks specialty coffee, a coastal-fish lunch in the Old Town and the old lanes to about 3 hours. Ombra lists daily service and garden/terrace seating; call to confirm Sunday service and terrace availability. Budget 75 minutes for lunch.",
+              "text": "Time-box Small Talks specialty coffee, a coastal-fish lunch in the Old Town and the old lanes to about 2.5 hours. Ombra lists daily service and garden/terrace seating; call to confirm Sunday service and terrace availability. Budget 75 minutes for lunch.",
               "title": "Kotor Old Town: coffee, lunch, lanes",
-              "dwellMin": 180,
+              "dwellMin": 150,
               "foodId": "food-day-4-meals-01"
             },
             {
@@ -836,6 +912,14 @@
               "https://maps.google.com/?q=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%20Zabljak%2C%20Montenegro"
             ],
             [
+              "Restaurant Kastel · Nikšić",
+              "https://maps.google.com/?q=Kastel%2C%20Kara%C4%91or%C4%91eva%2041%2C%20Nik%C5%A1i%C4%87%2C%20Montenegro"
+            ],
+            [
+              "Roman Mosaics · Risan",
+              "https://maps.google.com/?q=Roman%20Mosaics%2C%20Risan%2C%20Montenegro"
+            ],
+            [
               "Conte Hotel & Restaurant",
               "https://maps.google.com/?q=Conte%20Hotel%20%26%20Restaurant%2C%20Perast%2C%20Montenegro"
             ],
@@ -877,7 +961,7 @@
             "Food & Dining",
             "Coffee"
           ],
-          "heading": "Runolist transfer → Perast bags secured → Kotor Old Town",
+          "heading": "Runolist → Nikšić coffee → Risan mosaics → Perast bags secured → Kotor Old Town",
           "food": {
             "meals": [
               {
@@ -911,7 +995,18 @@
             ],
             "coffee": [
               {
-                "slot": "Late morning · Kotor",
+                "slot": "Morning · Nikšić break",
+                "name": "Restaurant Kastel · Nikšić",
+                "why": "Traditional Montenegrin restaurant on the transfer route; coffee or a light breakfast at the halfway break.",
+                "hours": "Official site lists Monday–Sunday 07:00–23:00; reconfirm Sunday service.",
+                "parking": "Street parking near Karađorđeva is not verified; keep the loaded car in sight.",
+                "mapUrl": "https://maps.google.com/?q=Kastel%2C%20Kara%C4%91or%C4%91eva%2041%2C%20Nik%C5%A1i%C4%87%2C%20Montenegro",
+                "sourceUrl": "https://kastel.me/?lang=en&page_id=11611",
+                "id": "food-day-4-coffee-02",
+                "waypointId": "restaurant-kastel-niksic"
+              },
+              {
+                "slot": "Afternoon · Kotor",
                 "name": "Small Talks · Kotor",
                 "why": "Specialty coffee stop after parking on the Old Town visit.",
                 "hours": "Published daily 08:00–22:00; reconfirm Sunday/October service.",
@@ -2086,6 +2181,16 @@
       "AMSCG · Sozina toll",
       "https://amscg.me/en/putarine",
       {"days": [5], "waypoints": ["sozina-tunnel"]}
+    ],
+    [
+      "Muzeji Kotor · Roman Mosaics Risan tickets and hours",
+      "https://muzejikotor.me/ulaznice/",
+      {"waypoints": ["risan-roman-mosaics"]}
+    ],
+    [
+      "OpenStreetMap · EKO fuel station, Nikšić",
+      "https://www.openstreetmap.org/?mlat=42.78032&mlon=18.94057#map=18/42.78032/18.94057",
+      {"waypoints": ["eko-niksic-fuel"]}
     ]
   ],
   "sourcesChecked": "2026-09-28",

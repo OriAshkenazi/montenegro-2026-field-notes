@@ -481,9 +481,9 @@
       "id": "restaurant-kastel-niksic",
       "name": "Restaurant Kastel · Nikšić",
       "category": "Meal",
-      "lat": 42.7731,
-      "lng": 18.9445,
-      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Restaurant%20Kastel%20%C2%B7%20Nik%C5%A1i%C4%87%2C%20Montenegro&travelmode=driving",
+      "lat": 42.774263,
+      "lng": 18.9461749,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kastel%2C%20Kara%C4%91or%C4%91eva%2041%2C%20Nik%C5%A1i%C4%87%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
         "primary": [
@@ -491,7 +491,7 @@
         ]
       },
       "aliases": [],
-      "precision": "navigation pin"
+      "precision": "OpenStreetMap venue coordinate (Karađorđeva 41)"
     },
     {
       "id": "ombra-old-town",
@@ -2223,6 +2223,39 @@
       ],
       "precision": "Operator-published lower-station coordinate; plotted as the gondola link from Kuk.",
       "sourceUrl": "https://www.kotorcablecar.me/article/traveling-by-car"
+    },
+    {
+      "id": "eko-niksic-fuel",
+      "name": "EKO fuel station · Nikšić",
+      "category": "Parking",
+      "lat": 42.78032,
+      "lng": 18.94057,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=42.78032,18.94057&travelmode=driving",
+      "cash": "Ask",
+      "days": {
+        "primary": [
+          1
+        ]
+      },
+      "aliases": [],
+      "precision": "OpenStreetMap fuel-station coordinate"
+    },
+    {
+      "id": "risan-roman-mosaics",
+      "name": "Roman Mosaics · Risan",
+      "category": "Activity",
+      "lat": 42.51282,
+      "lng": 18.69704,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Roman%20Mosaics%2C%20Risan%2C%20Montenegro&travelmode=driving",
+      "cash": "Ask",
+      "days": {
+        "primary": [
+          4
+        ]
+      },
+      "aliases": [],
+      "precision": "OpenStreetMap archaeological-site coordinate",
+      "sourceUrl": "https://muzejikotor.me/ulaznice/"
     }
   ]
 }
