@@ -384,6 +384,18 @@ table.budget-day-table{min-width:0;background:var(--surface-1);border:1px solid 
 .packing-card label{display:flex;align-items:center;gap:var(--sp-3);min-height:var(--tap);padding-block:var(--sp-1);font-size:var(--fs-md);line-height:var(--lh-body);color:var(--text-1);cursor:pointer}
 .packing-card input{flex:none;width:20px;height:20px;margin:0;accent-color:var(--accent)}
 .packing-card label:has(input:checked) span{color:var(--text-3);text-decoration:line-through;text-decoration-color:var(--border-strong)}
+.packing-actions{display:flex;gap:var(--sp-2);flex-wrap:wrap}
+.packing-bar.editing #packingEdit{background:var(--brand);color:var(--on-brand);border-color:transparent}
+.packing-bar.editing #packingReset{display:none}
+.packing-card header input,.pack-edit-row input,.pack-add input{flex:1;min-width:0;min-height:var(--tap);padding:0 var(--sp-3);border:1px solid var(--border);border-radius:var(--r-sm);background:var(--surface-2);color:var(--text-1);font:16px var(--sans)}
+.packing-card header input{font:600 var(--fs-lg) var(--serif)}
+.packing-card header:has(input){align-items:center}
+.pack-edit-row{display:flex;align-items:center;gap:var(--sp-2);padding-block:var(--sp-1)}
+.pack-remove{flex:none;display:grid;place-items:center;width:var(--tap);height:var(--tap);border:0;border-radius:50%;background:transparent;color:var(--text-3);font-size:24px;line-height:1;cursor:pointer}
+.pack-remove:hover{background:var(--surface-2);color:var(--accent)}
+.pack-add{display:flex;gap:var(--sp-2);margin-top:var(--sp-3)}
+.pack-add input{border-style:dashed}
+.pack-edit-actions{grid-column:1/-1;display:flex;gap:var(--sp-2);flex-wrap:wrap}
 .emergency{background:var(--surface-3)}
 .field-grid .emergency{grid-column:1/-1}
 .field-grid .insurance-card{grid-column:1/-1;background:var(--surface-2)}
