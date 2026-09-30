@@ -34,7 +34,9 @@
   const setError = (key, vars) => { ui.error = key ? { key, vars } : null; paintStatus(); };
   const cacheKey = 'mne-weather-forecast-v4';
   const montenegro = [[41.85,19.37],[41.99,19.22],[42.02,18.56],[42.36,18.45],[42.47,18.53],[42.61,18.68],[42.76,18.69],[42.90,18.80],[43.00,18.75],[43.17,18.83],[43.55,19.36],[43.54,19.62],[43.35,19.85],[43.23,20.10],[42.95,20.35],[42.61,20.36],[42.43,20.32],[42.24,20.28],[42.05,20.14],[41.89,19.98]];
-  let payload = null, selectedDay = 0, selectedHub = 'zabljak', userSelectedHub = false;
+  // Overnight base per trip day (itinerary days 1-3 Runolist Chalet, 4-6 Conte Hotel); the default hub is today's base during the trip.
+  const baseHubByDate = {'2026-10-01':'zabljak','2026-10-02':'zabljak','2026-10-03':'zabljak','2026-10-04':'perast','2026-10-05':'perast','2026-10-06':'perast'};
+  let payload = null, selectedDay = 0, selectedHub = baseHubByDate[new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Podgorica',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date())] || 'zabljak', userSelectedHub = false;
 
   function escape(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
   function today() { return new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Podgorica',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date()); }
