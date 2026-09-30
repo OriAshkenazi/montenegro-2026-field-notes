@@ -103,6 +103,8 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
   - **Note (LOGISTICS):** Voucher refs: Flexible Autos 4H419663 / Europcar 1207623276. The €1,154 IGAR deposit requires a physical Visa, Mastercard or AmEx credit card in the main driver’s name; debit, virtual, prepaid and cash are not accepted. Bring original passport, licence, international driving permit and voucher.
   - **CAUTION:** IGAR supplier excess is €1,089 (tax treatment per rental terms). Flexible Autos Excess Refund reimburses eligible claims; it is not an Europcar excess waiver and does not remove the deposit. The separate policy lists tires/wheels and undercarriage for reimbursement subject to terms, but excludes off-road/untarmacked and negligent driving; do not buy duplicate counter cover without checking terms.
   - **Note (LOGISTICS):** After the 14:30 voucher pickup, aim to leave around 15:15–15:30 only if landing, rental collection, driver and live road/weather checks are all on track.
+  - **CAUTION:** Snow is possible in the north in early October: Žabljak had snow in late September 2026 and on Oct 8–12, 2025. Pack warm layers and gloves. Before leaving Tivat, download the Google Maps offline map of Montenegro, because P14 and long northern stretches have no signal. At pickup, check the spare tyre and jack.
+  - **Note (LOGISTICS):** For any damage to the car, even a scratch, call the police (122) and get a written report before leaving; rental insurance claims need it.
 
 ### Afternoon
 
@@ -120,7 +122,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
   - **CAUTION:** Žabljak sunset on Oct 1 is about 18:26 and civil twilight ends about 18:55, so this deliberately breaks the usual daylight cutoff.
   - **CAUTION:** The Nikšić break is the only planned stop; do not add the Lepetane ferry, viewpoints or a swim.
   - **CAUTION:** If the flight or rental is delayed, visibility/weather is poor, roads are restricted, or the driver is tired, stay at your stop safely and arrange lodging directly; resume only after a fresh road/weather and driver check and coordination with Runolist.
-  - **CAUTION:** If conditions deteriorate after you leave, do not press on: stop at the next safe town, arrange lodging and secure the bags.
+  - **CAUTION:** If conditions deteriorate after you leave, do not press on: stop at the next safe town, arrange lodging and secure the bags. After dark, watch for rockfall on the road and drive slowly. For a puncture, call AMSCG roadside assistance (19807) and Europcar (+382 20 653141).
 
 ### Evening
 
@@ -190,6 +192,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - **Driving route:** Runolist → Black Lake → P14/R-16 over Sedlo → Trsa → Plužine/Piva → (live choice: M-3 via Nikšić and Šavnik, or return over Sedlo) → Runolist · ~3 h 53 adjusted on the Sedlo return (the M-3 return via Nikšić and Šavnik routes at about 6 h 19 adjusted and exceeds the 6 h ceiling); 6 h ceiling and daylight gates
 - **Adjusted driving total:** 3.9 h (timetable drive legs sum to 3 h 53 min)
 - **Interests:** Nature & Wildlife, Adventure & Hiking, Food & Dining
+- **communityPicks:** name: Nordic Hotel restaurant; note: Most-recommended dinner in Žabljak; the priciest option.; mapUrl: https://maps.google.com/?q=Hotel%20Nordic%20Zabljak; id: pick-day-2-01, name: Shambhala; note: Breakfast spot; shakshuka and pretzels praised.; mapUrl: https://maps.google.com/?q=Shambhala%20Zabljak; id: pick-day-2-02, name: Or'o; note: Mixed reviews: good atmosphere and risotto, weaker meat and service.; mapUrl: https://maps.google.com/?q=Or%27o%20Zabljak; id: pick-day-2-03, name: Mountain Bite; note: Food truck on the road past Or'o; sandwiches and desserts praised.; mapUrl: https://maps.google.com/?q=Mountain%20Bite%20Zabljak; id: pick-day-2-04, name: Katun Eco Village & Camp; note: Big-view restaurant with a horse farm; fits the start or end of P14.; mapUrl: https://maps.google.com/?q=Katun%20eco%20village%20and%20camp%20Zabljak; id: pick-day-2-05, name: Black Lake restaurant; note: Lakeside restaurant with a playground and good lake views.; mapUrl: https://maps.google.com/?q=restaurant%20Crno%20Jezero%20Zabljak; id: pick-day-2-06
 
 ### Morning
 
@@ -205,7 +208,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - **10:06–12:22 · DRIVE · Drive over Sedlo to Plužine** — Continue on P14/R-16 over Sedlo to Trsa, then descend to Plužine for the Piva viewpoint and town. Roads are paved but narrow, winding two-way mountain roads; use signed pullouts and expect to wait for passing places.
   - **Drive time:** 113 min nominal / 136 min adjusted (source OSRM, checked 2026-09-29)
   - **Leg:** Black Lake parking → Plužine via P14 Sedlo Pass route, Trsa village pullout
-  - **CAUTION:** Before committing to P14, check AMSCG road conditions, the Sedlo forecast and the host’s local report. Proceed on the primary route if open, dry enough and free of ice/low cloud.
+  - **CAUTION:** Before committing to P14, check AMSCG road conditions, the Sedlo forecast and the host’s local report. Proceed on the primary route if open, dry enough and free of ice/low cloud. Also check AMSCG for timed daily closures for roadworks on the Plužine and P14 roads, and for snow on Sedlo. If the forecast is bad for Day 2 but good for Day 3, swap the two days.
 
 ### Afternoon
 
@@ -296,11 +299,12 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - **Driving route:** Runolist → M-6 / R-20 via Boan → Kolašin → Biogradsko Lake → Dobre Vode → Kolašin → Boan → Runolist · ~4 h 45 nominal / 5 h 43 adjusted (OSRM +20%); verify the Boan section is paved and open; the optional Tara viewpoint spur would exceed the 6 h ceiling
 - **Adjusted driving total:** 5.7 h (timetable drive legs sum to 5 h 43 min)
 - **Interests:** Adventure & Hiking, Nature & Wildlife, Sightseeing, Food & Dining
+- **communityPicks:** name: Viline Vode; note: Kolašin: large portions; smoked fish and crêpes praised.; mapUrl: https://maps.google.com/?q=Viline%20Vode%20Kolasin; id: pick-day-3-01, name: Sherpas; note: Kolašin: recommended by several travelers.; mapUrl: https://maps.google.com/?q=Sherpas%20Kolasin; id: pick-day-3-02, name: Montana Bar; note: Kolašin: casual meals.; mapUrl: https://maps.google.com/?q=Montana%20Bar%20Kolasin; id: pick-day-3-03, name: Vodenica; note: Kolašin: breakfast.; mapUrl: https://maps.google.com/?q=Vodenica%20Kolasin; id: pick-day-3-04, name: Tara Kanjon; note: Breakfast with a view of the Tara bridge from its south side.; mapUrl: https://maps.google.com/?q=Tara%20Kanjon%20restaurant%20Djurdjevica%20Tara; id: pick-day-3-05
 
 ### Morning
 
 - **06:45 · STAY · Breakfast and depart Runolist** — Breakfast at Runolist and leave around 06:45. Check AMSCG, weather, park access and the Tara operator before setting out; fill the tank and carry water/snacks.
-  - **Note (LOGISTICS · Optional Tara Canyon viewpoint spur):** Tara Bridge is scheduled to be closed through Oct 26, 2026. Do not cross the bridge or enter the works. Visit the bridge/canyon only from a safe public viewing place whose access is confirmed open; the map pin is an approximate reference, not parking. Optional spur only: the Žabljak-side viewpoint detour adds roughly 1 h of adjusted driving plus the stop, which pushes the day past the 6 h ceiling, so take it only if live routing shows the day still fits.
+  - **Note (LOGISTICS · Optional Tara Canyon viewpoint spur):** Tara Bridge is scheduled to be closed through Oct 26, 2026. Do not cross the bridge or enter the works. Visit the bridge/canyon only from a safe public viewing place whose access is confirmed open; the map pin is an approximate reference, not parking. Optional spur only: the Žabljak-side viewpoint detour adds roughly 1 h of adjusted driving plus the stop, which pushes the day past the 6 h ceiling, so take it only if live routing shows the day still fits. Travelers report the bridge closed to pedestrians roughly 10:00–12:00 and the access road under works until late October, so plan any viewpoint stop outside that window.
   - **Note (LOGISTICS · Tara viewpoint stop (zipline conditional)):** Zipline is a conditional add-on: October dates depend on weather. Red Rock requires walking back across the bridge, so do not use it during this closure. Consider Yellow/Extreme only if the operator confirms operation, retrieval and access without crossing; skip it if it adds delay or breaks either route gate.
 - **06:45–08:56 · DRIVE · Drive to Kolašin via Boan (R-20)** — Continue toward Kolašin only on a live, paved route that does not cross the closed bridge. Plan on M-6 → R-20 via Boan (Mioska–Tušina) → M-2; before leaving, verify that the Boan section is paved and open, and do not accept an unverified gravel shortcut. The R-10/Mojkovac corridor runs to the closed bridge, so do not use it during the closure.
   - **Drive time:** 109 min nominal / 131 min adjusted (source OSRM, checked 2026-09-29)
@@ -332,6 +336,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
   - **Time on site:** 75 min
   - **Food stop:** Zlatni Papagaj (details under Food & provisions for this day)
   - **Note (LOGISTICS):** Use the short town walk only after parking at Runolist; keep the late evening restful before the Oct 4 transfer.
+  - **Note (LOGISTICS):** Stock up on water and snacks tonight: supermarkets in Montenegro are closed on Sundays by law, and Oct 4 is a Sunday.
 
 ### Food & provisions
 
@@ -394,6 +399,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - **Driving route:** Runolist Chalet → Šavnik → Nikšić (coffee break at Kastel) → Grahovo → Risan (Roman Mosaics) → Conte / signed Perast entrance parking → Kotor Old Town → Perast · transfer ~3 h 33 nominal / 4 h 17 adjusted (+20%) plus about 65 minutes of planned stops; add the Kotor out-and-back and live traffic, about 5.2 h adjusted driving in total; finish driving by 17:30.
 - **Adjusted driving total:** 5.2 h (timetable drive legs sum to 5 h 13 min)
 - **Interests:** Sightseeing, Food & Dining, Coffee
+- **communityPicks:** name: Restobar Taraca; note: Kotor: recommended twice; vegan and gluten-free options.; mapUrl: https://maps.google.com/?q=Restobar%20Taraca%20Kotor; id: pick-day-4-01, name: La Catedral; note: Kotor: gnocchi and pasta; friendly service.; mapUrl: https://maps.google.com/?q=La%20Catedral%20Kotor; id: pick-day-4-02, name: Pepe Nero; note: Kotor: solid dinner in the old town.; mapUrl: https://maps.google.com/?q=Pepe%20Nero%20Kotor; id: pick-day-4-03, name: Karampana; note: Kotor: solid dinner in the old town.; mapUrl: https://maps.google.com/?q=Karampana%20Kotor; id: pick-day-4-04, name: Pomodorino; note: Kotor: Italian; pasta praised.; mapUrl: https://maps.google.com/?q=Pomodorino%20Kotor; id: pick-day-4-05, name: Bonazza; note: Kotor: on the water; fish at sunset.; mapUrl: https://maps.google.com/?q=Bonazza%20Kotor; id: pick-day-4-06, name: Marenda Steak House; note: Kotor: fair prices.; mapUrl: https://maps.google.com/?q=Marenda%20steak%20house%20Kotor; id: pick-day-4-07, name: Senso; note: Kotor: croissants and sandwiches; the pistachio croissant is praised.; mapUrl: https://maps.google.com/?q=Senso%20Kotor; id: pick-day-4-08, name: Kordich Bakery; note: Kotor: bakery by the North Gate.; mapUrl: https://maps.google.com/?q=Kordich%20bakery%20Kotor; id: pick-day-4-09, name: Pekara AS; note: Kotor: bakery by the North Gate.; mapUrl: https://maps.google.com/?q=Pekara%20AS%20Kotor; id: pick-day-4-10, name: Marshell; note: Kotor: gelato with vegan options.; mapUrl: https://maps.google.com/?q=Marshell%20gelato%20Kotor; id: pick-day-4-11, name: The Nitrox Bar; note: Kotor: large, strong cocktails.; mapUrl: https://maps.google.com/?q=Nitrox%20Bar%20Kotor; id: pick-day-4-12, name: Parking Benovo; note: Kotor: parking closest to the North Gate, about €2 per hour.; mapUrl: https://maps.google.com/?q=Parking%20Benovo%20Kotor; id: pick-day-4-13
 
 ### Morning
 
@@ -418,7 +424,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 ### Afternoon
 
 - **12:14–12:22 · STAY** — Conte booking 5198999691: Classic Double Room for 2 adults, check-in Oct 4, 15:00–21:00. Total €271.93, paid in full. Preserve the recorded itemized cancellation terms and confirmation-intro conflict. Perast old town is closed to vehicles May–October; use signed entrance parking and ask reception about pickup rather than assuming it.
-- **12:22–12:52 · LOGISTICS · Park in Perast and drop luggage at Conte** — Park at a signed Perast entrance lot, walk to Conte and hand luggage to reception only if they confirm storage. If the hotel cannot secure the bags, stay in Perast and do not drive to Kotor with luggage.
+- **12:22–12:52 · LOGISTICS · Park in Perast and drop luggage at Conte** — Park at a signed Perast entrance lot, walk to Conte and hand luggage to reception only if they confirm storage. If the hotel cannot secure the bags, stay in Perast and do not drive to Kotor with luggage. Use only a signed official lot or the parking Conte arranges; travelers report unofficial parking attendants in Perast.
   - **Time on site:** 30 min
 - **12:52–13:20 · DRIVE · Drive to Kotor Old Town parking** — Once bags are secured, take the short M-1 run to Kotor. Park in signed Old Town parking and explore on foot; allow roughly 45–60 minutes adjusted driving for the out-and-back plus traffic.
   - **Drive time:** 23 min nominal / 28 min adjusted (source OSRM, checked 2026-09-29)
@@ -510,6 +516,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - **Driving route:** Perast → Kotor espresso → Njegoš Mausoleum via R-1/R-25.1 → Kuk upper station (cable-car round trip) → Cetinje → Virpazar → Perast via Sozina · ~5 h 30 adjusted planning allowance (+20% terrain); stay ≤6 h and back by 17:00, before the 17:30 cutoff.
 - **Adjusted driving total:** 5.5 h (timetable drive legs sum to 5 h 22 min)
 - **Interests:** Sightseeing, Food & Dining, Coffee, Water
+- **communityPicks:** name: Vladika; note: Restaurant at the Njegoš Mausoleum, tucked below the café.; mapUrl: https://maps.google.com/?q=Vladika%20restaurant%20Lovcen; id: pick-day-5-01, name: Winery Garnet; note: Godinje, about 10 minutes from Virpazar: four wines and three liqueurs for €18.; mapUrl: https://maps.google.com/?q=Winery%20Garnet%20Godinje; id: pick-day-5-02, name: Trattoria Rosmarino; note: Perast: pricey but good.; mapUrl: https://maps.google.com/?q=Trattoria%20Rosmarino%20Perast; id: pick-day-5-03, name: Mussels & Oyster Farm; note: On the water about 5 minutes from Perast; very fresh seafood.; mapUrl: https://maps.google.com/?q=mussels%20and%20oyster%20farm%20Perast; id: pick-day-5-04, name: Catovica Mlini; note: Morinj: expensive; one family called it the best restaurant of their trip.; mapUrl: https://maps.google.com/?q=Catovica%20Mlini%20Morinj; id: pick-day-5-05, name: Verige 65; note: Breakfast on the bay near the Kamenari ferry.; mapUrl: https://maps.google.com/?q=Verige%2065; id: pick-day-5-06
 
 ### Morning
 
@@ -530,7 +537,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
   - **Time on site:** 45 min
 - **09:56–10:56 · DRIVE · Kuk upper station and cable car** — Continue a short distance to Kotor Cable Car’s Kuk upper station. Park there (operator lists free parking, capacity 60), ride the gondola down to Dub and back up, then use the Alpine Coaster if open. Allow 75 minutes total; skip extra Lovćen/Cetinje sightseeing.
   - **Time on site:** 60 min
-  - **CAUTION:** The operator’s current ticket page lists Monday gondola service 09:00–20:00, last up 19:30, and coaster 10:00–19:00; weather or maintenance can suspend service. Recheck on the day. If the coaster remains closed, keep the Kuk viewpoint visit and mark the ride unavailable.
+  - **CAUTION:** The operator’s current ticket page lists Monday gondola service 09:00–20:00, last up 19:30, and coaster 10:00–19:00; weather or maintenance can suspend service. Recheck on the day. If the coaster remains closed, keep the Kuk viewpoint visit and mark the ride unavailable. Travelers report the cable car closing without notice, even on the entrance screens, and shutting when Lovćen is in cloud. If Kuk is in cloud or the gondola is stopped, skip it and continue to Cetinje.
 
 ### Afternoon
 
@@ -634,6 +641,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - **Day starts:** 08:30
 - **Driving route:** Perast → TIV · allow 35–45 min in live planning; Europcar voucher return time 13:00.
 - **Adjusted driving total:** 0.7 h (timetable drive legs sum to 41 min)
+- **communityPicks:** name: Divino; note: Tivat: recommended by group members.; mapUrl: https://maps.google.com/?q=Divino%20Tivat; id: pick-day-6-01, name: Agape; note: Tivat: recommended by group members.; mapUrl: https://maps.google.com/?q=Agape%20Tivat; id: pick-day-6-02, name: Al Posto Giusto; note: Tivat: recommended by group members.; mapUrl: https://maps.google.com/?q=Al%20Posto%20Giusto%20Tivat; id: pick-day-6-03, name: One; note: Tivat: recommended by group members.; mapUrl: https://maps.google.com/?q=One%20restaurant%20Tivat; id: pick-day-6-04
 
 ### Morning
 
