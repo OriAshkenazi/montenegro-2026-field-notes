@@ -462,6 +462,13 @@
   "glance.park.lots": "Signed lots (Black Lake, Perast entrance, Kotor Old Town) have their own payment: booth, attendant or meter. Carry coins and small notes.",
   "glance.park.simopt": "Want to pay by SMS? A Telekom or One tourist eSIM (€15, 500 GB, 15 days, bought online before the flight) is a real Montenegrin number that can send the parking SMS, alongside the Israeli line. Parking is charged to prepaid credit, so top up a few euros (dopuna) beyond the data bundle. Telekom has the widest mountain coverage.",
   "glance.park.pay": "Got a ticket? Pay it at a post office or the town parking office before leaving; unpaid fines can come back through Europcar.",
+  "glance.park.smsTitle": "Paying by SMS · step by step",
+  "glance.park.sms1": "Park and read the red ZONA plate for its SMS number (14558 on the one pictured). Numbers change by town and zone colour.",
+  "glance.park.sms2": "Text only the plate, exactly as on the registration papers: no spaces, dashes or dots (PG AB 123 → PGAB123). Keep Ž, Č, Š, Ć, Đ as they are. Photograph the plate at pickup.",
+  "glance.park.sms3": "Wait for the confirmation SMS with the end time before walking away. No reply means not paid.",
+  "glance.park.sms4": "Each SMS buys one hour from the prepaid credit (a little above the plate rate). A warning SMS arrives shortly before it ends; send the same text again once the hour ends, not in advance.",
+  "glance.park.sms5": "On a dual-SIM phone, set the Montenegrin line for SMS, and keep about €5 of credit (dopuna) on top of the data bundle.",
+  "glance.park.sms6": "Outside the hours on the plate parking is free. Signed lots (Black Lake, Kotor Old Town) do not use SMS; pay at their booth or meter.",
   "pack.hint": "Tap any item to edit it"
  }
 }

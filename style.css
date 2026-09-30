@@ -821,6 +821,8 @@ html[data-lang="he"]:not(.i18n-ready) body{visibility:hidden}
 .install-steps{list-style:none;counter-reset:step;margin:0;padding:0;display:grid;gap:var(--sp-2)}
 .install-steps li{counter-increment:step;display:flex;align-items:center;gap:var(--sp-3);padding:var(--sp-3);border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-2);font-size:var(--fs-base);line-height:1.4}
 .install-steps li::before{content:counter(step);flex:none;display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--brand);color:var(--on-brand);font:600 var(--fs-sm) var(--sans)}
+.park-steps{margin-top:var(--sp-3)}
+.park-steps li{align-items:flex-start}
 .install-step-icon{flex:none;display:grid;place-items:center;width:34px;height:34px;border-radius:var(--r-sm);border:1px solid var(--border);background:var(--surface-1);color:var(--link)}
 .install-dialog .install-note{font-size:var(--fs-sm);color:var(--text-3)}
 .install-dialog .button{width:100%}
