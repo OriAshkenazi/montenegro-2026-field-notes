@@ -100,16 +100,25 @@ document.querySelectorAll('.view-toggle [data-view]').forEach(btn=>btn.addEventL
 function renderTripOps() {
   const route=activeRoute();
   $('#nightBreakdown').innerHTML=route.nightBreakdown.map(n=>`<li><b>${H(n.base)} · ${UB(n.nights===1?'night.one':'night.other',{n:n.nights})}</b><span>${C(n.dates)}</span></li>`).join('');
-  $('#stayDirectory').innerHTML=trip.stays.map(stay=>{const point=waypointById(stay.mapWaypointId);return `<article class="stay-reference"><span class="stay-badge">${U('stay.badge')}</span><h3>${H(stay.name)}</h3><small>${C(stay.dates)}</small><p>${H(stay.address)}</p><small>${C(stay.room)} · ${C(stay.checkIn)} · ${C(stay.checkout)}</small><small>${C(stay.confirmation)} · ${C(stay.price)}</small><small>${C(stay.payment)}</small>${stay.phone?`<a href="${safeHref('tel:'+stay.phone.replaceAll(' ',''),['tel:'])}" dir="ltr">${escapeHTML(stay.phone)}</a>`:''}${point?`<button type="button" class="food-map-link" data-waypoint="${point.id}">${U('food.pin')}</button>`:''}${sourceLinks(at=>at.waypoints?.includes(stay.mapWaypointId))}</article>`;}).join('');
+  $('#stayDirectory').innerHTML=trip.stays.map(stay=>{const point=waypointById(stay.mapWaypointId);return `<article class="stay-reference"><span class="stay-badge">${U('stay.badge')}</span><h3>${H(stay.name)}</h3><small>${C(stay.dates)}</small><p>${H(stay.address)}</p><small>${C(stay.room)} · ${C(stay.checkIn)} · ${C(stay.checkout)}</small><small>${C(stay.confirmation)}</small><div class="stay-actions">${stay.phone?`<a href="${safeHref('tel:'+stay.phone.replaceAll(' ',''),['tel:'])}" dir="ltr">${escapeHTML(stay.phone)}</a>`:''}${point?`<button type="button" class="food-map-link" data-waypoint="${point.id}">${U('food.pin')}</button>`:''}</div>${sourceLinks(at=>at.waypoints?.includes(stay.mapWaypointId))}</article>`;}).join('');
 }
 function renderCardSources(){
   $('#emergencySources').innerHTML=sourceLinks(at=>at.cards?.includes('emergency'));
   $('#setupSources').innerHTML=sourceLinks(at=>at.cards?.includes('setup'));
   $('#budgetSources').innerHTML=sourceLinks(at=>at.cards?.includes('budget'));
 }
+// Emergency numbers are grouped by situation and mix the national lines (trip.emergency) with the insurer's assistance lines.
+const EMBASSY_BELGRADE='+381 11 364 3500';
+function renderHelp(){
+  const em=n=>trip.emergency.find(x=>x.number===n),call=(num,href,label)=>`<a href="${safeHref(href,['tel:'])}"><b dir="ltr">${escapeHTML(num)}</b><span>${label}</span></a>`;
+  const line=n=>{const x=em(n);return x?call(x.number,x.href,C(x.label)):'';};
+  const [medical,rescue]=trip.insurancePolicy.assistanceContacts,insurer=c=>call(c.phone.replace(/^(\+972)(\d)(\d{3})(\d{4})$/,'$1 $2 $3 $4'),`tel:${c.phone}`,H(c.provider));
+  const row=(k,html,extra='')=>`<div class="help-row"><h4>${U(k)}</h4><div class="numbers">${html}</div>${extra}</div>`;
+  $('#emergencyNumbers').innerHTML=row('help.emergency',line('112')+line('122')+line('123'))+row('help.medical',line('124')+insurer(medical))+row('help.mountain',line('+382 40 256 084')+insurer(rescue))+row('help.road',line('19807'))+row('help.sea',line('129'))+row('help.consular',call(EMBASSY_BELGRADE,`tel:${EMBASSY_BELGRADE.replaceAll(' ','')}`,U('help.embassy')),`<p class="stat-note">${U('help.embassy.note')}</p>`);
+}
 function renderInsurance(){
   const policy=trip.insurancePolicy,locale=getLang()==='he'?'he-IL':'en-GB',date=value=>new Intl.DateTimeFormat(locale,{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(`${value}T12:00:00Z`));
-  $('#insuranceCard').innerHTML=`<span class="card-kicker">${U('insurance.kicker')}</span><h3>${U('insurance.title')}</h3><p>${UB('insurance.policy',{insurer:policy.insurer,number:policy.policyNumber})}</p><p>${UB('insurance.dates',{from:date(policy.validFrom),to:date(policy.validTo)})} · ${UB('insurance.travelers',{n:policy.travelers})}</p><p>${UB('insurance.coverage',{limit:Number(policy.medicalLimit).toLocaleString('en-US')})}${policy.adventureSportsExtension?` ${U('insurance.adventure')}`:''}</p><p>${UB('insurance.premium',{amount:policy.premiumAmount.toFixed(2),ils:policy.premiumIlsEquivalent.toFixed(2)})}</p><h4>${U('insurance.assistance')}</h4><ul class="insurance-contacts">${policy.assistanceContacts.map(contact=>`<li><b>${H(contact.provider)}</b><a href="${safeHref(`tel:${contact.phone}`,['tel:'])}" dir="ltr">${escapeHTML(contact.phone)}</a><a href="${safeHref(`https://wa.me/${contact.whatsapp.replaceAll('+','')}`)}" dir="ltr">WhatsApp ${escapeHTML(contact.whatsapp)}</a><a href="${safeHref(`mailto:${contact.email}`,['mailto:'])}" dir="ltr">${escapeHTML(contact.email)}</a></li>`).join('')}</ul><small>${U('insurance.terms')}</small>`;
+  $('#insuranceCard').innerHTML=`<p>${UB('insurance.policy',{insurer:policy.insurer,number:policy.policyNumber})}</p><p>${UB('insurance.dates',{from:date(policy.validFrom),to:date(policy.validTo)})} · ${UB('insurance.travelers',{n:policy.travelers})}</p><p>${UB('insurance.coverage',{limit:Number(policy.medicalLimit).toLocaleString('en-US')})}${policy.adventureSportsExtension?` ${U('insurance.adventure')}`:''}</p><ul class="insurance-contacts">${policy.assistanceContacts.map(contact=>`<li><b>${H(contact.provider)}</b><a href="${safeHref(`https://wa.me/${contact.whatsapp.replaceAll('+','')}`)}" dir="ltr">WhatsApp ${escapeHTML(contact.whatsapp)}</a><a href="${safeHref(`mailto:${contact.email}`,['mailto:'])}" dir="ltr">${escapeHTML(contact.email)}</a></li>`).join('')}</ul><small>${U('insurance.terms')}</small>`;
 }
 // Budget: paid items carry an exact amount in their own currency; trip items carry a EUR planning range. Non-EUR amounts convert through trip.fx (ILS per unit), preferring a recorded ₪ equivalent.
 function renderBudget(){
@@ -131,9 +140,10 @@ function renderBudget(){
 function render(open) {
   openDays=open||new Set([1]);
   $('#days').setAttribute('aria-label',tc(trip.routeNames.primary));
-  renderDays();renderTripOps();renderInsurance();renderBudget();renderCardSources();
+  renderDays();renderTripOps();renderHelp();renderInsurance();renderBudget();renderCardSources();
   $('#glanceFx').textContent=trip.fx.EURILS.toFixed(2);
-  $('#contactNumbers').innerHTML=trip.contacts.map(x=>`<li><div><b>${C(x.label)}</b><small>${C(x.note)}</small></div><a href="${safeHref(x.href,['tel:'])}" dir="ltr">${escapeHTML(x.number)}</a></li>`).join('');
+  const stayPhones=new Set(trip.stays.map(x=>String(x.phone||'').replaceAll(' ','')));
+  $('#contactNumbers').innerHTML=trip.contacts.filter(x=>!stayPhones.has(x.number.replaceAll(' ',''))).map(x=>`<li><div><b>${C(x.label)}</b><small>${C(x.note)}</small></div><a href="${safeHref(x.href,['tel:'])}" dir="ltr">${escapeHTML(x.number)}</a></li>`).join('');
   const filter=$('#mapDayFilter'),prior=activeMapDay;filter.innerHTML=`<option value="all">${U('filter.all')}</option>`+activeRoute().days.map(d=>`<option value="${d.day}">${U('filter.day',{n:d.day,date:tc(d.date)})}</option>`).join('');activeMapDay=[...filter.options].some(o=>o.value===prior)?prior:'all';filter.value=activeMapDay;
   linkStaticLocations();
 }
@@ -200,6 +210,12 @@ const paneScroll={};
 function syncTabsUI(){document.querySelectorAll('.tab').forEach(tab=>tab.setAttribute('aria-selected',String(tab.classList.contains('active'))));}
 document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>{const current=document.querySelector('.tab.active')?.dataset.pane,next=btn.dataset.pane;if(current===next)return;if(current)paneScroll[current]=scrollY;document.querySelectorAll('.tab,.pane').forEach(el=>el.classList.remove('active'));btn.classList.add('active');$('#pane-'+next).classList.add('active');syncTabsUI();btn.scrollIntoView({block:'nearest',inline:'nearest'});const hero=$('.hero'),tabsStart=hero.offsetTop+hero.offsetHeight,target=paneScroll[next]??Math.min(scrollY,tabsStart);document.documentElement.style.scrollBehavior='auto';window.scrollTo({top:target,behavior:'instant'});document.documentElement.style.scrollBehavior='';}));
 syncTabsUI();
+// Field Guide jump-bar: buttons scroll to their section; the section under the sticky bars is marked current.
+const fgButtons=[...document.querySelectorAll('.fg-nav [data-fg]')];
+fgButtons.forEach(b=>b.addEventListener('click',()=>document.getElementById(b.dataset.fg)?.scrollIntoView({block:'start'})));
+if('IntersectionObserver'in window){const fgSeen=new Set(),fgObserver=new IntersectionObserver(entries=>{for(const e of entries)e.isIntersecting?fgSeen.add(e.target.id):fgSeen.delete(e.target.id);const current=[...fgButtons].reverse().find(b=>fgSeen.has(b.dataset.fg));if(current)fgButtons.forEach(b=>b.toggleAttribute('aria-current',b===current));},{rootMargin:'-120px 0px -55% 0px'});fgButtons.forEach(b=>{const el=document.getElementById(b.dataset.fg);if(el)fgObserver.observe(el);});}
+// Cross-links between tabs (e.g. the Field Guide cash line opens Budget).
+document.addEventListener('click',e=>{const go=e.target.closest('[data-goto]');if(go)document.querySelector(`.tab[data-pane="${go.dataset.goto}"]`)?.click();});
 
 // Packing list: defaults are keyed pack.<group>.<n> in the locales so they follow the language switch; once edited,
 // the whole list lives in localStorage and edited or added entries keep the text as typed. Ticks are per device too.

@@ -1645,6 +1645,11 @@
       "href": "tel:122"
     },
     {
+      "number": "123",
+      "label": "Fire and rescue",
+      "href": "tel:123"
+    },
+    {
       "number": "124",
       "label": "Medical emergency",
       "href": "tel:124"
