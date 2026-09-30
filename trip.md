@@ -121,7 +121,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 
 - **19:48–20:08 · STAY · Check in and unload at Runolist** — Check in and unload every bag.
   - **Time on site:** 20 min
-- **20:08–21:08 · EAT · Dinner at Zlatni Papagaj** — Eat near the lodging or use food arranged ahead.
+- **20:08–21:08 · EAT · Dinner at Zlatni Papagaj** — Dinner at Zlatni Papagaj after check-in (published 18:00–23:00); call ahead with your ~20:00 arrival time, and use food arranged ahead if you arrive too late or too tired.
   - **Time on site:** 60 min
   - **Food stop:** Zlatni Papagaj · Žabljak (details under Food & provisions for this day)
   - **CAUTION:** Skip sightseeing after arrival.
@@ -410,7 +410,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
   - **Time on site:** 180 min
   - **Food stop:** Ombra · Kotor (details under Food & provisions for this day)
   - **CAUTION:** Leave Kotor by 16:15 at the latest and be parked back in Perast by 17:00, with 17:30 the hard driving cutoff. Do not add the city-walls climb or another Bay town today.
-- **15:19–15:47 · WALK · Drive back to Perast and check in** — Return to Conte, complete check-in inside the confirmed 15:00–21:00 window and leave the car in the signed entrance lot.
+- **15:19–15:47 · DRIVE · Drive back to Perast and check in** — Return to Conte, complete check-in inside the confirmed 15:00–21:00 window and leave the car in the signed entrance lot.
   - **Drive time:** 23 min nominal / 28 min adjusted (source OSRM, checked 2026-09-29)
   - **Leg:** Kotor Old Town parking → Perast entrance parking
 

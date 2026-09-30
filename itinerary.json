@@ -125,7 +125,7 @@
             },
             {
               "type": "EAT",
-              "text": "Eat near the lodging or use food arranged ahead.",
+              "text": "Dinner at Zlatni Papagaj after check-in (published 18:00–23:00); call ahead with your ~20:00 arrival time, and use food arranged ahead if you arrive too late or too tired.",
               "id": "day-1-evening-02",
               "title": "Dinner at Zlatni Papagaj",
               "dwellMin": 60,
@@ -796,7 +796,7 @@
               "text": "Leave Kotor by 16:15 at the latest and be parked back in Perast by 17:00, with 17:30 the hard driving cutoff. Do not add the city-walls climb or another Bay town today."
             },
             {
-              "type": "WALK",
+              "type": "DRIVE",
               "id": "day-4-afternoon-06",
               "text": "Return to Conte, complete check-in inside the confirmed 15:00–21:00 window and leave the car in the signed entrance lot.",
               "title": "Drive back to Perast and check in",
