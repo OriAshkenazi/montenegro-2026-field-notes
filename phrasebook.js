@@ -102,6 +102,31 @@ const PHRASEBOOK = {
       ]
     },
     {
+      id: 'mountain',
+      title: ['Hiking & mountains', 'טיולים והרים'],
+      tip: ['October on Durmitor can bring early snow, fog and cold, so ask locals about the trail and road before you set out, and note sunset (Zalazak sunca) is around 18:20–18:30. The Mountain Rescue number is in section 01; check AMSCG road status (section 02). Greet hikers you pass with Dobar dan.',
+        'באוקטובר בדורמיטור עלולים להגיע שלג מוקדם, ערפל וקור, אז כדאי לשאול מקומיים על השביל והדרך לפני היציאה, ולזכור שהשקיעה (Zalazak sunca) סביב 18:20–18:30. מספר חילוץ ההרים בחלק 01; לבדוק את מצב הדרכים של AMSCG (חלק 02). נהוג לברך מטיילים שפוגשים ב-Dobar dan.'],
+      items: [
+        ['Gdje počinje staza?', 'Where does the trail start?', 'איפה מתחיל השביל?', 'GDYEH poh-CHEE-nyeh STAH-zah', 'גדיה פוצ׳ינייה סטאזה'],
+        ['Je li staza dobro obilježena?', 'Is the trail well marked?', 'השביל מסומן היטב?', 'YEH lee STAH-zah DOH-bro oh-bee-LYEH-zheh-nah', 'יה לי סטאזה דוברו אוביליז׳נה'],
+        ['Staza je zatvorena', 'The trail is closed', 'השביל סגור', 'STAH-zah yeh zaht-VOH-reh-nah', 'סטאזה יה זטבורנה'],
+        ['Koliko traje do vrha?', 'How long to the summit?', 'כמה זמן עד הפסגה?', 'KOH-lee-ko TRAH-yeh DOH VR-hah', 'קוליקו טראיה דו ורחה'],
+        ['Je li opasno?', 'Is it dangerous?', 'זה מסוכן?', 'YEH lee oh-PAHS-no', 'יה לי אופאסנו'],
+        ['Kakvo će biti vrijeme?', 'What will the weather be?', 'איך יהיה מזג האוויר?', 'KAHK-vo cheh BEE-tee VREE-yeh-meh', 'קאקבו צ׳ה ביטי בריימה'],
+        ['Ima li snijega? / leda?', 'Is there snow? / ice?', 'יש שלג? / קרח?', 'EE-mah lee SNEE-yeh-gah / LEH-dah', 'אימה לי סניגה / לדה'],
+        ['kiša · snijeg · vjetar', 'rain · snow · wind', 'גשם · שלג · רוח', 'KEE-shah · SNEE-yeg · VYEH-tar', 'קישה · סניג · ויטאר'],
+        ['magla · oluja · sunčano', 'fog · storm · sunny', 'ערפל · סערה · שמשי', 'MAH-glah · OH-loo-yah · SOON-chah-no', 'מאגלה · אולויה · סונצ׳אנו'],
+        ['Izlazak / Zalazak sunca', 'Sunrise / Sunset', 'זריחה / שקיעה', 'EEZ-lah-zahk / ZAH-lah-zahk SOON-tsah', 'איזלאזאק / זלאזאק סונצה'],
+        ['Koliko je sati?', 'What time is it?', 'מה השעה?', 'KOH-lee-ko yeh SAH-tee', 'קוליקו יה סאטי'],
+        ['vrh · prevoj · sedlo', 'summit · mountain pass · saddle', 'פסגה · מעבר הרים · אוכף', 'VR-h · PREH-voy · SEHD-lo', 'ורח · פרבוי · סדלו'],
+        ['planinarski dom', 'mountain hut', 'בקתת הרים', 'PLAH-nee-nahr-skee DOHM', 'פלאנינארסקי דום'],
+        ['Gdje je najbliže sklonište?', 'Where is the nearest shelter?', 'איפה המחסה הקרוב?', 'GDYEH yeh NY-blee-zheh SKLOH-nee-shteh', 'גדיה יה נייבליז׳ה סקלוניש-טה'],
+        ['Izgubio / Izgubila sam se', 'I’m lost (m / f)', 'הלכתי לאיבוד', 'eez-GOO-bee-oh / -bee-lah sahm SEH', 'איזגוביו / איזגובילה סאם סה'],
+        ['Povrijeđen / Povrijeđena sam', 'I’m injured (m / f)', 'נפצעתי', 'poh-VREE-yeh-jen / -jeh-nah sahm', 'פוברייג׳ן / פוברייג׳נה סאם'],
+        ['Treba nam pomoć u planini', 'We need help in the mountains', 'אנחנו צריכים עזרה בהרים', 'TREH-bah NAHM POH-moch oo plah-NEE-nee', 'טרבה נאם פומוץ׳ או פלאניני']
+      ]
+    },
+    {
       id: 'stay',
       title: ['Hotels & guesthouses', 'מלונות וצימרים'],
       tip: ['Hosts at small guesthouses often want to know your arrival time in advance, so message or call ahead (numbers in section 05). Mountain nights in October are cold, so ask about heating.',

@@ -144,7 +144,7 @@ const pbNorm=s=>String(s).toLowerCase().replace(/đ/g,'dj').normalize('NFD').rep
 function renderPhrasebook(){
   const he=getLang()==='he',pick=pair=>he?pair[1]:pair[0],host=$('#phrasebook'),openIds=new Set([...host.querySelectorAll('details[open]')].map(d=>d.dataset.group)),first=!host.children.length;
   $('#pbKey').innerHTML=PHRASEBOOK.pronunciation.map(([k,en,hb])=>`<div><dt lang="sr-Latn-ME">${escapeHTML(k)}</dt><dd>${H(he?hb:en)}</dd></div>`).join('');
-  host.innerHTML=PHRASEBOOK.groups.map(g=>{const isOpen=first?g.open:openIds.has(g.id);return `<details class="pb-group${g.compact?' compact':''}" data-group="${g.id}"${isOpen?' open':''}><summary><span>${H(pick(g.title))}</span><small>${UB('pb.count',{n:g.items.length})}</small></summary><p class="pb-tip">${H(pick(g.tip))}</p><ul class="pb-list">${g.items.map(([me,en,hb,phEn,phHe])=>`<li class="pb-item" data-s="${escapeHTML(pbNorm([me,en,hb,phEn,phHe].join(' ')))}"><div class="pb-mean">${H(he?hb:en)}</div><div class="pb-say" ${he?'lang="he" dir="rtl"':'dir="ltr"'}>${escapeHTML(he?phHe:phEn)}</div><div class="pb-orig"><b class="pb-me" lang="sr-Latn-ME" dir="ltr">${escapeHTML(me)}</b><span class="pb-alt" ${he?'dir="ltr"':'lang="he" dir="rtl"'}>${escapeHTML(he?phEn:phHe)}</span></div></li>`).join('')}</ul></details>`;}).join('');
+  host.innerHTML=PHRASEBOOK.groups.map(g=>{const isOpen=first?g.open:openIds.has(g.id);return `<details class="pb-group${g.compact?' compact':''}" data-group="${g.id}"${isOpen?' open':''}><summary><span>${H(pick(g.title))}</span><small>${UB('pb.count',{n:g.items.length})}</small></summary><p class="pb-tip">${H(pick(g.tip))}</p><ul class="pb-list">${g.items.map(([me,en,hb,phEn,phHe],i)=>`<li class="pb-item" data-s="${escapeHTML(pbNorm([me,en,hb,phEn,phHe].join(' ')))}"><div class="pb-top"><div class="pb-mean">${H(he?hb:en)}</div><button type="button" class="pb-show" data-g="${g.id}" data-i="${i}" aria-label="${escapeHTML(t('pb.show')+': '+me)}">${U('pb.show')}</button></div><div class="pb-say" ${he?'lang="he" dir="rtl"':'dir="ltr"'}>${escapeHTML(he?phHe:phEn)}</div><div class="pb-orig"><b class="pb-me" lang="sr-Latn-ME" dir="ltr">${escapeHTML(me)}</b><span class="pb-alt" ${he?'dir="ltr"':'lang="he" dir="rtl"'}>${escapeHTML(he?phEn:phHe)}</span></div></li>`).join('')}</ul></details>`;}).join('');
   filterPhrasebook();
 }
 function filterPhrasebook(){
@@ -153,6 +153,26 @@ function filterPhrasebook(){
   $('#pbEmpty').hidden=any;
 }
 $('#pbSearch').addEventListener('input',filterPhrasebook);
+// "Show to a local": a full-screen, high-contrast card with the phrase as large as it fits. In portrait it turns 90° so the words run along the long edge; Rotate switches that off.
+let showGroup=null,showIndex=0,showNoRotate=false,showWake=null;
+const showDialog=$('#showDialog');
+function fitShow(){
+  if(!showDialog.open)return;
+  const stage=$('#showStage'),box=$('#showBox'),text=$('#showText');
+  stage.classList.toggle('rot',innerHeight>innerWidth&&!showNoRotate);
+  let lo=14,hi=Math.max(innerWidth,innerHeight);
+  while(lo<hi-1){const mid=(lo+hi)>>1;text.style.fontSize=mid+'px';if(text.scrollWidth<=box.clientWidth&&text.offsetHeight<=box.clientHeight)lo=mid;else hi=mid;}
+  text.style.fontSize=lo+'px';
+}
+function showPhrase(){const item=showGroup.items[showIndex];$('#showText').textContent=item[0].split(' / ').join('\n');$('#showSub').textContent=item[1];fitShow();}
+function openShow(groupId,i){showGroup=PHRASEBOOK.groups.find(g=>g.id===groupId);if(!showGroup)return;showIndex=i;if(!showDialog.open)showDialog.showModal();showPhrase();try{navigator.wakeLock?.request('screen').then(l=>{showWake=l;}).catch(()=>{});}catch(e){}}
+function stepShow(d){const n=showGroup.items.length;showIndex=(showIndex+d+n)%n;showPhrase();}
+$('#phrasebook').addEventListener('click',e=>{const b=e.target.closest('.pb-show');if(b)openShow(b.dataset.g,Number(b.dataset.i));});
+$('#showPrev').addEventListener('click',()=>stepShow(-1));$('#showNext').addEventListener('click',()=>stepShow(1));
+$('#showRotate').addEventListener('click',()=>{showNoRotate=!showNoRotate;fitShow();});
+$('#showClose').addEventListener('click',()=>showDialog.close());
+showDialog.addEventListener('close',()=>{showWake?.release?.().catch(()=>{});showWake=null;});
+addEventListener('resize',fitShow,{passive:true});
 function render(open) {
   openDays=open||new Set([1]);
   $('#days').setAttribute('aria-label',tc(trip.routeNames.primary));

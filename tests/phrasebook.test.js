@@ -15,7 +15,7 @@ const he = JSON.parse(fs.readFileSync(path.join(root, 'locales/he.json'), 'utf8'
 const HEBREW = /[֐-׿]/, LATIN = /[A-Za-z]/;
 const ids = PHRASEBOOK.groups.map(g => g.id);
 assert.equal(new Set(ids).size, ids.length, 'phrasebook group ids must be unique');
-for (const id of ['airport', 'fuel', 'stay', 'eat', 'sights', 'sos']) assert.ok(ids.includes(id), `phrasebook needs a "${id}" group`);
+for (const id of ['airport', 'fuel', 'mountain', 'stay', 'eat', 'sights', 'sos']) assert.ok(ids.includes(id), `phrasebook needs a "${id}" group`);
 assert.equal(PHRASEBOOK.groups.filter(g => g.open).length, 1, 'exactly one group opens by default');
 
 const seen = new Set();
@@ -43,7 +43,8 @@ for (const [letter, enText, heText] of PHRASEBOOK.pronunciation) assert.ok(lette
 
 // The Field Guide wires it in: script, jump-bar button, section, render targets, offline cache, UI strings in both languages.
 assert.ok(html.includes('phrasebook.js?rev=') && sw.includes('./phrasebook.js?rev='), 'phrasebook.js must load and be cached offline');
-assert.ok(html.includes('data-fg="fg-talk"') && html.includes('id="fg-talk"') && html.includes('id="phrasebook"') && html.includes('id="pbKey"') && html.includes('id="pbSearch"'), 'Field Guide needs the phrasebook section and jump-bar entry');
+assert.ok(html.includes('data-fg="fg-talk"') && html.includes('id="fg-talk"') && html.includes('id="phrasebook"') && html.includes('id="pbKey"') && html.includes('id="pbSearch"') && html.includes('id="showDialog"'), 'Field Guide needs the phrasebook section and jump-bar entry');
 assert.ok(app.includes('renderPhrasebook()'), 'render() must draw the phrasebook');
-for (const key of ['fg.nav.talk', 'fg.talk.title', 'fg.talk.lead', 'pb.key', 'pb.how', 'pb.search', 'pb.empty', 'pb.count']) assert.ok(en[key] && he[key], `ui.${key} must exist in both languages`);
+assert.ok(app.includes('openShow(') && app.includes('class="pb-show"'), 'every phrase needs a Show to a local button');
+for (const key of ['fg.nav.talk', 'fg.talk.title', 'fg.talk.lead', 'pb.key', 'pb.how', 'pb.search', 'pb.empty', 'pb.count', 'pb.show', 'pb.close', 'pb.prev', 'pb.next', 'pb.rotate']) assert.ok(en[key] && he[key], `ui.${key} must exist in both languages`);
 console.log(`PASS: phrasebook with ${PHRASEBOOK.groups.length} groups and ${count} phrases, both phonetic spellings, wired into the Field Guide`);
