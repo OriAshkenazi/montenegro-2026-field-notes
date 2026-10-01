@@ -46,5 +46,5 @@ assert.ok(html.includes('phrasebook.js?rev=') && sw.includes('./phrasebook.js?re
 assert.ok(html.includes('data-fg="fg-talk"') && html.includes('id="fg-talk"') && html.includes('id="phrasebook"') && html.includes('id="pbKey"') && html.includes('id="pbSearch"') && html.includes('id="showDialog"'), 'Field Guide needs the phrasebook section and jump-bar entry');
 assert.ok(app.includes('renderPhrasebook()'), 'render() must draw the phrasebook');
 assert.ok(app.includes('openShow(') && app.includes('class="pb-item" role="button"'), 'every phrase row must open Show to a local when tapped');
-for (const key of ['fg.nav.talk', 'fg.talk.title', 'fg.talk.lead', 'pb.key', 'pb.how', 'pb.search', 'pb.empty', 'pb.count', 'pb.show', 'pb.close', 'pb.prev', 'pb.next', 'pb.rotate']) assert.ok(en[key] && he[key], `ui.${key} must exist in both languages`);
+for (const key of ['fg.nav.talk', 'fg.talk.title', 'fg.talk.lead', 'pb.key', 'pb.how', 'pb.search', 'pb.empty', 'pb.count', 'pb.show', 'pb.close', 'pb.prev', 'pb.next']) assert.ok(en[key] && he[key], `ui.${key} must exist in both languages`);
 console.log(`PASS: phrasebook with ${PHRASEBOOK.groups.length} groups and ${count} phrases, both phonetic spellings, wired into the Field Guide`);

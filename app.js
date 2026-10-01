@@ -153,16 +153,14 @@ function filterPhrasebook(){
   $('#pbEmpty').hidden=any;
 }
 $('#pbSearch').addEventListener('input',filterPhrasebook);
-// "Show to a local": a full-screen, high-contrast card with the phrase as large as it fits. In portrait it turns 90° so the words run along the long edge; Rotate switches that off.
-let showGroup=null,showIndex=0,showNoRotate=false,showWake=null;
+// "Show to a local": a full-screen, high-contrast card with the phrase as large as it fits. It starts upright in portrait and re-fits whenever the screen turns.
+let showGroup=null,showIndex=0,showWake=null;
 const showDialog=$('#showDialog');
 function fitShow(){
   if(!showDialog.open)return;
   // Sizes come from the dialog's real laid-out box, not from window dimensions or vh/vw units, which lag behind a phone's rotation.
-  const stage=$('#showStage'),box=$('#showBox'),text=$('#showText'),W=showDialog.clientWidth,H=showDialog.clientHeight,rot=H>W&&!showNoRotate;
-  stage.classList.toggle('rot',rot);
-  stage.style.width=(rot?H:W)+'px';stage.style.height=(rot?W:H)+'px';stage.style.transform=rot?`translateX(${W}px) rotate(90deg)`:'none';
-  let lo=14,hi=Math.max(W,H);
+  const box=$('#showBox'),text=$('#showText');
+  let lo=14,hi=Math.max(showDialog.clientWidth,showDialog.clientHeight);
   while(lo<hi-1){const mid=(lo+hi)>>1;text.style.fontSize=mid+'px';if(text.scrollWidth<=box.clientWidth&&text.scrollHeight<=box.clientHeight)lo=mid;else hi=mid;}
   text.style.fontSize=lo+'px';
 }
@@ -173,7 +171,6 @@ const openShowFrom=e=>{const b=e.target.closest('.pb-item');if(b)openShow(b.data
 $('#phrasebook').addEventListener('click',openShowFrom);
 $('#phrasebook').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openShowFrom(e);}});
 $('#showPrev').addEventListener('click',()=>stepShow(-1));$('#showNext').addEventListener('click',()=>stepShow(1));
-$('#showRotate').addEventListener('click',()=>{showNoRotate=!showNoRotate;fitShow();});
 $('#showClose').addEventListener('click',()=>showDialog.close());
 showDialog.addEventListener('close',()=>{showWake?.release?.().catch(()=>{});showWake=null;});
 const refitShow=()=>{fitShow();requestAnimationFrame(fitShow);setTimeout(fitShow,250);};
