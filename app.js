@@ -139,10 +139,24 @@ function renderBudget(){
   const days=activeRoute().days,dayRange=d=>Object.values(d.costs).reduce(([a,b],[lo,hi])=>[a+lo,b+hi],[0,0]),assigned=trip.budgetDays.reduce(([a,b],d)=>{const[lo,hi]=dayRange(d);return[a+lo,b+hi];},[0,0]);
   $('#budgetDays').innerHTML=`<table class="budget-day-table"><thead><tr><th>${U('budget.days.day')}</th><th>${U('budget.days.spend')}</th><th>${U('budget.days.pay')}</th></tr></thead><tbody>${trip.budgetDays.map(d=>{const day=days.find(x=>Number(x.day)===d.day),[lo,hi]=dayRange(d);return `<tr><th scope="row"><b>${UB('filter.day',{n:d.day,date:tc(day?.date||'')})}</b><small>${C(day?.region||'')}</small></th><td class="budget-amount">${euro(lo,hi)}</td><td><ul>${d.onTheSpot.map(s=>`<li>${C(s)}</li>`).join('')}</ul></td></tr>`;}).join('')}<tr class="budget-day-extra"><th scope="row"><b>${U('budget.days.unassigned')}</b></th><td class="budget-amount">${euro(tripMin-assigned[0],tripMax-assigned[1])}</td><td>${U('budget.days.unassignedNote')}</td></tr></tbody><tfoot><tr><th scope="row">${U('budget.days.total')}</th><td class="budget-amount">${euro(tripMin,tripMax)}</td><td></td></tr></tfoot></table>`;
 }
+// Phrasebook: data lives in phrasebook.js. Meanings follow the UI language; both phonetic spellings always show. Groups are collapsed to keep the page short, and the search box opens whatever matches.
+const pbNorm=s=>String(s).toLowerCase().replace(/đ/g,'dj').normalize('NFD').replace(/[̀-ͯ]/g,'');
+function renderPhrasebook(){
+  const he=getLang()==='he',pick=pair=>he?pair[1]:pair[0],host=$('#phrasebook'),openIds=new Set([...host.querySelectorAll('details[open]')].map(d=>d.dataset.group)),first=!host.children.length;
+  $('#pbKey').innerHTML=PHRASEBOOK.pronunciation.map(([k,en,hb])=>`<div><dt lang="sr-Latn-ME">${escapeHTML(k)}</dt><dd>${H(he?hb:en)}</dd></div>`).join('');
+  host.innerHTML=PHRASEBOOK.groups.map(g=>{const isOpen=first?g.open:openIds.has(g.id);return `<details class="pb-group${g.compact?' compact':''}" data-group="${g.id}"${isOpen?' open':''}><summary><span>${H(pick(g.title))}</span><small>${UB('pb.count',{n:g.items.length})}</small></summary><p class="pb-tip">${H(pick(g.tip))}</p><ul class="pb-list">${g.items.map(([me,en,hb,phEn,phHe])=>`<li class="pb-item" data-s="${escapeHTML(pbNorm([me,en,hb,phEn,phHe].join(' ')))}"><div class="pb-main"><b class="pb-me" lang="sr-Latn-ME" dir="ltr">${escapeHTML(me)}</b><span class="pb-mean">${H(he?hb:en)}</span></div><div class="pb-ph"><span class="pb-en" dir="ltr">${escapeHTML(phEn)}</span><span class="pb-he" lang="he" dir="rtl">${escapeHTML(phHe)}</span></div></li>`).join('')}</ul></details>`;}).join('');
+  filterPhrasebook();
+}
+function filterPhrasebook(){
+  const q=pbNorm($('#pbSearch').value.trim());let any=false;
+  document.querySelectorAll('#phrasebook .pb-group').forEach(g=>{let n=0;g.querySelectorAll('.pb-item').forEach(li=>{const hit=!q||li.dataset.s.includes(q);li.hidden=!hit;if(hit)n++;});g.hidden=n===0;if(q&&n)g.open=true;if(n)any=true;});
+  $('#pbEmpty').hidden=any;
+}
+$('#pbSearch').addEventListener('input',filterPhrasebook);
 function render(open) {
   openDays=open||new Set([1]);
   $('#days').setAttribute('aria-label',tc(trip.routeNames.primary));
-  renderDays();renderTripOps();renderHelp();renderInsurance();renderBudget();renderCardSources();
+  renderDays();renderTripOps();renderPhrasebook();renderHelp();renderInsurance();renderBudget();renderCardSources();
   $('#glanceFx').textContent=trip.fx.EURILS.toFixed(2);
   const stayPhones=new Set(trip.stays.map(x=>String(x.phone||'').replaceAll(' ','')));
   $('#contactNumbers').innerHTML=trip.contacts.filter(x=>!stayPhones.has(x.number.replaceAll(' ',''))).map(x=>`<li><div><b>${C(x.label)}</b><small>${C(x.note)}</small></div><a href="${safeHref(x.href,['tel:'])}" dir="ltr">${escapeHTML(x.number)}</a></li>`).join('');

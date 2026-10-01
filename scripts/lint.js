@@ -6,12 +6,12 @@ const { HTMLHint } = require('htmlhint');
 const fs = require('node:fs');
 
 const root = path.resolve(__dirname, '..');
-const jsFiles = ['boot.js', 'app.js', 'weather.js', 'timetable.js', 'i18n.js', 'sw.js', ...fs.readdirSync(path.join(root, 'tests')).filter(file => file.endsWith('.js')).map(file => path.join('tests', file)), ...fs.readdirSync(__dirname).filter(file => file.endsWith('.js')).map(file => path.join('scripts', file))];
+const jsFiles = ['boot.js', 'app.js', 'weather.js', 'timetable.js', 'i18n.js', 'phrasebook.js', 'sw.js', ...fs.readdirSync(path.join(root, 'tests')).filter(file => file.endsWith('.js')).map(file => path.join('tests', file)), ...fs.readdirSync(__dirname).filter(file => file.endsWith('.js')).map(file => path.join('scripts', file))];
 const eslintArgs = [
   '--no-eslintrc',
   '--env', 'browser,node,es2021',
   '--global', 'L',
-  '--global', 'projectTimetable,foodRows,splitSentences',
+  '--global', 'projectTimetable,foodRows,splitSentences,PHRASEBOOK',
   '--global', 't,tc,tr,placeAliases,bidi,bidiText,bidiRuns,getLang,setLang,onLangChange,i18nReady,applyStatic',
   '--parser-options', '{"ecmaVersion":2021}',
   '--rule', 'no-undef:error',

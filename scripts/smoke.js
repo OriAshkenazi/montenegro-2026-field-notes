@@ -6,7 +6,7 @@ const path = require('node:path');
 
 const root = path.resolve(__dirname, '..');
 const dist = path.join(root, 'dist');
-const expected = ['index.html', 'boot.js', 'vendor/leaflet/leaflet.js', 'vendor/leaflet/leaflet.css', 'style.css', 'app.js', 'timetable.js', 'i18n.js', 'weather.js', 'sw.js', 'itinerary.json', 'waypoints.json', 'locales/en.json', 'locales/he.json', 'manifest.webmanifest', 'icon.svg', 'apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'og-image.jpg'];
+const expected = ['index.html', 'boot.js', 'vendor/leaflet/leaflet.js', 'vendor/leaflet/leaflet.css', 'style.css', 'app.js', 'timetable.js', 'i18n.js', 'weather.js', 'phrasebook.js', 'sw.js', 'itinerary.json', 'waypoints.json', 'locales/en.json', 'locales/he.json', 'manifest.webmanifest', 'icon.svg', 'apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'og-image.jpg'];
 const fontsSource = path.join(root, 'fonts');
 if (fs.existsSync(fontsSource)) for (const file of fs.readdirSync(fontsSource).sort()) expected.push(`fonts/${file}`);
 for (const file of expected) assert.ok(fs.statSync(path.join(dist, file)).isFile(), `dist missing ${file}`);
@@ -24,7 +24,7 @@ for (const [, url, foundRevision] of revisionMatches) {
 const cacheVersion = String(parseInt(revision.slice(0, 8), 16));
 assert.ok(sw.includes(`mne-field-notes-v${cacheVersion}`), 'service worker cache name must derive from the asset revision');
 assert.ok(sw.includes(`'${cacheVersion}'`) || sw.includes(`"${cacheVersion}"`), 'service worker cache version must derive from the asset revision');
-for (const asset of ['boot.js', 'vendor/leaflet/leaflet.js', 'vendor/leaflet/leaflet.css', 'style.css', 'app.js', 'timetable.js', 'i18n.js', 'weather.js', 'itinerary.json', 'waypoints.json', 'locales/en.json', 'locales/he.json']) {
+for (const asset of ['boot.js', 'vendor/leaflet/leaflet.js', 'vendor/leaflet/leaflet.css', 'style.css', 'app.js', 'timetable.js', 'i18n.js', 'weather.js', 'phrasebook.js', 'itinerary.json', 'waypoints.json', 'locales/en.json', 'locales/he.json']) {
   assert.ok(sw.includes(`./${asset}?rev=${revision}`), `service worker shell revision mismatch: ${asset}`);
 }
 for (const pathRef of ['./itinerary.json?rev=', './waypoints.json?rev=']) assert.ok(app.includes(pathRef), `app must retain relative data URL ${pathRef}`);
