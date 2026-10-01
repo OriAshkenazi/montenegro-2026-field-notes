@@ -880,11 +880,11 @@ html[data-lang="he"]:not(.i18n-ready) body{visibility:hidden}
 .pb-search input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
 .pb-group{margin-bottom:var(--sp-3);background:var(--surface-1);border:1px solid var(--border);border-radius:var(--r-md)}
 .pb-group[hidden]{display:none}
-.pb-group summary{display:grid;grid-template-columns:minmax(0,1fr) 6.5rem 1rem;align-items:center;gap:var(--sp-2);min-height:var(--tap);padding:var(--sp-2) var(--sp-5);font:600 var(--fs-md) var(--serif);cursor:pointer;list-style:none}
+.pb-group summary{display:grid;grid-template-columns:minmax(0,1fr) 6.5rem 28px;align-items:center;gap:var(--sp-2);min-height:var(--tap);padding:var(--sp-2) var(--sp-5);font:600 var(--fs-md) var(--serif);cursor:pointer;list-style:none}
 .pb-group summary::-webkit-details-marker{display:none}
-.pb-group summary small{justify-self:center;text-align:center;white-space:nowrap;font:var(--fs-xs) var(--mono);color:var(--text-3)}
-.pb-group summary::after{content:"⌄";color:var(--accent);transition:transform var(--dur-fast) var(--ease)}
-.pb-group[open] summary::after{transform:rotate(180deg)}
+.pb-group summary small{grid-column:2;justify-self:center;text-align:center;white-space:nowrap;font:var(--fs-xs) var(--mono);color:var(--text-3)}
+.pb-group summary .chevron{grid-column:3}
+.pb-group[open] summary .chevron{transform:rotate(180deg)}
 .pb-tip{margin:0 var(--sp-5) var(--sp-3);padding-inline-start:var(--sp-3);border-inline-start:3px solid var(--accent);font-size:var(--fs-sm);color:var(--text-2);line-height:var(--lh-body)}
 .pb-list{list-style:none;margin:0;padding:0 var(--sp-5) var(--sp-3)}
 .pb-item{padding-block:var(--sp-2);border-top:1px solid var(--border)}
