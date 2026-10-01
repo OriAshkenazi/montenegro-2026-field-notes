@@ -6,17 +6,17 @@
 // Titles and tips are [English, Hebrew]. `compact` groups render as a two-column grid.
 const PHRASEBOOK = {
   pronunciation: [
-    ['c', 'ts as in “cats”', 'צ (ts)'],
-    ['č', 'ch as in “church”', 'צ׳'],
-    ['ć', 'softer ch, tongue further forward', 'צ׳ רך'],
-    ['š', 'sh as in “shop”', 'ש'],
-    ['ž', 's as in “measure”', 'ז׳'],
-    ['đ · dž', 'j as in “jam” (đ is softer)', 'ג׳'],
-    ['j', 'y as in “yes”', 'י'],
-    ['h', 'rough h, like the Hebrew ח', 'ח'],
-    ['lj · nj', 'ly / ny, as in “million” / “canyon”', 'לי / ני'],
-    ['r', 'rolled; can act as a vowel (Crna, prst)', 'ר מגולגלת'],
-    ['ś · ź', 'Montenegrin-only letters, “sj” / “zj”; most speakers sound like š / ž', 'שי / זי']
+    ['c', 'ts as in “cats”', 'צ, כמו ב״ציפור״'],
+    ['č', 'ch as in “church”', 'צ׳ קשה, כמו ב״צ׳יפס״'],
+    ['ć', 'softer ch, tongue further forward', 'צ׳ רכה יותר, הלשון קרובה לשיניים'],
+    ['š', 'sh as in “shop”', 'ש, כמו ב״שלום״'],
+    ['ž', 's as in “measure”', 'ז׳, כמו ב״ז׳קט״'],
+    ['đ · dž', 'j as in “jam” (đ is softer)', 'ג׳, כמו ב״ג׳ירפה״ (ב-đ רכה יותר)'],
+    ['j', 'y as in “yes”', 'י, כמו ב״יום״'],
+    ['h', 'rough h, like the Hebrew ח', 'ח, כמו ב״חלב״'],
+    ['lj · nj', 'ly / ny, as in “million” / “canyon”', 'לי / ני, כמו ב״מיליון״ / ״קניון״'],
+    ['r', 'rolled; can act as a vowel (Crna, prst)', 'ר מגולגלת; יכולה לשמש כתנועה (Crna, prst)'],
+    ['ś · ź', 'Montenegrin-only letters, “sj” / “zj”; most speakers sound like š / ž', 'אותיות מונטנגריות בלבד, ״שי״ / ״זי״; רוב הדוברים מבטאים כמו š / ž']
   ],
   groups: [
     {
