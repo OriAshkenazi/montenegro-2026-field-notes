@@ -2075,9 +2075,7 @@
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Caffe%20Select%20%C2%B7%20Kola%C5%A1in%20morning%20coffee%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
-        "primary": [
-          3
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "town-center point; Tourism Organisation lists 07:00 winter opening, confirm for October",
@@ -2092,9 +2090,7 @@
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Dobre%20Vode%20%C2%B7%20Kola%C5%A1in%E2%80%93Mojkovac%20road%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
-        "primary": [
-          3
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "OpenStreetMap point; tourism listing confirms route placement/parking; call for October service",
