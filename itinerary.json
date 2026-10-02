@@ -304,52 +304,76 @@
             },
             {
               "type": "LOGISTICS",
-              "text": "Espresso stop at Gradska Kafanica as you pass back through town; the local listing shows 08:00 opening. If it is closed, use coffee packed at Runolist.",
+              "text": "Coffee was taken at Black Lake, so skip the town espresso stop and drive straight on to Sedlo.",
               "id": "day-2-morning-04",
-              "title": "Espresso at Gradska Kafanica",
-              "dwellMin": 20,
-              "foodId": "food-day-2-coffee-01"
+              "title": "Coffee at Black Lake",
+              "note": true
             },
             {
               "type": "DRIVE",
-              "text": "Continue on P14/R-16 over Sedlo to Trsa, then descend to Plužine for the Piva viewpoint and town. Roads are paved but narrow, winding two-way mountain roads; use signed pullouts and expect to wait for passing places.",
+              "text": "Leave Black Lake at about 11:25 and continue on P14/R-16 over Sedlo to Trsa, then descend toward Plužine. Roads are paved but narrow, winding two-way mountain roads; use signed pullouts and expect to wait for passing places.",
               "id": "day-2-morning-05",
-              "title": "Drive over Sedlo to Plužine",
+              "title": "Drive over Sedlo to the Pišče farm",
+              "fixedAt": "11:25",
               "leg": {
                 "from": "black-lake-parking",
-                "to": "pluzine",
+                "to": "pisce-farm-tasting",
                 "via": [
                   "p14-sedlo-pass-route",
                   "trsa-village-pullout"
                 ]
               },
               "driveMin": {
-                "nominal": 113,
-                "adjusted": 136,
-                "source": "OSRM",
-                "checked": "2026-09-29"
+                "nominal": 104,
+                "adjusted": 125,
+                "source": "estimate: OSRM Black Lake–Plužine leg minus the last 6 km",
+                "checked": "2026-10-02"
               }
             },
             {
               "type": "CAUTION",
               "text": "Before committing to P14, check AMSCG road conditions, the Sedlo forecast and the host’s local report. Proceed on the primary route if open, dry enough and free of ice/low cloud. Also check AMSCG for timed daily closures for roadworks on the Plužine and P14 roads, and for snow on Sedlo. If the forecast is bad for Day 2 but good for Day 3, swap the two days.",
               "id": "day-2-morning-06"
+            },
+            {
+              "type": "EAT",
+              "text": "Stop at the Local rakija and honey family farm in Pišče, about 10 minutes before Plužine, for a tasting of homemade cheese, prosciutto, honey and rakija; coffee and a toilet are available. Call +382 68 408 181 first to confirm it is open, carry cash, and keep the stop to about 20 minutes.",
+              "id": "day-2-morning-07",
+              "title": "Farm tasting at Pišče",
+              "dwellMin": 20,
+              "waypointId": "pisce-farm-tasting"
+            },
+            {
+              "type": "DRIVE",
+              "text": "Descend the last few kilometres from Pišče to Plužine.",
+              "id": "day-2-morning-08",
+              "title": "Drive Pišče to Plužine",
+              "leg": {
+                "from": "pisce-farm-tasting",
+                "to": "pluzine"
+              },
+              "driveMin": {
+                "nominal": 9,
+                "adjusted": 11,
+                "source": "estimate: about 6 km of mountain road",
+                "checked": "2026-10-02"
+              }
             }
           ],
           "afternoon": [
             {
               "type": "SEE",
-              "text": "At Plužine, prioritize the Piva viewpoint and a short lakeside/town stop. Do not add Mratinje Dam or the cheese-farm detour.",
+              "text": "At Plužine, keep the Piva viewpoint and lakeside to a short 20-minute stop today, because the farm tasting used part of the time. Do not add Mratinje Dam.",
               "id": "day-2-afternoon-01",
               "title": "Piva viewpoint and Plužine lakeside",
-              "dwellMin": 45
+              "dwellMin": 20
             },
             {
               "type": "EAT",
-              "text": "Use the packed lunch by default. Restoran Piva Lake is the corridor sit-down option only if called ahead and the live return estimate remains within 6 h adjusted; allow 60 minutes, confirm parking and carry cash because payment is unverified.",
+              "text": "Eat the packed lunch quickly at the viewpoint or lakeside. Skip the Restoran Piva Lake sit-down today so the return stays near the 16:00 target.",
               "id": "day-2-afternoon-02",
               "title": "Packed lunch at Plužine",
-              "dwellMin": 45,
+              "dwellMin": 15,
               "foodId": "food-day-2-meals-01"
             },
             {
@@ -432,6 +456,10 @@
               "https://maps.google.com/?q=Trsa%2C%20Montenegro"
             ],
             [
+              "Local rakija and honey · Pišče",
+              "https://maps.google.com/?q=43.1625128,18.9025623"
+            ],
+            [
               "Piva viewpoint",
               "https://maps.google.com/?q=Piva%20Lake%20viewpoint%2C%20Plu%C5%BEine%2C%20Montenegro"
             ],
@@ -489,19 +517,7 @@
                 "waypointId": "zlatni-papagaj-zabljak"
               }
             ],
-            "coffee": [
-              {
-                "slot": "Morning · after Black Lake",
-                "name": "Gradska Kafanica · Žabljak",
-                "why": "Local espresso stop on the route back through town; no specialty-roaster claim.",
-                "hours": "Local listing shows daily 08:00–01:00; call to confirm.",
-                "parking": "Town-center street parking unverified; walk from the Black Lake lot only if timing allows.",
-                "mapUrl": "https://maps.google.com/?q=Gradska%20Kafanica%2C%20%C5%BDabljak%2C%20Montenegro",
-                "sourceUrl": "https://findinmontenegro.com/item/gradska-kafanica-zabljak/",
-                "id": "food-day-2-coffee-01",
-                "waypointId": "gradska-kafanica-zabljak"
-              }
-            ],
+            "coffee": [],
             "supermarkets": [
               {
                 "name": "Aroma 311 · Žabljak",
