@@ -6,7 +6,7 @@ The app at https://oriashkenazi.github.io/montenegro-2026-field-notes/ renders i
 
 ## Trip plan
 
-- [Complete trip plan](https://oriashkenazi.github.io/montenegro-2026-field-notes/trip.md): every day's timetable, drives, food and provisions, stays, insurance, budget, emergency numbers, all map waypoints and sources (134 KB Markdown)
+- [Complete trip plan](https://oriashkenazi.github.io/montenegro-2026-field-notes/trip.md): every day's timetable, drives, food and provisions, stays, insurance, budget, emergency numbers, all map waypoints and sources (133 KB Markdown)
 - [Same content, llms-full.txt](https://oriashkenazi.github.io/montenegro-2026-field-notes/llms-full.txt)
 
 ## Raw data

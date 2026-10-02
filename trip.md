@@ -203,32 +203,26 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - **08:16–09:46 · WALK · Black Lake shore loop** — Walk the Black Lake shore loop at an easy pace. The small-lake shore can be damp and slippery; use grippy shoes and turn back if footing or visibility worsens.
   - **Time on site:** 90 min
   - **Note (LOGISTICS · Coffee at Black Lake):** Coffee was taken at Black Lake, so skip the town espresso stop and drive straight on to Sedlo.
-- **11:25–13:30 · DRIVE · Drive over Sedlo to the Pišče farm** — Leave Black Lake at about 11:25 and continue on P14/R-16 over Sedlo to Trsa, then descend toward Plužine. Roads are paved but narrow, winding two-way mountain roads; use signed pullouts and expect to wait for passing places.
+- **11:25–13:41 · DRIVE · Drive over Sedlo to Plužine** — Left Black Lake at about 11:25 and drove P14/R-16 over Sedlo and Trsa down to Plužine, arriving about 15:00 with photo stops. Roads are paved but narrow, winding two-way mountain roads; use signed pullouts and expect to wait for passing places.
   - **Fixed time:** 11:25
-  - **Drive time:** 104 min nominal / 125 min adjusted (source estimate: OSRM Black Lake–Plužine leg minus the last 6 km, checked 2026-10-02)
-  - **Leg:** Black Lake parking → Local rakija and honey · Pišče via P14 Sedlo Pass route, Trsa village pullout
+  - **Drive time:** 113 min nominal / 136 min adjusted (source OSRM, checked 2026-09-29)
+  - **Leg:** Black Lake parking → Plužine via P14 Sedlo Pass route, Trsa village pullout
   - **CAUTION:** Before committing to P14, check AMSCG road conditions, the Sedlo forecast and the host’s local report. Proceed on the primary route if open, dry enough and free of ice/low cloud. Also check AMSCG for timed daily closures for roadworks on the Plužine and P14 roads, and for snow on Sedlo. If the forecast is bad for Day 2 but good for Day 3, swap the two days.
-- **13:30–13:50 · EAT · Farm tasting at Pišče** — Stop at the Local rakija and honey family farm in Pišče, about 10 minutes before Plužine, for a tasting of homemade cheese, prosciutto, honey and rakija; coffee and a toilet are available. Call +382 68 408 181 first to confirm it is open, carry cash, and keep the stop to about 20 minutes.
-  - **Time on site:** 20 min
-  - **waypointId:** pisce-farm-tasting
-- **13:50–14:01 · DRIVE · Drive Pišče to Plužine** — Descend the last few kilometres from Pišče to Plužine.
-  - **Drive time:** 9 min nominal / 11 min adjusted (source estimate: about 6 km of mountain road, checked 2026-10-02)
-  - **Leg:** Local rakija and honey · Pišče → Plužine
 
 ### Afternoon
 
-- **14:01–14:21 · SEE · Piva viewpoint and Plužine lakeside** — At Plužine, keep the Piva viewpoint and lakeside to a short 20-minute stop today, because the farm tasting used part of the time. Do not add Mratinje Dam.
-  - **Time on site:** 20 min
-- **14:21–14:36 · EAT · Packed lunch at Plužine** — Eat the packed lunch quickly at the viewpoint or lakeside. Skip the Restoran Piva Lake sit-down today so the return stays near the 16:00 target.
-  - **Time on site:** 15 min
-  - **Food stop:** Restoran Piva Lake · Plužine; packed lunch is the default (details under Food & provisions for this day)
+- **11:25–13:41 · SEE · Piva view from the Sočica terrace** — Lunch is on the Sočica terraces above the lake, so skip a separate Piva viewpoint stop today. Do not add Mratinje Dam.
+- **15:00–15:45 · EAT · Late lunch at Sočica** — Late lunch at Restoran Sočica on the terraces above Piva Lake. Tell the waiter you have about 40 minutes and order simple dishes such as local trout. Leave Plužine by 16:00 at the latest.
+  - **Fixed time:** 15:00
+  - **Time on site:** 45 min
+  - **Food stop:** Restoran Sočica · Plužine (details under Food & provisions for this day)
   - **Note (LOGISTICS):** Choose the return live: use M-3 via Nikšić and M-6 via Šavnik only if navigation keeps total adjusted driving ≤6 h and the Žabljak return target by 16:00. Otherwise return over Sedlo if that is the faster safe open route.
   - **CAUTION:** Hard decision gate in Plužine: if either return option misses the 6 h driving ceiling or leaves too little buffer before the 17:30 no-mountain-driving cutoff, shorten the stop and start back immediately; do not extend the loop.
   - **Note (LOGISTICS):** Use marked parking only. Black Lake off-season parking is reported at €1.20/hour from Oct 1–May 31; carry coins and confirm the meter/sign. Budget Durmitor admission at the current €5/person rate if charged.
 
 ### Evening
 
-- **14:36–15:57 · DRIVE · Drive back to Runolist over Sedlo** — Return to Runolist by the 16:00 target and never continue mountain driving beyond 17:30.
+- **15:45–17:06 · DRIVE · Drive back to Runolist over Sedlo** — Leave Plužine by 16:00 and return over Sedlo, arriving about 17:20; never continue mountain driving beyond 17:30.
   - **Drive time:** 67 min nominal / 81 min adjusted (source OSRM, checked 2026-09-29)
   - **Leg:** Plužine → Runolist Chalet via P14 Sedlo Pass route
 - **18:00–19:15 · EAT · Dinner at Zlatni Papagaj** — Dinner at Zlatni Papagaj, which publishes 18:00–23:00 service and Montenegrin dishes; call/reserve for Oct 2, ask about payment, and walk from the chalet if practical.
@@ -243,14 +237,14 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 
 **Meals**
 
-- **Lunch · Plužine, conditional · Restoran Piva Lake · Plužine; packed lunch is the default** — Regional Montenegrin dishes, soups and grilled/cooked options; choose from the current menu.
-  - **Hours:** Listing shows Friday 08:00–23:00; call to confirm Oct 2 service.
-  - **Parking:** Address listing; restaurant guest parking not verified. Use only signed public parking.
-  - **Payment:** Payment method unverified; carry cash and ask.
-  - **Time planned:** 60 min
-  - **Plan:** Call before leaving Žabljak. Stop only if the live return still passes the ≤6 h adjusted drive and 16:00 return target; otherwise eat the packed lunch.
-  - **Map:** [maps.google.com](https://maps.google.com/?q=Restoran%20Piva%20Lake%2C%20Nova%202%2C%20Plu%C5%BEine%2C%20Montenegro)
-  - **Source:** [moja-djelatnost.me](https://www.moja-djelatnost.me/izdavanje-apartmana-i-restoran-pluzine/piva-lake/MM19_Jkh)
+- **Late lunch · Plužine · Restoran Sočica · Plužine** — Lake-view terraces above Piva; local trout, grilled meat and Montenegrin dishes.
+  - **Hours:** Google listing shows daily service until 23:00.
+  - **Parking:** Central Plužine street parking near the restaurant.
+  - **Payment:** Card acceptance unconfirmed; carry cash.
+  - **Time planned:** 45 min
+  - **Plan:** Group members rate it excellent but relatively expensive; order quickly and leave by 16:00.
+  - **Map:** [maps.google.com](https://maps.google.com/?q=43.1567794,18.8412503)
+  - **Source:** [maps.google.com](https://maps.google.com/?q=So%C4%8Dica%20Restaurant%2C%20Plu%C5%BEine)
 - **Dinner · Žabljak · Zlatni Papagaj** — Montenegrin cuisine; outdoor dining listed by the restaurant.
   - **Hours:** Official site publishes 18:00–23:00; reconfirm for the date.
   - **Parking:** Street/town parking not verified; prefer walking from Runolist.
@@ -281,7 +275,6 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - [Black Lake trailhead](https://maps.google.com/?q=Black%20Lake%20trailhead%2C%20%C5%BDabljak%2C%20Montenegro)
 - [P14 Sedlo Pass route](https://maps.google.com/?q=%C5%BDabljak%20to%20Sedlo%20Pass%2C%20Trsa%20and%20Plu%C5%BEine%20via%20P14%20Montenegro)
 - [Trsa village pullout](https://maps.google.com/?q=Trsa%2C%20Montenegro)
-- [Local rakija and honey · Pišče](https://maps.google.com/?q=43.1625128,18.9025623)
 - [Piva viewpoint](https://maps.google.com/?q=Piva%20Lake%20viewpoint%2C%20Plu%C5%BEine%2C%20Montenegro)
 - [Plužine lakeside](https://maps.google.com/?q=Plu%C5%BEine%2C%20Montenegro)
 - [Nikšić](https://maps.google.com/?q=Nik%C5%A1i%C4%87%2C%20Montenegro)
@@ -857,7 +850,7 @@ The app’s Live weather tab loads a 16-day Open-Meteo forecast for these route 
 
 ## Map waypoints
 
-All 126 places on the app’s map (waypoints file version 3). “Days” lists the itinerary days that use each place.
+All 125 places on the app’s map (waypoints file version 3). “Days” lists the itinerary days that use each place.
 
 - **TIV · Europcar rental pickup (Arrivals desk)** — Parking · 42.4047, 18.7233 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=Tivat%20Airport%20Europcar%20Arrivals%20desk%2C%20Montenegro&travelmode=driving)
   - **Days:** 1
@@ -932,10 +925,6 @@ All 126 places on the app’s map (waypoints file version 3). “Days” lists t
   - **Days:** 2
   - **Payment:** Ask
   - **Pin precision:** route reference at Sedlo Pass; use live navigation for road timing
-- **Local rakija and honey · Pišče** — Food · 43.1625128, 18.9025623 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=43.1625128,18.9025623&travelmode=driving)
-  - **Days:** 2
-  - **Payment:** Ask
-  - **Pin precision:** Google Maps business pin
 - **Trsa village pullout** — Viewpoint · 43.1692, 18.9831 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=Trsa%20village%20pullout%2C%20Montenegro&travelmode=driving)
   - **Days:** 2
   - **Payment:** Ask

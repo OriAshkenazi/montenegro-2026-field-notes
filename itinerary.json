@@ -311,70 +311,47 @@
             },
             {
               "type": "DRIVE",
-              "text": "Leave Black Lake at about 11:25 and continue on P14/R-16 over Sedlo to Trsa, then descend toward Plužine. Roads are paved but narrow, winding two-way mountain roads; use signed pullouts and expect to wait for passing places.",
+              "text": "Left Black Lake at about 11:25 and drove P14/R-16 over Sedlo and Trsa down to Plužine, arriving about 15:00 with photo stops. Roads are paved but narrow, winding two-way mountain roads; use signed pullouts and expect to wait for passing places.",
               "id": "day-2-morning-05",
-              "title": "Drive over Sedlo to the Pišče farm",
+              "title": "Drive over Sedlo to Plužine",
               "fixedAt": "11:25",
               "leg": {
                 "from": "black-lake-parking",
-                "to": "pisce-farm-tasting",
+                "to": "pluzine",
                 "via": [
                   "p14-sedlo-pass-route",
                   "trsa-village-pullout"
                 ]
               },
               "driveMin": {
-                "nominal": 104,
-                "adjusted": 125,
-                "source": "estimate: OSRM Black Lake–Plužine leg minus the last 6 km",
-                "checked": "2026-10-02"
+                "nominal": 113,
+                "adjusted": 136,
+                "source": "OSRM",
+                "checked": "2026-09-29"
               }
             },
             {
               "type": "CAUTION",
               "text": "Before committing to P14, check AMSCG road conditions, the Sedlo forecast and the host’s local report. Proceed on the primary route if open, dry enough and free of ice/low cloud. Also check AMSCG for timed daily closures for roadworks on the Plužine and P14 roads, and for snow on Sedlo. If the forecast is bad for Day 2 but good for Day 3, swap the two days.",
               "id": "day-2-morning-06"
-            },
-            {
-              "type": "EAT",
-              "text": "Stop at the Local rakija and honey family farm in Pišče, about 10 minutes before Plužine, for a tasting of homemade cheese, prosciutto, honey and rakija; coffee and a toilet are available. Call +382 68 408 181 first to confirm it is open, carry cash, and keep the stop to about 20 minutes.",
-              "id": "day-2-morning-07",
-              "title": "Farm tasting at Pišče",
-              "dwellMin": 20,
-              "waypointId": "pisce-farm-tasting"
-            },
-            {
-              "type": "DRIVE",
-              "text": "Descend the last few kilometres from Pišče to Plužine.",
-              "id": "day-2-morning-08",
-              "title": "Drive Pišče to Plužine",
-              "leg": {
-                "from": "pisce-farm-tasting",
-                "to": "pluzine"
-              },
-              "driveMin": {
-                "nominal": 9,
-                "adjusted": 11,
-                "source": "estimate: about 6 km of mountain road",
-                "checked": "2026-10-02"
-              }
             }
           ],
           "afternoon": [
             {
               "type": "SEE",
-              "text": "At Plužine, keep the Piva viewpoint and lakeside to a short 20-minute stop today, because the farm tasting used part of the time. Do not add Mratinje Dam.",
+              "text": "Lunch is on the Sočica terraces above the lake, so skip a separate Piva viewpoint stop today. Do not add Mratinje Dam.",
               "id": "day-2-afternoon-01",
-              "title": "Piva viewpoint and Plužine lakeside",
-              "dwellMin": 20
+              "title": "Piva view from the Sočica terrace",
+              "note": true
             },
             {
               "type": "EAT",
-              "text": "Eat the packed lunch quickly at the viewpoint or lakeside. Skip the Restoran Piva Lake sit-down today so the return stays near the 16:00 target.",
+              "text": "Late lunch at Restoran Sočica on the terraces above Piva Lake. Tell the waiter you have about 40 minutes and order simple dishes such as local trout. Leave Plužine by 16:00 at the latest.",
               "id": "day-2-afternoon-02",
-              "title": "Packed lunch at Plužine",
-              "dwellMin": 15,
-              "foodId": "food-day-2-meals-01"
+              "title": "Late lunch at Sočica",
+              "dwellMin": 45,
+              "foodId": "food-day-2-meals-01",
+              "fixedAt": "15:00"
             },
             {
               "type": "LOGISTICS",
@@ -397,7 +374,7 @@
           "evening": [
             {
               "type": "DRIVE",
-              "text": "Return to Runolist by the 16:00 target and never continue mountain driving beyond 17:30.",
+              "text": "Leave Plužine by 16:00 and return over Sedlo, arriving about 17:20; never continue mountain driving beyond 17:30.",
               "id": "day-2-evening-01",
               "title": "Drive back to Runolist over Sedlo",
               "leg": {
@@ -456,10 +433,6 @@
               "https://maps.google.com/?q=Trsa%2C%20Montenegro"
             ],
             [
-              "Local rakija and honey · Pišče",
-              "https://maps.google.com/?q=43.1625128,18.9025623"
-            ],
-            [
               "Piva viewpoint",
               "https://maps.google.com/?q=Piva%20Lake%20viewpoint%2C%20Plu%C5%BEine%2C%20Montenegro"
             ],
@@ -489,18 +462,18 @@
           "food": {
             "meals": [
               {
-                "slot": "Lunch · Plužine, conditional",
-                "name": "Restoran Piva Lake · Plužine; packed lunch is the default",
-                "specialty": "Regional Montenegrin dishes, soups and grilled/cooked options; choose from the current menu.",
-                "hours": "Listing shows Friday 08:00–23:00; call to confirm Oct 2 service.",
-                "parking": "Address listing; restaurant guest parking not verified. Use only signed public parking.",
-                "cash": "Payment method unverified; carry cash and ask.",
-                "durationMinutes": 60,
-                "plan": "Call before leaving Žabljak. Stop only if the live return still passes the ≤6 h adjusted drive and 16:00 return target; otherwise eat the packed lunch.",
-                "mapUrl": "https://maps.google.com/?q=Restoran%20Piva%20Lake%2C%20Nova%202%2C%20Plu%C5%BEine%2C%20Montenegro",
-                "sourceUrl": "https://www.moja-djelatnost.me/izdavanje-apartmana-i-restoran-pluzine/piva-lake/MM19_Jkh",
+                "slot": "Late lunch · Plužine",
+                "name": "Restoran Sočica · Plužine",
+                "specialty": "Lake-view terraces above Piva; local trout, grilled meat and Montenegrin dishes.",
+                "hours": "Google listing shows daily service until 23:00.",
+                "parking": "Central Plužine street parking near the restaurant.",
+                "cash": "Card acceptance unconfirmed; carry cash.",
+                "durationMinutes": 45,
+                "plan": "Group members rate it excellent but relatively expensive; order quickly and leave by 16:00.",
+                "mapUrl": "https://maps.google.com/?q=43.1567794,18.8412503",
+                "sourceUrl": "https://maps.google.com/?q=So%C4%8Dica%20Restaurant%2C%20Plu%C5%BEine",
                 "id": "food-day-2-meals-01",
-                "waypointId": "piva-lake-restaurant-pluzine"
+                "waypointId": "restoran-socica-pluzine"
               },
               {
                 "slot": "Dinner · Žabljak",
