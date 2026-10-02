@@ -39,7 +39,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 | --- | --- | --- | --- | --- |
 | 1 | Thu · Oct 1 (2026-10-01) | North · Tivat → Žabljak | Runolist Chalet · Žabljak | 4.4 h |
 | 2 | Fri · Oct 2 (2026-10-02) | North · Žabljak / Durmitor / Piva | Runolist Chalet · Žabljak | 3.9 h |
-| 3 | Sat · Oct 3 (2026-10-03) | North · Tara Canyon / Mojkovac / Kolašin / Biogradska Gora | Runolist Chalet · Žabljak | 5.7 h |
+| 3 | Sat · Oct 3 (2026-10-03) | North · Tara Canyon / Mojkovac / Kolašin / Biogradska Gora | Runolist Chalet · Žabljak | 7.2 h |
 | 4 | Sun · Oct 4 (2026-10-04) | North → Coast · Perast / Kotor | Conte Hotel & Restaurant · Perast | 5.2 h |
 | 5 | Mon · Oct 5 (2026-10-05) | Coast / Central · Perast → Lovćen → Skadar → Perast | Conte Hotel & Restaurant · Perast | 5.5 h |
 | 6 | Tue · Oct 6 (2026-10-06) | Coast · Tivat Airport | Conte Hotel & Restaurant · Perast | 0.7 h |
@@ -229,7 +229,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
   - **Fixed time:** 18:00
   - **Time on site:** 75 min
   - **Food stop:** Zlatni Papagaj (details under Food & provisions for this day)
-- **19:15–19:30 · LOGISTICS · Stock up at Aroma 311** — Shop at Aroma 311 before closing for Saturday water/snacks; do not add a morning provisioning stop.
+- **19:15–19:30 · LOGISTICS · Stock up at Aroma 311** — Shop at Aroma 311 before closing for Saturday's packed lunch, water and snacks; do not add a morning provisioning stop.
   - **Time on site:** 15 min
   - **Food stop:** Aroma 311 · Žabljak (details under Food & provisions for this day)
 
@@ -286,42 +286,43 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - **Date:** 2026-10-03
 - **Region:** North · Tara Canyon / Mojkovac / Kolašin / Biogradska Gora
 - **Overnight base:** Runolist Chalet · Žabljak
-- **Day starts:** 06:45
-- **Driving route:** Runolist → M-6 / R-20 via Boan → Kolašin → Biogradsko Lake → Dobre Vode → Kolašin → Boan → Runolist · ~4 h 45 nominal / 5 h 43 adjusted (OSRM +20%); verify the Boan section is paved and open; the optional Tara viewpoint spur would exceed the 6 h ceiling
-- **Adjusted driving total:** 5.7 h (timetable drive legs sum to 5 h 43 min)
+- **Day starts:** 08:00
+- **Driving route:** Runolist → Đurđevića Tara Bridge viewpoint (north side) → Njegovuđa → R-20 via Boan → Kolašin → Biogradsko Lake → Kolašin → Boan → Runolist · about 7.2 h adjusted driving with the bridge visit, above the 6 h ceiling; 18:00 driving cutoff; verify the Boan section is paved and open
+- **Adjusted driving total:** 7.2 h (timetable drive legs sum to 7 h 12 min)
 - **Interests:** Adventure & Hiking, Nature & Wildlife, Sightseeing, Food & Dining
 - **communityPicks:** name: Viline Vode; note: Kolašin: large portions; smoked fish and crêpes praised.; mapUrl: https://maps.google.com/?q=Viline%20Vode%20Kolasin; id: pick-day-3-01, name: Sherpas; note: Kolašin: recommended by several travelers.; mapUrl: https://maps.google.com/?q=Sherpas%20Kolasin; id: pick-day-3-02, name: Montana Bar; note: Kolašin: casual meals.; mapUrl: https://maps.google.com/?q=Montana%20Bar%20Kolasin; id: pick-day-3-03, name: Vodenica; note: Kolašin: breakfast.; mapUrl: https://maps.google.com/?q=Vodenica%20Kolasin; id: pick-day-3-04, name: Tara Kanjon; note: Breakfast with a view of the Tara bridge from its south side.; mapUrl: https://maps.google.com/?q=Tara%20Kanjon%20restaurant%20Djurdjevica%20Tara; id: pick-day-3-05
 
 ### Morning
 
-- **06:45 · STAY · Breakfast and depart Runolist** — Breakfast at Runolist and leave around 06:45. Check AMSCG, weather, park access and the Tara operator before setting out; fill the tank and carry water/snacks.
-  - **Note (LOGISTICS · Optional Tara Canyon viewpoint spur):** Tara Bridge is scheduled to be closed through Oct 26, 2026. Do not cross the bridge or enter the works. Visit the bridge/canyon only from a safe public viewing place whose access is confirmed open; the map pin is an approximate reference, not parking. Optional spur only: the Žabljak-side viewpoint detour adds roughly 1 h of adjusted driving plus the stop, which pushes the day past the 6 h ceiling, so take it only if live routing shows the day still fits. Travelers report the bridge closed to pedestrians roughly 10:00–12:00 and the access road under works until late October, so plan any viewpoint stop outside that window.
-  - **Note (LOGISTICS · Tara viewpoint stop (zipline conditional)):** Zipline is a conditional add-on: October dates depend on weather. Red Rock requires walking back across the bridge, so do not use it during this closure. Consider Yellow/Extreme only if the operator confirms operation, retrieval and access without crossing; skip it if it adds delay or breaks either route gate.
-- **06:45–08:56 · DRIVE · Drive to Kolašin via Boan (R-20)** — Continue toward Kolašin only on a live, paved route that does not cross the closed bridge. Plan on M-6 → R-20 via Boan (Mioska–Tušina) → M-2; before leaving, verify that the Boan section is paved and open, and do not accept an unverified gravel shortcut. The R-10/Mojkovac corridor runs to the closed bridge, so do not use it during the closure.
-  - **Drive time:** 109 min nominal / 131 min adjusted (source OSRM, checked 2026-09-29)
-  - **Leg:** Runolist Chalet → Kolašin · town center
-- **08:56–09:16 · LOGISTICS · Espresso at Caffe Select, Kolašin** — Take espresso at Caffe Select in central Kolašin; the Tourism Organisation lists 07:00 winter-season opening, so confirm October hours by phone.
-  - **Time on site:** 20 min
-  - **Food stop:** Caffe Select · central Kolašin (details under Food & provisions for this day)
+- **08:00 · STAY · Breakfast and depart Runolist** — Breakfast at Runolist and leave at 08:00 with the packed lunch, water and snacks bought on Friday evening. Check AMSCG, the weather and the Tara zipline operator before setting out, and fill the tank.
+- **08:00–08:29 · DRIVE · Drive to the Tara bridge viewpoint** — Drive east on the M-6 to the Žabljak (north) side of Đurđevića Tara Bridge. The bridge is closed to vehicles through Oct 26, 2026; do not cross it or enter the works, and park only in a marked public area.
+  - **Drive time:** 24 min nominal / 29 min adjusted (source OSRM, checked 2026-10-02)
+  - **Leg:** Runolist Chalet → Đurđevića Tara Bridge / canyon viewpoint · access conditional
+- **08:29–09:19 · SEE · Tara bridge viewpoint and zipline** — View the canyon and bridge from a safe public viewpoint; you arrive well before the 10:00–12:00 window when travelers report the bridge closing to pedestrians. Ride the zipline only on a line that starts and lands on this side: Red Rock needs a walk back across the bridge, so skip it. Travelers report about €50 cash per ride and a 30-minute walk and climb back. Skip the zipline if it is not running or would push departure past 09:20.
+  - **Time on site:** 50 min
+  - **waypointId:** tara-bridge-viewpoint-conditional
+- **09:19–12:08 · DRIVE · Drive via Boan to Kolašin** — Continue toward Kolašin only on a live, paved route that does not cross the closed bridge. Plan on M-6 → R-20 via Boan (Mioska–Tušina) → M-2; before leaving, verify that the Boan section is paved and open, and do not accept an unverified gravel shortcut. The R-10/Mojkovac corridor runs to the closed bridge, so do not use it during the closure. On-site check at the bridge: if it is clearly open to cars, crossing it via Mojkovac reaches Biogradsko Lake first in about 1 h 15 and saves about two hours; otherwise, which is expected, take the Boan route.
+  - **Drive time:** 141 min nominal / 169 min adjusted (source OSRM via Njegovuđa, Tušina and Mioska, checked 2026-10-02)
+  - **Leg:** Đurđevića Tara Bridge / canyon viewpoint · access conditional → Kolašin · town center
+- **12:08–12:48 · DRIVE · Drive through Kolašin to Biogradsko Lake** — Pass through Kolašin around 12:10 without stopping and follow the M-2 and the signed park access to Biogradsko Lake. Biogradska Gora admission is about €4 per person.
+  - **Drive time:** 33 min nominal / 40 min adjusted (source OSRM, checked 2026-09-29)
+  - **Leg:** Kolašin · town center → Biogradsko Lake · lake-loop trailhead
 
 ### Afternoon
 
-- **09:16–09:56 · DRIVE · Drive to Biogradsko Lake** — From Kolašin follow signed park access to Biogradsko Lake; confirm the gate and private-car access before leaving town. The official 2026 notice confirms the season opened, but not Oct 3 road or visitor-train operation.
-  - **Drive time:** 33 min nominal / 40 min adjusted (source OSRM, checked 2026-09-29)
-  - **Leg:** Kolašin · town center → Biogradsko Lake · lake-loop trailhead
-- **09:56–11:56 · WALK · Biogradsko Lake shore loop** — Walk the lake shore loop, allowing up to 2 hours for the circuit, photos and damp autumn footing. Turn back if the trail is slippery or visibility deteriorates.
-  - **Time on site:** 120 min
-- **11:56–12:56 · EAT · Lunch at Dobre Vode** — On the return corridor, stop at Dobre Vode in Sjerogošte for a 60-minute lunch around noon: local kačamak, gotovac, lamb in milk and veal under sač. The Tourism Organisation places it on the Kolašin–Mojkovac road, 6 km from the park, with a large car park. Call first for October operation and payment.
-  - **Time on site:** 60 min
-  - **Food stop:** Dobre Vode (details under Food & provisions for this day)
-  - **CAUTION:** Keep adjusted driving at or below 6 h and target Runolist by 16:00, with 17:30 the no-mountain-driving cutoff. If the Tara spur/zipline threatens either limit, skip that spur first and continue the Kolašin/Biogradska primary day.
+- **12:48–14:18 · WALK · Biogradsko Lake shore loop** — Walk the lake shore loop, about 3.5 km; allow about 90 minutes for the circuit and photos on damp autumn footing. Turn back if the trail is slippery or visibility deteriorates.
+  - **Time on site:** 90 min
+- **14:18–14:33 · EAT · Packed lunch at Biogradsko Lake** — Eat the packed lunch at the lake before starting back. This is the default: a sit-down lunch in Kolašin fits only if you leave the lake by about 13:50.
+  - **Time on site:** 15 min
+  - **CAUTION:** With the Tara bridge visit the day is about 7.2 h of adjusted driving, above the usual 6 h ceiling. Today's hard cutoff for driving is 18:00. If you are running late, shorten the Tara stop or skip the zipline first, then the sit-down lunch.
   - **Note (LOGISTICS):** Biogradska Gora admission is currently €4/person/day; boats are €10/hour, kayaks €3 single / €5 double per hour. The park tariff does not state payment method; carry cash. Confirm October operations before budgeting boat time.
 
 ### Evening
 
-- **12:56–15:48 · DRIVE · Drive back to Runolist via Boan** — Return to Runolist by 16:00 target and stop mountain driving by 17:30.
-  - **Drive time:** 143 min nominal / 172 min adjusted (source OSRM, checked 2026-09-29)
-  - **Leg:** Biogradsko Lake · lake-loop trailhead → Runolist Chalet via Dobre Vode · Kolašin–Mojkovac road, Kolašin · town center
+- **14:33–17:47 · DRIVE · Drive back to Runolist via Kolašin and Boan** — Drive back through Kolašin, around 15:15, and over Boan to Runolist, arriving by about 17:50 and before the 18:00 cutoff. If you left the lake by about 13:50, the optional sit-down lunch in Kolašin fits here.
+  - **Drive time:** 162 min nominal / 194 min adjusted (source OSRM via Kolašin, Mioska, Tušina and Njegovuđa, checked 2026-10-02)
+  - **Leg:** Biogradsko Lake · lake-loop trailhead → Runolist Chalet via Kolašin · town center
+  - **Food stop:** Optional sit-down lunch in Kolašin · Sherpas or Viline Vode (details under Food & provisions for this day)
 - **18:00–19:15 · EAT · Dinner at Zlatni Papagaj** — Dinner at Zlatni Papagaj, 18:00–23:00 published; call/reserve for Oct 3 and ask about payment.
   - **Fixed time:** 18:00
   - **Time on site:** 75 min
@@ -333,14 +334,14 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 
 **Meals**
 
-- **Lunch · Sjerogošte, Kolašin–Mojkovac corridor · Dobre Vode** — Kačamak, gotovac, lamb in milk, trout and veal under sač; regional highland cooking.
-  - **Hours:** Tourism listing does not publish October hours; call +382 69 233 000.
-  - **Parking:** Official tourism listing describes large parking; verify on arrival.
+- **Optional lunch · Kolašin · Optional sit-down lunch in Kolašin · Sherpas or Viline Vode** — Group picks: Sherpas, called the best restaurant in northern Montenegro by one couple; Viline Vode for large portions, smoked fish and crêpes.
+  - **Hours:** Check Google Maps for current hours on arrival.
+  - **Parking:** Signed town parking in central Kolašin.
   - **Payment:** Payment method unverified; carry cash and ask.
   - **Time planned:** 60 min
-  - **Plan:** Stop after the lake walk on the return road; call before leaving Žabljak. If closed, use a Kolašin town restaurant from the official directory and preserve the return gate.
-  - **Map:** [maps.google.com](https://maps.google.com/?q=Restoran%20Dobre%20Vode%2C%20Sjerogo%C5%A1te%2C%20Kola%C5%A1in%2C%20Montenegro)
-  - **Source:** [kolasin.me](https://kolasin.me/dobre-vode-restaurant/)
+  - **Plan:** Only if you leave Biogradsko Lake by about 13:50; otherwise eat the packed lunch at the lake to keep the 18:00 cutoff.
+  - **Map:** [maps.google.com](https://maps.google.com/?q=Sherpas%20Kola%C5%A1in)
+  - **Source:** [maps.google.com](https://maps.google.com/?q=Viline%20Vode%20Kola%C5%A1in)
 - **Dinner · Žabljak · Zlatni Papagaj** — Montenegrin cuisine and listed outdoor dining.
   - **Hours:** Official site publishes 18:00–23:00; reconfirm date.
   - **Parking:** Town-center parking not verified; walk from lodging.
@@ -349,14 +350,6 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
   - **Plan:** Call or reserve on Oct 3; keep lodging food as backup if return is delayed.
   - **Map:** [maps.google.com](https://maps.google.com/?q=Zlatni%20Papagaj%2C%20%C5%BDabljak%2C%20Montenegro)
   - **Source:** [zlatnipapagaj.com](https://zlatnipapagaj.com/)
-
-**Coffee**
-
-- **Morning · Kolašin · Caffe Select · central Kolašin** — Practical espresso stop across from the town square; not represented as a specialty roaster.
-  - **Hours:** Tourism Organisation lists 07:00 winter-season opening; confirm October operation.
-  - **Parking:** Central public parking; exact café customer space not confirmed.
-  - **Map:** [maps.google.com](https://maps.google.com/?q=Caffe%20Select%2C%20Trg%20Borca%2C%20Kola%C5%A1in%2C%20Montenegro)
-  - **Source:** [kolasin.me](https://kolasin.me/kafici/)
 
 **Supermarkets and stock-up stops**
 
@@ -370,13 +363,13 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 ### Parking and cash
 
 - **Parking:** At Tara, use only confirmed public marked viewpoint and parking, never the road shoulder or work zone. In Kolašin use signed town parking; at Biogradska Gora follow the park checkpoint and same-day vehicle-access instructions. Do not assume summer visitor trains operate in October.
-- **Cash:** For two: Biogradska admission €8; optional boat €10/hour or double kayak €5/hour; possible Tara zipline €40–€90/couple only if operator confirms a bridge-free line and current price. Restaurant, parking and zipline payment methods require confirmation; carry small notes.
+- **Cash:** For two: Biogradska admission €8; optional boat €10/hour or double kayak €5/hour; Tara zipline about €50 cash per ride, on a same-side line only. Restaurant, parking and zipline payment methods require confirmation; carry small notes.
 
 ### Route and map links
 
 - [Runolist Chalet](https://maps.google.com/?q=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%20%C5%BDabljak%2C%20Montenegro)
+- [Đurđevića Tara Bridge / canyon viewpoint · access conditional](https://maps.google.com/?q=43.1507,19.2912)
 - [Kolašin · town center](https://maps.google.com/?q=Kola%C5%A1in%2C%20Montenegro)
-- [Dobre Vode · Kolašin–Mojkovac road](https://maps.google.com/?q=Restoran%20Dobre%20Vode%2C%20Sjerogo%C5%A1te%2C%20Kola%C5%A1in%2C%20Montenegro)
 - [Biogradsko Lake · lake-loop trailhead](https://maps.google.com/?q=Biogradsko%20Lake%20info%20board%2C%20Montenegro)
 - [Kolašin · town center](https://maps.google.com/?q=Kola%C5%A1in%2C%20Montenegro)
 - [Runolist Chalet](https://maps.google.com/?q=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%20%C5%BDabljak%2C%20Montenegro)
