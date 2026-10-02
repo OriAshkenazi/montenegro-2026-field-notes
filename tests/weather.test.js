@@ -7,7 +7,9 @@ const enUi=JSON.parse(fs.readFileSync('locales/en.json','utf8')).ui,tEn=(key,var
 assert(source.includes("id:'perast',name:'Conte Hotel · Perast (reception/property anchor)'"));
 assert(source.includes("name:'Runolist Chalet · Narodnih heroja (approximate pin)'"));
 assert(source.includes('mne-weather-forecast-v4'), 'coordinate changes must invalidate saved forecast payload');
-const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Podgorica',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+// The trip-window assertions assume the pre-trip view, so the clock is pinned to Sep 30 (any real date would drop past trip days).
+const NOW=Date.parse('2026-09-30T10:00:00Z');class FixedDate extends Date{constructor(...a){super(...(a.length?a:[NOW]));}static now(){return NOW;}}
+const today='2026-09-30';
 const hubIds=['tivat','perast','budva','podgorica','virpazar','zabljak','sedlo','kolasin','piva','biogradska','tara','lovcen','kuk'];
 function fixture(){
   const days=Array.from({length:16},(_,i)=>{const date=new Date(`${today}T12:00:00Z`);date.setUTCDate(date.getUTCDate()+i);return date.toISOString().slice(0,10);});
@@ -20,7 +22,7 @@ function run(rows,{online=true,cached=null}={}){
   const selectors=['#weatherHub','#weatherMode','#weatherUpdated','#weatherError','#weatherLoading','#weatherForecast','#weatherDays','#hourlyTitle','#hourlyScroller','#weatherHubTitle','#alpineWarning','#alpineWarningDetails','#coastWeather','#alpineWeather'];
   const elements=Object.fromEntries(selectors.map(selector=>[selector,{value:selector==='#weatherHub'?'zabljak':'',textContent:'',innerHTML:'',hidden:selector==='#weatherForecast'||selector==='#alpineWarning',classList:{add(){},toggle(){}},addEventListener(){},querySelectorAll(){return[]}}]));
   const store=new Map(cached?[["mne-weather-forecast-v4",JSON.stringify(cached)]]:[]);
-  const context={t:tEn,document:{querySelector:selector=>elements[selector]},navigator:{onLine:online},localStorage:{getItem:key=>store.get(key)||null,setItem:(key,value)=>store.set(key,value)},fetch:async()=>({ok:true,json:async()=>rows}),addEventListener(){},URL,Intl,Date,Math,Number,String,JSON,Array,Error};
+  const context={t:tEn,document:{querySelector:selector=>elements[selector]},navigator:{onLine:online},localStorage:{getItem:key=>store.get(key)||null,setItem:(key,value)=>store.set(key,value)},fetch:async()=>({ok:true,json:async()=>rows}),addEventListener(){},URL,Intl,Date:FixedDate,Math,Number,String,JSON,Array,Error};
   vm.runInNewContext(source,context);return new Promise(resolve=>setImmediate(()=>resolve({elements,store})));
 }
 
@@ -56,7 +58,7 @@ function run(rows,{online=true,cached=null}={}){
   const kukWet=fixture(),kukIndex=kukWet[12].daily.time.indexOf(tripDay);kukWet[12].daily.precipitation_probability_max[kukIndex]=61;
   result=await run(kukWet);assert.equal(result.elements['#alpineWarning'].hidden,false,'Kuk must be included in adjusted route weather warnings');
 
-  const saved={updatedAt:new Date().toISOString(),locations:Object.fromEntries(hubIds.map((id,index)=>[id,fixture()[index]]))};
+  const saved={updatedAt:new FixedDate().toISOString(),locations:Object.fromEntries(hubIds.map((id,index)=>[id,fixture()[index]]))};
   result=await run([], {online:false,cached:saved});
   assert.equal(result.elements['#weatherMode'].textContent,'Offline Mode - Showing Cached Forecast');
   assert.equal(result.elements['#weatherForecast'].hidden,false);

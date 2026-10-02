@@ -280,6 +280,22 @@
       "precision": "route reference at Sedlo Pass; use live navigation for road timing"
     },
     {
+      "id": "pisce-farm-tasting",
+      "name": "Local rakija and honey · Pišče",
+      "category": "Food",
+      "lat": 43.1625128,
+      "lng": 18.9025623,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=43.1625128,18.9025623&travelmode=driving",
+      "cash": "Ask",
+      "days": {
+        "primary": [
+          2
+        ]
+      },
+      "aliases": [],
+      "precision": "Google Maps business pin"
+    },
+    {
       "id": "trsa-village-pullout",
       "name": "Trsa village pullout",
       "category": "Viewpoint",
