@@ -584,7 +584,7 @@
             },
             {
               "type": "DRIVE",
-              "text": "Turn south onto the R-10 just before the bridge; you do not cross it. Follow the Tara canyon to Mojkovac, then the M-2 toward Kolašin and the signed park access to Biogradsko Lake.",
+              "text": "Turn south onto the R-10 just before the bridge; you do not cross it. The junction is close to the works, so follow any on-site diversion signs. Follow the Tara canyon to Mojkovac, then the M-2 toward Kolašin and the signed park access to Biogradsko Lake.",
               "id": "day-3-morning-04",
               "title": "Drive south via Mojkovac to Biogradsko Lake",
               "leg": {
@@ -712,11 +712,11 @@
             "Sightseeing",
             "Food & Dining"
           ],
-          "heading": "Tara Canyon access check / Kolašin / Biogradska Gora",
+          "heading": "Tara bridge viewpoint, Biogradska Gora and Kolašin",
           "food": {
             "meals": [
               {
-                "slot": "Optional lunch · Kolašin",
+                "slot": "Lunch · Kolašin",
                 "name": "Sherpas or Viline Vode · Kolašin",
                 "specialty": "Group picks: Sherpas, called the best restaurant in northern Montenegro by one couple; Viline Vode for large portions, smoked fish and crêpes.",
                 "hours": "Check Google Maps for current hours on arrival.",

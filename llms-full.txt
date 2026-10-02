@@ -20,7 +20,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - Stays
 - Day 1 · Tivat → Nikšić break → Runolist Chalet / northbound mountain transfer (Thu · Oct 1)
 - Day 2 · Black Lake / P14-Sedlo / Trsa / Plužine and Piva (Fri · Oct 2)
-- Day 3 · Tara Canyon access check / Kolašin / Biogradska Gora (Sat · Oct 3)
+- Day 3 · Tara bridge viewpoint, Biogradska Gora and Kolašin (Sat · Oct 3)
 - Day 4 · Runolist → Nikšić coffee → Risan mosaics → Perast bags secured → Kotor Old Town (Sun · Oct 4)
 - Day 5 · Kotor espresso / Njegoš Mausoleum / Kuk coaster / Skadar boat circuit (Mon · Oct 5)
 - Day 6 · Perast → TIV / rental return / flight home (Tue · Oct 6)
@@ -281,7 +281,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - [Šavnik](https://maps.google.com/?q=%C5%A0avnik%2C%20Montenegro)
 - [Runolist Chalet](https://maps.google.com/?q=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%20%C5%BDabljak%2C%20Montenegro)
 
-## Day 3 · Tara Canyon access check / Kolašin / Biogradska Gora (Sat · Oct 3)
+## Day 3 · Tara bridge viewpoint, Biogradska Gora and Kolašin (Sat · Oct 3)
 
 - **Date:** 2026-10-03
 - **Region:** North · Tara Canyon / Mojkovac / Biogradska Gora / Kolašin
@@ -301,7 +301,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - **08:29–09:19 · SEE · Tara bridge viewpoint and zipline** — View the canyon and bridge from a safe public viewpoint; you arrive well before the 10:00–12:00 window when travelers report the bridge closing to pedestrians. Ride the zipline only on a line that starts and lands on this side: Red Rock needs a walk back across the bridge, so skip it. Travelers report about €50 cash per ride and a 30-minute walk and climb back. Skip the zipline if it is not running or would push departure past 09:20.
   - **Time on site:** 50 min
   - **waypointId:** tara-bridge-viewpoint-conditional
-- **09:19–11:02 · DRIVE · Drive south via Mojkovac to Biogradsko Lake** — Turn south onto the R-10 just before the bridge; you do not cross it. Follow the Tara canyon to Mojkovac, then the M-2 toward Kolašin and the signed park access to Biogradsko Lake.
+- **09:19–11:02 · DRIVE · Drive south via Mojkovac to Biogradsko Lake** — Turn south onto the R-10 just before the bridge; you do not cross it. The junction is close to the works, so follow any on-site diversion signs. Follow the Tara canyon to Mojkovac, then the M-2 toward Kolašin and the signed park access to Biogradsko Lake.
   - **Drive time:** 86 min nominal / 103 min adjusted (source OSRM, checked 2026-10-02)
   - **Leg:** Đurđevića Tara Bridge / canyon viewpoint · access conditional → Biogradsko Lake · lake-loop trailhead
 
@@ -334,7 +334,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 
 **Meals**
 
-- **Optional lunch · Kolašin · Sherpas or Viline Vode · Kolašin** — Group picks: Sherpas, called the best restaurant in northern Montenegro by one couple; Viline Vode for large portions, smoked fish and crêpes.
+- **Lunch · Kolašin · Sherpas or Viline Vode · Kolašin** — Group picks: Sherpas, called the best restaurant in northern Montenegro by one couple; Viline Vode for large portions, smoked fish and crêpes.
   - **Hours:** Check Google Maps for current hours on arrival.
   - **Parking:** Signed town parking in central Kolašin.
   - **Payment:** Payment method unverified; carry cash and ask.
