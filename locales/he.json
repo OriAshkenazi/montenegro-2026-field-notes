@@ -609,7 +609,6 @@
     "At Kotor use signed paid Old Town parking and walk; fee/space are not guaranteed.": "ב-Kotor השתמשו בחניה בתשלום מסומנת בעיר העתיקה ולכו ברגל; תשלום ומקום לא מובטחים.",
     "Conte stay €271.93 paid.": "שהות ב-Conte €271.93 שולם.",
     "Coffee": "קפה",
-    "Runolist → Nikšić coffee → Risan mosaics → Perast bags secured → Kotor Old Town": "Runolist → קפה ב-Nikšić → הפסיפסים ב-Risan → מזוודות מאובטחות ב-Perast → העיר העתיקה של Kotor",
     "Adriatic seafood and coastal fish; choose the current catch/menu.": "פירות ים ודגי חוף מהאדריאטי; בחרו את התפוסה/התפריט העדכניים.",
     "Signed Old Town parking then walk; customer parking not stated.": "חניה מסומנת בעיר העתיקה ואז ברגל; חניית לקוחות לא צוינה.",
     "Payment method not confirmed; carry cash and ask.": "אמצעי התשלום לא אושר; קחו מזומן ושאלו.",
@@ -866,7 +865,6 @@
     "Runolist Chalet, Žabljak": "Runolist Chalet, Žabljak",
     "Tell the host your arrival time; cash only at the property.": "לעדכן את המארח בשעת ההגעה; תשלום במזומן בלבד במקום.",
     "Conte Hotel, Perast": "Conte Hotel, Perast",
-    "Ask for luggage storage before the 15:00 check-in.": "לבקש שמירת מזוודות לפני הצ׳ק-אין ב-15:00.",
     "Conte restaurant, Perast": "המסעדה של Conte, Perast",
     "Same-day table reservations by phone only.": "הזמנת שולחן לאותו יום בטלפון בלבד.",
     "Travel insurance · Migdal policy": "ביטוח נסיעות · פוליסת מגדל",
@@ -1056,7 +1054,6 @@
     "The Risan mosaics stop is dropped today.": "העצירה בפסיפסים של Risan מבוטלת היום.",
     "Drive Nikšić to Perast via Grahovo": "נסיעה מ-Nikšić ל-Perast דרך Grahovo",
     "Park in the signed Perast entrance lot and check in at Conte straight away (check-in from 15:00), so the bags go into the room and none stay in the car.": "חנו בחניון הכניסה המסומן ב-Perast ועשו צ׳ק-אין ב-Conte מיד (צ׳ק-אין מ-15:00), כך שהתיקים נכנסים לחדר ושום דבר לא נשאר ברכב.",
-    "Leave for Kotor around 16:30–17:00.": "יוצאים ל-Kotor בסביבות 16:30–17:00.",
     "Park in Perast and check in at Conte": "חניה ב-Perast וצ׳ק-אין ב-Conte",
     "Take the M-1 along the Bay to Kotor and park in signed Old Town parking; Parking Benovo by the North Gate is about €2 per hour.": "סעו ב-M-1 לאורך המפרץ ל-Kotor וחנו בחניה מסומנת של העיר העתיקה; Parking Benovo ליד השער הצפוני עולה כ-€2 לשעה.",
     "Kotor Old Town in the late afternoon and evening: the lanes at sunset (about 18:35) and lit up, then dinner.": "העיר העתיקה של Kotor אחר הצהריים ובערב: הסמטאות בשקיעה (בסביבות 18:35) ובתאורת לילה, ואז ארוחת ערב.",
@@ -1077,7 +1074,10 @@
     "Not needed.": "לא נדרש.",
     "Optional quick Nikšić stops are listed in the morning notes.": "עצירות קצרות אפשריות ב-Nikšić מופיעות בהערות הבוקר.",
     "Optional · Nikšić": "אופציונלי · Nikšić",
-    "Optional quick stop on the way; traditional Montenegrin, daily 07:00–23:00.": "עצירה קצרה אופציונלית בדרך; מונטנגרי מסורתי, כל יום 07:00–23:00."
+    "Optional quick stop on the way; traditional Montenegrin, daily 07:00–23:00.": "עצירה קצרה אופציונלית בדרך; מונטנגרי מסורתי, כל יום 07:00–23:00.",
+    "Runolist → SKK Vihor ride → Nikšić → Perast (Conte check-in) → Kotor Old Town evening": "Runolist → רכיבה ב-SKK Vihor → Nikšić → Perast (צ׳ק-אין ב-Conte) → ערב בעיר העתיקה של Kotor",
+    "Leave for Kotor around 16:05.": "יוצאים ל-Kotor בסביבות 16:05.",
+    "Check-in from 15:00; Oct 4 arrival is about 15:35.": "צ׳ק-אין מ-15:00; ההגעה ב-4 באוק׳ בסביבות 15:35."
   },
   "aliases": {
     "tivat-airport": [
