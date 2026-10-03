@@ -1016,11 +1016,7 @@
               "https://maps.google.com/?q=Perast%20signed%20entrance%20parking%2C%20Montenegro"
             ]
           ],
-          "tags": [
-            "Sightseeing",
-            "Food & Dining",
-            "Coffee"
-          ],
+          "tags": ["Adventure & Hiking", "Sightseeing", "Food & Dining"],
           "heading": "Runolist → SKK Vihor ride → Nikšić → Perast (Conte check-in) → Kotor Old Town evening",
           "food": {
             "meals": [
@@ -1045,7 +1041,6 @@
                 "hours": "Eat on the way between Šavnik and Grahovo.",
                 "parking": "Use a safe pullout or a town stop.",
                 "cash": "Not needed.",
-                "durationMinutes": 60,
                 "plan": "Optional quick Nikšić stops are listed in the morning notes.",
                 "mapUrl": "https://maps.google.com/?q=Nik%C5%A1i%C4%87%2C%20Montenegro",
                 "sourceUrl": "https://maps.google.com/?q=restaurant%20Nik%C5%A1i%C4%87",
@@ -1681,7 +1676,7 @@
           "status": "CONDITIONAL"
         },
         {
-          "name": "Luggage concealment and transfer parking",
+          "name": "Bags into the Conte room on arrival; signed Perast parking",
           "status": "CONDITIONAL"
         },
         {

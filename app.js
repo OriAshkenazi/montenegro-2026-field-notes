@@ -12,7 +12,7 @@ let mapStatusKey='map.status.initial',connKey='conn.ready';
 const setMapStatus=k=>{mapStatusKey=k;const el=$('#mapStatus');if(el)el.textContent=t(k);};
 const setConn=k=>{connKey=k;const el=$('#connection');if(el)el.textContent=t(k);};
 const numLocale=()=>getLang()==='he'?'he-IL':'en-IL';
-Promise.all([fetch('./itinerary.json?rev=2026-10-03e').then(r=>r.json()),fetch('./waypoints.json?rev=2026-10-03e').then(r=>r.json()),i18nReady]).then(([data,points])=>{trip=data;waypointData=points.waypoints;applyStatic();setConn(connKey);setMapStatus(mapStatusKey);cashText();const startDay=tripDayToday();render(new Set([startDay]));if(startDay!==1||new Date().getMonth()===9)jumpToDay(startDay);afterFirstPaint(ensureMap);setDrawer($('#mapDrawer').dataset.state);}).catch(()=>Promise.resolve(i18nReady).then(()=>{try{applyStatic();}catch(e){}$('#days').innerHTML=`<p class="offline-note">${escapeHTML(tf('err.data','Trip data is not cached yet. Open this page online once, then reload offline.'))}</p>`;$('#mapStatus').textContent=tf('map.status.noIndex','Waypoint index unavailable. Reconnect once to save it for offline use.');}));
+Promise.all([fetch('./itinerary.json?rev=2026-10-03f').then(r=>r.json()),fetch('./waypoints.json?rev=2026-10-03f').then(r=>r.json()),i18nReady]).then(([data,points])=>{trip=data;waypointData=points.waypoints;applyStatic();setConn(connKey);setMapStatus(mapStatusKey);cashText();const startDay=tripDayToday();render(new Set([startDay]));if(startDay!==1||new Date().getMonth()===9)jumpToDay(startDay);afterFirstPaint(ensureMap);setDrawer($('#mapDrawer').dataset.state);}).catch(()=>Promise.resolve(i18nReady).then(()=>{try{applyStatic();}catch(e){}$('#days').innerHTML=`<p class="offline-note">${escapeHTML(tf('err.data','Trip data is not cached yet. Open this page online once, then reload offline.'))}</p>`;$('#mapStatus').textContent=tf('map.status.noIndex','Waypoint index unavailable. Reconnect once to save it for offline use.');}));
 
 function activeRoute() { return trip.routes.primary; }
 const segmentTypes = {
@@ -51,7 +51,7 @@ function renderFoodStop(item, type) {
   const slot = item.slot ? tr(item.slot) : type === 'market' ? tr('Stock-up') : t('food.coffeeRadar');
   const title = `<button type="button" class="food-map-link" data-waypoint="${point?.id||''}">${H(item.name)}</button>`;
   const details = type === 'meal'
-    ? `<p>${C(item.specialty)}</p><small><b>${U('food.hours')}</b> ${C(item.hours)} · <b>${U('food.parking')}</b> ${C(item.parking)}</small><small><b>${U('food.payment')}</b> ${C(item.cash)} · <b>${U('food.allow')}</b> ${UB('food.min',{n:item.durationMinutes})}</small>${item.plan ? `<small class="food-plan">${C(item.plan)}</small>` : ''}`
+    ? `<p>${C(item.specialty)}</p><small><b>${U('food.hours')}</b> ${C(item.hours)} · <b>${U('food.parking')}</b> ${C(item.parking)}</small><small><b>${U('food.payment')}</b> ${C(item.cash)}${item.durationMinutes!==undefined?` · <b>${U('food.allow')}</b> ${UB('food.min',{n:item.durationMinutes})}`:''}</small>${item.plan ? `<small class="food-plan">${C(item.plan)}</small>` : ''}`
     : type === 'coffee'
       ? `<p>${C(item.why||'')}</p><small><b>${U('food.hours')}</b> ${C(item.hours)} · <b>${U('food.parking')}</b> ${C(item.parking)}</small>`
       : `<p>${C(item.plan || '')}</p><small><b>${U('food.hours')}</b> ${C(item.hours)} · <b>${U('food.parking')}</b> ${C(item.parking)}</small>`;
@@ -205,7 +205,7 @@ function popupHTML(p){const days=waypointDays(p),jumpDay=days.includes(Number(ac
 // Leaflet (~150 KB) loads only after the itinerary has painted, or at once when someone opens the map.
 let mapLoading=null;
 const afterFirstPaint=fn=>requestAnimationFrame(()=>setTimeout(()=>window.requestIdleCallback?requestIdleCallback(fn,{timeout:1500}):setTimeout(fn,150),0));
-function ensureMap(){if(!mapLoading)mapLoading=new Promise(resolve=>{if(window.L)return resolve();const script=document.createElement('script');script.src='vendor/leaflet/leaflet.js?rev=2026-10-03e';script.onload=script.onerror=()=>resolve();document.head.append(script);}).then(initializeMap);return mapLoading;}
+function ensureMap(){if(!mapLoading)mapLoading=new Promise(resolve=>{if(window.L)return resolve();const script=document.createElement('script');script.src='vendor/leaflet/leaflet.js?rev=2026-10-03f';script.onload=script.onerror=()=>resolve();document.head.append(script);}).then(initializeMap);return mapLoading;}
 function initializeMap(){if(!window.L){setMapStatus('map.status.lib');renderWaypointList();return;}
   map=L.map('mapCanvas',{zoomControl:true,scrollWheelZoom:false,preferCanvas:true}).setView([42.75,19.0],8);map.on('resize',syncPopupHeights);
   const tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap contributors',crossOrigin:true});tiles.addTo(map);

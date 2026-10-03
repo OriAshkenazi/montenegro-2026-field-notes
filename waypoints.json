@@ -549,9 +549,7 @@
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Ombra%20%C2%B7%20Old%20Town%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
-        "primary": [
-          4
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "Published Pjaca od Kina venue location"

@@ -273,7 +273,9 @@ function buildDocument(inputs) {
   h(2, 'Emergency numbers and field guide');
   ul(trip.emergency.map(e => inl(bold(e.number), ` — ${e.label} (${e.href})`, rest(e, ['number', 'label', 'href']).map(r => inl(' · ', r)))));
   p(`${ui['safety.title']} ${ui['safety.eyebrow']}.`);
-  ul([1, 2, 3].map(n => inl(bold(`${ui[`field.${n}.kicker`]} — ${ui[`field.${n}.title`]}`), ' ', ui[`field.${n}.body`])));
+  ul(['help', 'prep', 'road', 'talk', 'stay'].map(k => inl(bold(ui[`fg.${k}.title`]), ' — ', ui[`fg.${k}.lead`])));
+  p(ui['fg.prep.title']);
+  ul(['prep.entry', 'prep.sim', 'field.3.maps', 'field.3.rental', 'prep.card', 'prep.cash', 'field.3.road'].map(k => ui[k]));
 
   h(2, ui['curated.title']);
   p(ui['curated.intro']);
@@ -297,7 +299,7 @@ function buildDocument(inputs) {
   })));
 
   h(2, `Sources (checked ${trip.sourcesChecked})`);
-  const cardLabel = { emergency: ui['field.1.kicker'], setup: ui['field.3.kicker'], budget: ui['tab.budget'] };
+  const cardLabel = { emergency: ui['fg.help.title'], setup: ui['fg.prep.title'], budget: ui['tab.budget'] };
   const usedOn = (at = {}) => [...(at.days || []).map(d => `Day ${d}`), ...(at.waypoints || []).map(wpName), ...(at.cards || []).map(c => cardLabel[c] || c)].join('; ');
   ul(trip.sources.map(([name, url, at]) => { const used = usedOn(at); return inl(link(name, url), used ? ` — used on: ${used}` : ''); }));
   p(`${ui['footer.version']} · ${ui['footer.built']}`);
