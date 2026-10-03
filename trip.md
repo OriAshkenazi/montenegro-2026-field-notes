@@ -393,7 +393,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - **Day starts:** 09:15
 - **Driving route:** Runolist → SKK Vihor (2-hour ride, 09:30) → M-6 via Šavnik → M-3 to Nikšić (packed lunch on the way) → M-7/M-8 via Grahovo → Perast (check in at Conte) → Kotor Old Town evening → Perast · about 4 h 19 nominal / 5 h 12 adjusted (OSRM +20%); the usual 17:30 mountain cutoff is waived today by the travellers, since the mountain section ends around 15:30
 - **Adjusted driving total:** 5.2 h (timetable drive legs sum to 5 h 12 min)
-- **Interests:** Sightseeing, Food & Dining, Coffee
+- **Interests:** Adventure & Hiking, Sightseeing, Food & Dining
 - **communityPicks:** name: Restobar Taraca; note: Kotor: recommended twice; vegan and gluten-free options.; mapUrl: https://maps.google.com/?q=Restobar%20Taraca%20Kotor; id: pick-day-4-01, name: La Catedral; note: Kotor: gnocchi and pasta; friendly service.; mapUrl: https://maps.google.com/?q=La%20Catedral%20Kotor; id: pick-day-4-02, name: Pepe Nero; note: Kotor: solid dinner in the old town.; mapUrl: https://maps.google.com/?q=Pepe%20Nero%20Kotor; id: pick-day-4-03, name: Karampana; note: Kotor: solid dinner in the old town.; mapUrl: https://maps.google.com/?q=Karampana%20Kotor; id: pick-day-4-04, name: Pomodorino; note: Kotor: Italian; pasta praised.; mapUrl: https://maps.google.com/?q=Pomodorino%20Kotor; id: pick-day-4-05, name: Bonazza; note: Kotor: on the water; fish at sunset.; mapUrl: https://maps.google.com/?q=Bonazza%20Kotor; id: pick-day-4-06, name: Marenda Steak House; note: Kotor: fair prices.; mapUrl: https://maps.google.com/?q=Marenda%20steak%20house%20Kotor; id: pick-day-4-07, name: Senso; note: Kotor: croissants and sandwiches; the pistachio croissant is praised.; mapUrl: https://maps.google.com/?q=Senso%20Kotor; id: pick-day-4-08, name: Kordich Bakery; note: Kotor: bakery by the North Gate.; mapUrl: https://maps.google.com/?q=Kordich%20bakery%20Kotor; id: pick-day-4-09, name: Pekara AS; note: Kotor: bakery by the North Gate.; mapUrl: https://maps.google.com/?q=Pekara%20AS%20Kotor; id: pick-day-4-10, name: Marshell; note: Kotor: gelato with vegan options.; mapUrl: https://maps.google.com/?q=Marshell%20gelato%20Kotor; id: pick-day-4-11, name: The Nitrox Bar; note: Kotor: large, strong cocktails.; mapUrl: https://maps.google.com/?q=Nitrox%20Bar%20Kotor; id: pick-day-4-12, name: Parking Benovo; note: Kotor: parking closest to the North Gate, about €2 per hour.; mapUrl: https://maps.google.com/?q=Parking%20Benovo%20Kotor; id: pick-day-4-13
 
 ### Morning
@@ -450,7 +450,6 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
   - **Hours:** Eat on the way between Šavnik and Grahovo.
   - **Parking:** Use a safe pullout or a town stop.
   - **Payment:** Not needed.
-  - **Time planned:** 60 min
   - **Plan:** Optional quick Nikšić stops are listed in the morning notes.
   - **Map:** [maps.google.com](https://maps.google.com/?q=Nik%C5%A1i%C4%87%2C%20Montenegro)
   - **Source:** [maps.google.com](https://maps.google.com/?q=restaurant%20Nik%C5%A1i%C4%87)
@@ -684,7 +683,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - **CONDITIONAL:** Day 1 daylight cutoff
 - **CONDITIONAL:** Daily adjusted driving ≤6 h
 - **CONDITIONAL:** P14 daylight and weather gate
-- **CONDITIONAL:** Luggage concealment and transfer parking
+- **CONDITIONAL:** Bags into the Conte room on arrival; signed Perast parking
 - **CONDITIONAL:** Day 6 airport return buffer
 
 ## Budget
@@ -787,11 +786,23 @@ Trip spending figures are planning ranges for two; recheck fuel and ticket price
 - **19807** — AMSCG roadside assistance (tel:19807)
 - **+382 40 256 084** — Mountain Rescue Service (tel:+38240256084)
 
-Field Guide Four sections, in the order you need them · works offline.
+Field Guide Five sections, in the order you need them · works offline.
 
-- **undefined — undefined** 
-- **undefined — undefined** 
-- **undefined — undefined** 
+- **If something goes wrong** — Tap a number to call. Both insurer lines answer 24/7.
+- **Before you fly** — Sort these out once at home; the rest of the week works offline.
+- **On the road** — The figures that change decisions. Route detail stays in the day cards.
+- **Montenegrin phrasebook** — Grouped by situation. Open a group, tap any phrase to show it full-screen to a local, or search.
+- **Stays & bookings** — Addresses, check-in windows and who to phone. Payments are in Budget.
+
+Before you fly
+
+- Passports: Israelis enter visa-free for up to 90 days. Carry proof of onward travel; some sources ask for 6 months’ validity, so confirm with your airline.
+- Arrange roaming or an eSIM before you go; Montenegro is outside the EU roaming zone.
+- Download offline map areas for Durmitor, the Piva/P14 corridor and Boka Bay, and save both lodging pins.
+- At pickup, get written confirmation of tire, glass, underbody, gravel and roadside cover; Day 1 has the excess details.
+- Bring a physical credit card in the main driver’s name for the Europcar deposit; the amount is in Budget.
+- Carry cash for the cash-only stays and small costs; how much is in Budget › Cash to carry.
+- Check AMSCG road status before each mountain drive (link below).
 
 ## Experience index
 
@@ -975,7 +986,6 @@ All 128 places on the app’s map (waypoints file version 3). “Days” lists t
   - **Payment:** Ask
   - **Pin precision:** OpenStreetMap venue coordinate (Karađorđeva 41)
 - **Ombra · Old Town** — Meal · 42.42499, 18.77062 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=Ombra%20%C2%B7%20Old%20Town%2C%20Montenegro&travelmode=driving)
-  - **Days:** 4
   - **Payment:** Ask
   - **Pin precision:** Published Pjaca od Kina venue location
 - **CAVE Coffee · Kotor** — Coffee · 42.42774, 18.7703 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=CAVE%20Coffee%20%C2%B7%20Kotor%2C%20Montenegro&travelmode=driving)
@@ -1393,8 +1403,8 @@ All 128 places on the app’s map (waypoints file version 3). “Days” lists t
 
 ## Sources (checked 2026-09-28)
 
-- [Road and weather updates · AMSCG](https://amscg.me/en/road-conditions) — used on: setup
-- [Official emergency numbers · EKIP](https://www.ekip.me/important-numbers) — used on: emergency
+- [Road and weather updates · AMSCG](https://amscg.me/en/road-conditions) — used on: Before you fly
+- [Official emergency numbers · EKIP](https://www.ekip.me/important-numbers) — used on: If something goes wrong
 - [Tara bridge closure · Government of Montenegro](https://www.gov.me/amp/clanak/od-10-avgusta-potpuna-obustava-saobracaja-preko-mosta-durdevica-tara) — used on: Day 3; Đurđevića Tara Bridge / canyon viewpoint · access conditional
 - [Fuel price notice · Government (valid Sep 22–28)](https://www.gov.me/amp/clanak/nove-cijene-goriva-od-22092026) — used on: Budget
 - [National Parks of Montenegro · Durmitor fees](https://nparkovi.me/sections/27) — used on: Day 2
@@ -1408,7 +1418,7 @@ All 128 places on the app’s map (waypoints file version 3). “Days” lists t
 - [Kotor–Virpazar route estimate](https://www.rome2rio.com/s/Kotor/Virpazar) — used on: Day 5
 - [A1 Smokovac–Mateševo toll details · Monteput](https://www.izvoznokno.si/Dokumenti/Monteput_P1_eng.pdf) — used on: Budget
 - [Vehicle boot volume · Škoda Octavia Combi](https://www.skoda-auto.com/models/layers/layers/octavia-combi-experience-life) — used on: Day 4
-- [Rental coverage exclusions · Montenegro Car](https://www.montenegrocar.me/en/terms-and-conditions/) — used on: setup
+- [Rental coverage exclusions · Montenegro Car](https://www.montenegrocar.me/en/terms-and-conditions/) — used on: Before you fly
 - [Montenegro Tourism · panoramic roads and Sedlo season / elevation](https://www.montenegro.travel/uploads/brochures/Panoramic%20Roads/ENG/Map-Crown-of-Montenegro.pdf) — used on: Day 2
 - [P14 route estimate · Žabljak–Plužine](https://www.rome2rio.com/s/%C5%BDabljak/Plu%C5%BEine) — used on: Day 2
 - [Durmitor 2025 on-the-ground report · variable P14 timing](https://www.wondermontenegro.com/post/trip-durmitor-2025) — used on: Day 2
@@ -1417,7 +1427,7 @@ All 128 places on the app’s map (waypoints file version 3). “Days” lists t
 - [Traveler field notes supplied by travelers · historical anecdotal prices and trail durations](https://goo.gl/maps/qSe2ynbbM8UH1vdU6) — used on: Budget
 - [Kamenari–Lepetane official timetable · summer plan through Oct 11, 2026](https://trajekt.me/red-voznje/) — used on: Day 1; Kamenari ferry terminal; Lepetane ferry terminal
 - [Kamenari–Lepetane official tariff · Oct off-season passenger car €4](https://trajekt.me/wp-content/uploads/2024/07/price-list-of-services.pdf) — used on: Day 1; Kamenari ferry terminal; Lepetane ferry terminal
-- [Mountain Rescue Service and roadside assistance numbers · Montenegro Tourism](https://www.montenegro.travel/uploads/brochures/Panoramic%20Roads/ENG/Map-Crown-of-Montenegro.pdf) — used on: emergency
+- [Mountain Rescue Service and roadside assistance numbers · Montenegro Tourism](https://www.montenegro.travel/uploads/brochures/Panoramic%20Roads/ENG/Map-Crown-of-Montenegro.pdf) — used on: If something goes wrong
 - [Montenegro Tourism · practical Piva/Durmitor road cautions and no-fuel section](https://www.montenegro.travel/uploads/brochures/Panoramic%20Roads/ENG/Map-Crown-of-Montenegro.pdf) — used on: Day 2
 - [Government of Montenegro · state-road categorization and route codes](https://wapi.gov.me/download/90ab28bc-f0bf-4282-9100-b9b11677f6c0?version=1.0) — used on: Day 1; Day 4
 - [Tivat Airport–Žabljak transfer estimate · updated Sep 2, 2026](https://montenegrotaxi.com/routes/tivat-airport-to-zabljak/) — used on: Day 1
