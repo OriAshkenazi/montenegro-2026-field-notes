@@ -2075,9 +2075,7 @@
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kola%C5%A1in%20%C2%B7%20town%20center%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
-        "primary": [
-          3
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "town-center reference pin"
