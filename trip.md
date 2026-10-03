@@ -10,7 +10,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - **Summary:** Explore Montenegro from the Adriatic coast and Bay of Kotor to Lake Skadar and the rugged northern highlands, with scenic drives, old towns, mountain walks and local food.
 - **Planning rule:** Daily driving ceiling 6 h adjusted; drive times include a +20% terrain buffer over nominal routing times.
 - **App:** [https://oriashkenazi.github.io/montenegro-2026-field-notes/](https://oriashkenazi.github.io/montenegro-2026-field-notes/)
-- **budgetDays:** day: 1; costs: fuel: 40, 65; food: 60, 100; onTheSpot: Europcar deposit hold €1,154 on the main driver’s credit card at pickup; it is released after return and is not spending., Ask Runolist at check-in whether any of the €225.39 is still due., day: 2; costs: fuel: 25, 45; parks: 12, 20; food: 80, 130; onTheSpot: Coins for Black Lake parking (€1.20/hour) and Durmitor admission at €5/person., day: 3; costs: fuel: 35, 60; parks: 8, 20; food: 90, 150; zipline: 0, 90; onTheSpot: Biogradska Gora admission €4/person in cash; boats €10/hour., Zipline only if booked and confirmed., day: 4; costs: fuel: 35, 55; parks: 10, 45; food: 100, 160; onTheSpot: Settle any Runolist balance in cash at checkout (up to €225.39)., Kotor Old Town parking; Kotor walls optional., day: 5; costs: fuel: 25, 45; parks: 100, 120; food: 100, 170; onTheSpot: Njegoš Mausoleum €8/adult, gondola €25 and Alpine Coaster €12 per person., Skadar park ticket €5/person; Sozina toll €2.50., day: 6; costs: fuel: 5, 10; food: 20, 40; onTheSpot: Refuel within 5 km of the airport and keep the receipt; the deposit hold is released after return.
+- **budgetDays:** day: 1; costs: fuel: 40, 65; food: 60, 100; onTheSpot: Europcar deposit hold €1,154 on the main driver’s credit card at pickup; it is released after return and is not spending., Ask Runolist at check-in whether any of the €225.39 is still due., day: 2; costs: fuel: 25, 45; parks: 12, 20; food: 80, 130; onTheSpot: Coins for Black Lake parking (€1.20/hour) and Durmitor admission at €5/person., day: 3; costs: fuel: 35, 60; parks: 8, 20; food: 90, 150; zipline: 0, 90; onTheSpot: Biogradska Gora admission €4/person in cash; boats €10/hour., Zipline only if booked and confirmed., day: 4; costs: fuel: 35, 55; food: 70, 120; horseride: 80, 120; onTheSpot: Settle any Runolist balance in cash at checkout (up to €225.39)., SKK Vihor ride: price not confirmed, pay in cash at the stable (about €50/person is a nearby published rate)., Kotor Old Town parking (Benovo about €2/hour); no walls climb today., day: 5; costs: fuel: 25, 45; parks: 100, 120; food: 100, 170; onTheSpot: Njegoš Mausoleum €8/adult, gondola €25 and Alpine Coaster €12 per person., Skadar park ticket €5/person; Sozina toll €2.50., day: 6; costs: fuel: 5, 10; food: 20, 40; onTheSpot: Refuel within 5 km of the airport and keep the receipt; the deposit hold is released after return.
 - **fx:** EURILS: 3.4857; USDILS: 3.072; asOf: 2026-09-29; source: Bank of Israel representative rates
 - **contacts:** label: Europcar Tivat Airport; number: +382 20 653141; href: tel:+38220653141; note: Car pickup Oct 1 at 14:30; call if the flight is delayed., label: Filip Vuckovic · private car rental; number: +382 67 974 281; href: tel:+38267974281; note: Backup car rental; WhatsApp in English., label: Kosta Pavlov · private car rental; number: +972 54 447 6480; href: tel:+972544476480; note: Backup car rental; Israeli number., label: Avi Blov · private car rental; number: +972 54 471 2918; href: tel:+972544712918; note: Backup car rental; Israeli number., label: Jennie · private car rental; number: +382 68 603 688; href: tel:+38268603688; note: Backup car rental; Hebrew speaker, pay at pickup., label: AI Booking Travel · voucher 4H419663; number: +972 3 555 5999; href: tel:+97235555999; note: 24/7 support for the rental voucher., label: Runolist Chalet, Žabljak; number: +382 69 520 016; href: tel:+38269520016; note: Tell the host your arrival time; cash only at the property., label: Conte Hotel, Perast; number: +382 67 111 190; href: tel:+38267111190; note: Check-in from 15:00; Oct 4 arrival is about 15:35., label: Conte restaurant, Perast; number: +382 67 257 387; href: tel:+38267257387; note: Same-day table reservations by phone only.
 
@@ -691,8 +691,8 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 Two adults · five nights · confirmed payments and estimates. What’s already paid, what’s left to spend in Montenegro, and the cash to carry.
 
 - **Paid before the trip:** €1426.03 (₪4970.72) + €225.39 unconfirmed
-- **Still to spend in Montenegro:** €1085.00–€1890.00
-- **All-in trip total:** €2736.42–€3541.42 (₪9538.35–₪12344.33)
+- **Still to spend in Montenegro:** €1165.00–€2010.00
+- **All-in trip total:** €2816.42–€3661.42 (₪9817.20–₪12762.62)
 - **Exchange rates:** Bank of Israel representative rates, 2026-09-29: EUR 1 = ₪3.4857 · USD 1 = ₪3.072
 
 ### Already paid (paid)
@@ -730,6 +730,9 @@ Two adults · five nights · confirmed payments and estimates. What’s already 
 - **Tara zipline · optional and unconfirmed** — €0–€90 · optional
   - **Summary:** Only if the operator confirms a bridge-free option on Oct 3.
   - **Details:** Not included in the minimum. Operator lists Red Rock at €20/person, but its return crosses the bridge closed through Oct 26. Yellow/Extreme return transport is included; verify Oct 3 operation, bridge-free launch/access and current prices directly before booking.
+- **SKK Vihor horse ride · price not confirmed** — €80–€120 · estimate
+  - **Summary:** Two riders, 2 hours on Oct 4; pay in cash at the stable.
+  - **Details:** SKK Vihor publishes no price; ask when you arrive. Planning range uses Wild Beauty Adventure’s published €50/person for a 2-hour ride nearby as a guide.
 
 ### Day by day
 
@@ -746,10 +749,11 @@ Expected spend for two each day, and what to pay on the spot.
   - **Breakdown:** Fuel + tolls €35–€60 · Parks + boat + walls + spa €8–€20 · Food & drink €90–€150 · Tara zipline · optional and unconfirmed €0–€90
   - **Pay on the spot:** Biogradska Gora admission €4/person in cash; boats €10/hour.
   - **Pay on the spot:** Zipline only if booked and confirmed.
-- **Day 4 · Sun · Oct 4** — €145–€260
-  - **Breakdown:** Fuel + tolls €35–€55 · Parks + boat + walls + spa €10–€45 · Food & drink €100–€160
+- **Day 4 · Sun · Oct 4** — €185–€295
+  - **Breakdown:** Fuel + tolls €35–€55 · Food & drink €70–€120 · SKK Vihor horse ride · price not confirmed €80–€120
   - **Pay on the spot:** Settle any Runolist balance in cash at checkout (up to €225.39).
-  - **Pay on the spot:** Kotor Old Town parking; Kotor walls optional.
+  - **Pay on the spot:** SKK Vihor ride: price not confirmed, pay in cash at the stable (about €50/person is a nearby published rate).
+  - **Pay on the spot:** Kotor Old Town parking (Benovo about €2/hour); no walls climb today.
 - **Day 5 · Mon · Oct 5** — €225–€335
   - **Breakdown:** Fuel + tolls €25–€45 · Parks + boat + walls + spa €100–€120 · Food & drink €100–€170
   - **Pay on the spot:** Njegoš Mausoleum €8/adult, gondola €25 and Alpine Coaster €12 per person.
@@ -1443,7 +1447,7 @@ All 128 places on the app’s map (waypoints file version 3). “Days” lists t
 - [Konoba Scala Santa official](https://konobascalasanta.com/en/o-nama-2/) — used on: Konoba Scala Santa · Kotor
 - [Restaurant Pelikan official](https://pelikan-zec.com/) — used on: Restaurant Pelikan · Virpazar
 - [Pržun official](https://przun.me/) — used on: Pržun · Old Town; Pržun · Kotor Old Town
-- [Ombra official](https://ombraoldtown.com/) — used on: Ombra · Old Town; Ombra · Kotor Old Town
+- [Ombra official](https://ombraoldtown.com/) — used on: Ombra · Kotor Old Town
 - [Galion official menu/hours](https://galion.me/menu/) — used on: Galion · Šuranj
 - [Dobrotski Dvori official](https://dobrotskidvori.com/en/) — used on: Dobrotski Dvori
 - [Aerodromi Crne Gore · Tivat food and services](https://montenegroairports.com/aerodrom-tivat/sadrzaji-i-servisi/) — used on: Tivat Airport café / terminal food
@@ -1462,7 +1466,7 @@ All 128 places on the app’s map (waypoints file version 3). “Days” lists t
 - [Kotor Cable Car · Kuk/Dub access and parking](https://www.kotorcablecar.me/article/traveling-by-car) — used on: Kotor Cable Car Upper Station · Kuk; Kotor Cable Car Lower Station · Dub
 - [Hotel Conte · breakfast takeaway and Perast parking](https://hotelconte.me/our-hotel) — used on: Conte Hotel & Restaurant
 - [Hotel Conte restaurant · menu and same-day booking](https://hotelconte.me/restaurant) — used on: Conte Hotel & Restaurant
-- [Ombra · coastal-fish menu and service hours](https://ombraoldtown.com/) — used on: Ombra · Old Town; Ombra · Kotor Old Town
+- [Ombra · coastal-fish menu and service hours](https://ombraoldtown.com/) — used on: Ombra · Kotor Old Town
 - [Small Talks · specialty coffee, Kotor](https://www.smalltalks.me/) — used on: Small Talks · Kotor
 - [AMSCG · Sozina toll](https://amscg.me/en/putarine) — used on: Day 5; Sozina Tunnel
 - [Muzeji Kotor · Roman Mosaics Risan tickets and hours](https://muzejikotor.me/ulaznice/) — used on: Roman Mosaics · Risan
