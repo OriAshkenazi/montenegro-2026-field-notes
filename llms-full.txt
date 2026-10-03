@@ -12,7 +12,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - **App:** [https://oriashkenazi.github.io/montenegro-2026-field-notes/](https://oriashkenazi.github.io/montenegro-2026-field-notes/)
 - **budgetDays:** day: 1; costs: fuel: 40, 65; food: 60, 100; onTheSpot: Europcar deposit hold €1,154 on the main driver’s credit card at pickup; it is released after return and is not spending., Ask Runolist at check-in whether any of the €225.39 is still due., day: 2; costs: fuel: 25, 45; parks: 12, 20; food: 80, 130; onTheSpot: Coins for Black Lake parking (€1.20/hour) and Durmitor admission at €5/person., day: 3; costs: fuel: 35, 60; parks: 8, 20; food: 90, 150; zipline: 0, 90; onTheSpot: Biogradska Gora admission €4/person in cash; boats €10/hour., Zipline only if booked and confirmed., day: 4; costs: fuel: 35, 55; parks: 10, 45; food: 100, 160; onTheSpot: Settle any Runolist balance in cash at checkout (up to €225.39)., Kotor Old Town parking; Kotor walls optional., day: 5; costs: fuel: 25, 45; parks: 100, 120; food: 100, 170; onTheSpot: Njegoš Mausoleum €8/adult, gondola €25 and Alpine Coaster €12 per person., Skadar park ticket €5/person; Sozina toll €2.50., day: 6; costs: fuel: 5, 10; food: 20, 40; onTheSpot: Refuel within 5 km of the airport and keep the receipt; the deposit hold is released after return.
 - **fx:** EURILS: 3.4857; USDILS: 3.072; asOf: 2026-09-29; source: Bank of Israel representative rates
-- **contacts:** label: Europcar Tivat Airport; number: +382 20 653141; href: tel:+38220653141; note: Car pickup Oct 1 at 14:30; call if the flight is delayed., label: Filip Vuckovic · private car rental; number: +382 67 974 281; href: tel:+38267974281; note: Backup car rental; WhatsApp in English., label: Kosta Pavlov · private car rental; number: +972 54 447 6480; href: tel:+972544476480; note: Backup car rental; Israeli number., label: Avi Blov · private car rental; number: +972 54 471 2918; href: tel:+972544712918; note: Backup car rental; Israeli number., label: Jennie · private car rental; number: +382 68 603 688; href: tel:+38268603688; note: Backup car rental; Hebrew speaker, pay at pickup., label: AI Booking Travel · voucher 4H419663; number: +972 3 555 5999; href: tel:+97235555999; note: 24/7 support for the rental voucher., label: Runolist Chalet, Žabljak; number: +382 69 520 016; href: tel:+38269520016; note: Tell the host your arrival time; cash only at the property., label: Conte Hotel, Perast; number: +382 67 111 190; href: tel:+38267111190; note: Ask for luggage storage before the 15:00 check-in., label: Conte restaurant, Perast; number: +382 67 257 387; href: tel:+38267257387; note: Same-day table reservations by phone only.
+- **contacts:** label: Europcar Tivat Airport; number: +382 20 653141; href: tel:+38220653141; note: Car pickup Oct 1 at 14:30; call if the flight is delayed., label: Filip Vuckovic · private car rental; number: +382 67 974 281; href: tel:+38267974281; note: Backup car rental; WhatsApp in English., label: Kosta Pavlov · private car rental; number: +972 54 447 6480; href: tel:+972544476480; note: Backup car rental; Israeli number., label: Avi Blov · private car rental; number: +972 54 471 2918; href: tel:+972544712918; note: Backup car rental; Israeli number., label: Jennie · private car rental; number: +382 68 603 688; href: tel:+38268603688; note: Backup car rental; Hebrew speaker, pay at pickup., label: AI Booking Travel · voucher 4H419663; number: +972 3 555 5999; href: tel:+97235555999; note: 24/7 support for the rental voucher., label: Runolist Chalet, Žabljak; number: +382 69 520 016; href: tel:+38269520016; note: Tell the host your arrival time; cash only at the property., label: Conte Hotel, Perast; number: +382 67 111 190; href: tel:+38267111190; note: Check-in from 15:00; Oct 4 arrival is about 15:35., label: Conte restaurant, Perast; number: +382 67 257 387; href: tel:+38267257387; note: Same-day table reservations by phone only.
 
 ## Contents
 
@@ -21,7 +21,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - Day 1 · Tivat → Nikšić break → Runolist Chalet / northbound mountain transfer (Thu · Oct 1)
 - Day 2 · Black Lake / P14-Sedlo / Trsa / Plužine and Piva (Fri · Oct 2)
 - Day 3 · Tara bridge viewpoint, Biogradska Gora and Tara Springs (Sat · Oct 3)
-- Day 4 · Runolist → Nikšić coffee → Risan mosaics → Perast bags secured → Kotor Old Town (Sun · Oct 4)
+- Day 4 · Runolist → SKK Vihor ride → Nikšić → Perast (Conte check-in) → Kotor Old Town evening (Sun · Oct 4)
 - Day 5 · Kotor espresso / Njegoš Mausoleum / Kuk coaster / Skadar boat circuit (Mon · Oct 5)
 - Day 6 · Perast → TIV / rental return / flight home (Tue · Oct 6)
 - Quick status checks
@@ -385,7 +385,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - [Đurđevića Tara Bridge / canyon viewpoint · access conditional](https://maps.google.com/?q=43.1507,19.2912)
 - [Runolist Chalet](https://maps.google.com/?q=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%2084220%20%C5%BDabljak%2C%20Montenegro)
 
-## Day 4 · Runolist → Nikšić coffee → Risan mosaics → Perast bags secured → Kotor Old Town (Sun · Oct 4)
+## Day 4 · Runolist → SKK Vihor ride → Nikšić → Perast (Conte check-in) → Kotor Old Town evening (Sun · Oct 4)
 
 - **Date:** 2026-10-04
 - **Region:** North → Coast · Perast / Kotor
@@ -418,7 +418,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
   - **Drive time:** 101 min nominal / 121 min adjusted (source OSRM, checked 2026-10-03)
   - **Leg:** Nikšić → Perast entrance parking via Grahovo
   - **Note (STAY):** Conte booking 5198999691: Classic Double Room for 2 adults, check-in Oct 4, 15:00–21:00. Total €271.93, paid in full. Preserve the recorded itemized cancellation terms and confirmation-intro conflict. Perast old town is closed to vehicles May–October; use signed entrance parking and ask reception about pickup rather than assuming it.
-- **15:35–16:05 · STAY · Park in Perast and check in at Conte** — Park in the signed Perast entrance lot and check in at Conte straight away (check-in from 15:00), so the bags go into the room and none stay in the car. Use only a signed official lot or the parking Conte arranges; travelers report unofficial parking attendants in Perast. Leave for Kotor around 16:30–17:00.
+- **15:35–16:05 · STAY · Park in Perast and check in at Conte** — Park in the signed Perast entrance lot and check in at Conte straight away (check-in from 15:00), so the bags go into the room and none stay in the car. Use only a signed official lot or the parking Conte arranges; travelers report unofficial parking attendants in Perast. Leave for Kotor around 16:05.
   - **Time on site:** 30 min
 - **16:05–16:33 · DRIVE · Drive to Kotor Old Town parking** — Take the M-1 along the Bay to Kotor and park in signed Old Town parking; Parking Benovo by the North Gate is about €2 per hour.
   - **Drive time:** 23 min nominal / 28 min adjusted (source OSRM, checked 2026-10-03)

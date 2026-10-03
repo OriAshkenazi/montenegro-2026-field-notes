@@ -922,7 +922,7 @@
             },
             {
               "type": "STAY",
-              "text": "Park in the signed Perast entrance lot and check in at Conte straight away (check-in from 15:00), so the bags go into the room and none stay in the car. Use only a signed official lot or the parking Conte arranges; travelers report unofficial parking attendants in Perast. Leave for Kotor around 16:30–17:00.",
+              "text": "Park in the signed Perast entrance lot and check in at Conte straight away (check-in from 15:00), so the bags go into the room and none stay in the car. Use only a signed official lot or the parking Conte arranges; travelers report unofficial parking attendants in Perast. Leave for Kotor around 16:05.",
               "id": "day-4-afternoon-03",
               "title": "Park in Perast and check in at Conte",
               "dwellMin": 30
@@ -1021,7 +1021,7 @@
             "Food & Dining",
             "Coffee"
           ],
-          "heading": "Runolist → Nikšić coffee → Risan mosaics → Perast bags secured → Kotor Old Town",
+          "heading": "Runolist → SKK Vihor ride → Nikšić → Perast (Conte check-in) → Kotor Old Town evening",
           "food": {
             "meals": [
               {
@@ -1994,7 +1994,7 @@
       "label": "Conte Hotel, Perast",
       "number": "+382 67 111 190",
       "href": "tel:+38267111190",
-      "note": "Ask for luggage storage before the 15:00 check-in."
+      "note": "Check-in from 15:00; Oct 4 arrival is about 15:35."
     },
     {
       "label": "Conte restaurant, Perast",
