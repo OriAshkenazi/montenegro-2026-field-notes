@@ -877,7 +877,6 @@
     "Skadar park ticket €5/person; Sozina toll €2.50.": "כרטיס לפארק Skadar ב-€5 לאדם; אגרת Sozina ב-€2.50.",
     "Njegoš Mausoleum €8/adult, gondola €25 and Alpine Coaster €12 per person.": "Njegoš Mausoleum ב-€8 למבוגר, רכבל ב-€25 ו-Alpine Coaster ב-€12 לאדם.",
     "Classic Double Room for 2 adults.": "חדר זוגי קלאסי ל-2 מבוגרים.",
-    "Kotor Old Town parking; Kotor walls optional.": "חניית העיר העתיקה של Kotor; חומות Kotor אופציונליות.",
     "Ask Runolist at check-in whether any of the €225.39 is still due.": "בצ׳ק-אין תשאלו ב-Runolist אם חלק מה-€225.39 עדיין לתשלום.",
     "Both travellers, Oct 1–6, adventure-sports extension included.": "לשני הנוסעים, 1–6 באוק׳, כולל הרחבה לספורט אתגרי.",
     "Only if the operator confirms a bridge-free option on Oct 3.": "רק אם המפעיל מאשר ב-3 באוק׳ אפשרות שלא עוברת בגשר.",
@@ -1015,7 +1014,7 @@
     "Drive to the Tara bridge": "נסיעה לגשר טארה",
     "Photo stop at the bridge in the afternoon light; do not cross it or enter the works.": "עצירת צילום בגשר באור של אחר הצהריים; לא לחצות אותו ולא להיכנס לאזור העבודות.",
     "Tara bridge photo stop": "עצירת צילום בגשר טארה",
-    "The day is about 4.4 h of adjusted driving, within the 6 h ceiling.": "היום כולל כ-4.4 שעות נהיגה מתוקננות, בתוך תקרת 6 השעות.",
+    "The day is about 4.4 h of adjusted driving, within the 6 h ceiling.": "היום כולל כ-4.4 שעות נהיגה עם תוספת, בתוך תקרת 6 השעות.",
     "Today's hard cutoff for driving is 18:00.": "שעת הסיום המחייבת לנהיגה היום היא 18:00.",
     "Drive back to Runolist, about 30 minutes, arriving around 16:30.": "נסיעה חזרה ל-Runolist, כ-30 דקות, עם הגעה בסביבות 16:30.",
     "Drive back to Runolist": "נסיעה חזרה ל-Runolist",
@@ -1077,7 +1076,13 @@
     "Runolist → SKK Vihor ride → Nikšić → Perast (Conte check-in) → Kotor Old Town evening": "Runolist → רכיבה ב-SKK Vihor → Nikšić → Perast (צ׳ק-אין ב-Conte) → ערב בעיר העתיקה של Kotor",
     "Leave for Kotor around 16:05.": "יוצאים ל-Kotor בסביבות 16:05.",
     "Check-in from 15:00; Oct 4 arrival is about 15:35.": "צ׳ק-אין מ-15:00; ההגעה ב-4 באוק׳ בסביבות 15:35.",
-    "Bags into the Conte room on arrival; signed Perast parking": "התיקים נכנסים לחדר ב-Conte עם ההגעה; חניה מסומנת ב-Perast"
+    "Bags into the Conte room on arrival; signed Perast parking": "התיקים נכנסים לחדר ב-Conte עם ההגעה; חניה מסומנת ב-Perast",
+    "SKK Vihor horse ride · price not confirmed": "רכיבה ב-SKK Vihor · המחיר לא אושר",
+    "Two riders, 2 hours on Oct 4; pay in cash at the stable.": "שני רוכבים, שעתיים ב-4 באוק׳; משלמים במזומן באורווה.",
+    "SKK Vihor publishes no price; ask when you arrive.": "SKK Vihor לא מפרסמים מחיר; שאלו כשמגיעים.",
+    "Planning range uses Wild Beauty Adventure’s published €50/person for a 2-hour ride nearby as a guide.": "טווח התכנון מבוסס על המחיר שפרסמה Wild Beauty Adventure הסמוכה, €50 לאדם לרכיבה של שעתיים.",
+    "SKK Vihor ride: price not confirmed, pay in cash at the stable (about €50/person is a nearby published rate).": "רכיבה ב-SKK Vihor: המחיר לא אושר, משלמים במזומן באורווה (כ-€50 לאדם הוא מחיר שפורסם בחווה סמוכה).",
+    "Kotor Old Town parking (Benovo about €2/hour); no walls climb today.": "חניית העיר העתיקה של Kotor (Benovo כ-€2 לשעה); בלי טיפוס על החומות היום."
   },
   "aliases": {
     "tivat-airport": [

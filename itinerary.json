@@ -1822,6 +1822,16 @@
       "max": 90,
       "summary": "Only if the operator confirms a bridge-free option on Oct 3.",
       "note": "Not included in the minimum. Operator lists Red Rock at €20/person, but its return crosses the bridge closed through Oct 26. Yellow/Extreme return transport is included; verify Oct 3 operation, bridge-free launch/access and current prices directly before booking."
+    },
+    {
+      "id": "horseride",
+      "group": "trip",
+      "kind": "estimate",
+      "label": "SKK Vihor horse ride · price not confirmed",
+      "min": 80,
+      "max": 120,
+      "summary": "Two riders, 2 hours on Oct 4; pay in cash at the stable.",
+      "note": "SKK Vihor publishes no price; ask when you arrive. Planning range uses Wild Beauty Adventure’s published €50/person for a 2-hour ride nearby as a guide."
     }
   ],
   "budgetDays": [
@@ -1863,13 +1873,23 @@
     {
       "day": 4,
       "costs": {
-        "fuel": [35, 55],
-        "parks": [10, 45],
-        "food": [100, 160]
+        "fuel": [
+          35,
+          55
+        ],
+        "food": [
+          70,
+          120
+        ],
+        "horseride": [
+          80,
+          120
+        ]
       },
       "onTheSpot": [
         "Settle any Runolist balance in cash at checkout (up to €225.39).",
-        "Kotor Old Town parking; Kotor walls optional."
+        "SKK Vihor ride: price not confirmed, pay in cash at the stable (about €50/person is a nearby published rate).",
+        "Kotor Old Town parking (Benovo about €2/hour); no walls climb today."
       ]
     },
     {
@@ -2276,7 +2296,7 @@
     [
       "Ombra official",
       "https://ombraoldtown.com/",
-      {"waypoints": ["ombra-old-town", "ombra-kotor-old-town"]}
+      {"waypoints": ["ombra-kotor-old-town"]}
     ],
     [
       "Galion official menu/hours",
@@ -2371,7 +2391,7 @@
     [
       "Ombra · coastal-fish menu and service hours",
       "https://ombraoldtown.com/",
-      {"waypoints": ["ombra-old-town", "ombra-kotor-old-town"]}
+      {"waypoints": ["ombra-kotor-old-town"]}
     ],
     [
       "Small Talks · specialty coffee, Kotor",
