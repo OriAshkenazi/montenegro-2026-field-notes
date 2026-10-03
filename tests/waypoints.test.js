@@ -50,7 +50,8 @@ const day5 = itinerary.routes.primary.days.find(day => day.day === 5);
 assert.ok(day4.stops.some(([name]) => name === 'Kotor') && day4.stops.some(([name]) => name === 'Perast entrance parking'), 'Oct 4 must retain Kotor after the Perast luggage gate');
 assert.ok(day4.adjustedHours <= itinerary.drivingCeilingAdjustedHours && /17:30/.test(day4.drive), 'Oct 4 must stay under the adjusted drive ceiling and daylight cutoff');
 assert.ok(day4.food.meals.length >= 2 && day4.food.coffee.length, 'Oct 4 must include lunch, dinner and coffee');
-assert.ok(day4.afternoon.some(item => /luggage|bags/i.test(item.text)) && day4.afternoon.some(item => /16:15|17:00/.test(item.text)), 'Oct 4 must secure luggage and time-box Kotor return');
+// 2026-10-03: travellers check in at Conte on arrival (~15:35) and waived the 17:30 cutoff; require bags in the room and a stated Kotor departure.
+assert.ok(day4.afternoon.some(item => /luggage|bags/i.test(item.text)) && day4.afternoon.some(item => /Leave for Kotor around \d\d:\d\d/.test(item.text)), 'Oct 4 must secure luggage and state the Kotor departure');
 const day5Names = day5.stops.map(([name]) => name);
 for (const name of ['Njegoš Mausoleum','Kotor Cable Car Upper Station · Kuk','Virpazar boat pier','Restaurant Pelikan · Virpazar']) assert.ok(day5Names.includes(name), `Oct 5 must retain ${name}`);
 assert.ok(day5Names.indexOf('Njegoš Mausoleum') < day5Names.indexOf('Kotor Cable Car Upper Station · Kuk') && day5Names.indexOf('Kotor Cable Car Upper Station · Kuk') < day5Names.indexOf('Virpazar boat pier'), 'Oct 5 stop order must flow from Lovćen to Kuk to Skadar');
