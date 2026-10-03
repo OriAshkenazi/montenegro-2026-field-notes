@@ -547,10 +547,10 @@
         {
           "day": 3,
           "date": "Sat · Oct 3",
-          "region": "North · Tara Canyon / Mojkovac / Biogradska Gora / Kolašin",
+          "region": "North · Tara Canyon / Mojkovac / Biogradska Gora",
           "base": "Runolist Chalet · Žabljak",
-          "drive": "Runolist → Đurđevića Tara Bridge viewpoint (north side) → R-10 along the Tara via Mojkovac, with no bridge crossing → M-2 → Biogradsko Lake → Kolašin → R-20 via Boan → Runolist · about 4 h 12 nominal / 5 h 03 adjusted (OSRM +20%), within the 6 h ceiling; verify the Boan section is paved and open",
-          "adjustedHours": 5.1,
+          "drive": "Runolist → Đurđevića Tara Bridge viewpoint (north side) → R-10 along the Tara via Mojkovac, with no bridge crossing → M-2 → Biogradsko Lake → R-10 back along the canyon → Tara Springs Park → Tara bridge photo stop → Runolist · about 3 h 41 nominal / 4 h 26 adjusted (OSRM +20%), within the 6 h ceiling",
+          "adjustedHours": 4.4,
           "morning": [
             {
               "type": "STAY",
@@ -608,54 +608,88 @@
               "dwellMin": 90
             },
             {
-              "type": "DRIVE",
-              "text": "Continue on the M-2 to central Kolašin for lunch.",
-              "id": "day-3-afternoon-02",
-              "title": "Drive to Kolašin",
-              "leg": {
-                "from": "biogradsko-lake",
-                "to": "kolasin-town"
-              },
-              "driveMin": {
-                "nominal": 33,
-                "adjusted": 40,
-                "source": "OSRM",
-                "checked": "2026-10-02"
-              }
-            },
-            {
               "type": "EAT",
-              "text": "Lunch in central Kolašin at Sherpas or Viline Vode, both recommended in the group. If you would rather not stop, eat the packed lunch at the lake and drive straight back.",
-              "id": "day-3-afternoon-03",
-              "title": "Lunch in Kolašin",
+              "text": "Lunch at Biogradsko Lake instead of Kolašin; the Kolašin stop was dropped on the day.",
+              "id": "day-3-afternoon-02",
+              "title": "Lunch at Biogradsko Lake",
               "dwellMin": 60,
               "foodId": "food-day-3-meals-01"
             },
             {
+              "type": "DRIVE",
+              "text": "Leave the lake around 13:45 and drive back north on the M-2 and the R-10 along the Tara canyon.",
+              "id": "day-3-afternoon-03",
+              "title": "Drive along the Tara canyon to Tara Springs Park",
+              "fixedAt": "13:45",
+              "leg": {
+                "from": "biogradsko-lake",
+                "to": "tara-springs-park"
+              },
+              "driveMin": {
+                "nominal": 46,
+                "adjusted": 55,
+                "source": "OSRM",
+                "checked": "2026-10-03"
+              }
+            },
+            {
+              "type": "WALK",
+              "text": "Short, flat boardwalk loop between waterfalls, right beside the R-10; about 10–15 minutes of walking. Group members call it short, easy and beautiful.",
+              "id": "day-3-afternoon-04",
+              "title": "Tara Springs Park",
+              "dwellMin": 25,
+              "waypointId": "tara-springs-park"
+            },
+            {
+              "type": "DRIVE",
+              "text": "Continue on the R-10 to the Žabljak side of Đurđevića Tara Bridge.",
+              "id": "day-3-afternoon-05",
+              "title": "Drive to the Tara bridge",
+              "leg": {
+                "from": "tara-springs-park",
+                "to": "tara-bridge-viewpoint-conditional"
+              },
+              "driveMin": {
+                "nominal": 42,
+                "adjusted": 50,
+                "source": "OSRM",
+                "checked": "2026-10-03"
+              }
+            },
+            {
+              "type": "SEE",
+              "text": "Photo stop at the bridge in the afternoon light; do not cross it or enter the works.",
+              "id": "day-3-afternoon-06",
+              "title": "Tara bridge photo stop",
+              "fixedAt": "15:50",
+              "dwellMin": 10,
+              "waypointId": "tara-bridge-viewpoint-conditional"
+            },
+            {
               "type": "CAUTION",
-              "text": "The day is about 5 h of adjusted driving, within the 6 h ceiling. Aim to be back by about 16:30, with 18:00 as today's hard cutoff; if you fall behind, skip the zipline first, then the sit-down lunch.",
-              "id": "day-3-afternoon-04"
+              "text": "The day is about 4.4 h of adjusted driving, within the 6 h ceiling. Today's hard cutoff for driving is 18:00.",
+              "id": "day-3-afternoon-07"
             },
             {
               "type": "LOGISTICS",
               "text": "Biogradska Gora admission is currently €4/person/day; boats are €10/hour, kayaks €3 single / €5 double per hour. The park tariff does not state payment method; carry cash. Confirm October operations before budgeting boat time.",
-              "id": "day-3-afternoon-05",
+              "id": "day-3-afternoon-08",
               "note": true
             }
           ],
           "evening": [
             {
               "type": "DRIVE",
-              "text": "Return to Žabljak on the M-2 and R-20 via Boan, a paved road; check before leaving that the Boan section is open. If it is not, drive back the way you came, on the M-2 and R-10 via Mojkovac, about 30 minutes longer. Arrive by about 16:30.",
+              "text": "Drive back to Runolist, about 30 minutes, arriving around 16:30.",
               "id": "day-3-evening-01",
-              "title": "Drive back to Runolist via Boan",
+              "title": "Drive back to Runolist",
               "leg": {
-                "from": "kolasin-town",
+                "from": "tara-bridge-viewpoint-conditional",
                 "to": "runolist-chalet"
               },
               "driveMin": {
-                "nominal": 109,
-                "adjusted": 131,
+                "nominal": 24,
+                "adjusted": 29,
                 "source": "OSRM",
                 "checked": "2026-10-02"
               }
@@ -698,8 +732,12 @@
               "https://maps.google.com/?q=Biogradsko%20Lake%20info%20board%2C%20Montenegro"
             ],
             [
-              "Kolašin · town center",
-              "https://maps.google.com/?q=Kola%C5%A1in%2C%20Montenegro"
+              "Tara Springs Park",
+              "https://maps.google.com/?q=42.9892739,19.4112237"
+            ],
+            [
+              "Đurđevića Tara Bridge / canyon viewpoint · access conditional",
+              "https://maps.google.com/?q=43.1507,19.2912"
             ],
             [
               "Runolist Chalet",
@@ -716,18 +754,18 @@
           "food": {
             "meals": [
               {
-                "slot": "Lunch · Kolašin",
-                "name": "Sherpas or Viline Vode · Kolašin",
-                "specialty": "Group picks: Sherpas, called the best restaurant in northern Montenegro by one couple; Viline Vode for large portions, smoked fish and crêpes.",
-                "hours": "Check Google Maps for current hours on arrival.",
-                "parking": "Signed town parking in central Kolašin.",
-                "cash": "Payment method unverified; carry cash and ask.",
+                "slot": "Lunch · Biogradsko Lake",
+                "name": "Biogradsko Lake lunch stop",
+                "specialty": "Lakeside restaurant (coffee, ice cream and meals) or the packed lunch at the picnic spots.",
+                "hours": "Check on arrival; October hours not published.",
+                "parking": "Park in the marked lot by the lake.",
+                "cash": "Payment method unverified; carry cash.",
                 "durationMinutes": 60,
-                "plan": "Default lunch stop on the way back; if you skip it, eat the packed lunch at the lake.",
-                "mapUrl": "https://maps.google.com/?q=Sherpas%20Kola%C5%A1in",
-                "sourceUrl": "https://maps.google.com/?q=Viline%20Vode%20Kola%C5%A1in",
+                "plan": "Eaten at the lake on Oct 3; the Kolašin stop was dropped.",
+                "mapUrl": "https://maps.google.com/?q=42.900603,19.595388",
+                "sourceUrl": "https://maps.google.com/?q=Biogradsko%20jezero%20restaurant",
                 "id": "food-day-3-meals-01",
-                "waypointId": "kolasin-town"
+                "waypointId": "biogradsko-lake"
               },
               {
                 "slot": "Dinner · Žabljak",
