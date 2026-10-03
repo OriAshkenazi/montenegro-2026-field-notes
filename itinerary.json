@@ -696,11 +696,11 @@
             },
             {
               "type": "EAT",
-              "text": "Dinner at Zlatni Papagaj, 18:00–23:00 published; call/reserve for Oct 3 and ask about payment.",
+              "text": "Dinner at the Hotel Nordik restaurant (Italian and Mediterranean), about 13 minutes' drive from Runolist on the plateau road. Reserve by phone on +382 67 698 698. Group members call it the best dinner in Žabljak.",
               "id": "day-3-evening-02",
-              "title": "Dinner at Zlatni Papagaj",
-              "fixedAt": "18:00",
-              "dwellMin": 75,
+              "title": "Dinner at Hotel Nordik",
+              "fixedAt": "18:30",
+              "dwellMin": 90,
               "foodId": "food-day-3-meals-02"
             },
             {
@@ -769,17 +769,17 @@
               },
               {
                 "slot": "Dinner · Žabljak",
-                "name": "Zlatni Papagaj",
-                "specialty": "Montenegrin cuisine and listed outdoor dining.",
-                "hours": "Official site publishes 18:00–23:00; reconfirm date.",
-                "parking": "Town-center parking not verified; walk from lodging.",
+                "name": "Hotel & Restaurant Nordik · Žabljak",
+                "specialty": "Italian and Mediterranean: pasta (the carbonara is praised), asparagus risotto, steaks, fish and pizza.",
+                "hours": "Evening dinner service; reserve by phone on +382 67 698 698.",
+                "parking": "Hotel parking.",
                 "cash": "Payment method unverified; carry cash and ask.",
                 "durationMinutes": 90,
-                "plan": "Call or reserve on Oct 3; keep lodging food as backup if return is delayed.",
-                "mapUrl": "https://maps.google.com/?q=Zlatni%20Papagaj%2C%20%C5%BDabljak%2C%20Montenegro",
-                "sourceUrl": "https://zlatnipapagaj.com/",
+                "plan": "Group members rate it the best dinner in Žabljak: the priciest, but every dish good and fair for the level.",
+                "mapUrl": "https://maps.google.com/?q=43.1323346,19.1117432",
+                "sourceUrl": "https://hotelnordikzabljak.com/restaurant",
                 "id": "food-day-3-meals-02",
-                "waypointId": "zlatni-papagaj-zabljak"
+                "waypointId": "hotel-nordik-zabljak"
               }
             ],
             "coffee": [],
