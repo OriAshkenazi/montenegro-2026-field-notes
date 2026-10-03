@@ -280,6 +280,22 @@
       "precision": "route reference at Sedlo Pass; use live navigation for road timing"
     },
     {
+      "id": "tara-springs-park",
+      "name": "Tara Springs Park",
+      "category": "Viewpoint",
+      "lat": 42.9892739,
+      "lng": 19.4112237,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=42.9892739,19.4112237&travelmode=driving",
+      "cash": "Ask",
+      "days": {
+        "primary": [
+          3
+        ]
+      },
+      "aliases": [],
+      "precision": "Google Maps place pin"
+    },
+    {
       "id": "trsa-village-pullout",
       "name": "Trsa village pullout",
       "category": "Viewpoint",

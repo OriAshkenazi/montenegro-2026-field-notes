@@ -35,7 +35,8 @@ assert.ok(['Black Lake trailhead', 'P14 Sedlo Pass route', 'Trsa village pullout
 assert.match(day2.drive, /Nikšić.*Šavnik|Šavnik.*Nikšić/);
 assert.match(day2.drive, /≤6 h|6 h/);
 const day3 = northernDays.find(day => day.day === 3);
-assert.ok(['Kolašin · town center', 'Biogradsko Lake · lake-loop trailhead'].every(name => day3.stops.some(([stop]) => stop === name)), 'Oct 3 must retain Kolašin and Biogradska Gora');
+// Kolašin was dropped on the day (2026-10-03, travellers' decision); Biogradska Gora stays.
+assert.ok(day3.stops.some(([stop]) => stop === 'Biogradsko Lake · lake-loop trailhead'), 'Oct 3 must retain Biogradska Gora');
 // Oct 3 includes the Tara bridge viewpoint by choice (2026-10-02); the bridge itself stays closed to vehicles, so every Tara segment must say not to cross it.
 assert.ok(day3.stops.some(([stop]) => /Tara Bridge/.test(stop)), 'Oct 3 visits the Tara bridge viewpoint');
 assert.ok(['morning','afternoon','evening'].flatMap(p => day3[p]).filter(s => /Tara bridge/i.test(s.title || '')).every(s => /do not cross|skip it/i.test(s.text)) || day3.morning.some(s => /do not cross it/.test(s.text)), 'Tara segments must keep the do-not-cross guardrail');
@@ -72,15 +73,15 @@ const app = fs.readFileSync('app.js', 'utf8');
 const sw = fs.readFileSync('sw.js', 'utf8');
 const css = fs.readFileSync('style.css', 'utf8');
 const html = fs.readFileSync('index.html', 'utf8');
-assert.ok(app.includes('waypoints.json?rev=2026-10-02e'));
+assert.ok(app.includes('waypoints.json?rev=2026-10-03a'));
 assert.ok(app.includes('iconSize:[18,22],iconAnchor:[9,21.7],popupAnchor:[0,-24]'), 'pin tip should align with the exact bottom point of the rotated marker');
 assert.ok(!app.includes('routeToggle'), 'separate fallback route control should be removed');
 assert.ok(app.includes('data-plan-target'), 'map popup should link to a timeline target');
 assert.ok(html.includes('id="stayDirectory"'), 'confirmed stay quick reference should render');
-assert.ok(sw.includes('./waypoints.json?rev=2026-10-02e'));
-assert.ok(sw.includes('tile.openstreetmap.org') && sw.includes('./vendor/leaflet/leaflet.js?rev=2026-10-02e'));
+assert.ok(sw.includes('./waypoints.json?rev=2026-10-03a'));
+assert.ok(sw.includes('tile.openstreetmap.org') && sw.includes('./vendor/leaflet/leaflet.js?rev=2026-10-03a'));
 assert.ok(!sw.includes('unpkg.com') && !html.includes('unpkg.com'), 'Leaflet must be served from the app origin');
-assert.ok(sw.includes("const CACHE='mne-field-notes-v60'") && sw.includes("const VERSION='60'") && sw.includes('./weather.js?rev=2026-10-02e'));
+assert.ok(sw.includes("const CACHE='mne-field-notes-v61'") && sw.includes("const VERSION='61'") && sw.includes('./weather.js?rev=2026-10-03a'));
 assert.ok(html.includes('type="text/markdown"') && html.includes('trip.md'));
 assert.ok(!html.includes('data-pane="food"') && !html.includes('id="pane-food"'), 'food index tab should stay removed');
 assert.ok(html.includes('id="contactNumbers"') && app.includes("$('#contactNumbers')"), 'contacts card should render');
@@ -142,7 +143,7 @@ assert.ok(app.includes('tabs.getBoundingClientRect().height+bar.getBoundingClien
 assert.ok(css.includes('.day-title,.day-drive{min-width:0;overflow-wrap:anywhere}'));
 assert.ok(css.includes('body{margin:0;background:var(--surface-0)') && css.includes('main{max-width:1200px'));
 assert.ok(css.includes('body{padding-inline-start:env(safe-area-inset-left,0px);padding-inline-end:calc(var(--side-peek) + env(safe-area-inset-right,0px))'));
-assert.ok(html.includes('style.css?rev=2026-10-02e') && html.includes('app.js?rev=2026-10-02e') && html.includes('weather.js?rev=2026-10-02e'));
+assert.ok(html.includes('style.css?rev=2026-10-03a') && html.includes('app.js?rev=2026-10-03a') && html.includes('weather.js?rev=2026-10-03a'));
 assert.ok(html.includes('data-pane="weather"') && html.includes('id="pane-weather"'));
 assert.ok(html.includes('13 route hubs'), 'weather directory count must match the expanded route hubs');
 const weather = fs.readFileSync('weather.js', 'utf8');
