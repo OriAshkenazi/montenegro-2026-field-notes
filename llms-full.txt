@@ -20,7 +20,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - Stays
 - Day 1 · Tivat → Nikšić break → Runolist Chalet / northbound mountain transfer (Thu · Oct 1)
 - Day 2 · Black Lake / P14-Sedlo / Trsa / Plužine and Piva (Fri · Oct 2)
-- Day 3 · Tara bridge viewpoint, Biogradska Gora and Kolašin (Sat · Oct 3)
+- Day 3 · Tara bridge viewpoint, Biogradska Gora and Tara Springs (Sat · Oct 3)
 - Day 4 · Runolist → Nikšić coffee → Risan mosaics → Perast bags secured → Kotor Old Town (Sun · Oct 4)
 - Day 5 · Kotor espresso / Njegoš Mausoleum / Kuk coaster / Skadar boat circuit (Mon · Oct 5)
 - Day 6 · Perast → TIV / rental return / flight home (Tue · Oct 6)
@@ -281,7 +281,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - [Šavnik](https://maps.google.com/?q=%C5%A0avnik%2C%20Montenegro)
 - [Runolist Chalet](https://maps.google.com/?q=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%20%C5%BDabljak%2C%20Montenegro)
 
-## Day 3 · Tara bridge viewpoint, Biogradska Gora and Kolašin (Sat · Oct 3)
+## Day 3 · Tara bridge viewpoint, Biogradska Gora and Tara Springs (Sat · Oct 3)
 
 - **Date:** 2026-10-03
 - **Region:** North · Tara Canyon / Mojkovac / Biogradska Gora
@@ -316,13 +316,13 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
   - **Fixed time:** 13:45
   - **Drive time:** 46 min nominal / 55 min adjusted (source OSRM, checked 2026-10-03)
   - **Leg:** Biogradsko Lake · lake-loop trailhead → Tara Springs Park
-- **14:40–15:05 · WALK · Tara Springs Park** — Short, flat boardwalk loop between waterfalls, right beside the R-10; about 10–15 minutes of walking. Group members call it short, easy and beautiful.
-  - **Time on site:** 25 min
+- **14:40–15:00 · WALK · Tara Springs Park** — Short, flat boardwalk loop between waterfalls, right beside the R-10; about 10–15 minutes of walking. Group members call it short, easy and beautiful.
+  - **Time on site:** 20 min
   - **waypointId:** tara-springs-park
-- **15:05–15:55 · DRIVE · Drive to the Tara bridge** — Continue on the R-10 to the Žabljak side of Đurđevića Tara Bridge.
+- **15:00–15:50 · DRIVE · Drive to the Tara bridge** — Continue on the R-10 to the Žabljak side of Đurđevića Tara Bridge.
   - **Drive time:** 42 min nominal / 50 min adjusted (source OSRM, checked 2026-10-03)
   - **Leg:** Tara Springs Park → Đurđevića Tara Bridge / canyon viewpoint · access conditional
-- **15:55–16:05 · SEE · Tara bridge photo stop** — Photo stop at the bridge in the afternoon light; do not cross it or enter the works.
+- **15:50–16:00 · SEE · Tara bridge photo stop** — Photo stop at the bridge in the afternoon light; do not cross it or enter the works.
   - **Fixed time:** 15:50
   - **Time on site:** 10 min
   - **waypointId:** tara-bridge-viewpoint-conditional
@@ -331,7 +331,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 
 ### Evening
 
-- **16:05–16:34 · DRIVE · Drive back to Runolist** — Drive back to Runolist, about 30 minutes, arriving around 16:30.
+- **16:00–16:29 · DRIVE · Drive back to Runolist** — Drive back to Runolist, about 30 minutes, arriving around 16:30.
   - **Drive time:** 24 min nominal / 29 min adjusted (source OSRM, checked 2026-10-02)
   - **Leg:** Đurđevića Tara Bridge / canyon viewpoint · access conditional → Runolist Chalet
 - **18:00–19:15 · EAT · Dinner at Zlatni Papagaj** — Dinner at Zlatni Papagaj, 18:00–23:00 published; call/reserve for Oct 3 and ask about payment.
@@ -373,7 +373,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 
 ### Parking and cash
 
-- **Parking:** At Tara, use only confirmed public marked viewpoint and parking, never the road shoulder or work zone. In Kolašin use signed town parking; at Biogradska Gora follow the park checkpoint and same-day vehicle-access instructions. Do not assume summer visitor trains operate in October.
+- **Parking:** At Tara, use only confirmed public marked viewpoint and parking, never the road shoulder or work zone. On the return, Tara Springs Park has roadside parking by the R-10; at Biogradska Gora follow the park checkpoint and same-day vehicle-access instructions. Do not assume summer visitor trains operate in October.
 - **Cash:** For two: Biogradska admission €8; optional boat €10/hour or double kayak €5/hour; Tara zipline about €50 cash per ride, on a same-side line only. Restaurant, parking and zipline payment methods require confirmation; carry small notes.
 
 ### Route and map links
@@ -1351,7 +1351,6 @@ All 126 places on the app’s map (waypoints file version 3). “Days” lists t
   - **Pin precision:** approximate business listing pin; confirm parking and October operation
   - **Source:** [moja-djelatnost.me](https://www.moja-djelatnost.me/izdavanje-apartmana-i-restoran-pluzine/piva-lake/MM19_Jkh)
 - **Kolašin · town center** — Activity · 42.8232, 19.5169 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=Kola%C5%A1in%20%C2%B7%20town%20center%2C%20Montenegro&travelmode=driving)
-  - **Days:** 3
   - **Payment:** Ask
   - **Pin precision:** town-center reference pin
 - **Caffe Select · Kolašin morning coffee** — Coffee · 42.82366, 19.520754 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=Caffe%20Select%20%C2%B7%20Kola%C5%A1in%20morning%20coffee%2C%20Montenegro&travelmode=driving)

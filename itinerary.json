@@ -637,7 +637,7 @@
               "text": "Short, flat boardwalk loop between waterfalls, right beside the R-10; about 10–15 minutes of walking. Group members call it short, easy and beautiful.",
               "id": "day-3-afternoon-04",
               "title": "Tara Springs Park",
-              "dwellMin": 25,
+              "dwellMin": 20,
               "waypointId": "tara-springs-park"
             },
             {
@@ -716,7 +716,7 @@
               "note": true
             }
           ],
-          "parking": "At Tara, use only confirmed public marked viewpoint and parking, never the road shoulder or work zone. In Kolašin use signed town parking; at Biogradska Gora follow the park checkpoint and same-day vehicle-access instructions. Do not assume summer visitor trains operate in October.",
+          "parking": "At Tara, use only confirmed public marked viewpoint and parking, never the road shoulder or work zone. On the return, Tara Springs Park has roadside parking by the R-10; at Biogradska Gora follow the park checkpoint and same-day vehicle-access instructions. Do not assume summer visitor trains operate in October.",
           "cash": "For two: Biogradska admission €8; optional boat €10/hour or double kayak €5/hour; Tara zipline about €50 cash per ride, on a same-side line only. Restaurant, parking and zipline payment methods require confirmation; carry small notes.",
           "stops": [
             [
@@ -750,7 +750,7 @@
             "Sightseeing",
             "Food & Dining"
           ],
-          "heading": "Tara bridge viewpoint, Biogradska Gora and Kolašin",
+          "heading": "Tara bridge viewpoint, Biogradska Gora and Tara Springs",
           "food": {
             "meals": [
               {
