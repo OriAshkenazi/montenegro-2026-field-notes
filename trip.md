@@ -390,117 +390,95 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - **Date:** 2026-10-04
 - **Region:** North → Coast · Perast / Kotor
 - **Overnight base:** Conte Hotel & Restaurant · Perast
-- **Day starts:** 07:00
-- **Driving route:** Runolist Chalet → Šavnik → Nikšić (coffee break at Kastel) → Grahovo → Risan (Roman Mosaics) → Conte / signed Perast entrance parking → Kotor Old Town → Perast · transfer ~3 h 33 nominal / 4 h 17 adjusted (+20%) plus about 65 minutes of planned stops; add the Kotor out-and-back and live traffic, about 5.2 h adjusted driving in total; finish driving by 17:30.
-- **Adjusted driving total:** 5.2 h (timetable drive legs sum to 5 h 13 min)
+- **Day starts:** 09:15
+- **Driving route:** Runolist → SKK Vihor (2-hour ride, 09:30) → M-6 via Šavnik → M-3 to Nikšić (packed lunch on the way) → M-7/M-8 via Grahovo → Perast (check in at Conte) → Kotor Old Town evening → Perast · about 4 h 19 nominal / 5 h 12 adjusted (OSRM +20%); the usual 17:30 mountain cutoff is waived today by the travellers, since the mountain section ends around 15:30
+- **Adjusted driving total:** 5.2 h (timetable drive legs sum to 5 h 12 min)
 - **Interests:** Sightseeing, Food & Dining, Coffee
 - **communityPicks:** name: Restobar Taraca; note: Kotor: recommended twice; vegan and gluten-free options.; mapUrl: https://maps.google.com/?q=Restobar%20Taraca%20Kotor; id: pick-day-4-01, name: La Catedral; note: Kotor: gnocchi and pasta; friendly service.; mapUrl: https://maps.google.com/?q=La%20Catedral%20Kotor; id: pick-day-4-02, name: Pepe Nero; note: Kotor: solid dinner in the old town.; mapUrl: https://maps.google.com/?q=Pepe%20Nero%20Kotor; id: pick-day-4-03, name: Karampana; note: Kotor: solid dinner in the old town.; mapUrl: https://maps.google.com/?q=Karampana%20Kotor; id: pick-day-4-04, name: Pomodorino; note: Kotor: Italian; pasta praised.; mapUrl: https://maps.google.com/?q=Pomodorino%20Kotor; id: pick-day-4-05, name: Bonazza; note: Kotor: on the water; fish at sunset.; mapUrl: https://maps.google.com/?q=Bonazza%20Kotor; id: pick-day-4-06, name: Marenda Steak House; note: Kotor: fair prices.; mapUrl: https://maps.google.com/?q=Marenda%20steak%20house%20Kotor; id: pick-day-4-07, name: Senso; note: Kotor: croissants and sandwiches; the pistachio croissant is praised.; mapUrl: https://maps.google.com/?q=Senso%20Kotor; id: pick-day-4-08, name: Kordich Bakery; note: Kotor: bakery by the North Gate.; mapUrl: https://maps.google.com/?q=Kordich%20bakery%20Kotor; id: pick-day-4-09, name: Pekara AS; note: Kotor: bakery by the North Gate.; mapUrl: https://maps.google.com/?q=Pekara%20AS%20Kotor; id: pick-day-4-10, name: Marshell; note: Kotor: gelato with vegan options.; mapUrl: https://maps.google.com/?q=Marshell%20gelato%20Kotor; id: pick-day-4-11, name: The Nitrox Bar; note: Kotor: large, strong cocktails.; mapUrl: https://maps.google.com/?q=Nitrox%20Bar%20Kotor; id: pick-day-4-12, name: Parking Benovo; note: Kotor: parking closest to the North Gate, about €2 per hour.; mapUrl: https://maps.google.com/?q=Parking%20Benovo%20Kotor; id: pick-day-4-13
 
 ### Morning
 
-- **07:00 · LOGISTICS · Check out and depart Runolist** — Breakfast, settle the Runolist checkout and be on the road by 07:00. Keep the €225.39 cash availability note exactly as booked; amount already paid/balance due is not stated.
-- **07:00–09:10 · DRIVE · Drive Runolist to Nikšić via Šavnik** — Drive via M-6 through Šavnik and M-3 to Nikšić, about 2 hours. Šavnik, about 45 minutes in, is the place for an early leg-stretch if anyone needs one.
-  - **Drive time:** 108 min nominal / 130 min adjusted (source OSRM, checked 2026-09-30)
-  - **Leg:** Runolist Chalet → Restaurant Kastel · Nikšić via Šavnik
-- **09:10–09:45 · EAT · Coffee break at Kastel, Nikšić** — Planned 35-minute break about two hours in: coffee or a light breakfast at Kastel, which lists daily 07:00–23:00 service. Park where the car stays in sight, keep the bags covered in the boot, and top up fuel on the way out of town if the tank is below half.
-  - **Time on site:** 35 min
-  - **Food stop:** Restaurant Kastel · Nikšić (details under Food & provisions for this day)
-- **09:45–11:44 · DRIVE · Drive Nikšić to Risan via Grahovo** — Continue on M-7 to Vilusi and M-8 through Grahovo, then descend to Lipci and follow M-1 along the Bay to Risan.
-  - **Drive time:** 99 min nominal / 119 min adjusted (source OSRM, checked 2026-09-30)
-  - **Leg:** Restaurant Kastel · Nikšić → Roman Mosaics · Risan via Grahovo
-- **11:44–12:14 · SEE · Roman Mosaics, Risan** — Short stop at the Roman Mosaics site in Risan: 2nd-century villa floor mosaics, including the Hypnos mosaic. Muzeji Kotor lists Tuesday–Sunday 08:00–20:00 until Oct 15 and a €6 adult ticket; reconfirm on the day. Keep the visit to 30 minutes and park where the car stays in sight; one person can stay with the bags if the parking is out of view.
-  - **Time on site:** 30 min
-- **12:14–12:22 · DRIVE · Drive Risan to Perast** — Follow M-1 around the Bay to the signed Perast entrance parking.
-  - **Drive time:** 6 min nominal / 8 min adjusted (source OSRM, checked 2026-09-30)
-  - **Leg:** Roman Mosaics · Risan → Perast entrance parking
-  - **Note (DRIVE):** The whole transfer is about 3 h 33 nominal / 4 h 17 with the +20% terrain buffer, plus about 65 minutes for the two planned stops, before traffic, parking and the Kotor outing. Check AMSCG road/weather notices before departure; never route across the Đurđevića Tara bridge closure.
-  - **CAUTION:** Call Conte in advance to request secure luggage storage before the 15:00 room check-in. Storage and electric-car pickup are not confirmed; keep every bag out of the car while sightseeing.
+- **09:15 · LOGISTICS · Check out and depart Runolist** — Breakfast, pack the lunch, settle the Runolist checkout and leave at 09:15. Keep the €225.39 cash availability note exactly as booked; amount already paid/balance due is not stated.
+- **09:15–09:26 · DRIVE · Drive to SKK Vihor** — Short drive to the SKK Vihor stables in Junčev do.
+  - **Drive time:** 9 min nominal / 11 min adjusted (source OSRM, checked 2026-10-03)
+  - **Leg:** Runolist Chalet → SKK Vihor · Žabljak
+- **09:30–11:30 · SEE · Horse ride with SKK Vihor** — Two-hour horse ride with SKK Vihor, confirmed for 09:30. Wear long trousers, closed shoes and a warm layer, and carry cash. Stable phone: +382 69 376 929.
+  - **Fixed time:** 09:30
+  - **Time on site:** 120 min
+  - **waypointId:** skk-vihor-zabljak
+- **11:30–13:34 · DRIVE · Drive to Nikšić via Šavnik** — Drive south on the M-6 through Šavnik and the M-3 to Nikšić; eat the packed lunch on the way.
+  - **Drive time:** 103 min nominal / 124 min adjusted (source OSRM, checked 2026-10-03)
+  - **Leg:** SKK Vihor · Žabljak → Nikšić via Šavnik
+  - **Note (LOGISTICS):** No lunch time is reserved: the packed lunch is eaten on the way. If you want a quick stop in Nikšić, the options are Kastel (traditional Montenegrin, daily 07:00–23:00), Lounge Bar Piatto (4.7 on Google, 480 reviews, on the main boulevard) and La Parisienne (4.8 on Google, 263 reviews, quick and cheap). These are Google ratings, not group recommendations; check Sunday hours.
+  - **CAUTION:** Check AMSCG road and weather notices before leaving; the route never uses the Đurđevića Tara bridge.
 
 ### Afternoon
 
-- **12:14–12:22 · STAY** — Conte booking 5198999691: Classic Double Room for 2 adults, check-in Oct 4, 15:00–21:00. Total €271.93, paid in full. Preserve the recorded itemized cancellation terms and confirmation-intro conflict. Perast old town is closed to vehicles May–October; use signed entrance parking and ask reception about pickup rather than assuming it.
-- **12:22–12:52 · LOGISTICS · Park in Perast and drop luggage at Conte** — Park at a signed Perast entrance lot, walk to Conte and hand luggage to reception only if they confirm storage. If the hotel cannot secure the bags, stay in Perast and do not drive to Kotor with luggage. Use only a signed official lot or the parking Conte arranges; travelers report unofficial parking attendants in Perast.
+- **13:34–15:35 · DRIVE · Drive Nikšić to Perast via Grahovo** — Continue on the M-7 and M-8 through Grahovo, descend to the Bay and follow the M-1 to the signed Perast entrance parking. The Risan mosaics stop is dropped today.
+  - **Drive time:** 101 min nominal / 121 min adjusted (source OSRM, checked 2026-10-03)
+  - **Leg:** Nikšić → Perast entrance parking via Grahovo
+  - **Note (STAY):** Conte booking 5198999691: Classic Double Room for 2 adults, check-in Oct 4, 15:00–21:00. Total €271.93, paid in full. Preserve the recorded itemized cancellation terms and confirmation-intro conflict. Perast old town is closed to vehicles May–October; use signed entrance parking and ask reception about pickup rather than assuming it.
+- **15:35–16:05 · STAY · Park in Perast and check in at Conte** — Park in the signed Perast entrance lot and check in at Conte straight away (check-in from 15:00), so the bags go into the room and none stay in the car. Use only a signed official lot or the parking Conte arranges; travelers report unofficial parking attendants in Perast. Leave for Kotor around 16:30–17:00.
   - **Time on site:** 30 min
-- **12:52–13:20 · DRIVE · Drive to Kotor Old Town parking** — Once bags are secured, take the short M-1 run to Kotor. Park in signed Old Town parking and explore on foot; allow roughly 45–60 minutes adjusted driving for the out-and-back plus traffic.
-  - **Drive time:** 23 min nominal / 28 min adjusted (source OSRM, checked 2026-09-29)
+- **16:05–16:33 · DRIVE · Drive to Kotor Old Town parking** — Take the M-1 along the Bay to Kotor and park in signed Old Town parking; Parking Benovo by the North Gate is about €2 per hour.
+  - **Drive time:** 23 min nominal / 28 min adjusted (source OSRM, checked 2026-10-03)
   - **Leg:** Perast entrance parking → Kotor Old Town parking
-- **13:20–15:50 · LOGISTICS · Kotor Old Town: coffee, lunch, lanes** — Time-box Small Talks specialty coffee, a coastal-fish lunch in the Old Town and the old lanes to about 2.5 hours. Ombra lists daily service and garden/terrace seating; call to confirm Sunday service and terrace availability. Budget 75 minutes for lunch.
-  - **Time on site:** 150 min
+- **16:33–19:33 · SEE · Kotor Old Town evening and dinner** — Kotor Old Town in the late afternoon and evening: the lanes at sunset (about 18:35) and lit up, then dinner. Most shops are closed on Sunday, but restaurants are open. Skip the city-walls climb today.
+  - **Time on site:** 180 min
   - **Food stop:** Ombra · Kotor (details under Food & provisions for this day)
-  - **CAUTION:** Leave Kotor by 16:15 at the latest and be parked back in Perast by 17:00, with 17:30 the hard driving cutoff. Do not add the city-walls climb or another Bay town today.
-- **15:50–16:18 · DRIVE · Drive back to Perast and check in** — Return to Conte, complete check-in inside the confirmed 15:00–21:00 window and leave the car in the signed entrance lot.
-  - **Drive time:** 23 min nominal / 28 min adjusted (source OSRM, checked 2026-09-29)
-  - **Leg:** Kotor Old Town parking → Perast entrance parking
 
 ### Evening
 
-- **16:18–17:33 · EAT · Dinner at Conte or a Perast konoba** — Dinner at Conte or a Perast konoba, with local fish/seafood as the coastal choice. Phone Conte for a same-day table; no restaurant reservation was supplied.
-  - **Time on site:** 75 min
-  - **Food stop:** Conte Hotel & Restaurant (details under Food & provisions for this day)
+- **19:33–20:01 · DRIVE · Drive back to Perast** — Drive back along the Bay to Perast, about 30 minutes on the coastal road.
+  - **Drive time:** 23 min nominal / 28 min adjusted (source OSRM, checked 2026-10-03)
+  - **Leg:** Kotor Old Town parking → Perast entrance parking
   - **Note (LOGISTICS):** Keep the car parked overnight. Reconfirm tomorrow’s breakfast takeaway with Conte at least one day ahead and confirm the Skadar boat departure/return with its operator.
 
 ### Food & provisions
 
 **Meals**
 
-- **Lunch · Kotor Old Town · Ombra · Kotor** — Adriatic seafood and coastal fish; choose the current catch/menu.
-  - **Hours:** Official site lists daily 08:30–22:30; reconfirm Sunday/October service.
+- **Dinner · Kotor Old Town · Ombra · Kotor** — Adriatic seafood and coastal fish; choose the current catch/menu.
+  - **Hours:** Official site lists daily 08:30–22:30; reconfirm Sunday service.
   - **Parking:** Signed Old Town parking then walk; customer parking not stated.
   - **Payment:** Payment method not confirmed; carry cash and ask.
-  - **Time planned:** 75 min
-  - **Plan:** Call ahead if possible. Garden/terrace seating is listed but weather and availability are not guaranteed. Keep lunch inside the Kotor visit window.
+  - **Time planned:** 90 min
+  - **Plan:** Dinner during the Kotor evening; group picks nearby include Pepe Nero, Karampana and La Catedral.
   - **Map:** [maps.google.com](https://maps.google.com/?q=Ombra%20restaurant%2C%20Kotor%20Old%20Town%2C%20Montenegro)
   - **Source:** [ombraoldtown.com](https://ombraoldtown.com/)
-- **Dinner · Perast · Conte Hotel & Restaurant** — Perast seafood and traditional Montenegrin cooking at the confirmed hotel property.
-  - **Hours:** Confirm October hours directly.
-  - **Parking:** Walk from reception/room; leave the car at signed entrance parking.
-  - **Payment:** Payment method not supplied; confirm directly.
+- **Lunch · on the road · Packed lunch on the road** — Packed food made at Runolist; no lunch time is reserved.
+  - **Hours:** Eat on the way between Šavnik and Grahovo.
+  - **Parking:** Use a safe pullout or a town stop.
+  - **Payment:** Not needed.
   - **Time planned:** 60 min
-  - **Plan:** Phone +382 67 257 387 for a same-day reservation; web contact-form requests for same-day reservations are not valid. No restaurant booking or payment was supplied.
-  - **Map:** [maps.google.com](https://maps.google.com/?q=Conte%20Hotel%20Restaurant%2C%20Perast%2C%20Montenegro)
-  - **Source:** [hotelconte.me](https://hotelconte.me/restaurant)
+  - **Plan:** Optional quick Nikšić stops are listed in the morning notes.
+  - **Map:** [maps.google.com](https://maps.google.com/?q=Nik%C5%A1i%C4%87%2C%20Montenegro)
+  - **Source:** [maps.google.com](https://maps.google.com/?q=restaurant%20Nik%C5%A1i%C4%87)
 
 **Coffee**
 
-- **Morning · Nikšić break · Restaurant Kastel · Nikšić** — Traditional Montenegrin restaurant on the transfer route; coffee or a light breakfast at the halfway break.
+- **Optional · Nikšić · Restaurant Kastel · Nikšić** — Optional quick stop on the way; traditional Montenegrin, daily 07:00–23:00.
   - **Hours:** Official site lists Monday–Sunday 07:00–23:00; reconfirm Sunday service.
   - **Parking:** Street parking near Karađorđeva is not verified; keep the loaded car in sight.
   - **Map:** [maps.google.com](https://maps.google.com/?q=Kastel%2C%20Kara%C4%91or%C4%91eva%2041%2C%20Nik%C5%A1i%C4%87%2C%20Montenegro)
   - **Source:** [kastel.me](https://kastel.me/?lang=en&page_id=11611)
-- **Afternoon · Kotor · Small Talks · Kotor** — Specialty coffee stop after parking on the Old Town visit.
-  - **Hours:** Published daily 08:00–22:00; reconfirm Sunday/October service.
-  - **Parking:** Park once in the Old Town lot and walk; café parking not confirmed.
-  - **Map:** [maps.google.com](https://maps.google.com/?q=Small%20Talks%20specialty%20coffee%2C%20Kotor%2C%20Montenegro)
-  - **Source:** [smalltalks.me](https://www.smalltalks.me/)
-
-**Supermarkets and stock-up stops**
-
-- **Aroma City Tabačina · Kotor**
-  - **Hours:** Published listing 07:00–23:45; verify Sunday/October.
-  - **Parking:** Urban parking not confirmed; do not move a loaded car solely to shop.
-  - **Plan:** Optional walk-in top-up while already parked in Kotor; skip if it requires another parking move or risks the 16:15 departure.
-  - **Map:** [maps.google.com](https://maps.google.com/?q=Aroma%20City%20Tabacina%20Kotor%20Montenegro)
-  - **Source:** [aromamarketi.me](https://aromamarketi.me/lokacije/)
 
 ### Parking and cash
 
-- **Parking:** Loaded-car transfer goes directly to Conte’s signed Perast entrance lot (hotel-published summer parking €20/day); ask reception to secure bags before going anywhere. If storage is unavailable, keep the day in Perast. At Kotor use signed paid Old Town parking and walk; fee/space are not guaranteed.
-- **Cash:** Conte stay €271.93 paid. Carry cash/card for Perast parking (€20/day published), Kotor parking and meals. Meal payment and terrace availability are not confirmed; carry cash and ask.
+- **Parking:** Park in Conte’s signed Perast entrance lot (hotel-published summer parking €20/day) and check in on arrival, so no bags stay in the car. At Kotor use signed paid Old Town parking and walk; fee/space are not guaranteed.
+- **Cash:** Conte stay €271.93 paid. Carry cash for the SKK ride, Perast parking (€20/day published), Kotor parking and dinner; payment methods are not confirmed.
 
 ### Route and map links
 
 - [Runolist Chalet](https://maps.google.com/?q=Runolist%20Chalet%2C%20Narodnih%20heroja%2C%20Zabljak%2C%20Montenegro)
-- [Restaurant Kastel · Nikšić](https://maps.google.com/?q=Kastel%2C%20Kara%C4%91or%C4%91eva%2041%2C%20Nik%C5%A1i%C4%87%2C%20Montenegro)
-- [Roman Mosaics · Risan](https://maps.google.com/?q=Roman%20Mosaics%2C%20Risan%2C%20Montenegro)
-- [Conte Hotel & Restaurant](https://maps.google.com/?q=Conte%20Hotel%20%26%20Restaurant%2C%20Perast%2C%20Montenegro)
+- [SKK Vihor · Žabljak](https://maps.google.com/?q=43.1488189,19.1390425)
+- [Nikšić](https://maps.google.com/?q=Nik%C5%A1i%C4%87%2C%20Montenegro)
 - [Perast entrance parking](https://maps.google.com/?q=Perast%20signed%20entrance%20parking%2C%20Montenegro)
+- [Conte Hotel & Restaurant](https://maps.google.com/?q=Conte%20Hotel%20%26%20Restaurant%2C%20Perast%2C%20Montenegro)
 - [Kotor Old Town parking](https://maps.google.com/?q=Kotor%20Old%20Town%20parking%2C%20Montenegro)
 - [Kotor](https://maps.google.com/?q=Kotor%20Old%20Town%2C%20Montenegro)
-- [Small Talks · Kotor](https://maps.google.com/?q=Small%20Talks%20specialty%20coffee%2C%20Kotor%2C%20Montenegro)
 - [Ombra · Kotor Old Town](https://maps.google.com/?q=Ombra%20restaurant%2C%20Kotor%20Old%20Town%2C%20Montenegro)
-- [Kotor Old Town parking](https://maps.google.com/?q=Kotor%20Old%20Town%20parking%2C%20Montenegro)
 - [Perast entrance parking](https://maps.google.com/?q=Perast%20signed%20entrance%20parking%2C%20Montenegro)
-- [Conte Hotel & Restaurant](https://maps.google.com/?q=Conte%20Hotel%20%26%20Restaurant%2C%20Perast%2C%20Montenegro)
 
 ## Day 5 · Kotor espresso / Njegoš Mausoleum / Kuk coaster / Skadar boat circuit (Mon · Oct 5)
 
@@ -854,7 +832,7 @@ The app’s Live weather tab loads a 16-day Open-Meteo forecast for these route 
 
 ## Map waypoints
 
-All 127 places on the app’s map (waypoints file version 3). “Days” lists the itinerary days that use each place.
+All 128 places on the app’s map (waypoints file version 3). “Days” lists the itinerary days that use each place.
 
 - **TIV · Europcar rental pickup (Arrivals desk)** — Parking · 42.4047, 18.7233 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=Tivat%20Airport%20Europcar%20Arrivals%20desk%2C%20Montenegro&travelmode=driving)
   - **Days:** 1
@@ -937,6 +915,10 @@ All 127 places on the app’s map (waypoints file version 3). “Days” lists t
   - **Days:** 3
   - **Payment:** Ask
   - **Pin precision:** Google Maps place pin
+- **SKK Vihor · Žabljak** — Activity · 43.1488189, 19.1390425 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=43.1488189,19.1390425&travelmode=driving)
+  - **Days:** 4
+  - **Payment:** Ask
+  - **Pin precision:** Google Maps place pin
 - **Trsa village pullout** — Viewpoint · 43.1692, 18.9831 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=Trsa%20village%20pullout%2C%20Montenegro&travelmode=driving)
   - **Days:** 2
   - **Payment:** Ask
@@ -1000,7 +982,7 @@ All 127 places on the app’s map (waypoints file version 3). “Days” lists t
   - **Payment:** Ask
   - **Pin precision:** OpenStreetMap cafe coordinate
 - **Aroma City Tabačina · Kotor** — Supermarket · 42.4354096, 18.7663439 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=Aroma%20City%20Taba%C4%8Dina%20%C2%B7%20Kotor%2C%20Montenegro&travelmode=driving)
-  - **Days:** 4, 5
+  - **Days:** 5
   - **Payment:** Ask
   - **Pin precision:** Published Aroma Market location coordinate
 - **Virpazar parking** — Parking · 42.2476, 19.0912 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=Virpazar%20parking%2C%20Montenegro&travelmode=driving)
@@ -1040,7 +1022,7 @@ All 127 places on the app’s map (waypoints file version 3). “Days” lists t
   - **Payment:** Ask
   - **Pin precision:** OpenStreetMap restaurant coordinate
 - **Small Talks · Kotor** — Coffee · 42.421394, 18.769821 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=Small%20Talks%20%C2%B7%20Kotor%2C%20Montenegro&travelmode=driving)
-  - **Days:** 4, 5, 6
+  - **Days:** 5, 6
   - **Payment:** Ask
   - **Pin precision:** OpenStreetMap cafe coordinate
 - **Perast to Tivat Airport** — Parking · 42.48631, 18.69801 · [Google Maps](https://www.google.com/maps/dir/?api=1&origin=Conte%20Hotel%20%26%20Restaurant%2C%20Perast%2C%20Montenegro&destination=Tivat%20Airport%2C%20Montenegro&travelmode=driving)
@@ -1405,7 +1387,6 @@ All 127 places on the app’s map (waypoints file version 3). “Days” lists t
   - **Payment:** Ask
   - **Pin precision:** OpenStreetMap fuel-station coordinate
 - **Roman Mosaics · Risan** — Activity · 42.51282, 18.69704 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=Roman%20Mosaics%2C%20Risan%2C%20Montenegro&travelmode=driving)
-  - **Days:** 4
   - **Payment:** Ask
   - **Pin precision:** OpenStreetMap archaeological-site coordinate
   - **Source:** [muzejikotor.me](https://muzejikotor.me/ulaznice/)

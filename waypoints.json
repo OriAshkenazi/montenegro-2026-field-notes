@@ -311,6 +311,22 @@
       "precision": "Google Maps place pin"
     },
     {
+      "id": "skk-vihor-zabljak",
+      "name": "SKK Vihor · Žabljak",
+      "category": "Activity",
+      "lat": 43.1488189,
+      "lng": 19.1390425,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=43.1488189,19.1390425&travelmode=driving",
+      "cash": "Ask",
+      "days": {
+        "primary": [
+          4
+        ]
+      },
+      "aliases": [],
+      "precision": "Google Maps place pin"
+    },
+    {
       "id": "trsa-village-pullout",
       "name": "Trsa village pullout",
       "category": "Viewpoint",
@@ -564,7 +580,6 @@
       "cash": "Ask",
       "days": {
         "primary": [
-          4,
           5
         ]
       },
@@ -726,7 +741,6 @@
       "cash": "Ask",
       "days": {
         "primary": [
-          4,
           5,
           6
         ]
@@ -2274,9 +2288,7 @@
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Roman%20Mosaics%2C%20Risan%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
-        "primary": [
-          4
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "OpenStreetMap archaeological-site coordinate",
