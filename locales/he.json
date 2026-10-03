@@ -589,15 +589,10 @@
     "Biogradska Gora admission is currently €4/person/day; boats are €10/hour, kayaks €3 single / €5 double per hour.": "הכניסה ל-Biogradska Gora כרגע €4 לאדם ליום; סירות €10 לשעה, קיאקים €3 יחיד / €5 זוגי לשעה.",
     "The park tariff does not state payment method; carry cash.": "תעריף הפארק לא מציין אמצעי תשלום; תחזיקו מזומן.",
     "Confirm October operations before budgeting boat time.": "תאשרו פעילות באוקטובר לפני שמתקצבים זמן סירה.",
-    "Dinner at Zlatni Papagaj, 18:00–23:00 published; call/reserve for Oct 3 and ask about payment.": "ארוחת ערב ב-Zlatni Papagaj, מפורסם 18:00–23:00; תתקשרו/תזמינו ל-3 באוק׳ ותשאלו על תשלום.",
     "Use the short town walk only after parking at Runolist; keep the late evening restful before the Oct 4 transfer.": "הליכה קצרה בעיירה רק אחרי שחניתם ב-Runolist; שמרו על ערב רגוע לפני ההעברה ב-4 באוק׳.",
     "At Tara, use only confirmed public marked viewpoint and parking, never the road shoulder or work zone.": "ב-Tara השתמשו רק בנקודת תצפית וחניה ציבוריות מסומנות ומאושרות, לעולם לא בשולי הכביש או באזור העבודות.",
     "Do not assume summer visitor trains operate in October.": "אל תניחו שרכבות המבקרים של הקיץ פועלות באוקטובר.",
     "Restaurant, parking and zipline payment methods require confirmation; carry small notes.": "אמצעי התשלום במסעדה, בחניה ובזיפליין דורשים אישור; תחזיקו שטרות קטנים.",
-    "Montenegrin cuisine and listed outdoor dining.": "מטבח מונטנגרי וישיבה בחוץ לפי הרשימה.",
-    "Official site publishes 18:00–23:00; reconfirm date.": "האתר הרשמי מפרסם 18:00–23:00; תאשרו מחדש תאריך.",
-    "Town-center parking not verified; walk from lodging.": "חניה במרכז העיירה לא אומתה; לכו ברגל מהלינה.",
-    "Call or reserve on Oct 3; keep lodging food as backup if return is delayed.": "תתקשרו או תזמינו ב-3 באוק׳; שמרו אוכל מהלינה כגיבוי אם החזרה מתעכבת.",
     "Published listing 07:30–21:30; reconfirm.": "רשימה מפורסמת 07:30–21:30; תאשרו מחדש.",
     "Vehicle parking unverified; shop after unloading.": "חניה לרכב לא אומתה; תעשו קניות אחרי הפריקה.",
     "Sun · Oct 4": "יום א׳ · 4 באוק׳",
@@ -1092,7 +1087,15 @@
     "Payment method unverified; carry cash.": "אמצעי התשלום לא אומת; להביא מזומן.",
     "Eaten at the lake on Oct 3; the Kolašin stop was dropped.": "אכלנו ליד האגם ב-3 באוקטובר; העצירה ב-Kolašin בוטלה.",
     "Tara bridge viewpoint, Biogradska Gora and Tara Springs": "תצפית על גשר טארה, Biogradska Gora ו-Tara Springs",
-    "On the return, Tara Springs Park has roadside parking by the R-10; at Biogradska Gora follow the park checkpoint and same-day vehicle-access instructions.": "בדרך חזרה יש ל-Tara Springs Park חניה בצד R-10; ב-Biogradska Gora פועלים לפי נקודת הבידוק של הפארק ולפי הנחיות הגישה לרכבים של אותו יום."
+    "On the return, Tara Springs Park has roadside parking by the R-10; at Biogradska Gora follow the park checkpoint and same-day vehicle-access instructions.": "בדרך חזרה יש ל-Tara Springs Park חניה בצד R-10; ב-Biogradska Gora פועלים לפי נקודת הבידוק של הפארק ולפי הנחיות הגישה לרכבים של אותו יום.",
+    "Dinner at the Hotel Nordik restaurant (Italian and Mediterranean), about 13 minutes' drive from Runolist on the plateau road.": "ארוחת ערב במסעדה של מלון Nordik (איטלקית וים-תיכונית), כ-13 דקות נסיעה מ-Runolist בכביש הרמה.",
+    "Reserve by phone on +382 67 698 698.": "להזמין מקום בטלפון +382 67 698 698.",
+    "Group members call it the best dinner in Žabljak.": "חברי הקבוצה מכנים אותה ארוחת הערב הטובה ביותר ב-Žabljak.",
+    "Dinner at Hotel Nordik": "ארוחת ערב במלון Nordik",
+    "Italian and Mediterranean: pasta (the carbonara is praised), asparagus risotto, steaks, fish and pizza.": "איטלקי וים-תיכוני: פסטות (משבחים את הקרבונרה), ריזוטו אספרגוס, סטייקים, דגים ופיצות.",
+    "Evening dinner service; reserve by phone on +382 67 698 698.": "ארוחות ערב; להזמין מקום בטלפון +382 67 698 698.",
+    "Hotel parking.": "חניית המלון.",
+    "Group members rate it the best dinner in Žabljak: the priciest, but every dish good and fair for the level.": "חברי הקבוצה מדרגים אותה כארוחת הערב הטובה ביותר ב-Žabljak: הכי יקרה, אבל כל המנות טובות והמחיר הוגן לרמה."
   },
   "aliases": {
     "tivat-airport": [

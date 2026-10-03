@@ -334,10 +334,10 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - **16:00–16:29 · DRIVE · Drive back to Runolist** — Drive back to Runolist, about 30 minutes, arriving around 16:30.
   - **Drive time:** 24 min nominal / 29 min adjusted (source OSRM, checked 2026-10-02)
   - **Leg:** Đurđevića Tara Bridge / canyon viewpoint · access conditional → Runolist Chalet
-- **18:00–19:15 · EAT · Dinner at Zlatni Papagaj** — Dinner at Zlatni Papagaj, 18:00–23:00 published; call/reserve for Oct 3 and ask about payment.
-  - **Fixed time:** 18:00
-  - **Time on site:** 75 min
-  - **Food stop:** Zlatni Papagaj (details under Food & provisions for this day)
+- **18:30–20:00 · EAT · Dinner at Hotel Nordik** — Dinner at the Hotel Nordik restaurant (Italian and Mediterranean), about 13 minutes' drive from Runolist on the plateau road. Reserve by phone on +382 67 698 698. Group members call it the best dinner in Žabljak.
+  - **Fixed time:** 18:30
+  - **Time on site:** 90 min
+  - **Food stop:** Hotel & Restaurant Nordik · Žabljak (details under Food & provisions for this day)
   - **Note (LOGISTICS):** Use the short town walk only after parking at Runolist; keep the late evening restful before the Oct 4 transfer.
   - **Note (LOGISTICS):** Stock up on water and snacks tonight: supermarkets in Montenegro are closed on Sundays by law, and Oct 4 is a Sunday.
 
@@ -353,14 +353,14 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
   - **Plan:** Eaten at the lake on Oct 3; the Kolašin stop was dropped.
   - **Map:** [maps.google.com](https://maps.google.com/?q=42.900603,19.595388)
   - **Source:** [maps.google.com](https://maps.google.com/?q=Biogradsko%20jezero%20restaurant)
-- **Dinner · Žabljak · Zlatni Papagaj** — Montenegrin cuisine and listed outdoor dining.
-  - **Hours:** Official site publishes 18:00–23:00; reconfirm date.
-  - **Parking:** Town-center parking not verified; walk from lodging.
+- **Dinner · Žabljak · Hotel & Restaurant Nordik · Žabljak** — Italian and Mediterranean: pasta (the carbonara is praised), asparagus risotto, steaks, fish and pizza.
+  - **Hours:** Evening dinner service; reserve by phone on +382 67 698 698.
+  - **Parking:** Hotel parking.
   - **Payment:** Payment method unverified; carry cash and ask.
   - **Time planned:** 90 min
-  - **Plan:** Call or reserve on Oct 3; keep lodging food as backup if return is delayed.
-  - **Map:** [maps.google.com](https://maps.google.com/?q=Zlatni%20Papagaj%2C%20%C5%BDabljak%2C%20Montenegro)
-  - **Source:** [zlatnipapagaj.com](https://zlatnipapagaj.com/)
+  - **Plan:** Group members rate it the best dinner in Žabljak: the priciest, but every dish good and fair for the level.
+  - **Map:** [maps.google.com](https://maps.google.com/?q=43.1323346,19.1117432)
+  - **Source:** [hotelnordikzabljak.com](https://hotelnordikzabljak.com/restaurant)
 
 **Supermarkets and stock-up stops**
 
@@ -854,7 +854,7 @@ The app’s Live weather tab loads a 16-day Open-Meteo forecast for these route 
 
 ## Map waypoints
 
-All 126 places on the app’s map (waypoints file version 3). “Days” lists the itinerary days that use each place.
+All 127 places on the app’s map (waypoints file version 3). “Days” lists the itinerary days that use each place.
 
 - **TIV · Europcar rental pickup (Arrivals desk)** — Parking · 42.4047, 18.7233 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=Tivat%20Airport%20Europcar%20Arrivals%20desk%2C%20Montenegro&travelmode=driving)
   - **Days:** 1
@@ -884,7 +884,7 @@ All 126 places on the app’s map (waypoints file version 3). “Days” lists t
   - **Payment:** Ask
   - **Pin precision:** approximate shared area pin; exact spot not verified
 - **Zlatni Papagaj · Žabljak dinner** — Meal · 43.15487, 19.11865 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=Zlatni%20Papagaj%20%C2%B7%20%C5%BDabljak%20dinner%2C%20Montenegro&travelmode=driving)
-  - **Days:** 1, 2, 3
+  - **Days:** 1, 2
   - **Payment:** Ask
   - **Pin precision:** OpenStreetMap venue coordinate; walk from lodging if practical
   - **Source:** [zlatnipapagaj.com](https://zlatnipapagaj.com/)
@@ -930,6 +930,10 @@ All 126 places on the app’s map (waypoints file version 3). “Days” lists t
   - **Payment:** Ask
   - **Pin precision:** route reference at Sedlo Pass; use live navigation for road timing
 - **Tara Springs Park** — Viewpoint · 42.9892739, 19.4112237 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=42.9892739,19.4112237&travelmode=driving)
+  - **Days:** 3
+  - **Payment:** Ask
+  - **Pin precision:** Google Maps place pin
+- **Hotel & Restaurant Nordik · Žabljak** — Meal · 43.1323346, 19.1117432 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=43.1323346,19.1117432&travelmode=driving)
   - **Days:** 3
   - **Payment:** Ask
   - **Pin precision:** Google Maps place pin
