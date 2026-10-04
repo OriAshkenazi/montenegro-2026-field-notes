@@ -976,8 +976,8 @@
               "note": true
             }
           ],
-          "parking": "Park in Conte’s signed Perast entrance lot (hotel-published summer parking €20/day) and check in on arrival, so no bags stay in the car. At Kotor use signed paid Old Town parking and walk; fee/space are not guaranteed.",
-          "cash": "Conte stay €271.93 paid. Carry cash for the SKK ride, Perast parking (€20/day published), Kotor parking and dinner; payment methods are not confirmed.",
+          "parking": "Conte’s hotel parking is at the Kotor-side entrance to Perast: €25 per 24 hours, paid at reception; call reception for the electric transfer with luggage. At Kotor use signed paid Old Town parking and walk; fee/space are not guaranteed.",
+          "cash": "Conte stay €271.93 paid. Carry cash for the SKK ride, Conte hotel parking (€25/24h at reception), Kotor parking and dinner; payment methods are not confirmed.",
           "stops": [
             [
               "Runolist Chalet",
@@ -1148,154 +1148,200 @@
         {
           "day": 5,
           "date": "Mon · Oct 5",
-          "region": "Coast / Central · Perast → Lovćen → Skadar → Perast",
+          "region": "Coast / Central · Perast → Lovćen → Cetinje → Lake Skadar → Perast",
           "base": "Conte Hotel & Restaurant · Perast",
-          "drive": "Perast → Kotor espresso → Njegoš Mausoleum via R-1/R-25.1 → Kuk upper station (cable-car round trip) → Cetinje → Virpazar → Perast via Sozina · ~5 h 30 adjusted planning allowance (+20% terrain); stay ≤6 h and back by 17:00, before the 17:30 cutoff.",
+          "drive": "Perast (hotel parking) → M-1 → R-1 Kotor serpentine → R-25 to the Alpine Coaster at Kuk → Njegoš Mausoleum → Cetinje (sandwiches) → Pavlova Strana viewpoint → Vranjina (DARKO Boat) → Virpazar → Sozina → Budva → Perast · about 4 h 33 nominal / 5 h 28 adjusted (OSRM +20%); the usual 17:30 cutoff is waived by the travellers, back around 18:45",
           "adjustedHours": 5.5,
           "morning": [
             {
-              "type": "LOGISTICS",
+              "type": "EAT",
               "id": "day-5-morning-01",
-              "text": "Arrange Conte take-away breakfast the previous day (the hotel requires one-day notice). Leave Perast at 07:30 with water, cash and a full tank; check AMSCG road conditions and Lovćen/Kuk weather.",
-              "title": "Takeaway breakfast and depart Perast",
-              "foodId": "food-day-5-meals-03"
-            },
-            {
-              "type": "DRIVE",
-              "id": "day-5-morning-02",
-              "text": "Drive directly to signed Kotor Old Town parking; allow about 20–25 minutes from Perast. Park once and walk to Small Talks.",
-              "title": "Drive to Kotor Old Town parking",
-              "leg": {
-                "from": "perast-entrance-parking",
-                "to": "kotor-old-town-parking"
-              },
-              "driveMin": {
-                "nominal": 23,
-                "adjusted": 28,
-                "source": "OSRM",
-                "checked": "2026-09-29"
-              }
+              "title": "Breakfast at Conte",
+              "text": "Wake at 07:15 and pack the day bag (warm layer for the Lovćen summit, water, cash); leave the annex room by 07:50 for the walk to the restaurant. Breakfast at Conte from 08:00; bring the day bag so you can go straight to the car.",
+              "dwellMin": 40,
+              "foodId": "food-day-5-meals-01"
             },
             {
               "type": "LOGISTICS",
-              "id": "day-5-morning-03",
-              "text": "Stop at Small Talks at its published 08:00 opening for a quick specialty espresso; allow 20 minutes. If its live listing shows closed, use packed hotel coffee and continue.",
-              "title": "Espresso at Small Talks, Kotor",
-              "fixedAt": "08:00",
-              "dwellMin": 15,
-              "foodId": "food-day-5-coffee-01"
+              "id": "day-5-morning-02",
+              "title": "Walk to the car",
+              "text": "Walk about 15 minutes along the waterfront to the hotel parking at the Kotor-side entrance and drive off at 09:00.",
+              "dwellMin": 20
             },
             {
               "type": "DRIVE",
-              "id": "day-5-morning-07",
-              "text": "At about 08:20 take the R-1 serpentine toward Njeguši, then the signed R-25.1 approach to Njegoš Mausoleum. Use live routing; the road is narrow and winding, so make the high-elevation visit in the morning.",
-              "title": "Drive to Njegoš Mausoleum via Njeguši",
+              "id": "day-5-morning-03",
+              "text": "Take the M-1 to Kotor, climb the R-1 serpentine (25 hairpins) and turn onto the R-25 to Kuk. Stop at one or two serpentine pullouts for photos; the route passes the Njeguši turn without stopping.",
+              "title": "Drive the Kotor serpentine to the Alpine Coaster",
               "leg": {
-                "from": "kotor-old-town-parking",
-                "to": "njegos-mausoleum-parking",
-                "via": [
-                  "njegusi"
-                ]
+                "from": "conte-hotel-parking",
+                "to": "kotor-cable-car-kuk"
               },
               "driveMin": {
-                "nominal": 46,
-                "adjusted": 56,
+                "nominal": 53,
+                "adjusted": 64,
                 "source": "OSRM",
-                "checked": "2026-09-29"
+                "checked": "2026-10-04"
               }
             },
             {
               "type": "SEE",
               "id": "day-5-morning-04",
-              "text": "Reach the mausoleum around its 09:00 opening. The National Museum lists daily visits through Nov 15, €8/adult, and 461 steps; allow 60 minutes and wear grippy shoes.",
-              "title": "Njegoš Mausoleum visit",
-              "fixedAt": "09:00",
-              "dwellMin": 45
+              "title": "Serpentine photo stops",
+              "text": "Allow about 15 minutes for one or two photo stops at safe pullouts above the Bay.",
+              "dwellMin": 15
+            },
+            {
+              "type": "SEE",
+              "id": "day-5-morning-05",
+              "title": "Kotor Alpine Coaster",
+              "text": "Ride the Alpine Coaster next to the cable-car upper station at Kuk; drive straight here and do not navigate to the cable car’s lower station in Kotor. Parking at the upper station is free. Opens 10:00; €12 per ride per person, or €20 fast track; the 1 km track takes 3–5 minutes.",
+              "dwellMin": 60,
+              "waypointId": "kotor-cable-car-kuk"
             },
             {
               "type": "DRIVE",
-              "id": "day-5-morning-05",
-              "text": "Continue a short distance to Kotor Cable Car’s Kuk upper station. Park there (operator lists free parking, capacity 60), ride the gondola down to Dub and back up, then use the Alpine Coaster if open. Allow 75 minutes total; skip extra Lovćen/Cetinje sightseeing.",
-              "title": "Kuk upper station and cable car",
-              "dwellMin": 60
+              "id": "day-5-morning-06",
+              "text": "Continue about 6 km to the upper parking at the end of the mausoleum road.",
+              "title": "Drive to the mausoleum parking",
+              "leg": {
+                "from": "kotor-cable-car-kuk",
+                "to": "njegos-mausoleum-parking"
+              },
+              "driveMin": {
+                "nominal": 8,
+                "adjusted": 10,
+                "source": "OSRM",
+                "checked": "2026-10-04"
+              }
+            },
+            {
+              "type": "SEE",
+              "id": "day-5-morning-07",
+              "title": "Njegoš Mausoleum and summit view",
+              "text": "From the upper parking walk about 450 m, including 461 steps through a covered tunnel (10–15 minutes up). Lovćen park entry €4/person, mausoleum €8/person, parking €2. Do not miss the round viewing platform behind the mausoleum. If the upper lot is full, use the lower lot about 400 m down the road.",
+              "dwellMin": 60,
+              "waypointId": "njegos-mausoleum"
             },
             {
               "type": "CAUTION",
-              "id": "day-5-morning-06",
-              "text": "The operator’s current ticket page lists Monday gondola service 09:00–20:00, last up 19:30, and coaster 10:00–19:00; weather or maintenance can suspend service. Recheck on the day. If the coaster remains closed, keep the Kuk viewpoint visit and mark the ride unavailable. Travelers report the cable car closing without notice, even on the entrance screens, and shutting when Lovćen is in cloud. If Kuk is in cloud or the gondola is stopped, skip it and continue to Cetinje."
+              "id": "day-5-morning-08",
+              "text": "The summit is about 1,650 m high, cold and windy. Travelers report the Lovćen cable car stopping in cloud or wind without notice; the coaster can close too. Check the weather before driving up and shorten the visit if the summit is in cloud."
             }
           ],
           "afternoon": [
             {
               "type": "DRIVE",
               "id": "day-5-afternoon-01",
-              "text": "From Kuk continue via Cetinje to Virpazar without backtracking to Kotor. Reach the booked pier by 12:45 for the prebooked 13:00 one-hour departure.",
-              "title": "Drive to Virpazar via Cetinje",
+              "text": "Drive down through the national park to Cetinje.",
+              "title": "Drive to Cetinje",
               "leg": {
-                "from": "kotor-cable-car-kuk",
-                "to": "virpazar-boat-pier",
-                "via": [
-                  "cetinje"
-                ]
+                "from": "njegos-mausoleum-parking",
+                "to": "voli-cetinje"
               },
               "driveMin": {
-                "nominal": 90,
-                "adjusted": 108,
+                "nominal": 34,
+                "adjusted": 41,
                 "source": "OSRM",
-                "checked": "2026-09-29"
+                "checked": "2026-10-04"
+              }
+            },
+            {
+              "type": "EAT",
+              "id": "day-5-afternoon-02",
+              "title": "Sandwiches for lunch and dinner in Cetinje",
+              "text": "Buy sandwiches, drinks and fruit at Voli for lunch on the road and for dinner on the drive back. Pekara Perper, about 300 m away, has burek and pastries. Both are on the route, a 1–2 minute detour.",
+              "dwellMin": 25,
+              "foodId": "food-day-5-meals-02",
+              "waypointId": "voli-cetinje"
+            },
+            {
+              "type": "DRIVE",
+              "id": "day-5-afternoon-03",
+              "text": "Continue east from Cetinje to the Pavlova Strana viewpoint.",
+              "title": "Drive to Pavlova Strana",
+              "leg": {
+                "from": "voli-cetinje",
+                "to": "pavlova-strana-viewpoint"
+              },
+              "driveMin": {
+                "nominal": 20,
+                "adjusted": 24,
+                "source": "OSRM",
+                "checked": "2026-10-04"
+              }
+            },
+            {
+              "type": "SEE",
+              "id": "day-5-afternoon-04",
+              "title": "Pavlova Strana viewpoint",
+              "text": "Stop about 15 minutes at the Pavlova Strana viewpoint over the Crnojević river bend and Lake Skadar.",
+              "dwellMin": 15,
+              "waypointId": "pavlova-strana-viewpoint"
+            },
+            {
+              "type": "DRIVE",
+              "id": "day-5-afternoon-05",
+              "text": "Drive down to the lake and across to Vranjina; navigate with the DARKO Boat listing link.",
+              "title": "Drive to Vranjina",
+              "leg": {
+                "from": "pavlova-strana-viewpoint",
+                "to": "darko-boat-vranjina"
+              },
+              "driveMin": {
+                "nominal": 46,
+                "adjusted": 55,
+                "source": "OSRM",
+                "checked": "2026-10-04"
               }
             },
             {
               "type": "WATER",
-              "id": "day-5-afternoon-02",
-              "text": "Take the confirmed 13:00–14:00 Lake Skadar cruise. The park’s €5/person day ticket lists one cruise included; confirm the selected sailing is covered and whether the operator charges an extra fee.",
-              "title": "Lake Skadar cruise from Virpazar",
-              "fixedAt": "13:00",
-              "dwellMin": 60
-            },
-            {
-              "type": "EAT",
-              "id": "day-5-afternoon-03",
-              "text": "Have a time-boxed 45-minute lunch at Restaurant Pelikan after the cruise: local carp/eel and lake fish. Call ahead for Monday/October service, terrace seating, payment and duration; depart Virpazar by 14:45.",
-              "title": "Lunch at Restaurant Pelikan",
-              "dwellMin": 45,
-              "foodId": "food-day-5-meals-01"
+              "id": "day-5-afternoon-06",
+              "title": "Lake Skadar boat with DARKO Boat",
+              "text": "One-hour boat trip from Vranjina, €35 for two, including drinks, parking and national-park entry; a toilet is available before departure. Confirmed by the operator for 15:30; arrive about 15:10.",
+              "fixedAt": "15:30",
+              "dwellMin": 60,
+              "waypointId": "darko-boat-vranjina"
             },
             {
               "type": "DRIVE",
-              "id": "day-5-afternoon-04",
-              "text": "Return via the Sozina/coastal corridor; allow about 2 h 15 adjusted from Virpazar to Perast, including the +20% terrain buffer. Budget the €2.50 passenger-car Sozina toll (recheck the tariff) and set live navigation to Perast.",
-              "title": "Drive Virpazar to Perast via Sozina",
+              "id": "day-5-afternoon-07",
+              "text": "Return via Virpazar, the Sozina tunnel and Budva to the hotel parking; the €2.50 Sozina toll applies (recheck the tariff). Sunset is at 18:21, so the last part is after dark on main coastal roads.",
+              "title": "Drive back to Perast via Sozina",
               "leg": {
-                "from": "virpazar-parking",
-                "to": "perast-entrance-parking"
+                "from": "darko-boat-vranjina",
+                "to": "conte-hotel-parking",
+                "via": [
+                  "virpazar"
+                ]
               },
               "driveMin": {
-                "nominal": 108,
-                "adjusted": 130,
+                "nominal": 112,
+                "adjusted": 134,
                 "source": "OSRM",
-                "checked": "2026-09-29"
+                "checked": "2026-10-04"
               }
             },
             {
               "type": "CAUTION",
-              "id": "day-5-afternoon-05",
-              "text": "Target Perast by 17:00; 17:30 is the hard driving stop. The 5.5 h adjusted estimate depends on boat timing, operator service and live roads. Do not add winery or Cetinje sightseeing or a longer cruise; if any gate slips, shorten the stop and keep the 14:45 Virpazar departure."
+              "id": "day-5-afternoon-08",
+              "text": "The travellers waived the 17:30 driving cutoff for this day. Target the hotel parking around 18:45 and Conte by 19:00."
             }
           ],
           "evening": [
             {
               "type": "EAT",
               "id": "day-5-evening-01",
-              "text": "Final dinner in Perast at Conte or a booked local konoba; coastal fish/seafood is the corridor choice. Phone Conte if dining there; no reservation was supplied.",
-              "title": "Final dinner in Perast",
-              "dwellMin": 75,
-              "foodId": "food-day-5-meals-02"
+              "title": "Dinner from Cetinje",
+              "text": "Dinner is the food bought in Cetinje, eaten on the drive or at the hotel.",
+              "foodId": "food-day-5-meals-03",
+              "note": true
             },
             {
               "type": "STAY",
               "id": "day-5-evening-02",
-              "text": "Keep the car in Perast entrance parking, pack for the Oct 6 airport run and confirm rental-return documents tonight.",
+              "text": "Keep the car in the hotel parking, pack for the Oct 6 airport run and confirm rental-return documents tonight.",
               "note": true
             },
             {
@@ -1305,151 +1351,111 @@
               "note": true
             }
           ],
-          "parking": "Conte/Perast car stays in signed entrance parking (published summer €20/day). At Kuk use the operator-listed free upper-station lot (60 spaces). At Virpazar use signed public parking; fee or operator parking arrangements are not assumed. Never leave valuables visible.",
-          "cash": "Mausoleum €8/adult; standard round-trip gondola €25/adult and coaster €12/ride/adult on current operator page. Skadar €5/person/day lists one cruise included; confirm coverage before paying twice. Carry cash/card for Virpazar, €2.50 Sozina toll and meals.",
+          "parking": "Conte’s hotel parking is at the Kotor-side entrance to Perast: €25 per 24 hours, paid at reception; call reception for the electric transfer with luggage. At the Alpine Coaster park free at the upper station. At the mausoleum use the upper lot at the road end (lower lot as fallback). DARKO Boat includes parking at Vranjina. Never leave valuables visible.",
+          "cash": "Alpine Coaster €12 per ride per person; Lovćen park €4/person, mausoleum €8/person, parking €2. DARKO Boat €35 for two for one hour, including national-park entry. Sozina toll €2.50. Carry cash and a card.",
           "stops": [
             [
               "Conte Hotel & Restaurant",
-              "https://maps.google.com/?q=Conte%20Hotel%20%26%20Restaurant%2C%20Perast%2C%20Montenegro"
+              "https://maps.google.com/?q=42.48631,18.69801"
             ],
             [
-              "Perast entrance parking",
-              "https://maps.google.com/?q=Perast%20signed%20entrance%20parking%2C%20Montenegro"
+              "Conte hotel parking · Perast east entrance",
+              "https://maps.google.com/?q=42.48403,18.708"
             ],
             [
-              "Small Talks · Kotor",
-              "https://maps.google.com/?q=Small%20Talks%20specialty%20coffee%2C%20Kotor%2C%20Montenegro"
-            ],
-            [
-              "Kotor",
-              "https://maps.google.com/?q=Kotor%20Old%20Town%2C%20Montenegro"
+              "Kotor Alpine Coaster · Kuk",
+              "https://maps.google.com/?q=42.3927226,18.7933741"
             ],
             [
               "Njegoš Mausoleum parking",
-              "https://maps.google.com/?q=Njegos%20Mausoleum%20parking%2C%20Lovcen%2C%20Montenegro"
+              "https://maps.google.com/?q=42.3986993,18.8395442"
             ],
             [
               "Njegoš Mausoleum",
-              "https://maps.google.com/?q=Njegos%20Mausoleum%2C%20Lovcen%2C%20Montenegro"
+              "https://maps.google.com/?q=42.4000721,18.8374606"
             ],
             [
-              "Kotor Cable Car Upper Station · Kuk",
-              "https://maps.google.com/?q=Kotor%20Cable%20Car%20Upper%20Station%20Kuk%2C%20Montenegro"
+              "Voli · Cetinje",
+              "https://maps.google.com/?q=42.3925558,18.9260985"
             ],
             [
-              "Kotor Cable Car Lower Station · Dub",
-              "https://maps.google.com/?q=Kotor%20Cable%20Car%20Lower%20Station%20Dub%2C%20Montenegro"
+              "Pavlova Strana viewpoint",
+              "https://maps.google.com/?q=42.3627375,19.0576719"
             ],
             [
-              "Kotor Cable Car Upper Station · Kuk",
-              "https://maps.google.com/?q=Kotor%20Cable%20Car%20Upper%20Station%20Kuk%2C%20Montenegro"
+              "DARKO Boat · Vranjina",
+              "https://maps.app.goo.gl/VeXVS4RyrZDVpiiLA"
             ],
             [
-              "Cetinje",
-              "https://maps.google.com/?q=Cetinje%2C%20Montenegro"
-            ],
-            [
-              "Virpazar parking",
-              "https://maps.google.com/?q=Virpazar%20public%20parking%2C%20Montenegro"
-            ],
-            [
-              "Virpazar boat pier",
-              "https://maps.google.com/?q=Virpazar%20boat%20pier%2C%20Montenegro"
-            ],
-            [
-              "Lake Skadar boat from Virpazar",
-              "https://maps.google.com/?q=Lake%20Skadar%20boat%20from%20Virpazar%2C%20Montenegro"
-            ],
-            [
-              "Restaurant Pelikan · Virpazar",
-              "https://maps.google.com/?q=Restaurant%20Pelikan%20Virpazar%2C%20Montenegro"
-            ],
-            [
-              "Perast entrance parking",
-              "https://maps.google.com/?q=Perast%20signed%20entrance%20parking%2C%20Montenegro"
-            ],
-            [
-              "Conte Hotel & Restaurant",
-              "https://maps.google.com/?q=Conte%20Hotel%20%26%20Restaurant%2C%20Perast%2C%20Montenegro"
+              "Conte hotel parking · Perast east entrance",
+              "https://maps.google.com/?q=42.48403,18.708"
             ]
           ],
           "tags": [
+            "Adventure & Hiking",
             "Sightseeing",
-            "Food & Dining",
-            "Coffee",
             "Water"
           ],
-          "heading": "Kotor espresso / Njegoš Mausoleum / Kuk coaster / Skadar boat circuit",
+          "heading": "Kotor serpentine / Alpine Coaster / Njegoš Mausoleum / Pavlova Strana / Skadar boat",
           "food": {
             "meals": [
               {
-                "slot": "Breakfast · Conte takeaway",
+                "slot": "Breakfast · Conte",
                 "name": "Conte Hotel & Restaurant",
-                "specialty": "Included hotel breakfast; request packed food/coffee because the circuit leaves before published service.",
-                "hours": "Published 08:00–10:30; takeaway needs at least one-day notice.",
+                "specialty": "Hotel breakfast from 08:00.",
+                "hours": "Breakfast from 08:00.",
                 "parking": "Collect before leaving Perast; car stays in signed entrance parking.",
                 "cash": "Included in paid €271.93 stay total.",
-                "durationMinutes": 20,
-                "plan": "Ask reception Oct 4 for takeaway breakfast for Oct 5. Do not assume unannounced early service.",
+                "durationMinutes": 40,
+                "plan": "Eat by 08:40, then walk to the car.",
                 "mapUrl": "https://maps.google.com/?q=Conte%20Hotel%20%26%20Restaurant%2C%20Perast%2C%20Montenegro",
                 "sourceUrl": "https://hotelconte.me/our-hotel",
-                "id": "food-day-5-meals-03",
-                "waypointId": "conte-hotel-perast"
-              },
-              {
-                "slot": "Lunch · Virpazar after boat",
-                "name": "Restaurant Pelikan · Virpazar",
-                "specialty": "Lake Skadar fish including carp and eel; choose the current menu.",
-                "hours": "Call to confirm Monday/October service and boat-day kitchen timing.",
-                "parking": "Signed Virpazar public parking then walk; no dedicated guest parking confirmed.",
-                "cash": "Payment method unverified; carry cash and ask.",
-                "durationMinutes": 45,
-                "plan": "Call ahead for quick service after the booked cruise and confirm terrace availability. Leave Virpazar by 14:30.",
-                "mapUrl": "https://maps.google.com/?q=Restaurant%20Pelikan%2C%20Virpazar%2C%20Montenegro",
-                "sourceUrl": "https://pelikan-zec.com/",
                 "id": "food-day-5-meals-01",
-                "waypointId": "restaurant-pelikan-virpazar"
+                "waypointId": "conte-hotel-perast"
               },
               {
-                "slot": "Dinner · Perast",
-                "name": "Conte Hotel & Restaurant",
-                "specialty": "Perast seafood and traditional Montenegrin cooking at the confirmed hotel property.",
-                "hours": "Confirm October service directly.",
-                "parking": "Walk from the room/reception; leave the car in signed entrance parking.",
-                "cash": "Payment method not supplied; confirm directly.",
-                "durationMinutes": 60,
-                "plan": "Phone +382 67 257 387 for same-day restaurant reservations. No table booking supplied.",
-                "mapUrl": "https://maps.google.com/?q=Conte%20Hotel%20Restaurant%2C%20Perast%2C%20Montenegro",
-                "sourceUrl": "https://hotelconte.me/restaurant",
+                "slot": "Lunch · on the road",
+                "name": "Sandwiches from Voli · Cetinje",
+                "specialty": "Sandwiches, drinks and fruit for lunch on the road and dinner on the drive back.",
+                "hours": "Supermarkets are open on Monday; check the deli counter on arrival.",
+                "parking": "Supermarket parking on the route.",
+                "cash": "Card or cash.",
+                "durationMinutes": 25,
+                "plan": "Pekara Perper, about 300 m away, has burek and pastries.",
+                "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=42.3925558,18.9260985&travelmode=driving",
+                "sourceUrl": "https://www.openstreetmap.org/search?query=Voli%20Cetinje",
                 "id": "food-day-5-meals-02",
-                "waypointId": "conte-hotel-perast"
+                "waypointId": "voli-cetinje"
+              },
+              {
+                "slot": "Dinner · on the drive",
+                "name": "Dinner from Cetinje",
+                "specialty": "Food bought in Cetinje, eaten on the drive or at the hotel.",
+                "hours": "No dinner time is reserved.",
+                "parking": "Not needed.",
+                "cash": "Not needed.",
+                "plan": "Buy enough at Voli for two meals.",
+                "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=42.3925558,18.9260985&travelmode=driving",
+                "sourceUrl": "https://www.openstreetmap.org/search?query=Voli%20Cetinje",
+                "id": "food-day-5-meals-03",
+                "waypointId": "voli-cetinje"
               }
             ],
             "coffee": [
               {
-                "slot": "Morning · Kotor",
-                "name": "Small Talks · Kotor",
-                "why": "Specialty espresso stop on the R-1 ascent corridor; keep it to 20 minutes.",
-                "hours": "Published daily 08:00–22:00; reconfirm Monday/October service.",
-                "parking": "Use signed Kotor parking and walk; dedicated café parking not confirmed.",
-                "mapUrl": "https://maps.google.com/?q=Small%20Talks%20specialty%20coffee%2C%20Kotor%2C%20Montenegro",
-                "sourceUrl": "https://www.smalltalks.me/",
+                "slot": "Optional · Lovćen",
+                "name": "Café at the Njegoš Mausoleum",
+                "why": "Coffee stop at the summit café; the Vladika restaurant is just below it.",
+                "hours": "Check on arrival.",
+                "parking": "Mausoleum upper parking.",
+                "cash": "Ask.",
+                "durationMinutes": 15,
+                "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=42.4000721,18.8374606&travelmode=driving",
                 "id": "food-day-5-coffee-01",
-                "waypointId": "small-talks-kotor"
+                "waypointId": "njegos-mausoleum"
               }
             ],
-            "supermarkets": [
-              {
-                "name": "Aroma City Tabačina · Kotor",
-                "hours": "Published listing 07:00–23:45; verify Monday/October.",
-                "parking": "Urban parking not confirmed; no loaded-car detour.",
-                "plan": "Replenish after return by walking if convenient; no morning stop on the timed circuit.",
-                "mapUrl": "https://maps.google.com/?q=Aroma%20City%20Tabacina%20Kotor%20Montenegro",
-                "sourceUrl": "https://aromamarketi.me/lokacije/",
-                "id": "food-day-5-supermarkets-01",
-                "waypointId": "aroma-city-tabacina-kotor"
-              }
-            ]
+            "supermarkets": []
           },
           "communityPicks": [
             {
@@ -1489,7 +1495,7 @@
               "id": "pick-day-5-06"
             }
           ],
-          "startAt": "07:30"
+          "startAt": "08:00"
         },
         {
           "day": 6,
@@ -1519,7 +1525,7 @@
               "id": "day-6-morning-03",
               "title": "Drive Perast to Tivat Airport",
               "leg": {
-                "from": "perast-entrance-parking",
+                "from": "conte-hotel-parking",
                 "to": "tivat-airport-rental-return"
               },
               "driveMin": {
@@ -1896,12 +1902,13 @@
       "day": 5,
       "costs": {
         "fuel": [25, 45],
-        "parks": [100, 120],
-        "food": [100, 170]
+        "parks": [80, 110],
+        "food": [40, 80]
       },
       "onTheSpot": [
-        "Njegoš Mausoleum €8/adult, gondola €25 and Alpine Coaster €12 per person.",
-        "Skadar park ticket €5/person; Sozina toll €2.50."
+        "Alpine Coaster €12 per ride per person; Lovćen park €4/person, mausoleum €8/person, parking €2.",
+        "DARKO Boat €35 for two for one hour, including national-park entry; Sozina toll €2.50.",
+        "Conte hotel parking €25 per 24 hours at reception."
       ]
     },
     {
