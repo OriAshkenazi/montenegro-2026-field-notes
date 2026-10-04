@@ -47,7 +47,8 @@ assert.ok(day3.food.meals.every(meal => meal.durationMinutes >= 60 && meal.cash)
 
 const day4 = itinerary.routes.primary.days.find(day => day.day === 4);
 const day5 = itinerary.routes.primary.days.find(day => day.day === 5);
-assert.ok(day4.stops.some(([name]) => name === 'Kotor') && day4.stops.some(([name]) => name === 'Perast entrance parking'), 'Oct 4 must retain Kotor after the Perast luggage gate');
+// 2026-10-04: the hotel's arrival email puts Conte parking at the Kotor-side entrance; Day 4 legs now use that pin.
+assert.ok(day4.stops.some(([name]) => name === 'Kotor') && day4.stops.some(([name]) => name === 'Conte hotel parking · Perast east entrance'), 'Oct 4 must retain Kotor after the Perast luggage gate');
 assert.ok(day4.adjustedHours <= itinerary.drivingCeilingAdjustedHours && /17:30/.test(day4.drive), 'Oct 4 must stay under the adjusted drive ceiling and daylight cutoff');
 assert.ok(day4.food.meals.length >= 2 && day4.food.coffee.length, 'Oct 4 must include lunch, dinner and coffee');
 // 2026-10-03: travellers check in at Conte on arrival (~15:35) and waived the 17:30 cutoff; require bags in the room and a stated Kotor departure.
@@ -56,7 +57,7 @@ const day5Names = day5.stops.map(([name]) => name);
 // 2026-10-04: the travellers replanned Oct 5 on the day (Alpine Coaster → mausoleum → Cetinje → Pavlova Strana → DARKO Boat at Vranjina, back ~18:45) and waived the 17:30 cutoff.
 for (const name of ['Kotor Alpine Coaster · Kuk','Njegoš Mausoleum','Voli · Cetinje','Pavlova Strana viewpoint','DARKO Boat · Vranjina']) assert.ok(day5Names.includes(name), `Oct 5 must retain ${name}`);
 assert.ok(['Kotor Alpine Coaster · Kuk','Njegoš Mausoleum','Voli · Cetinje','Pavlova Strana viewpoint','DARKO Boat · Vranjina'].every((name, i, all) => !i || day5Names.indexOf(all[i - 1]) < day5Names.indexOf(name)), 'Oct 5 stop order must flow coaster → mausoleum → Cetinje → Pavlova Strana → boat');
-assert.ok(day5.adjustedHours <= itinerary.drivingCeilingAdjustedHours && /17:30/.test(day5.drive), 'Oct 5 must stay within the six-hour adjusted ceiling and state the cutoff decision');
+assert.ok(day5.adjustedHours <= itinerary.drivingCeilingAdjustedHours && /17:30/.test(day5.drive), 'Oct 5 must stay within the six-hour adjusted ceiling and record the waived 17:30 cutoff');
 assert.ok(day5.food.meals.length >= 2 && day5.food.coffee.length, 'Oct 5 must include lunch, dinner and coffee');
 assert.ok(day5.afternoon.some(item => item.fixedAt === '15:30' && item.waypointId === 'darko-boat-vranjina') && day5.afternoon.some(item => /18:45/.test(item.text)), 'Oct 5 must keep the confirmed boat time and a return target');
 for (const id of ['njegos-mausoleum','njegos-mausoleum-parking','kotor-cable-car-kuk','voli-cetinje','pavlova-strana-viewpoint','darko-boat-vranjina','conte-hotel-parking']) assert.ok(waypoints.some(point => point.id === id && point.days.primary.includes(5)), `${id}: missing Oct 5 map pin`);

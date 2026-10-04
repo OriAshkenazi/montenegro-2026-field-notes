@@ -829,7 +829,7 @@
           "date": "Sun · Oct 4",
           "region": "North → Coast · Perast / Kotor",
           "base": "Conte Hotel & Restaurant · Perast",
-          "drive": "Runolist → SKK Vihor (2-hour ride, 09:30) → M-6 via Šavnik → M-3 to Nikšić (packed lunch on the way) → M-7/M-8 via Grahovo → Perast (check in at Conte) → Kotor Old Town evening → Perast · about 4 h 19 nominal / 5 h 12 adjusted (OSRM +20%); the usual 17:30 mountain cutoff is waived today by the travellers, since the mountain section ends around 15:30",
+          "drive": "Runolist → SKK Vihor (2-hour ride, 09:30) → M-6 via Šavnik → M-3 to Nikšić (packed lunch on the way) → M-7/M-8 via Grahovo → Perast (check in at Conte) → Kotor Old Town evening → Perast · about 4 h 13 nominal / 5 h 4 adjusted (OSRM +20%); the usual 17:30 mountain cutoff is waived today by the travellers, since the mountain section ends around 15:30",
           "adjustedHours": 5.2,
           "morning": [
             {
@@ -897,21 +897,21 @@
           "afternoon": [
             {
               "type": "DRIVE",
-              "text": "Continue on the M-7 and M-8 through Grahovo, descend to the Bay and follow the M-1 to the signed Perast entrance parking. The Risan mosaics stop is dropped today.",
+              "text": "Continue on the M-7 and M-8 through Grahovo, descend to the Bay and follow the M-1 to the hotel parking at the Kotor-side entrance to Perast. The Risan mosaics stop is dropped today.",
               "id": "day-4-afternoon-01",
               "title": "Drive Nikšić to Perast via Grahovo",
               "leg": {
                 "from": "niksic",
-                "to": "perast-entrance-parking",
+                "to": "conte-hotel-parking",
                 "via": [
                   "grahovo"
                 ]
               },
               "driveMin": {
-                "nominal": 101,
-                "adjusted": 121,
+                "nominal": 99,
+                "adjusted": 119,
                 "source": "OSRM",
-                "checked": "2026-10-03"
+                "checked": "2026-10-04"
               }
             },
             {
@@ -922,7 +922,7 @@
             },
             {
               "type": "STAY",
-              "text": "Park in the signed Perast entrance lot and check in at Conte straight away (check-in from 15:00), so the bags go into the room and none stay in the car. Use only a signed official lot or the parking Conte arranges; travelers report unofficial parking attendants in Perast. Leave for Kotor around 16:05.",
+              "text": "Park in Conte’s hotel parking at the Kotor-side entrance (€25 per 24 hours, paid at reception) and call reception for the electric transfer with the bags; check in straight away (check-in from 15:00), so none stay in the car. Use only a signed official lot or the parking Conte arranges; travelers report unofficial parking attendants in Perast. Leave for Kotor around 16:05.",
               "id": "day-4-afternoon-03",
               "title": "Park in Perast and check in at Conte",
               "dwellMin": 30
@@ -933,14 +933,14 @@
               "id": "day-4-afternoon-04",
               "title": "Drive to Kotor Old Town parking",
               "leg": {
-                "from": "perast-entrance-parking",
+                "from": "conte-hotel-parking",
                 "to": "kotor-old-town-parking"
               },
               "driveMin": {
-                "nominal": 23,
-                "adjusted": 28,
+                "nominal": 21,
+                "adjusted": 25,
                 "source": "OSRM",
-                "checked": "2026-10-03"
+                "checked": "2026-10-04"
               }
             },
             {
@@ -960,19 +960,19 @@
               "title": "Drive back to Perast",
               "leg": {
                 "from": "kotor-old-town-parking",
-                "to": "perast-entrance-parking"
+                "to": "conte-hotel-parking"
               },
               "driveMin": {
-                "nominal": 23,
-                "adjusted": 28,
+                "nominal": 21,
+                "adjusted": 25,
                 "source": "OSRM",
-                "checked": "2026-10-03"
+                "checked": "2026-10-04"
               }
             },
             {
               "type": "LOGISTICS",
               "id": "day-4-evening-02",
-              "text": "Keep the car parked overnight. Reconfirm tomorrow’s breakfast takeaway with Conte at least one day ahead and confirm the Skadar boat departure/return with its operator.",
+              "text": "Keep the car in the hotel parking overnight. Breakfast at Conte is from 08:00 and the Oct 5 boat is confirmed for 15:30.",
               "note": true
             }
           ],
@@ -992,8 +992,8 @@
               "https://maps.google.com/?q=Nik%C5%A1i%C4%87%2C%20Montenegro"
             ],
             [
-              "Perast entrance parking",
-              "https://maps.google.com/?q=Perast%20signed%20entrance%20parking%2C%20Montenegro"
+              "Conte hotel parking · Perast east entrance",
+              "https://maps.google.com/?q=42.48403,18.708"
             ],
             [
               "Conte Hotel & Restaurant",
@@ -1012,8 +1012,8 @@
               "https://maps.google.com/?q=Ombra%20restaurant%2C%20Kotor%20Old%20Town%2C%20Montenegro"
             ],
             [
-              "Perast entrance parking",
-              "https://maps.google.com/?q=Perast%20signed%20entrance%20parking%2C%20Montenegro"
+              "Conte hotel parking · Perast east entrance",
+              "https://maps.google.com/?q=42.48403,18.708"
             ]
           ],
           "tags": ["Adventure & Hiking", "Sightseeing", "Food & Dining"],
@@ -1404,7 +1404,7 @@
                 "name": "Conte Hotel & Restaurant",
                 "specialty": "Hotel breakfast from 08:00.",
                 "hours": "Breakfast from 08:00.",
-                "parking": "Collect before leaving Perast; car stays in signed entrance parking.",
+                "parking": "Hotel restaurant; the car is in the hotel parking at the Kotor-side entrance.",
                 "cash": "Included in paid €271.93 stay total.",
                 "durationMinutes": 40,
                 "plan": "Eat by 08:40, then walk to the car.",
@@ -1415,7 +1415,7 @@
               },
               {
                 "slot": "Lunch · on the road",
-                "name": "Sandwiches from Voli · Cetinje",
+                "name": "Voli · Cetinje",
                 "specialty": "Sandwiches, drinks and fruit for lunch on the road and dinner on the drive back.",
                 "hours": "Supermarkets are open on Monday; check the deli counter on arrival.",
                 "parking": "Supermarket parking on the route.",
@@ -1429,7 +1429,7 @@
               },
               {
                 "slot": "Dinner · on the drive",
-                "name": "Dinner from Cetinje",
+                "name": "Voli · Cetinje",
                 "specialty": "Food bought in Cetinje, eaten on the drive or at the hotel.",
                 "hours": "No dinner time is reserved.",
                 "parking": "Not needed.",
@@ -1444,7 +1444,7 @@
             "coffee": [
               {
                 "slot": "Optional · Lovćen",
-                "name": "Café at the Njegoš Mausoleum",
+                "name": "Café · Njegoš Mausoleum",
                 "why": "Coffee stop at the summit café; the Vladika restaurant is just below it.",
                 "hours": "Check on arrival.",
                 "parking": "Mausoleum upper parking.",
@@ -1622,7 +1622,7 @@
                 "name": "Small Talks · Kotor",
                 "why": "Specialty espresso/pour-over before the airport run.",
                 "hours": "Daily 08:00–22:00 published; verify opening time",
-                "parking": "Walk from lodging; keep the 09:30 departure",
+                "parking": "Kotor is on the M-1 on the way to Tivat; park at signed Old Town parking and keep the 13:00 rental return",
                 "mapUrl": "https://maps.google.com/?q=Small%20Talks%20%C2%B7%20Kotor%20Montenegro",
                 "sourceUrl": "https://www.smalltalks.me/",
                 "id": "food-day-6-coffee-01",
@@ -1796,8 +1796,8 @@
       "label": "Parks + boat + walls + spa",
       "min": 270,
       "max": 470,
-      "summary": "Admissions for two, Kuk gondola and coaster, Skadar cruise; walls and spa optional.",
-      "note": "Planning allowance for two-person admissions, Kotor walls (optional) and optional spa. Add €90 for two standard return gondola tickets (€25 each), two Alpine Coaster rides (€12 each) and two adult Njegoš Mausoleum tickets (€8 each). Skadar day admission is €5/person and the current NP tariff lists one cruise included; confirm the selected sailing is covered and add an operator fee only when quoted. Other park tickets/services remain estimates; recheck before travel."
+      "summary": "Admissions for two, Alpine Coaster, Lovćen and mausoleum, Skadar boat and hotel parking; walls and spa optional.",
+      "note": "Oct 4: Conte hotel parking €25 per 24 hours. Oct 5: Alpine Coaster €12 per ride per person, Lovćen park €4/person, mausoleum €8/person, parking €2, DARKO Boat €35 for two (includes Skadar national-park entry) and another €25 for hotel parking. Kotor walls and spa remain optional."
     },
     {
       "id": "food",
@@ -1883,6 +1883,10 @@
           35,
           55
         ],
+        "parks": [
+          25,
+          35
+        ],
         "food": [
           70,
           120
@@ -1895,7 +1899,7 @@
       "onTheSpot": [
         "Settle any Runolist balance in cash at checkout (up to €225.39).",
         "SKK Vihor ride: price not confirmed, pay in cash at the stable (about €50/person is a nearby published rate).",
-        "Kotor Old Town parking (Benovo about €2/hour); no walls climb today."
+        "Conte hotel parking €25 per 24 hours at reception; Kotor Old Town parking (Benovo about €2/hour); no walls climb today."
       ]
     },
     {
@@ -2386,7 +2390,7 @@
       {"waypoints": ["kotor-cable-car-kuk", "kotor-cable-car-dub"]}
     ],
     [
-      "Hotel Conte · breakfast takeaway and Perast parking",
+      "Hotel Conte · breakfast and hotel parking",
       "https://hotelconte.me/our-hotel",
       {"waypoints": ["conte-hotel-perast"]}
     ],
