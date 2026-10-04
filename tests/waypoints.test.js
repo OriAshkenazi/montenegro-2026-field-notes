@@ -53,12 +53,13 @@ assert.ok(day4.food.meals.length >= 2 && day4.food.coffee.length, 'Oct 4 must in
 // 2026-10-03: travellers check in at Conte on arrival (~15:35) and waived the 17:30 cutoff; require bags in the room and a stated Kotor departure.
 assert.ok(day4.afternoon.some(item => /luggage|bags/i.test(item.text)) && day4.afternoon.some(item => /Leave for Kotor around \d\d:\d\d/.test(item.text)), 'Oct 4 must secure luggage and state the Kotor departure');
 const day5Names = day5.stops.map(([name]) => name);
-for (const name of ['Njegoš Mausoleum','Kotor Cable Car Upper Station · Kuk','Virpazar boat pier','Restaurant Pelikan · Virpazar']) assert.ok(day5Names.includes(name), `Oct 5 must retain ${name}`);
-assert.ok(day5Names.indexOf('Njegoš Mausoleum') < day5Names.indexOf('Kotor Cable Car Upper Station · Kuk') && day5Names.indexOf('Kotor Cable Car Upper Station · Kuk') < day5Names.indexOf('Virpazar boat pier'), 'Oct 5 stop order must flow from Lovćen to Kuk to Skadar');
-assert.ok(day5.adjustedHours <= itinerary.drivingCeilingAdjustedHours && /17:30/.test(day5.drive), 'Oct 5 must remain within the six-hour adjusted ceiling and 17:30 cutoff');
+// 2026-10-04: the travellers replanned Oct 5 on the day (Alpine Coaster → mausoleum → Cetinje → Pavlova Strana → DARKO Boat at Vranjina, back ~18:45) and waived the 17:30 cutoff.
+for (const name of ['Kotor Alpine Coaster · Kuk','Njegoš Mausoleum','Voli · Cetinje','Pavlova Strana viewpoint','DARKO Boat · Vranjina']) assert.ok(day5Names.includes(name), `Oct 5 must retain ${name}`);
+assert.ok(['Kotor Alpine Coaster · Kuk','Njegoš Mausoleum','Voli · Cetinje','Pavlova Strana viewpoint','DARKO Boat · Vranjina'].every((name, i, all) => !i || day5Names.indexOf(all[i - 1]) < day5Names.indexOf(name)), 'Oct 5 stop order must flow coaster → mausoleum → Cetinje → Pavlova Strana → boat');
+assert.ok(day5.adjustedHours <= itinerary.drivingCeilingAdjustedHours && /17:30/.test(day5.drive), 'Oct 5 must stay within the six-hour adjusted ceiling and state the cutoff decision');
 assert.ok(day5.food.meals.length >= 2 && day5.food.coffee.length, 'Oct 5 must include lunch, dinner and coffee');
-assert.ok(day5.afternoon.some(item => /14:45/.test(item.text)) && day5.afternoon.some(item => /17:00/.test(item.text)), 'Oct 5 must keep a lake departure gate and return target');
-for (const id of ['njegos-mausoleum','njegos-mausoleum-parking','kotor-cable-car-kuk','kotor-cable-car-dub']) assert.ok(waypoints.some(point => point.id === id && point.days.primary.includes(5)), `${id}: missing Oct 5 map pin`);
+assert.ok(day5.afternoon.some(item => item.fixedAt === '15:30' && item.waypointId === 'darko-boat-vranjina') && day5.afternoon.some(item => /18:45/.test(item.text)), 'Oct 5 must keep the confirmed boat time and a return target');
+for (const id of ['njegos-mausoleum','njegos-mausoleum-parking','kotor-cable-car-kuk','voli-cetinje','pavlova-strana-viewpoint','darko-boat-vranjina','conte-hotel-parking']) assert.ok(waypoints.some(point => point.id === id && point.days.primary.includes(5)), `${id}: missing Oct 5 map pin`);
 
 const categories = new Set();
 for (const point of waypoints) {
@@ -74,15 +75,15 @@ const app = fs.readFileSync('app.js', 'utf8');
 const sw = fs.readFileSync('sw.js', 'utf8');
 const css = fs.readFileSync('style.css', 'utf8');
 const html = fs.readFileSync('index.html', 'utf8');
-assert.ok(app.includes('waypoints.json?rev=2026-10-03g'));
+assert.ok(app.includes('waypoints.json?rev=2026-10-04a'));
 assert.ok(app.includes('iconSize:[18,22],iconAnchor:[9,21.7],popupAnchor:[0,-24]'), 'pin tip should align with the exact bottom point of the rotated marker');
 assert.ok(!app.includes('routeToggle'), 'separate fallback route control should be removed');
 assert.ok(app.includes('data-plan-target'), 'map popup should link to a timeline target');
 assert.ok(html.includes('id="stayDirectory"'), 'confirmed stay quick reference should render');
-assert.ok(sw.includes('./waypoints.json?rev=2026-10-03g'));
-assert.ok(sw.includes('tile.openstreetmap.org') && sw.includes('./vendor/leaflet/leaflet.js?rev=2026-10-03g'));
+assert.ok(sw.includes('./waypoints.json?rev=2026-10-04a'));
+assert.ok(sw.includes('tile.openstreetmap.org') && sw.includes('./vendor/leaflet/leaflet.js?rev=2026-10-04a'));
 assert.ok(!sw.includes('unpkg.com') && !html.includes('unpkg.com'), 'Leaflet must be served from the app origin');
-assert.ok(sw.includes("const CACHE='mne-field-notes-v67'") && sw.includes("const VERSION='67'") && sw.includes('./weather.js?rev=2026-10-03g'));
+assert.ok(sw.includes("const CACHE='mne-field-notes-v68'") && sw.includes("const VERSION='68'") && sw.includes('./weather.js?rev=2026-10-04a'));
 assert.ok(html.includes('type="text/markdown"') && html.includes('trip.md'));
 assert.ok(!html.includes('data-pane="food"') && !html.includes('id="pane-food"'), 'food index tab should stay removed');
 assert.ok(html.includes('id="contactNumbers"') && app.includes("$('#contactNumbers')"), 'contacts card should render');
@@ -144,7 +145,7 @@ assert.ok(app.includes('tabs.getBoundingClientRect().height+bar.getBoundingClien
 assert.ok(css.includes('.day-title,.day-drive{min-width:0;overflow-wrap:anywhere}'));
 assert.ok(css.includes('body{margin:0;background:var(--surface-0)') && css.includes('main{max-width:1200px'));
 assert.ok(css.includes('body{padding-inline-start:env(safe-area-inset-left,0px);padding-inline-end:calc(var(--side-peek) + env(safe-area-inset-right,0px))'));
-assert.ok(html.includes('style.css?rev=2026-10-03g') && html.includes('app.js?rev=2026-10-03g') && html.includes('weather.js?rev=2026-10-03g'));
+assert.ok(html.includes('style.css?rev=2026-10-04a') && html.includes('app.js?rev=2026-10-04a') && html.includes('weather.js?rev=2026-10-04a'));
 assert.ok(html.includes('data-pane="weather"') && html.includes('id="pane-weather"'));
 assert.ok(html.includes('13 route hubs'), 'weather directory count must match the expanded route hubs');
 const weather = fs.readFileSync('weather.js', 'utf8');

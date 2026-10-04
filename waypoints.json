@@ -327,6 +327,115 @@
       "precision": "Google Maps place pin"
     },
     {
+      "id": "conte-hotel-parking",
+      "name": "Conte hotel parking · Perast east entrance",
+      "category": "Parking",
+      "lat": 42.48403,
+      "lng": 18.708,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=42.48403,18.708&travelmode=driving",
+      "cash": "Card",
+      "days": {
+        "primary": [
+          5,
+          6
+        ]
+      },
+      "aliases": [
+        "Conte hotel parking"
+      ],
+      "precision": "OpenStreetMap paid lot at the Kotor-side entrance, matching the hotel’s arrival email; about 1 km (15 min) walk to Conte."
+    },
+    {
+      "id": "njegos-mausoleum-lower-parking",
+      "name": "Njegoš Mausoleum lower parking",
+      "category": "Parking",
+      "lat": 42.3970837,
+      "lng": 18.8432797,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=42.3970837,18.8432797&travelmode=driving",
+      "cash": "Ask",
+      "days": {
+        "primary": [
+          5
+        ]
+      },
+      "aliases": [],
+      "precision": "OpenStreetMap overflow lot about 400 m below the upper parking; use only if the upper lot is full."
+    },
+    {
+      "id": "voli-cetinje",
+      "name": "Voli · Cetinje",
+      "category": "Supermarket",
+      "lat": 42.3925558,
+      "lng": 18.9260985,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=42.3925558,18.9260985&travelmode=driving",
+      "cash": "Cash/Card",
+      "days": {
+        "primary": [
+          5
+        ]
+      },
+      "aliases": [
+        "Voli Cetinje"
+      ],
+      "precision": "OpenStreetMap supermarket, Vojvode Boža 1; on the route to Pavlova Strana."
+    },
+    {
+      "id": "pekara-perper-cetinje",
+      "name": "Pekara Perper · Cetinje",
+      "category": "Meal",
+      "lat": 42.3901023,
+      "lng": 18.9246747,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=42.3901023,18.9246747&travelmode=driving",
+      "cash": "Ask",
+      "days": {
+        "primary": [
+          5
+        ]
+      },
+      "aliases": [
+        "Pekara Perper"
+      ],
+      "precision": "OpenStreetMap bakery, Baja Pivljanina 52 (listed daily 06:00–21:00)."
+    },
+    {
+      "id": "pavlova-strana-viewpoint",
+      "name": "Pavlova Strana viewpoint",
+      "category": "Viewpoint",
+      "lat": 42.3627375,
+      "lng": 19.0576719,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=42.3627375,19.0576719&travelmode=driving",
+      "cash": "Ask",
+      "days": {
+        "primary": [
+          5
+        ]
+      },
+      "aliases": [
+        "Pavlova Strana"
+      ],
+      "precision": "Decoded from the Google Maps plus code 9375+33V the travellers shared."
+    },
+    {
+      "id": "darko-boat-vranjina",
+      "name": "DARKO Boat · Vranjina",
+      "category": "Activity",
+      "lat": 42.2741324,
+      "lng": 19.1403839,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=DARKO%20Bout%2C%20Vranjina%2C%20Montenegro&travelmode=driving",
+      "sourceUrl": "https://maps.app.goo.gl/VeXVS4RyrZDVpiiLA",
+      "cash": "Ask",
+      "days": {
+        "primary": [
+          5
+        ]
+      },
+      "aliases": [
+        "DARKO Boat",
+        "Darko"
+      ],
+      "precision": "Vranjina village pin; navigate with the Google Maps listing link (DARKO Bout, Vranjina) the travellers shared."
+    },
+    {
       "id": "trsa-village-pullout",
       "name": "Trsa village pullout",
       "category": "Viewpoint",
@@ -577,9 +686,7 @@
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Aroma%20City%20Taba%C4%8Dina%20%C2%B7%20Kotor%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
-        "primary": [
-          5
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "Published Aroma Market location coordinate"
@@ -593,9 +700,7 @@
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Virpazar%20parking%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
-        "primary": [
-          5
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "approximate shared area pin; exact spot not verified"
@@ -609,9 +714,7 @@
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Virpazar%20boat%20pier%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
-        "primary": [
-          5
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "OpenStreetMap marina coordinate"
@@ -642,8 +745,7 @@
       "cash": "Ask",
       "days": {
         "primary": [
-          4,
-          5
+          4
         ]
       },
       "aliases": [],
@@ -706,9 +808,7 @@
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Restaurant%20Pelikan%20%C2%B7%20Virpazar%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
-        "primary": [
-          5
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "Published venue coordinate"
@@ -739,7 +839,6 @@
       "cash": "Ask",
       "days": {
         "primary": [
-          5,
           6
         ]
       },
@@ -1724,9 +1823,7 @@
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Lake%20Skadar%20boat%20from%20Virpazar%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
-        "primary": [
-          5
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "OpenStreetMap Virpazar marina coordinate"
@@ -2190,9 +2287,9 @@
       "id": "njegos-mausoleum-parking",
       "name": "Njegoš Mausoleum parking",
       "category": "Parking",
-      "lat": 42.40001,
-      "lng": 18.83749,
-      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Njego%C5%A1%20Mausoleum%20parking%2C%20Montenegro&travelmode=driving",
+      "lat": 42.3986993,
+      "lng": 18.8395442,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=42.3986993,18.8395442&travelmode=driving",
       "cash": "Ask",
       "days": {
         "primary": [
@@ -2200,14 +2297,14 @@
         ]
       },
       "aliases": [],
-      "precision": "Navigation query at mausoleum access; confirm signed parking on arrival."
+      "precision": "OpenStreetMap upper parking at the road end, about 450 m and 461 tunnel steps below the mausoleum."
     },
     {
       "id": "njegos-mausoleum",
       "name": "Njegoš Mausoleum",
       "category": "Viewpoint",
-      "lat": 42.40001,
-      "lng": 18.83749,
+      "lat": 42.4000721,
+      "lng": 18.8374606,
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Njego%C5%A1%20Mausoleum%2C%20Montenegro&travelmode=driving",
       "cash": "Cash/Card",
       "days": {
@@ -2224,11 +2321,11 @@
     },
     {
       "id": "kotor-cable-car-kuk",
-      "name": "Kotor Cable Car Upper Station · Kuk",
+      "name": "Kotor Alpine Coaster · Kuk",
       "category": "Activity",
-      "lat": 42.39272,
-      "lng": 18.79259,
-      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kotor%20Cable%20Car%20Upper%20Station%20%C2%B7%20Kuk%2C%20Montenegro&travelmode=driving",
+      "lat": 42.3927226,
+      "lng": 18.7933741,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=42.3927226,18.7933741&travelmode=driving",
       "cash": "Ask",
       "days": {
         "primary": [
@@ -2237,9 +2334,10 @@
       },
       "aliases": [
         "Kuk upper station",
-        "Alpine Coaster"
+        "Alpine Coaster",
+        "Kotor Alpine Coaster"
       ],
-      "precision": "OpenStreetMap station point; operator identifies Kuk as the upper station and coaster location.",
+      "precision": "OpenStreetMap \"Kotor Alpine Coaster\" on the R-25, next to the cable-car upper station; drive here directly, not to the lower station in Kotor.",
       "sourceUrl": "https://www.kotorcablecar.me/experience/adventures/alpine-coaster"
     },
     {
@@ -2251,9 +2349,7 @@
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Kotor%20Cable%20Car%20Lower%20Station%20%C2%B7%20Dub%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
-        "primary": [
-          5
-        ]
+        "primary": []
       },
       "aliases": [
         "Dub lower station"
