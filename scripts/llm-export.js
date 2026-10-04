@@ -330,11 +330,11 @@ function buildJsonLd(inputs, dates) {
           '@type': 'TouristTrip',
           name: `Day ${day.day} · ${day.heading}`,
           description: `${day.region}. Base: ${day.base}. Drive: ${day.drive}`,
-          startDate: isoDate(day.date, year),
-          itinerary: { '@type': 'ItemList', itemListElement: [...new Set(inputs.waypointsFile.waypoints.filter(w => w.days && [].concat(w.days.primary || []).includes(day.day)).map(w => w.id))].map((id, i) => ({ '@type': 'ListItem', position: i + 1, item: place(wp.get(id)) })) }
+          startDate: isoDate(day.date, year)
         }
       }))
     },
+    // Per-day place lists live in the hidden trip text and trip.md; repeating them here made index.html 76 KB heavier.
     subTrip: trip.stays.map(stay => ({
       '@type': 'LodgingReservation',
       reservationId: stay.confirmation,
