@@ -336,6 +336,7 @@
       "cash": "Card",
       "days": {
         "primary": [
+          4,
           5,
           6
         ]
@@ -744,9 +745,7 @@
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Perast%20parking%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
-        "primary": [
-          4
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "approximate shared area pin; exact spot not verified"
