@@ -112,8 +112,8 @@
   let i18nReady;
   try {
     i18nReady = Promise.all([
-      load('./locales/en.json?rev=2026-10-05a').catch(() => null),
-      load('./locales/he.json?rev=2026-10-05a').catch(() => null)
+      load('./locales/en.json?rev=2026-10-05b').catch(() => null),
+      load('./locales/he.json?rev=2026-10-05b').catch(() => null)
     ]).then(([en, he]) => {
       if (en && en.ui) dict.en = en.ui;
       if (he && he.ui) { dict.he = he.ui; content = he.content || {}; heAliases = he.aliases || {}; hasContent = Object.keys(content).length > 0; } else heOk = false;
