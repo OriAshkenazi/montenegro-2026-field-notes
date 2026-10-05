@@ -609,20 +609,20 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 
 ### Morning
 
-- **08:30–09:30 · EAT · Breakfast at Conte** — Have breakfast at 08:30.
-  - **Time on site:** 60 min
+- **08:30–10:45 · EAT · Breakfast at Conte** — Relaxed breakfast at Conte from about 08:30, then the hotel pool until check-out at about 10:45.
+  - **Time on site:** 135 min
   - **Food stop:** Conte Hotel & Restaurant (details under Food & provisions for this day)
-- **09:30 · LOGISTICS · Depart Perast** — Leave Perast by 09:30 as a conservative planning target; confirm live routing.
-- **09:30–10:11 · DRIVE · Drive Perast to Tivat Airport** — Take the direct road to TIV; do not detour for a last viewpoint.
+- **10:45 · LOGISTICS · Depart Perast** — Check out and leave Perast by 10:45 to keep the 12:15 terminal target; leaving at 11:00 reaches the terminal about 12:25. The car is parked free at a legal roadside spot, not in the hotel lot; ask reception about the electric luggage transfer.
+- **10:45–11:26 · DRIVE · Drive Perast to Tivat Airport** — Take the direct road to TIV (about 31 minutes, 38 with buffer, OSRM 2026-10-05) and refuel on the way; no detour to Kotor for coffee.
   - **Drive time:** 34 min nominal / 41 min adjusted (source OSRM, checked 2026-09-29)
   - **Leg:** Conte hotel parking · Perast east entrance → TIV · Europcar rental return · 13:00
-- **10:11–10:41 · LOGISTICS · Return the rental car at Tivat** — Europcar return is booked for 13:00 at Tivat Airport (voucher 4H419663). Return full-to-full: refuel within 5 km of the drop-off point, keep the fuel receipt, photograph fuel/odometer and request a closed return contract.
+- **11:26–11:56 · LOGISTICS · Return the rental car at Tivat** — Europcar return is booked for 13:00 at Tivat Airport (voucher 4H419663). Return full-to-full: refuel within 5 km of the drop-off point, keep the fuel receipt, photograph fuel/odometer and request a closed return contract.
   - **Deadline:** 13:00
   - **Time on site:** 30 min
 
 ### Afternoon
 
-- **10:41–10:56 · LOGISTICS · Terminal check-in and airport lunch** — Walk to the terminal and be inside by 12:15 for the required counter check-in.
+- **11:56–12:11 · LOGISTICS · Terminal check-in and airport lunch** — Walk to the terminal and be inside by 12:15 for the required counter check-in.
   - **Deadline:** 12:15
   - **Time on site:** 15 min
   - **Food stop:** Tivat Airport café / terminal food (details under Food & provisions for this day)
@@ -648,14 +648,6 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
   - **Plan:** Breakfast is included. Confirm the morning service details with reception.
   - **Map:** [maps.google.com](https://maps.google.com/?q=Conte%20Hotel%20%26%20Restaurant%2C%20Perast%2C%20Montenegro)
   - **Source:** [hotelconte.me](https://hotelconte.me/our-hotel)
-
-**Coffee**
-
-- **Morning · Small Talks · Kotor** — Specialty espresso/pour-over before the airport run.
-  - **Hours:** Daily 08:00–22:00 published; verify opening time
-  - **Parking:** Kotor is on the M-1 on the way to Tivat; park at signed Old Town parking and keep the 13:00 rental return
-  - **Map:** [maps.google.com](https://maps.google.com/?q=Small%20Talks%20%C2%B7%20Kotor%20Montenegro)
-  - **Source:** [smalltalks.me](https://www.smalltalks.me/)
 
 ### Parking and cash
 
@@ -1052,7 +1044,6 @@ All 134 places on the app’s map (waypoints file version 3). “Days” lists t
   - **Payment:** Ask
   - **Pin precision:** OpenStreetMap restaurant coordinate
 - **Small Talks · Kotor** — Coffee · 42.421394, 18.769821 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=Small%20Talks%20%C2%B7%20Kotor%2C%20Montenegro&travelmode=driving)
-  - **Days:** 6
   - **Payment:** Ask
   - **Pin precision:** OpenStreetMap cafe coordinate
 - **Perast to Tivat Airport** — Parking · 42.48631, 18.69801 · [Google Maps](https://www.google.com/maps/dir/?api=1&origin=Conte%20Hotel%20%26%20Restaurant%2C%20Perast%2C%20Montenegro&destination=Tivat%20Airport%2C%20Montenegro&travelmode=driving)

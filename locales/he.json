@@ -618,11 +618,8 @@
     "Tue · Oct 6": "יום ג׳ · 6 באוק׳",
     "Coast · Tivat Airport": "חוף · שדה התעופה Tivat",
     "Perast → TIV · allow 35–45 min in live planning; Europcar voucher return time 13:00.": "Perast → TIV · הקצו 35–45 דקות בתכנון חי; שעת החזרה בשובר של Europcar 13:00.",
-    "Have breakfast at 08:30.": "ארוחת בוקר ב-08:30.",
     "Breakfast at Conte": "ארוחת בוקר ב-Conte",
-    "Leave Perast by 09:30 as a conservative planning target; confirm live routing.": "צאו מ-Perast עד 09:30 כיעד תכנון שמרני; אשרו בניווט חי.",
     "Depart Perast": "יציאה מ-Perast",
-    "Take the direct road to TIV; do not detour for a last viewpoint.": "קחו את הכביש הישיר ל-TIV; בלי עקיפה לתצפית אחרונה.",
     "Drive Perast to Tivat Airport": "נסיעה מ-Perast לשדה התעופה Tivat",
     "Europcar return is booked for 13:00 at Tivat Airport (voucher 4H419663).": "החזרת Europcar הוזמנה ל-13:00 בשדה התעופה Tivat (שובר 4H419663).",
     "Return full-to-full: refuel within 5 km of the drop-off point, keep the fuel receipt, photograph fuel/odometer and request a closed return contract.": "החזרה מלא-למלא: תדלקו ברדיוס 5 km מנקודת ההחזרה, שמרו את קבלת הדלק, צלמו דלק/מד קילומטראז׳ ובקשו חוזה החזרה סגור.",
@@ -650,9 +647,6 @@
     "Check out by the published 11:00 deadline and leave the car at the Perast entrance lot.": "צ׳ק-אאוט עד המועד שפורסם, 11:00, והשאירו את הרכב בחניון הכניסה ב-Perast.",
     "Breakfast is included.": "ארוחת הבוקר כלולה.",
     "Confirm the morning service details with reception.": "אשרו פרטי שירות הבוקר מול הקבלה.",
-    "Morning": "בוקר",
-    "Specialty espresso/pour-over before the airport run.": "אספרסו מיוחד/פור-אובר לפני הנסיעה לשדה התעופה.",
-    "Daily 08:00–22:00 published; verify opening time": "מפורסם יומית 08:00–22:00; אשרו שעת פתיחה",
     "Confirmed five-night lodging pattern": "מערך לינה מאושר לחמישה לילות",
     "Day 1 driving ceiling ≤6 h adjusted": "תקרת נהיגה ביום 1 ≤6 שעות, לאחר התאמה",
     "Day 1 daylight cutoff": "גבול אור יום ביום 1",
@@ -1037,7 +1031,6 @@
     "Hotel restaurant; the car is in the hotel parking at the Kotor-side entrance.": "מסעדת המלון; הרכב בחניון המלון בכניסה מצד Kotor.",
     "Admissions for two, Alpine Coaster, Lovćen and mausoleum, Skadar boat and hotel parking; walls and spa optional.": "כניסות לשניים, רכבת ההרים, Lovćen והמאוזוליאום, שייט ב-Skadar וחניון המלון; החומות והספא אופציונליים.",
     "Conte hotel parking €25 per 24 hours at reception; Kotor Old Town parking (Benovo about €2/hour); no walls climb today.": "חניון המלון של Conte €25 ל-24 שעות, בקבלה; חניית העיר העתיקה של Kotor (Benovo כ-€2 לשעה); בלי טיפוס על החומות היום.",
-    "Kotor is on the M-1 on the way to Tivat; park at signed Old Town parking and keep the 13:00 rental return": "Kotor נמצאת על M-1 בדרך ל-Tivat; חנו בחניה המסומנת של העיר העתיקה ושמרו על החזרת הרכב ב-13:00",
     "Hotel Conte · breakfast and hotel parking": "Hotel Conte · ארוחת בוקר וחניון המלון",
     "Oct 4: Conte hotel parking €25 per 24 hours.": "4 באוק׳: חניון המלון של Conte €25 ל-24 שעות.",
     "Kotor walls and spa remain optional.": "החומות של Kotor והספא נשארים אופציונליים.",
@@ -1078,7 +1071,11 @@
     "Sunset is at 18:21, so roughly the second half of the drive is after dark, on main coastal roads.": "השקיעה ב-18:21, אז בערך החצי השני של הנסיעה בחושך, בכבישי חוף ראשיים.",
     "Breakfast at Conte is from 08:00 and the Oct 5 boat is confirmed (later moved to 16:00 by the operator).": "ארוחת הבוקר ב-Conte מ-08:00, והשייט ב-5 באוק׳ מאושר (המפעיל הזיז אותו אחר כך ל-16:00).",
     "Stop about 20 minutes at the Pavlova Strana viewpoint over the Crnojević river bend and Lake Skadar.": "עוצרים כ-20 דקות בתצפית Pavlova Strana מעל העיקול של נהר Crnojević ואגם Skadar.",
-    "Oct 5: Alpine Coaster €12 and Falcon Fly €15 per person, Lovćen park €4/person, mausoleum €8/person, parking €2, DARKO Boat €35 for two (includes Skadar national-park entry) and another €25 for hotel parking.": "5 באוק׳: Alpine Coaster €12 ו-Falcon Fly €15 לאדם, פארק Lovćen €4 לאדם, המאוזוליאום €8 לאדם, חניה €2, DARKO Boat €35 לשניים (כולל כניסה לפארק הלאומי Skadar) ועוד €25 לחניון המלון."
+    "Oct 5: Alpine Coaster €12 and Falcon Fly €15 per person, Lovćen park €4/person, mausoleum €8/person, parking €2, DARKO Boat €35 for two (includes Skadar national-park entry) and another €25 for hotel parking.": "5 באוק׳: Alpine Coaster €12 ו-Falcon Fly €15 לאדם, פארק Lovćen €4 לאדם, המאוזוליאום €8 לאדם, חניה €2, DARKO Boat €35 לשניים (כולל כניסה לפארק הלאומי Skadar) ועוד €25 לחניון המלון.",
+    "Take the direct road to TIV (about 31 minutes, 38 with buffer, OSRM 2026-10-05) and refuel on the way; no detour to Kotor for coffee.": "נוסעים בדרך הישירה ל-TIV (כ-31 דקות, 38 עם תוספת, OSRM 2026-10-05) ומתדלקים בדרך; בלי עיקוף לקפה ב-Kotor.",
+    "Check out and leave Perast by 10:45 to keep the 12:15 terminal target; leaving at 11:00 reaches the terminal about 12:25.": "עושים צ׳ק-אאוט ויוצאים מ-Perast עד 10:45 כדי לעמוד ביעד של 12:15 בטרמינל; יציאה ב-11:00 מגיעה לטרמינל בערך ב-12:25.",
+    "The car is parked free at a legal roadside spot, not in the hotel lot; ask reception about the electric luggage transfer.": "הרכב חונה בחינם בצד הדרך במקום מותר, לא בחניון המלון; שאלו בקבלה על ההסעה החשמלית עם המזוודות.",
+    "Relaxed breakfast at Conte from about 08:30, then the hotel pool until check-out at about 10:45.": "ארוחת בוקר רגועה ב-Conte מבערך 08:30, ואחר כך הבריכה של המלון עד הצ׳ק-אאוט בסביבות 10:45."
   },
   "aliases": {
     "tivat-airport": [
