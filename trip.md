@@ -1349,12 +1349,12 @@ All 134 places on the app’s map (waypoints file version 3). “Days” lists t
   - **Payment:** Ask
   - **Also called:** Lake Skadar
   - **Pin precision:** OpenStreetMap lake feature coordinate
-- **Đurđevića Tara Bridge / canyon viewpoint · access conditional** — Viewpoint · 43.1507, 19.2912 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=%C4%90ur%C4%91evi%C4%87a%20Tara%20Bridge%2C%20Montenegro&travelmode=driving)
+- **Đurđevića Tara Bridge / canyon viewpoint · access conditional** — Viewpoint · 43.14971, 19.29447 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=43.14971,19.29447&travelmode=driving)
   - **Days:** 3
   - **Payment:** Ask
   - **Operating note:** Bridge crossing is closed through Oct 26, 2026 at 12:00. This coordinate marks the bridge area, not confirmed public viewpoint or parking. Do not cross, enter works, or stop on the road; proceed only to a safe public viewpoint confirmed open by local authorities.
   - **Also called:** Tara bridge viewing stop · do not cross
-  - **Pin precision:** approximate bridge reference; not a confirmed parking or viewpoint pin
+  - **Pin precision:** Bridge midpoint used by the route-check skill (43.14971,19.29447); the photo stop is at the north end.
 - **Gradska Kafanica · morning espresso (hours to confirm)** — Coffee · 43.1554, 19.1215 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=Gradska%20Kafanica%20%C2%B7%20morning%20espresso%20(hours%20to%20confirm)%2C%20Montenegro&travelmode=driving)
   - **Days:** 2
   - **Payment:** Ask
@@ -1392,7 +1392,7 @@ All 134 places on the app’s map (waypoints file version 3). “Days” lists t
 - **Njegoš Mausoleum parking** — Parking · 42.3986993, 18.8395442 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=42.3986993,18.8395442&travelmode=driving)
   - **Payment:** Ask
   - **Pin precision:** OpenStreetMap upper parking at the road end, about 450 m and 461 tunnel steps below the mausoleum.
-- **Njegoš Mausoleum** — Viewpoint · 42.4000721, 18.8374606 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=Njego%C5%A1%20Mausoleum%2C%20Montenegro&travelmode=driving)
+- **Njegoš Mausoleum** — Viewpoint · 42.4000721, 18.8374606 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=42.4000721,18.8374606&travelmode=driving)
   - **Days:** 5
   - **Payment:** Cash/Card
   - **Also called:** Njegoš Mausoleum; Njegosev Mauzolej

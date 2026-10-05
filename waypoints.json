@@ -2136,9 +2136,9 @@
       "id": "tara-bridge-viewpoint-conditional",
       "name": "Đurđevića Tara Bridge / canyon viewpoint · access conditional",
       "category": "Viewpoint",
-      "lat": 43.1507,
-      "lng": 19.2912,
-      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=%C4%90ur%C4%91evi%C4%87a%20Tara%20Bridge%2C%20Montenegro&travelmode=driving",
+      "lat": 43.14971,
+      "lng": 19.29447,
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=43.14971,19.29447&travelmode=driving",
       "cash": "Ask",
       "days": {
         "primary": [
@@ -2148,7 +2148,7 @@
       "aliases": [
         "Tara bridge viewing stop · do not cross"
       ],
-      "precision": "approximate bridge reference; not a confirmed parking or viewpoint pin",
+      "precision": "Bridge midpoint used by the route-check skill (43.14971,19.29447); the photo stop is at the north end.",
       "operatingNote": "Bridge crossing is closed through Oct 26, 2026 at 12:00. This coordinate marks the bridge area, not confirmed public viewpoint or parking. Do not cross, enter works, or stop on the road; proceed only to a safe public viewpoint confirmed open by local authorities."
     },
     {
@@ -2298,7 +2298,7 @@
       "category": "Viewpoint",
       "lat": 42.4000721,
       "lng": 18.8374606,
-      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Njego%C5%A1%20Mausoleum%2C%20Montenegro&travelmode=driving",
+      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=42.4000721,18.8374606&travelmode=driving",
       "cash": "Cash/Card",
       "days": {
         "primary": [
