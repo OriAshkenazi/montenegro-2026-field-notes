@@ -10,7 +10,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - **Summary:** Explore Montenegro from the Adriatic coast and Bay of Kotor to Lake Skadar and the rugged northern highlands, with scenic drives, old towns, mountain walks and local food.
 - **Planning rule:** Daily driving ceiling 6 h adjusted; drive times include a +20% terrain buffer over nominal routing times.
 - **App:** [https://oriashkenazi.github.io/montenegro-2026-field-notes/](https://oriashkenazi.github.io/montenegro-2026-field-notes/)
-- **budgetDays:** day: 1; costs: fuel: 40, 65; food: 60, 100; onTheSpot: Europcar deposit hold €1,154 on the main driver’s credit card at pickup; it is released after return and is not spending., Ask Runolist at check-in whether any of the €225.39 is still due., day: 2; costs: fuel: 25, 45; parks: 12, 20; food: 80, 130; onTheSpot: Coins for Black Lake parking (€1.20/hour) and Durmitor admission at €5/person., day: 3; costs: fuel: 35, 60; parks: 8, 20; food: 90, 150; zipline: 0, 90; onTheSpot: Biogradska Gora admission €4/person in cash; boats €10/hour., Zipline only if booked and confirmed., day: 4; costs: fuel: 35, 55; parks: 25, 35; food: 70, 120; horseride: 80, 120; onTheSpot: Settle any Runolist balance in cash at checkout (up to €225.39)., SKK Vihor ride: price not confirmed, pay in cash at the stable (about €50/person is a nearby published rate)., Conte hotel parking €25 per 24 hours at reception; Kotor Old Town parking (Benovo about €2/hour); no walls climb today., day: 5; costs: fuel: 25, 45; parks: 80, 110; food: 40, 80; onTheSpot: Alpine Coaster €12 per ride per person; Lovćen park €4/person, mausoleum €8/person, parking €2., DARKO Boat €35 for two for one hour, including national-park entry; Sozina toll €2.50., Conte hotel parking €25 per 24 hours at reception., day: 6; costs: fuel: 5, 10; food: 20, 40; onTheSpot: Refuel within 5 km of the airport and keep the receipt; the deposit hold is released after return.
+- **budgetDays:** day: 1; costs: fuel: 40, 65; food: 60, 100; onTheSpot: Europcar deposit hold €1,154 on the main driver’s credit card at pickup; it is released after return and is not spending., Ask Runolist at check-in whether any of the €225.39 is still due., day: 2; costs: fuel: 25, 45; parks: 12, 20; food: 80, 130; onTheSpot: Coins for Black Lake parking (€1.20/hour) and Durmitor admission at €5/person., day: 3; costs: fuel: 35, 60; parks: 8, 20; food: 90, 150; zipline: 0, 90; onTheSpot: Biogradska Gora admission €4/person in cash; boats €10/hour., Zipline only if booked and confirmed., day: 4; costs: fuel: 35, 55; parks: 25, 35; food: 70, 120; horseride: 80, 120; onTheSpot: Settle any Runolist balance in cash at checkout (up to €225.39)., SKK Vihor ride: price not confirmed, pay in cash at the stable (about €50/person is a nearby published rate)., Conte hotel parking €25 per 24 hours at reception; Kotor Old Town parking (Benovo about €2/hour); no walls climb today., day: 5; costs: fuel: 25, 45; parks: 130, 150; food: 100, 160; onTheSpot: Alpine Coaster €12 and Falcon Fly €15 per person; Lovćen park €4/person, mausoleum €8/person, parking €2., DARKO Boat €35 for two for one hour, including national-park entry; Sozina toll €2.50., Conte hotel parking €25 per 24 hours at reception., day: 6; costs: fuel: 5, 10; food: 20, 40; onTheSpot: Refuel within 5 km of the airport and keep the receipt; the deposit hold is released after return.
 - **fx:** EURILS: 3.4857; USDILS: 3.072; asOf: 2026-09-29; source: Bank of Israel representative rates
 - **contacts:** label: Europcar Tivat Airport; number: +382 20 653141; href: tel:+38220653141; note: Car pickup Oct 1 at 14:30; call if the flight is delayed., label: Filip Vuckovic · private car rental; number: +382 67 974 281; href: tel:+38267974281; note: Backup car rental; WhatsApp in English., label: Kosta Pavlov · private car rental; number: +972 54 447 6480; href: tel:+972544476480; note: Backup car rental; Israeli number., label: Avi Blov · private car rental; number: +972 54 471 2918; href: tel:+972544712918; note: Backup car rental; Israeli number., label: Jennie · private car rental; number: +382 68 603 688; href: tel:+38268603688; note: Backup car rental; Hebrew speaker, pay at pickup., label: AI Booking Travel · voucher 4H419663; number: +972 3 555 5999; href: tel:+97235555999; note: 24/7 support for the rental voucher., label: Runolist Chalet, Žabljak; number: +382 69 520 016; href: tel:+38269520016; note: Tell the host your arrival time; cash only at the property., label: Conte Hotel, Perast; number: +382 67 111 190; href: tel:+38267111190; note: Check-in from 15:00; Oct 4 arrival is about 15:35., label: Conte restaurant, Perast; number: +382 67 257 387; href: tel:+38267257387; note: Same-day table reservations by phone only.
 
@@ -22,7 +22,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - Day 2 · Black Lake / P14-Sedlo / Trsa / Plužine and Piva (Fri · Oct 2)
 - Day 3 · Tara bridge viewpoint, Biogradska Gora and Tara Springs (Sat · Oct 3)
 - Day 4 · Runolist → SKK Vihor ride → Nikšić → Perast (Conte check-in) → Kotor Old Town evening (Sun · Oct 4)
-- Day 5 · Kotor serpentine / Alpine Coaster / Njegoš Mausoleum / Pavlova Strana / Skadar boat (Mon · Oct 5)
+- Day 5 · Kotor serpentine / Alpine Coaster and Falcon Fly / Njegoš Mausoleum / Pavlova Strana / Skadar boat (Mon · Oct 5)
 - Day 6 · Perast → TIV / rental return / flight home (Tue · Oct 6)
 - Quick status checks
 - Budget
@@ -479,14 +479,14 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - [Ombra · Kotor Old Town](https://maps.google.com/?q=Ombra%20restaurant%2C%20Kotor%20Old%20Town%2C%20Montenegro)
 - [Conte hotel parking · Perast east entrance](https://maps.google.com/?q=42.48403,18.708)
 
-## Day 5 · Kotor serpentine / Alpine Coaster / Njegoš Mausoleum / Pavlova Strana / Skadar boat (Mon · Oct 5)
+## Day 5 · Kotor serpentine / Alpine Coaster and Falcon Fly / Njegoš Mausoleum / Pavlova Strana / Skadar boat (Mon · Oct 5)
 
 - **Date:** 2026-10-05
 - **Region:** Coast / Central · Perast → Lovćen → Cetinje → Lake Skadar → Perast
 - **Overnight base:** Conte Hotel & Restaurant · Perast
 - **Day starts:** 08:00
-- **Driving route:** Perast (hotel parking) → M-1 → R-1 Kotor serpentine → R-25 to the Alpine Coaster at Kuk → Njegoš Mausoleum → Cetinje (sandwiches) → Pavlova Strana viewpoint → Vranjina (DARKO Boat) → Virpazar → Sozina → Budva → Perast · about 4 h 33 nominal / 5 h 28 adjusted (OSRM +20%); the usual 17:30 cutoff is waived by the travellers, back around 18:45
-- **Adjusted driving total:** 5.5 h (timetable drive legs sum to 5 h 28 min)
+- **Driving route:** Perast (hotel parking) → M-1 → R-1 Kotor serpentine → R-25 to the Alpine Coaster at Kuk → Njegoš Mausoleum → through Cetinje → Pavlova Strana viewpoint → Vranjina (DARKO Boat) → Virpazar → Sozina → Budva → Perast · about 4 h 32 nominal / 5 h 28 adjusted (OSRM +20%); the usual 17:30 cutoff is waived by the travellers, back around 19:15
+- **Adjusted driving total:** 5.5 h (timetable drive legs sum to 5 h 26 min)
 - **Interests:** Adventure & Hiking, Sightseeing, Water
 - **communityPicks:** name: Vladika; note: Restaurant at the Njegoš Mausoleum, tucked below the café.; mapUrl: https://maps.google.com/?q=Vladika%20restaurant%20Lovcen; id: pick-day-5-01, name: Winery Garnet; note: Godinje, about 10 minutes from Virpazar: four wines and three liqueurs for €18.; mapUrl: https://maps.google.com/?q=Winery%20Garnet%20Godinje; id: pick-day-5-02, name: Trattoria Rosmarino; note: Perast: pricey but good.; mapUrl: https://maps.google.com/?q=Trattoria%20Rosmarino%20Perast; id: pick-day-5-03, name: Mussels & Oyster Farm; note: On the water about 5 minutes from Perast; very fresh seafood.; mapUrl: https://maps.google.com/?q=mussels%20and%20oyster%20farm%20Perast; id: pick-day-5-04, name: Catovica Mlini; note: Morinj: expensive; one family called it the best restaurant of their trip.; mapUrl: https://maps.google.com/?q=Catovica%20Mlini%20Morinj; id: pick-day-5-05, name: Verige 65; note: Breakfast on the bay near the Kamenari ferry.; mapUrl: https://maps.google.com/?q=Verige%2065; id: pick-day-5-06
 
@@ -502,48 +502,45 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
   - **Leg:** Conte hotel parking · Perast east entrance → Kotor Alpine Coaster · Kuk
 - **10:04–10:19 · SEE · Serpentine photo stops** — Allow about 15 minutes for one or two photo stops at safe pullouts above the Bay.
   - **Time on site:** 15 min
-- **10:19–11:19 · SEE · Kotor Alpine Coaster** — Ride the Alpine Coaster next to the cable-car upper station at Kuk; drive straight here and do not navigate to the cable car’s lower station in Kotor. Parking at the upper station is free. Opens 10:00; €12 per ride per person, or €20 fast track; the 1 km track takes 3–5 minutes.
-  - **Time on site:** 60 min
+- **11:15–12:00 · SEE · Alpine Coaster and Falcon Fly** — Arrived at Kuk about 11:15 and rode both the Alpine Coaster (€12 per person) and Falcon Fly (€15 per person); both were excellent. Tickets are sold at the box office or online.
+  - **Fixed time:** 11:15
+  - **Time on site:** 45 min
   - **waypointId:** kotor-cable-car-kuk
-- **11:19–11:29 · DRIVE · Drive to the mausoleum parking** — Continue about 6 km to the upper parking at the end of the mausoleum road.
-  - **Drive time:** 8 min nominal / 10 min adjusted (source OSRM, checked 2026-10-04)
-  - **Leg:** Kotor Alpine Coaster · Kuk → Njegoš Mausoleum parking
-- **11:29–12:29 · SEE · Njegoš Mausoleum and summit view** — From the upper parking walk about 450 m, including 461 steps through a covered tunnel (10–15 minutes up). Lovćen park entry €4/person, mausoleum €8/person, parking €2. Do not miss the round viewing platform behind the mausoleum. If the upper lot is full, use the lower lot about 400 m down the road.
+- **12:00–12:10 · DRIVE · Drive to the mausoleum lower parking** — Continue about 6 km toward the mausoleum and park on the access road; the travellers parked low, well below the entrance.
+  - **Drive time:** 8 min nominal / 10 min adjusted (source OSRM, checked 2026-10-05)
+  - **Leg:** Kotor Alpine Coaster · Kuk → Njegoš Mausoleum lower parking
+- **12:30–13:30 · SEE · Njegoš Mausoleum and summit view** — From the upper parking walk about 450 m, including 461 steps through a covered tunnel (10–15 minutes up). Lovćen park entry €4/person, mausoleum €8/person, parking €2. Do not miss the round viewing platform behind the mausoleum. If the upper lot is full, use the lower lot about 400 m down the road.
+  - **Fixed time:** 12:30
   - **Time on site:** 60 min
   - **waypointId:** njegos-mausoleum
   - **CAUTION:** The summit is about 1,650 m high, cold and windy. Travelers report the Lovćen cable car stopping in cloud or wind without notice; the coaster can close too. Check the weather before driving up and shorten the visit if the summit is in cloud.
 
 ### Afternoon
 
-- **12:29–13:10 · DRIVE · Drive to Cetinje** — Drive down through the national park to Cetinje.
-  - **Drive time:** 34 min nominal / 41 min adjusted (source OSRM, checked 2026-10-04)
-  - **Leg:** Njegoš Mausoleum parking → Voli · Cetinje
-- **13:10–13:35 · EAT · Sandwiches for lunch and dinner in Cetinje** — Buy sandwiches, drinks and fruit at Voli for lunch on the road and for dinner on the drive back. Pekara Perper, about 300 m away, has burek and pastries. Both are on the route, a 1–2 minute detour.
-  - **Time on site:** 25 min
-  - **Food stop:** Voli · Cetinje (details under Food & provisions for this day)
-  - **waypointId:** voli-cetinje
-- **13:35–13:59 · DRIVE · Drive to Pavlova Strana** — Continue east from Cetinje to the Pavlova Strana viewpoint.
-  - **Drive time:** 20 min nominal / 24 min adjusted (source OSRM, checked 2026-10-04)
-  - **Leg:** Voli · Cetinje → Pavlova Strana viewpoint
-- **13:59–14:14 · SEE · Pavlova Strana viewpoint** — Stop about 15 minutes at the Pavlova Strana viewpoint over the Crnojević river bend and Lake Skadar.
-  - **Time on site:** 15 min
+- **13:30–14:33 · DRIVE · Drive to Pavlova Strana via Cetinje** — Drive through Cetinje without stopping; lunch was bought at the mausoleum café (sandwiches, coffee, raspberries and a cookie, about €28 in cash).
+  - **Drive time:** 53 min nominal / 63 min adjusted (source OSRM, checked 2026-10-05)
+  - **Leg:** Njegoš Mausoleum lower parking → Pavlova Strana viewpoint
+- **14:33–14:53 · SEE · Pavlova Strana viewpoint** — Stop about 15 minutes at the Pavlova Strana viewpoint over the Crnojević river bend and Lake Skadar.
+  - **Time on site:** 20 min
   - **waypointId:** pavlova-strana-viewpoint
-- **14:14–15:09 · DRIVE · Drive to Vranjina** — Drive down to the lake and across to Vranjina; navigate with the DARKO Boat listing link.
+- **14:53–15:48 · DRIVE · Drive to Vranjina** — Drive down to the lake and across to Vranjina; navigate with the DARKO Boat listing link.
   - **Drive time:** 46 min nominal / 55 min adjusted (source OSRM, checked 2026-10-04)
   - **Leg:** Pavlova Strana viewpoint → DARKO Boat · Vranjina
-- **15:30–16:30 · WATER · Lake Skadar boat with DARKO Boat** — One-hour boat trip from Vranjina, €35 for two, including drinks, parking and national-park entry; a toilet is available before departure. Confirmed by the operator for 15:30; arrive about 15:10.
-  - **Fixed time:** 15:30
+- **16:00–17:00 · WATER · Lake Skadar boat with DARKO Boat** — One-hour boat trip from Vranjina, €35 for two, including drinks, parking and national-park entry; a toilet is available before departure. The operator moved the start to 16:00.
+  - **Fixed time:** 16:00
   - **Time on site:** 60 min
   - **waypointId:** darko-boat-vranjina
-- **16:30–18:44 · DRIVE · Drive back to Perast via Sozina** — Return via Virpazar, the Sozina tunnel and Budva to the hotel parking; the €2.50 Sozina toll applies (recheck the tariff). Sunset is at 18:21, so the last part is after dark on main coastal roads.
+- **17:00–19:14 · DRIVE · Drive back to Perast via Sozina** — Return via Virpazar, the Sozina tunnel and Budva to the hotel parking; the €2.50 Sozina toll applies (recheck the tariff). Sunset is at 18:21, so the last part is after dark on main coastal roads.
   - **Drive time:** 112 min nominal / 134 min adjusted (source OSRM, checked 2026-10-04)
   - **Leg:** DARKO Boat · Vranjina → Conte hotel parking · Perast east entrance via Virpazar
-  - **CAUTION:** The travellers waived the 17:30 driving cutoff for this day. Target the hotel parking around 18:45 and Conte by 19:00.
+  - **CAUTION:** The travellers waived the 17:30 driving cutoff for this day. Expect the hotel parking around 19:15 and Conte around 19:30.
 
 ### Evening
 
-- **16:30–18:44 · EAT · Dinner from Cetinje** — Dinner is the food bought in Cetinje, eaten on the drive or at the hotel.
-  - **Food stop:** Voli · Cetinje (details under Food & provisions for this day)
+- **19:45–21:15 · EAT · Final dinner in Perast** — Dinner in Perast. Group picks: Trattoria Rosmarino (not cheap but good; 60 stone steps up to a terrace over the bay; open 12:00–23:00, book ahead) and the Neapolitan-style pizzeria in the middle of town. Conte’s own restaurant is the closest option. Travelers note waterfront restaurants are tasty but very expensive.
+  - **Fixed time:** 19:45
+  - **Time on site:** 90 min
+  - **Food stop:** Trattoria Rosmarino · Perast (details under Food & provisions for this day)
   - **Note (STAY):** Keep the car in the hotel parking, pack for the Oct 6 airport run and confirm rental-return documents tonight.
   - **Note (LOGISTICS):** Keep tomorrow’s airport run direct. Leave no valuables visible in the parked car.
 
@@ -559,21 +556,21 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
   - **Plan:** Eat by 08:40, then walk to the car.
   - **Map:** [maps.google.com](https://maps.google.com/?q=Conte%20Hotel%20%26%20Restaurant%2C%20Perast%2C%20Montenegro)
   - **Source:** [hotelconte.me](https://hotelconte.me/our-hotel)
-- **Lunch · on the road · Voli · Cetinje** — Sandwiches, drinks and fruit for lunch on the road and dinner on the drive back.
-  - **Hours:** Supermarkets are open on Monday; check the deli counter on arrival.
-  - **Parking:** Supermarket parking on the route.
-  - **Payment:** Card or cash.
-  - **Time planned:** 25 min
-  - **Plan:** Pekara Perper, about 300 m away, has burek and pastries.
-  - **Map:** [google.com](https://www.google.com/maps/dir/?api=1&destination=42.3925558,18.9260985&travelmode=driving)
-  - **Source:** [openstreetmap.org](https://www.openstreetmap.org/search?query=Voli%20Cetinje)
-- **Dinner · on the drive · Voli · Cetinje** — Food bought in Cetinje, eaten on the drive or at the hotel.
-  - **Hours:** No dinner time is reserved.
-  - **Parking:** Not needed.
-  - **Payment:** Not needed.
-  - **Plan:** Buy enough at Voli for two meals.
-  - **Map:** [google.com](https://www.google.com/maps/dir/?api=1&destination=42.3925558,18.9260985&travelmode=driving)
-  - **Source:** [openstreetmap.org](https://www.openstreetmap.org/search?query=Voli%20Cetinje)
+- **Lunch · Lovćen · Café · Njegoš Mausoleum** — Sandwiches, coffee, raspberries and a cookie, eaten on the drive.
+  - **Hours:** Bought around 13:15.
+  - **Parking:** Mausoleum parking.
+  - **Payment:** About €28 in cash.
+  - **Time planned:** 15 min
+  - **Plan:** Cheap for a tourist spot.
+  - **Map:** [google.com](https://www.google.com/maps/dir/?api=1&destination=42.4000721,18.8374606&travelmode=driving)
+- **Dinner · Perast · Trattoria Rosmarino · Perast** — Seafood and Italian on a terrace above the bay; group pick, not cheap but good.
+  - **Hours:** Daily 12:00–23:00; book ahead.
+  - **Parking:** Walk from Conte; about 60 stone steps up.
+  - **Payment:** Ask.
+  - **Time planned:** 90 min
+  - **Plan:** Alternatives from the group: the Neapolitan-style pizzeria in the middle of Perast. Conte’s restaurant is the closest.
+  - **Map:** [maps.google.com](https://maps.google.com/?q=Trattoria%20Rosmarino%20Perast)
+  - **Source:** [rosmarinoperast.com](https://www.rosmarinoperast.com/)
 
 **Coffee**
 
@@ -594,9 +591,8 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - [Conte Hotel & Restaurant](https://maps.google.com/?q=42.48631,18.69801)
 - [Conte hotel parking · Perast east entrance](https://maps.google.com/?q=42.48403,18.708)
 - [Kotor Alpine Coaster · Kuk](https://maps.google.com/?q=42.3927226,18.7933741)
-- [Njegoš Mausoleum parking](https://maps.google.com/?q=42.3986993,18.8395442)
+- [Njegoš Mausoleum lower parking](https://maps.google.com/?q=42.3970837,18.8432797)
 - [Njegoš Mausoleum](https://maps.google.com/?q=42.4000721,18.8374606)
-- [Voli · Cetinje](https://maps.google.com/?q=42.3925558,18.9260985)
 - [Pavlova Strana viewpoint](https://maps.google.com/?q=42.3627375,19.0576719)
 - [DARKO Boat · Vranjina](https://maps.app.goo.gl/VeXVS4RyrZDVpiiLA)
 - [Conte hotel parking · Perast east entrance](https://maps.google.com/?q=42.48403,18.708)
@@ -750,9 +746,9 @@ Expected spend for two each day, and what to pay on the spot.
   - **Pay on the spot:** Settle any Runolist balance in cash at checkout (up to €225.39).
   - **Pay on the spot:** SKK Vihor ride: price not confirmed, pay in cash at the stable (about €50/person is a nearby published rate).
   - **Pay on the spot:** Conte hotel parking €25 per 24 hours at reception; Kotor Old Town parking (Benovo about €2/hour); no walls climb today.
-- **Day 5 · Mon · Oct 5** — €145–€235
-  - **Breakdown:** Fuel + tolls €25–€45 · Parks + boat + walls + spa €80–€110 · Food & drink €40–€80
-  - **Pay on the spot:** Alpine Coaster €12 per ride per person; Lovćen park €4/person, mausoleum €8/person, parking €2.
+- **Day 5 · Mon · Oct 5** — €255–€355
+  - **Breakdown:** Fuel + tolls €25–€45 · Parks + boat + walls + spa €130–€150 · Food & drink €100–€160
+  - **Pay on the spot:** Alpine Coaster €12 and Falcon Fly €15 per person; Lovćen park €4/person, mausoleum €8/person, parking €2.
   - **Pay on the spot:** DARKO Boat €35 for two for one hour, including national-park entry; Sozina toll €2.50.
   - **Pay on the spot:** Conte hotel parking €25 per 24 hours at reception.
 - **Day 6 · Tue · Oct 6** — €25–€50
@@ -941,12 +937,10 @@ All 134 places on the app’s map (waypoints file version 3). “Days” lists t
   - **Payment:** Ask
   - **Pin precision:** OpenStreetMap overflow lot about 400 m below the upper parking; use only if the upper lot is full.
 - **Voli · Cetinje** — Supermarket · 42.3925558, 18.9260985 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=42.3925558,18.9260985&travelmode=driving)
-  - **Days:** 5
   - **Payment:** Cash/Card
   - **Also called:** Voli Cetinje
   - **Pin precision:** OpenStreetMap supermarket, Vojvode Boža 1; on the route to Pavlova Strana.
 - **Pekara Perper · Cetinje** — Meal · 42.3901023, 18.9246747 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=42.3901023,18.9246747&travelmode=driving)
-  - **Days:** 5
   - **Payment:** Ask
   - **Also called:** Pekara Perper
   - **Pin precision:** OpenStreetMap bakery, Baja Pivljanina 52 (listed daily 06:00–21:00).
@@ -1396,7 +1390,6 @@ All 134 places on the app’s map (waypoints file version 3). “Days” lists t
   - **Payment:** Ask
   - **Pin precision:** approximate shared area pin; exact spot not verified
 - **Njegoš Mausoleum parking** — Parking · 42.3986993, 18.8395442 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=42.3986993,18.8395442&travelmode=driving)
-  - **Days:** 5
   - **Payment:** Ask
   - **Pin precision:** OpenStreetMap upper parking at the road end, about 450 m and 461 tunnel steps below the mausoleum.
 - **Njegoš Mausoleum** — Viewpoint · 42.4000721, 18.8374606 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=Njego%C5%A1%20Mausoleum%2C%20Montenegro&travelmode=driving)

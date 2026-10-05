@@ -371,9 +371,7 @@
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=42.3925558,18.9260985&travelmode=driving",
       "cash": "Cash/Card",
       "days": {
-        "primary": [
-          5
-        ]
+        "primary": []
       },
       "aliases": [
         "Voli Cetinje"
@@ -389,9 +387,7 @@
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=42.3901023,18.9246747&travelmode=driving",
       "cash": "Ask",
       "days": {
-        "primary": [
-          5
-        ]
+        "primary": []
       },
       "aliases": [
         "Pekara Perper"
@@ -2291,9 +2287,7 @@
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=42.3986993,18.8395442&travelmode=driving",
       "cash": "Ask",
       "days": {
-        "primary": [
-          5
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "OpenStreetMap upper parking at the road end, about 450 m and 461 tunnel steps below the mausoleum."

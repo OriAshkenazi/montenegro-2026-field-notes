@@ -6,7 +6,7 @@ The app at https://oriashkenazi.github.io/montenegro-2026-field-notes/ renders i
 
 ## Trip plan
 
-- [Complete trip plan](https://oriashkenazi.github.io/montenegro-2026-field-notes/trip.md): every day's timetable, drives, food and provisions, stays, insurance, budget, emergency numbers, all map waypoints and sources (133 KB Markdown)
+- [Complete trip plan](https://oriashkenazi.github.io/montenegro-2026-field-notes/trip.md): every day's timetable, drives, food and provisions, stays, insurance, budget, emergency numbers, all map waypoints and sources (132 KB Markdown)
 - [Same content, llms-full.txt](https://oriashkenazi.github.io/montenegro-2026-field-notes/llms-full.txt)
 
 ## Raw data
@@ -20,5 +20,5 @@ The app at https://oriashkenazi.github.io/montenegro-2026-field-notes/ renders i
 - Day 2 · Fri · Oct 2: Black Lake / P14-Sedlo / Trsa / Plužine and Piva
 - Day 3 · Sat · Oct 3: Tara bridge viewpoint, Biogradska Gora and Tara Springs
 - Day 4 · Sun · Oct 4: Runolist → SKK Vihor ride → Nikšić → Perast (Conte check-in) → Kotor Old Town evening
-- Day 5 · Mon · Oct 5: Kotor serpentine / Alpine Coaster / Njegoš Mausoleum / Pavlova Strana / Skadar boat
+- Day 5 · Mon · Oct 5: Kotor serpentine / Alpine Coaster and Falcon Fly / Njegoš Mausoleum / Pavlova Strana / Skadar boat
 - Day 6 · Tue · Oct 6: Perast → TIV / rental return / flight home

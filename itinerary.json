@@ -1150,7 +1150,7 @@
           "date": "Mon · Oct 5",
           "region": "Coast / Central · Perast → Lovćen → Cetinje → Lake Skadar → Perast",
           "base": "Conte Hotel & Restaurant · Perast",
-          "drive": "Perast (hotel parking) → M-1 → R-1 Kotor serpentine → R-25 to the Alpine Coaster at Kuk → Njegoš Mausoleum → Cetinje (sandwiches) → Pavlova Strana viewpoint → Vranjina (DARKO Boat) → Virpazar → Sozina → Budva → Perast · about 4 h 33 nominal / 5 h 28 adjusted (OSRM +20%); the usual 17:30 cutoff is waived by the travellers, back around 18:45",
+          "drive": "Perast (hotel parking) → M-1 → R-1 Kotor serpentine → R-25 to the Alpine Coaster at Kuk → Njegoš Mausoleum → through Cetinje → Pavlova Strana viewpoint → Vranjina (DARKO Boat) → Virpazar → Sozina → Budva → Perast · about 4 h 32 nominal / 5 h 28 adjusted (OSRM +20%); the usual 17:30 cutoff is waived by the travellers, back around 19:15",
           "adjustedHours": 5.5,
           "morning": [
             {
@@ -1194,25 +1194,26 @@
             {
               "type": "SEE",
               "id": "day-5-morning-05",
-              "title": "Kotor Alpine Coaster",
-              "text": "Ride the Alpine Coaster next to the cable-car upper station at Kuk; drive straight here and do not navigate to the cable car’s lower station in Kotor. Parking at the upper station is free. Opens 10:00; €12 per ride per person, or €20 fast track; the 1 km track takes 3–5 minutes.",
-              "dwellMin": 60,
+              "title": "Alpine Coaster and Falcon Fly",
+              "text": "Arrived at Kuk about 11:15 and rode both the Alpine Coaster (€12 per person) and Falcon Fly (€15 per person); both were excellent. Tickets are sold at the box office or online.",
+              "fixedAt": "11:15",
+              "dwellMin": 45,
               "waypointId": "kotor-cable-car-kuk"
             },
             {
               "type": "DRIVE",
               "id": "day-5-morning-06",
-              "text": "Continue about 6 km to the upper parking at the end of the mausoleum road.",
-              "title": "Drive to the mausoleum parking",
+              "text": "Continue about 6 km toward the mausoleum and park on the access road; the travellers parked low, well below the entrance.",
+              "title": "Drive to the mausoleum lower parking",
               "leg": {
                 "from": "kotor-cable-car-kuk",
-                "to": "njegos-mausoleum-parking"
+                "to": "njegos-mausoleum-lower-parking"
               },
               "driveMin": {
                 "nominal": 8,
                 "adjusted": 10,
                 "source": "OSRM",
-                "checked": "2026-10-04"
+                "checked": "2026-10-05"
               }
             },
             {
@@ -1221,7 +1222,8 @@
               "title": "Njegoš Mausoleum and summit view",
               "text": "From the upper parking walk about 450 m, including 461 steps through a covered tunnel (10–15 minutes up). Lovćen park entry €4/person, mausoleum €8/person, parking €2. Do not miss the round viewing platform behind the mausoleum. If the upper lot is full, use the lower lot about 400 m down the road.",
               "dwellMin": 60,
-              "waypointId": "njegos-mausoleum"
+              "waypointId": "njegos-mausoleum",
+              "fixedAt": "12:30"
             },
             {
               "type": "CAUTION",
@@ -1233,42 +1235,17 @@
             {
               "type": "DRIVE",
               "id": "day-5-afternoon-01",
-              "text": "Drive down through the national park to Cetinje.",
-              "title": "Drive to Cetinje",
+              "text": "Drive through Cetinje without stopping; lunch was bought at the mausoleum café (sandwiches, coffee, raspberries and a cookie, about €28 in cash).",
+              "title": "Drive to Pavlova Strana via Cetinje",
               "leg": {
-                "from": "njegos-mausoleum-parking",
-                "to": "voli-cetinje"
-              },
-              "driveMin": {
-                "nominal": 34,
-                "adjusted": 41,
-                "source": "OSRM",
-                "checked": "2026-10-04"
-              }
-            },
-            {
-              "type": "EAT",
-              "id": "day-5-afternoon-02",
-              "title": "Sandwiches for lunch and dinner in Cetinje",
-              "text": "Buy sandwiches, drinks and fruit at Voli for lunch on the road and for dinner on the drive back. Pekara Perper, about 300 m away, has burek and pastries. Both are on the route, a 1–2 minute detour.",
-              "dwellMin": 25,
-              "foodId": "food-day-5-meals-02",
-              "waypointId": "voli-cetinje"
-            },
-            {
-              "type": "DRIVE",
-              "id": "day-5-afternoon-03",
-              "text": "Continue east from Cetinje to the Pavlova Strana viewpoint.",
-              "title": "Drive to Pavlova Strana",
-              "leg": {
-                "from": "voli-cetinje",
+                "from": "njegos-mausoleum-lower-parking",
                 "to": "pavlova-strana-viewpoint"
               },
               "driveMin": {
-                "nominal": 20,
-                "adjusted": 24,
+                "nominal": 53,
+                "adjusted": 63,
                 "source": "OSRM",
-                "checked": "2026-10-04"
+                "checked": "2026-10-05"
               }
             },
             {
@@ -1276,7 +1253,7 @@
               "id": "day-5-afternoon-04",
               "title": "Pavlova Strana viewpoint",
               "text": "Stop about 15 minutes at the Pavlova Strana viewpoint over the Crnojević river bend and Lake Skadar.",
-              "dwellMin": 15,
+              "dwellMin": 20,
               "waypointId": "pavlova-strana-viewpoint"
             },
             {
@@ -1299,8 +1276,8 @@
               "type": "WATER",
               "id": "day-5-afternoon-06",
               "title": "Lake Skadar boat with DARKO Boat",
-              "text": "One-hour boat trip from Vranjina, €35 for two, including drinks, parking and national-park entry; a toilet is available before departure. Confirmed by the operator for 15:30; arrive about 15:10.",
-              "fixedAt": "15:30",
+              "text": "One-hour boat trip from Vranjina, €35 for two, including drinks, parking and national-park entry; a toilet is available before departure. The operator moved the start to 16:00.",
+              "fixedAt": "16:00",
               "dwellMin": 60,
               "waypointId": "darko-boat-vranjina"
             },
@@ -1326,17 +1303,18 @@
             {
               "type": "CAUTION",
               "id": "day-5-afternoon-08",
-              "text": "The travellers waived the 17:30 driving cutoff for this day. Target the hotel parking around 18:45 and Conte by 19:00."
+              "text": "The travellers waived the 17:30 driving cutoff for this day. Expect the hotel parking around 19:15 and Conte around 19:30."
             }
           ],
           "evening": [
             {
               "type": "EAT",
               "id": "day-5-evening-01",
-              "title": "Dinner from Cetinje",
-              "text": "Dinner is the food bought in Cetinje, eaten on the drive or at the hotel.",
-              "foodId": "food-day-5-meals-03",
-              "note": true
+              "title": "Final dinner in Perast",
+              "fixedAt": "19:45",
+              "text": "Dinner in Perast. Group picks: Trattoria Rosmarino (not cheap but good; 60 stone steps up to a terrace over the bay; open 12:00–23:00, book ahead) and the Neapolitan-style pizzeria in the middle of town. Conte’s own restaurant is the closest option. Travelers note waterfront restaurants are tasty but very expensive.",
+              "dwellMin": 90,
+              "foodId": "food-day-5-meals-03"
             },
             {
               "type": "STAY",
@@ -1367,16 +1345,12 @@
               "https://maps.google.com/?q=42.3927226,18.7933741"
             ],
             [
-              "Njegoš Mausoleum parking",
-              "https://maps.google.com/?q=42.3986993,18.8395442"
+              "Njegoš Mausoleum lower parking",
+              "https://maps.google.com/?q=42.3970837,18.8432797"
             ],
             [
               "Njegoš Mausoleum",
               "https://maps.google.com/?q=42.4000721,18.8374606"
-            ],
-            [
-              "Voli · Cetinje",
-              "https://maps.google.com/?q=42.3925558,18.9260985"
             ],
             [
               "Pavlova Strana viewpoint",
@@ -1396,7 +1370,7 @@
             "Sightseeing",
             "Water"
           ],
-          "heading": "Kotor serpentine / Alpine Coaster / Njegoš Mausoleum / Pavlova Strana / Skadar boat",
+          "heading": "Kotor serpentine / Alpine Coaster and Falcon Fly / Njegoš Mausoleum / Pavlova Strana / Skadar boat",
           "food": {
             "meals": [
               {
@@ -1414,31 +1388,31 @@
                 "waypointId": "conte-hotel-perast"
               },
               {
-                "slot": "Lunch · on the road",
-                "name": "Voli · Cetinje",
-                "specialty": "Sandwiches, drinks and fruit for lunch on the road and dinner on the drive back.",
-                "hours": "Supermarkets are open on Monday; check the deli counter on arrival.",
-                "parking": "Supermarket parking on the route.",
-                "cash": "Card or cash.",
-                "durationMinutes": 25,
-                "plan": "Pekara Perper, about 300 m away, has burek and pastries.",
-                "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=42.3925558,18.9260985&travelmode=driving",
-                "sourceUrl": "https://www.openstreetmap.org/search?query=Voli%20Cetinje",
+                "slot": "Lunch · Lovćen",
+                "name": "Café · Njegoš Mausoleum",
+                "specialty": "Sandwiches, coffee, raspberries and a cookie, eaten on the drive.",
+                "hours": "Bought around 13:15.",
+                "parking": "Mausoleum parking.",
+                "cash": "About €28 in cash.",
+                "durationMinutes": 15,
+                "plan": "Cheap for a tourist spot.",
+                "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=42.4000721,18.8374606&travelmode=driving",
                 "id": "food-day-5-meals-02",
-                "waypointId": "voli-cetinje"
+                "waypointId": "njegos-mausoleum"
               },
               {
-                "slot": "Dinner · on the drive",
-                "name": "Voli · Cetinje",
-                "specialty": "Food bought in Cetinje, eaten on the drive or at the hotel.",
-                "hours": "No dinner time is reserved.",
-                "parking": "Not needed.",
-                "cash": "Not needed.",
-                "plan": "Buy enough at Voli for two meals.",
-                "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=42.3925558,18.9260985&travelmode=driving",
-                "sourceUrl": "https://www.openstreetmap.org/search?query=Voli%20Cetinje",
+                "slot": "Dinner · Perast",
+                "name": "Trattoria Rosmarino · Perast",
+                "specialty": "Seafood and Italian on a terrace above the bay; group pick, not cheap but good.",
+                "hours": "Daily 12:00–23:00; book ahead.",
+                "parking": "Walk from Conte; about 60 stone steps up.",
+                "cash": "Ask.",
+                "durationMinutes": 90,
+                "plan": "Alternatives from the group: the Neapolitan-style pizzeria in the middle of Perast. Conte’s restaurant is the closest.",
+                "mapUrl": "https://maps.google.com/?q=Trattoria%20Rosmarino%20Perast",
+                "sourceUrl": "https://www.rosmarinoperast.com/",
                 "id": "food-day-5-meals-03",
-                "waypointId": "voli-cetinje"
+                "waypointId": "conte-hotel-perast"
               }
             ],
             "coffee": [
@@ -1906,11 +1880,11 @@
       "day": 5,
       "costs": {
         "fuel": [25, 45],
-        "parks": [80, 110],
-        "food": [40, 80]
+        "parks": [130, 150],
+        "food": [100, 160]
       },
       "onTheSpot": [
-        "Alpine Coaster €12 per ride per person; Lovćen park €4/person, mausoleum €8/person, parking €2.",
+        "Alpine Coaster €12 and Falcon Fly €15 per person; Lovćen park €4/person, mausoleum €8/person, parking €2.",
         "DARKO Boat €35 for two for one hour, including national-park entry; Sozina toll €2.50.",
         "Conte hotel parking €25 per 24 hours at reception."
       ]
