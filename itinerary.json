@@ -18,7 +18,7 @@
           "morning": [
             {
               "type": "LOGISTICS",
-              "text": "Confirmed EL AL flight LY5467: depart TLV at 11:50 and arrive TIV at 13:50 on Oct 1 (PNR 5682367).",
+              "text": "Confirmed EL AL flight LY5467: depart TLV at 11:50 and arrive TIV at 13:50 on Oct 1 (travel-agency booking 5682367).",
               "id": "day-1-morning-01",
               "title": "Land at Tivat (LY5467)",
               "fixedAt": "13:50",
@@ -1530,7 +1530,7 @@
             },
             {
               "type": "LOGISTICS",
-              "text": "Confirmed EL AL flight LY5468: depart TIV at 14:55 and arrive TLV at 18:45 on Oct 6 (booking 5682368). Baggage per passenger: 23 kg checked, 8 kg trolley and a 3 kg hand item; no meal. EL AL 114 tickets allow online check-in, seat choice and fast bag drop.",
+              "text": "Confirmed EL AL flight LY5468: depart TIV at 14:55 and arrive TLV at 18:45 on Oct 6 (travel-agency booking 5682368, not the EL AL booking code). Baggage per passenger: 23 kg checked, 8 kg trolley and a 3 kg hand item; no meal. EL AL 114 tickets allow online check-in, seat choice and fast bag drop; check in with the ticket number and surname.",
               "id": "day-6-afternoon-02",
               "note": true
             },

@@ -93,7 +93,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 
 ### Morning
 
-- **13:50–14:30 · LOGISTICS · Land at Tivat (LY5467)** — Confirmed EL AL flight LY5467: depart TLV at 11:50 and arrive TIV at 13:50 on Oct 1 (PNR 5682367).
+- **13:50–14:30 · LOGISTICS · Land at Tivat (LY5467)** — Confirmed EL AL flight LY5467: depart TLV at 11:50 and arrive TIV at 13:50 on Oct 1 (travel-agency booking 5682367).
   - **Fixed time:** 13:50
   - **Time on site:** 40 min
   - **CAUTION:** Landing at 13:50 leaves only 40 minutes before the 14:30 pickup. Go directly to the Arrivals desk and call Europcar at +382 20 653141 if delayed.
@@ -626,7 +626,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
   - **Deadline:** 11:55
   - **Time on site:** 15 min
   - **Food stop:** Tivat Airport café / terminal food (details under Food & provisions for this day)
-  - **Note (LOGISTICS):** Confirmed EL AL flight LY5468: depart TIV at 14:55 and arrive TLV at 18:45 on Oct 6 (booking 5682368). Baggage per passenger: 23 kg checked, 8 kg trolley and a 3 kg hand item; no meal. EL AL 114 tickets allow online check-in, seat choice and fast bag drop.
+  - **Note (LOGISTICS):** Confirmed EL AL flight LY5468: depart TIV at 14:55 and arrive TLV at 18:45 on Oct 6 (travel-agency booking 5682368, not the EL AL booking code). Baggage per passenger: 23 kg checked, 8 kg trolley and a 3 kg hand item; no meal. EL AL 114 tickets allow online check-in, seat choice and fast bag drop; check in with the ticket number and surname.
   - **CAUTION:** Do not gamble on rental inspection queues or airport procedures.
 
 ### Food & provisions
