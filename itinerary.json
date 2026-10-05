@@ -1481,21 +1481,21 @@
           "morning": [
             {
               "type": "EAT",
-              "text": "Have breakfast at 08:30.",
+              "text": "Relaxed breakfast at Conte from about 08:30, then the hotel pool until check-out at about 10:45.",
               "id": "day-6-morning-01",
               "title": "Breakfast at Conte",
-              "dwellMin": 60,
+              "dwellMin": 135,
               "foodId": "food-day-6-meals-02"
             },
             {
               "type": "LOGISTICS",
-              "text": "Leave Perast by 09:30 as a conservative planning target; confirm live routing.",
+              "text": "Check out and leave Perast by 10:45 to keep the 12:15 terminal target; leaving at 11:00 reaches the terminal about 12:25. The car is parked free at a legal roadside spot, not in the hotel lot; ask reception about the electric luggage transfer.",
               "id": "day-6-morning-02",
               "title": "Depart Perast"
             },
             {
               "type": "DRIVE",
-              "text": "Take the direct road to TIV; do not detour for a last viewpoint.",
+              "text": "Take the direct road to TIV (about 31 minutes, 38 with buffer, OSRM 2026-10-05) and refuel on the way; no detour to Kotor for coffee.",
               "id": "day-6-morning-03",
               "title": "Drive Perast to Tivat Airport",
               "leg": {
@@ -1590,19 +1590,7 @@
                 "waypointId": "conte-hotel-perast"
               }
             ],
-            "coffee": [
-              {
-                "slot": "Morning",
-                "name": "Small Talks · Kotor",
-                "why": "Specialty espresso/pour-over before the airport run.",
-                "hours": "Daily 08:00–22:00 published; verify opening time",
-                "parking": "Kotor is on the M-1 on the way to Tivat; park at signed Old Town parking and keep the 13:00 rental return",
-                "mapUrl": "https://maps.google.com/?q=Small%20Talks%20%C2%B7%20Kotor%20Montenegro",
-                "sourceUrl": "https://www.smalltalks.me/",
-                "id": "food-day-6-coffee-01",
-                "waypointId": "small-talks-kotor"
-              }
-            ],
+            "coffee": [],
             "supermarkets": []
           },
           "communityPicks": [

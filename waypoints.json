@@ -833,9 +833,7 @@
       "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=Small%20Talks%20%C2%B7%20Kotor%2C%20Montenegro&travelmode=driving",
       "cash": "Ask",
       "days": {
-        "primary": [
-          6
-        ]
+        "primary": []
       },
       "aliases": [],
       "precision": "OpenStreetMap cafe coordinate"
