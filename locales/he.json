@@ -489,7 +489,6 @@
     "Runolist Chalet · Durmitor · Perast": "Runolist Chalet · Durmitor · Perast",
     "Thu · Oct 1": "יום ה׳ · 1 באוק׳",
     "North · Tivat → Žabljak": "צפון · Tivat → Žabljak",
-    "Confirmed EL AL flight LY5467: depart TLV at 11:50 and arrive TIV at 13:50 on Oct 1 (PNR 5682367).": "טיסת EL AL מאושרת LY5467: המראה מ-TLV ב-11:50 ונחיתה ב-TIV ב-13:50 ב-1 באוק׳ (PNR 5682367).",
     "Land at Tivat (LY5467)": "נחיתה ב-Tivat (LY5467)",
     "Landing at 13:50 leaves only 40 minutes before the 14:30 pickup.": "נחיתה ב-13:50 משאירה רק 40 דקות עד האיסוף ב-14:30.",
     "Go directly to the Arrivals desk and call Europcar at +382 20 653141 if delayed.": "לכו ישר לדלפק ה-Arrivals, ואם יש עיכוב התקשרו ל-Europcar ב-+382 20 653141.",
@@ -1074,10 +1073,11 @@
     "Relaxed breakfast at Conte from about 08:30, then the hotel pool until check-out at about 10:15.": "ארוחת בוקר רגועה ב-Conte מבערך 08:30, ואחר כך הבריכה של המלון עד הצ׳ק-אאוט בסביבות 10:15.",
     "Check out and leave Perast by 10:15: the ticket requires check-in at the counter 3 hours before the 14:55 departure, so by 11:55.": "עושים צ׳ק-אאוט ויוצאים מ-Perast עד 10:15: לפי הכרטיס צריך להתייצב בדלפק 3 שעות לפני ההמראה ב-14:55, כלומר עד 11:55.",
     "Walk to the terminal and check in at the EL AL counter by 11:55, 3 hours before departure as the ticket requires.": "הולכים לטרמינל ומתייצבים בדלפק של EL AL עד 11:55, 3 שעות לפני ההמראה, כפי שהכרטיס דורש.",
-    "Confirmed EL AL flight LY5468: depart TIV at 14:55 and arrive TLV at 18:45 on Oct 6 (booking 5682368).": "טיסת EL AL מאושרת LY5468: המראה מ-TIV ב-14:55 ונחיתה ב-TLV ב-18:45 ב-6 באוק׳ (הזמנה 5682368).",
     "Baggage per passenger: 23 kg checked, 8 kg trolley and a 3 kg hand item; no meal.": "כבודה לנוסע: 23 ק״ג לבטן המטוס, טרולי 8 ק״ג ופריט יד 3 ק״ג; בלי ארוחה.",
-    "EL AL 114 tickets allow online check-in, seat choice and fast bag drop.": "כרטיסי EL AL שמתחילים ב-114 מאפשרים צ׳ק-אין מקוון, בחירת מושב ומסירת מזוודות מהירה.",
-    "Do not add a pre-return detour; counter check-in by 11:55.": "בלי עיקופים לפני החזרת הרכב; התייצבות בדלפק עד 11:55."
+    "Do not add a pre-return detour; counter check-in by 11:55.": "בלי עיקופים לפני החזרת הרכב; התייצבות בדלפק עד 11:55.",
+    "Confirmed EL AL flight LY5468: depart TIV at 14:55 and arrive TLV at 18:45 on Oct 6 (travel-agency booking 5682368, not the EL AL booking code).": "טיסת EL AL מאושרת LY5468: המראה מ-TIV ב-14:55 ונחיתה ב-TLV ב-18:45 ב-6 באוק׳ (מספר הזמנה בסוכנות 5682368, לא קוד ההזמנה של EL AL).",
+    "EL AL 114 tickets allow online check-in, seat choice and fast bag drop; check in with the ticket number and surname.": "כרטיסי EL AL שמתחילים ב-114 מאפשרים צ׳ק-אין מקוון, בחירת מושב ומסירת מזוודות מהירה; עושים צ׳ק-אין עם מספר הכרטיס ושם המשפחה.",
+    "Confirmed EL AL flight LY5467: depart TLV at 11:50 and arrive TIV at 13:50 on Oct 1 (travel-agency booking 5682367).": "טיסת EL AL מאושרת LY5467: המראה מ-TLV ב-11:50 ונחיתה ב-TIV ב-13:50 ב-1 באוק׳ (מספר הזמנה בסוכנות 5682367)."
   },
   "aliases": {
     "tivat-airport": [
