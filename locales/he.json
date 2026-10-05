@@ -624,9 +624,7 @@
     "Europcar return is booked for 13:00 at Tivat Airport (voucher 4H419663).": "החזרת Europcar הוזמנה ל-13:00 בשדה התעופה Tivat (שובר 4H419663).",
     "Return full-to-full: refuel within 5 km of the drop-off point, keep the fuel receipt, photograph fuel/odometer and request a closed return contract.": "החזרה מלא-למלא: תדלקו ברדיוס 5 km מנקודת ההחזרה, שמרו את קבלת הדלק, צלמו דלק/מד קילומטראז׳ ובקשו חוזה החזרה סגור.",
     "Return the rental car at Tivat": "החזרת הרכב השכור ב-Tivat",
-    "Walk to the terminal and be inside by 12:15 for the required counter check-in.": "לכו ברגל לטרמינל ותהיו בפנים עד 12:15 לצ׳ק-אין הנדרש בדלפק.",
     "Terminal check-in and airport lunch": "צ׳ק-אין בטרמינל וארוחת צהריים בשדה",
-    "Planning estimate: flight departure is 14:55; flight number and ticket confirmation were not supplied.": "הערכת תכנון: הטיסה יוצאת ב-14:55; מספר הטיסה ואישור הכרטיס לא סופקו.",
     "Do not gamble on rental inspection queues or airport procedures.": "אל תהמרו על תורים לבדיקת הרכב או על הליכי שדה התעופה.",
     "Check out of Conte by 11:00.": "תעשו צ׳ק-אאוט מ-Conte עד 11:00.",
     "Europcar voucher 4H419663 requires airport return at 13:00; refuel within 5 km and retain receipt.": "שובר Europcar 4H419663 דורש החזרה בשדה התעופה ב-13:00; תדלקו ברדיוס 5 km ושמרו את הקבלה.",
@@ -640,7 +638,6 @@
     "Terminal vendor hours vary; verify locally": "שעות הדוכנים בטרמינל משתנות; אשרו במקום",
     "Airport car-return/terminal parking only": "חניית החזרת רכב/טרמינל של שדה התעופה בלבד",
     "Payment methods vary": "אמצעי התשלום משתנים",
-    "Do not add a pre-return detour; terminal by 12:15.": "בלי עקיפה לפני ההחזרה; בטרמינל עד 12:15.",
     "Breakfast · Conte included": "ארוחת בוקר · Conte כלולה",
     "Breakfast included in the confirmed Conte booking; published service 08:00–10:30.": "ארוחת בוקר כלולה בהזמנה המאושרת ב-Conte; שירות מפורסם 08:00–10:30.",
     "Published 08:00–10:30; verify on arrival.": "מפורסם 08:00–10:30; אשרו בהגעה.",
@@ -1073,9 +1070,14 @@
     "Stop about 20 minutes at the Pavlova Strana viewpoint over the Crnojević river bend and Lake Skadar.": "עוצרים כ-20 דקות בתצפית Pavlova Strana מעל העיקול של נהר Crnojević ואגם Skadar.",
     "Oct 5: Alpine Coaster €12 and Falcon Fly €15 per person, Lovćen park €4/person, mausoleum €8/person, parking €2, DARKO Boat €35 for two (includes Skadar national-park entry) and another €25 for hotel parking.": "5 באוק׳: Alpine Coaster €12 ו-Falcon Fly €15 לאדם, פארק Lovćen €4 לאדם, המאוזוליאום €8 לאדם, חניה €2, DARKO Boat €35 לשניים (כולל כניסה לפארק הלאומי Skadar) ועוד €25 לחניון המלון.",
     "Take the direct road to TIV (about 31 minutes, 38 with buffer, OSRM 2026-10-05) and refuel on the way; no detour to Kotor for coffee.": "נוסעים בדרך הישירה ל-TIV (כ-31 דקות, 38 עם תוספת, OSRM 2026-10-05) ומתדלקים בדרך; בלי עיקוף לקפה ב-Kotor.",
-    "Check out and leave Perast by 10:45 to keep the 12:15 terminal target; leaving at 11:00 reaches the terminal about 12:25.": "עושים צ׳ק-אאוט ויוצאים מ-Perast עד 10:45 כדי לעמוד ביעד של 12:15 בטרמינל; יציאה ב-11:00 מגיעה לטרמינל בערך ב-12:25.",
     "The car is parked free at a legal roadside spot, not in the hotel lot; ask reception about the electric luggage transfer.": "הרכב חונה בחינם בצד הדרך במקום מותר, לא בחניון המלון; שאלו בקבלה על ההסעה החשמלית עם המזוודות.",
-    "Relaxed breakfast at Conte from about 08:30, then the hotel pool until check-out at about 10:45.": "ארוחת בוקר רגועה ב-Conte מבערך 08:30, ואחר כך הבריכה של המלון עד הצ׳ק-אאוט בסביבות 10:45."
+    "Relaxed breakfast at Conte from about 08:30, then the hotel pool until check-out at about 10:15.": "ארוחת בוקר רגועה ב-Conte מבערך 08:30, ואחר כך הבריכה של המלון עד הצ׳ק-אאוט בסביבות 10:15.",
+    "Check out and leave Perast by 10:15: the ticket requires check-in at the counter 3 hours before the 14:55 departure, so by 11:55.": "עושים צ׳ק-אאוט ויוצאים מ-Perast עד 10:15: לפי הכרטיס צריך להתייצב בדלפק 3 שעות לפני ההמראה ב-14:55, כלומר עד 11:55.",
+    "Walk to the terminal and check in at the EL AL counter by 11:55, 3 hours before departure as the ticket requires.": "הולכים לטרמינל ומתייצבים בדלפק של EL AL עד 11:55, 3 שעות לפני ההמראה, כפי שהכרטיס דורש.",
+    "Confirmed EL AL flight LY5468: depart TIV at 14:55 and arrive TLV at 18:45 on Oct 6 (booking 5682368).": "טיסת EL AL מאושרת LY5468: המראה מ-TIV ב-14:55 ונחיתה ב-TLV ב-18:45 ב-6 באוק׳ (הזמנה 5682368).",
+    "Baggage per passenger: 23 kg checked, 8 kg trolley and a 3 kg hand item; no meal.": "כבודה לנוסע: 23 ק״ג לבטן המטוס, טרולי 8 ק״ג ופריט יד 3 ק״ג; בלי ארוחה.",
+    "EL AL 114 tickets allow online check-in, seat choice and fast bag drop.": "כרטיסי EL AL שמתחילים ב-114 מאפשרים צ׳ק-אין מקוון, בחירת מושב ומסירת מזוודות מהירה.",
+    "Do not add a pre-return detour; counter check-in by 11:55.": "בלי עיקופים לפני החזרת הרכב; התייצבות בדלפק עד 11:55."
   },
   "aliases": {
     "tivat-airport": [
