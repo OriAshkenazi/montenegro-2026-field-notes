@@ -972,7 +972,7 @@
             {
               "type": "LOGISTICS",
               "id": "day-4-evening-02",
-              "text": "Keep the car in the hotel parking overnight. Breakfast at Conte is from 08:00 and the Oct 5 boat is confirmed for 15:30.",
+              "text": "Keep the car in the hotel parking overnight. Breakfast at Conte is from 08:00 and the Oct 5 boat is confirmed (later moved to 16:00 by the operator).",
               "note": true
             }
           ],
@@ -1220,7 +1220,7 @@
               "type": "SEE",
               "id": "day-5-morning-07",
               "title": "Njegoš Mausoleum and summit view",
-              "text": "From the upper parking walk about 450 m, including 461 steps through a covered tunnel (10–15 minutes up). Lovćen park entry €4/person, mausoleum €8/person, parking €2. Do not miss the round viewing platform behind the mausoleum. If the upper lot is full, use the lower lot about 400 m down the road.",
+              "text": "From the lower parking walk up the access road to the stairs, then 461 steps through a covered tunnel (10–15 minutes up). Lovćen park entry €4/person, mausoleum €8/person, parking €2. Do not miss the round viewing platform behind the mausoleum. The upper lot at the road end is about 400 m closer.",
               "dwellMin": 60,
               "waypointId": "njegos-mausoleum",
               "fixedAt": "12:30"
@@ -1252,7 +1252,7 @@
               "type": "SEE",
               "id": "day-5-afternoon-04",
               "title": "Pavlova Strana viewpoint",
-              "text": "Stop about 15 minutes at the Pavlova Strana viewpoint over the Crnojević river bend and Lake Skadar.",
+              "text": "Stop about 20 minutes at the Pavlova Strana viewpoint over the Crnojević river bend and Lake Skadar.",
               "dwellMin": 20,
               "waypointId": "pavlova-strana-viewpoint"
             },
@@ -1284,7 +1284,7 @@
             {
               "type": "DRIVE",
               "id": "day-5-afternoon-07",
-              "text": "Return via Virpazar, the Sozina tunnel and Budva to the hotel parking; the €2.50 Sozina toll applies (recheck the tariff). Sunset is at 18:21, so the last part is after dark on main coastal roads.",
+              "text": "Return via Virpazar, the Sozina tunnel and Budva to the hotel parking; the €2.50 Sozina toll applies (recheck the tariff). Sunset is at 18:21, so roughly the second half of the drive is after dark, on main coastal roads.",
               "title": "Drive back to Perast via Sozina",
               "leg": {
                 "from": "darko-boat-vranjina",
@@ -1329,8 +1329,8 @@
               "note": true
             }
           ],
-          "parking": "Conte’s hotel parking is at the Kotor-side entrance to Perast: €25 per 24 hours, paid at reception; call reception for the electric transfer with luggage. At the Alpine Coaster park free at the upper station. At the mausoleum use the upper lot at the road end (lower lot as fallback). DARKO Boat includes parking at Vranjina. Never leave valuables visible.",
-          "cash": "Alpine Coaster €12 per ride per person; Lovćen park €4/person, mausoleum €8/person, parking €2. DARKO Boat €35 for two for one hour, including national-park entry. Sozina toll €2.50. Carry cash and a card.",
+          "parking": "Conte’s hotel parking is at the Kotor-side entrance to Perast: €25 per 24 hours, paid at reception; call reception for the electric transfer with luggage. At the Alpine Coaster park free at the upper station. At the mausoleum the travellers parked on the access road at the lower lot. DARKO Boat includes parking at Vranjina. Never leave valuables visible.",
+          "cash": "Alpine Coaster €12 and Falcon Fly €15 per person; Lovćen park €4/person, mausoleum €8/person, parking €2; lunch at the mausoleum café about €28 in cash. DARKO Boat €35 for two for one hour, including national-park entry. Sozina toll €2.50. Carry cash and a card.",
           "stops": [
             [
               "Conte Hotel & Restaurant",
@@ -1389,7 +1389,7 @@
               },
               {
                 "slot": "Lunch · Lovćen",
-                "name": "Café · Njegoš Mausoleum",
+                "name": "Lunch · mausoleum café",
                 "specialty": "Sandwiches, coffee, raspberries and a cookie, eaten on the drive.",
                 "hours": "Bought around 13:15.",
                 "parking": "Mausoleum parking.",
@@ -1421,7 +1421,7 @@
                 "name": "Café · Njegoš Mausoleum",
                 "why": "Coffee stop at the summit café; the Vladika restaurant is just below it.",
                 "hours": "Check on arrival.",
-                "parking": "Mausoleum upper parking.",
+                "parking": "Mausoleum parking on the access road.",
                 "cash": "Ask.",
                 "durationMinutes": 15,
                 "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=42.4000721,18.8374606&travelmode=driving",
@@ -1771,7 +1771,7 @@
       "min": 270,
       "max": 470,
       "summary": "Admissions for two, Alpine Coaster, Lovćen and mausoleum, Skadar boat and hotel parking; walls and spa optional.",
-      "note": "Oct 4: Conte hotel parking €25 per 24 hours. Oct 5: Alpine Coaster €12 per ride per person, Lovćen park €4/person, mausoleum €8/person, parking €2, DARKO Boat €35 for two (includes Skadar national-park entry) and another €25 for hotel parking. Kotor walls and spa remain optional."
+      "note": "Oct 4: Conte hotel parking €25 per 24 hours. Oct 5: Alpine Coaster €12 and Falcon Fly €15 per person, Lovćen park €4/person, mausoleum €8/person, parking €2, DARKO Boat €35 for two (includes Skadar national-park entry) and another €25 for hotel parking. Kotor walls and spa remain optional."
     },
     {
       "id": "food",

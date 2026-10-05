@@ -432,7 +432,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - **19:28–19:53 · DRIVE · Drive back to Perast** — Drive back along the Bay to Perast, about 30 minutes on the coastal road.
   - **Drive time:** 21 min nominal / 25 min adjusted (source OSRM, checked 2026-10-04)
   - **Leg:** Kotor Old Town parking → Conte hotel parking · Perast east entrance
-  - **Note (LOGISTICS):** Keep the car in the hotel parking overnight. Breakfast at Conte is from 08:00 and the Oct 5 boat is confirmed for 15:30.
+  - **Note (LOGISTICS):** Keep the car in the hotel parking overnight. Breakfast at Conte is from 08:00 and the Oct 5 boat is confirmed (later moved to 16:00 by the operator).
 
 ### Food & provisions
 
@@ -509,7 +509,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - **12:00–12:10 · DRIVE · Drive to the mausoleum lower parking** — Continue about 6 km toward the mausoleum and park on the access road; the travellers parked low, well below the entrance.
   - **Drive time:** 8 min nominal / 10 min adjusted (source OSRM, checked 2026-10-05)
   - **Leg:** Kotor Alpine Coaster · Kuk → Njegoš Mausoleum lower parking
-- **12:30–13:30 · SEE · Njegoš Mausoleum and summit view** — From the upper parking walk about 450 m, including 461 steps through a covered tunnel (10–15 minutes up). Lovćen park entry €4/person, mausoleum €8/person, parking €2. Do not miss the round viewing platform behind the mausoleum. If the upper lot is full, use the lower lot about 400 m down the road.
+- **12:30–13:30 · SEE · Njegoš Mausoleum and summit view** — From the lower parking walk up the access road to the stairs, then 461 steps through a covered tunnel (10–15 minutes up). Lovćen park entry €4/person, mausoleum €8/person, parking €2. Do not miss the round viewing platform behind the mausoleum. The upper lot at the road end is about 400 m closer.
   - **Fixed time:** 12:30
   - **Time on site:** 60 min
   - **waypointId:** njegos-mausoleum
@@ -520,7 +520,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - **13:30–14:33 · DRIVE · Drive to Pavlova Strana via Cetinje** — Drive through Cetinje without stopping; lunch was bought at the mausoleum café (sandwiches, coffee, raspberries and a cookie, about €28 in cash).
   - **Drive time:** 53 min nominal / 63 min adjusted (source OSRM, checked 2026-10-05)
   - **Leg:** Njegoš Mausoleum lower parking → Pavlova Strana viewpoint
-- **14:33–14:53 · SEE · Pavlova Strana viewpoint** — Stop about 15 minutes at the Pavlova Strana viewpoint over the Crnojević river bend and Lake Skadar.
+- **14:33–14:53 · SEE · Pavlova Strana viewpoint** — Stop about 20 minutes at the Pavlova Strana viewpoint over the Crnojević river bend and Lake Skadar.
   - **Time on site:** 20 min
   - **waypointId:** pavlova-strana-viewpoint
 - **14:53–15:48 · DRIVE · Drive to Vranjina** — Drive down to the lake and across to Vranjina; navigate with the DARKO Boat listing link.
@@ -530,7 +530,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
   - **Fixed time:** 16:00
   - **Time on site:** 60 min
   - **waypointId:** darko-boat-vranjina
-- **17:00–19:14 · DRIVE · Drive back to Perast via Sozina** — Return via Virpazar, the Sozina tunnel and Budva to the hotel parking; the €2.50 Sozina toll applies (recheck the tariff). Sunset is at 18:21, so the last part is after dark on main coastal roads.
+- **17:00–19:14 · DRIVE · Drive back to Perast via Sozina** — Return via Virpazar, the Sozina tunnel and Budva to the hotel parking; the €2.50 Sozina toll applies (recheck the tariff). Sunset is at 18:21, so roughly the second half of the drive is after dark, on main coastal roads.
   - **Drive time:** 112 min nominal / 134 min adjusted (source OSRM, checked 2026-10-04)
   - **Leg:** DARKO Boat · Vranjina → Conte hotel parking · Perast east entrance via Virpazar
   - **CAUTION:** The travellers waived the 17:30 driving cutoff for this day. Expect the hotel parking around 19:15 and Conte around 19:30.
@@ -556,7 +556,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
   - **Plan:** Eat by 08:40, then walk to the car.
   - **Map:** [maps.google.com](https://maps.google.com/?q=Conte%20Hotel%20%26%20Restaurant%2C%20Perast%2C%20Montenegro)
   - **Source:** [hotelconte.me](https://hotelconte.me/our-hotel)
-- **Lunch · Lovćen · Café · Njegoš Mausoleum** — Sandwiches, coffee, raspberries and a cookie, eaten on the drive.
+- **Lunch · Lovćen · Lunch · mausoleum café** — Sandwiches, coffee, raspberries and a cookie, eaten on the drive.
   - **Hours:** Bought around 13:15.
   - **Parking:** Mausoleum parking.
   - **Payment:** About €28 in cash.
@@ -576,15 +576,15 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 
 - **Optional · Lovćen · Café · Njegoš Mausoleum** — Coffee stop at the summit café; the Vladika restaurant is just below it.
   - **Hours:** Check on arrival.
-  - **Parking:** Mausoleum upper parking.
+  - **Parking:** Mausoleum parking on the access road.
   - **Payment:** Ask.
   - **Time planned:** 15 min
   - **Map:** [google.com](https://www.google.com/maps/dir/?api=1&destination=42.4000721,18.8374606&travelmode=driving)
 
 ### Parking and cash
 
-- **Parking:** Conte’s hotel parking is at the Kotor-side entrance to Perast: €25 per 24 hours, paid at reception; call reception for the electric transfer with luggage. At the Alpine Coaster park free at the upper station. At the mausoleum use the upper lot at the road end (lower lot as fallback). DARKO Boat includes parking at Vranjina. Never leave valuables visible.
-- **Cash:** Alpine Coaster €12 per ride per person; Lovćen park €4/person, mausoleum €8/person, parking €2. DARKO Boat €35 for two for one hour, including national-park entry. Sozina toll €2.50. Carry cash and a card.
+- **Parking:** Conte’s hotel parking is at the Kotor-side entrance to Perast: €25 per 24 hours, paid at reception; call reception for the electric transfer with luggage. At the Alpine Coaster park free at the upper station. At the mausoleum the travellers parked on the access road at the lower lot. DARKO Boat includes parking at Vranjina. Never leave valuables visible.
+- **Cash:** Alpine Coaster €12 and Falcon Fly €15 per person; Lovćen park €4/person, mausoleum €8/person, parking €2; lunch at the mausoleum café about €28 in cash. DARKO Boat €35 for two for one hour, including national-park entry. Sozina toll €2.50. Carry cash and a card.
 
 ### Route and map links
 
@@ -712,7 +712,7 @@ Two adults · five nights · confirmed payments and estimates. What’s already 
   - **Details:** Planning range includes Oct 4 Perast–Kotor out-and-back and Oct 5 Perast–Kotor–Lovćen/Kuk–Virpazar–Perast loop, plus existing transfers and northern outings. Add the official €2.50 Category II Sozina toll for the return; recheck tariff and fuel price before travel. Mileage depends on live routing; no ferry/A1 toll planned.
 - **Parks + boat + walls + spa** — €270–€470 · estimate
   - **Summary:** Admissions for two, Alpine Coaster, Lovćen and mausoleum, Skadar boat and hotel parking; walls and spa optional.
-  - **Details:** Oct 4: Conte hotel parking €25 per 24 hours. Oct 5: Alpine Coaster €12 per ride per person, Lovćen park €4/person, mausoleum €8/person, parking €2, DARKO Boat €35 for two (includes Skadar national-park entry) and another €25 for hotel parking. Kotor walls and spa remain optional.
+  - **Details:** Oct 4: Conte hotel parking €25 per 24 hours. Oct 5: Alpine Coaster €12 and Falcon Fly €15 per person, Lovćen park €4/person, mausoleum €8/person, parking €2, DARKO Boat €35 for two (includes Skadar national-park entry) and another €25 for hotel parking. Kotor walls and spa remain optional.
 - **Food & drink** — €450–€750 · estimate
   - **Summary:** Two people, including one winery or local tasting.
   - **Details:** €90–150 per couple per day, including one winery/local tasting allowance.
