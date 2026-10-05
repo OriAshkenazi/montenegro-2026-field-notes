@@ -949,11 +949,11 @@ All 134 places on the app’s map (waypoints file version 3). “Days” lists t
   - **Payment:** Ask
   - **Also called:** Pavlova Strana
   - **Pin precision:** Decoded from the Google Maps plus code 9375+33V the travellers shared.
-- **DARKO Boat · Vranjina** — Activity · 42.2741324, 19.1403839 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=DARKO%20Bout%2C%20Vranjina%2C%20Montenegro&travelmode=driving)
+- **DARKO Boat · Vranjina** — Activity · 42.2741324, 19.1403839 · [Google Maps](https://maps.app.goo.gl/VeXVS4RyrZDVpiiLA)
   - **Days:** 5
   - **Payment:** Ask
   - **Also called:** DARKO Boat; Darko
-  - **Pin precision:** Vranjina village pin; navigate with the Google Maps listing link (DARKO Bout, Vranjina) the travellers shared.
+  - **Pin precision:** Pin is only the Vranjina village point (exact coordinates could not be read from the shared link); the navigation link is the exact Google Maps listing the travellers received.
   - **Source:** [maps.app.goo.gl](https://maps.app.goo.gl/VeXVS4RyrZDVpiiLA)
 - **Trsa village pullout** — Viewpoint · 43.1692, 18.9831 · [Google Maps](https://www.google.com/maps/dir/?api=1&destination=Trsa%20village%20pullout%2C%20Montenegro&travelmode=driving)
   - **Days:** 2

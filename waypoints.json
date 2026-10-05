@@ -418,7 +418,7 @@
       "category": "Activity",
       "lat": 42.2741324,
       "lng": 19.1403839,
-      "googleUrl": "https://www.google.com/maps/dir/?api=1&destination=DARKO%20Bout%2C%20Vranjina%2C%20Montenegro&travelmode=driving",
+      "googleUrl": "https://maps.app.goo.gl/VeXVS4RyrZDVpiiLA",
       "sourceUrl": "https://maps.app.goo.gl/VeXVS4RyrZDVpiiLA",
       "cash": "Ask",
       "days": {
@@ -430,7 +430,7 @@
         "DARKO Boat",
         "Darko"
       ],
-      "precision": "Vranjina village pin; navigate with the Google Maps listing link (DARKO Bout, Vranjina) the travellers shared."
+      "precision": "Pin is only the Vranjina village point (exact coordinates could not be read from the shared link); the navigation link is the exact Google Maps listing the travellers received."
     },
     {
       "id": "trsa-village-pullout",
