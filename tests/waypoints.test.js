@@ -63,6 +63,17 @@ assert.ok(day5.food.meals.length >= 2 && day5.food.coffee.length, 'Oct 5 must in
 assert.ok(day5.afternoon.some(item => item.fixedAt === '16:00' && item.waypointId === 'darko-boat-vranjina') && day5.afternoon.some(item => /19:15/.test(item.text)), 'Oct 5 must keep the confirmed boat time and a return target');
 for (const id of ['njegos-mausoleum','kotor-cable-car-kuk','njegos-mausoleum-lower-parking','pavlova-strana-viewpoint','darko-boat-vranjina','conte-hotel-parking']) assert.ok(waypoints.some(point => point.id === id && point.days.primary.includes(5)), `${id}: missing Oct 5 map pin`);
 
+// 2026-10-05: a booked stop (segment with a fixed time) must never navigate by a text search or to a guessed point.
+// The DARKO Boat pin was swapped for a village point plus a name search instead of the operator's exact link, and the travellers lost time.
+for (const day of itinerary.routes.primary.days) for (const period of ['morning','afternoon','evening']) for (const seg of day[period] || []) {
+  if (!seg.fixedAt || !seg.waypointId) continue;
+  const point = waypoints.find(p => p.id === seg.waypointId);
+  assert.ok(point, `${seg.id}: booked stop has no waypoint`);
+  const textSearch = /destination=[^&]*[A-Za-z]{3}/.test(point.googleUrl) && !/destination=-?\d+\.\d+,-?\d+\.\d+/.test(point.googleUrl);
+  assert.ok(!textSearch, `${seg.id}: booked stop ${point.name} navigates by a name search; use exact coordinates or the user's own link`);
+  if (/village|approximate|could not/i.test(point.precision || '')) assert.ok(!point.googleUrl.includes('/maps/dir/'), `${seg.id}: booked stop ${point.name} has a guessed pin; navigation must use the user's exact link`);
+}
+
 const categories = new Set();
 for (const point of waypoints) {
   assert.ok(Number.isFinite(point.lat) && point.lat >= 41.5 && point.lat <= 43.7, point.name);
@@ -78,17 +89,17 @@ const app = fs.readFileSync('app.js', 'utf8');
 const sw = fs.readFileSync('sw.js', 'utf8');
 const css = fs.readFileSync('style.css', 'utf8');
 const html = fs.readFileSync('index.html', 'utf8');
-assert.ok(app.includes('waypoints.json?rev=2026-10-05c'));
+assert.ok(app.includes('waypoints.json?rev=2026-10-05d'));
 assert.ok(app.includes('iconSize:[18,22],iconAnchor:[9,21.7],popupAnchor:[0,-24]'), 'pin tip should align with the exact bottom point of the rotated marker');
 assert.ok(!app.includes('routeToggle'), 'separate fallback route control should be removed');
 // 2026-10-04: the drive line, segment text and timetable showed → in Hebrew; linkedLocations must flip it like bidi().
 assert.ok(/function linkedLocations\(text,plain\)\{if\(!plain&&getLang\(\)==='he'\)text=text\.replace\(\/→\/g,'←'\)/.test(app), 'Hebrew route arrows must point left in linked text');
 assert.ok(app.includes('data-plan-target'), 'map popup should link to a timeline target');
 assert.ok(html.includes('id="stayDirectory"'), 'confirmed stay quick reference should render');
-assert.ok(sw.includes('./waypoints.json?rev=2026-10-05c'));
-assert.ok(sw.includes('tile.openstreetmap.org') && sw.includes('./vendor/leaflet/leaflet.js?rev=2026-10-05c'));
+assert.ok(sw.includes('./waypoints.json?rev=2026-10-05d'));
+assert.ok(sw.includes('tile.openstreetmap.org') && sw.includes('./vendor/leaflet/leaflet.js?rev=2026-10-05d'));
 assert.ok(!sw.includes('unpkg.com') && !html.includes('unpkg.com'), 'Leaflet must be served from the app origin');
-assert.ok(sw.includes("const CACHE='mne-field-notes-v73'") && sw.includes("const VERSION='73'") && sw.includes('./weather.js?rev=2026-10-05c'));
+assert.ok(sw.includes("const CACHE='mne-field-notes-v74'") && sw.includes("const VERSION='74'") && sw.includes('./weather.js?rev=2026-10-05d'));
 assert.ok(html.includes('type="text/markdown"') && html.includes('trip.md'));
 assert.ok(!html.includes('data-pane="food"') && !html.includes('id="pane-food"'), 'food index tab should stay removed');
 assert.ok(html.includes('id="contactNumbers"') && app.includes("$('#contactNumbers')"), 'contacts card should render');
@@ -150,7 +161,7 @@ assert.ok(app.includes('tabs.getBoundingClientRect().height+bar.getBoundingClien
 assert.ok(css.includes('.day-title,.day-drive{min-width:0;overflow-wrap:anywhere}'));
 assert.ok(css.includes('body{margin:0;background:var(--surface-0)') && css.includes('main{max-width:1200px'));
 assert.ok(css.includes('body{padding-inline-start:env(safe-area-inset-left,0px);padding-inline-end:calc(var(--side-peek) + env(safe-area-inset-right,0px))'));
-assert.ok(html.includes('style.css?rev=2026-10-05c') && html.includes('app.js?rev=2026-10-05c') && html.includes('weather.js?rev=2026-10-05c'));
+assert.ok(html.includes('style.css?rev=2026-10-05d') && html.includes('app.js?rev=2026-10-05d') && html.includes('weather.js?rev=2026-10-05d'));
 assert.ok(html.includes('data-pane="weather"') && html.includes('id="pane-weather"'));
 assert.ok(html.includes('13 route hubs'), 'weather directory count must match the expanded route hubs');
 const weather = fs.readFileSync('weather.js', 'utf8');
