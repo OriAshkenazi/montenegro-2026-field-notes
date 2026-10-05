@@ -609,21 +609,20 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 
 ### Morning
 
-- **08:30–10:15 · EAT · Breakfast at Conte** — Relaxed breakfast at Conte from about 08:30, then the hotel pool until check-out at about 10:15.
-  - **Time on site:** 105 min
+- **08:30–11:00 · EAT · Breakfast at Conte** — Relaxed breakfast at Conte from about 08:30, then the hotel pool until check-out at 11:00.
+  - **Time on site:** 150 min
   - **Food stop:** Conte Hotel & Restaurant (details under Food & provisions for this day)
-- **10:15 · LOGISTICS · Depart Perast** — Check out and leave Perast by 10:15: the ticket requires check-in at the counter 3 hours before the 14:55 departure, so by 11:55. The car is parked free at a legal roadside spot, not in the hotel lot; ask reception about the electric luggage transfer.
-- **10:15–10:56 · DRIVE · Drive Perast to Tivat Airport** — Take the direct road to TIV (about 31 minutes, 38 with buffer, OSRM 2026-10-05) and refuel on the way; no detour to Kotor for coffee.
+- **11:00 · LOGISTICS · Depart Perast** — Check out and leave Perast at 11:00, the travellers' decision. The car is parked free at a legal roadside spot, not in the hotel lot; ask reception about the electric luggage transfer.
+- **11:00–11:41 · DRIVE · Drive Perast to Tivat Airport** — Take the direct road to TIV (about 31 minutes, 38 with buffer, OSRM 2026-10-05) and refuel on the way; no detour to Kotor for coffee.
   - **Drive time:** 34 min nominal / 41 min adjusted (source OSRM, checked 2026-09-29)
   - **Leg:** Conte hotel parking · Perast east entrance → TIV · Europcar rental return · 13:00
-- **10:56–11:26 · LOGISTICS · Return the rental car at Tivat** — Europcar return is booked for 13:00 at Tivat Airport (voucher 4H419663). Return full-to-full: refuel within 5 km of the drop-off point, keep the fuel receipt, photograph fuel/odometer and request a closed return contract.
+- **11:41–12:11 · LOGISTICS · Return the rental car at Tivat** — Europcar return is booked for 13:00 at Tivat Airport (voucher 4H419663). Return full-to-full: refuel within 5 km of the drop-off point, keep the fuel receipt, photograph fuel/odometer and request a closed return contract.
   - **Deadline:** 13:00
   - **Time on site:** 30 min
 
 ### Afternoon
 
-- **11:26–11:41 · LOGISTICS · Terminal check-in and airport lunch** — Walk to the terminal and check in at the EL AL counter by 11:55, 3 hours before departure as the ticket requires.
-  - **Deadline:** 11:55
+- **12:11–12:26 · LOGISTICS · Terminal check-in and airport lunch** — Walk to the terminal and check in at the EL AL counter, about 12:25; the ticket asks for check-in 3 hours before departure (11:55).
   - **Time on site:** 15 min
   - **Food stop:** Tivat Airport café / terminal food (details under Food & provisions for this day)
   - **Note (LOGISTICS):** Confirmed EL AL flight LY5468: depart TIV at 14:55 and arrive TLV at 18:45 on Oct 6 (travel-agency booking 5682368, not the EL AL booking code). Baggage per passenger: 23 kg checked, 8 kg trolley and a 3 kg hand item; no meal. Online check-in is not available from Tivat: check in with an agent at the EL AL counter, with passports and the e-tickets.
@@ -638,7 +637,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
   - **Parking:** Airport car-return/terminal parking only
   - **Payment:** Payment methods vary
   - **Time planned:** 35 min
-  - **Plan:** Do not add a pre-return detour; counter check-in by 11:55.
+  - **Plan:** Do not add a pre-return detour.
   - **Map:** [maps.google.com](https://maps.google.com/?q=Tivat%20Airport%20caf%C3%A9%20%2F%20terminal%20food%20Montenegro)
 - **Breakfast · Conte included · Conte Hotel & Restaurant** — Breakfast included in the confirmed Conte booking; published service 08:00–10:30.
   - **Hours:** Published 08:00–10:30; verify on arrival.

@@ -1481,15 +1481,15 @@
           "morning": [
             {
               "type": "EAT",
-              "text": "Relaxed breakfast at Conte from about 08:30, then the hotel pool until check-out at about 10:15.",
+              "text": "Relaxed breakfast at Conte from about 08:30, then the hotel pool until check-out at 11:00.",
               "id": "day-6-morning-01",
               "title": "Breakfast at Conte",
-              "dwellMin": 105,
+              "dwellMin": 150,
               "foodId": "food-day-6-meals-02"
             },
             {
               "type": "LOGISTICS",
-              "text": "Check out and leave Perast by 10:15: the ticket requires check-in at the counter 3 hours before the 14:55 departure, so by 11:55. The car is parked free at a legal roadside spot, not in the hotel lot; ask reception about the electric luggage transfer.",
+              "text": "Check out and leave Perast at 11:00, the travellers' decision. The car is parked free at a legal roadside spot, not in the hotel lot; ask reception about the electric luggage transfer.",
               "id": "day-6-morning-02",
               "title": "Depart Perast"
             },
@@ -1521,12 +1521,11 @@
           "afternoon": [
             {
               "type": "LOGISTICS",
-              "text": "Walk to the terminal and check in at the EL AL counter by 11:55, 3 hours before departure as the ticket requires.",
+              "text": "Walk to the terminal and check in at the EL AL counter, about 12:25; the ticket asks for check-in 3 hours before departure (11:55).",
               "id": "day-6-afternoon-01",
               "title": "Terminal check-in and airport lunch",
               "dwellMin": 15,
-              "foodId": "food-day-6-meals-01",
-              "dueBy": "11:55"
+              "foodId": "food-day-6-meals-01"
             },
             {
               "type": "LOGISTICS",
@@ -1569,7 +1568,7 @@
                 "parking": "Airport car-return/terminal parking only",
                 "cash": "Payment methods vary",
                 "durationMinutes": 35,
-                "plan": "Do not add a pre-return detour; counter check-in by 11:55.",
+                "plan": "Do not add a pre-return detour.",
                 "mapUrl": "https://maps.google.com/?q=Tivat%20Airport%20caf%C3%A9%20%2F%20terminal%20food%20Montenegro",
                 "sourceUrl": "",
                 "id": "food-day-6-meals-01",
