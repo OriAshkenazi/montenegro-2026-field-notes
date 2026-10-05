@@ -626,7 +626,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
   - **Deadline:** 11:55
   - **Time on site:** 15 min
   - **Food stop:** Tivat Airport café / terminal food (details under Food & provisions for this day)
-  - **Note (LOGISTICS):** Confirmed EL AL flight LY5468: depart TIV at 14:55 and arrive TLV at 18:45 on Oct 6 (travel-agency booking 5682368, not the EL AL booking code). Baggage per passenger: 23 kg checked, 8 kg trolley and a 3 kg hand item; no meal. EL AL 114 tickets allow online check-in, seat choice and fast bag drop; check in with the ticket number and surname.
+  - **Note (LOGISTICS):** Confirmed EL AL flight LY5468: depart TIV at 14:55 and arrive TLV at 18:45 on Oct 6 (travel-agency booking 5682368, not the EL AL booking code). Baggage per passenger: 23 kg checked, 8 kg trolley and a 3 kg hand item; no meal. Online check-in is not available from Tivat: check in with an agent at the EL AL counter, with passports and the e-tickets.
   - **CAUTION:** Do not gamble on rental inspection queues or airport procedures.
 
 ### Food & provisions
