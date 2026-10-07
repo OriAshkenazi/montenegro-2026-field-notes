@@ -1,10 +1,10 @@
-const CACHE='mne-field-notes-v81';
+const CACHE='mne-field-notes-v82';
 const TILE_CACHE='mne-map-tiles-v1';
 const STATIC_CACHE='mne-static-v1';
-const VERSION='81';
+const VERSION='82';
 // Fonts and icons never change, so they live in their own cache that survives deploys and is not downloaded again.
 const STATIC=['./fonts/plex-hebrew-400.woff2','./fonts/plex-hebrew-500.woff2','./fonts/plex-hebrew-700.woff2','./fonts/plex-latin-400.woff2','./fonts/plex-latin-500.woff2','./fonts/plex-latin-700.woff2','./fonts/plex-latin-ext-400.woff2','./fonts/plex-latin-ext-500.woff2','./fonts/plex-latin-ext-700.woff2','./icon.svg','./apple-touch-icon.png','./icon-192.png','./icon-512.png'];
-const SHELL=['./','./index.html','./boot.js?rev=2026-10-07b','./vendor/leaflet/leaflet.css?rev=2026-10-07b','./vendor/leaflet/leaflet.js?rev=2026-10-07b','./style.css?rev=2026-10-07b','./timetable.js?rev=2026-10-07b','./i18n.js?rev=2026-10-07b','./app.js?rev=2026-10-07b','./weather.js?rev=2026-10-07b','./phrasebook.js?rev=2026-10-07b','./itinerary.json?rev=2026-10-07b','./waypoints.json?rev=2026-10-07b','./locales/en.json?rev=2026-10-07b','./locales/he.json?rev=2026-10-07b','./manifest.webmanifest'].map(path=>`${path}${path.includes('?')?'&':'?'}v=${VERSION}`);
+const SHELL=['./','./index.html','./boot.js?rev=2026-10-07c','./vendor/leaflet/leaflet.css?rev=2026-10-07c','./vendor/leaflet/leaflet.js?rev=2026-10-07c','./style.css?rev=2026-10-07c','./timetable.js?rev=2026-10-07c','./i18n.js?rev=2026-10-07c','./app.js?rev=2026-10-07c','./weather.js?rev=2026-10-07c','./phrasebook.js?rev=2026-10-07c','./itinerary.json?rev=2026-10-07c','./waypoints.json?rev=2026-10-07c','./locales/en.json?rev=2026-10-07c','./locales/he.json?rev=2026-10-07c','./manifest.webmanifest'].map(path=>`${path}${path.includes('?')?'&':'?'}v=${VERSION}`);
 async function cacheStatic(){const cache=await caches.open(STATIC_CACHE);for(const path of STATIC){if(!(await cache.match(path)))await cache.add(path).catch(()=>{});}}
 self.addEventListener('install',event=>event.waitUntil(Promise.all([caches.open(CACHE).then(cache=>cache.addAll(SHELL)),cacheStatic()]).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE&&key!==TILE_CACHE&&key!==STATIC_CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));

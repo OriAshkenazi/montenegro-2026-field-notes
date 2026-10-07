@@ -12,7 +12,7 @@ let mapStatusKey='map.status.initial',connKey='conn.ready';
 const setMapStatus=k=>{mapStatusKey=k;const el=$('#mapStatus');if(el)el.textContent=t(k);};
 const setConn=k=>{connKey=k;const el=$('#connection');if(el)el.textContent=t(k);};
 const numLocale=()=>getLang()==='he'?'he-IL':'en-IL';
-Promise.all([fetch('./itinerary.json?rev=2026-10-07b').then(r=>r.json()),fetch('./waypoints.json?rev=2026-10-07b').then(r=>r.json()),i18nReady]).then(([data,points])=>{trip=data;waypointData=points.waypoints;applyStatic();setConn(connKey);setMapStatus(mapStatusKey);cashText();const startDay=tripDayToday();render(new Set([startDay]));if(startDay!==1||new Date().getMonth()===9)jumpToDay(startDay);afterFirstPaint(ensureMap);setDrawer($('#mapDrawer').dataset.state);}).catch(()=>Promise.resolve(i18nReady).then(()=>{try{applyStatic();}catch(e){}$('#days').innerHTML=`<p class="offline-note">${escapeHTML(tf('err.data','Trip data is not cached yet. Open this page online once, then reload offline.'))}</p>`;$('#mapStatus').textContent=tf('map.status.noIndex','Waypoint index unavailable. Reconnect once to save it for offline use.');}));
+Promise.all([fetch('./itinerary.json?rev=2026-10-07c').then(r=>r.json()),fetch('./waypoints.json?rev=2026-10-07c').then(r=>r.json()),i18nReady]).then(([data,points])=>{trip=data;waypointData=points.waypoints;applyStatic();setConn(connKey);setMapStatus(mapStatusKey);cashText();const startDay=tripDayToday();render(new Set([startDay]));if(startDay!==1||new Date().getMonth()===9)jumpToDay(startDay);afterFirstPaint(ensureMap);setDrawer($('#mapDrawer').dataset.state);}).catch(()=>Promise.resolve(i18nReady).then(()=>{try{applyStatic();}catch(e){}$('#days').innerHTML=`<p class="offline-note">${escapeHTML(tf('err.data','Trip data is not cached yet. Open this page online once, then reload offline.'))}</p>`;$('#mapStatus').textContent=tf('map.status.noIndex','Waypoint index unavailable. Reconnect once to save it for offline use.');}));
 
 function activeRoute() { return trip.routes.primary; }
 const segmentTypes = {
@@ -206,7 +206,7 @@ function popupHTML(p){const days=waypointDays(p),jumpDay=days.includes(Number(ac
 // Leaflet (~150 KB) loads only after the itinerary has painted, or at once when someone opens the map.
 let mapLoading=null;
 const afterFirstPaint=fn=>requestAnimationFrame(()=>setTimeout(()=>window.requestIdleCallback?requestIdleCallback(fn,{timeout:1500}):setTimeout(fn,150),0));
-function ensureMap(){if(!mapLoading)mapLoading=new Promise(resolve=>{if(window.L)return resolve();const script=document.createElement('script');script.src='vendor/leaflet/leaflet.js?rev=2026-10-07b';script.onload=script.onerror=()=>resolve();document.head.append(script);}).then(initializeMap);return mapLoading;}
+function ensureMap(){if(!mapLoading)mapLoading=new Promise(resolve=>{if(window.L)return resolve();const script=document.createElement('script');script.src='vendor/leaflet/leaflet.js?rev=2026-10-07c';script.onload=script.onerror=()=>resolve();document.head.append(script);}).then(initializeMap);return mapLoading;}
 function initializeMap(){if(!window.L){setMapStatus('map.status.lib');renderWaypointList();return;}
   map=L.map('mapCanvas',{zoomControl:true,scrollWheelZoom:false,preferCanvas:true}).setView([42.75,19.0],8);map.on('resize',syncPopupHeights);
   const tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap contributors',crossOrigin:true});tiles.addTo(map);
@@ -260,10 +260,11 @@ if('IntersectionObserver'in window){const fgSeen=new Set(),fgObserver=new Inters
 // Cross-links between tabs (e.g. the Field Guide cash line opens Budget).
 document.addEventListener('click',e=>{const go=e.target.closest('[data-goto]');if(go)document.querySelector(`.tab[data-pane="${go.dataset.goto}"]`)?.click();});
 
-// Packing list: defaults are keyed pack.<group>.<n> in the locales so they follow the language switch; once edited,
+// Packing list: defaults are keyed pack.<group>.v2.<n> in the locales so they follow the language switch; once edited,
 // the whole list lives in localStorage and edited or added entries keep the text as typed. Ticks are per device too.
-const packDefaults=[['big',18],['toiletries',11],['carry',11],['backpack',26]],packKey='mne-packing-v1',packListKey='mne-packing-list-v1';
-const packDefaultList=()=>packDefaults.map(([g,c])=>({id:g,items:Array.from({length:c},(_,i)=>({id:`${g}.${i+1}`}))}));
+// Lists saved before Oct 7, 2026 point at the first list's pack.<group>.<n> keys, so those stay in the locales unchanged.
+const packDefaults=[['big',20],['toiletries',15],['carry',9],['backpack',27],['shop',5]],packKey='mne-packing-v1',packListKey='mne-packing-list-v1';
+const packDefaultList=()=>packDefaults.map(([g,c])=>({id:g,items:Array.from({length:c},(_,i)=>({id:`${g}.v2.${i+1}`}))}));
 let packed=new Set(),packList=null;try{packed=new Set(JSON.parse(localStorage.getItem(packKey)||'[]'));packList=JSON.parse(localStorage.getItem(packListKey)||'null');}catch(e){}
 if(!Array.isArray(packList))packList=packDefaultList();
 function savePacked(){try{localStorage.setItem(packKey,JSON.stringify([...packed]));}catch(e){}}
