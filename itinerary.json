@@ -1745,20 +1745,20 @@
       "group": "trip",
       "kind": "estimate",
       "label": "Fuel + tolls",
-      "min": 165,
-      "max": 280,
+      "min": 90,
+      "max": 150,
       "summary": "Five mountain and coast driving days, full-to-full return, €2.50 Sozina toll.",
-      "note": "Planning range includes Oct 4 Perast–Kotor out-and-back and Oct 5 Perast–Kotor–Lovćen/Kuk–Virpazar–Perast loop, plus existing transfers and northern outings. Add the official €2.50 Category II Sozina toll for the return; recheck tariff and fuel price before travel. Mileage depends on live routing; no ferry/A1 toll planned."
+      "note": "Range lowered after the October 2026 trip: fuel, tolls and the top-up on return came in well under the first plan. It covers the Oct 4 Perast–Kotor out-and-back, the Oct 5 Perast–Kotor–Lovćen/Kuk–Virpazar–Perast loop and the northern outings, with the €2.50 Category II Sozina toll. Mileage depends on live routing; no ferry/A1 toll planned."
     },
     {
       "id": "parks",
       "group": "trip",
       "kind": "estimate",
       "label": "Parks + boat + walls + spa",
-      "min": 270,
-      "max": 470,
+      "min": 200,
+      "max": 300,
       "summary": "Admissions for two, Alpine Coaster, Lovćen and mausoleum, Skadar boat and hotel parking; walls and spa optional.",
-      "note": "Oct 4: Conte hotel parking €25 per 24 hours. Oct 5: Alpine Coaster €12 and Falcon Fly €15 per person, Lovćen park €4/person, mausoleum €8/person, parking €2, DARKO Boat €35 for two (includes Skadar national-park entry) and another €25 for hotel parking. Kotor walls and spa remain optional."
+      "note": "Range lowered after the October 2026 trip, when tickets, parking and the boat came in below the first plan. Oct 4: Conte hotel parking €25 per 24 hours. Oct 5: Alpine Coaster €12 and Falcon Fly €15 per person, Lovćen park €4/person, mausoleum €8/person, parking €2, DARKO Boat €35 for two (includes Skadar national-park entry) and another €25 for hotel parking. Kotor walls and spa remain optional."
     },
     {
       "id": "food",
@@ -1766,19 +1766,19 @@
       "kind": "estimate",
       "label": "Food & drink",
       "min": 450,
-      "max": 750,
+      "max": 600,
       "summary": "Two people, including one winery or local tasting.",
-      "note": "€90–150 per couple per day, including one winery/local tasting allowance."
+      "note": "About €75–100 per couple per day was enough in October 2026, including one winery or local tasting."
     },
     {
       "id": "contingency",
       "group": "trip",
       "kind": "estimate",
       "label": "Contingency reserve",
-      "min": 200,
-      "max": 300,
+      "min": 100,
+      "max": 200,
       "summary": "Weather reroutes, price surprises and unplanned fees; carry €100–150 of it as small cash notes.",
-      "note": "Carry €100–150 in small cash notes; reserve total also covers weather reroutes, fuel and unplanned fees."
+      "note": "Carry €100–150 in small cash notes; reserve total also covers weather reroutes, fuel and unplanned fees. A second driver at the car desk cost about €70 in October 2026."
     },
     {
       "id": "zipline",
@@ -1805,8 +1805,8 @@
     {
       "day": 1,
       "costs": {
-        "fuel": [40, 65],
-        "food": [60, 100]
+        "fuel": [10, 20],
+        "food": [60, 85]
       },
       "onTheSpot": [
         "Europcar deposit hold €1,154 on the main driver’s credit card at pickup; it is released after return and is not spending.",
@@ -1816,9 +1816,9 @@
     {
       "day": 2,
       "costs": {
-        "fuel": [25, 45],
+        "fuel": [20, 30],
         "parks": [12, 20],
-        "food": [80, 130]
+        "food": [80, 110]
       },
       "onTheSpot": [
         "Coins for Black Lake parking (€1.20/hour) and Durmitor admission at €5/person."
@@ -1827,9 +1827,9 @@
     {
       "day": 3,
       "costs": {
-        "fuel": [35, 60],
+        "fuel": [10, 20],
         "parks": [8, 20],
-        "food": [90, 150],
+        "food": [90, 125],
         "zipline": [0, 90]
       },
       "onTheSpot": [
@@ -1841,8 +1841,8 @@
       "day": 4,
       "costs": {
         "fuel": [
-          35,
-          55
+          15,
+          25
         ],
         "parks": [
           25,
@@ -1850,7 +1850,7 @@
         ],
         "food": [
           70,
-          120
+          100
         ],
         "horseride": [
           80,
@@ -1866,9 +1866,9 @@
     {
       "day": 5,
       "costs": {
-        "fuel": [25, 45],
+        "fuel": [15, 25],
         "parks": [130, 150],
-        "food": [100, 160]
+        "food": [100, 135]
       },
       "onTheSpot": [
         "Alpine Coaster €12 and Falcon Fly €15 per person; Lovćen park €4/person, mausoleum €8/person, parking €2.",
@@ -1879,8 +1879,8 @@
     {
       "day": 6,
       "costs": {
-        "fuel": [5, 10],
-        "food": [20, 40]
+        "fuel": [20, 30],
+        "food": [20, 35]
       },
       "onTheSpot": [
         "Refuel within 5 km of the airport and keep the receipt; the deposit hold is released after return."
