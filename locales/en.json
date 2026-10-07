@@ -365,6 +365,9 @@
   "pack.addItem": "Add item",
   "pack.itemName": "Item",
   "pack.remove": "Remove {item}",
+  "pack.copied": "Copied",
+  "pack.copy": "Share list",
+  "pack.move": "Move {item}",
   "pack.groupName": "Bag name",
   "pack.addGroup": "+ Add a bag",
   "pack.newGroup": "New bag",
@@ -483,6 +486,6 @@
   "glance.park.sms4": "Each SMS buys one hour from the prepaid credit (a little above the plate rate). A warning SMS arrives shortly before it ends; send the same text again once the hour ends, not in advance.",
   "glance.park.sms5": "On a dual-SIM phone, set the Montenegrin line for SMS, and keep about €5 of credit (dopuna) on top of the data bundle.",
   "glance.park.sms6": "Outside the hours on the plate parking is free. Signed lots (Black Lake, Kotor Old Town) do not use SMS; pay at their booth or meter.",
-  "pack.hint": "Tap any item to edit it"
+  "pack.hint": "Tap an item to edit it · drag the grip to move it"
  }
 }

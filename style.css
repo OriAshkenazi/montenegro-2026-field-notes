@@ -396,6 +396,13 @@ table.budget-day-table{min-width:0;background:var(--surface-1);border:1px solid 
 .pack-row:focus-within .pack-remove,.packing-card header:focus-within .pack-remove{display:grid}
 .packing-card header:focus-within .card-kicker{display:none}
 .pack-remove:hover{color:var(--accent)}
+.pack-row .pack-remove{margin-inline-end:0;width:36px}
+.pack-drag{flex:none;display:grid;place-items:center;width:32px;height:var(--tap);margin-inline-end:calc(-1 * var(--sp-2));padding:0;border:0;background:transparent;color:var(--text-3);cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.pack-drag:hover,.pack-drag:focus-visible{color:var(--accent)}
+.pack-row:has(input:checked) .pack-drag{opacity:.6}
+.pack-row.dragging{z-index:1000;pointer-events:none;background:var(--surface-1);border-radius:var(--r-sm);box-shadow:0 8px 24px rgb(0 0 0 / .18);cursor:grabbing}
+.pack-placeholder{background:var(--surface-2);border-radius:var(--r-sm)}
+.packing-actions{display:flex;gap:var(--sp-2);flex-wrap:wrap}
 .packing-foot{display:flex;justify-content:space-between;gap:var(--sp-3);flex-wrap:wrap;margin-top:var(--sp-3)}
 .text-button{min-height:var(--tap);border:0;background:transparent;padding:0 var(--sp-1);color:var(--link);font:500 var(--fs-base) var(--sans);cursor:pointer}
 #packingRestore{color:var(--text-3);font-size:var(--fs-sm)}
