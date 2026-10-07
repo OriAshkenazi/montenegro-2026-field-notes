@@ -659,12 +659,9 @@
     "Flights · confirmed card charge (2 passengers)": "טיסות · חיוב מאושר בכרטיס (2 נוסעים)",
     "Approved Skygini Solutions Ltd card charge on Sep 25, 2026, per supplied screenshot.": "חיוב מאושר בכרטיס של Skygini Solutions Ltd ב-25 בספט׳ 2026, לפי צילום המסך שסופק.",
     "Fuel + tolls": "דלק + אגרות כביש",
-    "Planning range includes Oct 4 Perast–Kotor out-and-back and Oct 5 Perast–Kotor–Lovćen/Kuk–Virpazar–Perast loop, plus existing transfers and northern outings.": "טווח התכנון כולל את הלוך-חזור Perast–Kotor ב-4 באוק׳ ואת הלולאה Perast–Kotor–Lovćen/Kuk–Virpazar–Perast ב-5 באוק׳, וגם את המעברים הקיימים והיציאות בצפון.",
-    "Add the official €2.50 Category II Sozina toll for the return; recheck tariff and fuel price before travel.": "תוסיפו את אגרת Sozina הרשמית, קטגוריה II, €2.50 בדרך חזרה; תבדקו שוב תעריף ומחיר דלק לפני הנסיעה.",
     "Mileage depends on live routing; no ferry/A1 toll planned.": "הקילומטראז' תלוי בניווט בזמן אמת; לא מתוכננים מעבורת או אגרת A1.",
     "Parks + boat + walls + spa": "פארקים + סירה + חומות + ספא",
     "Food & drink": "אוכל ושתייה",
-    "€90–150 per couple per day, including one winery/local tasting allowance.": "€90–150 לזוג ליום, כולל סכום לטעימה אחת ביקב או במקום מקומי.",
     "Contingency reserve": "רזרבה להוצאות לא צפויות",
     "Carry €100–150 in small cash notes; reserve total also covers weather reroutes, fuel and unplanned fees.": "תישאו €100–150 במזומן בשטרות קטנים; הרזרבה הכוללת מכסה גם שינויי מסלול בגלל מזג אוויר, דלק ועמלות לא מתוכננות.",
     "Tara zipline · optional and unconfirmed": "אתר החבלים ב-Tara · אופציונלי ולא מאושר",
@@ -1077,7 +1074,12 @@
     "Relaxed breakfast at Conte from about 08:30, then the hotel pool until check-out at 11:00.": "ארוחת בוקר רגועה ב-Conte מבערך 08:30, ואחר כך הבריכה של המלון עד הצ׳ק-אאוט ב-11:00.",
     "Check out and leave Perast at 11:00, the travellers' decision.": "עושים צ׳ק-אאוט ויוצאים מ-Perast ב-11:00, לפי החלטת המטיילים.",
     "Walk to the terminal and check in at the EL AL counter, about 12:25; the ticket asks for check-in 3 hours before departure (11:55).": "הולכים לטרמינל ועושים צ׳ק-אין בדלפק של EL AL, בסביבות 12:25; הכרטיס מבקש התייצבות 3 שעות לפני ההמראה (11:55).",
-    "Do not add a pre-return detour.": "בלי עיקופים לפני החזרת הרכב."
+    "Do not add a pre-return detour.": "בלי עיקופים לפני החזרת הרכב.",
+    "Range lowered after the October 2026 trip: fuel, tolls and the top-up on return came in well under the first plan.": "הטווח הורד אחרי טיול אוקטובר 2026: דלק, אגרות ותדלוק בהחזרה יצאו נמוכים בהרבה מהתוכנית הראשונה.",
+    "It covers the Oct 4 Perast–Kotor out-and-back, the Oct 5 Perast–Kotor–Lovćen/Kuk–Virpazar–Perast loop and the northern outings, with the €2.50 Category II Sozina toll.": "הוא כולל את הלוך-חזור Perast–Kotor ב-4 באוק׳, את הלולאה Perast–Kotor–Lovćen/Kuk–Virpazar–Perast ב-5 באוק׳ ואת היציאות בצפון, עם אגרת Sozina, קטגוריה II, €2.50.",
+    "Range lowered after the October 2026 trip, when tickets, parking and the boat came in below the first plan.": "הטווח הורד אחרי טיול אוקטובר 2026, כשכרטיסים, חניה והסירה יצאו מתחת לתוכנית הראשונה.",
+    "About €75–100 per couple per day was enough in October 2026, including one winery or local tasting.": "בערך €75–100 לזוג ליום הספיקו באוקטובר 2026, כולל טעימה אחת ביקב או במקום מקומי.",
+    "A second driver at the car desk cost about €70 in October 2026.": "נהג שני בדלפק ההשכרה עלה בערך €70 באוקטובר 2026."
   },
   "aliases": {
     "tivat-airport": [

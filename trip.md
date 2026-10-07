@@ -10,7 +10,7 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 - **Summary:** Explore Montenegro from the Adriatic coast and Bay of Kotor to Lake Skadar and the rugged northern highlands, with scenic drives, old towns, mountain walks and local food.
 - **Planning rule:** Daily driving ceiling 6 h adjusted; drive times include a +20% terrain buffer over nominal routing times.
 - **App:** [https://oriashkenazi.github.io/montenegro-2026-field-notes/](https://oriashkenazi.github.io/montenegro-2026-field-notes/)
-- **budgetDays:** day: 1; costs: fuel: 40, 65; food: 60, 100; onTheSpot: Europcar deposit hold €1,154 on the main driver’s credit card at pickup; it is released after return and is not spending., Ask Runolist at check-in whether any of the €225.39 is still due., day: 2; costs: fuel: 25, 45; parks: 12, 20; food: 80, 130; onTheSpot: Coins for Black Lake parking (€1.20/hour) and Durmitor admission at €5/person., day: 3; costs: fuel: 35, 60; parks: 8, 20; food: 90, 150; zipline: 0, 90; onTheSpot: Biogradska Gora admission €4/person in cash; boats €10/hour., Zipline only if booked and confirmed., day: 4; costs: fuel: 35, 55; parks: 25, 35; food: 70, 120; horseride: 80, 120; onTheSpot: Settle any Runolist balance in cash at checkout (up to €225.39)., SKK Vihor ride: price not confirmed, pay in cash at the stable (about €50/person is a nearby published rate)., Conte hotel parking €25 per 24 hours at reception; Kotor Old Town parking (Benovo about €2/hour); no walls climb today., day: 5; costs: fuel: 25, 45; parks: 130, 150; food: 100, 160; onTheSpot: Alpine Coaster €12 and Falcon Fly €15 per person; Lovćen park €4/person, mausoleum €8/person, parking €2., DARKO Boat €35 for two for one hour, including national-park entry; Sozina toll €2.50., Conte hotel parking €25 per 24 hours at reception., day: 6; costs: fuel: 5, 10; food: 20, 40; onTheSpot: Refuel within 5 km of the airport and keep the receipt; the deposit hold is released after return.
+- **budgetDays:** day: 1; costs: fuel: 10, 20; food: 60, 85; onTheSpot: Europcar deposit hold €1,154 on the main driver’s credit card at pickup; it is released after return and is not spending., Ask Runolist at check-in whether any of the €225.39 is still due., day: 2; costs: fuel: 20, 30; parks: 12, 20; food: 80, 110; onTheSpot: Coins for Black Lake parking (€1.20/hour) and Durmitor admission at €5/person., day: 3; costs: fuel: 10, 20; parks: 8, 20; food: 90, 125; zipline: 0, 90; onTheSpot: Biogradska Gora admission €4/person in cash; boats €10/hour., Zipline only if booked and confirmed., day: 4; costs: fuel: 15, 25; parks: 25, 35; food: 70, 100; horseride: 80, 120; onTheSpot: Settle any Runolist balance in cash at checkout (up to €225.39)., SKK Vihor ride: price not confirmed, pay in cash at the stable (about €50/person is a nearby published rate)., Conte hotel parking €25 per 24 hours at reception; Kotor Old Town parking (Benovo about €2/hour); no walls climb today., day: 5; costs: fuel: 15, 25; parks: 130, 150; food: 100, 135; onTheSpot: Alpine Coaster €12 and Falcon Fly €15 per person; Lovćen park €4/person, mausoleum €8/person, parking €2., DARKO Boat €35 for two for one hour, including national-park entry; Sozina toll €2.50., Conte hotel parking €25 per 24 hours at reception., day: 6; costs: fuel: 20, 30; food: 20, 35; onTheSpot: Refuel within 5 km of the airport and keep the receipt; the deposit hold is released after return.
 - **fx:** EURILS: 3.4857; USDILS: 3.072; asOf: 2026-09-29; source: Bank of Israel representative rates
 - **contacts:** label: Europcar Tivat Airport; number: +382 20 653141; href: tel:+38220653141; note: Car pickup Oct 1 at 14:30; call if the flight is delayed., label: Filip Vuckovic · private car rental; number: +382 67 974 281; href: tel:+38267974281; note: Backup car rental; WhatsApp in English., label: Kosta Pavlov · private car rental; number: +972 54 447 6480; href: tel:+972544476480; note: Backup car rental; Israeli number., label: Avi Blov · private car rental; number: +972 54 471 2918; href: tel:+972544712918; note: Backup car rental; Israeli number., label: Jennie · private car rental; number: +382 68 603 688; href: tel:+38268603688; note: Backup car rental; Hebrew speaker, pay at pickup., label: AI Booking Travel · voucher 4H419663; number: +972 3 555 5999; href: tel:+97235555999; note: 24/7 support for the rental voucher., label: Runolist Chalet, Žabljak; number: +382 69 520 016; href: tel:+38269520016; note: Tell the host your arrival time; cash only at the property., label: Conte Hotel, Perast; number: +382 67 111 190; href: tel:+38267111190; note: Check-in from 15:00; Oct 4 arrival is about 15:35., label: Conte restaurant, Perast; number: +382 67 257 387; href: tel:+38267257387; note: Same-day table reservations by phone only.
 
@@ -674,8 +674,8 @@ This is the complete plain-text version of the Montenegro Field Notes trip app (
 Two adults · five nights · confirmed payments and estimates. What’s already paid, what’s left to spend in Montenegro, and the cash to carry.
 
 - **Paid before the trip:** €1426.03 (₪4970.72) + €225.39 unconfirmed
-- **Still to spend in Montenegro:** €1165.00–€2010.00
-- **All-in trip total:** €2816.42–€3661.42 (₪9817.20–₪12762.62)
+- **Still to spend in Montenegro:** €920.00–€1460.00
+- **All-in trip total:** €2571.42–€3111.42 (₪8963.21–₪10845.48)
 - **Exchange rates:** Bank of Israel representative rates, 2026-09-29: EUR 1 = ₪3.4857 · USD 1 = ₪3.072
 
 ### Already paid (paid)
@@ -698,18 +698,18 @@ Two adults · five nights · confirmed payments and estimates. What’s already 
 
 ### To spend on the trip (trip)
 
-- **Fuel + tolls** — €165–€280 · estimate
+- **Fuel + tolls** — €90–€150 · estimate
   - **Summary:** Five mountain and coast driving days, full-to-full return, €2.50 Sozina toll.
-  - **Details:** Planning range includes Oct 4 Perast–Kotor out-and-back and Oct 5 Perast–Kotor–Lovćen/Kuk–Virpazar–Perast loop, plus existing transfers and northern outings. Add the official €2.50 Category II Sozina toll for the return; recheck tariff and fuel price before travel. Mileage depends on live routing; no ferry/A1 toll planned.
-- **Parks + boat + walls + spa** — €270–€470 · estimate
+  - **Details:** Range lowered after the October 2026 trip: fuel, tolls and the top-up on return came in well under the first plan. It covers the Oct 4 Perast–Kotor out-and-back, the Oct 5 Perast–Kotor–Lovćen/Kuk–Virpazar–Perast loop and the northern outings, with the €2.50 Category II Sozina toll. Mileage depends on live routing; no ferry/A1 toll planned.
+- **Parks + boat + walls + spa** — €200–€300 · estimate
   - **Summary:** Admissions for two, Alpine Coaster, Lovćen and mausoleum, Skadar boat and hotel parking; walls and spa optional.
-  - **Details:** Oct 4: Conte hotel parking €25 per 24 hours. Oct 5: Alpine Coaster €12 and Falcon Fly €15 per person, Lovćen park €4/person, mausoleum €8/person, parking €2, DARKO Boat €35 for two (includes Skadar national-park entry) and another €25 for hotel parking. Kotor walls and spa remain optional.
-- **Food & drink** — €450–€750 · estimate
+  - **Details:** Range lowered after the October 2026 trip, when tickets, parking and the boat came in below the first plan. Oct 4: Conte hotel parking €25 per 24 hours. Oct 5: Alpine Coaster €12 and Falcon Fly €15 per person, Lovćen park €4/person, mausoleum €8/person, parking €2, DARKO Boat €35 for two (includes Skadar national-park entry) and another €25 for hotel parking. Kotor walls and spa remain optional.
+- **Food & drink** — €450–€600 · estimate
   - **Summary:** Two people, including one winery or local tasting.
-  - **Details:** €90–150 per couple per day, including one winery/local tasting allowance.
-- **Contingency reserve** — €200–€300 · estimate
+  - **Details:** About €75–100 per couple per day was enough in October 2026, including one winery or local tasting.
+- **Contingency reserve** — €100–€200 · estimate
   - **Summary:** Weather reroutes, price surprises and unplanned fees; carry €100–150 of it as small cash notes.
-  - **Details:** Carry €100–150 in small cash notes; reserve total also covers weather reroutes, fuel and unplanned fees.
+  - **Details:** Carry €100–150 in small cash notes; reserve total also covers weather reroutes, fuel and unplanned fees. A second driver at the car desk cost about €70 in October 2026.
 - **Tara zipline · optional and unconfirmed** — €0–€90 · optional
   - **Summary:** Only if the operator confirms a bridge-free option on Oct 3.
   - **Details:** Not included in the minimum. Operator lists Red Rock at €20/person, but its return crosses the bridge closed through Oct 26. Yellow/Extreme return transport is included; verify Oct 3 operation, bridge-free launch/access and current prices directly before booking.
@@ -721,29 +721,29 @@ Two adults · five nights · confirmed payments and estimates. What’s already 
 
 Expected spend for two each day, and what to pay on the spot.
 
-- **Day 1 · Thu · Oct 1** — €100–€165
-  - **Breakdown:** Fuel + tolls €40–€65 · Food & drink €60–€100
+- **Day 1 · Thu · Oct 1** — €70–€105
+  - **Breakdown:** Fuel + tolls €10–€20 · Food & drink €60–€85
   - **Pay on the spot:** Europcar deposit hold €1,154 on the main driver’s credit card at pickup; it is released after return and is not spending.
   - **Pay on the spot:** Ask Runolist at check-in whether any of the €225.39 is still due.
-- **Day 2 · Fri · Oct 2** — €117–€195
-  - **Breakdown:** Fuel + tolls €25–€45 · Parks + boat + walls + spa €12–€20 · Food & drink €80–€130
+- **Day 2 · Fri · Oct 2** — €112–€160
+  - **Breakdown:** Fuel + tolls €20–€30 · Parks + boat + walls + spa €12–€20 · Food & drink €80–€110
   - **Pay on the spot:** Coins for Black Lake parking (€1.20/hour) and Durmitor admission at €5/person.
-- **Day 3 · Sat · Oct 3** — €133–€320
-  - **Breakdown:** Fuel + tolls €35–€60 · Parks + boat + walls + spa €8–€20 · Food & drink €90–€150 · Tara zipline · optional and unconfirmed €0–€90
+- **Day 3 · Sat · Oct 3** — €108–€255
+  - **Breakdown:** Fuel + tolls €10–€20 · Parks + boat + walls + spa €8–€20 · Food & drink €90–€125 · Tara zipline · optional and unconfirmed €0–€90
   - **Pay on the spot:** Biogradska Gora admission €4/person in cash; boats €10/hour.
   - **Pay on the spot:** Zipline only if booked and confirmed.
-- **Day 4 · Sun · Oct 4** — €210–€330
-  - **Breakdown:** Fuel + tolls €35–€55 · Parks + boat + walls + spa €25–€35 · Food & drink €70–€120 · SKK Vihor horse ride · price not confirmed €80–€120
+- **Day 4 · Sun · Oct 4** — €190–€280
+  - **Breakdown:** Fuel + tolls €15–€25 · Parks + boat + walls + spa €25–€35 · Food & drink €70–€100 · SKK Vihor horse ride · price not confirmed €80–€120
   - **Pay on the spot:** Settle any Runolist balance in cash at checkout (up to €225.39).
   - **Pay on the spot:** SKK Vihor ride: price not confirmed, pay in cash at the stable (about €50/person is a nearby published rate).
   - **Pay on the spot:** Conte hotel parking €25 per 24 hours at reception; Kotor Old Town parking (Benovo about €2/hour); no walls climb today.
-- **Day 5 · Mon · Oct 5** — €255–€355
-  - **Breakdown:** Fuel + tolls €25–€45 · Parks + boat + walls + spa €130–€150 · Food & drink €100–€160
+- **Day 5 · Mon · Oct 5** — €245–€310
+  - **Breakdown:** Fuel + tolls €15–€25 · Parks + boat + walls + spa €130–€150 · Food & drink €100–€135
   - **Pay on the spot:** Alpine Coaster €12 and Falcon Fly €15 per person; Lovćen park €4/person, mausoleum €8/person, parking €2.
   - **Pay on the spot:** DARKO Boat €35 for two for one hour, including national-park entry; Sozina toll €2.50.
   - **Pay on the spot:** Conte hotel parking €25 per 24 hours at reception.
-- **Day 6 · Tue · Oct 6** — €25–€50
-  - **Breakdown:** Fuel + tolls €5–€10 · Food & drink €20–€40
+- **Day 6 · Tue · Oct 6** — €40–€65
+  - **Breakdown:** Fuel + tolls €20–€30 · Food & drink €20–€35
   - **Pay on the spot:** Refuel within 5 km of the airport and keep the receipt; the deposit hold is released after return.
 
 Trip spending figures are planning ranges for two; recheck fuel and ticket prices before travel.
